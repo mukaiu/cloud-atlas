@@ -1,21 +1,25 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh" data-content_root="../../../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>使用Calibre移除Kindle文档DRM &mdash; Cloud Atlas 0.1 文档</title>
-      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../../_static/graphviz.css" type="text/css" />
+  <title>使用Calibre移除Kindle文档DRM &mdash; Cloud Atlas: Discovery beta 文档</title>
+      <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/graphviz.css?v=fd3f3429" />
+
+  
+    <link rel="shortcut icon" href="../../../_static/favicon.png"/>
   <!--[if lt IE 9]>
     <script src="../../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="../../../_static/documentation_options.js?v=7c91f8fd"></script>
-        <script src="../../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../../_static/documentation_options.js?v=8534f863"></script>
+        <script src="../../../_static/doctools.js?v=9a2dae69"></script>
         <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
-        <script src="../../../_static/translations.js?v=beaddf03"></script>
     <script src="../../../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../../../genindex.html" />
     <link rel="search" title="搜索" href="../../../search.html" />
@@ -33,21 +37,24 @@
           
           
           <a href="../../../index.html" class="icon icon-home">
-            Cloud Atlas
+            Cloud Atlas: Discovery
           </a>
+              <div class="version">
+                1.1
+              </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../../studio/index.html">Studio Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../infrastructure/index.html">Infrastructure Atlas</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">DevOps Atlas</a><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../studio/index.html">Studio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../infrastructure/index.html">Infrastructure</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">DevOps</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../../thought/index.html">DevOps 思考集锦</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../sre/index.html">SRE - 站点可靠性工程师</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../git/index.html">git</a></li>
@@ -55,20 +62,32 @@
 <li class="toctree-l2"><a class="reference internal" href="../../jenkins/index.html">Jenkins</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../gitea/index.html">Gitea</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../terraform/index.html">Terraform基础架构管理平台</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../heroku/index.html">Heroku</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../ansible/index.html">Ansible</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../jsonnet/index.html">Jsonnet数据模版语言</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../airflow/index.html">Airflow</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../checkov/index.html">checkov静态代码分析工具</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../utils/index.html">DevOps 工具集</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="../index.html">DevOps 文档</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="../think_write_doc.html">文档撰写的思考</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../docs_as_code.html">Docs-as-Code</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../write_doc.html">写文档</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../static_website.html">静态网站</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../obsidian.html">Obsidian Markdown知识管理</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../sphinx_doc/index.html">Sphinx文档</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../tiddlywiki/index.html">TiddlyWiki</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../mkdocs/index.html">MkDocs文档</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../joplin/index.html">Joplin - 开源Markdown记事本</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../jekyll/index.html">Jekyll静态网站</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../hugo/index.html">Hugo文档</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../hugo/index.html">Hugo</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../hexo/index.html">Hexo静态网站</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../nextra/index.html">Nextra</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../docusaurus/index.html">Docusaurus</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../fossflow.html">FossFLOW</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../excalidraw.html">Excalidraw</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../tldraw.html">tldraw</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../diagrams.html">diagrams</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../mermaid.html">Mermaid</a></li>
 <li class="toctree-l3 current"><a class="reference internal" href="index.html">Kindle在，书未老</a><ul class="current">
 <li class="toctree-l4"><a class="reference internal" href="kindle_life.html">Kindle之生活</a></li>
 <li class="toctree-l4 current"><a class="current reference internal" href="#">使用Calibre移除Kindle文档DRM</a></li>
@@ -81,6 +100,7 @@
 <li class="toctree-l4"><a class="reference internal" href="kindle_download_helper.html">kindle电子书批量下载</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="../kobo/index.html">Kobo电子阅读器</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../pandoc.html">pandoc 文档转换工具</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../ffmpeg.html">ffmpeg</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../imagemagick.html">ImageMagick</a></li>
@@ -88,53 +108,54 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../../kvm/index.html">KVM Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../ceph/index.html">Ceph Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../gluster/index.html">Gluster Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../ovirt/index.html">oVirt Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../openstack/index.html">OpenStack Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../docker/index.html">Docker Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../kubernetes/index.html">Kubernetes Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../kubernetes_from_scratch/index.html">Kubernetes From Scratch (KFS) Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../rancher/index.html">Rancher Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../openshift/index.html">OpenShift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../sql/index.html">SQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../sqlite/index.html">SQLite Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../mysql/index.html">MySQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../pgsql/index.html">PostgreSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../clickhouse/index.html">ClickHouse Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../nosql/index.html">NoSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../redis/index.html">Redis Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../network/index.html">Network Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../infra_service/index.html">Infra-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../infra_search/index.html">Search Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../info_service/index.html">Info-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../web/index.html">Web Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../big_data/index.html">Big Data Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../machine_learning/index.html">Machine Learning Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../linux/index.html">Linux Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../kernel/index.html">Kernel Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../performance/index.html">Performance Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../distributed_system/index.html">Distributed System Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../shell/index.html">Shell Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../python/index.html">Python Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../django/index.html">Django Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../flask/index.html">Flask Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../javascript/index.html">JavaScript Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../nodejs/index.html">Node.js Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../clang/index.html">C Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../golang/index.html">Go Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../swift/index.html">Swift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../rust/index.html">Rust Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../ruby/index.html">Ruby Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../arm/index.html">ARM Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../android/index.html">Android Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../bsd/index.html">BSD Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../apple/index.html">Apple Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../windows/index.html">Windows Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../real/index.html">Real Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../management/index.html">Management Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../life/index.html">Life Atlas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../kvm/index.html">KVM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../ceph/index.html">Ceph</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../gluster/index.html">Gluster</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../ovirt/index.html">oVirt</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../openstack/index.html">OpenStack</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../docker/index.html">Docker</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../kubernetes/index.html">Kubernetes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../k8s_dev/index.html">Kubernetes Develop</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../rancher/index.html">Rancher</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../openshift/index.html">OpenShift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../sql/index.html">SQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../sqlite/index.html">SQLite</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../mysql/index.html">MySQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../pgsql/index.html">PostgreSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../nosql/index.html">NoSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../network/index.html">Network</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../infra_service/index.html">Infra-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../infra_search/index.html">Infra-Search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../web/index.html">Web</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../info_service/index.html">Info-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../big_data/index.html">Big Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../machine_learning/index.html">Machine Learning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../drone/index.html">Drone</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../linux/index.html">Linux</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../kernel/index.html">Kernel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../performance/index.html">Performance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../distributed_system/index.html">Distributed System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../shell/index.html">Shell</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../python/index.html">Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../django/index.html">Django</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../javascript/index.html">JavaScript</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../nodejs/index.html">Node.js</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../clang/index.html">C</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../golang/index.html">Go</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../swift/index.html">Swift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../rust/index.html">Rust</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../ruby/index.html">Ruby</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../lua/index.html">Lua</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../arm/index.html">ARM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../raspberry_pi/index.html">Raspberry Pi</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../android/index.html">Android</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../bsd/index.html">BSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../freebsd/index.html">FreeBSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../apple/index.html">Apple</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../windows/index.html">Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../real/index.html">Real</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../management/index.html">Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../life/index.html">Life</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../copyright.html">Copyright</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../aboutme.html">关于作者</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../donate.html">捐赠</a></li>
@@ -147,22 +168,22 @@
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../../index.html">Cloud Atlas</a>
+          <a href="../../../index.html">Cloud Atlas: Discovery</a>
       </nav>
 
       <div class="wy-nav-content">
         <div class="rst-content">
-          <div role="navigation" aria-label="Page navigation">
+          <div role="navigation" aria-label="页面导航">
   <ul class="wy-breadcrumbs">
       <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
-          <li class="breadcrumb-item"><a href="../../index.html">DevOps Atlas</a></li>
+          <li class="breadcrumb-item"><a href="../../index.html">DevOps</a></li>
           <li class="breadcrumb-item"><a href="../index.html">DevOps 文档</a></li>
           <li class="breadcrumb-item"><a href="index.html">Kindle在，书未老</a></li>
       <li class="breadcrumb-item active">使用Calibre移除Kindle文档DRM</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../../../_sources/devops/docs/kindle/calibre_remove_drm.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../../_sources/devops/docs/kindle/calibre_remove_drm.rst.txt" rel="nofollow"> 查看页面源码</a>
       </li>
   </ul>
   <hr/>
@@ -171,7 +192,7 @@
            <div itemprop="articleBody">
              
   <section id="calibrekindledrm">
-<span id="calibre-remove-drm"></span><h1>使用Calibre移除Kindle文档DRM<a class="headerlink" href="#calibrekindledrm" title="Link to this heading">¶</a></h1>
+<span id="calibre-remove-drm"></span><h1>使用Calibre移除Kindle文档DRM<a class="headerlink" href="#calibrekindledrm" title="Link to this heading"></a></h1>
 <p>如果你和我一样，同时在美亚和中亚注册账号并分别购买正版的电子书籍，就会有一个困扰：我购买了正版的电子书，却无法打通账号，在同一个Kindle设备上阅读。</p>
 <p>作为景德镇居民，即使你非常尊重版权，愿意购买正版的书籍和音像、软件，依然由于ZF的限制，无法自由获取信息。很多人可能需要在美区拥有一个账号，并通过曲径来获取知识和资讯。</p>
 <div class="admonition warning">
@@ -179,7 +200,7 @@
 <p><code class="docutils literal notranslate"><span class="pre">请支持正版！本文方法只建议用于自己购买的正版书籍并只用于自己阅读！</span></code></p>
 </div>
 <section id="kindle">
-<h2>打通Kindle账号的方法<a class="headerlink" href="#kindle" title="Link to this heading">¶</a></h2>
+<h2>打通Kindle账号的方法<a class="headerlink" href="#kindle" title="Link to this heading"></a></h2>
 <p>Google了相关信息，共享书籍的方法概括如下：</p>
 <ul class="simple">
 <li><p>Amazon的美国账号和中国账号是两套完全隔离的账号系统，无法打通 - 从美国亚马逊的家庭共享方式来看，应该是能够在美亚账号体系内通打通2个成人+4个小孩账号，彼此间购买书籍是共享的。不过，这个方法无法适用于跨区的中亚账号。</p></li>
@@ -193,8 +214,8 @@
 </div>
 </section>
 <section id="dedrm-ebook-tools">
-<h2>dedrm-ebook-tools<a class="headerlink" href="#dedrm-ebook-tools" title="Link to this heading">¶</a></h2>
-<p><a class="reference external" href="https://github.com/psyrendust/dedrm-ebook-tools">dedrm-ebook-tools(DRM Removal Tools for eBooks)</a> 最早是为了保存 <a class="reference external" href="http://www.apprenticealf.wordpress.com/">Apprentice Alf’s Blog</a> （景德镇居民无法访问的WordPress网站）提供的工具，但是目前因为apprenticeharper从2015年开始也建立了GitHub仓库，所以已经不再更新维护。</p>
+<h2>dedrm-ebook-tools<a class="headerlink" href="#dedrm-ebook-tools" title="Link to this heading"></a></h2>
+<p><a class="reference external" href="https://github.com/psyrendust/dedrm-ebook-tools">dedrm-ebook-tools(DRM Removal Tools for eBooks)</a> 最早是为了保存 <a class="reference external" href="http://www.apprenticealf.wordpress.com/">Apprentice Alf's Blog</a> （景德镇居民无法访问的WordPress网站）提供的工具，但是目前因为apprenticeharper从2015年开始也建立了GitHub仓库，所以已经不再更新维护。</p>
 <ul class="simple">
 <li><p>（已失效)可以直接从 <a class="reference external" href="https://github.com/apprenticeharper/DeDRM_tools">apprenticeharper/DeDRM_tools</a> 获取最新的插件工具。 请参考 <a class="reference external" href="https://github.com/apprenticeharper/DeDRM_tools/blob/master/FAQs.md">DeDRM_tools/FAQs.md</a> 进行安装，其中面向最终用户的软件包发布可以从 <a class="reference external" href="https://github.com/apprenticeharper/DeDRM_tools/releases">DeDRM_tools releases page</a> 下载到。</p></li>
 <li><p>2023年7月时，我使用 Calibre 6.23 ，发现上述 <a class="reference external" href="https://github.com/apprenticeharper/DeDRM_tools">apprenticeharper/DeDRM_tools</a> 已经不能工作(Calibre crash)，参考 <a class="reference external" href="https://github.com/apprenticeharper/DeDRM_tools/issues/2250">DeDRM not working #2250</a> 改为使用 <a class="reference external" href="https://github.com/noDRM/DeDRM_tools">noDRM/DeDRM_tools (GitHub)</a></p></li>
@@ -204,7 +225,7 @@
 <p>请尊重版权，开发者提供开源工具是为了正当的知识和文化传播，并不是支持盗版！</p>
 </div>
 <section id="id3">
-<h3><a class="reference external" href="https://github.com/apprenticeharper/DeDRM_tools">apprenticeharper/DeDRM_tools</a> (归档)<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h3>
+<h3><a class="reference external" href="https://github.com/apprenticeharper/DeDRM_tools">apprenticeharper/DeDRM_tools</a> (归档)<a class="headerlink" href="#id3" title="Link to this heading"></a></h3>
 <ul>
 <li><p>下载和解压缩:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">curl</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">apprenticeharper</span><span class="o">/</span><span class="n">DeDRM_tools</span><span class="o">/</span><span class="n">releases</span><span class="o">/</span><span class="n">download</span><span class="o">/</span><span class="n">v6</span><span class="mf">.6.2</span><span class="o">/</span><span class="n">DeDRM_tools_6</span><span class="mf">.6.2</span><span class="o">.</span><span class="n">zip</span> <span class="o">-</span><span class="n">o</span> <span class="n">DeDRM_tools_6</span><span class="mf">.6.2</span><span class="o">.</span><span class="n">zip</span>
@@ -222,11 +243,11 @@
 <p>然后在 <code class="docutils literal notranslate"><span class="pre">Are</span> <span class="pre">you</span> <span class="pre">sure?</span></code> 对话框中点击 <code class="docutils literal notranslate"><span class="pre">Yes</span></code> 并确认加载这个插件。（提示有安全性因患，务必使用可靠来源的插件）</p>
 </section>
 <section id="id5">
-<h3><a class="reference external" href="https://github.com/noDRM/DeDRM_tools">noDRM/DeDRM_tools (GitHub)</a><a class="headerlink" href="#id5" title="Link to this heading">¶</a></h3>
+<h3><a class="reference external" href="https://github.com/noDRM/DeDRM_tools">noDRM/DeDRM_tools (GitHub)</a><a class="headerlink" href="#id5" title="Link to this heading"></a></h3>
 <p>安装方法和 <a class="reference external" href="https://github.com/apprenticeharper/DeDRM_tools">apprenticeharper/DeDRM_tools</a> ，不再重复</p>
 </section>
 <section id="calibrededrm">
-<h3>配置Calibre使用DeDRM<a class="headerlink" href="#calibrededrm" title="Link to this heading">¶</a></h3>
+<h3>配置Calibre使用DeDRM<a class="headerlink" href="#calibrededrm" title="Link to this heading"></a></h3>
 <p>如果是从Kindle设备或者从亚马逊的web网站下载 - 在亚马逊网站的 <code class="docutils literal notranslate"><span class="pre">管理我的内容和设备</span></code> 页面，每个文件都有一个 <code class="docutils literal notranslate"><span class="pre">通过电脑下载USB传输</span></code> 。</p>
 <p>推荐使用这个方法下载，下载时会提示  <code class="docutils literal notranslate"><span class="pre">从下拉列表中选择一个设备</span></code> ，实际上，这个步骤就是亚马逊根据你的注册设备为下载文件加上DRM加密。</p>
 <ul class="simple">
@@ -256,7 +277,7 @@
 <p>然后点击 <code class="docutils literal notranslate"><span class="pre">Customize</span> <span class="pre">Plugin</span></code> 按钮，此时会弹出一个 <code class="docutils literal notranslate"><span class="pre">Customize</span> <span class="pre">DeDRM</span></code> 对话框。需要按照你设备选择对应按钮，这样就可以添加设备的序列号。这个序列号非常重要，没有则无法移除DRM。</p>
 </section>
 <section id="calibre-dedrm">
-<h3>使用Calibre+DeDRM<a class="headerlink" href="#calibre-dedrm" title="Link to this heading">¶</a></h3>
+<h3>使用Calibre+DeDRM<a class="headerlink" href="#calibre-dedrm" title="Link to this heading"></a></h3>
 <ul class="simple">
 <li><p>把Kindle for PC下载的那些azw文件添加到Calibre即可（直接拖进去吧），DeDRM插件会自动去除azw文件的DRM保护并转换成原始格式: 导入后是去除DRM的 <code class="docutils literal notranslate"><span class="pre">.azw3</span></code> 格式文件，这个文件可以直接放到Kindle中阅读。例如，可以将文件存放到美区Kindle账号的Personal Documents中</p></li>
 </ul>
@@ -271,7 +292,7 @@
 </section>
 </section>
 <section id="id7">
-<h2>参考<a class="headerlink" href="#id7" title="Link to this heading">¶</a></h2>
+<h2>参考<a class="headerlink" href="#id7" title="Link to this heading"></a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="https://www.librehat.com/importing-kindle-books-with-calibre-and-remove-drm-protection/">用Calibre导入Kindle电子书并去除DRM保护</a> - 本文参考，作为支持正版，该文章建议只将移除DRM保护方法用于合法自购的电子书</p></li>
 <li><p><a class="reference external" href="http://www.epubsoft.com/calibre-drm-removal-calibre-remove-drm.html">Calibre DRM Removal Plugin, Calibre Remove DRM from EPUB Kindle</a> - epubsoft提供了一个移除DRM的Calibre插件，不过我 <strong>没有试用过</strong></p></li>
@@ -283,25 +304,37 @@
 
            </div>
           </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="kindle_life.html" class="btn btn-neutral float-left" title="Kindle之生活" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="use_kindle_read_pdf.html" class="btn btn-neutral float-right" title="使用Kindle阅读pdf文档" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="kindle_life.html" class="btn btn-neutral float-left" title="Kindle之生活" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="use_kindle_read_pdf.html" class="btn btn-neutral float-right" title="使用Kindle阅读pdf文档" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../../copyright.html">Copyright</a> 2018 - now, Huatai Huang.</p>
+    <p>&#169; <a href="../../../copyright.html">版权所有</a> 2018 - now, Huatai Huang。</p>
   </div>
 
-  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
   
     <!-- your html code here -->
     <br>
-    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡</a></p>
-     
+    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡 👈</a></p>
+    <br>
+    <p>网站采用 <a href="https://utteranc.es/">utterances</a> 评论系统，所有评论存储在<a href="https://github.com/huataihuang/cloud-atlas/issues">GitHub issues</a> 中，如果你看不到下方的评论框，那么可能需要<a href="https://cloud-atlas.readthedocs.io/zh-cn/latest/linux/security/vpn/index.html">自备梯子</a> 👈</p>
+    <div class="articleComments">
+        <comments>
+  <script src="https://utteranc.es/client.js"
+    repo="huataihuang/cloud-atlas"
+    issue-term="pathname"
+    theme="github-light"
+    crossorigin="anonymous"
+    async>
+  </script>
+</comments>
+    </div>
 
 
 </footer>

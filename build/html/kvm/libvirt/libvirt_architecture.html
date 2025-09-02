@@ -1,21 +1,25 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh" data-content_root="../../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>libvirt 架构 &mdash; Cloud Atlas 0.1 文档</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+  <title>libvirt 架构 &mdash; Cloud Atlas: Discovery beta 文档</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=fd3f3429" />
+
+  
+    <link rel="shortcut icon" href="../../_static/favicon.png"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="../../_static/documentation_options.js?v=7c91f8fd"></script>
-        <script src="../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=8534f863"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
         <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
-        <script src="../../_static/translations.js?v=beaddf03"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../../genindex.html" />
     <link rel="search" title="搜索" href="../../search.html" />
@@ -33,26 +37,29 @@
           
           
           <a href="../../index.html" class="icon icon-home">
-            Cloud Atlas
+            Cloud Atlas: Discovery
           </a>
+              <div class="version">
+                1.1
+              </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../studio/index.html">Studio Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../infrastructure/index.html">Infrastructure Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../devops/index.html">DevOps Atlas</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../index.html">KVM Atlas</a><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../studio/index.html">Studio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../infrastructure/index.html">Infrastructure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../devops/index.html">DevOps</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">KVM</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../install/index.html">KVM 环境安装</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../startup/index.html">KVM 快速起步</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../hypervisor.html">hypervisor</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../kvm_architecture.html">KVM虚拟化</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../qemu_vs_kvm.html">QEMU v. KVM</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../storage/index.html">KVM 存储</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="index.html">Libvirt虚拟机管理器</a><ul class="current">
 <li class="toctree-l3 current"><a class="current reference internal" href="#">libvirt 架构</a><ul>
@@ -88,60 +95,58 @@
 <li class="toctree-l2"><a class="reference internal" href="../gpu_passthrough_with_kvm.html">KVM的GPU直通虚拟化</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../nvidia_cuda_gpu_in_kvm.html">在KVM中使用NVIDIA CUDA GPU</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../amd_rocm_gpu_in_kvm.html">在KVM中使用AMD ROCm GPU</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../macos_xhyve/index.html">macOS平台KVM虚拟化技术xhyve</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../amd_kvm/index.html">AMD硬件环境KVM虚拟化</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../arm_kvm/index.html">ARM硬件环境KVM虚拟化</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../kvm_macos/index.html">KVM虚拟化运行macOS</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../utm/index.html">macOS平台QEMU实现:UTM</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../debug/index.html">KVM故障排查</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../ceph/index.html">Ceph Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../gluster/index.html">Gluster Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../ovirt/index.html">oVirt Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../openstack/index.html">OpenStack Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../docker/index.html">Docker Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kubernetes/index.html">Kubernetes Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kubernetes_from_scratch/index.html">Kubernetes From Scratch (KFS) Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../rancher/index.html">Rancher Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../openshift/index.html">OpenShift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../sql/index.html">SQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../sqlite/index.html">SQLite Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../mysql/index.html">MySQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../pgsql/index.html">PostgreSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../clickhouse/index.html">ClickHouse Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../nosql/index.html">NoSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../redis/index.html">Redis Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../network/index.html">Network Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../infra_service/index.html">Infra-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../infra_search/index.html">Search Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../info_service/index.html">Info-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../web/index.html">Web Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../big_data/index.html">Big Data Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../machine_learning/index.html">Machine Learning Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../linux/index.html">Linux Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kernel/index.html">Kernel Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../performance/index.html">Performance Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../distributed_system/index.html">Distributed System Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../shell/index.html">Shell Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../python/index.html">Python Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../django/index.html">Django Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../flask/index.html">Flask Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../javascript/index.html">JavaScript Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../nodejs/index.html">Node.js Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../clang/index.html">C Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../golang/index.html">Go Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../swift/index.html">Swift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../rust/index.html">Rust Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../ruby/index.html">Ruby Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../arm/index.html">ARM Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../android/index.html">Android Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../bsd/index.html">BSD Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../apple/index.html">Apple Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../windows/index.html">Windows Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../real/index.html">Real Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../management/index.html">Management Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../life/index.html">Life Atlas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ceph/index.html">Ceph</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../gluster/index.html">Gluster</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ovirt/index.html">oVirt</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../openstack/index.html">OpenStack</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../docker/index.html">Docker</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kubernetes/index.html">Kubernetes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../k8s_dev/index.html">Kubernetes Develop</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../rancher/index.html">Rancher</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../openshift/index.html">OpenShift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../sql/index.html">SQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../sqlite/index.html">SQLite</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../mysql/index.html">MySQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../pgsql/index.html">PostgreSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../nosql/index.html">NoSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../network/index.html">Network</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../infra_service/index.html">Infra-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../infra_search/index.html">Infra-Search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../web/index.html">Web</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../info_service/index.html">Info-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../big_data/index.html">Big Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../machine_learning/index.html">Machine Learning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../drone/index.html">Drone</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../linux/index.html">Linux</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kernel/index.html">Kernel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../performance/index.html">Performance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../distributed_system/index.html">Distributed System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../shell/index.html">Shell</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../python/index.html">Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../django/index.html">Django</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../javascript/index.html">JavaScript</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../nodejs/index.html">Node.js</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../clang/index.html">C</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../golang/index.html">Go</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../swift/index.html">Swift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../rust/index.html">Rust</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ruby/index.html">Ruby</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lua/index.html">Lua</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../arm/index.html">ARM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../raspberry_pi/index.html">Raspberry Pi</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../android/index.html">Android</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../bsd/index.html">BSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../freebsd/index.html">FreeBSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../apple/index.html">Apple</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../windows/index.html">Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../real/index.html">Real</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../management/index.html">Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../life/index.html">Life</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../copyright.html">Copyright</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../aboutme.html">关于作者</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../donate.html">捐赠</a></li>
@@ -154,21 +159,21 @@
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../index.html">Cloud Atlas</a>
+          <a href="../../index.html">Cloud Atlas: Discovery</a>
       </nav>
 
       <div class="wy-nav-content">
         <div class="rst-content">
-          <div role="navigation" aria-label="Page navigation">
+          <div role="navigation" aria-label="页面导航">
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
-          <li class="breadcrumb-item"><a href="../index.html">KVM Atlas</a></li>
+          <li class="breadcrumb-item"><a href="../index.html">KVM</a></li>
           <li class="breadcrumb-item"><a href="index.html">Libvirt虚拟机管理器</a></li>
       <li class="breadcrumb-item active">libvirt 架构</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../../_sources/kvm/libvirt/libvirt_architecture.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../_sources/kvm/libvirt/libvirt_architecture.rst.txt" rel="nofollow"> 查看页面源码</a>
       </li>
   </ul>
   <hr/>
@@ -177,7 +182,7 @@
            <div itemprop="articleBody">
              
   <section id="libvirt">
-<span id="libvirt-architecture"></span><h1>libvirt 架构<a class="headerlink" href="#libvirt" title="Link to this heading">¶</a></h1>
+<span id="libvirt-architecture"></span><h1>libvirt 架构<a class="headerlink" href="#libvirt" title="Link to this heading"></a></h1>
 <div class="admonition note">
 <p class="admonition-title">备注</p>
 <p>Arch Linux的运行和管理对于技术要求较高，需要比较深入地了解软件运行原理和关系，所以相对CentOS / Ubuntu难度高很多。不过，Arch Linux的文档撰写非常完善，可以通过社区文档对虚拟化技术深入学习。本文是学习实践的笔记。</p>
@@ -187,18 +192,18 @@
 <ul class="simple">
 <li><p>VM管理: domain的不同生命周期操作，例如，start, stop, pause, save, restore, migrate。很多设备类型，例如磁盘和网络借口，内存，CPU都支持热插拔操作。</p></li>
 <li><p>远程主机管理: 所有的libvirt功能都可以在任何运行libvirt daemon的任何主机上实现，包括远程主机。通过简单使用SSH，不需要复杂的配置就可以支持远程连接。</p></li>
-<li><p>存储管理: 运行libvirt daemon的主机可以管理不同的村粗：创建不同的镜像文件(qcow2, vmdk, raw …)，挂载NFS共享存储，处理现存的LVM卷组，创建新的LVM卷组和逻辑卷，裸磁盘设备分区，挂载iSCSI共享，等等。</p></li>
+<li><p>存储管理: 运行libvirt daemon的主机可以管理不同的村粗：创建不同的镜像文件(qcow2, vmdk, raw ...)，挂载NFS共享存储，处理现存的LVM卷组，创建新的LVM卷组和逻辑卷，裸磁盘设备分区，挂载iSCSI共享，等等。</p></li>
 <li><p>网络接口管理: 运行libvirt daemon的主机可以管理物理和逻辑网络接口，配置和创建借口，网桥，vlan以及bond设备。</p></li>
 <li><p>虚拟NAT和基于路由的网络: 运行libvirt daemon的主机可以管理和创建虚拟网络，使用防火墙规则实现路由器，提供VM透明访问host主机网络。</p></li>
 </ul>
 <section id="id1">
-<h2>安装<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h2>
+<h2>安装<a class="headerlink" href="#id1" title="Link to this heading"></a></h2>
 <div class="admonition note">
 <p class="admonition-title">备注</p>
 <p>Arch Linux将libvirt相关软件的安装拆分，所以你需要对相关组件的功能了解后按需安装。没有类似Red Hat和Ubuntu这样一股脑全部安装。请仔细阅读社区文档，深入理解原理。</p>
 </div>
 <section id="id2">
-<h3>服务器<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h3>
+<h3>服务器<a class="headerlink" href="#id2" title="Link to this heading"></a></h3>
 <p>服务器上安装 libvirt 软件包，以及至少一个 <a class="reference internal" href="../hypervisor.html#hypervisor"><span class="std std-ref">hypervisor</span></a> ，通常KVM激活情况下，libvirt KVM/QEMU驱动会作为主要libvirt驱动。</p>
 <p>为了能够使用网络，需要分别安装以下组件:</p>
 <ul class="simple">
@@ -228,7 +233,7 @@
 </div>
 </section>
 <section id="id3">
-<h3>客户端<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h3>
+<h3>客户端<a class="headerlink" href="#id3" title="Link to this heading"></a></h3>
 <p>libvirt客户端是用户接口，用于管理和访问虚拟机：</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">virsh</span></code> 命令行管理和配置domain工具 (软件包 <code class="docutils literal notranslate"><span class="pre">libvirt</span></code> )</p></li>
@@ -245,10 +250,10 @@
 </section>
 </section>
 <section id="id4">
-<h2>配置libvirt<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h2>
+<h2>配置libvirt<a class="headerlink" href="#id4" title="Link to this heading"></a></h2>
 <p>在系统级别的系统管理，libvirt最少需要设置认证和启动daemon。</p>
 <section id="polkit">
-<h3>设置认证(polkit)<a class="headerlink" href="#polkit" title="Link to this heading">¶</a></h3>
+<h3>设置认证(polkit)<a class="headerlink" href="#polkit" title="Link to this heading"></a></h3>
 <p>libvirt daemon允许系统管理员选择用于客户端每次网络socket链接的认证机制。这个控制是通过libvirt daemon的主配置文件 <code class="docutils literal notranslate"><span class="pre">/etc/libvirt/libvirtd.conf</span></code> 管理。每个libvirt socket可以配置独立的认证机制。当前可以选择的认证机制有: <code class="docutils literal notranslate"><span class="pre">none</span></code> ， <code class="docutils literal notranslate"><span class="pre">polkit</span></code> 和 <code class="docutils literal notranslate"><span class="pre">sasl</span></code> 。</p>
 <p>由于libvirt安装过程安装了polkit作为依赖，所以默认在 <code class="docutils literal notranslate"><span class="pre">unix_sock_auth</span></code> 参数配置的是 <code class="docutils literal notranslate"><span class="pre">polkit</span></code> 。而基于文件的授权则没有提供。</p>
 <ul>
@@ -272,7 +277,7 @@
 </div>
 <p>所以不需要添加新组和规则文件，只需要将用户加入 <code class="docutils literal notranslate"><span class="pre">wheel</span></code> 组，然后再配置允许 <code class="docutils literal notranslate"><span class="pre">wheel</span></code> 组连接 <code class="docutils literal notranslate"><span class="pre">RW</span></code> socket。</p>
 <div class="literal-block-wrapper docutils container" id="id7">
-<div class="code-block-caption"><span class="caption-text">/etc/polkit-1/rules.d/50-libvirt.rules 配置 mykvm 用户组能够访问libvirt的RW socket</span><a class="headerlink" href="#id7" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">/etc/polkit-1/rules.d/50-libvirt.rules 配置 mykvm 用户组能够访问libvirt的RW socket</span><a class="headerlink" href="#id7" title="Link to this code"></a></div>
 <div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="cm">/* Allow users in mykvm group to manage the libvirt</span>
 <span class="cm">daemon without authentication */</span>
 <span class="nx">polkit</span><span class="p">.</span><span class="nx">addRule</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">action</span><span class="p">,</span><span class="w"> </span><span class="nx">subject</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
@@ -287,10 +292,10 @@
 <p>如果你需要配置一个新的组，授权访问libvirt的RW socket，例如 <code class="docutils literal notranslate"><span class="pre">mykvm</span></code> 组，而修改上面的 <code class="docutils literal notranslate"><span class="pre">/etc/polkit-1/rules.d/50-libvirt.rules</span></code> 将 <code class="docutils literal notranslate"><span class="pre">wheel</span></code> 组换成 <code class="docutils literal notranslate"><span class="pre">mykvm</span></code> 组即可。</p>
 </section>
 <section id="id5">
-<h3>配置认证(基于文件)<a class="headerlink" href="#id5" title="Link to this heading">¶</a></h3>
+<h3>配置认证(基于文件)<a class="headerlink" href="#id5" title="Link to this heading"></a></h3>
 <p>另外一种简化的方式配置 <code class="docutils literal notranslate"><span class="pre">/etc/libvirt/libvirtf.conf</span></code> :</p>
 <div class="literal-block-wrapper docutils container" id="id8">
-<div class="code-block-caption"><span class="caption-text">配置按照libirt组用户允许直接使用libvirt</span><a class="headerlink" href="#id8" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">配置按照libirt组用户允许直接使用libvirt</span><a class="headerlink" href="#id8" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nv">unix_sock_group</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;libvirt&quot;</span>
 <span class="nv">unix_sock_ro_perms</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;0777&quot;</span><span class="w">  </span><span class="c1"># set to 0770 to deny non-group libvirt users</span>
 <span class="nv">unix_sock_rw_perms</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;0770&quot;</span>
@@ -306,7 +311,7 @@
 </section>
 </section>
 <section id="id6">
-<h2>参考<a class="headerlink" href="#id6" title="Link to this heading">¶</a></h2>
+<h2>参考<a class="headerlink" href="#id6" title="Link to this heading"></a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="https://wiki.archlinux.org/index.php/Libvirt">Arch Linux文档 - libvirt</a></p></li>
 <li><p><a class="reference external" href="https://wiki.rockstable.it/libvirt">rockstable libvirt文档</a> 这个文档有很多全面的知识点</p></li>
@@ -317,25 +322,37 @@
 
            </div>
           </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="index.html" class="btn btn-neutral float-left" title="Libvirt虚拟机管理器" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="network/index.html" class="btn btn-neutral float-right" title="Libvirt网络" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="index.html" class="btn btn-neutral float-left" title="Libvirt虚拟机管理器" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="network/index.html" class="btn btn-neutral float-right" title="Libvirt网络" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../copyright.html">Copyright</a> 2018 - now, Huatai Huang.</p>
+    <p>&#169; <a href="../../copyright.html">版权所有</a> 2018 - now, Huatai Huang。</p>
   </div>
 
-  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
   
     <!-- your html code here -->
     <br>
-    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡</a></p>
-     
+    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡 👈</a></p>
+    <br>
+    <p>网站采用 <a href="https://utteranc.es/">utterances</a> 评论系统，所有评论存储在<a href="https://github.com/huataihuang/cloud-atlas/issues">GitHub issues</a> 中，如果你看不到下方的评论框，那么可能需要<a href="https://cloud-atlas.readthedocs.io/zh-cn/latest/linux/security/vpn/index.html">自备梯子</a> 👈</p>
+    <div class="articleComments">
+        <comments>
+  <script src="https://utteranc.es/client.js"
+    repo="huataihuang/cloud-atlas"
+    issue-term="pathname"
+    theme="github-light"
+    crossorigin="anonymous"
+    async>
+  </script>
+</comments>
+    </div>
 
 
 </footer>

@@ -1,27 +1,31 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh" data-content_root="../../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>zypper - SUSE包管理工具 &mdash; Cloud Atlas 0.1 文档</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+  <title>zypper - SUSE包管理工具 &mdash; Cloud Atlas: Discovery beta 文档</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=fd3f3429" />
+
+  
+    <link rel="shortcut icon" href="../../_static/favicon.png"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="../../_static/documentation_options.js?v=7c91f8fd"></script>
-        <script src="../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=8534f863"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
         <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
-        <script src="../../_static/translations.js?v=beaddf03"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../../genindex.html" />
     <link rel="search" title="搜索" href="../../search.html" />
     <link rel="copyright" title="版权所有" href="../../copyright.html" />
     <link rel="next" title="SUSE订阅和注册" href="suse_register.html" />
-    <link rel="prev" title="安装openSUSE Leap" href="install_opensus_leap.html" /> 
+    <link rel="prev" title="SUSE安装" href="install_suse.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -33,58 +37,66 @@
           
           
           <a href="../../index.html" class="icon icon-home">
-            Cloud Atlas
+            Cloud Atlas: Discovery
           </a>
+              <div class="version">
+                1.1
+              </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../studio/index.html">Studio Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../infrastructure/index.html">Infrastructure Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../devops/index.html">DevOps Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kvm/index.html">KVM Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../ceph/index.html">Ceph Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../gluster/index.html">Gluster Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../ovirt/index.html">oVirt Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../openstack/index.html">OpenStack Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../docker/index.html">Docker Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kubernetes/index.html">Kubernetes Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kubernetes_from_scratch/index.html">Kubernetes From Scratch (KFS) Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../rancher/index.html">Rancher Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../openshift/index.html">OpenShift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../sql/index.html">SQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../sqlite/index.html">SQLite Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../mysql/index.html">MySQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../pgsql/index.html">PostgreSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../clickhouse/index.html">ClickHouse Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../nosql/index.html">NoSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../redis/index.html">Redis Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../network/index.html">Network Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../infra_service/index.html">Infra-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../infra_search/index.html">Search Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../info_service/index.html">Info-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../web/index.html">Web Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../big_data/index.html">Big Data Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../machine_learning/index.html">Machine Learning Atlas</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Linux Atlas</a><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../studio/index.html">Studio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../infrastructure/index.html">Infrastructure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../devops/index.html">DevOps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kvm/index.html">KVM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ceph/index.html">Ceph</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../gluster/index.html">Gluster</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ovirt/index.html">oVirt</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../openstack/index.html">OpenStack</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../docker/index.html">Docker</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kubernetes/index.html">Kubernetes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../k8s_dev/index.html">Kubernetes Develop</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../rancher/index.html">Rancher</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../openshift/index.html">OpenShift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../sql/index.html">SQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../sqlite/index.html">SQLite</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../mysql/index.html">MySQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../pgsql/index.html">PostgreSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../nosql/index.html">NoSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../network/index.html">Network</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../infra_service/index.html">Infra-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../infra_search/index.html">Infra-Search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../web/index.html">Web</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../info_service/index.html">Info-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../big_data/index.html">Big Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../machine_learning/index.html">Machine Learning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../drone/index.html">Drone</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Linux</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../best_linux.html">最佳Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../admin/index.html">Linux系统管理</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../redhat_linux/index.html">RedHat Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../arch_linux/index.html">Arch Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../asahi_linux/index.html">Asahi Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../gentoo_linux/index.html">Gentoo Linux</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../lfs_linux/index.html">LFS(Linux from scratch)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lfs/index.html">LFS(Linux from scratch)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../blfs/index.html">BLFS(Beyond Linux from scratch)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../alfs/index.html">ALFS(Automated Linux from scratch)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pilfs/index.html">PiLFS(Automated Linux from scratch on the Raspberry Pi)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../yocto/index.html">Yocto</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../debian/index.html">Debian</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ubuntu_linux/index.html">Ubuntu Linux</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="index.html">SUSE Linux</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="introduce_suse_linux.html">SUSE Linux简介</a></li>
-<li class="toctree-l3"><a class="reference internal" href="install_suse.html">SUSE安装</a></li>
+<li class="toctree-l3"><a class="reference internal" href="suse_distribution_builds.html">SUSE发行版构建(概述)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="install_opensus_leap.html">安装openSUSE Leap</a></li>
+<li class="toctree-l3"><a class="reference internal" href="install_suse.html">SUSE安装</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">zypper - SUSE包管理工具</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#id1">软件仓库</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#suse-package-hub">SUSE Package Hub仓库</a></li>
@@ -107,10 +119,11 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../kali_linux/index.html">Kali Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../tails_linux/index.html">Tails Linux</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../qubes_os/index.html">Qubes OS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../postmarketos/index.html">postmarketOS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../container_os/index.html">容器化操作系统(Container OS)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../fedora_coreos/index.html">Fedora CoreOS容器操作系统</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../chromium_os/index.html">Chromium OS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chromeos/index.html">ChromeOS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../alpine_linux/index.html">Alpine Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../subgraph_os/index.html">Subgraph OS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../kaios/index.html">KaiOS - 世界第三手机操作系统</a></li>
@@ -123,28 +136,30 @@
 <li class="toctree-l2"><a class="reference internal" href="../linux_tablet/index.html">Linux平板</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../kernel/index.html">Kernel Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../performance/index.html">Performance Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../distributed_system/index.html">Distributed System Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../shell/index.html">Shell Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../python/index.html">Python Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../django/index.html">Django Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../flask/index.html">Flask Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../javascript/index.html">JavaScript Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../nodejs/index.html">Node.js Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../clang/index.html">C Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../golang/index.html">Go Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../swift/index.html">Swift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../rust/index.html">Rust Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../ruby/index.html">Ruby Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../arm/index.html">ARM Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../android/index.html">Android Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../bsd/index.html">BSD Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../apple/index.html">Apple Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../windows/index.html">Windows Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../real/index.html">Real Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../management/index.html">Management Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../life/index.html">Life Atlas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kernel/index.html">Kernel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../performance/index.html">Performance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../distributed_system/index.html">Distributed System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../shell/index.html">Shell</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../python/index.html">Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../django/index.html">Django</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../javascript/index.html">JavaScript</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../nodejs/index.html">Node.js</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../clang/index.html">C</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../golang/index.html">Go</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../swift/index.html">Swift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../rust/index.html">Rust</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ruby/index.html">Ruby</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lua/index.html">Lua</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../arm/index.html">ARM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../raspberry_pi/index.html">Raspberry Pi</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../android/index.html">Android</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../bsd/index.html">BSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../freebsd/index.html">FreeBSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../apple/index.html">Apple</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../windows/index.html">Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../real/index.html">Real</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../management/index.html">Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../life/index.html">Life</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../copyright.html">Copyright</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../aboutme.html">关于作者</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../donate.html">捐赠</a></li>
@@ -157,21 +172,21 @@
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../index.html">Cloud Atlas</a>
+          <a href="../../index.html">Cloud Atlas: Discovery</a>
       </nav>
 
       <div class="wy-nav-content">
         <div class="rst-content">
-          <div role="navigation" aria-label="Page navigation">
+          <div role="navigation" aria-label="页面导航">
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
-          <li class="breadcrumb-item"><a href="../index.html">Linux Atlas</a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Linux</a></li>
           <li class="breadcrumb-item"><a href="index.html">SUSE Linux</a></li>
       <li class="breadcrumb-item active">zypper - SUSE包管理工具</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../../_sources/linux/suse_linux/zypper.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../_sources/linux/suse_linux/zypper.rst.txt" rel="nofollow"> 查看页面源码</a>
       </li>
   </ul>
   <hr/>
@@ -180,7 +195,7 @@
            <div itemprop="articleBody">
              
   <section id="zypper-suse">
-<span id="zypper"></span><h1>zypper - SUSE包管理工具<a class="headerlink" href="#zypper-suse" title="Link to this heading">¶</a></h1>
+<span id="zypper"></span><h1>zypper - SUSE包管理工具<a class="headerlink" href="#zypper-suse" title="Link to this heading"></a></h1>
 <p>Zypper 是一个命令行包管理器，用于安装、更新和删除软件包以及管理软件仓库。可以方便我们远程管理软件或者通过shell完成软件管理。</p>
 <p>zypper的简单格式是跟随一个命令，例如应用补丁:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">zypper</span> <span class="n">patch</span>
@@ -199,7 +214,7 @@
 <p>OpenSUSE提供了一个 <a class="reference external" href="https://en.opensuse.org/images/1/17/Zypper-cheat-sheet-1.pdf">Zypper Cheat Sheet</a> 快速命令查询，可以方便我们对照找到使用方法。</p>
 </div>
 <section id="id1">
-<h2>软件仓库<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h2>
+<h2>软件仓库<a class="headerlink" href="#id1" title="Link to this heading"></a></h2>
 <ul>
 <li><p>首先我们检查软件仓库:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">zypper</span> <span class="n">repos</span>
@@ -278,17 +293,17 @@
 </div>
 </div>
 <section id="sles-iso">
-<h3>添加 SLES iso镜像<a class="headerlink" href="#sles-iso" title="Link to this heading">¶</a></h3>
+<h3>添加 SLES iso镜像<a class="headerlink" href="#sles-iso" title="Link to this heading"></a></h3>
 <p>在 <a class="reference internal" href="../../gluster/deploy/suse/deploy_sles15sp4_gluster11_client.html#deploy-sles15sp4-gluster11-client"><span class="std std-ref">在SLES 15 sp4中部署GlusterFS 11客户端</span></a> ，考虑到需要安装依赖，所以添加iso镜像:</p>
 <div class="literal-block-wrapper docutils container" id="id4">
-<div class="code-block-caption"><span class="caption-text">安装 glusterfs 客户端需要安装操作系统依然软件包，所以挂载SLES 15 SP4光盘镜像</span><a class="headerlink" href="#id4" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">安装 glusterfs 客户端需要安装操作系统依然软件包，所以挂载SLES 15 SP4光盘镜像</span><a class="headerlink" href="#id4" title="Link to this code"></a></div>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">zypper</span> <span class="n">ar</span> <span class="o">-</span><span class="n">c</span> <span class="o">-</span><span class="n">t</span> <span class="n">yast2</span> <span class="s2">&quot;iso:/?iso=/root/SLE-15-SP4-Full-x86_64-QU2-Media1.iso&quot;</span> <span class="s2">&quot;SLES-15-SP4&quot;</span>
 </pre></div>
 </div>
 </div>
 <p>此时输出信息:</p>
 <div class="literal-block-wrapper docutils container" id="id5">
-<div class="code-block-caption"><span class="caption-text">挂载成功输出信息</span><a class="headerlink" href="#id5" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">挂载成功输出信息</span><a class="headerlink" href="#id5" title="Link to this code"></a></div>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Warning: Legacy commandline option --type detected. This option is ignored.
 Adding repository &#39;SLES-15-SP4&#39; ......................................................[done]
 Repository &#39;SLES-15-SP4&#39; successfully added
@@ -305,7 +320,7 @@ Repository priorities are without effect. All enabled repositories share the sam
 </div>
 <p>实际上上述操作会在 <code class="docutils literal notranslate"><span class="pre">/etc/zypp/repos.d</span></code> 目录下创建 <code class="docutils literal notranslate"><span class="pre">SLES-15-SP4.repo</span></code> :</p>
 <div class="literal-block-wrapper docutils container" id="id6">
-<div class="code-block-caption"><span class="caption-text">添加iso镜像仓库的配置文件 <code class="docutils literal notranslate"><span class="pre">/etc/zypp/repos.d/SLES-15-SP4.repo</span></code></span><a class="headerlink" href="#id6" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">添加iso镜像仓库的配置文件 <code class="docutils literal notranslate"><span class="pre">/etc/zypp/repos.d/SLES-15-SP4.repo</span></code></span><a class="headerlink" href="#id6" title="Link to this code"></a></div>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>[SLES-15-SP4]
 enabled=1
 autorefresh=0
@@ -315,13 +330,13 @@ baseurl=iso:/?iso=/root/SLE-15-SP4-Full-x86_64-QU2-Media1.iso
 </div>
 </section>
 <section id="createrepo">
-<h3>添加 <a class="reference internal" href="../redhat_linux/admin/createrepo.html#createrepo"><span class="std std-ref">createrepo 创建仓库</span></a> 构建仓库<a class="headerlink" href="#createrepo" title="Link to this heading">¶</a></h3>
+<h3>添加 <a class="reference internal" href="../redhat_linux/admin/createrepo.html#createrepo"><span class="std std-ref">createrepo 创建仓库</span></a> 构建仓库<a class="headerlink" href="#createrepo" title="Link to this heading"></a></h3>
 <p>在 <a class="reference internal" href="../../gluster/deploy/suse/deploy_sles15sp4_gluster11_client.html#deploy-sles15sp4-gluster11-client"><span class="std std-ref">在SLES 15 sp4中部署GlusterFS 11客户端</span></a> ，采用 <a class="reference internal" href="../redhat_linux/admin/createrepo.html#createrepo"><span class="std std-ref">createrepo 创建仓库</span></a> 构建了从社区下载rpm包的软件仓库。实际上SUSE采用了和 <a class="reference internal" href="../redhat_linux/index.html#redhat-linux"><span class="std std-ref">RedHat Linux</span></a> 完全一样的rpm管理方式，只不过配置目录略有差异</p>
 <ul class="simple">
 <li><p>配置 <code class="docutils literal notranslate"><span class="pre">glusterfs-11_sles15sp4.repo</span></code> :</p></li>
 </ul>
 <div class="literal-block-wrapper docutils container" id="id7">
-<div class="code-block-caption"><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">/etc/zypp/repos.d/glusterfs-11_sles15sp4.repo</span></code> 配置</span><a class="headerlink" href="#id7" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">/etc/zypp/repos.d/glusterfs-11_sles15sp4.repo</span></code> 配置</span><a class="headerlink" href="#id7" title="Link to this code"></a></div>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">sels15sp4</span><span class="o">-</span><span class="n">gluster11</span><span class="p">]</span>
 <span class="n">name</span><span class="o">=</span><span class="n">SELS</span><span class="o">-</span><span class="mf">15.4</span> <span class="o">-</span> <span class="n">Gluster</span> <span class="mi">11</span>
 <span class="n">baseurl</span><span class="o">=</span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="mf">33.188.24.141</span><span class="p">:</span><span class="mi">8080</span><span class="o">/</span><span class="n">glusterfs</span><span class="o">/</span><span class="mf">11.0</span><span class="o">/</span><span class="n">SLES</span><span class="o">/</span><span class="mi">15</span><span class="n">SP4</span><span class="o">/</span>
@@ -331,7 +346,7 @@ baseurl=iso:/?iso=/root/SLE-15-SP4-Full-x86_64-QU2-Media1.iso
 </div>
 <p>实际上 <code class="docutils literal notranslate"><span class="pre">zypper</span> <span class="pre">ar</span></code> 就是在 <code class="docutils literal notranslate"><span class="pre">/etc/zypp/repos.d</span></code> 目录下添加 <code class="docutils literal notranslate"><span class="pre">.repo</span></code> 文件，将上述 <code class="docutils literal notranslate"><span class="pre">glusterfs-11_sles15sp4.repo</span></code> 放到 <code class="docutils literal notranslate"><span class="pre">/etc/zypp/repos.d</span></code> ，然后执行 <code class="docutils literal notranslate"><span class="pre">zypper</span> <span class="pre">lr</span> <span class="pre">-u</span></code> 就会看到:</p>
 <div class="literal-block-wrapper docutils container" id="id8">
-<div class="code-block-caption"><span class="caption-text">检查添加 <code class="docutils literal notranslate"><span class="pre">glusterfs-11_sles15sp4.repo</span></code> 配置后的仓库情况</span><a class="headerlink" href="#id8" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">检查添加 <code class="docutils literal notranslate"><span class="pre">glusterfs-11_sles15sp4.repo</span></code> 配置后的仓库情况</span><a class="headerlink" href="#id8" title="Link to this code"></a></div>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span># | Alias                             | Name                           | Enabled | GPG Check | Refresh | URI
 --+-----------------------------------+--------------------------------+---------+-----------+---------+---------------------------------------------------------
 1 | SLES 15 SP4                       | SLES 15 SP4                    | Yes     | ( p) Yes  | No      | iso:/?iso=/root/SLE-15-SP4-Full-x86_64-QU2-Media1.iso
@@ -342,11 +357,11 @@ baseurl=iso:/?iso=/root/SLE-15-SP4-Full-x86_64-QU2-Media1.iso
 </section>
 </section>
 <section id="suse-package-hub">
-<h2>SUSE Package Hub仓库<a class="headerlink" href="#suse-package-hub" title="Link to this heading">¶</a></h2>
+<h2>SUSE Package Hub仓库<a class="headerlink" href="#suse-package-hub" title="Link to this heading"></a></h2>
 <p>除了可以添加OpenSUSE的仓库，对于 SUSE Linux Enterprise Server 12还可以添加 SUSE Package Hub仓库，这个SUSE Package Hub仓库是由使用SUSE Open Build Service的社区提供构建和维护的，这样就可以用于安装SUSE Linux Enterprise Server和Desktop系统的软件包，而不需要自己重新编译。注意，这些软件包不是由SUSE官方直接支持的，但是SLES和SLED系统在使用这些软件包之后依然提供支持。</p>
 <p>注意，SUSE Package Hub软件包不能替代或更新SUSE支持的软件包。</p>
 <section id="id2">
-<h3>操作步骤<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h3>
+<h3>操作步骤<a class="headerlink" href="#id2" title="Link to this heading"></a></h3>
 <ul class="simple">
 <li><p>注册SUSE产品： <a class="reference external" href="https://www.suse.com/documentation/sles-12/book_sle_deployment/data/sec_i_yast2_conf_manual_cc.html">https://www.suse.com/documentation/sles-12/book_sle_deployment/data/sec_i_yast2_conf_manual_cc.html</a></p></li>
 <li><p>激活SUSE Package Hub extension</p></li>
@@ -379,7 +394,7 @@ baseurl=iso:/?iso=/root/SLE-15-SP4-Full-x86_64-QU2-Media1.iso
 </section>
 </section>
 <section id="id3">
-<h2>参考<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h2>
+<h2>参考<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="https://zh.opensuse.org/SDB:Zypper_用法">SDB:Zypper 用法</a></p></li>
 <li><p><a class="reference external" href="https://www.tecmint.com/zypper-commands-to-manage-suse-linux-package-management/">45 Zypper Commands to Manage ‘Suse’ Linux Package Management</a> - 这篇文档比较实用，可以参考学习</p></li>
@@ -392,25 +407,37 @@ baseurl=iso:/?iso=/root/SLE-15-SP4-Full-x86_64-QU2-Media1.iso
 
            </div>
           </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="install_opensus_leap.html" class="btn btn-neutral float-left" title="安装openSUSE Leap" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="suse_register.html" class="btn btn-neutral float-right" title="SUSE订阅和注册" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="install_suse.html" class="btn btn-neutral float-left" title="SUSE安装" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="suse_register.html" class="btn btn-neutral float-right" title="SUSE订阅和注册" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../copyright.html">Copyright</a> 2018 - now, Huatai Huang.</p>
+    <p>&#169; <a href="../../copyright.html">版权所有</a> 2018 - now, Huatai Huang。</p>
   </div>
 
-  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
   
     <!-- your html code here -->
     <br>
-    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡</a></p>
-     
+    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡 👈</a></p>
+    <br>
+    <p>网站采用 <a href="https://utteranc.es/">utterances</a> 评论系统，所有评论存储在<a href="https://github.com/huataihuang/cloud-atlas/issues">GitHub issues</a> 中，如果你看不到下方的评论框，那么可能需要<a href="https://cloud-atlas.readthedocs.io/zh-cn/latest/linux/security/vpn/index.html">自备梯子</a> 👈</p>
+    <div class="articleComments">
+        <comments>
+  <script src="https://utteranc.es/client.js"
+    repo="huataihuang/cloud-atlas"
+    issue-term="pathname"
+    theme="github-light"
+    crossorigin="anonymous"
+    async>
+  </script>
+</comments>
+    </div>
 
 
 </footer>

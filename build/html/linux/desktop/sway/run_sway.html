@@ -1,26 +1,30 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh" data-content_root="../../../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>运行sway窗口管理器 &mdash; Cloud Atlas 0.1 文档</title>
-      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../../_static/graphviz.css" type="text/css" />
+  <title>运行sway窗口管理器 &mdash; Cloud Atlas: Discovery beta 文档</title>
+      <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/graphviz.css?v=fd3f3429" />
+
+  
+    <link rel="shortcut icon" href="../../../_static/favicon.png"/>
   <!--[if lt IE 9]>
     <script src="../../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="../../../_static/documentation_options.js?v=7c91f8fd"></script>
-        <script src="../../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../../_static/documentation_options.js?v=8534f863"></script>
+        <script src="../../../_static/doctools.js?v=9a2dae69"></script>
         <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
-        <script src="../../../_static/translations.js?v=beaddf03"></script>
     <script src="../../../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../../../genindex.html" />
     <link rel="search" title="搜索" href="../../../search.html" />
     <link rel="copyright" title="版权所有" href="../../../copyright.html" />
-    <link rel="next" title="在NVIDIA显卡环境运行Sway" href="sway_with_nvidia.html" />
+    <link rel="next" title="Sway应用程序" href="sway_apps.html" />
     <link rel="prev" title="树莓派编译安装sway" href="build_sway_on_pi.html" /> 
 </head>
 
@@ -33,61 +37,69 @@
           
           
           <a href="../../../index.html" class="icon icon-home">
-            Cloud Atlas
+            Cloud Atlas: Discovery
           </a>
+              <div class="version">
+                1.1
+              </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../../studio/index.html">Studio Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../infrastructure/index.html">Infrastructure Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../devops/index.html">DevOps Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../kvm/index.html">KVM Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../ceph/index.html">Ceph Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../gluster/index.html">Gluster Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../ovirt/index.html">oVirt Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../openstack/index.html">OpenStack Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../docker/index.html">Docker Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../kubernetes/index.html">Kubernetes Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../kubernetes_from_scratch/index.html">Kubernetes From Scratch (KFS) Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../rancher/index.html">Rancher Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../openshift/index.html">OpenShift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../sql/index.html">SQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../sqlite/index.html">SQLite Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../mysql/index.html">MySQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../pgsql/index.html">PostgreSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../clickhouse/index.html">ClickHouse Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../nosql/index.html">NoSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../redis/index.html">Redis Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../network/index.html">Network Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../infra_service/index.html">Infra-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../infra_search/index.html">Search Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../info_service/index.html">Info-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../web/index.html">Web Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../big_data/index.html">Big Data Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../machine_learning/index.html">Machine Learning Atlas</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">Linux Atlas</a><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../studio/index.html">Studio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../infrastructure/index.html">Infrastructure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../devops/index.html">DevOps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../kvm/index.html">KVM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../ceph/index.html">Ceph</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../gluster/index.html">Gluster</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../ovirt/index.html">oVirt</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../openstack/index.html">OpenStack</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../docker/index.html">Docker</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../kubernetes/index.html">Kubernetes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../k8s_dev/index.html">Kubernetes Develop</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../rancher/index.html">Rancher</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../openshift/index.html">OpenShift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../sql/index.html">SQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../sqlite/index.html">SQLite</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../mysql/index.html">MySQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../pgsql/index.html">PostgreSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../nosql/index.html">NoSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../network/index.html">Network</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../infra_service/index.html">Infra-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../infra_search/index.html">Infra-Search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../web/index.html">Web</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../info_service/index.html">Info-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../big_data/index.html">Big Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../machine_learning/index.html">Machine Learning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../drone/index.html">Drone</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">Linux</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../../best_linux.html">最佳Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../admin/index.html">Linux系统管理</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../redhat_linux/index.html">RedHat Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../arch_linux/index.html">Arch Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../asahi_linux/index.html">Asahi Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../gentoo_linux/index.html">Gentoo Linux</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../lfs_linux/index.html">LFS(Linux from scratch)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../lfs/index.html">LFS(Linux from scratch)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../blfs/index.html">BLFS(Beyond Linux from scratch)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../alfs/index.html">ALFS(Automated Linux from scratch)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pilfs/index.html">PiLFS(Automated Linux from scratch on the Raspberry Pi)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../yocto/index.html">Yocto</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../debian/index.html">Debian</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../ubuntu_linux/index.html">Ubuntu Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../suse_linux/index.html">SUSE Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../kali_linux/index.html">Kali Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../tails_linux/index.html">Tails Linux</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../qubes_os/index.html">Qubes OS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../postmarketos/index.html">postmarketOS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../container_os/index.html">容器化操作系统(Container OS)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../fedora_coreos/index.html">Fedora CoreOS容器操作系统</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../chromium_os/index.html">Chromium OS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../chromeos/index.html">ChromeOS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../alpine_linux/index.html">Alpine Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../subgraph_os/index.html">Subgraph OS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../kaios/index.html">KaiOS - 世界第三手机操作系统</a></li>
@@ -99,31 +111,40 @@
 <li class="toctree-l2 current"><a class="reference internal" href="../index.html">Linux桌面</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="../x_window/index.html">X Window显示服务器协议</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../chinese/index.html">Linux中文环境</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../rdp/index.html">Linux桌面</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../rdp/index.html">Linux远程桌面</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../xpra/index.html">X持久化远程应用Xpra</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../vnc/index.html">VNC</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../wayland/index.html">wayland显示服务器协议</a></li>
 <li class="toctree-l3 current"><a class="reference internal" href="index.html">sway - i3兼容Wayland compositor</a><ul class="current">
 <li class="toctree-l4"><a class="reference internal" href="intro_sway.html">sway平铺式窗口管理器简介</a></li>
 <li class="toctree-l4"><a class="reference internal" href="build_sway_on_pi.html">树莓派编译安装sway</a></li>
 <li class="toctree-l4 current"><a class="current reference internal" href="#">运行sway窗口管理器</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../gentoo_linux/gentoo_sway.html">在Gentoo环境安装和使用Sway</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sway_apps.html">Sway应用程序</a></li>
 <li class="toctree-l4"><a class="reference internal" href="sway_with_nvidia.html">在NVIDIA显卡环境运行Sway</a></li>
 <li class="toctree-l4"><a class="reference internal" href="wayland_sway_video.html">Wayland+Sway视频播放</a></li>
 <li class="toctree-l4"><a class="reference internal" href="sway_screen_sharing.html">sway(Wayland)屏幕共享</a></li>
-<li class="toctree-l4"><a class="reference internal" href="sway_gentoo.html">在Gentoo环境安装和使用Sway</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sway_macbook_key.html">sway桌面配置MacBook按键</a></li>
+<li class="toctree-l4"><a class="reference internal" href="foot.html">foot轻量级终端</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sway_screenshot.html">Wayland环境(sway)截屏</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../suckless/index.html">Suckless极简桌面</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../xfce/index.html">xfce</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../lxqt/index.html">LXQt</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../enlightment/index.html">Enlightenment</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../kde/index.html">KDE桌面</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../xpra/index.html">X持久化远程应用Xpra</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../vim/index.html">Vim</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../nvim/index.html">neovim</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../vscode/index.html">VS Code</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../audio/index.html">Linux音频</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../video/index.html">Linux视频</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../xorg_dpi_fix.html">修正xorg显示dpi</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../i3.html">i3窗口管理器</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../oh_my_zsh.html">Oh My Zsh</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../tmux.html">tmux多会话终端管理</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../alacritty.html">GPU加速终端模拟器alacritty</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../sakura.html">sakura</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../read_ebook_in_linux.html">在Linux环境阅读电子书</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../mupdf.html">MuPDF</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../remote_linux_desktop.html">远程访问Linux桌面</a></li>
@@ -139,28 +160,30 @@
 <li class="toctree-l2"><a class="reference internal" href="../../linux_tablet/index.html">Linux平板</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../../kernel/index.html">Kernel Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../performance/index.html">Performance Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../distributed_system/index.html">Distributed System Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../shell/index.html">Shell Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../python/index.html">Python Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../django/index.html">Django Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../flask/index.html">Flask Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../javascript/index.html">JavaScript Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../nodejs/index.html">Node.js Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../clang/index.html">C Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../golang/index.html">Go Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../swift/index.html">Swift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../rust/index.html">Rust Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../ruby/index.html">Ruby Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../arm/index.html">ARM Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../android/index.html">Android Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../bsd/index.html">BSD Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../apple/index.html">Apple Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../windows/index.html">Windows Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../real/index.html">Real Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../management/index.html">Management Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../life/index.html">Life Atlas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../kernel/index.html">Kernel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../performance/index.html">Performance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../distributed_system/index.html">Distributed System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../shell/index.html">Shell</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../python/index.html">Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../django/index.html">Django</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../javascript/index.html">JavaScript</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../nodejs/index.html">Node.js</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../clang/index.html">C</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../golang/index.html">Go</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../swift/index.html">Swift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../rust/index.html">Rust</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../ruby/index.html">Ruby</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../lua/index.html">Lua</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../arm/index.html">ARM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../raspberry_pi/index.html">Raspberry Pi</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../android/index.html">Android</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../bsd/index.html">BSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../freebsd/index.html">FreeBSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../apple/index.html">Apple</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../windows/index.html">Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../real/index.html">Real</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../management/index.html">Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../life/index.html">Life</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../copyright.html">Copyright</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../aboutme.html">关于作者</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../donate.html">捐赠</a></li>
@@ -173,22 +196,22 @@
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../../index.html">Cloud Atlas</a>
+          <a href="../../../index.html">Cloud Atlas: Discovery</a>
       </nav>
 
       <div class="wy-nav-content">
         <div class="rst-content">
-          <div role="navigation" aria-label="Page navigation">
+          <div role="navigation" aria-label="页面导航">
   <ul class="wy-breadcrumbs">
       <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
-          <li class="breadcrumb-item"><a href="../../index.html">Linux Atlas</a></li>
+          <li class="breadcrumb-item"><a href="../../index.html">Linux</a></li>
           <li class="breadcrumb-item"><a href="../index.html">Linux桌面</a></li>
           <li class="breadcrumb-item"><a href="index.html">sway - i3兼容Wayland compositor</a></li>
       <li class="breadcrumb-item active">运行sway窗口管理器</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../../../_sources/linux/desktop/sway/run_sway.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../../_sources/linux/desktop/sway/run_sway.rst.txt" rel="nofollow"> 查看页面源码</a>
       </li>
   </ul>
   <hr/>
@@ -197,14 +220,14 @@
            <div itemprop="articleBody">
              
   <section id="sway">
-<span id="run-sway"></span><h1>运行sway窗口管理器<a class="headerlink" href="#sway" title="Link to this heading">¶</a></h1>
+<span id="run-sway"></span><h1>运行sway窗口管理器<a class="headerlink" href="#sway" title="Link to this heading"></a></h1>
 <section id="id1">
-<h2>安装<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h2>
+<h2>安装<a class="headerlink" href="#id1" title="Link to this heading"></a></h2>
 <ul class="simple">
 <li><p><a class="reference internal" href="../../kali_linux/index.html#kali-linux"><span class="std std-ref">Kali Linux</span></a> 环境安装 <code class="docutils literal notranslate"><span class="pre">sway</span></code> :</p></li>
 </ul>
 <div class="literal-block-wrapper docutils container" id="id7">
-<div class="code-block-caption"><span class="caption-text">apt安装sway</span><a class="headerlink" href="#id7" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">apt安装sway</span><a class="headerlink" href="#id7" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>sway<span class="w"> </span>wofi
 </pre></div>
 </div>
@@ -212,7 +235,7 @@
 <p><a class="reference internal" href="../../kali_linux/index.html#kali-linux"><span class="std std-ref">Kali Linux</span></a> 默认使用的图形登陆管理器可以自动管理 <code class="docutils literal notranslate"><span class="pre">sway</span></code> 的登陆会话，并且会正确设置 <a class="reference internal" href="../wayland/index.html#wayland"><span class="std std-ref">wayland显示服务器协议</span></a> 显示服务，所以只需要在图形登陆管理器中选择 <code class="docutils literal notranslate"><span class="pre">sway</span></code> 登陆就是这个平铺WM了。</p>
 <p>我最终改为 <code class="docutils literal notranslate"><span class="pre">Raspberry</span> <span class="pre">Pi</span> <span class="pre">OS</span></code> 工作环境，采用精简安装，没有安装窗口管理器。那么最方便自动启动 <code class="docutils literal notranslate"><span class="pre">sway</span></code> 的方法是在环境配置(例如  <code class="docutils literal notranslate"><span class="pre">~/.zshrc</span></code> )添加以下内容:</p>
 <div class="literal-block-wrapper docutils container" id="id8">
-<div class="code-block-caption"><span class="caption-text">复制sway个人配置</span><a class="headerlink" href="#id8" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">复制sway个人配置</span><a class="headerlink" href="#id8" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="k">if</span><span class="w"> </span><span class="o">[</span><span class="w"> </span>-z<span class="w"> </span><span class="nv">$DISPLAY</span><span class="w"> </span><span class="o">]</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="o">[</span><span class="w"> </span><span class="s2">&quot;</span><span class="k">$(</span>tty<span class="k">)</span><span class="s2">&quot;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;/dev/tty1&quot;</span><span class="w"> </span><span class="o">]</span><span class="p">;</span><span class="w"> </span><span class="k">then</span>
 <span class="w">  </span><span class="nb">exec</span><span class="w"> </span>sway
 <span class="k">fi</span>
@@ -222,7 +245,7 @@
 <p>这样启动到字符终端就会立即启动 <code class="docutils literal notranslate"><span class="pre">sway</span></code> ，而 <code class="docutils literal notranslate"><span class="pre">sway</span></code> 图形管理器退出后会立即再次启动 <code class="docutils literal notranslate"><span class="pre">tty</span></code> ，也就是再次自动登陆到 <code class="docutils literal notranslate"><span class="pre">sway</span></code></p>
 </section>
 <section id="id2">
-<h2>使用设置<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
+<h2>使用设置<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
 <ul class="simple">
 <li><p><a class="reference internal" href="../chinese/fcitx_sway.html#fcitx-sway"><span class="std std-ref">sway窗口管理器使用fcitx5</span></a> 输入法可以非常完美使用中文，但是需要注意</p>
 <ul>
@@ -233,7 +256,7 @@
 <li><p>配置定制，先将全局配置复制到个人目录下:</p></li>
 </ul>
 <div class="literal-block-wrapper docutils container" id="id9">
-<div class="code-block-caption"><span class="caption-text">复制sway个人配置</span><a class="headerlink" href="#id9" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">复制sway个人配置</span><a class="headerlink" href="#id9" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mkdir<span class="w"> </span>-p<span class="w"> </span>~/.config/sway
 cp<span class="w"> </span>/etc/sway/config<span class="w"> </span>~/.config/sway/
 </pre></div>
@@ -243,7 +266,7 @@ cp<span class="w"> </span>/etc/sway/config<span class="w"> </span>~/.config/sway
 <li><p>我的配置:</p></li>
 </ul>
 <div class="literal-block-wrapper docutils container" id="id10">
-<div class="code-block-caption"><span class="caption-text">sway个人配置</span><a class="headerlink" href="#id10" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">sway个人配置</span><a class="headerlink" href="#id10" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Default config for sway</span>
 <span class="c1">#</span>
 <span class="c1"># Copy this to ~/.config/sway/config and edit it to your liking.</span>
@@ -485,14 +508,14 @@ include<span class="w"> </span>/etc/sway/config.d/*
 <li><p>GTK应用默认启用wayland所以无需配置，但是QT5应用应用需要设置环境变量引导程序启用Wayland - 配置 <code class="docutils literal notranslate"><span class="pre">/etc/environment</span></code> 添加</p></li>
 </ul>
 <div class="literal-block-wrapper docutils container" id="id11">
-<div class="code-block-caption"><span class="caption-text">QT5应用环境变量 /etc/environment</span><a class="headerlink" href="#id11" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">QT5应用环境变量 /etc/environment</span><a class="headerlink" href="#id11" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nv">QT_QPA_PLATFORM</span><span class="o">=</span>wayland
 </pre></div>
 </div>
 </div>
 </section>
 <section id="id3">
-<h2>问题和解决方法<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h2>
+<h2>问题和解决方法<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
 <p>由于 <code class="docutils literal notranslate"><span class="pre">sway</span></code> 使用了前沿的 <a class="reference internal" href="../wayland/index.html#wayland"><span class="std std-ref">wayland显示服务器协议</span></a> 图形显示服务，所以有些应用可能无法native支持，或者需要特殊运行参数</p>
 <ul>
 <li><p>firefox可以直接运行在纯 <code class="docutils literal notranslate"><span class="pre">wayland</span></code> 的 <code class="docutils literal notranslate"><span class="pre">sway</span></code> 环境</p></li>
@@ -507,12 +530,12 @@ include<span class="w"> </span>/etc/sway/config.d/*
 </div>
 </li>
 </ul>
-<p>如果使用socks5代理，则类似参数 <code class="docutils literal notranslate"><span class="pre">--proxy-server=&quot;socks5://127.0.0.1:1080&quot;</span></code> 。更为方便的方法是使用 <a class="reference internal" href="../../../appendix/ssh_tunnel_gfw_autoproxy.html#ssh-tunnel-gfw-autoproxy"><span class="std std-ref">结合SSH Tunnel和AutoProxy插件翻墙</span></a> 方案中的 <code class="docutils literal notranslate"><span class="pre">Proxy</span> <span class="pre">SwitchyOmega</span></code></p>
+<p>如果使用socks5代理，则类似参数 <code class="docutils literal notranslate"><span class="pre">--proxy-server=&quot;socks5://127.0.0.1:1080&quot;</span></code> 。更为方便的方法是使用 <a class="reference internal" href="../../../infra_service/ssh/ssh_tunnel_gfw_autoproxy.html#ssh-tunnel-gfw-autoproxy"><span class="std std-ref">结合SSH Tunnel和AutoProxy插件翻墙</span></a> 方案中的 <code class="docutils literal notranslate"><span class="pre">Proxy</span> <span class="pre">SwitchyOmega</span></code></p>
 <ul class="simple">
 <li><p>chromium不能使用 <a class="reference internal" href="../chinese/fcitx.html#fcitx"><span class="std std-ref">小企鹅输入法fcitx</span></a> 输入中文，但是firefox可以，暂时采用双浏览器还没有解决这个问题</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">audacious</span></code> 启动需要传递 <code class="docutils literal notranslate"><span class="pre">-Q</span></code> 参数(QT界面)，使用默认的 <code class="docutils literal notranslate"><span class="pre">-G</span></code> (GTK界面)无法打开display</p></li>
 <li><p>音乐播放需要使用 <a class="reference internal" href="../audio/mpd.html#mpd"><span class="std std-ref">MPD(Music Player Daemon)</span></a> 服务，特别需要注意默认配置不能使用HDMI输出，需要定制 <code class="docutils literal notranslate"><span class="pre">mpd.conf</span></code> 配置</p></li>
-<li><p>VLC可能是最好的视频播放软件，但是我的 <a class="reference internal" href="index.html#sway"><span class="std std-ref">sway - i3兼容Wayland compositor</span></a> 环境运行在 <a class="reference internal" href="../../../arm/raspberry_pi/hardware/pi_400.html#pi-400"><span class="std std-ref">树莓派Raspberry Pi 400</span></a> 需要配置正确的音频设备 <a class="reference internal" href="../audio/alsa.html#alsa"><span class="std std-ref">ALSA内核声音子系统</span></a> 以及正确的视频设备 <a class="reference internal" href="../wayland/index.html#wayland"><span class="std std-ref">wayland显示服务器协议</span></a> :</p>
+<li><p>VLC可能是最好的视频播放软件，但是我的 <a class="reference internal" href="index.html#sway"><span class="std std-ref">sway - i3兼容Wayland compositor</span></a> 环境运行在 <a class="reference internal" href="../../../raspberry_pi/hardware/pi_400.html#pi-400"><span class="std std-ref">树莓派Raspberry Pi 400</span></a> 需要配置正确的音频设备 <code class="docutils literal notranslate"><span class="pre">ALSA</span></code> 以及正确的视频设备 <a class="reference internal" href="../wayland/index.html#wayland"><span class="std std-ref">wayland显示服务器协议</span></a> :</p>
 <ul>
 <li><p>音频输出输出:</p>
 <ul>
@@ -529,7 +552,7 @@ include<span class="w"> </span>/etc/sway/config.d/*
 </ul>
 </li>
 </ul>
-<p>这是我的 <a class="reference internal" href="../../../arm/raspberry_pi/hardware/pi_400.html#pi-400"><span class="std std-ref">树莓派Raspberry Pi 400</span></a> 硬件环境配置，你的设备可能不同，请尝试对应的硬件设备配置。</p>
+<p>这是我的 <a class="reference internal" href="../../../raspberry_pi/hardware/pi_400.html#pi-400"><span class="std std-ref">树莓派Raspberry Pi 400</span></a> 硬件环境配置，你的设备可能不同，请尝试对应的硬件设备配置。</p>
 <ul class="simple">
 <li><p>浏览器</p>
 <ul>
@@ -542,7 +565,7 @@ include<span class="w"> </span>/etc/sway/config.d/*
 </ul>
 <p>最终我在 <a class="reference internal" href="../../../real/mobile_work/mobile_pi_dev.html#mobile-pi-dev"><span class="std std-ref">移动开发:树莓派开发环境构建</span></a> 中采用 <code class="docutils literal notranslate"><span class="pre">Falkon</span></code> 作为主力浏览器</p>
 <section id="mod-d">
-<h3><code class="docutils literal notranslate"><span class="pre">$mod</span> <span class="pre">+</span> <span class="pre">d</span></code> 不能唤起菜单<a class="headerlink" href="#mod-d" title="Link to this heading">¶</a></h3>
+<h3><code class="docutils literal notranslate"><span class="pre">$mod</span> <span class="pre">+</span> <span class="pre">d</span></code> 不能唤起菜单<a class="headerlink" href="#mod-d" title="Link to this heading"></a></h3>
 <ul>
 <li><p>单独在终端执行 <code class="docutils literal notranslate"><span class="pre">dmenu</span></code> 命令提示:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cannot</span> <span class="nb">open</span> <span class="n">display</span>
@@ -571,14 +594,14 @@ set $menu wofi --show=drun --lines=5 --prompt=&quot;&quot;
 </section>
 </section>
 <section id="firefox">
-<h2>Firefox<a class="headerlink" href="#firefox" title="Link to this heading">¶</a></h2>
+<h2>Firefox<a class="headerlink" href="#firefox" title="Link to this heading"></a></h2>
 <p>在 Firefox 的 <code class="docutils literal notranslate"><span class="pre">about:supprt</span></code> 页面可以观察Firefox是否已经完全切换到 native wayland :</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">Window</span> <span class="pre">Protocol</span></code> 应该是 <code class="docutils literal notranslate"><span class="pre">wayland</span></code> ，如果显示 <code class="docutils literal notranslate"><span class="pre">xwayland</span></code> 则建议设置环境变朗 <code class="docutils literal notranslate"><span class="pre">set</span> <span class="pre">-x</span> <span class="pre">MOZ_ENABLE_WAYLAND</span> <span class="pre">1</span></code> 然后在启动Firefox观察</p></li>
 </ul>
 </section>
 <section id="chroium">
-<h2>Chroium<a class="headerlink" href="#chroium" title="Link to this heading">¶</a></h2>
+<h2>Chroium<a class="headerlink" href="#chroium" title="Link to this heading"></a></h2>
 <p>配置 <code class="docutils literal notranslate"><span class="pre">~/.config/chromium-flags.conf</span></code> 添加以下行:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">--</span><span class="n">enable</span><span class="o">-</span><span class="n">features</span><span class="o">=</span><span class="n">UseOzonePlatform</span>
 <span class="o">--</span><span class="n">ozone</span><span class="o">-</span><span class="n">platform</span><span class="o">=</span><span class="n">wayland</span>
@@ -587,9 +610,9 @@ set $menu wofi --show=drun --lines=5 --prompt=&quot;&quot;
 <p>可以使chromium 运行在wayland模式。</p>
 </section>
 <section id="id5">
-<h2>参考<a class="headerlink" href="#id5" title="Link to this heading">¶</a></h2>
+<h2>参考<a class="headerlink" href="#id5" title="Link to this heading"></a></h2>
 <ul class="simple">
-<li><p><a class="reference external" href="https://zhuanlan.zhihu.com/p/441251646">反璞归真 – Sway上手和配置(2021)</a></p></li>
+<li><p><a class="reference external" href="https://zhuanlan.zhihu.com/p/441251646">反璞归真 -- Sway上手和配置(2021)</a></p></li>
 <li><p><a class="reference external" href="https://blog.tiantian.cool/wayland/">使用Wayland和sway</a></p></li>
 <li><p><a class="reference external" href="https://wiki.archlinux.org/title/Sway">arch linux: sway</a></p></li>
 <li><p><a class="reference external" href="https://www.fosskers.ca/en/blog/wayland">Full Wayland Setup on Arch Linux</a> 这篇文档非常详细介绍了Wayland的配置以及系列软件，工作配置可做借鉴</p></li>
@@ -602,25 +625,37 @@ set $menu wofi --show=drun --lines=5 --prompt=&quot;&quot;
 
            </div>
           </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="build_sway_on_pi.html" class="btn btn-neutral float-left" title="树莓派编译安装sway" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="sway_with_nvidia.html" class="btn btn-neutral float-right" title="在NVIDIA显卡环境运行Sway" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="build_sway_on_pi.html" class="btn btn-neutral float-left" title="树莓派编译安装sway" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="sway_apps.html" class="btn btn-neutral float-right" title="Sway应用程序" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../../copyright.html">Copyright</a> 2018 - now, Huatai Huang.</p>
+    <p>&#169; <a href="../../../copyright.html">版权所有</a> 2018 - now, Huatai Huang。</p>
   </div>
 
-  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
   
     <!-- your html code here -->
     <br>
-    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡</a></p>
-     
+    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡 👈</a></p>
+    <br>
+    <p>网站采用 <a href="https://utteranc.es/">utterances</a> 评论系统，所有评论存储在<a href="https://github.com/huataihuang/cloud-atlas/issues">GitHub issues</a> 中，如果你看不到下方的评论框，那么可能需要<a href="https://cloud-atlas.readthedocs.io/zh-cn/latest/linux/security/vpn/index.html">自备梯子</a> 👈</p>
+    <div class="articleComments">
+        <comments>
+  <script src="https://utteranc.es/client.js"
+    repo="huataihuang/cloud-atlas"
+    issue-term="pathname"
+    theme="github-light"
+    crossorigin="anonymous"
+    async>
+  </script>
+</comments>
+    </div>
 
 
 </footer>

@@ -1,27 +1,31 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh" data-content_root="../../../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>存储设备S.M.A.R.T监控 &mdash; Cloud Atlas 0.1 文档</title>
-      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../../_static/graphviz.css" type="text/css" />
+  <title>存储设备S.M.A.R.T监控 &mdash; Cloud Atlas: Discovery beta 文档</title>
+      <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/graphviz.css?v=fd3f3429" />
+
+  
+    <link rel="shortcut icon" href="../../../_static/favicon.png"/>
   <!--[if lt IE 9]>
     <script src="../../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="../../../_static/documentation_options.js?v=7c91f8fd"></script>
-        <script src="../../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../../_static/documentation_options.js?v=8534f863"></script>
+        <script src="../../../_static/doctools.js?v=9a2dae69"></script>
         <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
-        <script src="../../../_static/translations.js?v=beaddf03"></script>
     <script src="../../../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../../../genindex.html" />
     <link rel="search" title="搜索" href="../../../search.html" />
     <link rel="copyright" title="版权所有" href="../../../copyright.html" />
     <link rel="next" title="检查硬盘SN" href="check_hd_sn.html" />
-    <link rel="prev" title="Linux固态驱动器(SSD)" href="linux_ssd.html" /> 
+    <link rel="prev" title="奥睿科（ORICO）M.2 NVMe/SATA双协议移动硬盘盒" href="orico_m2_nvme_sata_udisk.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -33,61 +37,69 @@
           
           
           <a href="../../../index.html" class="icon icon-home">
-            Cloud Atlas
+            Cloud Atlas: Discovery
           </a>
+              <div class="version">
+                1.1
+              </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../../studio/index.html">Studio Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../infrastructure/index.html">Infrastructure Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../devops/index.html">DevOps Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../kvm/index.html">KVM Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../ceph/index.html">Ceph Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../gluster/index.html">Gluster Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../ovirt/index.html">oVirt Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../openstack/index.html">OpenStack Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../docker/index.html">Docker Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../kubernetes/index.html">Kubernetes Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../kubernetes_from_scratch/index.html">Kubernetes From Scratch (KFS) Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../rancher/index.html">Rancher Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../openshift/index.html">OpenShift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../sql/index.html">SQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../sqlite/index.html">SQLite Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../mysql/index.html">MySQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../pgsql/index.html">PostgreSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../clickhouse/index.html">ClickHouse Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../nosql/index.html">NoSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../redis/index.html">Redis Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../network/index.html">Network Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../infra_service/index.html">Infra-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../infra_search/index.html">Search Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../info_service/index.html">Info-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../web/index.html">Web Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../big_data/index.html">Big Data Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../machine_learning/index.html">Machine Learning Atlas</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">Linux Atlas</a><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../studio/index.html">Studio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../infrastructure/index.html">Infrastructure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../devops/index.html">DevOps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../kvm/index.html">KVM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../ceph/index.html">Ceph</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../gluster/index.html">Gluster</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../ovirt/index.html">oVirt</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../openstack/index.html">OpenStack</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../docker/index.html">Docker</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../kubernetes/index.html">Kubernetes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../k8s_dev/index.html">Kubernetes Develop</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../rancher/index.html">Rancher</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../openshift/index.html">OpenShift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../sql/index.html">SQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../sqlite/index.html">SQLite</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../mysql/index.html">MySQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../pgsql/index.html">PostgreSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../nosql/index.html">NoSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../network/index.html">Network</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../infra_service/index.html">Infra-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../infra_search/index.html">Infra-Search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../web/index.html">Web</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../info_service/index.html">Info-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../big_data/index.html">Big Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../machine_learning/index.html">Machine Learning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../drone/index.html">Drone</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">Linux</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../../best_linux.html">最佳Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../admin/index.html">Linux系统管理</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../redhat_linux/index.html">RedHat Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../arch_linux/index.html">Arch Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../asahi_linux/index.html">Asahi Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../gentoo_linux/index.html">Gentoo Linux</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../lfs_linux/index.html">LFS(Linux from scratch)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../lfs/index.html">LFS(Linux from scratch)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../blfs/index.html">BLFS(Beyond Linux from scratch)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../alfs/index.html">ALFS(Automated Linux from scratch)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pilfs/index.html">PiLFS(Automated Linux from scratch on the Raspberry Pi)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../yocto/index.html">Yocto</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../debian/index.html">Debian</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../ubuntu_linux/index.html">Ubuntu Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../suse_linux/index.html">SUSE Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../kali_linux/index.html">Kali Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../tails_linux/index.html">Tails Linux</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../qubes_os/index.html">Qubes OS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../postmarketos/index.html">postmarketOS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../container_os/index.html">容器化操作系统(Container OS)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../fedora_coreos/index.html">Fedora CoreOS容器操作系统</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../chromium_os/index.html">Chromium OS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../chromeos/index.html">ChromeOS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../alpine_linux/index.html">Alpine Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../subgraph_os/index.html">Subgraph OS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../kaios/index.html">KaiOS - 世界第三手机操作系统</a></li>
@@ -95,6 +107,7 @@
 <li class="toctree-l2 current"><a class="reference internal" href="../index.html">Linux存储</a><ul class="current">
 <li class="toctree-l3 current"><a class="reference internal" href="index.html">Linux磁盘</a><ul class="current">
 <li class="toctree-l4"><a class="reference internal" href="linux_ssd.html">Linux固态驱动器(SSD)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="orico_m2_nvme_sata_udisk.html">奥睿科（ORICO）M.2 NVMe/SATA双协议移动硬盘盒</a></li>
 <li class="toctree-l4 current"><a class="current reference internal" href="#">存储设备S.M.A.R.T监控</a></li>
 <li class="toctree-l4"><a class="reference internal" href="check_hd_sn.html">检查硬盘SN</a></li>
 <li class="toctree-l4"><a class="reference internal" href="linux_partition.html">Linux分区</a></li>
@@ -107,6 +120,7 @@
 <li class="toctree-l4"><a class="reference internal" href="update_intel_545s_ssd_firmware.html">升级Intel 545s SSD firmware</a></li>
 <li class="toctree-l4"><a class="reference internal" href="using_apple_superdrive_on_linux.html">在Linux系统中使用Apple SuperDrive光驱</a></li>
 <li class="toctree-l4"><a class="reference internal" href="sandisk_cloudspeed_eco_gen_ii_sata_ssd.html">SanDisk CloudSpeed Eco Gen. II SATA SSD企业级固态硬盘</a></li>
+<li class="toctree-l4"><a class="reference internal" href="change_disk_partition_uuid.html">修改磁盘和分区的UUID</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../nvme/index.html">Linux NVMe</a></li>
@@ -121,6 +135,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../stratis/index.html">Stratis - Linux存储系统</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../openmediavault/index.html">openmediavault - Linux NAS存储</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../bcache/index.html">Linux Bcache(块缓存)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../nas/index.html">NAS</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../network/index.html">Linux网络</a></li>
@@ -130,28 +145,30 @@
 <li class="toctree-l2"><a class="reference internal" href="../../linux_tablet/index.html">Linux平板</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../../kernel/index.html">Kernel Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../performance/index.html">Performance Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../distributed_system/index.html">Distributed System Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../shell/index.html">Shell Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../python/index.html">Python Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../django/index.html">Django Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../flask/index.html">Flask Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../javascript/index.html">JavaScript Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../nodejs/index.html">Node.js Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../clang/index.html">C Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../golang/index.html">Go Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../swift/index.html">Swift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../rust/index.html">Rust Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../ruby/index.html">Ruby Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../arm/index.html">ARM Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../android/index.html">Android Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../bsd/index.html">BSD Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../apple/index.html">Apple Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../windows/index.html">Windows Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../real/index.html">Real Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../management/index.html">Management Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../life/index.html">Life Atlas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../kernel/index.html">Kernel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../performance/index.html">Performance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../distributed_system/index.html">Distributed System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../shell/index.html">Shell</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../python/index.html">Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../django/index.html">Django</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../javascript/index.html">JavaScript</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../nodejs/index.html">Node.js</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../clang/index.html">C</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../golang/index.html">Go</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../swift/index.html">Swift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../rust/index.html">Rust</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../ruby/index.html">Ruby</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../lua/index.html">Lua</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../arm/index.html">ARM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../raspberry_pi/index.html">Raspberry Pi</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../android/index.html">Android</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../bsd/index.html">BSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../freebsd/index.html">FreeBSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../apple/index.html">Apple</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../windows/index.html">Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../real/index.html">Real</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../management/index.html">Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../life/index.html">Life</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../copyright.html">Copyright</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../aboutme.html">关于作者</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../donate.html">捐赠</a></li>
@@ -164,22 +181,22 @@
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../../index.html">Cloud Atlas</a>
+          <a href="../../../index.html">Cloud Atlas: Discovery</a>
       </nav>
 
       <div class="wy-nav-content">
         <div class="rst-content">
-          <div role="navigation" aria-label="Page navigation">
+          <div role="navigation" aria-label="页面导航">
   <ul class="wy-breadcrumbs">
       <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
-          <li class="breadcrumb-item"><a href="../../index.html">Linux Atlas</a></li>
+          <li class="breadcrumb-item"><a href="../../index.html">Linux</a></li>
           <li class="breadcrumb-item"><a href="../index.html">Linux存储</a></li>
           <li class="breadcrumb-item"><a href="index.html">Linux磁盘</a></li>
       <li class="breadcrumb-item active">存储设备S.M.A.R.T监控</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../../../_sources/linux/storage/disk/smart_monitor.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../../_sources/linux/storage/disk/smart_monitor.rst.txt" rel="nofollow"> 查看页面源码</a>
       </li>
   </ul>
   <hr/>
@@ -188,10 +205,10 @@
            <div itemprop="articleBody">
              
   <section id="s-m-a-r-t">
-<span id="smart-monitor"></span><h1>存储设备S.M.A.R.T监控<a class="headerlink" href="#s-m-a-r-t" title="Link to this heading">¶</a></h1>
+<span id="smart-monitor"></span><h1>存储设备S.M.A.R.T监控<a class="headerlink" href="#s-m-a-r-t" title="Link to this heading"></a></h1>
 <p>我的二手 <a class="reference internal" href="../../server/hardware/hpe/hpe_dl360_gen9.html#hpe-dl360-gen9"><span class="std std-ref">HPE ProLiant DL360 Gen9服务器</span></a> 服务器使用了一块我很久以前购买的Intel SATA SSD磁盘，不过这块SSD时不时在系统日志中留下触目惊心的Err记录:</p>
 <div class="literal-block-wrapper docutils container" id="id3">
-<div class="code-block-caption"><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">dmesg</span></code> 中SSD磁盘错误日志</span><a class="headerlink" href="#id3" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">dmesg</span></code> 中SSD磁盘错误日志</span><a class="headerlink" href="#id3" title="Link to this code"></a></div>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>[Sun Aug  6 11:05:54 2023] ata5.00: exception Emask 0x0 SAct 0x80080000 SErr 0x0 action 0x6 frozen
 [Sun Aug  6 11:05:54 2023] ata5.00: failed command: READ FPDMA QUEUED
 [Sun Aug  6 11:05:54 2023] ata5.00: cmd 60/08:98:98:20:9c/00:00:02:00:00/40 tag 19 ncq dma 4096 in
@@ -240,31 +257,31 @@
 <li><p><a class="reference internal" href="../../../kubernetes/monitor/prometheus/prometheus_exporters/node_exporter_smartctl_text_plugin.html#node-exporter-smartctl-text-plugin"><span class="std std-ref">Node Exporter smartctl 文本插件</span></a> 通过自己部署的 Prometheus + Grafana 监控来直观观察</p></li>
 </ul>
 <section id="smartmontools">
-<h2>安装 <code class="docutils literal notranslate"><span class="pre">smartmontools</span></code><a class="headerlink" href="#smartmontools" title="Link to this heading">¶</a></h2>
+<h2>安装 <code class="docutils literal notranslate"><span class="pre">smartmontools</span></code><a class="headerlink" href="#smartmontools" title="Link to this heading"></a></h2>
 <ul class="simple">
 <li><p>在 <a class="reference internal" href="../../ubuntu_linux/index.html#ubuntu-linux"><span class="std std-ref">Ubuntu Linux</span></a> 环境使用 <a class="reference internal" href="../../ubuntu_linux/admin/apt.html#apt"><span class="std std-ref">APT包管理</span></a> 安装:</p></li>
 </ul>
 <div class="literal-block-wrapper docutils container" id="id4">
-<div class="code-block-caption"><span class="caption-text">在Ubuntu安装 <code class="docutils literal notranslate"><span class="pre">smartmontools</span></code></span><a class="headerlink" href="#id4" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">在Ubuntu安装 <code class="docutils literal notranslate"><span class="pre">smartmontools</span></code></span><a class="headerlink" href="#id4" title="Link to this code"></a></div>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">apt</span> <span class="n">install</span> <span class="n">smartmontools</span>
 </pre></div>
 </div>
 </div>
 </section>
 <section id="smart-info">
-<h2>SMART info<a class="headerlink" href="#smart-info" title="Link to this heading">¶</a></h2>
+<h2>SMART info<a class="headerlink" href="#smart-info" title="Link to this heading"></a></h2>
 <ul class="simple">
 <li><p>检查磁盘设备是否支持和激活SMART:</p></li>
 </ul>
 <div class="literal-block-wrapper docutils container" id="id5">
-<div class="code-block-caption"><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">smartctl</span> <span class="pre">-i</span></code> 检查磁盘info信息</span><a class="headerlink" href="#id5" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">smartctl</span> <span class="pre">-i</span></code> 检查磁盘info信息</span><a class="headerlink" href="#id5" title="Link to this code"></a></div>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">smartctl</span> <span class="o">-</span><span class="n">i</span> <span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">sda</span>
 </pre></div>
 </div>
 </div>
 <p>我的 <a class="reference internal" href="sandisk_cloudspeed_eco_gen_ii_sata_ssd.html#sandisk-cloudspeed-eco-gen-ii-sata-ssd"><span class="std std-ref">SanDisk CloudSpeed Eco Gen. II SATA SSD企业级固态硬盘</span></a> SMART 信息如下:</p>
 <div class="literal-block-wrapper docutils container" id="id6">
-<div class="code-block-caption"><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">smartctl</span> <span class="pre">-i</span></code> 检查Sandisk SSD磁盘info信息</span><a class="headerlink" href="#id6" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">smartctl</span> <span class="pre">-i</span></code> 检查Sandisk SSD磁盘info信息</span><a class="headerlink" href="#id6" title="Link to this code"></a></div>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">===</span> <span class="n">START</span> <span class="n">OF</span> <span class="n">INFORMATION</span> <span class="n">SECTION</span> <span class="o">===</span>
 <span class="n">Model</span> <span class="n">Family</span><span class="p">:</span>     <span class="n">Sandisk</span> <span class="n">SATA</span> <span class="n">Cloudspeed</span> <span class="n">Max</span> <span class="ow">and</span> <span class="n">GEN2</span> <span class="n">ESS</span> <span class="n">SSDs</span>
 <span class="n">Device</span> <span class="n">Model</span><span class="p">:</span>     <span class="n">SDLF1CRR</span><span class="o">-</span><span class="mi">019</span><span class="n">T</span><span class="o">-</span><span class="mi">1</span><span class="n">HA1</span>
@@ -285,7 +302,7 @@
 </div>
 </div>
 <div class="literal-block-wrapper docutils container" id="id7">
-<div class="code-block-caption"><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">smartctl</span> <span class="pre">-i</span></code> 检查Intel SSD磁盘info信息</span><a class="headerlink" href="#id7" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">smartctl</span> <span class="pre">-i</span></code> 检查Intel SSD磁盘info信息</span><a class="headerlink" href="#id7" title="Link to this code"></a></div>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">===</span> <span class="n">START</span> <span class="n">OF</span> <span class="n">INFORMATION</span> <span class="n">SECTION</span> <span class="o">===</span>
 <span class="n">Model</span> <span class="n">Family</span><span class="p">:</span>     <span class="n">Intel</span> <span class="mi">545</span><span class="n">s</span> <span class="n">Series</span> <span class="n">SSDs</span>
 <span class="n">Device</span> <span class="n">Model</span><span class="p">:</span>     <span class="n">INTEL</span> <span class="n">SSDSC2KW512G8</span>
@@ -308,7 +325,7 @@
 </div>
 </section>
 <section id="smart-test">
-<h2>SMART test<a class="headerlink" href="#smart-test" title="Link to this heading">¶</a></h2>
+<h2>SMART test<a class="headerlink" href="#smart-test" title="Link to this heading"></a></h2>
 <p>SMART提供 <strong>两种</strong> 不同的测试:</p>
 <ul class="simple">
 <li><p>Background Mode(后台模式): 后台测试的优先级低，也就是说硬盘仍然会处理常规指令。如果硬盘繁忙，则测试会暂停并且以低负载速度进行，这样不会中断硬盘工作</p></li>
@@ -316,9 +333,9 @@
 </ul>
 <p>根据经验， <strong>建议采用后台模式</strong></p>
 <section id="ata-scsi">
-<h3>ATA/SCSI(共有的)测试<a class="headerlink" href="#ata-scsi" title="Link to this heading">¶</a></h3>
+<h3>ATA/SCSI(共有的)测试<a class="headerlink" href="#ata-scsi" title="Link to this heading"></a></h3>
 <section id="short-test">
-<h4>Short Test<a class="headerlink" href="#short-test" title="Link to this heading">¶</a></h4>
+<h4>Short Test<a class="headerlink" href="#short-test" title="Link to this heading"></a></h4>
 <p><code class="docutils literal notranslate"><span class="pre">短测试</span></code> 的目的是快速识别有缺陷的硬盘驱动器。因此，短测试的最大持续实践大约2分钟。该测试将磁盘氛围3个不同阶段来检查:</p>
 <ul class="simple">
 <li><p><strong>Electrical Properties</strong> (电气特性): 控制器测试自己的的电子电路，由于这个测试是每个制造商特有的，因此无法确切解释正在测试的内容。例如测试内部RAM，读写电路或磁头电子器件</p></li>
@@ -327,7 +344,7 @@
 </ul>
 </section>
 <section id="long-test">
-<h4>Long Test<a class="headerlink" href="#long-test" title="Link to this heading">¶</a></h4>
+<h4>Long Test<a class="headerlink" href="#long-test" title="Link to this heading"></a></h4>
 <p><code class="docutils literal notranslate"><span class="pre">长测试</span></code> 被设计成生产中的最终测试，与短测试相同，但有 <strong>2点区别</strong> :</p>
 <ul class="simple">
 <li><p>长测试没有时间限制</p></li>
@@ -336,16 +353,16 @@
 </section>
 </section>
 <section id="ata">
-<h3>ATA特有的测试<a class="headerlink" href="#ata" title="Link to this heading">¶</a></h3>
+<h3>ATA特有的测试<a class="headerlink" href="#ata" title="Link to this heading"></a></h3>
 <section id="conveyance-tests">
-<h4>运输测试(Conveyance Tests)<a class="headerlink" href="#conveyance-tests" title="Link to this heading">¶</a></h4>
+<h4>运输测试(Conveyance Tests)<a class="headerlink" href="#conveyance-tests" title="Link to this heading"></a></h4>
 <p>运输测试(Conveyance Test)可以在短短几分钟内确定硬盘在运输过程中的损坏情况</p>
 </section>
 <section id="select-tests">
-<h4>选择测试(Select Tests)<a class="headerlink" href="#select-tests" title="Link to this heading">¶</a></h4>
+<h4>选择测试(Select Tests)<a class="headerlink" href="#select-tests" title="Link to this heading"></a></h4>
 <p>选择测试可以指定LBA范围，即只扫描指定的LBA区域:</p>
 <div class="literal-block-wrapper docutils container" id="id8">
-<div class="code-block-caption"><span class="caption-text">指定LBA进行扫描</span><a class="headerlink" href="#id8" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">指定LBA进行扫描</span><a class="headerlink" href="#id8" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>smartctl<span class="w"> </span>-t<span class="w"> </span><span class="k">select</span>,10-20<span class="w"> </span>/dev/sdc<span class="w"> </span><span class="c1">#LBA 10 to LBA 20 (incl.)</span>
 sudo<span class="w"> </span>smartctl<span class="w"> </span>-t<span class="w"> </span><span class="k">select</span>,10+11<span class="w"> </span>/dev/sdc<span class="w"> </span><span class="c1">#LBA 10 to LBA 20 (incl.)</span>
 </pre></div>
@@ -353,7 +370,7 @@ sudo<span class="w"> </span>smartctl<span class="w"> </span>-t<span class="w"> <
 </div>
 <p>而且可以指定多个范围(最多5个)进行扫描:</p>
 <div class="literal-block-wrapper docutils container" id="id9">
-<div class="code-block-caption"><span class="caption-text">指定多个LBA范围进行扫描</span><a class="headerlink" href="#id9" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">指定多个LBA范围进行扫描</span><a class="headerlink" href="#id9" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>smartctl<span class="w"> </span>-t<span class="w"> </span><span class="k">select</span>,0-10<span class="w"> </span>-t<span class="w"> </span><span class="k">select</span>,5-15<span class="w"> </span>-t<span class="w"> </span><span class="k">select</span>,10-20<span class="w"> </span>/dev/sdc
 </pre></div>
 </div>
@@ -362,21 +379,21 @@ sudo<span class="w"> </span>smartctl<span class="w"> </span>-t<span class="w"> <
 </section>
 </section>
 <section id="smartctl">
-<h2>使用 <code class="docutils literal notranslate"><span class="pre">smartctl</span></code> 测试<a class="headerlink" href="#smartctl" title="Link to this heading">¶</a></h2>
+<h2>使用 <code class="docutils literal notranslate"><span class="pre">smartctl</span></code> 测试<a class="headerlink" href="#smartctl" title="Link to this heading"></a></h2>
 <section id="smart">
-<h3>检查存储设备SMART能力<a class="headerlink" href="#smart" title="Link to this heading">¶</a></h3>
+<h3>检查存储设备SMART能力<a class="headerlink" href="#smart" title="Link to this heading"></a></h3>
 <ul class="simple">
 <li><p>在测试前，可以预估一下不同测试所需时间:</p></li>
 </ul>
 <div class="literal-block-wrapper docutils container" id="id10">
-<div class="code-block-caption"><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">smartctl</span></code> 检查存储设备能力，可以看到预估测试时间</span><a class="headerlink" href="#id10" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">smartctl</span></code> 检查存储设备能力，可以看到预估测试时间</span><a class="headerlink" href="#id10" title="Link to this code"></a></div>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">smartctl</span> <span class="o">-</span><span class="n">c</span> <span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">sda</span>
 </pre></div>
 </div>
 </div>
 <p>可以看到 <code class="docutils literal notranslate"><span class="pre">/dev/sda</span></code> ( <a class="reference internal" href="sandisk_cloudspeed_eco_gen_ii_sata_ssd.html#sandisk-cloudspeed-eco-gen-ii-sata-ssd"><span class="std std-ref">SanDisk CloudSpeed Eco Gen. II SATA SSD企业级固态硬盘</span></a> )预估测试时间:</p>
 <div class="literal-block-wrapper docutils container" id="id11">
-<div class="code-block-caption"><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">smartctl</span></code> 检查存储 <a class="reference internal" href="sandisk_cloudspeed_eco_gen_ii_sata_ssd.html#sandisk-cloudspeed-eco-gen-ii-sata-ssd"><span class="std std-ref">SanDisk CloudSpeed Eco Gen. II SATA SSD企业级固态硬盘</span></a> 设备能力，可以看到预估测试时间</span><a class="headerlink" href="#id11" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">smartctl</span></code> 检查存储 <a class="reference internal" href="sandisk_cloudspeed_eco_gen_ii_sata_ssd.html#sandisk-cloudspeed-eco-gen-ii-sata-ssd"><span class="std std-ref">SanDisk CloudSpeed Eco Gen. II SATA SSD企业级固态硬盘</span></a> 设备能力，可以看到预估测试时间</span><a class="headerlink" href="#id11" title="Link to this code"></a></div>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">===</span> <span class="n">START</span> <span class="n">OF</span> <span class="n">READ</span> <span class="n">SMART</span> <span class="n">DATA</span> <span class="n">SECTION</span> <span class="o">===</span>
 <span class="n">General</span> <span class="n">SMART</span> <span class="n">Values</span><span class="p">:</span>
 <span class="n">Offline</span> <span class="n">data</span> <span class="n">collection</span> <span class="n">status</span><span class="p">:</span>  <span class="p">(</span><span class="mh">0x00</span><span class="p">)</span>	<span class="n">Offline</span> <span class="n">data</span> <span class="n">collection</span> <span class="n">activity</span>
@@ -414,7 +431,7 @@ sudo<span class="w"> </span>smartctl<span class="w"> </span>-t<span class="w"> <
 </div>
 <p>我的另一个磁盘 <code class="docutils literal notranslate"><span class="pre">/dev/sdb</span></code> ( Intel 545s系列 ):</p>
 <div class="literal-block-wrapper docutils container" id="id12">
-<div class="code-block-caption"><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">smartctl</span></code> 检查存储 Intel 545s系列SSD 设备能力，可以看到预估测试时间</span><a class="headerlink" href="#id12" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">smartctl</span></code> 检查存储 Intel 545s系列SSD 设备能力，可以看到预估测试时间</span><a class="headerlink" href="#id12" title="Link to this code"></a></div>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">===</span> <span class="n">START</span> <span class="n">OF</span> <span class="n">READ</span> <span class="n">SMART</span> <span class="n">DATA</span> <span class="n">SECTION</span> <span class="o">===</span>
 <span class="n">General</span> <span class="n">SMART</span> <span class="n">Values</span><span class="p">:</span>
 <span class="n">Offline</span> <span class="n">data</span> <span class="n">collection</span> <span class="n">status</span><span class="p">:</span>  <span class="p">(</span><span class="mh">0x00</span><span class="p">)</span>	<span class="n">Offline</span> <span class="n">data</span> <span class="n">collection</span> <span class="n">activity</span>
@@ -452,14 +469,14 @@ sudo<span class="w"> </span>smartctl<span class="w"> </span>-t<span class="w"> <
 </div>
 </section>
 <section id="id1">
-<h3>测试<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h3>
+<h3>测试<a class="headerlink" href="#id1" title="Link to this heading"></a></h3>
 <section id="dev-sda">
-<h4><code class="docutils literal notranslate"><span class="pre">/dev/sda</span></code><a class="headerlink" href="#dev-sda" title="Link to this heading">¶</a></h4>
+<h4><code class="docutils literal notranslate"><span class="pre">/dev/sda</span></code><a class="headerlink" href="#dev-sda" title="Link to this heading"></a></h4>
 <ul class="simple">
 <li><p>执行测试(long test):</p></li>
 </ul>
 <div class="literal-block-wrapper docutils container" id="id13">
-<div class="code-block-caption"><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">smartctl</span></code> 对sda进行长测试，注意参数结合 <code class="docutils literal notranslate"><span class="pre">-C</span></code> 表示Foreground Mode</span><a class="headerlink" href="#id13" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">smartctl</span></code> 对sda进行长测试，注意参数结合 <code class="docutils literal notranslate"><span class="pre">-C</span></code> 表示Foreground Mode</span><a class="headerlink" href="#id13" title="Link to this code"></a></div>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">smartctl</span> <span class="o">-</span><span class="n">t</span> <span class="n">long</span> <span class="o">-</span><span class="n">C</span> <span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">sda</span>
 </pre></div>
 </div>
@@ -468,7 +485,7 @@ sudo<span class="w"> </span>smartctl<span class="w"> </span>-t<span class="w"> <
 <li><p>长测试输出信息</p></li>
 </ul>
 <div class="literal-block-wrapper docutils container" id="id14">
-<div class="code-block-caption"><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">smartctl</span></code> 对sda进行长测试的输出信息</span><a class="headerlink" href="#id14" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">smartctl</span></code> 对sda进行长测试的输出信息</span><a class="headerlink" href="#id14" title="Link to this code"></a></div>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">smartctl</span> <span class="mf">7.2</span> <span class="mi">2020</span><span class="o">-</span><span class="mi">12</span><span class="o">-</span><span class="mi">30</span> <span class="n">r5155</span> <span class="p">[</span><span class="n">x86_64</span><span class="o">-</span><span class="n">linux</span><span class="o">-</span><span class="mf">5.15.0</span><span class="o">-</span><span class="mi">78</span><span class="o">-</span><span class="n">generic</span><span class="p">]</span> <span class="p">(</span><span class="n">local</span> <span class="n">build</span><span class="p">)</span>
 <span class="n">Copyright</span> <span class="p">(</span><span class="n">C</span><span class="p">)</span> <span class="mi">2002</span><span class="o">-</span><span class="mi">20</span><span class="p">,</span> <span class="n">Bruce</span> <span class="n">Allen</span><span class="p">,</span> <span class="n">Christian</span> <span class="n">Franke</span><span class="p">,</span> <span class="n">www</span><span class="o">.</span><span class="n">smartmontools</span><span class="o">.</span><span class="n">org</span>
 
@@ -486,13 +503,13 @@ sudo<span class="w"> </span>smartctl<span class="w"> </span>-t<span class="w"> <
 <li><p>查看测试结果( <code class="docutils literal notranslate"><span class="pre">-a</span></code> 参数 ):</p></li>
 </ul>
 <div class="literal-block-wrapper docutils container" id="id15">
-<div class="code-block-caption"><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">smartctl</span></code> 查看sda测试结果</span><a class="headerlink" href="#id15" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">smartctl</span></code> 查看sda测试结果</span><a class="headerlink" href="#id15" title="Link to this code"></a></div>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">smartctl</span> <span class="o">-</span><span class="n">a</span> <span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">sda</span>
 </pre></div>
 </div>
 </div>
 <div class="literal-block-wrapper docutils container" id="id16">
-<div class="code-block-caption"><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">smartctl</span></code> 查看sda测试结果，可以看到存储健康度(剩余寿命) <code class="docutils literal notranslate"><span class="pre">92%</span></code></span><a class="headerlink" href="#id16" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">smartctl</span></code> 查看sda测试结果，可以看到存储健康度(剩余寿命) <code class="docutils literal notranslate"><span class="pre">92%</span></code></span><a class="headerlink" href="#id16" title="Link to this code"></a></div>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">===</span> <span class="n">START</span> <span class="n">OF</span> <span class="n">INFORMATION</span> <span class="n">SECTION</span> <span class="o">===</span>
 <span class="n">Model</span> <span class="n">Family</span><span class="p">:</span>     <span class="n">Sandisk</span> <span class="n">SATA</span> <span class="n">Cloudspeed</span> <span class="n">Max</span> <span class="ow">and</span> <span class="n">GEN2</span> <span class="n">ESS</span> <span class="n">SSDs</span>
 <span class="n">Device</span> <span class="n">Model</span><span class="p">:</span>     <span class="n">SDLF1CRR</span><span class="o">-</span><span class="mi">019</span><span class="n">T</span><span class="o">-</span><span class="mi">1</span><span class="n">HA1</span>
@@ -596,12 +613,12 @@ sudo<span class="w"> </span>smartctl<span class="w"> </span>-t<span class="w"> <
 <p>这里可以看到 <code class="docutils literal notranslate"><span class="pre">SSD_LifeLeft(0.01%)</span></code> 表示以 万分比 <code class="docutils literal notranslate"><span class="pre">0.01%</span></code> 为单位得到的数值是 <code class="docutils literal notranslate"><span class="pre">9126</span></code> ，折算为百分比就是 <code class="docutils literal notranslate"><span class="pre">91.26%</span></code> ，所以在 <code class="docutils literal notranslate"><span class="pre">Drive_Life_Remaining%</span></code> 的数值就是 <code class="docutils literal notranslate"><span class="pre">92</span></code></p>
 </section>
 <section id="dev-sdb">
-<h4><code class="docutils literal notranslate"><span class="pre">/dev/sdb</span></code><a class="headerlink" href="#dev-sdb" title="Link to this heading">¶</a></h4>
+<h4><code class="docutils literal notranslate"><span class="pre">/dev/sdb</span></code><a class="headerlink" href="#dev-sdb" title="Link to this heading"></a></h4>
 <ul class="simple">
 <li><p>执行测试(long test):</p></li>
 </ul>
 <div class="literal-block-wrapper docutils container" id="id17">
-<div class="code-block-caption"><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">smartctl</span></code> 对sdb进行长测试，注意参数结合 <code class="docutils literal notranslate"><span class="pre">-C</span></code> 表示Foreground Mode</span><a class="headerlink" href="#id17" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">smartctl</span></code> 对sdb进行长测试，注意参数结合 <code class="docutils literal notranslate"><span class="pre">-C</span></code> 表示Foreground Mode</span><a class="headerlink" href="#id17" title="Link to this code"></a></div>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">smartctl</span> <span class="o">-</span><span class="n">t</span> <span class="n">long</span> <span class="o">-</span><span class="n">C</span> <span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">sdb</span>
 </pre></div>
 </div>
@@ -610,7 +627,7 @@ sudo<span class="w"> </span>smartctl<span class="w"> </span>-t<span class="w"> <
 <li><p>长测试输出信息</p></li>
 </ul>
 <div class="literal-block-wrapper docutils container" id="id18">
-<div class="code-block-caption"><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">smartctl</span></code> 对sdb进行长测试的输出信息</span><a class="headerlink" href="#id18" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">smartctl</span></code> 对sdb进行长测试的输出信息</span><a class="headerlink" href="#id18" title="Link to this code"></a></div>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">smartctl</span> <span class="mf">7.2</span> <span class="mi">2020</span><span class="o">-</span><span class="mi">12</span><span class="o">-</span><span class="mi">30</span> <span class="n">r5155</span> <span class="p">[</span><span class="n">x86_64</span><span class="o">-</span><span class="n">linux</span><span class="o">-</span><span class="mf">5.15.0</span><span class="o">-</span><span class="mi">78</span><span class="o">-</span><span class="n">generic</span><span class="p">]</span> <span class="p">(</span><span class="n">local</span> <span class="n">build</span><span class="p">)</span>
 <span class="n">Copyright</span> <span class="p">(</span><span class="n">C</span><span class="p">)</span> <span class="mi">2002</span><span class="o">-</span><span class="mi">20</span><span class="p">,</span> <span class="n">Bruce</span> <span class="n">Allen</span><span class="p">,</span> <span class="n">Christian</span> <span class="n">Franke</span><span class="p">,</span> <span class="n">www</span><span class="o">.</span><span class="n">smartmontools</span><span class="o">.</span><span class="n">org</span>
 
@@ -628,13 +645,13 @@ sudo<span class="w"> </span>smartctl<span class="w"> </span>-t<span class="w"> <
 <li><p>查看测试结果( <code class="docutils literal notranslate"><span class="pre">-a</span></code> 参数  ):</p></li>
 </ul>
 <div class="literal-block-wrapper docutils container" id="id19">
-<div class="code-block-caption"><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">smartctl</span></code> 查看sdb(Intel SSD)测试结果</span><a class="headerlink" href="#id19" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">smartctl</span></code> 查看sdb(Intel SSD)测试结果</span><a class="headerlink" href="#id19" title="Link to this code"></a></div>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">smartctl</span> <span class="o">-</span><span class="n">a</span> <span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">sdb</span>
 </pre></div>
 </div>
 </div>
 <div class="literal-block-wrapper docutils container" id="id20">
-<div class="code-block-caption"><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">smartctl</span></code> 查看sdb测试结果，测试了两次都没有完成 <code class="docutils literal notranslate"><span class="pre">Extended</span> <span class="pre">captive</span></code> : <code class="docutils literal notranslate"><span class="pre">Interrupted</span> <span class="pre">(host</span> <span class="pre">reset)</span></code></span><a class="headerlink" href="#id20" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">smartctl</span></code> 查看sdb测试结果，测试了两次都没有完成 <code class="docutils literal notranslate"><span class="pre">Extended</span> <span class="pre">captive</span></code> : <code class="docutils literal notranslate"><span class="pre">Interrupted</span> <span class="pre">(host</span> <span class="pre">reset)</span></code></span><a class="headerlink" href="#id20" title="Link to this code"></a></div>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">===</span> <span class="n">START</span> <span class="n">OF</span> <span class="n">INFORMATION</span> <span class="n">SECTION</span> <span class="o">===</span>
 <span class="n">Model</span> <span class="n">Family</span><span class="p">:</span>     <span class="n">Intel</span> <span class="mi">545</span><span class="n">s</span> <span class="n">Series</span> <span class="n">SSDs</span>
 <span class="n">Device</span> <span class="n">Model</span><span class="p">:</span>     <span class="n">INTEL</span> <span class="n">SSDSC2KW512G8</span>
@@ -743,14 +760,14 @@ sudo<span class="w"> </span>smartctl<span class="w"> </span>-t<span class="w"> <
 <li><p>改为 <code class="docutils literal notranslate"><span class="pre">Background</span> <span class="pre">Mode</span></code> <code class="docutils literal notranslate"><span class="pre">long</span> <span class="pre">tests</span></code> 测试( 去掉 <code class="docutils literal notranslate"><span class="pre">-C</span></code> 参数 ):</p></li>
 </ul>
 <div class="literal-block-wrapper docutils container" id="id21">
-<div class="code-block-caption"><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">smartctl</span></code> 对sdb进行长测试，注意 <strong>没有使用</strong> <code class="docutils literal notranslate"><span class="pre">-C</span></code> 参数表示 <code class="docutils literal notranslate"><span class="pre">Background</span> <span class="pre">Mode</span></code></span><a class="headerlink" href="#id21" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">smartctl</span></code> 对sdb进行长测试，注意 <strong>没有使用</strong> <code class="docutils literal notranslate"><span class="pre">-C</span></code> 参数表示 <code class="docutils literal notranslate"><span class="pre">Background</span> <span class="pre">Mode</span></code></span><a class="headerlink" href="#id21" title="Link to this code"></a></div>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">smartctl</span> <span class="o">-</span><span class="n">t</span> <span class="n">long</span> <span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">sdb</span>
 </pre></div>
 </div>
 </div>
 <p>此时会看到立即返回终端提示(不像 <code class="docutils literal notranslate"><span class="pre">-C</span></code> 参数需要等待卡住一会):</p>
 <div class="literal-block-wrapper docutils container" id="id22">
-<div class="code-block-caption"><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">smartctl</span></code> 对sdb进行长测试( <code class="docutils literal notranslate"><span class="pre">Background</span> <span class="pre">Mode</span></code> )输出信息</span><a class="headerlink" href="#id22" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">smartctl</span></code> 对sdb进行长测试( <code class="docutils literal notranslate"><span class="pre">Background</span> <span class="pre">Mode</span></code> )输出信息</span><a class="headerlink" href="#id22" title="Link to this code"></a></div>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">===</span> <span class="n">START</span> <span class="n">OF</span> <span class="n">OFFLINE</span> <span class="n">IMMEDIATE</span> <span class="n">AND</span> <span class="n">SELF</span><span class="o">-</span><span class="n">TEST</span> <span class="n">SECTION</span> <span class="o">===</span>
 <span class="hll"><span class="n">Sending</span> <span class="n">command</span><span class="p">:</span> <span class="s2">&quot;Execute SMART Extended self-test routine immediately in off-line mode&quot;</span><span class="o">.</span>
 </span><span class="n">Drive</span> <span class="n">command</span> <span class="s2">&quot;Execute SMART Extended self-test routine immediately in off-line mode&quot;</span> <span class="n">successful</span><span class="o">.</span>
@@ -766,7 +783,7 @@ sudo<span class="w"> </span>smartctl<span class="w"> </span>-t<span class="w"> <
 <li><p>果然，采用 <code class="docutils literal notranslate"><span class="pre">offline</span> <span class="pre">mode</span></code> 方式扫描，就能够正常完成测试，输出结果如下:</p></li>
 </ul>
 <div class="literal-block-wrapper docutils container" id="id23">
-<div class="code-block-caption"><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">smartctl</span></code> 对sdb进行长测试( <code class="docutils literal notranslate"><span class="pre">Background</span> <span class="pre">Mode</span></code> )能够正常完成测试，结果输出</span><a class="headerlink" href="#id23" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">smartctl</span></code> 对sdb进行长测试( <code class="docutils literal notranslate"><span class="pre">Background</span> <span class="pre">Mode</span></code> )能够正常完成测试，结果输出</span><a class="headerlink" href="#id23" title="Link to this code"></a></div>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">===</span> <span class="n">START</span> <span class="n">OF</span> <span class="n">INFORMATION</span> <span class="n">SECTION</span> <span class="o">===</span>
 <span class="n">Model</span> <span class="n">Family</span><span class="p">:</span>     <span class="n">Intel</span> <span class="mi">545</span><span class="n">s</span> <span class="n">Series</span> <span class="n">SSDs</span>
 <span class="n">Device</span> <span class="n">Model</span><span class="p">:</span>     <span class="n">INTEL</span> <span class="n">SSDSC2KW512G8</span>
@@ -874,12 +891,12 @@ sudo<span class="w"> </span>smartctl<span class="w"> </span>-t<span class="w"> <
 <p>这里看到 <code class="docutils literal notranslate"><span class="pre">LifeTime(hours)</span></code> 值是 <code class="docutils literal notranslate"><span class="pre">24193</span></code> 这个值就是 <code class="docutils literal notranslate"><span class="pre">Power_On_Hours</span></code> 值，也就是磁盘加电时长</p>
 <p>很奇怪，为何Intel SSD无法查看 <code class="docutils literal notranslate"><span class="pre">Drive_Life_Remaining%</span></code> ?</p>
 <p>搜索了一下，看来Intel有自己的诊断工具 <a class="reference external" href="https://www.intel.com/content/www/us/en/support/articles/000056729/memory-and-storage/ssd-management-tools.html">How to Perform Quick/Full Diagnostic of Intel® SSDs Using Intel® Memory and Storage Tool (Intel® MAS) GUI</a> (这个是Intel Optane SSDs / Memory 设备检测工具)</p>
-<p>详细请参考 ` Support for Intel® Memory and Storage Tool &lt;<a class="reference external" href="https://www.intel.com/content/www/us/en/support/products/202249/memory-and-storage/ssd-management-tools/intel-memory-and-storage-tool.html">https://www.intel.com/content/www/us/en/support/products/202249/memory-and-storage/ssd-management-tools/intel-memory-and-storage-tool.html</a>&gt;`_</p>
+<p>详细请参考 <a class="reference external" href="https://www.intel.com/content/www/us/en/support/products/202249/memory-and-storage/ssd-management-tools/intel-memory-and-storage-tool.html">Support for Intel® Memory and Storage Tool</a></p>
 </section>
 </section>
 </section>
 <section id="id2">
-<h2>参考<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
+<h2>参考<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="https://wiki.archlinux.org/title/S.M.A.R.T.">arch linux - S.M.A.R.T.</a></p></li>
 <li><p><a class="reference external" href="https://www.linuxtechi.com/smartctl-monitoring-analysis-tool-hard-drive/">Monitor and Analyze Hard Drive Health with Smartctl in Linux</a> 非常详细的命令行解析</p></li>
@@ -892,25 +909,37 @@ sudo<span class="w"> </span>smartctl<span class="w"> </span>-t<span class="w"> <
 
            </div>
           </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="linux_ssd.html" class="btn btn-neutral float-left" title="Linux固态驱动器(SSD)" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="check_hd_sn.html" class="btn btn-neutral float-right" title="检查硬盘SN" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="orico_m2_nvme_sata_udisk.html" class="btn btn-neutral float-left" title="奥睿科（ORICO）M.2 NVMe/SATA双协议移动硬盘盒" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="check_hd_sn.html" class="btn btn-neutral float-right" title="检查硬盘SN" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../../copyright.html">Copyright</a> 2018 - now, Huatai Huang.</p>
+    <p>&#169; <a href="../../../copyright.html">版权所有</a> 2018 - now, Huatai Huang。</p>
   </div>
 
-  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
   
     <!-- your html code here -->
     <br>
-    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡</a></p>
-     
+    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡 👈</a></p>
+    <br>
+    <p>网站采用 <a href="https://utteranc.es/">utterances</a> 评论系统，所有评论存储在<a href="https://github.com/huataihuang/cloud-atlas/issues">GitHub issues</a> 中，如果你看不到下方的评论框，那么可能需要<a href="https://cloud-atlas.readthedocs.io/zh-cn/latest/linux/security/vpn/index.html">自备梯子</a> 👈</p>
+    <div class="articleComments">
+        <comments>
+  <script src="https://utteranc.es/client.js"
+    repo="huataihuang/cloud-atlas"
+    issue-term="pathname"
+    theme="github-light"
+    crossorigin="anonymous"
+    async>
+  </script>
+</comments>
+    </div>
 
 
 </footer>

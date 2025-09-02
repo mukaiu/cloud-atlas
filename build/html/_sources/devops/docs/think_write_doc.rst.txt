@@ -10,8 +10,27 @@
 我在十几年前，在一家小公司做运维的时候，就曾经尝试过不同的CMS，想要作为个人以及部门的知识管理平台。那个时期，iPhone 1st尚未发布，软件行业还没有现在这么流行的各种静态网站工具，很多CMS(内容管理系统)是基于PHP开发（Wordpress, Joomla, Drupal)或者基于Python的 `Plone <https://plone.org>`_
 。那时候，我就一直在尝试不同的CMS/Wiki系统，而且每当看到精美的CMS网站(或者文档)，就想要了解是基于哪个平台实现的，自己是不是能构建出同样简洁美观的知识库。
 
+如何借鉴CMS网站
+-------------------
+
+既然说到CMS借鉴，如何分辨和找到某个心仪网站的CMS本源？
+
+如果网站确实使用了某个CMS系统，那么 `What CMS <https://whatcms.org/>`_ 提供了非常简单的检查方法: 输入网址就能够侦测该网站使用了哪个CMS平台。不过，如果网站是静态生成，例如 :ref:`sphinx_doc` ，那么这个标准的CMS检测工具就无能为力。
+
+或者在 `HTTP Archive <https://httparchive.org/>`_ 跟踪Web构建
+
+`Core Web Vitals Technology Report(cwvtech.report) <https://lookerstudio.google.com/u/0/reporting/55bc8fad-44c2-4280-aa0b-5f3f0cd3d2be/page/M6ZPC?params=%7B%22df44%22:%22include%25EE%2580%25800%25EE%2580%2580IN%25EE%2580%2580WordPress%25EE%2580%2580Next.js%25EE%2580%2580Nuxt.js%25EE%2580%2580Gatsby%25EE%2580%2580Astro%25EE%2580%2580SvelteKit%25EE%2580%2580Remix%22%7D>`_ 提供了网站技术占比，可以作为趋势参考
+
+.. note::
+
+   参考 `How to Tell What Website Builder Was Used  <https://dorik.com/blog/how-to-tell-what-website-builder-was-used>`_
+
 倾向
 =======
+
+.. note::
+
+   2025年1月，我现在思考 :ref:`docs_as_code` ，会采用不同的 ``Markdown`` 工具来构建新的文档网站。
 
 我比较中意的网站风格是:
 
@@ -30,11 +49,17 @@
    好的文档规范能够增强协作， OpenStack 组织撰写了详细的 `OpenStack Documentation Contributor Guide <https://docs.openstack.org/doc-contrib-guide/>`_ ，提供详细的文档撰写实践指南。非常值得在构建大型项目时参考。
 
    同样 `OpenShift Documentation guidelines <https://github.com/openshift/openshift-docs/blob/main/contributing_to_docs/doc_guidelines.adoc>`_ 提供了良好建议。不过，需要注意的是，虽然OpenShift文档风格非常类似OpenStack，但是OpenShift文档是采用 `asiidoc <https://asciidoc.org/>`_ 完成的。所谓 ``asiidoc`` 采用了独特的MARK_UP方式撰写，语法结构不同于 MarkDown
-   但是采用了一种变体文档格式，可能又比较大的学习成本。我并没有实践。
+   但是采用了一种变体文档格式，可能有比较大的学习成本。我并没有实践。
 
 .. note::
 
-   Red Hat官方文档也非常类似，但是不是采用 :ref:`sphinx_doc` 
+   Red Hat官方文档风格也非常类似，但是不是采用 :ref:`sphinx_doc` ，而是类似WordPress的较为小众的 `Drupal <https://www.drupal.org/>`_
+
+.. note::
+
+   `FreeBSD doc <https://github.com/freebsd/freebsd-doc>`_ 项目说明了 `FreeBSD Handbook <https://docs.freebsd.org/en/books/handbook/>`_ 主要采用 `Asciidoctor <https://asciidoctor.org/>` (一种 :ref:`ruby` 文字处理器，类似 :ref:`sphinx_doc` 比较复杂) (部分是 :ref:`hugo` )实现的。
+
+   FreeBSD社区还为 `FreeBSD Document Project(FDP) <https://docs.freebsd.org/en/books/fdp-primer/overview/>`_ 提供了完整的撰写指南。
 
 我的实践
 =========
@@ -79,3 +104,8 @@ Sphinx Doc是我撰写 :ref:`cloud_atlas` 的文档平台，我是模仿Kernel D
    `Jamstack <https://jamstack.org/>`_ 是网页托管领域独角兽 `Netlify <https://www.netlify.com/>`_ 的旗下产品。由于专注于CMS和Site，其网站提供了相关信息参考。
 
    - 参考 `Vercel 和 Netlify ，两大20亿美金估值的独角兽，在网页托管领域的崛起史 <https://zhuanlan.zhihu.com/p/525979886>`_
+
+参考
+=======
+
+- `Markdown, Asciidoc, or reStructuredText - a tale of docs-as-code <https://www.dewanahmed.com/markdown-asciidoc-restructuredtext/>`_ docs-as-code 有众多选择，实在有些吃惊

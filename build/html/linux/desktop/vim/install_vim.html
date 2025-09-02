@@ -1,21 +1,25 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh" data-content_root="../../../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vim安装 &mdash; Cloud Atlas 0.1 文档</title>
-      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../../_static/graphviz.css" type="text/css" />
+  <title>Vim安装 &mdash; Cloud Atlas: Discovery beta 文档</title>
+      <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/graphviz.css?v=fd3f3429" />
+
+  
+    <link rel="shortcut icon" href="../../../_static/favicon.png"/>
   <!--[if lt IE 9]>
     <script src="../../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="../../../_static/documentation_options.js?v=7c91f8fd"></script>
-        <script src="../../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../../_static/documentation_options.js?v=8534f863"></script>
+        <script src="../../../_static/doctools.js?v=9a2dae69"></script>
         <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
-        <script src="../../../_static/translations.js?v=beaddf03"></script>
     <script src="../../../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../../../genindex.html" />
     <link rel="search" title="搜索" href="../../../search.html" />
@@ -33,61 +37,69 @@
           
           
           <a href="../../../index.html" class="icon icon-home">
-            Cloud Atlas
+            Cloud Atlas: Discovery
           </a>
+              <div class="version">
+                1.1
+              </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../../studio/index.html">Studio Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../infrastructure/index.html">Infrastructure Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../devops/index.html">DevOps Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../kvm/index.html">KVM Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../ceph/index.html">Ceph Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../gluster/index.html">Gluster Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../ovirt/index.html">oVirt Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../openstack/index.html">OpenStack Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../docker/index.html">Docker Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../kubernetes/index.html">Kubernetes Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../kubernetes_from_scratch/index.html">Kubernetes From Scratch (KFS) Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../rancher/index.html">Rancher Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../openshift/index.html">OpenShift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../sql/index.html">SQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../sqlite/index.html">SQLite Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../mysql/index.html">MySQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../pgsql/index.html">PostgreSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../clickhouse/index.html">ClickHouse Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../nosql/index.html">NoSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../redis/index.html">Redis Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../network/index.html">Network Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../infra_service/index.html">Infra-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../infra_search/index.html">Search Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../info_service/index.html">Info-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../web/index.html">Web Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../big_data/index.html">Big Data Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../machine_learning/index.html">Machine Learning Atlas</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">Linux Atlas</a><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../studio/index.html">Studio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../infrastructure/index.html">Infrastructure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../devops/index.html">DevOps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../kvm/index.html">KVM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../ceph/index.html">Ceph</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../gluster/index.html">Gluster</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../ovirt/index.html">oVirt</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../openstack/index.html">OpenStack</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../docker/index.html">Docker</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../kubernetes/index.html">Kubernetes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../k8s_dev/index.html">Kubernetes Develop</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../rancher/index.html">Rancher</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../openshift/index.html">OpenShift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../sql/index.html">SQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../sqlite/index.html">SQLite</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../mysql/index.html">MySQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../pgsql/index.html">PostgreSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../nosql/index.html">NoSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../network/index.html">Network</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../infra_service/index.html">Infra-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../infra_search/index.html">Infra-Search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../web/index.html">Web</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../info_service/index.html">Info-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../big_data/index.html">Big Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../machine_learning/index.html">Machine Learning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../drone/index.html">Drone</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">Linux</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../../best_linux.html">最佳Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../admin/index.html">Linux系统管理</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../redhat_linux/index.html">RedHat Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../arch_linux/index.html">Arch Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../asahi_linux/index.html">Asahi Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../gentoo_linux/index.html">Gentoo Linux</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../lfs_linux/index.html">LFS(Linux from scratch)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../lfs/index.html">LFS(Linux from scratch)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../blfs/index.html">BLFS(Beyond Linux from scratch)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../alfs/index.html">ALFS(Automated Linux from scratch)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pilfs/index.html">PiLFS(Automated Linux from scratch on the Raspberry Pi)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../yocto/index.html">Yocto</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../debian/index.html">Debian</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../ubuntu_linux/index.html">Ubuntu Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../suse_linux/index.html">SUSE Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../kali_linux/index.html">Kali Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../tails_linux/index.html">Tails Linux</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../qubes_os/index.html">Qubes OS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../postmarketos/index.html">postmarketOS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../container_os/index.html">容器化操作系统(Container OS)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../fedora_coreos/index.html">Fedora CoreOS容器操作系统</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../chromium_os/index.html">Chromium OS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../chromeos/index.html">ChromeOS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../alpine_linux/index.html">Alpine Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../subgraph_os/index.html">Subgraph OS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../kaios/index.html">KaiOS - 世界第三手机操作系统</a></li>
@@ -99,34 +111,42 @@
 <li class="toctree-l2 current"><a class="reference internal" href="../index.html">Linux桌面</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="../x_window/index.html">X Window显示服务器协议</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../chinese/index.html">Linux中文环境</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../rdp/index.html">Linux桌面</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../rdp/index.html">Linux远程桌面</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../xpra/index.html">X持久化远程应用Xpra</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../vnc/index.html">VNC</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../wayland/index.html">wayland显示服务器协议</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../sway/index.html">sway - i3兼容Wayland compositor</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../suckless/index.html">Suckless极简桌面</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../xfce/index.html">xfce</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../lxqt/index.html">LXQt</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../enlightment/index.html">Enlightenment</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../kde/index.html">KDE桌面</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../xpra/index.html">X持久化远程应用Xpra</a></li>
 <li class="toctree-l3 current"><a class="reference internal" href="index.html">Vim</a><ul class="current">
 <li class="toctree-l4 current"><a class="current reference internal" href="#">Vim安装</a></li>
 <li class="toctree-l4"><a class="reference internal" href="install_vim_centos6.html">在CentOS6上编译安装vim</a></li>
 <li class="toctree-l4"><a class="reference internal" href="vimrc/index.html">The Ultimate vimrc</a></li>
 <li class="toctree-l4"><a class="reference internal" href="vim_autocompletion.html">vim Autocompletion(自动完成)</a></li>
 <li class="toctree-l4"><a class="reference internal" href="vim_auto_indent.html">vim自动缩进</a></li>
+<li class="toctree-l4"><a class="reference internal" href="vim_indentline.html">vim indentLine插件</a></li>
 <li class="toctree-l4"><a class="reference internal" href="vim_fold.html">vim折叠</a></li>
 <li class="toctree-l4"><a class="reference internal" href="vim-go.html">vim-go插件</a></li>
 <li class="toctree-l4"><a class="reference internal" href="light_vim.html">轻量级定制vim</a></li>
 <li class="toctree-l4"><a class="reference internal" href="vim_native_package_loading.html">Vim 8原生第三方插件包加载</a></li>
 <li class="toctree-l4"><a class="reference internal" href="vim_basic.html">vim基础</a></li>
+<li class="toctree-l4"><a class="reference internal" href="vim_gz.html">vim对.gz文件处理</a></li>
+<li class="toctree-l4"><a class="reference internal" href="vim_ctags.html">vim结合ctags</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="../nvim/index.html">neovim</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../vscode/index.html">VS Code</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../audio/index.html">Linux音频</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../video/index.html">Linux视频</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../xorg_dpi_fix.html">修正xorg显示dpi</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../i3.html">i3窗口管理器</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../oh_my_zsh.html">Oh My Zsh</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../tmux.html">tmux多会话终端管理</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../alacritty.html">GPU加速终端模拟器alacritty</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../sakura.html">sakura</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../read_ebook_in_linux.html">在Linux环境阅读电子书</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../mupdf.html">MuPDF</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../remote_linux_desktop.html">远程访问Linux桌面</a></li>
@@ -142,28 +162,30 @@
 <li class="toctree-l2"><a class="reference internal" href="../../linux_tablet/index.html">Linux平板</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../../kernel/index.html">Kernel Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../performance/index.html">Performance Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../distributed_system/index.html">Distributed System Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../shell/index.html">Shell Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../python/index.html">Python Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../django/index.html">Django Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../flask/index.html">Flask Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../javascript/index.html">JavaScript Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../nodejs/index.html">Node.js Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../clang/index.html">C Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../golang/index.html">Go Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../swift/index.html">Swift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../rust/index.html">Rust Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../ruby/index.html">Ruby Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../arm/index.html">ARM Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../android/index.html">Android Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../bsd/index.html">BSD Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../apple/index.html">Apple Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../windows/index.html">Windows Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../real/index.html">Real Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../management/index.html">Management Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../life/index.html">Life Atlas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../kernel/index.html">Kernel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../performance/index.html">Performance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../distributed_system/index.html">Distributed System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../shell/index.html">Shell</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../python/index.html">Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../django/index.html">Django</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../javascript/index.html">JavaScript</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../nodejs/index.html">Node.js</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../clang/index.html">C</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../golang/index.html">Go</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../swift/index.html">Swift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../rust/index.html">Rust</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../ruby/index.html">Ruby</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../lua/index.html">Lua</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../arm/index.html">ARM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../raspberry_pi/index.html">Raspberry Pi</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../android/index.html">Android</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../bsd/index.html">BSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../freebsd/index.html">FreeBSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../apple/index.html">Apple</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../windows/index.html">Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../real/index.html">Real</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../management/index.html">Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../life/index.html">Life</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../copyright.html">Copyright</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../aboutme.html">关于作者</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../donate.html">捐赠</a></li>
@@ -176,22 +198,22 @@
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../../index.html">Cloud Atlas</a>
+          <a href="../../../index.html">Cloud Atlas: Discovery</a>
       </nav>
 
       <div class="wy-nav-content">
         <div class="rst-content">
-          <div role="navigation" aria-label="Page navigation">
+          <div role="navigation" aria-label="页面导航">
   <ul class="wy-breadcrumbs">
       <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
-          <li class="breadcrumb-item"><a href="../../index.html">Linux Atlas</a></li>
+          <li class="breadcrumb-item"><a href="../../index.html">Linux</a></li>
           <li class="breadcrumb-item"><a href="../index.html">Linux桌面</a></li>
           <li class="breadcrumb-item"><a href="index.html">Vim</a></li>
       <li class="breadcrumb-item active">Vim安装</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../../../_sources/linux/desktop/vim/install_vim.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../../_sources/linux/desktop/vim/install_vim.rst.txt" rel="nofollow"> 查看页面源码</a>
       </li>
   </ul>
   <hr/>
@@ -200,7 +222,7 @@
            <div itemprop="articleBody">
              
   <section id="vim">
-<span id="install-vim"></span><h1>Vim安装<a class="headerlink" href="#vim" title="Link to this heading">¶</a></h1>
+<span id="install-vim"></span><h1>Vim安装<a class="headerlink" href="#vim" title="Link to this heading"></a></h1>
 <p>Vim是传奇编辑器vi的继承者，功能强大但需要使用者不断训练形成 <code class="docutils literal notranslate"><span class="pre">肌肉记忆</span></code> 。在所有的Unix/Linux系统上都能够方便安装和使用，特别适合没有图形界面的远程终端开发环境。</p>
 <p>使用Vim的优点:</p>
 <ul class="simple">
@@ -216,9 +238,9 @@
 <p>本文是在树莓派的Raspberry Pi OS上实践，也即是Debian Linux系统上编译安装 <code class="docutils literal notranslate"><span class="pre">vim</span></code> + <code class="docutils literal notranslate"><span class="pre">you-complete-me</span></code> 以及vim插件；对于macOS环境通过 <a class="reference internal" href="../../../apple/macos/homebrew.html#homebrew"><span class="std std-ref">Homebrew</span></a> 组合多个工具配置相同环境请参考 <a class="reference internal" href="../../../apple/macos/vim_tmux_iterm_zsh.html#vim-tmux-iterm-zsh"><span class="std std-ref">结合Vim,Tmux,iTerm和Oh-my-Zsh开发环境</span></a> 。</p>
 </div>
 <section id="id1">
-<h2>安装<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h2>
+<h2>安装<a class="headerlink" href="#id1" title="Link to this heading"></a></h2>
 <ul>
-<li><p>在 <a class="reference internal" href="../../../arm/raspberry_pi/hardware/pi_400.html#pi-400"><span class="std std-ref">树莓派Raspberry Pi 400</span></a> 环境，也就是 Debian 10上安装:</p>
+<li><p>在 <a class="reference internal" href="../../../raspberry_pi/hardware/pi_400.html#pi-400"><span class="std std-ref">树莓派Raspberry Pi 400</span></a> 环境，也就是 Debian 10上安装:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">apt</span> <span class="n">install</span> <span class="n">vim</span>
 </pre></div>
 </div>
@@ -235,13 +257,13 @@
 </div>
 </section>
 <section id="id2">
-<h2>配置<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
+<h2>配置<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
 <p>几乎不用配置，默认vim提供了基础的语法高亮。不过，你可以定制自己的 <code class="docutils literal notranslate"><span class="pre">.vimrc</span></code> 然后备份，并回复到任何你需要的工作环境中获得一致的体验。</p>
 <ul class="simple">
 <li><p>初始你可以使用以下简单的 <code class="docutils literal notranslate"><span class="pre">.vimrc</span></code> :</p></li>
 </ul>
 <div class="literal-block-wrapper docutils container" id="id10">
-<div class="code-block-caption"><span class="caption-text">install_vim/vimrc_base</span><a class="headerlink" href="#id10" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">install_vim/vimrc_base</span><a class="headerlink" href="#id10" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="s2">&quot; Syntax highlight</span>
 <span class="linenos"> 2</span><span class="s2">syntax enable</span>
 <span class="linenos"> 3</span>
@@ -259,9 +281,9 @@
 </div>
 </section>
 <section id="id3">
-<h2>插件<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h2>
+<h2>插件<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
 <section id="vundle">
-<h3>Vundle插件管理器<a class="headerlink" href="#vundle" title="Link to this heading">¶</a></h3>
+<h3>Vundle插件管理器<a class="headerlink" href="#vundle" title="Link to this heading"></a></h3>
 <p>要充分发挥vim的强大功能，需要使用插件，可以实现现代IDE的语法高亮，自动补全，目录树视图，debug工具以及很多有用的功能。</p>
 <p>推荐使用 Vundle管理插件:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">clone</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">VundleVim</span><span class="o">/</span><span class="n">Vundle</span><span class="o">.</span><span class="n">vim</span><span class="o">.</span><span class="n">git</span> <span class="o">~/.</span><span class="n">vim</span><span class="o">/</span><span class="n">bundle</span><span class="o">/</span><span class="n">Vundle</span><span class="o">.</span><span class="n">vim</span>
@@ -269,7 +291,7 @@
 </div>
 <p>然后在 <code class="docutils literal notranslate"><span class="pre">.vimrc</span></code> 的开头添加:</p>
 <div class="literal-block-wrapper docutils container" id="id11">
-<div class="code-block-caption"><span class="caption-text">install_vim/vimrc_vundle</span><a class="headerlink" href="#id11" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">install_vim/vimrc_vundle</span><a class="headerlink" href="#id11" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="hll"><span class="linenos"> 1</span><span class="nb">set</span><span class="w"> </span>nocompatible
 </span><span class="hll"><span class="linenos"> 2</span>filetype<span class="w"> </span>off
 </span><span class="hll"><span class="linenos"> 3</span>
@@ -302,7 +324,7 @@
 <p>有关 Vuldle 的详细说明参考 <a class="reference external" href="https://github.com/VundleVim/Vundle.vim">Vundle.vim GitHub</a></p>
 </section>
 <section id="id4">
-<h3>安装插件<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h3>
+<h3>安装插件<a class="headerlink" href="#id4" title="Link to this heading"></a></h3>
 <p>安装插件的方法有2步:</p>
 <ul class="simple">
 <li><p>在 <code class="docutils literal notranslate"><span class="pre">.vimrc</span></code> 中plugin位置处添加插件</p></li>
@@ -313,7 +335,7 @@
 <li><p>在 <code class="docutils literal notranslate"><span class="pre">.vimrc</span></code> 中添加 <code class="docutils literal notranslate"><span class="pre">Plugin</span></code> 行:</p></li>
 </ul>
 <div class="literal-block-wrapper docutils container" id="id12">
-<div class="code-block-caption"><span class="caption-text">install_vim/vimrc_plugins</span><a class="headerlink" href="#id12" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">install_vim/vimrc_plugins</span><a class="headerlink" href="#id12" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="nb">set</span><span class="w"> </span>nocompatible
 <span class="linenos"> 2</span>filetype<span class="w"> </span>off
 <span class="linenos"> 3</span>
@@ -355,13 +377,13 @@
 </ul>
 </section>
 <section id="youcompleteme">
-<h3>YouCompleteMe插件<a class="headerlink" href="#youcompleteme" title="Link to this heading">¶</a></h3>
+<h3>YouCompleteMe插件<a class="headerlink" href="#youcompleteme" title="Link to this heading"></a></h3>
 <div class="admonition note">
 <p class="admonition-title">备注</p>
 <p>YouCompleteMe 安装是非常繁琐的过程，特别是编译支持golang，需要下载大量依赖模块，而GFW阻塞</p>
 </div>
 <section id="id5">
-<h4>编译vim<a class="headerlink" href="#id5" title="Link to this heading">¶</a></h4>
+<h4>编译vim<a class="headerlink" href="#id5" title="Link to this heading"></a></h4>
 <p>YouCompleteMe插件对vim版本有要求，在树莓派当前Raspberry Pi OS中提供的vim版本不能满足。可以参考 <a class="reference external" href="https://github.com/ycm-core/YouCompleteMe/wiki/Building-Vim-from-source">Building Vim from source</a> 进行编译安装</p>
 <ul>
 <li><p>首先安装依赖:</p>
@@ -444,7 +466,7 @@ cd vim
 </section>
 </section>
 <section id="id6">
-<h3>安装其他插件<a class="headerlink" href="#id6" title="Link to this heading">¶</a></h3>
+<h3>安装其他插件<a class="headerlink" href="#id6" title="Link to this heading"></a></h3>
 <p>为了开发golang，另外安装 <a class="reference external" href="https://github.com/fatih/vim-go">vim-go插件</a> 和 <a class="reference external" href="https://github.com/preservim/tagbar">Tagbar插件</a></p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Plugin</span> <span class="s1">&#39;fatih/vim-go&#39;</span>
 <span class="n">Plugin</span> <span class="s1">&#39;Tagbar&#39;</span>
@@ -457,12 +479,12 @@ cd vim
 </div>
 </section>
 <section id="golang-vimrc">
-<h3>配置golang的.vimrc<a class="headerlink" href="#golang-vimrc" title="Link to this heading">¶</a></h3>
+<h3>配置golang的.vimrc<a class="headerlink" href="#golang-vimrc" title="Link to this heading"></a></h3>
 <ul class="simple">
 <li><p>配置 <code class="docutils literal notranslate"><span class="pre">vim-go</span></code> , <code class="docutils literal notranslate"><span class="pre">Tagbar</span></code> 和 <code class="docutils literal notranslate"><span class="pre">NERDTree</span></code></p></li>
 </ul>
 <div class="literal-block-wrapper docutils container" id="id13">
-<div class="code-block-caption"><span class="caption-text">install_vim/vimrc_golang</span><a class="headerlink" href="#id13" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">install_vim/vimrc_golang</span><a class="headerlink" href="#id13" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="nb">set</span><span class="w"> </span>nocompatible
 <span class="linenos"> 2</span>filetype<span class="w"> </span>off
 <span class="linenos"> 3</span>
@@ -551,7 +573,7 @@ cd vim
 </div>
 </div>
 <section id="id7">
-<h4>编译安装YouCompleteMe<a class="headerlink" href="#id7" title="Link to this heading">¶</a></h4>
+<h4>编译安装YouCompleteMe<a class="headerlink" href="#id7" title="Link to this heading"></a></h4>
 <p>在编译YouCompleteMe之前，首先需要把你需要支持的语言开发工具安装好，然后才能在编译安装YouCompleteMe时候开启参数。</p>
 <ul>
 <li><p>安装语言工具:</p>
@@ -621,7 +643,7 @@ cd vim
 <span class="n">go</span> <span class="n">get</span> <span class="n">mvdan</span><span class="o">.</span><span class="n">cc</span><span class="o">/</span><span class="n">xurls</span><span class="o">/</span><span class="n">v2</span><span class="nd">@v2</span><span class="mf">.2.0</span><span class="p">:</span> <span class="n">go</span><span class="o">.</span><span class="n">mod</span> <span class="n">has</span> <span class="n">post</span><span class="o">-</span><span class="n">v0</span> <span class="n">module</span> <span class="n">path</span> <span class="s2">&quot;mvdan.cc/xurls/v2&quot;</span> <span class="n">at</span> <span class="n">revision</span> <span class="mi">1707</span><span class="n">d8b9d1bb</span>
 </pre></div>
 </div>
-<p>但是我发现当前 <a class="reference internal" href="../../../arm/raspberry_pi/hardware/pi_400.html#pi-400"><span class="std std-ref">树莓派Raspberry Pi 400</span></a> 的Raspberry Pi OS提供的golang版本是 <code class="docutils literal notranslate"><span class="pre">1.11</span></code> ，可能低于 <code class="docutils literal notranslate"><span class="pre">xurls</span></code> 版本  <code class="docutils literal notranslate"><span class="pre">1.13</span></code>  要求，使用以下命令检查仓库提供的golang版本:</p>
+<p>但是我发现当前 <a class="reference internal" href="../../../raspberry_pi/hardware/pi_400.html#pi-400"><span class="std std-ref">树莓派Raspberry Pi 400</span></a> 的Raspberry Pi OS提供的golang版本是 <code class="docutils literal notranslate"><span class="pre">1.11</span></code> ，可能低于 <code class="docutils literal notranslate"><span class="pre">xurls</span></code> 版本  <code class="docutils literal notranslate"><span class="pre">1.13</span></code>  要求，使用以下命令检查仓库提供的golang版本:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">cache</span> <span class="n">search</span> <span class="n">golang</span><span class="o">|</span><span class="n">grep</span> <span class="n">golang</span><span class="o">-</span><span class="mf">1.</span><span class="o">*</span>
 </pre></div>
 </div>
@@ -630,7 +652,7 @@ cd vim
 </section>
 </section>
 <section id="id8">
-<h3>使用YouCompleteMe<a class="headerlink" href="#id8" title="Link to this heading">¶</a></h3>
+<h3>使用YouCompleteMe<a class="headerlink" href="#id8" title="Link to this heading"></a></h3>
 <p>当输入时，YCM会自动提示最接近的可选输入内容，可以持续输入直到真正匹配内容高亮，此时按下 <code class="docutils literal notranslate"><span class="pre">tab</span></code> 键自动完成输入:</p>
 <figure class="align-default">
 <img alt="../../../_images/ycm.gif" src="../../../_images/ycm.gif" />
@@ -638,7 +660,7 @@ cd vim
 </section>
 </section>
 <section id="id9">
-<h2>参考<a class="headerlink" href="#id9" title="Link to this heading">¶</a></h2>
+<h2>参考<a class="headerlink" href="#id9" title="Link to this heading"></a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="https://roboticsbackend.com/install-use-vim-raspberry-pi/">Install and Use Vim on Raspberry Pi</a></p></li>
 <li><p><a class="reference external" href="https://blog.csdn.net/Wind4study/article/details/104565482">CentOS 8 搭建Vim golang环境 &amp;&amp; YouCompleteMe Golang安装支持</a></p></li>
@@ -651,25 +673,37 @@ cd vim
 
            </div>
           </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="index.html" class="btn btn-neutral float-left" title="Vim" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="install_vim_centos6.html" class="btn btn-neutral float-right" title="在CentOS6上编译安装vim" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="index.html" class="btn btn-neutral float-left" title="Vim" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="install_vim_centos6.html" class="btn btn-neutral float-right" title="在CentOS6上编译安装vim" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../../copyright.html">Copyright</a> 2018 - now, Huatai Huang.</p>
+    <p>&#169; <a href="../../../copyright.html">版权所有</a> 2018 - now, Huatai Huang。</p>
   </div>
 
-  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
   
     <!-- your html code here -->
     <br>
-    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡</a></p>
-     
+    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡 👈</a></p>
+    <br>
+    <p>网站采用 <a href="https://utteranc.es/">utterances</a> 评论系统，所有评论存储在<a href="https://github.com/huataihuang/cloud-atlas/issues">GitHub issues</a> 中，如果你看不到下方的评论框，那么可能需要<a href="https://cloud-atlas.readthedocs.io/zh-cn/latest/linux/security/vpn/index.html">自备梯子</a> 👈</p>
+    <div class="articleComments">
+        <comments>
+  <script src="https://utteranc.es/client.js"
+    repo="huataihuang/cloud-atlas"
+    issue-term="pathname"
+    theme="github-light"
+    crossorigin="anonymous"
+    async>
+  </script>
+</comments>
+    </div>
 
 
 </footer>

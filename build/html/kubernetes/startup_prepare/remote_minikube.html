@@ -1,21 +1,25 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh" data-content_root="../../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>远程访问minikube &mdash; Cloud Atlas 0.1 文档</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+  <title>远程访问minikube &mdash; Cloud Atlas: Discovery beta 文档</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=fd3f3429" />
+
+  
+    <link rel="shortcut icon" href="../../_static/favicon.png"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="../../_static/documentation_options.js?v=7c91f8fd"></script>
-        <script src="../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=8534f863"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
         <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
-        <script src="../../_static/translations.js?v=beaddf03"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../../genindex.html" />
     <link rel="search" title="搜索" href="../../search.html" />
@@ -33,31 +37,35 @@
           
           
           <a href="../../index.html" class="icon icon-home">
-            Cloud Atlas
+            Cloud Atlas: Discovery
           </a>
+              <div class="version">
+                1.1
+              </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../studio/index.html">Studio Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../infrastructure/index.html">Infrastructure Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../devops/index.html">DevOps Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kvm/index.html">KVM Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../ceph/index.html">Ceph Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../gluster/index.html">Gluster Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../ovirt/index.html">oVirt Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../openstack/index.html">OpenStack Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../docker/index.html">Docker Atlas</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Kubernetes Atlas</a><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../studio/index.html">Studio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../infrastructure/index.html">Infrastructure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../devops/index.html">DevOps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kvm/index.html">KVM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ceph/index.html">Ceph</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../gluster/index.html">Gluster</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ovirt/index.html">oVirt</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../openstack/index.html">OpenStack</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../docker/index.html">Docker</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Kubernetes</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../think_k8s.html">Kubernetes的思考</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../kubernetes_overview.html">Kubernetes概览</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="index.html">Kubernetes起步准备</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="install_run_minikube.html">安装和运行minikube</a></li>
+<li class="toctree-l3"><a class="reference internal" href="install_run_minikube.html">minikube</a></li>
 <li class="toctree-l3"><a class="reference internal" href="install_setup_kubectl.html">安装和设置kubectl</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">远程访问minikube</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#kubectlminikube">kubectl访问远程裸物理机minikube</a></li>
@@ -100,53 +108,56 @@
 <li class="toctree-l2"><a class="reference internal" href="../gpu/index.html">GPU Kubernetes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../kubeflow/index.html">Kubeflow - Kubernetes机器学习工作流平台</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../argo/index.html">Argo - 基于Kubernetes的持续集成和工作流</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../kueue/index.html">Kueue - K8s原生批处理调度</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../k8s_android/index.html">Kubernetes运行Android</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../k3s/index.html">K3s - 轻量级Kubernetes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../k0s/index.html">K0s - 轻量级Kubernetes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../platform/index.html">Kubernetes之上的平台</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../cloud/index.html">Kubernetes云厂商</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../develop/index.html">Kubernetes开发</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cncf/index.html">CNCF(Cloud Native Computing Foudation)</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../kubernetes_from_scratch/index.html">Kubernetes From Scratch (KFS) Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../rancher/index.html">Rancher Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../openshift/index.html">OpenShift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../sql/index.html">SQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../sqlite/index.html">SQLite Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../mysql/index.html">MySQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../pgsql/index.html">PostgreSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../clickhouse/index.html">ClickHouse Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../nosql/index.html">NoSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../redis/index.html">Redis Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../network/index.html">Network Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../infra_service/index.html">Infra-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../infra_search/index.html">Search Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../info_service/index.html">Info-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../web/index.html">Web Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../big_data/index.html">Big Data Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../machine_learning/index.html">Machine Learning Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../linux/index.html">Linux Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kernel/index.html">Kernel Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../performance/index.html">Performance Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../distributed_system/index.html">Distributed System Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../shell/index.html">Shell Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../python/index.html">Python Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../django/index.html">Django Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../flask/index.html">Flask Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../javascript/index.html">JavaScript Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../nodejs/index.html">Node.js Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../clang/index.html">C Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../golang/index.html">Go Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../swift/index.html">Swift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../rust/index.html">Rust Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../ruby/index.html">Ruby Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../arm/index.html">ARM Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../android/index.html">Android Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../bsd/index.html">BSD Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../apple/index.html">Apple Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../windows/index.html">Windows Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../real/index.html">Real Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../management/index.html">Management Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../life/index.html">Life Atlas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../k8s_dev/index.html">Kubernetes Develop</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../rancher/index.html">Rancher</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../openshift/index.html">OpenShift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../sql/index.html">SQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../sqlite/index.html">SQLite</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../mysql/index.html">MySQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../pgsql/index.html">PostgreSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../nosql/index.html">NoSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../network/index.html">Network</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../infra_service/index.html">Infra-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../infra_search/index.html">Infra-Search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../web/index.html">Web</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../info_service/index.html">Info-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../big_data/index.html">Big Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../machine_learning/index.html">Machine Learning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../drone/index.html">Drone</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../linux/index.html">Linux</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kernel/index.html">Kernel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../performance/index.html">Performance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../distributed_system/index.html">Distributed System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../shell/index.html">Shell</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../python/index.html">Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../django/index.html">Django</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../javascript/index.html">JavaScript</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../nodejs/index.html">Node.js</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../clang/index.html">C</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../golang/index.html">Go</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../swift/index.html">Swift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../rust/index.html">Rust</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ruby/index.html">Ruby</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lua/index.html">Lua</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../arm/index.html">ARM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../raspberry_pi/index.html">Raspberry Pi</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../android/index.html">Android</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../bsd/index.html">BSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../freebsd/index.html">FreeBSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../apple/index.html">Apple</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../windows/index.html">Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../real/index.html">Real</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../management/index.html">Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../life/index.html">Life</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../copyright.html">Copyright</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../aboutme.html">关于作者</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../donate.html">捐赠</a></li>
@@ -159,21 +170,21 @@
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../index.html">Cloud Atlas</a>
+          <a href="../../index.html">Cloud Atlas: Discovery</a>
       </nav>
 
       <div class="wy-nav-content">
         <div class="rst-content">
-          <div role="navigation" aria-label="Page navigation">
+          <div role="navigation" aria-label="页面导航">
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
-          <li class="breadcrumb-item"><a href="../index.html">Kubernetes Atlas</a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Kubernetes</a></li>
           <li class="breadcrumb-item"><a href="index.html">Kubernetes起步准备</a></li>
       <li class="breadcrumb-item active">远程访问minikube</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../../_sources/kubernetes/startup_prepare/remote_minikube.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../_sources/kubernetes/startup_prepare/remote_minikube.rst.txt" rel="nofollow"> 查看页面源码</a>
       </li>
   </ul>
   <hr/>
@@ -182,10 +193,10 @@
            <div itemprop="articleBody">
              
   <section id="minikube">
-<span id="remote-minikube"></span><h1>远程访问minikube<a class="headerlink" href="#minikube" title="Link to this heading">¶</a></h1>
-<p>由于我在 <a class="reference internal" href="../../studio/introduce_my_studio.html#introduce-my-studio"><span class="std std-ref">模拟云计算的Studio</span></a> 中采用 <a class="reference internal" href="../../studio/kvm_docker_in_studio.html#kvm-docker-in-studio"><span class="std std-ref">Studio环境KVM和Docker</span></a> 来模拟集群，并且在服务器上 <a class="reference internal" href="install_run_minikube.html#install-run-minikube"><span class="std std-ref">安装和运行minikube</span></a> ，所以日常需要从个人笔记本电脑上通过远程访问服务器上的minikube系统。</p>
+<span id="remote-minikube"></span><h1>远程访问minikube<a class="headerlink" href="#minikube" title="Link to this heading"></a></h1>
+<p>由于我在 <a class="reference internal" href="../../studio/introduce_my_studio.html#introduce-my-studio"><span class="std std-ref">模拟云计算的Studio</span></a> 中采用 <a class="reference internal" href="../../studio/kvm_docker_in_studio.html#kvm-docker-in-studio"><span class="std std-ref">Studio环境KVM和Docker</span></a> 来模拟集群，并且在服务器上 <a class="reference internal" href="install_run_minikube.html#install-run-minikube"><span class="std std-ref">minikube</span></a> ，所以日常需要从个人笔记本电脑上通过远程访问服务器上的minikube系统。</p>
 <section id="kubectlminikube">
-<h2>kubectl访问远程裸物理机minikube<a class="headerlink" href="#kubectlminikube" title="Link to this heading">¶</a></h2>
+<h2>kubectl访问远程裸物理机minikube<a class="headerlink" href="#kubectlminikube" title="Link to this heading"></a></h2>
 <ul>
 <li><p>本地笔记本电脑上 <a class="reference internal" href="install_setup_kubectl.html#install-setup-kubectl"><span class="std std-ref">安装和设置kubectl</span></a></p></li>
 <li><p>将远程服务器上的 <code class="docutils literal notranslate"><span class="pre">~/.minikube</span></code> 复制到本地 <code class="docutils literal notranslate"><span class="pre">~/xcloud/minikube</span></code></p>
@@ -226,7 +237,7 @@
 <li><p><code class="docutils literal notranslate"><span class="pre">certificate-authority</span></code> / <code class="docutils literal notranslate"><span class="pre">client-certificate</span></code> / <code class="docutils literal notranslate"><span class="pre">client-key</span></code> 分别修改成远程服务器的证书
 - 如果对服务器证书没有要求（降低安全性），可以配置 <code class="docutils literal notranslate"><span class="pre">certificate-authority</span></code> 行配置可以修改成 <code class="docutils literal notranslate"><span class="pre">insecure-skip-tls-verify:</span> <span class="pre">true</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">server:</span> <span class="pre">https://192.168.101.81:8443</span></code> 是远程服务器的IP</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">cluster</span></code> 修订成我在 <a class="reference internal" href="install_run_minikube.html#install-run-minikube"><span class="std std-ref">安装和运行minikube</span></a> 中配置的远程服务器上裸物理机运行的minikube名字，相应的context名字也修订</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">cluster</span></code> 修订成我在 <a class="reference internal" href="install_run_minikube.html#install-run-minikube"><span class="std std-ref">minikube</span></a> 中配置的远程服务器上裸物理机运行的minikube名字，相应的context名字也修订</p></li>
 </ul>
 </div></blockquote>
 <div class="admonition note">
@@ -256,7 +267,7 @@
 </div>
 </section>
 <section id="kubectlkvmminikube">
-<h2>kubectl访问远程KVM虚拟机minikube<a class="headerlink" href="#kubectlkvmminikube" title="Link to this heading">¶</a></h2>
+<h2>kubectl访问远程KVM虚拟机minikube<a class="headerlink" href="#kubectlkvmminikube" title="Link to this heading"></a></h2>
 <p>如果在远程服务器上通过KVM运行minikube，则默认是使用远程服务器上的Host虚拟网络，对外不暴露管控API端口。需要通过iptables映射或者，需要采用本地ssh登陆到服务器上开启端口转发来实现访问KVM虚拟机中端口。举例，本地端口18443转发到远程KVM虚拟机的8443:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ssh</span> <span class="o">-</span><span class="n">L</span> <span class="mi">18443</span><span class="p">:</span><span class="mf">192.168.122.81</span><span class="p">:</span><span class="mi">8443</span> <span class="o">-</span><span class="n">N</span> <span class="o">-</span><span class="n">f</span> <span class="mf">192.168.101.81</span>
 </pre></div>
@@ -268,7 +279,7 @@
 <p>启用端口转发之后，就可以把 <code class="docutils literal notranslate"><span class="pre">~/.kube/config</span></code> 配置中 server 设置成 <code class="docutils literal notranslate"><span class="pre">server:</span> <span class="pre">https://127.0.0.1:18443</span></code> ，则访问到远程服务器上KVM的minikube。</p>
 </section>
 <section id="minikubeminikube">
-<h2>本地minikube命令访问远程minikube集群<a class="headerlink" href="#minikubeminikube" title="Link to this heading">¶</a></h2>
+<h2>本地minikube命令访问远程minikube集群<a class="headerlink" href="#minikubeminikube" title="Link to this heading"></a></h2>
 <p>现在本地的kubectl已经可以连接远程服务器上运行的minikube，不过，我们现在还没有办法像本地运行minikube一样，直接运行 <code class="docutils literal notranslate"><span class="pre">minikube</span> <span class="pre">dashborad</span></code> 访问服务器的仪表盘。虽然可以在服务器上执行 <code class="docutils literal notranslate"><span class="pre">minikube</span> <span class="pre">dashboard</span></code> 命令启动服务，但是会提示无法打开浏览器:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">-</span>   <span class="n">Enabling</span> <span class="n">dashboard</span> <span class="o">...</span>
 <span class="o">-</span>   <span class="n">Verifying</span> <span class="n">dashboard</span> <span class="n">health</span> <span class="o">...</span>
@@ -352,7 +363,7 @@ Starting to serve on 127.0.0.1:8001
 </div>
 </section>
 <section id="id1">
-<h2>参考<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h2>
+<h2>参考<a class="headerlink" href="#id1" title="Link to this heading"></a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="https://www.systemcodegeeks.com/devops/remote-access-to-minikube-with-kubectl/">Remote access to Minikube with Kubectl</a></p></li>
 <li><p><a class="reference external" href="https://cwienczek.com/2017/09/reaching-minikube-from-other-devices/">Reaching minikube from other devices</a></p></li>
@@ -364,25 +375,37 @@ Starting to serve on 127.0.0.1:8001
 
            </div>
           </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="install_setup_kubectl.html" class="btn btn-neutral float-left" title="安装和设置kubectl" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="ubuntu_in_kubernetes.html" class="btn btn-neutral float-right" title="在Kubernetes中运行Ubuntu" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="install_setup_kubectl.html" class="btn btn-neutral float-left" title="安装和设置kubectl" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="ubuntu_in_kubernetes.html" class="btn btn-neutral float-right" title="在Kubernetes中运行Ubuntu" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../copyright.html">Copyright</a> 2018 - now, Huatai Huang.</p>
+    <p>&#169; <a href="../../copyright.html">版权所有</a> 2018 - now, Huatai Huang。</p>
   </div>
 
-  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
   
     <!-- your html code here -->
     <br>
-    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡</a></p>
-     
+    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡 👈</a></p>
+    <br>
+    <p>网站采用 <a href="https://utteranc.es/">utterances</a> 评论系统，所有评论存储在<a href="https://github.com/huataihuang/cloud-atlas/issues">GitHub issues</a> 中，如果你看不到下方的评论框，那么可能需要<a href="https://cloud-atlas.readthedocs.io/zh-cn/latest/linux/security/vpn/index.html">自备梯子</a> 👈</p>
+    <div class="articleComments">
+        <comments>
+  <script src="https://utteranc.es/client.js"
+    repo="huataihuang/cloud-atlas"
+    issue-term="pathname"
+    theme="github-light"
+    crossorigin="anonymous"
+    async>
+  </script>
+</comments>
+    </div>
 
 
 </footer>

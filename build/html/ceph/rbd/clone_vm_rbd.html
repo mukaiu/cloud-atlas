@@ -1,21 +1,25 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh" data-content_root="../../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Clone使用Ceph RBD的虚拟机 &mdash; Cloud Atlas 0.1 文档</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+  <title>Clone使用Ceph RBD的虚拟机 &mdash; Cloud Atlas: Discovery beta 文档</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=fd3f3429" />
+
+  
+    <link rel="shortcut icon" href="../../_static/favicon.png"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="../../_static/documentation_options.js?v=7c91f8fd"></script>
-        <script src="../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=8534f863"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
         <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
-        <script src="../../_static/translations.js?v=beaddf03"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../../genindex.html" />
     <link rel="search" title="搜索" href="../../search.html" />
@@ -33,23 +37,26 @@
           
           
           <a href="../../index.html" class="icon icon-home">
-            Cloud Atlas
+            Cloud Atlas: Discovery
           </a>
+              <div class="version">
+                1.1
+              </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../studio/index.html">Studio Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../infrastructure/index.html">Infrastructure Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../devops/index.html">DevOps Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kvm/index.html">KVM Atlas</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Ceph Atlas</a><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../studio/index.html">Studio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../infrastructure/index.html">Infrastructure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../devops/index.html">DevOps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kvm/index.html">KVM</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Ceph</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../intro_ceph.html">Ceph存储介绍</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../gluster/gluster_vs_ceph.html">Gluster和Ceph对比</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ceph_recommend.html">Ceph部署软硬件推荐</a></li>
@@ -86,55 +93,56 @@
 <li class="toctree-l2"><a class="reference internal" href="../debug/index.html">Ceph 故障排查</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../arm/index.html">ARM架构Ceph</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../arch/index.html">Ceph 架构</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pgsql_on_ceph/index.html">Ceph 上运行PostgreSQL</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../tunning/index.html">Ceph 优化</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../kubernetes/storage/rook/index.html">Rook - 云原生存储调度器</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../gluster/index.html">Gluster Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../ovirt/index.html">oVirt Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../openstack/index.html">OpenStack Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../docker/index.html">Docker Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kubernetes/index.html">Kubernetes Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kubernetes_from_scratch/index.html">Kubernetes From Scratch (KFS) Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../rancher/index.html">Rancher Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../openshift/index.html">OpenShift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../sql/index.html">SQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../sqlite/index.html">SQLite Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../mysql/index.html">MySQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../pgsql/index.html">PostgreSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../clickhouse/index.html">ClickHouse Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../nosql/index.html">NoSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../redis/index.html">Redis Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../network/index.html">Network Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../infra_service/index.html">Infra-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../infra_search/index.html">Search Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../info_service/index.html">Info-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../web/index.html">Web Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../big_data/index.html">Big Data Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../machine_learning/index.html">Machine Learning Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../linux/index.html">Linux Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kernel/index.html">Kernel Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../performance/index.html">Performance Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../distributed_system/index.html">Distributed System Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../shell/index.html">Shell Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../python/index.html">Python Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../django/index.html">Django Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../flask/index.html">Flask Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../javascript/index.html">JavaScript Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../nodejs/index.html">Node.js Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../clang/index.html">C Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../golang/index.html">Go Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../swift/index.html">Swift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../rust/index.html">Rust Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../ruby/index.html">Ruby Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../arm/index.html">ARM Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../android/index.html">Android Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../bsd/index.html">BSD Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../apple/index.html">Apple Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../windows/index.html">Windows Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../real/index.html">Real Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../management/index.html">Management Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../life/index.html">Life Atlas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../gluster/index.html">Gluster</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ovirt/index.html">oVirt</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../openstack/index.html">OpenStack</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../docker/index.html">Docker</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kubernetes/index.html">Kubernetes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../k8s_dev/index.html">Kubernetes Develop</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../rancher/index.html">Rancher</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../openshift/index.html">OpenShift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../sql/index.html">SQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../sqlite/index.html">SQLite</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../mysql/index.html">MySQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../pgsql/index.html">PostgreSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../nosql/index.html">NoSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../network/index.html">Network</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../infra_service/index.html">Infra-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../infra_search/index.html">Infra-Search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../web/index.html">Web</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../info_service/index.html">Info-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../big_data/index.html">Big Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../machine_learning/index.html">Machine Learning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../drone/index.html">Drone</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../linux/index.html">Linux</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kernel/index.html">Kernel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../performance/index.html">Performance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../distributed_system/index.html">Distributed System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../shell/index.html">Shell</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../python/index.html">Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../django/index.html">Django</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../javascript/index.html">JavaScript</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../nodejs/index.html">Node.js</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../clang/index.html">C</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../golang/index.html">Go</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../swift/index.html">Swift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../rust/index.html">Rust</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ruby/index.html">Ruby</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lua/index.html">Lua</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../arm/index.html">ARM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../raspberry_pi/index.html">Raspberry Pi</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../android/index.html">Android</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../bsd/index.html">BSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../freebsd/index.html">FreeBSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../apple/index.html">Apple</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../windows/index.html">Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../real/index.html">Real</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../management/index.html">Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../life/index.html">Life</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../copyright.html">Copyright</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../aboutme.html">关于作者</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../donate.html">捐赠</a></li>
@@ -147,21 +155,21 @@
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../index.html">Cloud Atlas</a>
+          <a href="../../index.html">Cloud Atlas: Discovery</a>
       </nav>
 
       <div class="wy-nav-content">
         <div class="rst-content">
-          <div role="navigation" aria-label="Page navigation">
+          <div role="navigation" aria-label="页面导航">
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
-          <li class="breadcrumb-item"><a href="../index.html">Ceph Atlas</a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Ceph</a></li>
           <li class="breadcrumb-item"><a href="index.html">Ceph Block Device(RBD)</a></li>
       <li class="breadcrumb-item active">Clone使用Ceph RBD的虚拟机</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../../_sources/ceph/rbd/clone_vm_rbd.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../_sources/ceph/rbd/clone_vm_rbd.rst.txt" rel="nofollow"> 查看页面源码</a>
       </li>
   </ul>
   <hr/>
@@ -170,7 +178,7 @@
            <div itemprop="articleBody">
              
   <section id="cloneceph-rbd">
-<span id="clone-vm-rbd"></span><h1>Clone使用Ceph RBD的虚拟机<a class="headerlink" href="#cloneceph-rbd" title="Link to this heading">¶</a></h1>
+<span id="clone-vm-rbd"></span><h1>Clone使用Ceph RBD的虚拟机<a class="headerlink" href="#cloneceph-rbd" title="Link to this heading"></a></h1>
 <p>在 <a class="reference internal" href="ceph_rbd_libvirt.html#ceph-rbd-libvirt"><span class="std std-ref">Libvirt集成Ceph RBD</span></a> 环境中部署KVM虚拟机并调试运行正常之后，自然就想要类似 <a class="reference internal" href="../../kvm/libvirt/storage/libvirt_lvm_pool.html#libvirt-lvm-pool"><span class="std std-ref">libvirt LVM卷管理存储池</span></a> 一样，通过 <code class="docutils literal notranslate"><span class="pre">virsh</span> <span class="pre">vol-clone</span></code> 批量复制VM，来构建大规模集群。</p>
 <p>不过，尝试:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">virt</span><span class="o">-</span><span class="n">clone</span> <span class="o">--</span><span class="n">original</span> <span class="n">z</span><span class="o">-</span><span class="n">ubuntu20</span><span class="o">-</span><span class="n">rbd</span> <span class="o">--</span><span class="n">name</span> <span class="n">z</span><span class="o">-</span><span class="n">k8s</span><span class="o">-</span><span class="n">m</span><span class="o">-</span><span class="mi">1</span> <span class="o">--</span><span class="n">auto</span><span class="o">-</span><span class="n">clone</span>
@@ -180,9 +188,9 @@
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ERROR</span>    <span class="p">[</span><span class="n">Errno</span> <span class="mi">2</span><span class="p">]</span> <span class="n">No</span> <span class="n">such</span> <span class="n">file</span> <span class="ow">or</span> <span class="n">directory</span><span class="p">:</span> <span class="s1">&#39;rbd://192.168.6.204/libvirt-pool&#39;</span>
 </pre></div>
 </div>
-<p>这个问题在 <a class="reference external" href="https://github.com/virt-manager/virt-manager/issues/177">virt-clone can’t handle domains with rbd volumes #177</a> 有说明， <code class="docutils literal notranslate"><span class="pre">virt-install</span></code> 查看 <code class="docutils literal notranslate"><span class="pre">pool</span> <span class="pre">+</span> <span class="pre">vol</span></code> 的VM XML，没有认为存储是被管理的，所以不能clone。</p>
+<p>这个问题在 <a class="reference external" href="https://github.com/virt-manager/virt-manager/issues/177">virt-clone can't handle domains with rbd volumes #177</a> 有说明， <code class="docutils literal notranslate"><span class="pre">virt-install</span></code> 查看 <code class="docutils literal notranslate"><span class="pre">pool</span> <span class="pre">+</span> <span class="pre">vol</span></code> 的VM XML，没有认为存储是被管理的，所以不能clone。</p>
 <section id="id1">
-<h2>解决思路<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h2>
+<h2>解决思路<a class="headerlink" href="#id1" title="Link to this heading"></a></h2>
 <p>如果只是因为无法处理Ceph RBD存储中的VM镜像文件，我考虑把clone步骤拆分来完成:</p>
 <ul class="simple">
 <li><p>将模版虚拟机 <code class="docutils literal notranslate"><span class="pre">XML</span></code> 配置中有关 Ceph RBD 磁盘部分摘除，然后剩余部分作为模版</p></li>
@@ -191,7 +199,7 @@
 </ul>
 </section>
 <section id="clone-ceph-rbd">
-<h2>实践Clone Ceph RBD虚拟机<a class="headerlink" href="#clone-ceph-rbd" title="Link to this heading">¶</a></h2>
+<h2>实践Clone Ceph RBD虚拟机<a class="headerlink" href="#clone-ceph-rbd" title="Link to this heading"></a></h2>
 <ul>
 <li><p>备份 <code class="docutils literal notranslate"><span class="pre">z-ubuntu20-rbd</span></code> 配置:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">virsh</span> <span class="n">dumpxml</span> <span class="n">z</span><span class="o">-</span><span class="n">ubuntu20</span><span class="o">-</span><span class="n">rbd</span> <span class="o">&gt;</span> <span class="n">z</span><span class="o">-</span><span class="n">ubuntu20</span><span class="o">-</span><span class="n">rbd</span><span class="o">.</span><span class="n">xml</span>
@@ -201,7 +209,7 @@
 <li><p>分离出 <code class="docutils literal notranslate"><span class="pre">rbd.xml</span></code> 配置:</p></li>
 </ul>
 <div class="literal-block-wrapper docutils container" id="id3">
-<div class="code-block-caption"><span class="caption-text">rbd磁盘设备XML</span><a class="headerlink" href="#id3" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">rbd磁盘设备XML</span><a class="headerlink" href="#id3" title="Link to this code"></a></div>
 <div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="w">  </span><span class="nt">&lt;disk</span><span class="w"> </span><span class="na">type=</span><span class="s">&#39;network&#39;</span><span class="w"> </span><span class="na">device=</span><span class="s">&#39;disk&#39;</span><span class="nt">&gt;</span>
 <span class="linenos"> 2</span><span class="w">    </span><span class="nt">&lt;driver</span><span class="w"> </span><span class="na">name=</span><span class="s">&#39;qemu&#39;</span><span class="w"> </span><span class="na">type=</span><span class="s">&#39;raw&#39;</span><span class="w"> </span><span class="na">cache=</span><span class="s">&#39;none&#39;</span><span class="w"> </span><span class="na">io=</span><span class="s">&#39;native&#39;</span><span class="nt">/&gt;</span>
 <span class="linenos"> 3</span><span class="w">    </span><span class="nt">&lt;auth</span><span class="w"> </span><span class="na">username=</span><span class="s">&#39;libvirt&#39;</span><span class="nt">&gt;</span>
@@ -284,8 +292,8 @@ cat rbd.xml | sed &quot;s/RBD_DISK/$VM/g&quot; &gt; ${VM}-disk.xml
 </ul>
 </section>
 <section id="clone-vm">
-<h2>排查clone VM启动问题<a class="headerlink" href="#clone-vm" title="Link to this heading">¶</a></h2>
-<p>这里出现一个问题 <code class="docutils literal notranslate"><span class="pre">virsh</span> <span class="pre">console</span> <span class="pre">z-k8s-m-1</span></code> 没有任何输出，观察日志 <code class="docutils literal notranslate"><span class="pre">/var/log/libvirt/qemu/z-k8s-m-1.log</span></code> 发现有 <a class="reference internal" href="../../kvm/iommu/tainted_host-cpu.html#tainted-host-cpu"><span class="std std-ref">libvirt日志”Domain id=X is tainted: host-cpu”</span></a></p>
+<h2>排查clone VM启动问题<a class="headerlink" href="#clone-vm" title="Link to this heading"></a></h2>
+<p>这里出现一个问题 <code class="docutils literal notranslate"><span class="pre">virsh</span> <span class="pre">console</span> <span class="pre">z-k8s-m-1</span></code> 没有任何输出，观察日志 <code class="docutils literal notranslate"><span class="pre">/var/log/libvirt/qemu/z-k8s-m-1.log</span></code> 发现有 <a class="reference internal" href="../../kvm/iommu/tainted_host-cpu.html#tainted-host-cpu"><span class="std std-ref">libvirt日志&quot;Domain id=X is tainted: host-cpu&quot;</span></a></p>
 <p>我对比了一下 <code class="docutils literal notranslate"><span class="pre">z-ubuntu20-rbd</span></code> 和clone出来的 <code class="docutils literal notranslate"><span class="pre">z-k8s-m-1</span></code> ，发现新虚拟机主要增加了 <code class="docutils literal notranslate"><span class="pre">guest_agent</span></code></p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">channel</span> <span class="nb">type</span><span class="o">=</span><span class="s1">&#39;unix&#39;</span><span class="o">&gt;</span>
   <span class="o">&lt;</span><span class="n">source</span> <span class="n">mode</span><span class="o">=</span><span class="s1">&#39;bind&#39;</span> <span class="n">path</span><span class="o">=</span><span class="s1">&#39;/var/lib/libvirt/qemu/channel/target/domain-36-z-k8s-m-1/org.qemu.guest_agent.0&#39;</span><span class="o">/&gt;</span>
@@ -330,12 +338,12 @@ FXSAVE_STATE - 000000007FF9C610
 <li><p>完全全新使用 Ceph RBD 从头开始安装 <a class="reference internal" href="../../linux/ubuntu_linux/index.html#ubuntu-linux"><span class="std std-ref">Ubuntu Linux</span></a> 20.04.3 LTS操作系统 (这个方法是最干净的)</p></li>
 </ul>
 <section id="z-ubuntu20-rbd-rbd">
-<h3><code class="docutils literal notranslate"><span class="pre">z-ubuntu20-rbd</span></code> 添加RBD磁盘启动<a class="headerlink" href="#z-ubuntu20-rbd-rbd" title="Link to this heading">¶</a></h3>
+<h3><code class="docutils literal notranslate"><span class="pre">z-ubuntu20-rbd</span></code> 添加RBD磁盘启动<a class="headerlink" href="#z-ubuntu20-rbd-rbd" title="Link to this heading"></a></h3>
 <ul class="simple">
 <li><p>将RBD磁盘 <code class="docutils literal notranslate"><span class="pre">z-k8s-m-1-disk.xml</span></code> 内容插入到 <code class="docutils literal notranslate"><span class="pre">z-ubuntu20-rbd</span></code> 进行测试:</p></li>
 </ul>
 <div class="literal-block-wrapper docutils container" id="id4">
-<div class="code-block-caption"><span class="caption-text">z-ubuntu20-rbd 使用 z-k8s-m-1-disk.xml</span><a class="headerlink" href="#id4" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">z-ubuntu20-rbd 使用 z-k8s-m-1-disk.xml</span><a class="headerlink" href="#id4" title="Link to this code"></a></div>
 <div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="w">  </span><span class="nt">&lt;disk</span><span class="w"> </span><span class="na">type=</span><span class="s">&#39;network&#39;</span><span class="w"> </span><span class="na">device=</span><span class="s">&#39;disk&#39;</span><span class="nt">&gt;</span>
 <span class="linenos"> 2</span><span class="w">    </span><span class="nt">&lt;driver</span><span class="w"> </span><span class="na">name=</span><span class="s">&#39;qemu&#39;</span><span class="w"> </span><span class="na">type=</span><span class="s">&#39;raw&#39;</span><span class="w"> </span><span class="na">cache=</span><span class="s">&#39;none&#39;</span><span class="w"> </span><span class="na">io=</span><span class="s">&#39;native&#39;</span><span class="nt">/&gt;</span>
 <span class="linenos"> 3</span><span class="w">    </span><span class="nt">&lt;auth</span><span class="w"> </span><span class="na">username=</span><span class="s">&#39;libvirt&#39;</span><span class="nt">&gt;</span>
@@ -358,7 +366,7 @@ FXSAVE_STATE - 000000007FF9C610
 </div>
 <p>输出信息</p>
 <div class="literal-block-wrapper docutils container" id="id5">
-<div class="code-block-caption"><span class="caption-text">z-ubuntu20-rbd 启动控制台信息</span><a class="headerlink" href="#id5" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">z-ubuntu20-rbd 启动控制台信息</span><a class="headerlink" href="#id5" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span>/usr/sbin/fsck.xfs:<span class="w"> </span>XFS<span class="w"> </span>file<span class="w"> </span>system.
 <span class="linenos"> 2</span><span class="o">[</span><span class="w">    </span><span class="m">2</span>.247332<span class="o">]</span><span class="w"> </span>pcieport<span class="w"> </span><span class="m">0000</span>:00:01.5:<span class="w"> </span>pciehp:<span class="w"> </span>Failed<span class="w"> </span>to<span class="w"> </span>check<span class="w"> </span>link<span class="w"> </span>status
 <span class="linenos"> 3</span><span class="o">[</span><span class="w">    </span><span class="m">2</span>.287301<span class="o">]</span><span class="w"> </span>pcieport<span class="w"> </span><span class="m">0000</span>:00:01.2:<span class="w"> </span>pciehp:<span class="w"> </span>Failed<span class="w"> </span>to<span class="w"> </span>check<span class="w"> </span>link<span class="w"> </span>status
@@ -458,13 +466,13 @@ FXSAVE_STATE - 000000007FF9C610
 </div>
 </section>
 <section id="ceph-rbd">
-<h3>全新安装基于Ceph RBD虚拟机模版<a class="headerlink" href="#ceph-rbd" title="Link to this heading">¶</a></h3>
+<h3>全新安装基于Ceph RBD虚拟机模版<a class="headerlink" href="#ceph-rbd" title="Link to this heading"></a></h3>
 <p>我在 <a class="reference internal" href="ceph_rbd_libvirt.html#ceph-rbd-libvirt"><span class="std std-ref">Libvirt集成Ceph RBD</span></a> 实践中全新安装 <code class="docutils literal notranslate"><span class="pre">z-ubuntu20-rbd</span></code> ，安装完成后检查:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">virsh</span> <span class="n">dumpxml</span> <span class="n">z</span><span class="o">-</span><span class="n">ubuntu20</span><span class="o">-</span><span class="n">rbd</span> <span class="o">&gt;</span> <span class="n">z</span><span class="o">-</span><span class="n">ubuntu20</span><span class="o">-</span><span class="n">rbd</span><span class="o">.</span><span class="n">xml</span>
 </pre></div>
 </div>
 <div class="literal-block-wrapper docutils container" id="id6">
-<div class="code-block-caption"><span class="caption-text">z-ubuntu20-rbd 全新安装dumpxml</span><a class="headerlink" href="#id6" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">z-ubuntu20-rbd 全新安装dumpxml</span><a class="headerlink" href="#id6" title="Link to this code"></a></div>
 <div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="linenos">  1</span><span class="nt">&lt;domain</span><span class="w"> </span><span class="na">type=</span><span class="s">&#39;kvm&#39;</span><span class="nt">&gt;</span>
 <span class="linenos">  2</span><span class="w">  </span><span class="nt">&lt;name&gt;</span>z-ubuntu20-rbd<span class="nt">&lt;/name&gt;</span>
 <span class="linenos">  3</span><span class="w">  </span><span class="nt">&lt;uuid&gt;</span>e14d43a0-2887-43ca-b568-cd3ee51ca31d<span class="nt">&lt;/uuid&gt;</span>
@@ -614,7 +622,7 @@ FXSAVE_STATE - 000000007FF9C610
 <li><p>从新创建的 <code class="docutils literal notranslate"><span class="pre">z-ubuntu20-rbd.xml</span></code> 复制出新版本 <code class="docutils literal notranslate"><span class="pre">new-rbd.xml</span></code></p></li>
 </ul>
 <div class="literal-block-wrapper docutils container" id="id7">
-<div class="code-block-caption"><span class="caption-text">全新创建VM的rbd磁盘设备XML</span><a class="headerlink" href="#id7" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">全新创建VM的rbd磁盘设备XML</span><a class="headerlink" href="#id7" title="Link to this code"></a></div>
 <div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="nt">&lt;disk</span><span class="w"> </span><span class="na">type=</span><span class="s">&#39;network&#39;</span><span class="w"> </span><span class="na">device=</span><span class="s">&#39;disk&#39;</span><span class="nt">&gt;</span>
 <span class="linenos"> 2</span><span class="w">  </span><span class="nt">&lt;driver</span><span class="w"> </span><span class="na">name=</span><span class="s">&#39;qemu&#39;</span><span class="w"> </span><span class="na">type=</span><span class="s">&#39;raw&#39;</span><span class="w"> </span><span class="na">cache=</span><span class="s">&#39;none&#39;</span><span class="w"> </span><span class="na">io=</span><span class="s">&#39;native&#39;</span><span class="nt">/&gt;</span>
 <span class="linenos"> 3</span><span class="w">  </span><span class="nt">&lt;auth</span><span class="w"> </span><span class="na">username=</span><span class="s">&#39;libvirt&#39;</span><span class="nt">&gt;</span>
@@ -685,7 +693,7 @@ virsh attach-device $VM ${VM}-disk.xml --config
 </section>
 </section>
 <section id="libguestfs">
-<h2>libguestfs<a class="headerlink" href="#libguestfs" title="Link to this heading">¶</a></h2>
+<h2>libguestfs<a class="headerlink" href="#libguestfs" title="Link to this heading"></a></h2>
 <p>为了便于脚本化完成大批虚拟机的创建，我们可以采用 <a class="reference internal" href="../../kvm/kvm_libguestfs.html#kvm-libguestfs"><span class="std std-ref">使用libguestfs修订KVM镜像</span></a> 完成虚拟机镜像修改，这样就无需手工操作。</p>
 <ul>
 <li><p>通过 <code class="docutils literal notranslate"><span class="pre">guestfish</span></code> 访问 <a class="reference internal" href="index.html#ceph-rbd"><span class="std std-ref">Ceph Block Device(RBD)</span></a> 磁盘:</p>
@@ -719,7 +727,7 @@ virsh attach-device $VM ${VM}-disk.xml --config
 </div>
 <p>上述交互命令命令可以改写成一段脚本:</p>
 <div class="literal-block-wrapper docutils container" id="id8">
-<div class="code-block-caption"><span class="caption-text">修改虚拟机IP的简单脚本</span><a class="headerlink" href="#id8" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">修改虚拟机IP的简单脚本</span><a class="headerlink" href="#id8" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="ch">#!/bin/bash -</span>
 <span class="linenos">2</span><span class="nb">set</span><span class="w"> </span>-e
 <span class="linenos">3</span><span class="nv">vm</span><span class="o">=</span><span class="s2">&quot;</span><span class="nv">$1</span><span class="s2">&quot;</span>
@@ -734,7 +742,7 @@ virsh attach-device $VM ${VM}-disk.xml --config
 </div>
 </section>
 <section id="clone">
-<h2>完整的clone脚本<a class="headerlink" href="#clone" title="Link to this heading">¶</a></h2>
+<h2>完整的clone脚本<a class="headerlink" href="#clone" title="Link to this heading"></a></h2>
 <ul>
 <li><p>将上述复制虚拟机以及通过 libguestfs 工具修订虚拟机配置的步骤串联起来，形成一个简单的 <code class="docutils literal notranslate"><span class="pre">clone_vm.sh</span></code> 脚本，使用方法如下:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">./</span><span class="n">clone_vm</span><span class="o">.</span><span class="n">sh</span> <span class="n">z</span><span class="o">-</span><span class="n">k8s</span><span class="o">-</span><span class="n">m</span><span class="o">-</span><span class="mi">3</span>
@@ -743,7 +751,7 @@ virsh attach-device $VM ${VM}-disk.xml --config
 </li>
 </ul>
 <div class="literal-block-wrapper docutils container" id="id9">
-<div class="code-block-caption"><span class="caption-text">clone虚拟机的简单脚本</span><a class="headerlink" href="#id9" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">clone虚拟机的简单脚本</span><a class="headerlink" href="#id9" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="ch">#!/bin/env bash</span>
 <span class="linenos"> 2</span>
 <span class="linenos"> 3</span>.<span class="w"> </span>/etc/profile
@@ -824,7 +832,7 @@ virsh attach-device $VM ${VM}-disk.xml --config
 </div>
 </section>
 <section id="id2">
-<h2>参考<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
+<h2>参考<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="https://bugzilla.redhat.com/show_bug.cgi?id=1392798">Bug 1392798 - secrets from libvirt domains are not read</a></p></li>
 </ul>
@@ -834,25 +842,37 @@ virsh attach-device $VM ${VM}-disk.xml --config
 
            </div>
           </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="down_1_of_3_ceph_vm_rbd.html" class="btn btn-neutral float-left" title="1/3 Ceph节点宕机演练: VM RBD测试" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="ceph_extend_rbd_drive_with_libvirt_xfs.html" class="btn btn-neutral float-right" title="使用libvirt和XFS在线扩展Ceph RBD设备" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="down_1_of_3_ceph_vm_rbd.html" class="btn btn-neutral float-left" title="1/3 Ceph节点宕机演练: VM RBD测试" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="ceph_extend_rbd_drive_with_libvirt_xfs.html" class="btn btn-neutral float-right" title="使用libvirt和XFS在线扩展Ceph RBD设备" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../copyright.html">Copyright</a> 2018 - now, Huatai Huang.</p>
+    <p>&#169; <a href="../../copyright.html">版权所有</a> 2018 - now, Huatai Huang。</p>
   </div>
 
-  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
   
     <!-- your html code here -->
     <br>
-    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡</a></p>
-     
+    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡 👈</a></p>
+    <br>
+    <p>网站采用 <a href="https://utteranc.es/">utterances</a> 评论系统，所有评论存储在<a href="https://github.com/huataihuang/cloud-atlas/issues">GitHub issues</a> 中，如果你看不到下方的评论框，那么可能需要<a href="https://cloud-atlas.readthedocs.io/zh-cn/latest/linux/security/vpn/index.html">自备梯子</a> 👈</p>
+    <div class="articleComments">
+        <comments>
+  <script src="https://utteranc.es/client.js"
+    repo="huataihuang/cloud-atlas"
+    issue-term="pathname"
+    theme="github-light"
+    crossorigin="anonymous"
+    async>
+  </script>
+</comments>
+    </div>
 
 
 </footer>

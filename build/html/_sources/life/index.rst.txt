@@ -1,7 +1,7 @@
 .. _life:
 
 =================================
-Life Atlas
+Life
 =================================
 
 面朝大海，春暖花开 -- 海子
@@ -40,11 +40,15 @@ Life Balance
 .. toctree::
    :maxdepth: 1
 
+   whats_past_is_prologue.rst
    future_experience_technologies.rst
    open_your_mind/index
    sport/index
    skill/index
    music/index
+   photography/index
+   travel/index
+   tea/index
 
 .. only::  subproject and html
 

@@ -1,27 +1,31 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh" data-content_root="../../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pacman &mdash; Cloud Atlas 0.1 文档</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+  <title>Pacman &mdash; Cloud Atlas: Discovery beta 文档</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=fd3f3429" />
+
+  
+    <link rel="shortcut icon" href="../../_static/favicon.png"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="../../_static/documentation_options.js?v=7c91f8fd"></script>
-        <script src="../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=8534f863"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
         <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
-        <script src="../../_static/translations.js?v=beaddf03"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../../genindex.html" />
     <link rel="search" title="搜索" href="../../search.html" />
     <link rel="copyright" title="版权所有" href="../../copyright.html" />
     <link rel="next" title="pacman使用代理服务器" href="pacman_proxy.html" />
-    <link rel="prev" title="Arch Linux Windows字体" href="archlinux_ms_fonts.html" /> 
+    <link rel="prev" title="在Vultr VPS中运行Arch Linux" href="archlinux_vultr.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -33,67 +37,76 @@
           
           
           <a href="../../index.html" class="icon icon-home">
-            Cloud Atlas
+            Cloud Atlas: Discovery
           </a>
+              <div class="version">
+                1.1
+              </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../studio/index.html">Studio Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../infrastructure/index.html">Infrastructure Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../devops/index.html">DevOps Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kvm/index.html">KVM Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../ceph/index.html">Ceph Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../gluster/index.html">Gluster Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../ovirt/index.html">oVirt Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../openstack/index.html">OpenStack Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../docker/index.html">Docker Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kubernetes/index.html">Kubernetes Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kubernetes_from_scratch/index.html">Kubernetes From Scratch (KFS) Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../rancher/index.html">Rancher Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../openshift/index.html">OpenShift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../sql/index.html">SQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../sqlite/index.html">SQLite Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../mysql/index.html">MySQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../pgsql/index.html">PostgreSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../clickhouse/index.html">ClickHouse Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../nosql/index.html">NoSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../redis/index.html">Redis Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../network/index.html">Network Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../infra_service/index.html">Infra-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../infra_search/index.html">Search Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../info_service/index.html">Info-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../web/index.html">Web Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../big_data/index.html">Big Data Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../machine_learning/index.html">Machine Learning Atlas</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Linux Atlas</a><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../studio/index.html">Studio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../infrastructure/index.html">Infrastructure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../devops/index.html">DevOps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kvm/index.html">KVM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ceph/index.html">Ceph</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../gluster/index.html">Gluster</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ovirt/index.html">oVirt</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../openstack/index.html">OpenStack</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../docker/index.html">Docker</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kubernetes/index.html">Kubernetes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../k8s_dev/index.html">Kubernetes Develop</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../rancher/index.html">Rancher</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../openshift/index.html">OpenShift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../sql/index.html">SQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../sqlite/index.html">SQLite</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../mysql/index.html">MySQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../pgsql/index.html">PostgreSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../nosql/index.html">NoSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../network/index.html">Network</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../infra_service/index.html">Infra-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../infra_search/index.html">Infra-Search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../web/index.html">Web</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../info_service/index.html">Info-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../big_data/index.html">Big Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../machine_learning/index.html">Machine Learning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../drone/index.html">Drone</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Linux</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../best_linux.html">最佳Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../admin/index.html">Linux系统管理</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../redhat_linux/index.html">RedHat Linux</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="index.html">Arch Linux</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="intro_archlinux.html">Arch Linux简介</a></li>
 <li class="toctree-l3"><a class="reference internal" href="best_archlinux.html">最佳Arch Linux发行版</a></li>
 <li class="toctree-l3"><a class="reference internal" href="archlinux_on_mbp.html">MacBook Pro上运行Arch Linux</a></li>
 <li class="toctree-l3"><a class="reference internal" href="archlinux_on_thinkpad_x220.html">ThinkPad X220上运行Arch Linux</a></li>
 <li class="toctree-l3"><a class="reference internal" href="archlinux_on_thinkpad_x220_u_disk.html">ThinkPad X220上运行Arch Linux(U盘)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="archlinux_on_mba.html">MacBook Air上运行Arch Linux</a></li>
+<li class="toctree-l3"><a class="reference internal" href="kinto.html">Kinto.sh - 为Linux/Windows提供 <code class="docutils literal notranslate"><span class="pre">Mac风格快捷键</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="archlinux_init.html">Arch Linux精简系统初始化</a></li>
 <li class="toctree-l3"><a class="reference internal" href="archlinux_chinese_mirrorlist.html">arch linux添加国内源(mirrorlist)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="archlinux_config_ip.html">arch linux配置IP(静态或动态)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="archlinux_wpa_supplicant.html">arch linux使用wpa_supplicant连接无线网络</a></li>
 <li class="toctree-l3"><a class="reference internal" href="archlinux_sway.html">archlinux Sway图形桌面</a></li>
 <li class="toctree-l3"><a class="reference internal" href="archlinux_chinese.html">arch linux中文环境</a></li>
+<li class="toctree-l3"><a class="reference internal" href="archlinux_sway_chinese.html">archlinux Sway图形桌面和中文环境</a></li>
 <li class="toctree-l3"><a class="reference internal" href="archlinux_ms_fonts.html">Arch Linux Windows字体</a></li>
+<li class="toctree-l3"><a class="reference internal" href="archlinux_vultr.html">在Vultr VPS中运行Arch Linux</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Pacman</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#id2">pacman简明使用</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#id3">激活仓库,安装指定版本及锁定版本</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#break-dependency">break dependency</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#signature-error">signature error</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#conflicting-files">conflicting files</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id5">参考</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id5">并行下载</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id6">参考</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="pacman_proxy.html">pacman使用代理服务器</a></li>
@@ -107,21 +120,30 @@
 <li class="toctree-l3"><a class="reference internal" href="xmodmap.html">Xmodmap修改键盘映射</a></li>
 <li class="toctree-l3"><a class="reference internal" href="dropbox.html">Arch Linux上使用Dropbox</a></li>
 <li class="toctree-l3"><a class="reference internal" href="cross_compile.html">交叉编译</a></li>
+<li class="toctree-l3"><a class="reference internal" href="archlinux_makepkg.html">Arch Linux makepkg</a></li>
 <li class="toctree-l3"><a class="reference internal" href="archlinux_wine.html">ArchLinux平台wine环境运行Windows程序</a></li>
 <li class="toctree-l3"><a class="reference internal" href="archlinux_build_kernel.html">Arch Linux编译内核</a></li>
+<li class="toctree-l3"><a class="reference internal" href="archlinux_kernel.html">Arch Linux 内核</a></li>
+<li class="toctree-l3"><a class="reference internal" href="archlinux_novnc.html">在浏览器中访问arch linux(noVNC)</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../asahi_linux/index.html">Asahi Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../gentoo_linux/index.html">Gentoo Linux</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../lfs_linux/index.html">LFS(Linux from scratch)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lfs/index.html">LFS(Linux from scratch)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../blfs/index.html">BLFS(Beyond Linux from scratch)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../alfs/index.html">ALFS(Automated Linux from scratch)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pilfs/index.html">PiLFS(Automated Linux from scratch on the Raspberry Pi)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../yocto/index.html">Yocto</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../debian/index.html">Debian</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ubuntu_linux/index.html">Ubuntu Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../suse_linux/index.html">SUSE Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../kali_linux/index.html">Kali Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../tails_linux/index.html">Tails Linux</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../qubes_os/index.html">Qubes OS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../postmarketos/index.html">postmarketOS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../container_os/index.html">容器化操作系统(Container OS)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../fedora_coreos/index.html">Fedora CoreOS容器操作系统</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../chromium_os/index.html">Chromium OS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chromeos/index.html">ChromeOS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../alpine_linux/index.html">Alpine Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../subgraph_os/index.html">Subgraph OS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../kaios/index.html">KaiOS - 世界第三手机操作系统</a></li>
@@ -134,28 +156,30 @@
 <li class="toctree-l2"><a class="reference internal" href="../linux_tablet/index.html">Linux平板</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../kernel/index.html">Kernel Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../performance/index.html">Performance Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../distributed_system/index.html">Distributed System Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../shell/index.html">Shell Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../python/index.html">Python Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../django/index.html">Django Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../flask/index.html">Flask Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../javascript/index.html">JavaScript Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../nodejs/index.html">Node.js Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../clang/index.html">C Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../golang/index.html">Go Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../swift/index.html">Swift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../rust/index.html">Rust Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../ruby/index.html">Ruby Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../arm/index.html">ARM Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../android/index.html">Android Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../bsd/index.html">BSD Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../apple/index.html">Apple Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../windows/index.html">Windows Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../real/index.html">Real Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../management/index.html">Management Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../life/index.html">Life Atlas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kernel/index.html">Kernel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../performance/index.html">Performance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../distributed_system/index.html">Distributed System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../shell/index.html">Shell</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../python/index.html">Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../django/index.html">Django</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../javascript/index.html">JavaScript</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../nodejs/index.html">Node.js</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../clang/index.html">C</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../golang/index.html">Go</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../swift/index.html">Swift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../rust/index.html">Rust</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ruby/index.html">Ruby</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lua/index.html">Lua</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../arm/index.html">ARM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../raspberry_pi/index.html">Raspberry Pi</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../android/index.html">Android</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../bsd/index.html">BSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../freebsd/index.html">FreeBSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../apple/index.html">Apple</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../windows/index.html">Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../real/index.html">Real</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../management/index.html">Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../life/index.html">Life</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../copyright.html">Copyright</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../aboutme.html">关于作者</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../donate.html">捐赠</a></li>
@@ -168,21 +192,21 @@
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../index.html">Cloud Atlas</a>
+          <a href="../../index.html">Cloud Atlas: Discovery</a>
       </nav>
 
       <div class="wy-nav-content">
         <div class="rst-content">
-          <div role="navigation" aria-label="Page navigation">
+          <div role="navigation" aria-label="页面导航">
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
-          <li class="breadcrumb-item"><a href="../index.html">Linux Atlas</a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Linux</a></li>
           <li class="breadcrumb-item"><a href="index.html">Arch Linux</a></li>
       <li class="breadcrumb-item active">Pacman</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../../_sources/linux/arch_linux/pacman.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../_sources/linux/arch_linux/pacman.rst.txt" rel="nofollow"> 查看页面源码</a>
       </li>
   </ul>
   <hr/>
@@ -191,10 +215,10 @@
            <div itemprop="articleBody">
              
   <section id="pacman">
-<span id="id1"></span><h1>Pacman<a class="headerlink" href="#pacman" title="Link to this heading">¶</a></h1>
+<span id="id1"></span><h1>Pacman<a class="headerlink" href="#pacman" title="Link to this heading"></a></h1>
 <p>pacman是arch linux的主要包管理工具。它包含了简单的二进制包格式和易于使用的编译体系。通过和主服务器同步pacman可以保持系统的软件包更新，其服务器/客户对模式允许用户下载和安装软件包以及所有依赖软件包。</p>
 <section id="id2">
-<h2>pacman简明使用<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
+<h2>pacman简明使用<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
 <div class="admonition note">
 <p class="admonition-title">备注</p>
 <p>pacman 的 <code class="docutils literal notranslate"><span class="pre">-S</span></code> 参数表示 <code class="docutils literal notranslate"><span class="pre">--sync</span></code> 同步软件包，软件包将直接从远程仓库安装到本地主机，包括所有运行着软件包的依赖包。</p>
@@ -266,12 +290,16 @@
 <p class="admonition-title">警告</p>
 <p>上述命令会打破系统完整，所以需要避免</p>
 </div>
-<ul>
-<li><p>升级整个系统所有软件包:</p>
+<ul class="simple">
+<li><p>升级整个系统所有软件包:</p></li>
+</ul>
+<div class="literal-block-wrapper docutils container" id="id9">
+<div class="code-block-caption"><span class="caption-text">升级整个arch linux系统</span><a class="headerlink" href="#id9" title="Link to this code"></a></div>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pacman</span> <span class="o">-</span><span class="n">Syu</span>
 </pre></div>
 </div>
-</li>
+</div>
+<ul>
 <li><p>清理缓存:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pacman</span> <span class="o">-</span><span class="n">Sc</span>
 </pre></div>
@@ -290,7 +318,7 @@
 </ul>
 </section>
 <section id="id3">
-<h2>激活仓库,安装指定版本及锁定版本<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h2>
+<h2>激活仓库,安装指定版本及锁定版本<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
 <p>默认情况下， <code class="docutils literal notranslate"><span class="pre">testing</span></code> 和 <code class="docutils literal notranslate"><span class="pre">community-testing</span></code> 仓库没有激活，这个配置位于 <code class="docutils literal notranslate"><span class="pre">/etc/pacman.conf</span></code> 。例如，在 <a class="reference internal" href="../../kubernetes/arm/arm_k8s_deploy.html#arm-k8s-deploy"><span class="std std-ref">部署ARM架构Kubernetes</span></a> 在加入Arch Linux节点时，为了能够安装 <code class="docutils literal notranslate"><span class="pre">community-testing</span></code> 仓库最新版本的Kubernetes 1.22.0 ，配置如下:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">community</span><span class="o">-</span><span class="n">testing</span><span class="p">]</span>
 <span class="n">Include</span> <span class="o">=</span> <span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">pacman</span><span class="o">.</span><span class="n">d</span><span class="o">/</span><span class="n">mirrorlist</span>
@@ -315,7 +343,7 @@
 <li><p>再次修订 <code class="docutils literal notranslate"><span class="pre">/etc/pacman.conf</span></code> 将 <code class="docutils literal notranslate"><span class="pre">community-testing</span></code> 仓库注释掉，避免其他软件版本升级到测试版本。</p></li>
 </ul>
 <section id="id4">
-<h3>国内仓库配置<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h3>
+<h3>国内仓库配置<a class="headerlink" href="#id4" title="Link to this heading"></a></h3>
 <ul>
 <li><p>在 <code class="docutils literal notranslate"><span class="pre">/etc/pacman.conf</span></code> 最后添加两行:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>[archlinuxcn]
@@ -333,7 +361,7 @@ Server = https://mirrirs.tuna.tsinghua.edu.cn/archlinuxcn/$arch
 </section>
 </section>
 <section id="break-dependency">
-<h2>break dependency<a class="headerlink" href="#break-dependency" title="Link to this heading">¶</a></h2>
+<h2>break dependency<a class="headerlink" href="#break-dependency" title="Link to this heading"></a></h2>
 <p>执行 <code class="docutils literal notranslate"><span class="pre">pacman</span> <span class="pre">-Syu</span></code> 时候遇到报错:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">looking</span> <span class="k">for</span> <span class="n">conflicting</span> <span class="n">packages</span><span class="o">...</span>
 <span class="n">error</span><span class="p">:</span> <span class="n">failed</span> <span class="n">to</span> <span class="n">prepare</span> <span class="n">transaction</span> <span class="p">(</span><span class="n">could</span> <span class="ow">not</span> <span class="n">satisfy</span> <span class="n">dependencies</span><span class="p">)</span>
@@ -346,7 +374,7 @@ Server = https://mirrirs.tuna.tsinghua.edu.cn/archlinuxcn/$arch
 </div>
 </section>
 <section id="signature-error">
-<h2>signature error<a class="headerlink" href="#signature-error" title="Link to this heading">¶</a></h2>
+<h2>signature error<a class="headerlink" href="#signature-error" title="Link to this heading"></a></h2>
 <p>执行 <code class="docutils literal notranslate"><span class="pre">pacman</span> <span class="pre">-Syu</span></code> 出现报错:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">error</span><span class="p">:</span> <span class="n">pacman</span><span class="p">:</span> <span class="n">signature</span> <span class="kn">from</span> <span class="s2">&quot;Levente Polyak (anthraxx) &lt;levente@leventepolyak.net&gt;&quot;</span> <span class="ow">is</span> <span class="n">unknown</span> <span class="n">trust</span>
 <span class="p">::</span> <span class="n">File</span> <span class="o">/</span><span class="n">var</span><span class="o">/</span><span class="n">cache</span><span class="o">/</span><span class="n">pacman</span><span class="o">/</span><span class="n">pkg</span><span class="o">/</span><span class="n">pacman</span><span class="o">-</span><span class="mf">5.2.1</span><span class="o">-</span><span class="mi">4</span><span class="o">-</span><span class="n">x86_64</span><span class="o">.</span><span class="n">pkg</span><span class="o">.</span><span class="n">tar</span><span class="o">.</span><span class="n">zst</span> <span class="ow">is</span> <span class="n">corrupted</span> <span class="p">(</span><span class="n">invalid</span> <span class="ow">or</span> <span class="n">corrupted</span> <span class="n">package</span> <span class="p">(</span><span class="n">PGP</span> <span class="n">signature</span><span class="p">))</span><span class="o">.</span>
@@ -358,7 +386,7 @@ Server = https://mirrirs.tuna.tsinghua.edu.cn/archlinuxcn/$arch
 </div>
 </section>
 <section id="conflicting-files">
-<h2>conflicting files<a class="headerlink" href="#conflicting-files" title="Link to this heading">¶</a></h2>
+<h2>conflicting files<a class="headerlink" href="#conflicting-files" title="Link to this heading"></a></h2>
 <p>执行 <code class="docutils literal notranslate"><span class="pre">pacman</span> <span class="pre">-Syu</span></code> 提示报错:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">error</span><span class="p">:</span> <span class="n">failed</span> <span class="n">to</span> <span class="n">commit</span> <span class="n">transaction</span> <span class="p">(</span><span class="n">conflicting</span> <span class="n">files</span><span class="p">)</span>
 <span class="n">nss</span><span class="p">:</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">p11</span><span class="o">-</span><span class="n">kit</span><span class="o">-</span><span class="n">trust</span><span class="o">.</span><span class="n">so</span> <span class="n">exists</span> <span class="ow">in</span> <span class="n">filesystem</span>
@@ -379,11 +407,22 @@ Server = https://mirrirs.tuna.tsinghua.edu.cn/archlinuxcn/$arch
 </div>
 </section>
 <section id="id5">
-<h2>参考<a class="headerlink" href="#id5" title="Link to this heading">¶</a></h2>
+<h2>并行下载<a class="headerlink" href="#id5" title="Link to this heading"></a></h2>
+<p>从 pacman 6.0 开始支持平行下载功能，但是默认没有启用，修改配置 <code class="docutils literal notranslate"><span class="pre">/etc/pacman.conf</span></code> 如下(实际只要取消注释#就可以，默认并发下载数量是5):</p>
+<div class="literal-block-wrapper docutils container" id="id10">
+<div class="code-block-caption"><span class="caption-text">修订 <code class="docutils literal notranslate"><span class="pre">/etc/pacman.conf</span></code> 设置并行下载</span><a class="headerlink" href="#id10" title="Link to this code"></a></div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ParallelDownloads</span> <span class="o">=</span> <span class="mi">5</span>
+</pre></div>
+</div>
+</div>
+</section>
+<section id="id6">
+<h2>参考<a class="headerlink" href="#id6" title="Link to this heading"></a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="https://wiki.archlinux.org/index.php/Pacman">archlinux - pacman</a></p></li>
 <li><p><a class="reference external" href="https://bbs.archlinux.org/viewtopic.php?id=251517">xorgproto issues..</a></p></li>
 <li><p><a class="reference external" href="https://superuser.com/questions/1265425/how-do-i-list-files-installed-by-a-package-from-the-aur">How do I list files installed by a package from the AUR?</a></p></li>
+<li><p><a class="reference external" href="https://ostechnix.com/enable-parallel-downloading-in-pacman-in-arch-linux/">Enable Parallel Downloading In Pacman In Arch Linux</a></p></li>
 </ul>
 </section>
 </section>
@@ -391,25 +430,37 @@ Server = https://mirrirs.tuna.tsinghua.edu.cn/archlinuxcn/$arch
 
            </div>
           </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="archlinux_ms_fonts.html" class="btn btn-neutral float-left" title="Arch Linux Windows字体" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="pacman_proxy.html" class="btn btn-neutral float-right" title="pacman使用代理服务器" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="archlinux_vultr.html" class="btn btn-neutral float-left" title="在Vultr VPS中运行Arch Linux" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="pacman_proxy.html" class="btn btn-neutral float-right" title="pacman使用代理服务器" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../copyright.html">Copyright</a> 2018 - now, Huatai Huang.</p>
+    <p>&#169; <a href="../../copyright.html">版权所有</a> 2018 - now, Huatai Huang。</p>
   </div>
 
-  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
   
     <!-- your html code here -->
     <br>
-    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡</a></p>
-     
+    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡 👈</a></p>
+    <br>
+    <p>网站采用 <a href="https://utteranc.es/">utterances</a> 评论系统，所有评论存储在<a href="https://github.com/huataihuang/cloud-atlas/issues">GitHub issues</a> 中，如果你看不到下方的评论框，那么可能需要<a href="https://cloud-atlas.readthedocs.io/zh-cn/latest/linux/security/vpn/index.html">自备梯子</a> 👈</p>
+    <div class="articleComments">
+        <comments>
+  <script src="https://utteranc.es/client.js"
+    repo="huataihuang/cloud-atlas"
+    issue-term="pathname"
+    theme="github-light"
+    crossorigin="anonymous"
+    async>
+  </script>
+</comments>
+    </div>
 
 
 </footer>

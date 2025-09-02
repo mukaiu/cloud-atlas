@@ -1,26 +1,30 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh" data-content_root="../../../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MPD(Music Player Daemon) &mdash; Cloud Atlas 0.1 文档</title>
-      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../../_static/graphviz.css" type="text/css" />
+  <title>MPD(Music Player Daemon) &mdash; Cloud Atlas: Discovery beta 文档</title>
+      <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/graphviz.css?v=fd3f3429" />
+
+  
+    <link rel="shortcut icon" href="../../../_static/favicon.png"/>
   <!--[if lt IE 9]>
     <script src="../../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="../../../_static/documentation_options.js?v=7c91f8fd"></script>
-        <script src="../../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../../_static/documentation_options.js?v=8534f863"></script>
+        <script src="../../../_static/doctools.js?v=9a2dae69"></script>
         <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
-        <script src="../../../_static/translations.js?v=beaddf03"></script>
     <script src="../../../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../../../genindex.html" />
     <link rel="search" title="搜索" href="../../../search.html" />
     <link rel="copyright" title="版权所有" href="../../../copyright.html" />
-    <link rel="next" title="修正xorg显示dpi" href="../xorg_dpi_fix.html" />
+    <link rel="next" title="Linux视频" href="../video/index.html" />
     <link rel="prev" title="在Linux环境播放音乐" href="play_music_on_linux.html" /> 
 </head>
 
@@ -33,61 +37,69 @@
           
           
           <a href="../../../index.html" class="icon icon-home">
-            Cloud Atlas
+            Cloud Atlas: Discovery
           </a>
+              <div class="version">
+                1.1
+              </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../../studio/index.html">Studio Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../infrastructure/index.html">Infrastructure Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../devops/index.html">DevOps Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../kvm/index.html">KVM Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../ceph/index.html">Ceph Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../gluster/index.html">Gluster Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../ovirt/index.html">oVirt Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../openstack/index.html">OpenStack Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../docker/index.html">Docker Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../kubernetes/index.html">Kubernetes Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../kubernetes_from_scratch/index.html">Kubernetes From Scratch (KFS) Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../rancher/index.html">Rancher Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../openshift/index.html">OpenShift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../sql/index.html">SQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../sqlite/index.html">SQLite Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../mysql/index.html">MySQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../pgsql/index.html">PostgreSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../clickhouse/index.html">ClickHouse Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../nosql/index.html">NoSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../redis/index.html">Redis Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../network/index.html">Network Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../infra_service/index.html">Infra-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../infra_search/index.html">Search Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../info_service/index.html">Info-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../web/index.html">Web Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../big_data/index.html">Big Data Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../machine_learning/index.html">Machine Learning Atlas</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">Linux Atlas</a><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../studio/index.html">Studio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../infrastructure/index.html">Infrastructure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../devops/index.html">DevOps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../kvm/index.html">KVM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../ceph/index.html">Ceph</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../gluster/index.html">Gluster</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../ovirt/index.html">oVirt</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../openstack/index.html">OpenStack</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../docker/index.html">Docker</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../kubernetes/index.html">Kubernetes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../k8s_dev/index.html">Kubernetes Develop</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../rancher/index.html">Rancher</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../openshift/index.html">OpenShift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../sql/index.html">SQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../sqlite/index.html">SQLite</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../mysql/index.html">MySQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../pgsql/index.html">PostgreSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../nosql/index.html">NoSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../network/index.html">Network</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../infra_service/index.html">Infra-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../infra_search/index.html">Infra-Search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../web/index.html">Web</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../info_service/index.html">Info-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../big_data/index.html">Big Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../machine_learning/index.html">Machine Learning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../drone/index.html">Drone</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">Linux</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../../best_linux.html">最佳Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../admin/index.html">Linux系统管理</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../redhat_linux/index.html">RedHat Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../arch_linux/index.html">Arch Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../asahi_linux/index.html">Asahi Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../gentoo_linux/index.html">Gentoo Linux</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../lfs_linux/index.html">LFS(Linux from scratch)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../lfs/index.html">LFS(Linux from scratch)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../blfs/index.html">BLFS(Beyond Linux from scratch)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../alfs/index.html">ALFS(Automated Linux from scratch)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pilfs/index.html">PiLFS(Automated Linux from scratch on the Raspberry Pi)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../yocto/index.html">Yocto</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../debian/index.html">Debian</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../ubuntu_linux/index.html">Ubuntu Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../suse_linux/index.html">SUSE Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../kali_linux/index.html">Kali Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../tails_linux/index.html">Tails Linux</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../qubes_os/index.html">Qubes OS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../postmarketos/index.html">postmarketOS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../container_os/index.html">容器化操作系统(Container OS)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../fedora_coreos/index.html">Fedora CoreOS容器操作系统</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../chromium_os/index.html">Chromium OS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../chromeos/index.html">ChromeOS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../alpine_linux/index.html">Alpine Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../subgraph_os/index.html">Subgraph OS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../kaios/index.html">KaiOS - 世界第三手机操作系统</a></li>
@@ -99,28 +111,33 @@
 <li class="toctree-l2 current"><a class="reference internal" href="../index.html">Linux桌面</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="../x_window/index.html">X Window显示服务器协议</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../chinese/index.html">Linux中文环境</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../rdp/index.html">Linux桌面</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../rdp/index.html">Linux远程桌面</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../xpra/index.html">X持久化远程应用Xpra</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../vnc/index.html">VNC</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../wayland/index.html">wayland显示服务器协议</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../sway/index.html">sway - i3兼容Wayland compositor</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../suckless/index.html">Suckless极简桌面</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../xfce/index.html">xfce</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../lxqt/index.html">LXQt</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../enlightment/index.html">Enlightenment</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../kde/index.html">KDE桌面</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../xpra/index.html">X持久化远程应用Xpra</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../vim/index.html">Vim</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../nvim/index.html">neovim</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../vscode/index.html">VS Code</a></li>
 <li class="toctree-l3 current"><a class="reference internal" href="index.html">Linux音频</a><ul class="current">
-<li class="toctree-l4"><a class="reference internal" href="alsa.html">ALSA内核声音子系统</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../arch_linux/archlinux_alsa.html">Arch Linux ALSA声音系统</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pulseaudio.html">PulseAudio</a></li>
 <li class="toctree-l4"><a class="reference internal" href="play_music_on_linux.html">在Linux环境播放音乐</a></li>
 <li class="toctree-l4 current"><a class="current reference internal" href="#">MPD(Music Player Daemon)</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="../video/index.html">Linux视频</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../xorg_dpi_fix.html">修正xorg显示dpi</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../i3.html">i3窗口管理器</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../oh_my_zsh.html">Oh My Zsh</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../tmux.html">tmux多会话终端管理</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../alacritty.html">GPU加速终端模拟器alacritty</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../sakura.html">sakura</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../read_ebook_in_linux.html">在Linux环境阅读电子书</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../mupdf.html">MuPDF</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../remote_linux_desktop.html">远程访问Linux桌面</a></li>
@@ -136,28 +153,30 @@
 <li class="toctree-l2"><a class="reference internal" href="../../linux_tablet/index.html">Linux平板</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../../kernel/index.html">Kernel Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../performance/index.html">Performance Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../distributed_system/index.html">Distributed System Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../shell/index.html">Shell Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../python/index.html">Python Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../django/index.html">Django Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../flask/index.html">Flask Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../javascript/index.html">JavaScript Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../nodejs/index.html">Node.js Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../clang/index.html">C Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../golang/index.html">Go Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../swift/index.html">Swift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../rust/index.html">Rust Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../ruby/index.html">Ruby Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../arm/index.html">ARM Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../android/index.html">Android Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../bsd/index.html">BSD Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../apple/index.html">Apple Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../windows/index.html">Windows Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../real/index.html">Real Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../management/index.html">Management Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../life/index.html">Life Atlas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../kernel/index.html">Kernel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../performance/index.html">Performance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../distributed_system/index.html">Distributed System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../shell/index.html">Shell</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../python/index.html">Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../django/index.html">Django</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../javascript/index.html">JavaScript</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../nodejs/index.html">Node.js</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../clang/index.html">C</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../golang/index.html">Go</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../swift/index.html">Swift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../rust/index.html">Rust</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../ruby/index.html">Ruby</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../lua/index.html">Lua</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../arm/index.html">ARM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../raspberry_pi/index.html">Raspberry Pi</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../android/index.html">Android</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../bsd/index.html">BSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../freebsd/index.html">FreeBSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../apple/index.html">Apple</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../windows/index.html">Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../real/index.html">Real</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../management/index.html">Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../life/index.html">Life</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../copyright.html">Copyright</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../aboutme.html">关于作者</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../donate.html">捐赠</a></li>
@@ -170,22 +189,22 @@
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../../index.html">Cloud Atlas</a>
+          <a href="../../../index.html">Cloud Atlas: Discovery</a>
       </nav>
 
       <div class="wy-nav-content">
         <div class="rst-content">
-          <div role="navigation" aria-label="Page navigation">
+          <div role="navigation" aria-label="页面导航">
   <ul class="wy-breadcrumbs">
       <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
-          <li class="breadcrumb-item"><a href="../../index.html">Linux Atlas</a></li>
+          <li class="breadcrumb-item"><a href="../../index.html">Linux</a></li>
           <li class="breadcrumb-item"><a href="../index.html">Linux桌面</a></li>
           <li class="breadcrumb-item"><a href="index.html">Linux音频</a></li>
       <li class="breadcrumb-item active">MPD(Music Player Daemon)</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../../../_sources/linux/desktop/audio/mpd.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../../_sources/linux/desktop/audio/mpd.rst.txt" rel="nofollow"> 查看页面源码</a>
       </li>
   </ul>
   <hr/>
@@ -194,10 +213,10 @@
            <div itemprop="articleBody">
              
   <section id="mpd-music-player-daemon">
-<span id="mpd"></span><h1>MPD(Music Player Daemon)<a class="headerlink" href="#mpd-music-player-daemon" title="Link to this heading">¶</a></h1>
+<span id="mpd"></span><h1>MPD(Music Player Daemon)<a class="headerlink" href="#mpd-music-player-daemon" title="Link to this heading"></a></h1>
 <p>MPD(Music Player Daemon)是一个客户服务器架构的音频播放器，用于播放音频文件，管理播放列表以及维护一个音乐数据库。这些功能都使用非常少的资源，而且可以使用不同的独立客户端。</p>
 <section id="id1">
-<h2>安装<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h2>
+<h2>安装<a class="headerlink" href="#id1" title="Link to this heading"></a></h2>
 <ul>
 <li><p>在 <a class="reference internal" href="../../ubuntu_linux/index.html#ubuntu-linux"><span class="std std-ref">Ubuntu Linux</span></a> 上安装:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">apt</span> <span class="n">install</span> <span class="n">mpd</span>
@@ -207,9 +226,9 @@
 </ul>
 </section>
 <section id="id2">
-<h2>配置<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
+<h2>配置<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
 <p>MPD可以运行在 <code class="docutils literal notranslate"><span class="pre">按用户配置</span></code> 和 <code class="docutils literal notranslate"><span class="pre">系统范围配置</span></code> (配置针对所有用户)两种模式，也可以在一个主机上运行多个MPD实例。最简单的设置方法是本地 <code class="docutils literal notranslate"><span class="pre">按用户配置</span></code> ，比较适合桌面系统。而 <code class="docutils literal notranslate"><span class="pre">系统范围配置</span></code> 则较为适合音频服务器，可以多个用户共享一个MPD实例。</p>
-<p>要让MPD能够播放音频，需要设置 <a class="reference internal" href="alsa.html#alsa"><span class="std std-ref">ALSA内核声音子系统</span></a> 或者 <a class="reference internal" href="pulseaudio.html#pulseaudio"><span class="std std-ref">PulseAudio</span></a> 或 <code class="docutils literal notranslate"><span class="pre">PipeWire</span></code></p>
+<p>要让MPD能够播放音频，需要设置 <code class="docutils literal notranslate"><span class="pre">ALSA</span></code> 或者 <a class="reference internal" href="pulseaudio.html#pulseaudio"><span class="std std-ref">PulseAudio</span></a> 或 <code class="docutils literal notranslate"><span class="pre">PipeWire</span></code></p>
 <p>MPD通过 <code class="docutils literal notranslate"><span class="pre">mpd.conf</span></code> 配置，该配置可以按用户模式和系统模式:</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">~/.config/mpd/mpd.conf</span></code> 是每个用户配置</p></li>
@@ -225,7 +244,7 @@
 <li><p><code class="docutils literal notranslate"><span class="pre">sticker_file</span></code> : 便签数据库，存储音乐相关信息</p></li>
 </ul>
 <section id="id3">
-<h3>每个用户的独立配置<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h3>
+<h3>每个用户的独立配置<a class="headerlink" href="#id3" title="Link to this heading"></a></h3>
 <ul>
 <li><p>复制配置文件:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">mkdir</span> <span class="o">~/.</span><span class="n">config</span><span class="o">/</span><span class="n">mpd</span>
@@ -239,7 +258,7 @@
 <li><p>修订 <code class="docutils literal notranslate"><span class="pre">~/.config/mpd/mpd.conf</span></code> :</p></li>
 </ul>
 <div class="literal-block-wrapper docutils container" id="id7">
-<div class="code-block-caption"><span class="caption-text">~/.config/mpd/mpd.conf 配置案例</span><a class="headerlink" href="#id7" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">~/.config/mpd/mpd.conf 配置案例</span><a class="headerlink" href="#id7" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># 数据库</span>
 db_file<span class="w">         </span><span class="s2">&quot;~/.config/mpd/database&quot;</span>
 
@@ -318,11 +337,11 @@ audio_output<span class="w"> </span><span class="o">{</span>
 </ul>
 </section>
 <section id="id4">
-<h3>音频配置<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h3>
-<p>如果使用了 <a class="reference internal" href="alsa.html#alsa"><span class="std std-ref">ALSA内核声音子系统</span></a> 在默认设备使用 <code class="docutils literal notranslate"><span class="pre">autodection</span></code> 就可以工作，无需任何配置。 <strong>确实如此</strong></p>
-<p>不过我在 <a class="reference internal" href="../../../arm/raspberry_pi/hardware/pi_400.html#pi-400"><span class="std std-ref">树莓派Raspberry Pi 400</span></a> 上使用HDMI输出，需要明确配置ALSA音频输出定义才能工作： 精确的设备定义可以通过 <code class="docutils literal notranslate"><span class="pre">aplay</span> <span class="pre">--list-pcm</span></code> 获得</p>
+<h3>音频配置<a class="headerlink" href="#id4" title="Link to this heading"></a></h3>
+<p>如果使用了 <code class="docutils literal notranslate"><span class="pre">ALSA</span></code> 在默认设备使用 <code class="docutils literal notranslate"><span class="pre">autodection</span></code> 就可以工作，无需任何配置。 <strong>确实如此</strong></p>
+<p>不过我在 <a class="reference internal" href="../../../raspberry_pi/hardware/pi_400.html#pi-400"><span class="std std-ref">树莓派Raspberry Pi 400</span></a> 上使用HDMI输出，需要明确配置ALSA音频输出定义才能工作： 精确的设备定义可以通过 <code class="docutils literal notranslate"><span class="pre">aplay</span> <span class="pre">--list-pcm</span></code> 获得</p>
 <div class="literal-block-wrapper docutils container" id="id8">
-<div class="code-block-caption"><span class="caption-text">Kali Linux 上 aplay –list-pcm 输出信息</span><a class="headerlink" href="#id8" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">Kali Linux 上 aplay --list-pcm 输出信息</span><a class="headerlink" href="#id8" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>null
 <span class="w">    </span>Discard<span class="w"> </span>all<span class="w"> </span>samples<span class="w"> </span><span class="o">(</span>playback<span class="o">)</span><span class="w"> </span>or<span class="w"> </span>generate<span class="w"> </span>zero<span class="w"> </span>samples<span class="w"> </span><span class="o">(</span>capture<span class="o">)</span>
 default
@@ -361,9 +380,9 @@ usbstream:CARD<span class="o">=</span>b1
 </pre></div>
 </div>
 </div>
-<p>以下是 <a class="reference internal" href="../../kali_linux/index.html#kali-linux"><span class="std std-ref">Kali Linux</span></a> 在 <a class="reference internal" href="../../../arm/raspberry_pi/hardware/pi_400.html#pi-400"><span class="std std-ref">树莓派Raspberry Pi 400</span></a> 的配置案例:</p>
+<p>以下是 <a class="reference internal" href="../../kali_linux/index.html#kali-linux"><span class="std std-ref">Kali Linux</span></a> 在 <a class="reference internal" href="../../../raspberry_pi/hardware/pi_400.html#pi-400"><span class="std std-ref">树莓派Raspberry Pi 400</span></a> 的配置案例:</p>
 <div class="literal-block-wrapper docutils container" id="id9">
-<div class="code-block-caption"><span class="caption-text">~/.config/mpd/mpd.conf audio_output 配置案例</span><a class="headerlink" href="#id9" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">~/.config/mpd/mpd.conf audio_output 配置案例</span><a class="headerlink" href="#id9" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>audio_output<span class="w"> </span><span class="o">{</span>
 <span class="w">        </span><span class="nb">type</span><span class="w">          </span><span class="s2">&quot;alsa&quot;</span>
 <span class="w">        </span>name<span class="w">          </span><span class="s2">&quot;ALSA sound card&quot;</span>
@@ -378,7 +397,7 @@ usbstream:CARD<span class="o">=</span>b1
 </div>
 <p>但是我在 <code class="docutils literal notranslate"><span class="pre">Raspberry</span> <span class="pre">Pi</span> <span class="pre">OS</span></code> 上执行 <code class="docutils literal notranslate"><span class="pre">aplay</span> <span class="pre">--list-pcm</span></code> 显示的信息就和 <a class="reference internal" href="../../kali_linux/index.html#kali-linux"><span class="std std-ref">Kali Linux</span></a> 不同，如下:</p>
 <div class="literal-block-wrapper docutils container" id="id10">
-<div class="code-block-caption"><span class="caption-text">Raspberry Pi OS 上 aplay –list-pcm 输出信息</span><a class="headerlink" href="#id10" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">Raspberry Pi OS 上 aplay --list-pcm 输出信息</span><a class="headerlink" href="#id10" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>null
 <span class="w">    </span>Discard<span class="w"> </span>all<span class="w"> </span>samples<span class="w"> </span><span class="o">(</span>playback<span class="o">)</span><span class="w"> </span>or<span class="w"> </span>generate<span class="w"> </span>zero<span class="w"> </span>samples<span class="w"> </span><span class="o">(</span>capture<span class="o">)</span>
 default
@@ -433,7 +452,7 @@ dmix:CARD<span class="o">=</span>vc4hdmi1,DEV<span class="o">=</span><span class
 </div>
 <p>却完全工作正常。所以我在 <code class="docutils literal notranslate"><span class="pre">Raspberry</span> <span class="pre">Pi</span> <span class="pre">OS</span></code> 使用的是如下配置:</p>
 <div class="literal-block-wrapper docutils container" id="id11">
-<div class="code-block-caption"><span class="caption-text">我现在在Raspberry Pi OS 使用的 ~/.config/mpd/mpd.conf 配置</span><a class="headerlink" href="#id11" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">我现在在Raspberry Pi OS 使用的 ~/.config/mpd/mpd.conf 配置</span><a class="headerlink" href="#id11" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># 数据库</span>
 db_file<span class="w">         </span><span class="s2">&quot;~/.config/mpd/database&quot;</span>
 
@@ -462,12 +481,12 @@ audio_output<span class="w"> </span><span class="o">{</span>
 </div>
 <div class="admonition note">
 <p class="admonition-title">备注</p>
-<p>我在实践中发现，当使用 <a class="reference internal" href="alsa.html#alsa"><span class="std std-ref">ALSA内核声音子系统</span></a> 直接作为音频输出设备，但是同时运行 <a class="reference internal" href="pulseaudio.html#pulseaudio"><span class="std std-ref">PulseAudio</span></a> 服务，则在 <a class="reference internal" href="../../../arm/raspberry_pi/hardware/pi_400.html#pi-400"><span class="std std-ref">树莓派Raspberry Pi 400</span></a> 的HDMI输出声音中总是有沙沙的噪音。杀掉 <code class="docutils literal notranslate"><span class="pre">pulseaudio</span></code> 服务之后则恢复正常。</p>
-<p>由于我在 <code class="docutils literal notranslate"><span class="pre">mpd</span></code> 中使用 <a class="reference internal" href="alsa.html#alsa"><span class="std std-ref">ALSA内核声音子系统</span></a> ，并且也配置了VLC直接使用ALSA，所以配置关闭了 <a class="reference internal" href="pulseaudio.html#pulseaudio"><span class="std std-ref">PulseAudio</span></a> 服务</p>
+<p>我在实践中发现，当使用 <code class="docutils literal notranslate"><span class="pre">ALSA</span></code> 直接作为音频输出设备，但是同时运行 <a class="reference internal" href="pulseaudio.html#pulseaudio"><span class="std std-ref">PulseAudio</span></a> 服务，则在 <a class="reference internal" href="../../../raspberry_pi/hardware/pi_400.html#pi-400"><span class="std std-ref">树莓派Raspberry Pi 400</span></a> 的HDMI输出声音中总是有沙沙的噪音。杀掉 <code class="docutils literal notranslate"><span class="pre">pulseaudio</span></code> 服务之后则恢复正常。</p>
+<p>由于我在 <code class="docutils literal notranslate"><span class="pre">mpd</span></code> 中使用 <code class="docutils literal notranslate"><span class="pre">ALSA</span></code> ，并且也配置了VLC直接使用ALSA，所以配置关闭了 <a class="reference internal" href="pulseaudio.html#pulseaudio"><span class="std std-ref">PulseAudio</span></a> 服务</p>
 </div>
 </section>
 <section id="systemd">
-<h3>以 <a class="reference internal" href="../../redhat_linux/systemd/index.html#systemd"><span class="std std-ref">Systemd进程管理器</span></a> 自动启动<a class="headerlink" href="#systemd" title="Link to this heading">¶</a></h3>
+<h3>以 <a class="reference internal" href="../../redhat_linux/systemd/index.html#systemd"><span class="std std-ref">Systemd进程管理器</span></a> 自动启动<a class="headerlink" href="#systemd" title="Link to this heading"></a></h3>
 <ul>
 <li><p>执行以下命令启动 user unit mpd.service:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">systemctl</span> <span class="n">enable</span> <span class="n">mpd</span><span class="o">.</span><span class="n">service</span> <span class="o">--</span><span class="n">user</span>
@@ -478,7 +497,7 @@ audio_output<span class="w"> </span><span class="o">{</span>
 <p>则配置文件将读取 <code class="docutils literal notranslate"><span class="pre">~/.config/mpd/mpd.conf</span></code></p>
 </section>
 <section id="tty-login">
-<h3>以 tty login自动启动<a class="headerlink" href="#tty-login" title="Link to this heading">¶</a></h3>
+<h3>以 tty login自动启动<a class="headerlink" href="#tty-login" title="Link to this heading"></a></h3>
 <p>如果要在tty登陆时候自动启动mpd，则配置 <code class="docutils literal notranslate"><span class="pre">~/.profile</span></code></p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span># MPD daemon start (if no other user instance exists)
 [ ! -s ~/.config/mpd/pid  ] &amp;&amp; mpd ~/.config/mpd/mpd.conf
@@ -487,13 +506,13 @@ audio_output<span class="w"> </span><span class="o">{</span>
 </section>
 </section>
 <section id="id5">
-<h2>客户端<a class="headerlink" href="#id5" title="Link to this heading">¶</a></h2>
+<h2>客户端<a class="headerlink" href="#id5" title="Link to this heading"></a></h2>
 <section id="ncmpc">
-<h3>字符终端 <code class="docutils literal notranslate"><span class="pre">ncmpc</span></code><a class="headerlink" href="#ncmpc" title="Link to this heading">¶</a></h3>
+<h3>字符终端 <code class="docutils literal notranslate"><span class="pre">ncmpc</span></code><a class="headerlink" href="#ncmpc" title="Link to this heading"></a></h3>
 <p>如果你像我一样追求轻量级应用，不需要任何花哨的界面，你可以像我一样使用字符终端mpd客户端，例如 <code class="docutils literal notranslate"><span class="pre">ncmpc</span></code></p>
 <ul class="simple">
 <li><p>在终端执行 <code class="docutils literal notranslate"><span class="pre">ncmpc</span></code> 命令，会打开基于 <code class="docutils literal notranslate"><span class="pre">ncurse</span></code> 的控制台，并且立即连接到默认的本地 <code class="docutils literal notranslate"><span class="pre">mpd</span></code> 服务上，此时就可以看到服务器上所有的音乐</p></li>
-<li><p>在导航栏上的数字 <code class="docutils literal notranslate"><span class="pre">1</span></code> <code class="docutils literal notranslate"><span class="pre">2</span></code> … 分别代表 <code class="docutils literal notranslate"><span class="pre">F1</span></code> <code class="docutils literal notranslate"><span class="pre">F2</span></code> … 以此类推，最后2个字母分别是小写的 <code class="docutils literal notranslate"><span class="pre">i</span></code> 和大写的 <code class="docutils literal notranslate"><span class="pre">K</span></code> ，真的是对应操作键 <code class="docutils literal notranslate"><span class="pre">i</span></code> 和 <code class="docutils literal notranslate"><span class="pre">K</span></code> ，总之，按照对应操作键进入菜单就会明白怎么操作。</p></li>
+<li><p>在导航栏上的数字 <code class="docutils literal notranslate"><span class="pre">1</span></code> <code class="docutils literal notranslate"><span class="pre">2</span></code> ... 分别代表 <code class="docutils literal notranslate"><span class="pre">F1</span></code> <code class="docutils literal notranslate"><span class="pre">F2</span></code> ... 以此类推，最后2个字母分别是小写的 <code class="docutils literal notranslate"><span class="pre">i</span></code> 和大写的 <code class="docutils literal notranslate"><span class="pre">K</span></code> ，真的是对应操作键 <code class="docutils literal notranslate"><span class="pre">i</span></code> 和 <code class="docutils literal notranslate"><span class="pre">K</span></code> ，总之，按照对应操作键进入菜单就会明白怎么操作。</p></li>
 <li><p>快捷键的绑定在 <code class="docutils literal notranslate"><span class="pre">K</span></code> 上，通过上下键找到操作命令，按下回车就可以看到命令对应绑定的快捷键，例如:</p>
 <ul>
 <li><p><code class="docutils literal notranslate"><span class="pre">t</span></code> 表示选择所有</p></li>
@@ -508,15 +527,15 @@ audio_output<span class="w"> </span><span class="o">{</span>
 </div>
 </section>
 <section id="qt5-cantata">
-<h3>QT5图形 <code class="docutils literal notranslate"><span class="pre">cantata</span></code><a class="headerlink" href="#qt5-cantata" title="Link to this heading">¶</a></h3>
+<h3>QT5图形 <code class="docutils literal notranslate"><span class="pre">cantata</span></code><a class="headerlink" href="#qt5-cantata" title="Link to this heading"></a></h3>
 <p><code class="docutils literal notranslate"><span class="pre">cantata</span></code> 实际上不需要上述手工配置 <code class="docutils literal notranslate"><span class="pre">mpd.conf</span></code> ，因为只要系统中安装了 <code class="docutils literal notranslate"><span class="pre">mpd</span></code> ， <code class="docutils literal notranslate"><span class="pre">cantata</span></code> 启动时候就会自动引导你做一些简单配置(也就是选择音乐所在目录)，然后程序运行起来以后，你就会看到后台运行了一个 <code class="docutils literal notranslate"><span class="pre">mpd</span></code> 服务并且使用了 <code class="docutils literal notranslate"><span class="pre">cantata</span></code> 自动生成的 <code class="docutils literal notranslate"><span class="pre">mpd.conf</span></code> 配置文件。</p>
-<p>简单来说， <code class="docutils literal notranslate"><span class="pre">cantata</span></code> 提供了自动配置 <code class="docutils literal notranslate"><span class="pre">mpd</span></code> 的功能来帮助你简化使用。不过，需要注意，在 <a class="reference internal" href="../../../arm/raspberry_pi/hardware/pi_400.html#pi-400"><span class="std std-ref">树莓派Raspberry Pi 400</span></a> 上必须使用 HDMI 作为音频设备，这个配置需要手工添加，见上文。</p>
+<p>简单来说， <code class="docutils literal notranslate"><span class="pre">cantata</span></code> 提供了自动配置 <code class="docutils literal notranslate"><span class="pre">mpd</span></code> 的功能来帮助你简化使用。不过，需要注意，在 <a class="reference internal" href="../../../raspberry_pi/hardware/pi_400.html#pi-400"><span class="std std-ref">树莓派Raspberry Pi 400</span></a> 上必须使用 HDMI 作为音频设备，这个配置需要手工添加，见上文。</p>
 </section>
 </section>
 <section id="id6">
-<h2>参考<a class="headerlink" href="#id6" title="Link to this heading">¶</a></h2>
+<h2>参考<a class="headerlink" href="#id6" title="Link to this heading"></a></h2>
 <ul class="simple">
-<li><p><a class="reference external" href="https://mpd.readthedocs.io/en/stable/user.html">MPD User’s Manual</a></p></li>
+<li><p><a class="reference external" href="https://mpd.readthedocs.io/en/stable/user.html">MPD User's Manual</a></p></li>
 <li><p><a class="reference external" href="https://wiki.archlinux.org/title/Music_Player_Daemon">arch linux: Music Player Daemon</a></p></li>
 </ul>
 </section>
@@ -525,25 +544,37 @@ audio_output<span class="w"> </span><span class="o">{</span>
 
            </div>
           </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="play_music_on_linux.html" class="btn btn-neutral float-left" title="在Linux环境播放音乐" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="../xorg_dpi_fix.html" class="btn btn-neutral float-right" title="修正xorg显示dpi" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="play_music_on_linux.html" class="btn btn-neutral float-left" title="在Linux环境播放音乐" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="../video/index.html" class="btn btn-neutral float-right" title="Linux视频" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../../copyright.html">Copyright</a> 2018 - now, Huatai Huang.</p>
+    <p>&#169; <a href="../../../copyright.html">版权所有</a> 2018 - now, Huatai Huang。</p>
   </div>
 
-  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
   
     <!-- your html code here -->
     <br>
-    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡</a></p>
-     
+    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡 👈</a></p>
+    <br>
+    <p>网站采用 <a href="https://utteranc.es/">utterances</a> 评论系统，所有评论存储在<a href="https://github.com/huataihuang/cloud-atlas/issues">GitHub issues</a> 中，如果你看不到下方的评论框，那么可能需要<a href="https://cloud-atlas.readthedocs.io/zh-cn/latest/linux/security/vpn/index.html">自备梯子</a> 👈</p>
+    <div class="articleComments">
+        <comments>
+  <script src="https://utteranc.es/client.js"
+    repo="huataihuang/cloud-atlas"
+    issue-term="pathname"
+    theme="github-light"
+    crossorigin="anonymous"
+    async>
+  </script>
+</comments>
+    </div>
 
 
 </footer>

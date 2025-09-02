@@ -1,21 +1,25 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh" data-content_root="../../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jupyter简介 &mdash; Cloud Atlas 0.1 文档</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+  <title>Jupyter简介 &mdash; Cloud Atlas: Discovery beta 文档</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=fd3f3429" />
+
+  
+    <link rel="shortcut icon" href="../../_static/favicon.png"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="../../_static/documentation_options.js?v=7c91f8fd"></script>
-        <script src="../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=8534f863"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
         <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
-        <script src="../../_static/translations.js?v=beaddf03"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../../genindex.html" />
     <link rel="search" title="搜索" href="../../search.html" />
@@ -33,46 +37,49 @@
           
           
           <a href="../../index.html" class="icon icon-home">
-            Cloud Atlas
+            Cloud Atlas: Discovery
           </a>
+              <div class="version">
+                1.1
+              </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../studio/index.html">Studio Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../infrastructure/index.html">Infrastructure Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../devops/index.html">DevOps Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kvm/index.html">KVM Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../ceph/index.html">Ceph Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../gluster/index.html">Gluster Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../ovirt/index.html">oVirt Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../openstack/index.html">OpenStack Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../docker/index.html">Docker Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kubernetes/index.html">Kubernetes Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kubernetes_from_scratch/index.html">Kubernetes From Scratch (KFS) Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../rancher/index.html">Rancher Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../openshift/index.html">OpenShift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../sql/index.html">SQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../sqlite/index.html">SQLite Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../mysql/index.html">MySQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../pgsql/index.html">PostgreSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../clickhouse/index.html">ClickHouse Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../nosql/index.html">NoSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../redis/index.html">Redis Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../network/index.html">Network Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../infra_service/index.html">Infra-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../infra_search/index.html">Search Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../info_service/index.html">Info-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../web/index.html">Web Atlas</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Big Data Atlas</a><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../studio/index.html">Studio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../infrastructure/index.html">Infrastructure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../devops/index.html">DevOps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kvm/index.html">KVM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ceph/index.html">Ceph</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../gluster/index.html">Gluster</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ovirt/index.html">oVirt</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../openstack/index.html">OpenStack</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../docker/index.html">Docker</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kubernetes/index.html">Kubernetes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../k8s_dev/index.html">Kubernetes Develop</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../rancher/index.html">Rancher</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../openshift/index.html">OpenShift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../sql/index.html">SQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../sqlite/index.html">SQLite</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../mysql/index.html">MySQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../pgsql/index.html">PostgreSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../nosql/index.html">NoSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../network/index.html">Network</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../infra_service/index.html">Infra-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../infra_search/index.html">Infra-Search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../web/index.html">Web</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../info_service/index.html">Info-Service</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Big Data</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../introduce_big_data.html">大数据</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../introduce_big_data.html#id2">大数据应用场景</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../introduce_big_data.html#id5">数据科学</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../log_systems.html">日志系统</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../spark_vs_flink.html">Spark vs. Flink</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../presto_vs_impala.html">Presto vs. Impala</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../message_queue/index.html">消息队列</a></li>
@@ -81,7 +88,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../spark/index.html">Spark大数据处理</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../kafka/index.html">Kafka消息队列系统</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../flink/index.html">Flink大数据处理</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../presto/index.html">Presto分布式大数据查询</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../trino/index.html">Trino分布式大数据查询</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../elasticsearch/index.html">Elasticsearch</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../log_analysis.html">日志分析架构</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../fluentd/index.html">Fluentd日志采集系统</a></li>
@@ -100,34 +107,38 @@
 <li class="toctree-l3"><a class="reference internal" href="install_jupyter.html">Jupyter安装</a></li>
 <li class="toctree-l3"><a class="reference internal" href="jupyter_slideshow.html">Jupyter幻灯展示</a></li>
 <li class="toctree-l3"><a class="reference internal" href="jupyter_startup.html">Jupyter快速起步</a></li>
+<li class="toctree-l3"><a class="reference internal" href="jupyter_remote.html">Jupyter远程访问</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../machine_learning/index.html">Machine Learning Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../linux/index.html">Linux Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kernel/index.html">Kernel Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../performance/index.html">Performance Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../distributed_system/index.html">Distributed System Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../shell/index.html">Shell Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../python/index.html">Python Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../django/index.html">Django Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../flask/index.html">Flask Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../javascript/index.html">JavaScript Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../nodejs/index.html">Node.js Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../clang/index.html">C Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../golang/index.html">Go Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../swift/index.html">Swift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../rust/index.html">Rust Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../ruby/index.html">Ruby Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../arm/index.html">ARM Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../android/index.html">Android Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../bsd/index.html">BSD Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../apple/index.html">Apple Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../windows/index.html">Windows Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../real/index.html">Real Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../management/index.html">Management Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../life/index.html">Life Atlas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../machine_learning/index.html">Machine Learning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../drone/index.html">Drone</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../linux/index.html">Linux</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kernel/index.html">Kernel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../performance/index.html">Performance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../distributed_system/index.html">Distributed System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../shell/index.html">Shell</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../python/index.html">Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../django/index.html">Django</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../javascript/index.html">JavaScript</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../nodejs/index.html">Node.js</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../clang/index.html">C</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../golang/index.html">Go</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../swift/index.html">Swift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../rust/index.html">Rust</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ruby/index.html">Ruby</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lua/index.html">Lua</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../arm/index.html">ARM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../raspberry_pi/index.html">Raspberry Pi</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../android/index.html">Android</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../bsd/index.html">BSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../freebsd/index.html">FreeBSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../apple/index.html">Apple</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../windows/index.html">Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../real/index.html">Real</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../management/index.html">Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../life/index.html">Life</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../copyright.html">Copyright</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../aboutme.html">关于作者</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../donate.html">捐赠</a></li>
@@ -140,21 +151,21 @@
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../index.html">Cloud Atlas</a>
+          <a href="../../index.html">Cloud Atlas: Discovery</a>
       </nav>
 
       <div class="wy-nav-content">
         <div class="rst-content">
-          <div role="navigation" aria-label="Page navigation">
+          <div role="navigation" aria-label="页面导航">
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
-          <li class="breadcrumb-item"><a href="../index.html">Big Data Atlas</a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Big Data</a></li>
           <li class="breadcrumb-item"><a href="index.html">Jupyter - 数据科学开发平台</a></li>
       <li class="breadcrumb-item active">Jupyter简介</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../../_sources/big_data/jupyter/intro_jupyter.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../_sources/big_data/jupyter/intro_jupyter.rst.txt" rel="nofollow"> 查看页面源码</a>
       </li>
   </ul>
   <hr/>
@@ -163,12 +174,12 @@
            <div itemprop="articleBody">
              
   <section id="jupyter">
-<span id="intro-jupyter"></span><h1>Jupyter简介<a class="headerlink" href="#jupyter" title="Link to this heading">¶</a></h1>
+<span id="intro-jupyter"></span><h1>Jupyter简介<a class="headerlink" href="#jupyter" title="Link to this heading"></a></h1>
 <p><a class="reference external" href="https://jupyter.org">Jupyter 大数据工具</a> 是一个开源的web应用，用于创建和共享文档，支持交互编码，公式，可视化以及描述文本。Jupyter Notebook 已迅成为速数据分析，机器学习的必备工具。因为它可以让数据分析师集中精力向用户解释整个分析过程。</p>
 <p>Jupyter这个名字是它要服务的三种语言的缩写：Julia，PYThon和R，这个名字与“木星（jupiter）”谐音。</p>
 <a class="reference internal image-reference" href="../../_images/jupyter.png"><img alt="../../_images/jupyter.png" src="../../_images/jupyter.png" style="width: 600.0px; height: 265.5px;" /></a>
 <section id="jupyter-note">
-<h2>Jupyter Note<a class="headerlink" href="#jupyter-note" title="Link to this heading">¶</a></h2>
+<h2>Jupyter Note<a class="headerlink" href="#jupyter-note" title="Link to this heading"></a></h2>
 <p>经典(传统)的Jupyter工具集称为 <code class="docutils literal notranslate"><span class="pre">Jupyter</span> <span class="pre">Note</span></code> :</p>
 <ul class="simple">
 <li><p>Jupyter的迅速发展，已经支持超过40种编程语言: Python, R, Julia, Scala</p></li>
@@ -180,17 +191,17 @@
 <a class="reference internal image-reference" href="../../_images/juypter_notes.png"><img alt="../../_images/juypter_notes.png" src="../../_images/juypter_notes.png" style="width: 645.0px; height: 489.0px;" /></a>
 </figure>
 <p>Jupyter Notebook WEB环境中，可以编写程序、运行代码查看输出和可视化结果，而且提供了编排文本和撰写查看复杂数学公式功能。通过强大的REPL交互开发环境(Read-Eval-Pring-Loop, 读取用户输入-执行代码-输出结果-循环上述操作)，用户可以非常方便实现交互式开发以及丰富的文档功能。</p>
-<p>最早Jupyter是起源于Python交互式开发环境 IPython Notebook，后来将IPython和Python解释器剥离，实现对多种语言的支持，已经只吃了40多种语言，成为非常成功对交互式集成开发平台。</p>
+<p>最早Jupyter是起源于Python交互式开发环境 IPython Notebook，后来将IPython和Python解释器剥离，实现对多种语言的支持，已经支持了40多种语言，成为非常成功对交互式集成开发平台。</p>
 </section>
 <section id="jupyter-lab">
-<h2>Jupyter Lab<a class="headerlink" href="#jupyter-lab" title="Link to this heading">¶</a></h2>
-<p>Jupyter Lab是下一代Notebook界面，提供了最新的基于web的交互开发环境，用于notebooks, 代码和数据。它的灵活的界面允许用户配置和编排数据科学工作流，科学计算，计算报导(computational journalism)以及 <a class="reference internal" href="../../machine_learning/index.html#machine-learning"><span class="std std-ref">Machine Learning Atlas</span></a> 。模块化设计提供了扩展和丰富功能。</p>
+<h2>Jupyter Lab<a class="headerlink" href="#jupyter-lab" title="Link to this heading"></a></h2>
+<p>Jupyter Lab是下一代Notebook界面，提供了最新的基于web的交互开发环境，用于notebooks, 代码和数据。它的灵活的界面允许用户配置和编排数据科学工作流，科学计算，计算报导(computational journalism)以及 <a class="reference internal" href="../../machine_learning/index.html#machine-learning"><span class="std std-ref">Machine Learning</span></a> 。模块化设计提供了扩展和丰富功能。</p>
 <figure class="align-default">
 <a class="reference internal image-reference" href="../../_images/juypterlab.png"><img alt="../../_images/juypterlab.png" src="../../_images/juypterlab.png" style="width: 666.0px; height: 473.0px;" /></a>
 </figure>
 </section>
 <section id="jupyter-hub">
-<h2>Jupyter Hub<a class="headerlink" href="#jupyter-hub" title="Link to this heading">¶</a></h2>
+<h2>Jupyter Hub<a class="headerlink" href="#jupyter-hub" title="Link to this heading"></a></h2>
 <p>Jupyter Hub特点:</p>
 <ul class="simple">
 <li><p>多用户notebook，用于企业、教学和研究机构多用户协作</p></li>
@@ -200,14 +211,14 @@
 </ul>
 </section>
 <section id="voila">
-<h2>Voila<a class="headerlink" href="#voila" title="Link to this heading">¶</a></h2>
+<h2>Voila<a class="headerlink" href="#voila" title="Link to this heading"></a></h2>
 <p><code class="docutils literal notranslate"><span class="pre">Voilà</span></code> 可以将notebooks转换成安全的、独立的web应用，以便定制和共享</p>
 <figure class="align-default">
 <a class="reference internal image-reference" href="../../_images/voila.png"><img alt="../../_images/voila.png" src="../../_images/voila.png" style="width: 680.0px; height: 550.0px;" /></a>
 </figure>
 </section>
 <section id="id2">
-<h2>参考<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
+<h2>参考<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="https://www.zhihu.com/question/266988943">Jupyter Notebook 有哪些奇技淫巧？</a></p></li>
 <li><p><a class="reference external" href="https://www.zhihu.com/question/46309360">jupyter notebook 可以做哪些事情？</a></p></li>
@@ -220,25 +231,37 @@
 
            </div>
           </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="index.html" class="btn btn-neutral float-left" title="Jupyter - 数据科学开发平台" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="install_jupyter.html" class="btn btn-neutral float-right" title="Jupyter安装" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="index.html" class="btn btn-neutral float-left" title="Jupyter - 数据科学开发平台" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="install_jupyter.html" class="btn btn-neutral float-right" title="Jupyter安装" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../copyright.html">Copyright</a> 2018 - now, Huatai Huang.</p>
+    <p>&#169; <a href="../../copyright.html">版权所有</a> 2018 - now, Huatai Huang。</p>
   </div>
 
-  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
   
     <!-- your html code here -->
     <br>
-    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡</a></p>
-     
+    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡 👈</a></p>
+    <br>
+    <p>网站采用 <a href="https://utteranc.es/">utterances</a> 评论系统，所有评论存储在<a href="https://github.com/huataihuang/cloud-atlas/issues">GitHub issues</a> 中，如果你看不到下方的评论框，那么可能需要<a href="https://cloud-atlas.readthedocs.io/zh-cn/latest/linux/security/vpn/index.html">自备梯子</a> 👈</p>
+    <div class="articleComments">
+        <comments>
+  <script src="https://utteranc.es/client.js"
+    repo="huataihuang/cloud-atlas"
+    issue-term="pathname"
+    theme="github-light"
+    crossorigin="anonymous"
+    async>
+  </script>
+</comments>
+    </div>
 
 
 </footer>

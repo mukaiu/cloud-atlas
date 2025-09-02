@@ -19,7 +19,7 @@ MariaDB是开源关系型数据库，和MySQL兼容并且用于替代MySQL。这
 
 - 执行以下命令安装:
 
-.. literalinclude:: install_mariadb/yum_install_mariadb
+.. literalinclude:: install_mariadb/yum_install_mariadb_only
    :caption: 在CentOS上安装 MariaDB
 
 建议同时安装 ``mariadb`` 和 ``mariadb-devel`` 软件包，方便后续开发
@@ -39,7 +39,7 @@ CentOS 7操作系统通过EPEL安装mariadb，需要注意EPEL提供的mariadb�
 
 - 执行安装:
 
-.. literalinclude:: install_mariadb/yum_install_MariaDB
+.. literalinclude:: install_mariadb/yum_install_mariadb_dev
    :caption: 安装MariaDB
 
 这里有一个报错:
@@ -129,6 +129,11 @@ CentOS 7操作系统通过EPEL安装mariadb，需要注意EPEL提供的mariadb�
    :caption: 创建一个数据库并创建访问账号及授权
 
 从MySQL 8.0开始，默认字符集是 ``utf8mb4_0900_ai_ci``
+
+- 此时可以在自定义 :ref:`mysql_config` 文件 ``~/.my.cnf`` 配置好访问账号，就能够简单执行 ``mysql`` 命令访问:
+
+.. literalinclude:: ../admin/mysql_config/home_my.cnf
+   :caption: 用户个人目录下 ``~/.my.cnf`` 配置访问账号
 
 参考
 ======

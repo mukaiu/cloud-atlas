@@ -1,21 +1,25 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh" data-content_root="../../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AirPort Express &mdash; Cloud Atlas 0.1 文档</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+  <title>AirPort Express &mdash; Cloud Atlas: Discovery beta 文档</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=fd3f3429" />
+
+  
+    <link rel="shortcut icon" href="../../_static/favicon.png"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="../../_static/documentation_options.js?v=7c91f8fd"></script>
-        <script src="../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=8534f863"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
         <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
-        <script src="../../_static/translations.js?v=beaddf03"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../../genindex.html" />
     <link rel="search" title="搜索" href="../../search.html" />
@@ -33,73 +37,81 @@
           
           
           <a href="../../index.html" class="icon icon-home">
-            Cloud Atlas
+            Cloud Atlas: Discovery
           </a>
+              <div class="version">
+                1.1
+              </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../studio/index.html">Studio Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../infrastructure/index.html">Infrastructure Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../devops/index.html">DevOps Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kvm/index.html">KVM Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../ceph/index.html">Ceph Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../gluster/index.html">Gluster Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../ovirt/index.html">oVirt Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../openstack/index.html">OpenStack Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../docker/index.html">Docker Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kubernetes/index.html">Kubernetes Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kubernetes_from_scratch/index.html">Kubernetes From Scratch (KFS) Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../rancher/index.html">Rancher Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../openshift/index.html">OpenShift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../sql/index.html">SQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../sqlite/index.html">SQLite Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../mysql/index.html">MySQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../pgsql/index.html">PostgreSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../clickhouse/index.html">ClickHouse Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../nosql/index.html">NoSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../redis/index.html">Redis Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../network/index.html">Network Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../infra_service/index.html">Infra-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../infra_search/index.html">Search Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../info_service/index.html">Info-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../web/index.html">Web Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../big_data/index.html">Big Data Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../machine_learning/index.html">Machine Learning Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../linux/index.html">Linux Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kernel/index.html">Kernel Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../performance/index.html">Performance Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../distributed_system/index.html">Distributed System Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../shell/index.html">Shell Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../python/index.html">Python Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../django/index.html">Django Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../flask/index.html">Flask Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../javascript/index.html">JavaScript Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../nodejs/index.html">Node.js Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../clang/index.html">C Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../golang/index.html">Go Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../swift/index.html">Swift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../rust/index.html">Rust Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../ruby/index.html">Ruby Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../arm/index.html">ARM Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../android/index.html">Android Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../bsd/index.html">BSD Atlas</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Apple Atlas</a><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../studio/index.html">Studio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../infrastructure/index.html">Infrastructure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../devops/index.html">DevOps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kvm/index.html">KVM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ceph/index.html">Ceph</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../gluster/index.html">Gluster</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ovirt/index.html">oVirt</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../openstack/index.html">OpenStack</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../docker/index.html">Docker</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kubernetes/index.html">Kubernetes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../k8s_dev/index.html">Kubernetes Develop</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../rancher/index.html">Rancher</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../openshift/index.html">OpenShift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../sql/index.html">SQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../sqlite/index.html">SQLite</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../mysql/index.html">MySQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../pgsql/index.html">PostgreSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../nosql/index.html">NoSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../network/index.html">Network</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../infra_service/index.html">Infra-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../infra_search/index.html">Infra-Search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../web/index.html">Web</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../info_service/index.html">Info-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../big_data/index.html">Big Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../machine_learning/index.html">Machine Learning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../drone/index.html">Drone</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../linux/index.html">Linux</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kernel/index.html">Kernel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../performance/index.html">Performance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../distributed_system/index.html">Distributed System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../shell/index.html">Shell</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../python/index.html">Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../django/index.html">Django</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../javascript/index.html">JavaScript</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../nodejs/index.html">Node.js</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../clang/index.html">C</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../golang/index.html">Go</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../swift/index.html">Swift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../rust/index.html">Rust</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ruby/index.html">Ruby</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lua/index.html">Lua</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../arm/index.html">ARM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../raspberry_pi/index.html">Raspberry Pi</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../android/index.html">Android</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../bsd/index.html">BSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../freebsd/index.html">FreeBSD</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Apple</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../macos/index.html">macOS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../darwin-containers/index.html">Darwin Containers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../app-sandbox/index.html">Apple App Sandbox</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ios/index.html">iOS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../iphone/index.html">iPhone</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../watch/index.html">Apple Watch</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ipad/index.html">iPad</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../airpods/index.html">AirPods</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../music/index.html">Apple Music</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../recovery/index.html">苹果系统恢复</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../virtualization/index.html">Apple Virtualization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../container/index.html">Apple container</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../vmware/index.html">macOS平台VMware</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../virtualbox/index.html">VirtualBox</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../osx10.9_ios6/index.html">Mac OS X 10.9 &amp; iOS 6</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../one/index.html">Apple One</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="index.html">Apple AirPort</a><ul class="current">
@@ -117,10 +129,10 @@
 <li class="toctree-l2"><a class="reference internal" href="../xrdp_on_macos.html">在macOS上运行xrdp服务</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../windows/index.html">Windows Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../real/index.html">Real Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../management/index.html">Management Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../life/index.html">Life Atlas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../windows/index.html">Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../real/index.html">Real</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../management/index.html">Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../life/index.html">Life</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../copyright.html">Copyright</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../aboutme.html">关于作者</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../donate.html">捐赠</a></li>
@@ -133,21 +145,21 @@
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../index.html">Cloud Atlas</a>
+          <a href="../../index.html">Cloud Atlas: Discovery</a>
       </nav>
 
       <div class="wy-nav-content">
         <div class="rst-content">
-          <div role="navigation" aria-label="Page navigation">
+          <div role="navigation" aria-label="页面导航">
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
-          <li class="breadcrumb-item"><a href="../index.html">Apple Atlas</a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Apple</a></li>
           <li class="breadcrumb-item"><a href="index.html">Apple AirPort</a></li>
       <li class="breadcrumb-item active">AirPort Express</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../../_sources/apple/airport/airport_express.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../_sources/apple/airport/airport_express.rst.txt" rel="nofollow"> 查看页面源码</a>
       </li>
   </ul>
   <hr/>
@@ -156,14 +168,14 @@
            <div itemprop="articleBody">
              
   <section id="airport-express">
-<span id="id1"></span><h1>AirPort Express<a class="headerlink" href="#airport-express" title="Link to this heading">¶</a></h1>
+<span id="id1"></span><h1>AirPort Express<a class="headerlink" href="#airport-express" title="Link to this heading"></a></h1>
 <p>很多年前，当我刚开始实用苹果系列产品，我就曾经购买过一款现在已经停产的 <code class="docutils literal notranslate"><span class="pre">AirPort</span> <span class="pre">Express</span></code> 。当时对苹果产品非常着迷，出差的时候，想要能够在宾馆中实用无线(哪个时候很多宾馆只提供有线网络连接)，就订购了当时比较贵的 <code class="docutils literal notranslate"><span class="pre">AirPort</span> <span class="pre">Express</span></code> 。</p>
-<p>现在，我再次拿出已经放在书架上很多年积灰的设备，想要再次让它 “焕发青春” 。</p>
+<p>现在，我再次拿出已经放在书架上很多年积灰的设备，想要再次让它 &quot;焕发青春&quot; 。</p>
 <figure class="align-default">
 <a class="reference internal image-reference" href="../../_images/airport_express.png"><img alt="../../_images/airport_express.png" src="../../_images/airport_express.png" style="width: 564.0px; height: 449.0px;" /></a>
 </figure>
 <section id="id2">
-<h2>网络连接<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
+<h2>网络连接<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
 <p>已经很久没有使用，当插上电源，橘黄色的指示灯开始闪烁。搜索 <code class="docutils literal notranslate"><span class="pre">AirPort</span> <span class="pre">Utility</span></code> 工具(是的，即使产品停产多年，现在最新的操作系统中依然内置了 <code class="docutils literal notranslate"><span class="pre">AirPort</span> <span class="pre">Utility</span></code> 配置工具，无需另外安装)，运行显示如下窗口:</p>
 <figure class="align-default">
 <a class="reference internal image-reference" href="../../_images/airport_setup_1.png"><img alt="../../_images/airport_setup_1.png" src="../../_images/airport_setup_1.png" style="width: 696.0px; height: 532.0px;" /></a>
@@ -171,12 +183,12 @@
 <p>这里需要注意， <code class="docutils literal notranslate"><span class="pre">AirPort</span> <span class="pre">Express</span></code> 是一个无线路由器的扩展，也就是说，它自身是需要把网线连接到一个无线路由器的有线网段，然后通过自己的无线来提供扩展功能。这在早期ADSL时代，是一个了不起的功能。</p>
 <p>如果 <code class="docutils literal notranslate"><span class="pre">AirPort</span> <span class="pre">Express</span></code> 有线网络没有连接到宽带路由器(需要通过DHCP获得能够访问internet)，就会显示为上图的黄色指示灯闪烁。此时使用 <code class="docutils literal notranslate"><span class="pre">AirPort</span> <span class="pre">Utility</span></code> 设置看到的就是上图Internet连接上有一个黄色点状灯。</p>
 <section id="internet">
-<h3>连接Internet<a class="headerlink" href="#internet" title="Link to this heading">¶</a></h3>
+<h3>连接Internet<a class="headerlink" href="#internet" title="Link to this heading"></a></h3>
 <p>用一根网线连接宽带路由器，并连接到 <code class="docutils literal notranslate"><span class="pre">AirPort</span></code> 的有线网口上，再次重启 <code class="docutils literal notranslate"><span class="pre">AirPort</span> <span class="pre">Express</span></code> ，过一会启动完成，此时 Internet 连接就是绿色指示灯，表明设备已经正确获得DHCP地址，并且能够连接到Internet：</p>
 <figure class="align-default">
 <a class="reference internal image-reference" href="../../_images/airport_setup_2.png"><img alt="../../_images/airport_setup_2.png" src="../../_images/airport_setup_2.png" style="width: 696.0px; height: 532.0px;" /></a>
 </figure>
-<p>可以看到，设备当前 Firmware 版本是 <code class="docutils literal notranslate"><span class="pre">7.6.4</span></code> ，并且提示可以升级。所以点击版本号边上的 <code class="docutils literal notranslate"><span class="pre">Update</span></code> 按钮进行升级…</p>
+<p>可以看到，设备当前 Firmware 版本是 <code class="docutils literal notranslate"><span class="pre">7.6.4</span></code> ，并且提示可以升级。所以点击版本号边上的 <code class="docutils literal notranslate"><span class="pre">Update</span></code> 按钮进行升级...</p>
 <figure class="align-default">
 <a class="reference internal image-reference" href="../../_images/airport_setup_3.png"><img alt="../../_images/airport_setup_3.png" src="../../_images/airport_setup_3.png" style="width: 696.0px; height: 532.0px;" /></a>
 </figure>
@@ -189,7 +201,7 @@
 </section>
 </section>
 <section id="id3">
-<h2>无线规格<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h2>
+<h2>无线规格<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
 <p>这款AirPort Express产品非常古老，大约是2008年产品，支持无线标准如下:</p>
 <ul class="simple">
 <li><p>802.11n(802.11b/g compatible)</p></li>
@@ -202,7 +214,7 @@
 <p><code class="docutils literal notranslate"><span class="pre">802.11n</span> <span class="pre">only</span> <span class="pre">(5GHz)</span></code> 无线规格，如果使用全套Apple产品，可以看到Apple的设备都支持这个无线规格，性能优越</p>
 </div>
 <section id="id4">
-<h3>无线标准<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h3>
+<h3>无线标准<a class="headerlink" href="#id4" title="Link to this heading"></a></h3>
 <ul class="simple">
 <li><p>802.11b: Wi-Fi 1 ，工作在2.4GHz，是最古老的无线标准(1999年)，最高传输速度11Mbps</p></li>
 <li><p>802.11a: Wi-Fi 2 ，工作在5GHz，传输带宽 54Mbps。较高的频率导致有效覆盖范围低于 802.11b ，并且较高的频率也导致难以穿墙或其他障碍</p></li>
@@ -216,13 +228,13 @@
 </ul>
 </section>
 <section id="id5">
-<h3>选择<a class="headerlink" href="#id5" title="Link to this heading">¶</a></h3>
+<h3>选择<a class="headerlink" href="#id5" title="Link to this heading"></a></h3>
 <p>为了能够实现较好的覆盖，我尝试采用 <code class="docutils literal notranslate"><span class="pre">802.11n</span> <span class="pre">only</span> <span class="pre">(2.4GHz)</span></code> ，可以比 <code class="docutils literal notranslate"><span class="pre">802.11n</span> <span class="pre">only(5GHz)</span></code> 更好穿墙，不过实际使用下来，还不理想，网络经常连接不畅。也测试了 <code class="docutils literal notranslate"><span class="pre">802.11n(802.11b/g</span> <span class="pre">compatible)</span></code> ，似乎穿透覆盖能力和 <code class="docutils literal notranslate"><span class="pre">802.11n</span> <span class="pre">only</span> <span class="pre">(2.4GHz)</span></code> 相差不大。总之，即使采用了上述两种相对覆盖较好的无线标准，依然不能实现稳定的穿墙通讯。</p>
 <p>我考虑 <span class="sphinxnotes-strike" style="text-decoration: line-through;">购买</span> <a class="reference internal" href="../../network/mikrotik/index.html#mikrotik"><span class="std std-ref">MikroTik 网络</span></a> 设备(非常灵活且功能强大，但售价昂贵，暂时没有资金，所以后续考虑参考 mikrotik 的技术解决方案，自己hack linux来实现)</p>
 </section>
 </section>
 <section id="id6">
-<h2>使用方案<a class="headerlink" href="#id6" title="Link to this heading">¶</a></h2>
+<h2>使用方案<a class="headerlink" href="#id6" title="Link to this heading"></a></h2>
 <p>要正确使用 AirPort Express 的关键条件:</p>
 <ul class="simple">
 <li><p>局域网有一个DHCP服务器，能够提供 <code class="docutils literal notranslate"><span class="pre">动态IP</span></code> 给 AirPort Express</p></li>
@@ -232,7 +244,7 @@
 <p>总之，AirPort Express的无线客户端是通过 <code class="docutils literal notranslate"><span class="pre">局域网DHCP服务器</span></code> 获得配置，AirPort Express提供的是一个 <code class="docutils literal notranslate"><span class="pre">透明转发</span></code> 。 我发现这个架构非常适合我在 <a class="reference internal" href="../../real/priv_cloud/priv_cloud_infra.html#priv-cloud-infra"><span class="std std-ref">私有云架构</span></a> 中提供的 <a class="reference internal" href="../../real/priv_cloud/priv_dnsmasq_ics.html#priv-dnsmasq-ics"><span class="std std-ref">私有云DNS服务(dnsmasq)和共享因特网(ICS)</span></a> 实现无线扩展，所以我实现了一个 <a class="reference internal" href="airport_express_with_dnsmasq_ics.html#airport-express-with-dnsmasq-ics"><span class="std std-ref">结合DNSmasq+iptables使用AirPort Express实现无线访问因特网</span></a> 部署。</p>
 </section>
 <section id="id7">
-<h2>参考<a class="headerlink" href="#id7" title="Link to this heading">¶</a></h2>
+<h2>参考<a class="headerlink" href="#id7" title="Link to this heading"></a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="https://manuals.info.apple.com/MANUALS/0/MA349/zh_CN/Designing_AirPort_Networks_10.5-Windows_CH.pdf">设计AirPort网络-使用AirPort实用工具</a></p></li>
 <li><p><a class="reference external" href="https://manuals.info.apple.com/MANUALS/0/MA435/zh_CN/AirPort_Setup_Guide_Web_CH.pdf">AirPort Express 设置指南</a></p></li>
@@ -244,25 +256,37 @@
 
            </div>
           </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="index.html" class="btn btn-neutral float-left" title="Apple AirPort" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="airport_express_with_dnsmasq_ics.html" class="btn btn-neutral float-right" title="结合DNSmasq+iptables使用AirPort Express实现无线访问因特网" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="index.html" class="btn btn-neutral float-left" title="Apple AirPort" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="airport_express_with_dnsmasq_ics.html" class="btn btn-neutral float-right" title="结合DNSmasq+iptables使用AirPort Express实现无线访问因特网" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../copyright.html">Copyright</a> 2018 - now, Huatai Huang.</p>
+    <p>&#169; <a href="../../copyright.html">版权所有</a> 2018 - now, Huatai Huang。</p>
   </div>
 
-  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
   
     <!-- your html code here -->
     <br>
-    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡</a></p>
-     
+    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡 👈</a></p>
+    <br>
+    <p>网站采用 <a href="https://utteranc.es/">utterances</a> 评论系统，所有评论存储在<a href="https://github.com/huataihuang/cloud-atlas/issues">GitHub issues</a> 中，如果你看不到下方的评论框，那么可能需要<a href="https://cloud-atlas.readthedocs.io/zh-cn/latest/linux/security/vpn/index.html">自备梯子</a> 👈</p>
+    <div class="articleComments">
+        <comments>
+  <script src="https://utteranc.es/client.js"
+    repo="huataihuang/cloud-atlas"
+    issue-term="pathname"
+    theme="github-light"
+    crossorigin="anonymous"
+    async>
+  </script>
+</comments>
+    </div>
 
 
 </footer>

@@ -1,26 +1,30 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh" data-content_root="../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kubernetes Atlas &mdash; Cloud Atlas 0.1 文档</title>
-      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/graphviz.css" type="text/css" />
+  <title>Kubernetes &mdash; Cloud Atlas: Discovery beta 文档</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../_static/graphviz.css?v=fd3f3429" />
+
+  
+    <link rel="shortcut icon" href="../_static/favicon.png"/>
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="../_static/documentation_options.js?v=7c91f8fd"></script>
-        <script src="../_static/doctools.js?v=888ff710"></script>
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=8534f863"></script>
+        <script src="../_static/doctools.js?v=9a2dae69"></script>
         <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
-        <script src="../_static/translations.js?v=beaddf03"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="搜索" href="../search.html" />
     <link rel="copyright" title="版权所有" href="../copyright.html" />
-    <link rel="next" title="Kubernetes概览" href="kubernetes_overview.html" />
+    <link rel="next" title="Kubernetes的思考" href="think_k8s.html" />
     <link rel="prev" title="从进程pid反推获得该进程所属容器" href="../docker/debug/get_container_by_pid.html" /> 
 </head>
 
@@ -33,28 +37,32 @@
           
           
           <a href="../index.html" class="icon icon-home">
-            Cloud Atlas
+            Cloud Atlas: Discovery
           </a>
+              <div class="version">
+                1.1
+              </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../studio/index.html">Studio Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../infrastructure/index.html">Infrastructure Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../devops/index.html">DevOps Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../kvm/index.html">KVM Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../ceph/index.html">Ceph Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../gluster/index.html">Gluster Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../ovirt/index.html">oVirt Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../openstack/index.html">OpenStack Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../docker/index.html">Docker Atlas</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Kubernetes Atlas</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="../studio/index.html">Studio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../infrastructure/index.html">Infrastructure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../devops/index.html">DevOps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../kvm/index.html">KVM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ceph/index.html">Ceph</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../gluster/index.html">Gluster</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ovirt/index.html">oVirt</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../openstack/index.html">OpenStack</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../docker/index.html">Docker</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Kubernetes</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="think_k8s.html">Kubernetes的思考</a></li>
 <li class="toctree-l2"><a class="reference internal" href="kubernetes_overview.html">Kubernetes概览</a></li>
 <li class="toctree-l2"><a class="reference internal" href="startup_prepare/index.html">Kubernetes起步准备</a></li>
 <li class="toctree-l2"><a class="reference internal" href="startup/index.html">Kubernetes快速起步</a></li>
@@ -88,53 +96,56 @@
 <li class="toctree-l2"><a class="reference internal" href="gpu/index.html">GPU Kubernetes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="kubeflow/index.html">Kubeflow - Kubernetes机器学习工作流平台</a></li>
 <li class="toctree-l2"><a class="reference internal" href="argo/index.html">Argo - 基于Kubernetes的持续集成和工作流</a></li>
+<li class="toctree-l2"><a class="reference internal" href="kueue/index.html">Kueue - K8s原生批处理调度</a></li>
 <li class="toctree-l2"><a class="reference internal" href="k8s_android/index.html">Kubernetes运行Android</a></li>
 <li class="toctree-l2"><a class="reference internal" href="k3s/index.html">K3s - 轻量级Kubernetes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="k0s/index.html">K0s - 轻量级Kubernetes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="platform/index.html">Kubernetes之上的平台</a></li>
 <li class="toctree-l2"><a class="reference internal" href="cloud/index.html">Kubernetes云厂商</a></li>
-<li class="toctree-l2"><a class="reference internal" href="develop/index.html">Kubernetes开发</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cncf/index.html">CNCF(Cloud Native Computing Foudation)</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../kubernetes_from_scratch/index.html">Kubernetes From Scratch (KFS) Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../rancher/index.html">Rancher Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../openshift/index.html">OpenShift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../sql/index.html">SQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../sqlite/index.html">SQLite Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../mysql/index.html">MySQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../pgsql/index.html">PostgreSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../clickhouse/index.html">ClickHouse Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../nosql/index.html">NoSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../redis/index.html">Redis Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../network/index.html">Network Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../infra_service/index.html">Infra-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../infra_search/index.html">Search Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../info_service/index.html">Info-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../web/index.html">Web Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../big_data/index.html">Big Data Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../machine_learning/index.html">Machine Learning Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../linux/index.html">Linux Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../kernel/index.html">Kernel Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../performance/index.html">Performance Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../distributed_system/index.html">Distributed System Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../shell/index.html">Shell Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../python/index.html">Python Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../django/index.html">Django Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../flask/index.html">Flask Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../javascript/index.html">JavaScript Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../nodejs/index.html">Node.js Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../clang/index.html">C Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../golang/index.html">Go Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../swift/index.html">Swift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../rust/index.html">Rust Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../ruby/index.html">Ruby Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../arm/index.html">ARM Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../android/index.html">Android Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../bsd/index.html">BSD Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../apple/index.html">Apple Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../windows/index.html">Windows Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../real/index.html">Real Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../management/index.html">Management Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../life/index.html">Life Atlas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../k8s_dev/index.html">Kubernetes Develop</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../rancher/index.html">Rancher</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../openshift/index.html">OpenShift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../sql/index.html">SQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../sqlite/index.html">SQLite</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../mysql/index.html">MySQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pgsql/index.html">PostgreSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../nosql/index.html">NoSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../network/index.html">Network</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../infra_service/index.html">Infra-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../infra_search/index.html">Infra-Search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../web/index.html">Web</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../info_service/index.html">Info-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../big_data/index.html">Big Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../machine_learning/index.html">Machine Learning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../drone/index.html">Drone</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../linux/index.html">Linux</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../kernel/index.html">Kernel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../performance/index.html">Performance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../distributed_system/index.html">Distributed System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../shell/index.html">Shell</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../python/index.html">Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../django/index.html">Django</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../javascript/index.html">JavaScript</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../nodejs/index.html">Node.js</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../clang/index.html">C</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../golang/index.html">Go</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../swift/index.html">Swift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../rust/index.html">Rust</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ruby/index.html">Ruby</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lua/index.html">Lua</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../arm/index.html">ARM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../raspberry_pi/index.html">Raspberry Pi</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../android/index.html">Android</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../bsd/index.html">BSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../freebsd/index.html">FreeBSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../apple/index.html">Apple</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../windows/index.html">Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../real/index.html">Real</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../management/index.html">Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../life/index.html">Life</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../copyright.html">Copyright</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../aboutme.html">关于作者</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../donate.html">捐赠</a></li>
@@ -147,19 +158,19 @@
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../index.html">Cloud Atlas</a>
+          <a href="../index.html">Cloud Atlas: Discovery</a>
       </nav>
 
       <div class="wy-nav-content">
         <div class="rst-content">
-          <div role="navigation" aria-label="Page navigation">
+          <div role="navigation" aria-label="页面导航">
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">Kubernetes Atlas</li>
+      <li class="breadcrumb-item active">Kubernetes</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../_sources/kubernetes/index.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/kubernetes/index.rst.txt" rel="nofollow"> 查看页面源码</a>
       </li>
   </ul>
   <hr/>
@@ -167,13 +178,14 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="kubernetes-atlas">
-<span id="kubernetes"></span><h1>Kubernetes Atlas<a class="headerlink" href="#kubernetes-atlas" title="Link to this heading">¶</a></h1>
+  <section id="kubernetes">
+<span id="id1"></span><h1>Kubernetes<a class="headerlink" href="#kubernetes" title="Link to this heading"></a></h1>
 <p>Kubernetes是Google基于其内部容器管理技术研发的开源实现，简单而言，就是容器的编排管理平台(Orchestrate)。正如Docker技术使得容器易于分发和运行，Kubernetes的诞生带来了数据中心视野的容器调度能力。随着Kubernetes技术发展，它已经不仅是容器调度技术，也逐步发展为容器-原生虚拟化和serverless计算的平台。</p>
-<p>kubernetes管理了容器规模，从边缘计算的微小集群到数据中心超大规模集群，在公有云和私有云环境都得到了广泛应用。由于按需调度运行容器，通过”复杂”的技术结合到当前广泛使用的云计算平台，可以充分释放云计算的灵活性和规模化。</p>
+<p>kubernetes管理了容器规模，从边缘计算的微小集群到数据中心超大规模集群，在公有云和私有云环境都得到了广泛应用。由于按需调度运行容器，通过&quot;复杂&quot;的技术结合到当前广泛使用的云计算平台，可以充分释放云计算的灵活性和规模化。</p>
 <div class="admonition note">
 <p class="admonition-title">备注</p>
 <p>虽然Docker/Kubernetes一直承诺我们更快速的部署，易于管理和强大的伸缩性，但是，就如同漂浮在海面上的冰山，你所看到的简洁易用是建立在底层无数辛勤开发和部署的云计算工作之上的。目前的技术发展趋势是，不断把客户的复杂度降低，把所有的脏活累活都下沉到系统平台。所以，决不要以为Kubernetes横空出世就解决了一切问题。恰恰相反，分布式、高可用、容灾、实时计算，随着规模的不断膨胀，这些技术的挑战越来越大。</p>
+<p>从阿里云转岗到蚂蚁金服，从事了五年的围绕Kubernetes的工作，这个领域太过复杂，需要重新 <a class="reference internal" href="think_k8s.html#think-k8s"><span class="std std-ref">Kubernetes的思考</span></a></p>
 </div>
 <div class="admonition note">
 <p class="admonition-title">备注</p>
@@ -184,6 +196,10 @@
 </div>
 <div class="toctree-wrapper compound">
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="think_k8s.html">Kubernetes的思考</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="think_k8s.html#signals">37signals下云案例</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="kubernetes_overview.html">Kubernetes概览</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="kubernetes_overview.html#id1">什么是Kubernetes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="kubernetes_overview.html#id2">Kubernetes集群的架构</a></li>
@@ -194,7 +210,7 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="startup_prepare/index.html">Kubernetes起步准备</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="startup_prepare/install_run_minikube.html">安装和运行minikube</a></li>
+<li class="toctree-l2"><a class="reference internal" href="startup_prepare/install_run_minikube.html">minikube</a></li>
 <li class="toctree-l2"><a class="reference internal" href="startup_prepare/install_setup_kubectl.html">安装和设置kubectl</a></li>
 <li class="toctree-l2"><a class="reference internal" href="startup_prepare/remote_minikube.html">远程访问minikube</a></li>
 <li class="toctree-l2"><a class="reference internal" href="startup_prepare/ubuntu_in_kubernetes.html">在Kubernetes中运行Ubuntu</a></li>
@@ -297,6 +313,7 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="administer/index.html">Kubernetes管理</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="administer/k8s_dashboard.html">Kubernetes仪表盘</a></li>
+<li class="toctree-l2"><a class="reference internal" href="administer/lens/index.html">Lens - Kubernetes集成管理IDE</a></li>
 <li class="toctree-l2"><a class="reference internal" href="administer/configure_pods_and_containers.html">配置pod和容器</a></li>
 <li class="toctree-l2"><a class="reference internal" href="administer/delete_cluster.html">删除Kubernetes集群</a></li>
 <li class="toctree-l2"><a class="reference internal" href="administer/cordon_node.html">暂停节点调度(cordon)</a></li>
@@ -309,9 +326,11 @@
 <li class="toctree-l2"><a class="reference internal" href="administer/k8s_cpu_management_policies.html">Kubernetes节点CPU管理策略</a></li>
 <li class="toctree-l2"><a class="reference internal" href="administer/change_k8s_image_registry.html">更改Kubernetes的镜像配置registry</a></li>
 <li class="toctree-l2"><a class="reference internal" href="administer/kubeadm_administer/index.html">使用kubeadm管理Kubernetes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="administer/extend/index.html">扩展Kubernetes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="administer/etcd/index.html">etcd - 分布式kv存储</a></li>
 <li class="toctree-l2"><a class="reference internal" href="administer/coredns/index.html">CoreDNS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="administer/federation/index.html">Kubernetes Federation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="administer/policy/index.html">Kubernetes策略配置</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="access_application/index.html">Kubernetes访问应用</a><ul>
@@ -338,6 +357,7 @@
 <li class="toctree-l2"><a class="reference internal" href="network/dynamic_dns_loadbalancing_without_cloud_provider.html">没有云计算服务环境下动态DNS和负载均衡</a></li>
 <li class="toctree-l2"><a class="reference internal" href="network/k8s_hosts_file_for_pods.html">Kubernetes配置Pods中的hosts文件</a></li>
 <li class="toctree-l2"><a class="reference internal" href="network/ingress/index.html">Kubernetes Ingress控制器</a></li>
+<li class="toctree-l2"><a class="reference internal" href="network/egress/index.html">Kubernetes Egress控制器</a></li>
 <li class="toctree-l2"><a class="reference internal" href="network/flannel/index.html">Flannel网络</a></li>
 <li class="toctree-l2"><a class="reference internal" href="network/cilium/index.html">Cilium网络</a></li>
 <li class="toctree-l2"><a class="reference internal" href="network/calico/index.html">Calico网络</a></li>
@@ -354,7 +374,7 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="numa/index.html">Kubernetes NUMA</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="numa/k8s_numa_arch.html">Kubernetes NUMA实现架构</a></li>
+<li class="toctree-l2"><a class="reference internal" href="numa/k8s_numa_arch.html">Kubernetes NUMA架构</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="backup/index.html">Kubernetes备份与恢复</a><ul>
@@ -374,6 +394,7 @@
 <li class="toctree-l2"><a class="reference internal" href="storage/k8s_rbd.html">在Kubernetes中部署RBD存储</a></li>
 <li class="toctree-l2"><a class="reference internal" href="storage/k8s_storage_platform.html">Kubernetes存储平台</a></li>
 <li class="toctree-l2"><a class="reference internal" href="storage/rook/index.html">Rook - 云原生存储调度器</a></li>
+<li class="toctree-l2"><a class="reference internal" href="storage/kadalu/index.html">Kadalu - GlusterFS后端k8s持久化存储</a></li>
 <li class="toctree-l2"><a class="reference internal" href="storage/heketi/index.html">Heketi - 云原生GlusterFS管理框架</a></li>
 </ul>
 </li>
@@ -381,7 +402,7 @@
 <li class="toctree-l2"><a class="reference internal" href="production/kubernetes_think_production.html">Kubernees生产环境思考</a></li>
 <li class="toctree-l2"><a class="reference internal" href="production/k8s_ha_master.html">高可用Kubernetes Master</a></li>
 <li class="toctree-l2"><a class="reference internal" href="production/recovery_etcd.html">etcd故障恢复</a></li>
-<li class="toctree-l2"><a class="reference internal" href="production/debug_node_notready.html">kubenetes节点”NotReady”状态排查</a></li>
+<li class="toctree-l2"><a class="reference internal" href="production/debug_node_notready.html">kubenetes节点&quot;NotReady&quot;状态排查</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="service_mesh/index.html">Service Mesh</a><ul>
@@ -417,6 +438,8 @@
 <li class="toctree-l2"><a class="reference internal" href="monitor/cadvisor.html">cAdvisor容器性能分析组件</a></li>
 <li class="toctree-l2"><a class="reference internal" href="monitor/prometheus/index.html">Prometheus监控</a></li>
 <li class="toctree-l2"><a class="reference internal" href="monitor/grafana/index.html">Grafana通用可视分析平台</a></li>
+<li class="toctree-l2"><a class="reference internal" href="monitor/loki/index.html">Loki 日志聚合系统</a></li>
+<li class="toctree-l2"><a class="reference internal" href="monitor/thanos/index.html">Thanos 分布式时序存储</a></li>
 <li class="toctree-l2"><a class="reference internal" href="monitor/alertmanager/index.html">Alertmanager</a></li>
 <li class="toctree-l2"><a class="reference internal" href="monitor/mixins/index.html">Mixins: 集成Grafana和Prometheus的监控</a></li>
 <li class="toctree-l2"><a class="reference internal" href="monitor/opentelemetry/index.html">OpenTelemetry</a></li>
@@ -425,7 +448,6 @@
 <li class="toctree-l2"><a class="reference internal" href="monitor/signoz/index.html">SigNoz监控</a></li>
 <li class="toctree-l2"><a class="reference internal" href="monitor/node_health/index.html">节点健康度</a></li>
 <li class="toctree-l2"><a class="reference internal" href="monitor/netdata.html">Netdata监控系统</a></li>
-<li class="toctree-l2"><a class="reference internal" href="monitor/thanos/index.html">Thanos 分布式时序存储</a></li>
 <li class="toctree-l2"><a class="reference internal" href="monitor/cortex/index.html">Cortex 分布式时序存储</a></li>
 <li class="toctree-l2"><a class="reference internal" href="monitor/m3/index.html">M3 - 分布式时序数据库</a></li>
 <li class="toctree-l2"><a class="reference internal" href="monitor/victoriametrics/index.html">VictoriaMetrics 分布式时序存储</a></li>
@@ -449,14 +471,15 @@
 <li class="toctree-l2"><a class="reference internal" href="debug/apiserver_port_2379_refuse.html">apiserver服务器无法连接端口2379</a></li>
 <li class="toctree-l2"><a class="reference internal" href="debug/debug_k8s_node_notready.html">排查Kubernetes节点NotReady</a></li>
 <li class="toctree-l2"><a class="reference internal" href="debug/debug_k8s_notready_node_kubelet.html">Kubernetes节点NotReady排查(kubelet)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="debug/k8s_master_pod_create_error.html">Kubernetes管控节点Pods创建”CreateContainerError”</a></li>
+<li class="toctree-l2"><a class="reference internal" href="debug/k8s_master_pod_create_error.html">Kubernetes管控节点Pods创建&quot;CreateContainerError&quot;</a></li>
 <li class="toctree-l2"><a class="reference internal" href="debug/debug_k8s_restart_pods.html">排查已经被删除pods(重启)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="debug/get_pods_restart_time.html">获取pod重启时间</a></li>
 <li class="toctree-l2"><a class="reference internal" href="debug/k8s_stuck_in_podinit.html">Kubernetes Pod停留在Init状态排查</a></li>
-<li class="toctree-l2"><a class="reference internal" href="debug/pod_stuck_terminating.html">停滞在”Terminiating”状态Pod</a></li>
+<li class="toctree-l2"><a class="reference internal" href="debug/pod_stuck_terminating.html">停滞在&quot;Terminiating&quot;状态Pod</a></li>
 <li class="toctree-l2"><a class="reference internal" href="debug/get_pods_special_node.html">获取特定节点的pods</a></li>
-<li class="toctree-l2"><a class="reference internal" href="debug/fix_pod_has_unbound_immediate_persistentvolumeclaims.html">修复”Unbound Immediate PersistentVolumeClaims”错误</a></li>
+<li class="toctree-l2"><a class="reference internal" href="debug/fix_pod_has_unbound_immediate_persistentvolumeclaims.html">修复&quot;Unbound Immediate PersistentVolumeClaims&quot;错误</a></li>
 <li class="toctree-l2"><a class="reference internal" href="debug/fail_create_container_cannot_allocate_memory.html">内存分配错误无法创建容器异常排查</a></li>
+<li class="toctree-l2"><a class="reference internal" href="debug/k8s_events.html">Kubernetes events</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="knative/index.html">Knative - Serverless计算</a><ul>
@@ -484,6 +507,7 @@
 <li class="toctree-l1"><a class="reference internal" href="virtual/index.html">Kubernetes结合虚拟化</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="virtual/gvisor/index.html">gVisor安全容器</a></li>
 <li class="toctree-l2"><a class="reference internal" href="virtual/kubevirt/index.html">KubeVirt - 虚拟机管理器</a></li>
+<li class="toctree-l2"><a class="reference internal" href="virtual/kata/index.html">Kata Containers - 轻量级类容器虚拟机</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="arm/index.html">ARM架构Kubernetes</a><ul>
@@ -497,6 +521,8 @@
 <li class="toctree-l2"><a class="reference internal" href="gpu/gpu_k8s_arch.html">GPU Kubernetes架构</a></li>
 <li class="toctree-l2"><a class="reference internal" href="gpu/install_nvidia_container_toolkit_for_containerd.html">为containerd安装NVIDIA Container Toolkit</a></li>
 <li class="toctree-l2"><a class="reference internal" href="gpu/install_nvidia_container_toolkit_for_docker.html">为Docker安装NVIDIA Container Toolkit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gpu/nvidia_device_plugin_for_k8s.html">NVIDIA device plugin for Kubernetes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gpu/nvidia_mig_support_in_k8s.html">在Kubernetes中使用NVIDIA MIG</a></li>
 <li class="toctree-l2"><a class="reference internal" href="gpu/nvidia_gpu_operator.html">NVIDIA GPU Operator</a></li>
 <li class="toctree-l2"><a class="reference internal" href="gpu/install_nvidia_gpu_operator.html">安装NVIDIA GPU Operator</a></li>
 <li class="toctree-l2"><a class="reference internal" href="gpu/install_nvidia_gpu_operator_y-k8s.html">y-k8s安装NVIDIA GPU Operator</a></li>
@@ -514,7 +540,14 @@
 <li class="toctree-l2"><a class="reference internal" href="kubeflow/charmed/index.html">Charmed Kubeflow</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="argo/index.html">Argo - 基于Kubernetes的持续集成和工作流</a><ul class="simple">
+<li class="toctree-l1"><a class="reference internal" href="argo/index.html">Argo - 基于Kubernetes的持续集成和工作流</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="argo/argo-cd.html">Argo CD - Kubernetes声明式GitOps持续交付(CD)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="argo/argo-rollouts.html">Argo Rollouts</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="kueue/index.html">Kueue - K8s原生批处理调度</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="kueue/k8s_batch_processing.html">Kubernetes批处理</a></li>
+<li class="toctree-l2"><a class="reference internal" href="kueue/intro_kueue.html">Kueue简介</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="k8s_android/index.html">Kubernetes运行Android</a><ul>
@@ -529,11 +562,16 @@
 <li class="toctree-l2"><a class="reference internal" href="k3s/prepare_k3s_alpine.html">Alpine Linux的K3s准备</a></li>
 <li class="toctree-l2"><a class="reference internal" href="k3s/alpine_cfssl.html">编译安装cfssl(Alpine Linux)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="k3s/k3s_ha_etcd.html">K3s高可用etcd</a></li>
+<li class="toctree-l2"><a class="reference internal" href="k3s/kine/index.html">kine - etcd转换层</a></li>
 <li class="toctree-l2"><a class="reference internal" href="k3s/k3s_install.html">K3s安装</a></li>
 <li class="toctree-l2"><a class="reference internal" href="k3s/k3s_squid/index.html">k3s部署squid代理</a></li>
 <li class="toctree-l2"><a class="reference internal" href="k3s/longhorn/index.html">Longhorn k8s分布式存储</a></li>
 <li class="toctree-l2"><a class="reference internal" href="k3s/octopus/index.html">Octopus - K8s设备管理系统</a></li>
 <li class="toctree-l2"><a class="reference internal" href="k3s/the_most_smallest_cheapest_k8s/index.html">最小和最低成本Kubernetes</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="k0s/index.html">K0s - 轻量级Kubernetes</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="k0s/introduce_k0s.html">k0s简介</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="platform/index.html">Kubernetes之上的平台</a><ul>
@@ -547,9 +585,8 @@
 <li class="toctree-l2"><a class="reference internal" href="cloud/explore_google_gke.html">探索Google Kubernetes Engine</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="develop/index.html">Kubernetes开发</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="develop/install_golang.html">安装 Go 语言包</a></li>
-<li class="toctree-l2"><a class="reference internal" href="develop/write_go.html">Go代码编写</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cncf/index.html">CNCF(Cloud Native Computing Foudation)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="cncf/kubecon_cloudnativecon_2025/index.html">KubeCon + CloudNativeCon Europe 2025</a></li>
 </ul>
 </li>
 </ul>
@@ -559,25 +596,37 @@
 
            </div>
           </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="../docker/debug/get_container_by_pid.html" class="btn btn-neutral float-left" title="从进程pid反推获得该进程所属容器" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="kubernetes_overview.html" class="btn btn-neutral float-right" title="Kubernetes概览" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="../docker/debug/get_container_by_pid.html" class="btn btn-neutral float-left" title="从进程pid反推获得该进程所属容器" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="think_k8s.html" class="btn btn-neutral float-right" title="Kubernetes的思考" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../copyright.html">Copyright</a> 2018 - now, Huatai Huang.</p>
+    <p>&#169; <a href="../copyright.html">版权所有</a> 2018 - now, Huatai Huang。</p>
   </div>
 
-  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
   
     <!-- your html code here -->
     <br>
-    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡</a></p>
-     
+    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡 👈</a></p>
+    <br>
+    <p>网站采用 <a href="https://utteranc.es/">utterances</a> 评论系统，所有评论存储在<a href="https://github.com/huataihuang/cloud-atlas/issues">GitHub issues</a> 中，如果你看不到下方的评论框，那么可能需要<a href="https://cloud-atlas.readthedocs.io/zh-cn/latest/linux/security/vpn/index.html">自备梯子</a> 👈</p>
+    <div class="articleComments">
+        <comments>
+  <script src="https://utteranc.es/client.js"
+    repo="huataihuang/cloud-atlas"
+    issue-term="pathname"
+    theme="github-light"
+    crossorigin="anonymous"
+    async>
+  </script>
+</comments>
+    </div>
 
 
 </footer>

@@ -1,21 +1,25 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh" data-content_root="../../../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>NetworkManager &mdash; Cloud Atlas 0.1 文档</title>
-      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../../_static/graphviz.css" type="text/css" />
+  <title>NetworkManager &mdash; Cloud Atlas: Discovery beta 文档</title>
+      <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/graphviz.css?v=fd3f3429" />
+
+  
+    <link rel="shortcut icon" href="../../../_static/favicon.png"/>
   <!--[if lt IE 9]>
     <script src="../../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="../../../_static/documentation_options.js?v=7c91f8fd"></script>
-        <script src="../../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../../_static/documentation_options.js?v=8534f863"></script>
+        <script src="../../../_static/doctools.js?v=9a2dae69"></script>
         <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
-        <script src="../../../_static/translations.js?v=beaddf03"></script>
     <script src="../../../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../../../genindex.html" />
     <link rel="search" title="搜索" href="../../../search.html" />
@@ -33,53 +37,60 @@
           
           
           <a href="../../../index.html" class="icon icon-home">
-            Cloud Atlas
+            Cloud Atlas: Discovery
           </a>
+              <div class="version">
+                1.1
+              </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../../studio/index.html">Studio Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../infrastructure/index.html">Infrastructure Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../devops/index.html">DevOps Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../kvm/index.html">KVM Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../ceph/index.html">Ceph Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../gluster/index.html">Gluster Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../ovirt/index.html">oVirt Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../openstack/index.html">OpenStack Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../docker/index.html">Docker Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../kubernetes/index.html">Kubernetes Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../kubernetes_from_scratch/index.html">Kubernetes From Scratch (KFS) Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../rancher/index.html">Rancher Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../openshift/index.html">OpenShift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../sql/index.html">SQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../sqlite/index.html">SQLite Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../mysql/index.html">MySQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../pgsql/index.html">PostgreSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../clickhouse/index.html">ClickHouse Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../nosql/index.html">NoSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../redis/index.html">Redis Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../network/index.html">Network Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../infra_service/index.html">Infra-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../infra_search/index.html">Search Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../info_service/index.html">Info-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../web/index.html">Web Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../big_data/index.html">Big Data Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../machine_learning/index.html">Machine Learning Atlas</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">Linux Atlas</a><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../studio/index.html">Studio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../infrastructure/index.html">Infrastructure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../devops/index.html">DevOps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../kvm/index.html">KVM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../ceph/index.html">Ceph</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../gluster/index.html">Gluster</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../ovirt/index.html">oVirt</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../openstack/index.html">OpenStack</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../docker/index.html">Docker</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../kubernetes/index.html">Kubernetes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../k8s_dev/index.html">Kubernetes Develop</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../rancher/index.html">Rancher</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../openshift/index.html">OpenShift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../sql/index.html">SQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../sqlite/index.html">SQLite</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../mysql/index.html">MySQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../pgsql/index.html">PostgreSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../nosql/index.html">NoSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../network/index.html">Network</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../infra_service/index.html">Infra-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../infra_search/index.html">Infra-Search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../web/index.html">Web</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../info_service/index.html">Info-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../big_data/index.html">Big Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../machine_learning/index.html">Machine Learning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../drone/index.html">Drone</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">Linux</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../../best_linux.html">最佳Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../admin/index.html">Linux系统管理</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../redhat_linux/index.html">RedHat Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../arch_linux/index.html">Arch Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../asahi_linux/index.html">Asahi Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../gentoo_linux/index.html">Gentoo Linux</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../lfs_linux/index.html">LFS(Linux from scratch)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../lfs/index.html">LFS(Linux from scratch)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../blfs/index.html">BLFS(Beyond Linux from scratch)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../alfs/index.html">ALFS(Automated Linux from scratch)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pilfs/index.html">PiLFS(Automated Linux from scratch on the Raspberry Pi)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../yocto/index.html">Yocto</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../debian/index.html">Debian</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="../index.html">Ubuntu Linux</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="../ubuntu_on_mbp.html">MacBook Pro上运行Ubuntu</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../ubuntu_on_thinkpad_x220.html">ThinkPad X220上运行Ubuntu</a></li>
@@ -88,7 +99,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../ubuntu_desktop.html">Ubuntu Desktop</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../upgrade_ubuntu.html">升级Ubuntu</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../ubuntu_hibernate.html">Ubuntu Hibernate休眠</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../debian_init.html">Debian精简系统初始化</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ubuntu_hibernate_old.html">Ubuntu Hibernate休眠(旧实践归档)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../admin/index.html">Ubuntu系统管理</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../cgroup/index.html">Ubuntu Cgroup</a></li>
 <li class="toctree-l3 current"><a class="reference internal" href="index.html">Ubuntu网络</a><ul class="current">
@@ -98,6 +109,7 @@
 <li class="toctree-l4"><a class="reference internal" href="wpa_supplicant.html">使用wpa_supplicant连接无线网络</a></li>
 <li class="toctree-l4"><a class="reference internal" href="switch_wifi_connect.html">切换WIFI连接</a></li>
 <li class="toctree-l4"><a class="reference internal" href="set_linux_system_proxy.html">配置linux系统级代理</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ubuntu_aic8800.html">Ubuntu AIC8800驱动(Tenda无线网卡AX300)</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../storage/index.html">Ubuntu存储管理</a></li>
@@ -106,10 +118,11 @@
 <li class="toctree-l2"><a class="reference internal" href="../../suse_linux/index.html">SUSE Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../kali_linux/index.html">Kali Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../tails_linux/index.html">Tails Linux</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../qubes_os/index.html">Qubes OS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../postmarketos/index.html">postmarketOS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../container_os/index.html">容器化操作系统(Container OS)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../fedora_coreos/index.html">Fedora CoreOS容器操作系统</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../chromium_os/index.html">Chromium OS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../chromeos/index.html">ChromeOS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../alpine_linux/index.html">Alpine Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../subgraph_os/index.html">Subgraph OS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../kaios/index.html">KaiOS - 世界第三手机操作系统</a></li>
@@ -122,28 +135,30 @@
 <li class="toctree-l2"><a class="reference internal" href="../../linux_tablet/index.html">Linux平板</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../../kernel/index.html">Kernel Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../performance/index.html">Performance Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../distributed_system/index.html">Distributed System Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../shell/index.html">Shell Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../python/index.html">Python Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../django/index.html">Django Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../flask/index.html">Flask Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../javascript/index.html">JavaScript Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../nodejs/index.html">Node.js Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../clang/index.html">C Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../golang/index.html">Go Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../swift/index.html">Swift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../rust/index.html">Rust Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../ruby/index.html">Ruby Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../arm/index.html">ARM Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../android/index.html">Android Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../bsd/index.html">BSD Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../apple/index.html">Apple Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../windows/index.html">Windows Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../real/index.html">Real Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../management/index.html">Management Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../life/index.html">Life Atlas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../kernel/index.html">Kernel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../performance/index.html">Performance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../distributed_system/index.html">Distributed System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../shell/index.html">Shell</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../python/index.html">Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../django/index.html">Django</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../javascript/index.html">JavaScript</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../nodejs/index.html">Node.js</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../clang/index.html">C</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../golang/index.html">Go</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../swift/index.html">Swift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../rust/index.html">Rust</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../ruby/index.html">Ruby</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../lua/index.html">Lua</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../arm/index.html">ARM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../raspberry_pi/index.html">Raspberry Pi</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../android/index.html">Android</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../bsd/index.html">BSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../freebsd/index.html">FreeBSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../apple/index.html">Apple</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../windows/index.html">Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../real/index.html">Real</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../management/index.html">Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../life/index.html">Life</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../copyright.html">Copyright</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../aboutme.html">关于作者</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../donate.html">捐赠</a></li>
@@ -156,22 +171,22 @@
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../../index.html">Cloud Atlas</a>
+          <a href="../../../index.html">Cloud Atlas: Discovery</a>
       </nav>
 
       <div class="wy-nav-content">
         <div class="rst-content">
-          <div role="navigation" aria-label="Page navigation">
+          <div role="navigation" aria-label="页面导航">
   <ul class="wy-breadcrumbs">
       <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
-          <li class="breadcrumb-item"><a href="../../index.html">Linux Atlas</a></li>
+          <li class="breadcrumb-item"><a href="../../index.html">Linux</a></li>
           <li class="breadcrumb-item"><a href="../index.html">Ubuntu Linux</a></li>
           <li class="breadcrumb-item"><a href="index.html">Ubuntu网络</a></li>
       <li class="breadcrumb-item active">NetworkManager</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../../../_sources/linux/ubuntu_linux/network/networkmanager.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../../_sources/linux/ubuntu_linux/network/networkmanager.rst.txt" rel="nofollow"> 查看页面源码</a>
       </li>
   </ul>
   <hr/>
@@ -180,25 +195,31 @@
            <div itemprop="articleBody">
              
   <section id="networkmanager">
-<span id="id1"></span><h1>NetworkManager<a class="headerlink" href="#networkmanager" title="Link to this heading">¶</a></h1>
+<span id="id1"></span><h1>NetworkManager<a class="headerlink" href="#networkmanager" title="Link to this heading"></a></h1>
 <div class="admonition note">
 <p class="admonition-title">备注</p>
 <p>当前主流发行版采用网络管理工具主要有:</p>
 <ul class="simple">
 <li><p><a class="reference internal" href="netplan.html#netplan"><span class="std std-ref">netplan网络配置</span></a></p></li>
-<li><p>NetworkManager</p></li>
+<li><p>NetworkManager (目前看这个方案最主流?)</p></li>
+<li><p><a class="reference internal" href="../../redhat_linux/systemd/systemd_networkd.html#systemd-networkd"><span class="std std-ref">Systemd Networkd服务</span></a></p></li>
 </ul>
 <p>在桌面系统中，例如 Fedora (server/workstation) 以及 Ubuntu Workstation ，通常会使用 NetworkManager 配置，不仅有字符命令配置，也有GUI方便完成设置。</p>
 <p><a class="reference internal" href="../../../machine_learning/jetson/jetson_nano.html#jetson-nano"><span class="std std-ref">Jetson Nano</span></a> 上NVIDIA官方提供的是基于 <a class="reference internal" href="../index.html#ubuntu-linux"><span class="std std-ref">Ubuntu Linux</span></a> 桌面版 18.04 LTS改造的L4T系统，默认使用的就是 NetworkManager管理网络，熟悉使用对桌面发行版Linux会有很大帮助。</p>
+<p>2024年3月，我重新部署 <a class="reference internal" href="../../../raspberry_pi/startup/raspberry_pi_os.html#raspberry-pi-os"><span class="std std-ref">Raspbery Pi OS(Raspbian)</span></a> (使用我的 <a class="reference internal" href="../../../raspberry_pi/hardware/index.html#pi-hardware"><span class="std std-ref">树莓派硬件</span></a> 重新开始构建 <a class="reference internal" href="../../../real/edge_cloud/edge_cloud_infra.html#edge-cloud-infra"><span class="std std-ref">边缘云计算架构(旧版)</span></a> ，可以看到最新的树莓派基于 <a class="reference internal" href="../../debian/index.html#debian"><span class="std std-ref">Debian</span></a> 12内置网络管理系统也已经采用了 NetworManager</p>
 <p><a class="reference internal" href="../../../real/mobile_cloud/mobile_cloud_infra.html#mobile-cloud-infra"><span class="std std-ref">移动云架构</span></a> 部署中，我采用了 <a class="reference internal" href="../../redhat_linux/fedora/fedora_networkmanager.html#fedora-networkmanager"><span class="std std-ref">Fedora NetworkManager网络管理</span></a> 来配置 <a class="reference internal" href="../../../real/mobile_cloud/mobile_cloud_arm/mobile_cloud_arm_vm.html#mobile-cloud-arm-vm"><span class="std std-ref">ARM移动云的虚拟机部署</span></a> 的静态IP地址</p>
 </div>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p><a class="reference internal" href="#nmtui"><span class="std std-ref">nmtui</span></a> 是最为简单的交互方式管理 NetworkManager 的终端工具</p>
+</div>
 <section id="nmcli">
-<h2>nmcli简介<a class="headerlink" href="#nmcli" title="Link to this heading">¶</a></h2>
+<span id="id2"></span><h2>nmcli<a class="headerlink" href="#nmcli" title="Link to this heading"></a></h2>
 <p><code class="docutils literal notranslate"><span class="pre">nmcli</span></code> 是一个控制NetworkManager并且报告网络状态的工具。nmcli可以替代 <code class="docutils literal notranslate"><span class="pre">nm-applet</span></code> 或者其他图形管理工具来处理网络。nmcli可以创建，显示，编辑，删除，激活和关闭网络连接，也可以用来显示网络设备状态。</p>
 <p>通过使用nmcli可以避免手工管理网络链接，也方便脚本编写。注意NetworkManager也支持运行脚本，这种方式称为 <code class="docutils literal notranslate"><span class="pre">dispatcher</span> <span class="pre">scripts</span></code> 以便能够响应网络事件。nmcli可以在没有图形界面的服务器，headless服务器和终端执行。</p>
 </section>
 <section id="general">
-<h2>General命令<a class="headerlink" href="#general" title="Link to this heading">¶</a></h2>
+<h2>General命令<a class="headerlink" href="#general" title="Link to this heading"></a></h2>
 <p><code class="docutils literal notranslate"><span class="pre">general</span></code> 命令提供了NetworkManager状态和权限的显示，可以用来获得或修改系统主机名。</p>
 <ul>
 <li><p>检查状态:</p>
@@ -237,8 +258,8 @@
 </ul>
 <p>这个命令和 <code class="docutils literal notranslate"><span class="pre">hostnamectl</span> <span class="pre">set-hostname</span> <span class="pre">jetson-r</span></code> 是同样效果，都是修改 <code class="docutils literal notranslate"><span class="pre">/etc/hostname</span></code> 配置。</p>
 </section>
-<section id="id2">
-<h2>nmcli命令规律<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
+<section id="id3">
+<h2>nmcli命令规律<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
 <p>nmcli命令的规律是尽可能使用 <code class="docutils literal notranslate"><span class="pre">help</span></code> ，每一级命令都有help可以帮助你进行下一级子命令。</p>
 <ul>
 <li><p>假设我们需要修改连接名字，即上述默认名字是 <code class="docutils literal notranslate"><span class="pre">Wired</span> <span class="pre">connection</span> <span class="pre">1</span></code> 和我期望的管理网络连接命名不一致，所以我想修改。则先输入命令 <code class="docutils literal notranslate"><span class="pre">nmcli</span> <span class="pre">connection</span> <span class="pre">modify</span> <span class="pre">help</span></code> ，就会提示:</p>
@@ -323,14 +344,14 @@
 </pre></div>
 </div>
 </section>
-<section id="id3">
-<h2>nmcli命令案例<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h2>
+<section id="id4">
+<h2>nmcli命令案例<a class="headerlink" href="#id4" title="Link to this heading"></a></h2>
 <div class="admonition note">
 <p class="admonition-title">备注</p>
 <p>在游泳中学游泳</p>
 </div>
-<section id="id4">
-<h3>检查NetworkManager是否运行<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h3>
+<section id="id5">
+<h3>检查NetworkManager是否运行<a class="headerlink" href="#id5" title="Link to this heading"></a></h3>
 <ul>
 <li><p>nmcli提供了 <code class="docutils literal notranslate"><span class="pre">-t</span></code> 参数可以简短( <code class="docutils literal notranslate"><span class="pre">--terse</span></code> )输出，结合 <code class="docutils literal notranslate"><span class="pre">-f</span></code> 可以指点字段 ( <code class="docutils literal notranslate"><span class="pre">--field</span></code> ):</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">nmcli</span> <span class="o">-</span><span class="n">t</span> <span class="o">-</span><span class="n">f</span> <span class="n">RUNNING</span> <span class="n">general</span>
@@ -355,8 +376,8 @@
 </pre></div>
 </div>
 </section>
-<section id="id5">
-<h3>列出所有可用设备<a class="headerlink" href="#id5" title="Link to this heading">¶</a></h3>
+<section id="id6">
+<h3>列出所有可用设备<a class="headerlink" href="#id6" title="Link to this heading"></a></h3>
 <ul>
 <li><p><code class="docutils literal notranslate"><span class="pre">dev</span></code> 对象状态可显示所有可用设备:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">nmcli</span> <span class="n">dev</span> <span class="n">status</span>
@@ -387,9 +408,8 @@
 <p><a class="reference external" href="https://developer.ridgerun.com/wiki/index.php/How_to_use_USB_device_networking">How to use USB device networking</a></p>
 </div>
 </section>
-</section>
 <section id="ip">
-<h2>配置静态IP地址<a class="headerlink" href="#ip" title="Link to this heading">¶</a></h2>
+<h3>配置静态IP地址<a class="headerlink" href="#ip" title="Link to this heading"></a></h3>
 <ul>
 <li><p>检查连接:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">nmcli</span>
@@ -406,7 +426,7 @@
 </ul>
 </section>
 <section id="ip-ip-aliasing">
-<h2>配置单网卡多IP(IP Aliasing)<a class="headerlink" href="#ip-ip-aliasing" title="Link to this heading">¶</a></h2>
+<h3>配置单网卡多IP(IP Aliasing)<a class="headerlink" href="#ip-ip-aliasing" title="Link to this heading"></a></h3>
 <p>我没有找到直接使用 <code class="docutils literal notranslate"><span class="pre">nmcli</span></code> 来添加IP别名的命令行文档，不过 NetworkManager 有一个终端交互界面程序 <code class="docutils literal notranslate"><span class="pre">nmtui</span></code> (Text User Interface for controlling NetworkmNager)，可以非常方便配置网络以及IP Aliasing:</p>
 <ul>
 <li><p>运行:</p>
@@ -422,8 +442,8 @@
 <ul class="simple">
 <li><p>实际完成后可以检查 <code class="docutils literal notranslate"><span class="pre">/etc/NetworkManager/system-connections/eth0</span></code> :</p></li>
 </ul>
-<div class="literal-block-wrapper docutils container" id="id8">
-<div class="code-block-caption"><span class="caption-text">nmtui配置/etc/NetworkManager/system-connections/eth0的单网卡多IP(IP Aliasing)</span><a class="headerlink" href="#id8" title="Link to this code">¶</a></div>
+<div class="literal-block-wrapper docutils container" id="id10">
+<div class="code-block-caption"><span class="caption-text">nmtui配置/etc/NetworkManager/system-connections/eth0的单网卡多IP(IP Aliasing)</span><a class="headerlink" href="#id10" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">[</span>connection<span class="o">]</span>
 <span class="nv">id</span><span class="o">=</span>eth0
 <span class="nv">uuid</span><span class="o">=</span>a94fa1de-b290-3b83-9f49-137981396543
@@ -477,7 +497,7 @@ ip6-privacy<span class="o">=</span><span class="m">0</span>
 </div>
 </section>
 <section id="nmcli-wifi">
-<span id="id6"></span><h2>配置无线网络<a class="headerlink" href="#nmcli-wifi" title="Link to this heading">¶</a></h2>
+<span id="id7"></span><h3>配置无线网络<a class="headerlink" href="#nmcli-wifi" title="Link to this heading"></a></h3>
 <p>我在 <a class="reference internal" href="../../kali_linux/startup/kali_network.html#kali-network"><span class="std std-ref">Kali Linux网络配置</span></a> 实践中有一个配置无线网络的案例，汇总整理在这里</p>
 <ul>
 <li><p>对于5GHz无线网络必须指定的国家编码，否则会导致非常奇怪的连接不存在全为0的SSID热点 ( <a class="reference internal" href="wpa_supplicant.html#wifi-5ghz-country-code"><span class="std std-ref">5G Hz无线网络国家代码</span></a> ):</p>
@@ -511,18 +531,18 @@ ip6-privacy<span class="o">=</span><span class="m">0</span>
 <ul class="simple">
 <li><p>增加连接到 <code class="docutils literal notranslate"><span class="pre">home</span></code> 热点(WPA认证)的网络连接:</p></li>
 </ul>
-<div class="literal-block-wrapper docutils container" id="id9">
-<div class="code-block-caption"><span class="caption-text">nmcli添加wpa-psk认证wifi</span><a class="headerlink" href="#id9" title="Link to this code">¶</a></div>
+<div class="literal-block-wrapper docutils container" id="id11">
+<div class="code-block-caption"><span class="caption-text">nmcli添加wpa-psk认证wifi</span><a class="headerlink" href="#id11" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>nmcli<span class="w"> </span>con<span class="w"> </span>add<span class="w"> </span>con-name<span class="w"> </span>home<span class="w"> </span>ifname<span class="w"> </span>wlp3s0<span class="w"> </span><span class="nb">type</span><span class="w"> </span>wifi<span class="w"> </span>ssid<span class="w"> </span>home<span class="w"> </span><span class="se">\</span>
 <span class="w">      </span>wifi-sec.key-mgmt<span class="w"> </span>wpa-psk<span class="w"> </span>wifi-sec.psk<span class="w"> </span>MYPASSWORD
 </pre></div>
 </div>
 </div>
 <ul class="simple">
-<li><p>我在 <a class="reference internal" href="../../../real/edge_cloud/edge_cloud_infra.html#edge-cloud-infra"><span class="std std-ref">边缘云计算架构</span></a> 为 <a class="reference internal" href="../../../real/edge_cloud/edge_jetson_net.html#edge-jetson-net"><span class="std std-ref">边缘计算Jetson Nano网络</span></a> 的无线网络配置静态IP以便能够构建 <a class="reference internal" href="../../../kubernetes/k3s/index.html#k3s"><span class="std std-ref">K3s - 轻量级Kubernetes</span></a> 工作节点:</p></li>
+<li><p>我在 <a class="reference internal" href="../../../real/edge_cloud/edge_cloud_infra.html#edge-cloud-infra"><span class="std std-ref">边缘云计算架构(旧版)</span></a> 为 <a class="reference internal" href="../../../real/edge_cloud/edge_jetson_net.html#edge-jetson-net"><span class="std std-ref">边缘计算Jetson Nano网络</span></a> 的无线网络配置静态IP以便能够构建 <a class="reference internal" href="../../../kubernetes/k3s/index.html#k3s"><span class="std std-ref">K3s - 轻量级Kubernetes</span></a> 工作节点:</p></li>
 </ul>
-<div class="literal-block-wrapper docutils container" id="id10">
-<div class="code-block-caption"><span class="caption-text">nmcli添加wpa-psk认证wifi的静态IP地址</span><a class="headerlink" href="#id10" title="Link to this code">¶</a></div>
+<div class="literal-block-wrapper docutils container" id="id12">
+<div class="code-block-caption"><span class="caption-text">nmcli添加wpa-psk认证wifi的静态IP地址</span><a class="headerlink" href="#id12" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>nmcli<span class="w"> </span>con<span class="w"> </span>add<span class="w"> </span>con-name<span class="w"> </span>home<span class="w"> </span>ifname<span class="w"> </span>wlp3s0<span class="w"> </span><span class="nb">type</span><span class="w"> </span>wifi<span class="w"> </span>ssid<span class="w"> </span>home<span class="w"> </span><span class="se">\</span>
 <span class="w">      </span>wifi-sec.key-mgmt<span class="w"> </span>wpa-psk<span class="w"> </span>wifi-sec.psk<span class="w"> </span>MYPASSWORD<span class="w"> </span><span class="se">\</span>
 <span class="w">      </span>ipv4.method<span class="w"> </span>manual<span class="w"> </span>ipv4.address<span class="w"> </span><span class="m">192</span>.168.7.23/24<span class="w"> </span><span class="se">\</span>
@@ -533,8 +553,8 @@ ip6-privacy<span class="o">=</span><span class="m">0</span>
 <ul class="simple">
 <li><p>添加连接到 <code class="docutils literal notranslate"><span class="pre">office</span></code> 热点的网络连接:</p></li>
 </ul>
-<div class="literal-block-wrapper docutils container" id="id11">
-<div class="code-block-caption"><span class="caption-text">nmcli添加wpa-eap认证(802.1x)wifi</span><a class="headerlink" href="#id11" title="Link to this code">¶</a></div>
+<div class="literal-block-wrapper docutils container" id="id13">
+<div class="code-block-caption"><span class="caption-text">nmcli添加wpa-eap认证(802.1x)wifi</span><a class="headerlink" href="#id13" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>nmcli<span class="w"> </span>con<span class="w"> </span>add<span class="w"> </span>con-name<span class="w"> </span>office<span class="w"> </span>ifname<span class="w"> </span>wlan0<span class="w"> </span><span class="nb">type</span><span class="w"> </span>wifi<span class="w"> </span>ssid<span class="w"> </span>office<span class="w"> </span><span class="se">\</span>
 <span class="w">  </span>wifi-sec.key-mgmt<span class="w"> </span>wpa-eap<span class="w"> </span><span class="m">802</span>-1x.eap<span class="w"> </span>peap<span class="w"> </span><span class="m">802</span>-1x.phase2-auth<span class="w"> </span>mschapv2<span class="w"> </span><span class="se">\</span>
 <span class="w">  </span><span class="m">802</span>-1x.identity<span class="w"> </span><span class="s2">&quot;USERNAME&quot;</span><span class="w"> </span><span class="m">802</span>-1x.password<span class="w"> </span><span class="s2">&quot;MYPASSWORD&quot;</span>
@@ -553,8 +573,8 @@ ip6-privacy<span class="o">=</span><span class="m">0</span>
 </pre></div>
 </div>
 </section>
-<section id="mac-spoofing">
-<h2>MAC Spoofing<a class="headerlink" href="#mac-spoofing" title="Link to this heading">¶</a></h2>
+<section id="networkmanager-mac-spoofing-mac">
+<span id="networkmanager-mac-spoofing"></span><h3>NetworkManager MAC Spoofing(MAC欺骗)<a class="headerlink" href="#networkmanager-mac-spoofing-mac" title="Link to this heading"></a></h3>
 <p>NetworkManager的Mac Spoofing是通过 <code class="docutils literal notranslate"><span class="pre">ethernet.cloned-mac-address</span></code> 和 <code class="docutils literal notranslate"><span class="pre">wifi.cloned-mac-address</span></code> 属性实现的，通过 <code class="docutils literal notranslate"><span class="pre">nmcli</span></code> 命令可以设置。</p>
 <ul>
 <li><p>查看连接:</p>
@@ -581,8 +601,60 @@ ip6-privacy<span class="o">=</span><span class="m">0</span>
 </ul>
 <p>一旦启动连接，就会看到无线网卡的MAC地址做了spoofing修改。</p>
 </section>
-<section id="id7">
-<h2>参考<a class="headerlink" href="#id7" title="Link to this heading">¶</a></h2>
+<section id="networkmanagermac">
+<span id="networkmanager-disable-random-mac"></span><h3>NetworkManager禁止随机MAC地址<a class="headerlink" href="#networkmanagermac" title="Link to this heading"></a></h3>
+<p><strong>记录备查</strong> 暂未实践</p>
+<p>参考 <a class="reference external" href="https://www.reddit.com/r/archlinux/comments/6ls9gn/how_to_disable_random_mac_address/">How to disable random mac address?</a> ，配置 <code class="docutils literal notranslate"><span class="pre">/etc/NetworkManager/conf.d/30-mac-randomization.conf</span></code> :</p>
+<div class="literal-block-wrapper docutils container" id="id14">
+<div class="code-block-caption"><span class="caption-text">禁止随机MAC地址，配置 <code class="docutils literal notranslate"><span class="pre">/etc/NetworkManager/conf.d/30-mac-randomization.conf</span></code></span><a class="headerlink" href="#id14" title="Link to this code"></a></div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">device</span><span class="o">-</span><span class="n">mac</span><span class="o">-</span><span class="n">randomization</span><span class="p">]</span>
+<span class="n">wifi</span><span class="o">.</span><span class="n">scan</span><span class="o">-</span><span class="n">rand</span><span class="o">-</span><span class="n">mac</span><span class="o">-</span><span class="n">address</span><span class="o">=</span><span class="n">yes</span>
+
+<span class="p">[</span><span class="n">connection</span><span class="o">-</span><span class="n">mac</span><span class="o">-</span><span class="n">randomization</span><span class="p">]</span>
+<span class="n">ethernet</span><span class="o">.</span><span class="n">cloned</span><span class="o">-</span><span class="n">mac</span><span class="o">-</span><span class="n">address</span><span class="o">=</span><span class="n">permanent</span>
+<span class="n">wifi</span><span class="o">.</span><span class="n">cloned</span><span class="o">-</span><span class="n">mac</span><span class="o">-</span><span class="n">address</span><span class="o">=</span><span class="n">permanent</span>
+</pre></div>
+</div>
+</div>
+</section>
+</section>
+<section id="nmtui">
+<span id="id8"></span><h2>nmtui<a class="headerlink" href="#nmtui" title="Link to this heading"></a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">nmcli</span></code> 虽然非常强大灵活，适合服务器远程管理，但是对于普通用户而言还是有些复杂。所以NetworkManager还提供了一个 <code class="docutils literal notranslate"><span class="pre">nmtui</span></code> ( Text User Interface for controlling NetworkManager )，提供了基本的交互生成配置的终端图形工具:</p>
+<figure class="align-default">
+<img alt="../../../_images/nmtui.png" src="../../../_images/nmtui.png" />
+</figure>
+<p>简而言之，可以使用方向键或者 <code class="docutils literal notranslate"><span class="pre">Tab键</span></code> / <code class="docutils literal notranslate"><span class="pre">Shift+Tab键</span></code> 在选项中移动，使用 <code class="docutils literal notranslate"><span class="pre">Enter</span></code> 键选择选项，并使用 <code class="docutils literal notranslate"><span class="pre">Space</span></code> 键切换状态。操作有点繁琐，但是能正确生成NetworkManager配置文件。</p>
+<p>上文其实已经介绍过使用 <code class="docutils literal notranslate"><span class="pre">nmtui</span></code> 来为网卡添加IP Alias，可以看到命令行添加配置是可以为配置命名 <code class="docutils literal notranslate"><span class="pre">eth0</span></code> 的，也就是对应于 <code class="docutils literal notranslate"><span class="pre">/etc/NetworkManager/system-connections/eth0</span></code> 配置文件(名)。</p>
+<p>而在 <a class="reference internal" href="../../../raspberry_pi/startup/pi_quick_start.html#pi-quick-start"><span class="std std-ref">树莓派(Raspberry Pi)快速起步</span></a> 配置静态IP地址时，使用 <code class="docutils literal notranslate"><span class="pre">nmtui</span></code> 交互配置IP最为方便，简单来说交互设置完成后，生成了一个 <code class="docutils literal notranslate"><span class="pre">/etc/NetworkManager/system-connections/'Wired</span> <span class="pre">connection</span> <span class="pre">1.nmconnection'</span></code> 配置:</p>
+<div class="literal-block-wrapper docutils container" id="id15">
+<div class="code-block-caption"><span class="caption-text">通过 <code class="docutils literal notranslate"><span class="pre">nmtui</span></code> 交互生成的树莓派静态IP地址配置文件 <code class="docutils literal notranslate"><span class="pre">/etc/NetworkManager/system-connections/'Wired</span> <span class="pre">connection</span> <span class="pre">1.nmconnection'</span></code></span><a class="headerlink" href="#id15" title="Link to this code"></a></div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">connection</span><span class="p">]</span>
+<span class="nb">id</span><span class="o">=</span><span class="n">Wired</span> <span class="n">connection</span> <span class="mi">1</span>
+<span class="n">uuid</span><span class="o">=</span><span class="n">c76cf7a8</span><span class="o">-</span><span class="mf">9e5</span><span class="n">e</span><span class="o">-</span><span class="mi">37</span><span class="n">f8</span><span class="o">-</span><span class="n">bbf6</span><span class="o">-</span><span class="mi">792</span><span class="n">ccd3c595c</span>
+<span class="nb">type</span><span class="o">=</span><span class="n">ethernet</span>
+<span class="n">autoconnect</span><span class="o">-</span><span class="n">priority</span><span class="o">=-</span><span class="mi">999</span>
+<span class="n">interface</span><span class="o">-</span><span class="n">name</span><span class="o">=</span><span class="n">eth0</span>
+
+<span class="p">[</span><span class="n">ethernet</span><span class="p">]</span>
+
+<span class="hll"><span class="p">[</span><span class="n">ipv4</span><span class="p">]</span>
+</span><span class="hll"><span class="n">address1</span><span class="o">=</span><span class="mf">192.168.1.211</span><span class="o">/</span><span class="mi">24</span><span class="p">,</span><span class="mf">192.168.1.1</span>
+</span><span class="hll"><span class="n">dns</span><span class="o">=</span><span class="mf">192.168.1.1</span><span class="p">;</span>
+</span><span class="hll"><span class="n">dns</span><span class="o">-</span><span class="n">search</span><span class="o">=</span><span class="n">cloud</span><span class="o">-</span><span class="n">atlas</span><span class="o">.</span><span class="n">io</span><span class="p">;</span>
+</span><span class="hll"><span class="n">method</span><span class="o">=</span><span class="n">manual</span>
+</span>
+<span class="p">[</span><span class="n">ipv6</span><span class="p">]</span>
+<span class="n">addr</span><span class="o">-</span><span class="n">gen</span><span class="o">-</span><span class="n">mode</span><span class="o">=</span><span class="n">default</span>
+<span class="n">method</span><span class="o">=</span><span class="n">disabled</span>
+
+<span class="p">[</span><span class="n">proxy</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</section>
+<section id="id9">
+<h2>参考<a class="headerlink" href="#id9" title="Link to this heading"></a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="https://developer.gnome.org/NetworkManager/stable/nmcli.html">nmcli - command-line tool for controlling NetworkManager</a></p></li>
 <li><p><a class="reference external" href="https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/networking_guide/sec-configuring_ip_networking_with_nmcli">CONFIGURING IP NETWORKING WITH NMCLI</a></p></li>
@@ -597,25 +669,37 @@ ip6-privacy<span class="o">=</span><span class="m">0</span>
 
            </div>
           </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="switch_nm.html" class="btn btn-neutral float-left" title="切换NetworkManager" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="netplan.html" class="btn btn-neutral float-right" title="netplan网络配置" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="switch_nm.html" class="btn btn-neutral float-left" title="切换NetworkManager" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="netplan.html" class="btn btn-neutral float-right" title="netplan网络配置" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../../copyright.html">Copyright</a> 2018 - now, Huatai Huang.</p>
+    <p>&#169; <a href="../../../copyright.html">版权所有</a> 2018 - now, Huatai Huang。</p>
   </div>
 
-  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
   
     <!-- your html code here -->
     <br>
-    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡</a></p>
-     
+    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡 👈</a></p>
+    <br>
+    <p>网站采用 <a href="https://utteranc.es/">utterances</a> 评论系统，所有评论存储在<a href="https://github.com/huataihuang/cloud-atlas/issues">GitHub issues</a> 中，如果你看不到下方的评论框，那么可能需要<a href="https://cloud-atlas.readthedocs.io/zh-cn/latest/linux/security/vpn/index.html">自备梯子</a> 👈</p>
+    <div class="articleComments">
+        <comments>
+  <script src="https://utteranc.es/client.js"
+    repo="huataihuang/cloud-atlas"
+    issue-term="pathname"
+    theme="github-light"
+    crossorigin="anonymous"
+    async>
+  </script>
+</comments>
+    </div>
 
 
 </footer>

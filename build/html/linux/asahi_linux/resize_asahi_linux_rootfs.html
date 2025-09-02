@@ -1,21 +1,25 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh" data-content_root="../../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>调整Asahi Linux根文件系统大小 &mdash; Cloud Atlas 0.1 文档</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+  <title>调整Asahi Linux根文件系统大小 &mdash; Cloud Atlas: Discovery beta 文档</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=fd3f3429" />
+
+  
+    <link rel="shortcut icon" href="../../_static/favicon.png"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="../../_static/documentation_options.js?v=7c91f8fd"></script>
-        <script src="../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=8534f863"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
         <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
-        <script src="../../_static/translations.js?v=beaddf03"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../../genindex.html" />
     <link rel="search" title="搜索" href="../../search.html" />
@@ -33,46 +37,48 @@
           
           
           <a href="../../index.html" class="icon icon-home">
-            Cloud Atlas
+            Cloud Atlas: Discovery
           </a>
+              <div class="version">
+                1.1
+              </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../studio/index.html">Studio Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../infrastructure/index.html">Infrastructure Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../devops/index.html">DevOps Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kvm/index.html">KVM Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../ceph/index.html">Ceph Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../gluster/index.html">Gluster Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../ovirt/index.html">oVirt Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../openstack/index.html">OpenStack Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../docker/index.html">Docker Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kubernetes/index.html">Kubernetes Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kubernetes_from_scratch/index.html">Kubernetes From Scratch (KFS) Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../rancher/index.html">Rancher Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../openshift/index.html">OpenShift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../sql/index.html">SQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../sqlite/index.html">SQLite Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../mysql/index.html">MySQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../pgsql/index.html">PostgreSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../clickhouse/index.html">ClickHouse Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../nosql/index.html">NoSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../redis/index.html">Redis Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../network/index.html">Network Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../infra_service/index.html">Infra-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../infra_search/index.html">Search Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../info_service/index.html">Info-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../web/index.html">Web Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../big_data/index.html">Big Data Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../machine_learning/index.html">Machine Learning Atlas</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Linux Atlas</a><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../studio/index.html">Studio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../infrastructure/index.html">Infrastructure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../devops/index.html">DevOps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kvm/index.html">KVM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ceph/index.html">Ceph</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../gluster/index.html">Gluster</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ovirt/index.html">oVirt</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../openstack/index.html">OpenStack</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../docker/index.html">Docker</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kubernetes/index.html">Kubernetes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../k8s_dev/index.html">Kubernetes Develop</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../rancher/index.html">Rancher</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../openshift/index.html">OpenShift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../sql/index.html">SQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../sqlite/index.html">SQLite</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../mysql/index.html">MySQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../pgsql/index.html">PostgreSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../nosql/index.html">NoSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../network/index.html">Network</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../infra_service/index.html">Infra-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../infra_search/index.html">Infra-Search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../web/index.html">Web</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../info_service/index.html">Info-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../big_data/index.html">Big Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../machine_learning/index.html">Machine Learning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../drone/index.html">Drone</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Linux</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../best_linux.html">最佳Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../admin/index.html">Linux系统管理</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../redhat_linux/index.html">RedHat Linux</a></li>
@@ -80,6 +86,7 @@
 <li class="toctree-l2 current"><a class="reference internal" href="index.html">Asahi Linux</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="intro_asahi_linux.html">Asahi Linux简介</a></li>
 <li class="toctree-l3"><a class="reference internal" href="install_asahi_linux.html">安装Asahi Linux</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uninstall_asahi_linux.html">卸载Asahi Linux</a></li>
 <li class="toctree-l3"><a class="reference internal" href="asahi_linux_wifi.html">Asahi Linux 无线网络</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">调整Asahi Linux根文件系统大小</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#id1">Asahi Linux磁盘分区</a></li>
@@ -94,15 +101,21 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../gentoo_linux/index.html">Gentoo Linux</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../lfs_linux/index.html">LFS(Linux from scratch)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lfs/index.html">LFS(Linux from scratch)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../blfs/index.html">BLFS(Beyond Linux from scratch)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../alfs/index.html">ALFS(Automated Linux from scratch)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pilfs/index.html">PiLFS(Automated Linux from scratch on the Raspberry Pi)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../yocto/index.html">Yocto</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../debian/index.html">Debian</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ubuntu_linux/index.html">Ubuntu Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../suse_linux/index.html">SUSE Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../kali_linux/index.html">Kali Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../tails_linux/index.html">Tails Linux</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../qubes_os/index.html">Qubes OS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../postmarketos/index.html">postmarketOS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../container_os/index.html">容器化操作系统(Container OS)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../fedora_coreos/index.html">Fedora CoreOS容器操作系统</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../chromium_os/index.html">Chromium OS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chromeos/index.html">ChromeOS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../alpine_linux/index.html">Alpine Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../subgraph_os/index.html">Subgraph OS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../kaios/index.html">KaiOS - 世界第三手机操作系统</a></li>
@@ -115,28 +128,30 @@
 <li class="toctree-l2"><a class="reference internal" href="../linux_tablet/index.html">Linux平板</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../kernel/index.html">Kernel Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../performance/index.html">Performance Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../distributed_system/index.html">Distributed System Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../shell/index.html">Shell Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../python/index.html">Python Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../django/index.html">Django Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../flask/index.html">Flask Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../javascript/index.html">JavaScript Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../nodejs/index.html">Node.js Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../clang/index.html">C Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../golang/index.html">Go Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../swift/index.html">Swift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../rust/index.html">Rust Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../ruby/index.html">Ruby Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../arm/index.html">ARM Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../android/index.html">Android Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../bsd/index.html">BSD Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../apple/index.html">Apple Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../windows/index.html">Windows Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../real/index.html">Real Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../management/index.html">Management Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../life/index.html">Life Atlas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kernel/index.html">Kernel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../performance/index.html">Performance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../distributed_system/index.html">Distributed System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../shell/index.html">Shell</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../python/index.html">Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../django/index.html">Django</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../javascript/index.html">JavaScript</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../nodejs/index.html">Node.js</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../clang/index.html">C</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../golang/index.html">Go</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../swift/index.html">Swift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../rust/index.html">Rust</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ruby/index.html">Ruby</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lua/index.html">Lua</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../arm/index.html">ARM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../raspberry_pi/index.html">Raspberry Pi</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../android/index.html">Android</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../bsd/index.html">BSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../freebsd/index.html">FreeBSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../apple/index.html">Apple</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../windows/index.html">Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../real/index.html">Real</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../management/index.html">Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../life/index.html">Life</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../copyright.html">Copyright</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../aboutme.html">关于作者</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../donate.html">捐赠</a></li>
@@ -149,21 +164,21 @@
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../index.html">Cloud Atlas</a>
+          <a href="../../index.html">Cloud Atlas: Discovery</a>
       </nav>
 
       <div class="wy-nav-content">
         <div class="rst-content">
-          <div role="navigation" aria-label="Page navigation">
+          <div role="navigation" aria-label="页面导航">
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
-          <li class="breadcrumb-item"><a href="../index.html">Linux Atlas</a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Linux</a></li>
           <li class="breadcrumb-item"><a href="index.html">Asahi Linux</a></li>
       <li class="breadcrumb-item active">调整Asahi Linux根文件系统大小</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../../_sources/linux/asahi_linux/resize_asahi_linux_rootfs.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../_sources/linux/asahi_linux/resize_asahi_linux_rootfs.rst.txt" rel="nofollow"> 查看页面源码</a>
       </li>
   </ul>
   <hr/>
@@ -172,13 +187,13 @@
            <div itemprop="articleBody">
              
   <section id="asahi-linux">
-<span id="resize-asahi-linux-rootfs"></span><h1>调整Asahi Linux根文件系统大小<a class="headerlink" href="#asahi-linux" title="Link to this heading">¶</a></h1>
+<span id="resize-asahi-linux-rootfs"></span><h1>调整Asahi Linux根文件系统大小<a class="headerlink" href="#asahi-linux" title="Link to this heading"></a></h1>
 <p>我在拿到公司分配的 <a class="reference internal" href="../../apple/macos/apple_silicon_m1_pro.html#apple-silicon-m1-pro"><span class="std std-ref">Apple ARM架构芯片M1 Pro</span></a> 的MacBook Pro笔记本之后，终于有机会尝试在高性能ARM电脑上实践自己梦想已久的 <a class="reference internal" href="../../real/mobile_cloud/index.html#mobile-cloud"><span class="std std-ref">移动云计算构建</span></a> 。</p>
 <section id="id1">
-<h2>Asahi Linux磁盘分区<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h2>
+<h2>Asahi Linux磁盘分区<a class="headerlink" href="#id1" title="Link to this heading"></a></h2>
 <p>然而，第一次使用 Asahi Linux 系统，并不熟悉安装过程，仅仅跟随安装提示指引默认安装。确实 <a class="reference internal" href="install_asahi_linux.html#install-asahi-linux"><span class="std std-ref">安装Asahi Linux</span></a> 非常简单，但是安装完我才意识到安装程序是收缩了 <a class="reference internal" href="../../apple/macos/index.html#macos"><span class="std std-ref">macOS</span></a> 的系统磁盘分区，然后把空出来的磁盘几乎全部空间都用于 Asahi Llinux的根目录:</p>
 <div class="literal-block-wrapper docutils container" id="id7">
-<div class="code-block-caption"><span class="caption-text">Asahi Linux默认磁盘分区情况</span><a class="headerlink" href="#id7" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">Asahi Linux默认磁盘分区情况</span><a class="headerlink" href="#id7" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Disk<span class="w"> </span>/dev/nvme0n1:<span class="w"> </span><span class="m">465</span>.92<span class="w"> </span>GiB,<span class="w"> </span><span class="m">500277792768</span><span class="w"> </span>bytes,<span class="w"> </span><span class="m">122138133</span><span class="w"> </span>sectors
 Disk<span class="w"> </span>model:<span class="w"> </span>APPLE<span class="w"> </span>SSD<span class="w"> </span>AP0512R<span class="w">                       </span>
 Units:<span class="w"> </span>sectors<span class="w"> </span>of<span class="w"> </span><span class="m">1</span><span class="w"> </span>*<span class="w"> </span><span class="nv">4096</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">4096</span><span class="w"> </span>bytes
@@ -213,7 +228,7 @@ I/O<span class="w"> </span>size<span class="w"> </span><span class="o">(</span>m
 </div>
 <p>磁盘默认挂载如下:</p>
 <div class="literal-block-wrapper docutils container" id="id8">
-<div class="code-block-caption"><span class="caption-text">Asahi Linux默认磁盘分区挂载</span><a class="headerlink" href="#id8" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">Asahi Linux默认磁盘分区挂载</span><a class="headerlink" href="#id8" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Filesystem<span class="w">      </span>Size<span class="w">  </span>Used<span class="w"> </span>Avail<span class="w"> </span>Use%<span class="w"> </span>Mounted<span class="w"> </span>on
 dev<span class="w">              </span>16G<span class="w">     </span><span class="m">0</span><span class="w">   </span>16G<span class="w">   </span><span class="m">0</span>%<span class="w"> </span>/dev
 run<span class="w">              </span>16G<span class="w">  </span><span class="m">5</span>.3M<span class="w">   </span>16G<span class="w">   </span><span class="m">1</span>%<span class="w"> </span>/run
@@ -233,21 +248,21 @@ tmpfs<span class="w">            </span>16G<span class="w">     </span><span cla
 <ul class="simple">
 <li><p>采用 <a class="reference internal" href="../storage/zfs/index.html#zfs"><span class="std std-ref">ZFS</span></a> 构建功能强大的卷管理: 不浪费任何磁盘空间(动态划分卷)，高性能和高稳定性，并且是企业级大规模存储的基础技术</p></li>
 <li><p>在独立的卷管理上构建 <a class="reference internal" href="../../kvm/libvirt/index.html#libvirt"><span class="std std-ref">Libvirt虚拟机管理器</span></a> 存储，具有清晰型和稳定性</p></li>
-<li><p>虚拟机内部构建 <a class="reference internal" href="../../ceph/index.html#ceph"><span class="std std-ref">Ceph Atlas</span></a> 存储，实现虚拟化的分布式文件系统</p></li>
+<li><p>虚拟机内部构建 <a class="reference internal" href="../../ceph/index.html#ceph"><span class="std std-ref">Ceph</span></a> 存储，实现虚拟化的分布式文件系统</p></li>
 </ul>
 <p>这一切的构想都需要重新划分Asahi Linux的根分区，空出足够的空间来构建 <a class="reference internal" href="../storage/zfs/index.html#zfs"><span class="std std-ref">ZFS</span></a> 存储卷</p>
 </section>
 <section id="id2">
-<h2>规划<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
-<p>由于EXT4文件系统 <strong>不支持在线收缩</strong> <a class="reference internal" href="../storage/filesystem/ext/resize_ext4_rootfs.html#resize-ext4-rootfs"><span class="std std-ref">调整ext4根文件系统大小</span></a> ，所以对于上述根文件系统，我准备:</p>
+<h2>规划<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
+<p>由于EXT4文件系统 <strong>不支持在线收缩</strong> <a class="reference internal" href="../storage/filesystem/ext/shrink_ext4_fs.html#shrink-ext4-fs"><span class="std std-ref">收缩EXT4文件系统</span></a> ，所以对于上述根文件系统，我准备:</p>
 <ul class="simple">
 <li><p>采用 <a class="reference internal" href="../ubuntu_linux/admin/recover_system_by_tar.html#recover-system-by-tar"><span class="std std-ref">通过tar备份和恢复Linux系统</span></a> ，先对整个系统tar包备份并复制到其他主机上保存</p></li>
-<li><p>采用外接U盘启动一个Linux系统，然后将Asahi Linux的根分区 <code class="docutils literal notranslate"><span class="pre">/dev/nvme0n1p5</span></code> 删除，再重新划分为3个分区(分别用于 恢复Asahi Linux系统分区 / <a class="reference internal" href="../../docker/index.html#docker"><span class="std std-ref">Docker Atlas</span></a> / <a class="reference internal" href="../../kvm/libvirt/index.html#libvirt"><span class="std std-ref">Libvirt虚拟机管理器</span></a> )</p></li>
+<li><p>采用外接U盘启动一个Linux系统，然后将Asahi Linux的根分区 <code class="docutils literal notranslate"><span class="pre">/dev/nvme0n1p5</span></code> 删除，再重新划分为3个分区(分别用于 恢复Asahi Linux系统分区 / <a class="reference internal" href="../../docker/index.html#docker"><span class="std std-ref">Docker</span></a> / <a class="reference internal" href="../../kvm/libvirt/index.html#libvirt"><span class="std std-ref">Libvirt虚拟机管理器</span></a> )</p></li>
 <li><p>然后通过备份的tar包恢复Asahi Linux系统分区</p></li>
 </ul>
 </section>
 <section id="id3">
-<h2>备份<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h2>
+<h2>备份<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
 <ul>
 <li><p>默认情况下 <code class="docutils literal notranslate"><span class="pre">/var/cache</span></code> 目录会缓存大量的下载安装文件，这个可以清理掉降低备份占用空间( 参考 <a class="reference external" href="https://ostechnix.com/recommended-way-clean-package-cache-arch-linux/">The Recommended Way To Clean The Package Cache In Arch Linux</a> ):</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pacman</span> <span class="o">-</span><span class="n">Scc</span>
@@ -269,7 +284,7 @@ tar<span class="w"> </span>-cvpzf<span class="w"> </span>backup.tar.gz<span clas
 </div>
 </section>
 <section id="ext4">
-<h2>在线调整ext4根分区(失败)<a class="headerlink" href="#ext4" title="Link to this heading">¶</a></h2>
+<h2>在线调整ext4根分区(失败)<a class="headerlink" href="#ext4" title="Link to this heading"></a></h2>
 <div class="admonition warning">
 <p class="admonition-title">警告</p>
 <p>我尝试参考 <a class="reference external" href="https://linuxconfig.org/how-to-resize-ext4-root-partition-live-without-umount">How to resize ext4 root partition live without umount on Linux</a> 实际失败 <strong>请勿按照本段落操作</strong></p>
@@ -379,14 +394,14 @@ Syncing disks.
 <p>放弃，还是老老实实从备份恢复</p>
 </section>
 <section id="id4">
-<h2>从备份恢复Asahi Linux<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h2>
+<h2>从备份恢复Asahi Linux<a class="headerlink" href="#id4" title="Link to this heading"></a></h2>
 <div class="admonition note">
 <p class="admonition-title">备注</p>
 <p>没有进行，原因是分区破坏后，没有找到通过外部U盘启动的方法。并且我最后安装了 <a class="reference internal" href="../../apple/macos/extfs.html#extfs"><span class="std std-ref">macOS平台使用extFS读写Linux的EXT文件系统</span></a> 不能在存在Asahi Linux的分区存在情况下加载内核模块，所以我最后删除了Asahi Linux分区，然后重新 <a class="reference internal" href="install_asahi_linux.html#install-asahi-linux"><span class="std std-ref">安装Asahi Linux</span></a></p>
 </div>
 </section>
 <section id="id5">
-<h2>Asahi Linux分区删除<a class="headerlink" href="#id5" title="Link to this heading">¶</a></h2>
+<h2>Asahi Linux分区删除<a class="headerlink" href="#id5" title="Link to this heading"></a></h2>
 <p>Asahi Linux提供了一个卸载脚本:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">curl</span> <span class="o">-</span><span class="n">L</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">alx</span><span class="o">.</span><span class="n">sh</span><span class="o">/</span><span class="n">wipe</span><span class="o">-</span><span class="n">linux</span> <span class="o">|</span> <span class="n">sh</span>
 </pre></div>
@@ -412,7 +427,7 @@ Syncing disks.
 <figure class="align-default" id="id9">
 <a class="reference internal image-reference" href="../../_images/asahi_linux_volumes.png"><img alt="../../_images/asahi_linux_volumes.png" src="../../_images/asahi_linux_volumes.png" style="width: 560.0px; height: 277.2px;" /></a>
 <figcaption>
-<p><span class="caption-text">在Disk Utility中可以看到Asahi Linux卷下有2个分区，分别对应p4和p4数据分区</span><a class="headerlink" href="#id9" title="Link to this image">¶</a></p>
+<p><span class="caption-text">在Disk Utility中可以看到Asahi Linux卷下有2个分区，分别对应p4和p4数据分区</span><a class="headerlink" href="#id9" title="Link to this image"></a></p>
 </figcaption>
 </figure>
 <ul class="simple">
@@ -421,20 +436,20 @@ Syncing disks.
 <figure class="align-default" id="id10">
 <a class="reference internal image-reference" href="../../_images/asahi_linux_free.png"><img alt="../../_images/asahi_linux_free.png" src="../../_images/asahi_linux_free.png" style="width: 560.0px; height: 277.2px;" /></a>
 <figcaption>
-<p><span class="caption-text">删除了Asahi Linux的2个分区之后空闲空间</span><a class="headerlink" href="#id10" title="Link to this image">¶</a></p>
+<p><span class="caption-text">删除了Asahi Linux的2个分区之后空闲空间</span><a class="headerlink" href="#id10" title="Link to this image"></a></p>
 </figcaption>
 </figure>
 <p>但是删除以后，实际上长按电源键启动还会看到 Asahi Linux 启动选贤，这是因为 <code class="docutils literal notranslate"><span class="pre">/dev/nvme0n1p3</span></code> 分区还存在，这个分区实际上是 <code class="docutils literal notranslate"><span class="pre">Asahi</span> <span class="pre">Linux</span></code> 的启动分区。这点从 Disk Utilites 工具可以看到，Linux分区删后已经有空闲磁盘空间，但是还有一个标记为 <code class="docutils literal notranslate"><span class="pre">Asahi</span> <span class="pre">Linux</span></code> 的分区存在:</p>
 <figure class="align-default" id="id11">
 <a class="reference internal image-reference" href="../../_images/asahi_linux_partition.png"><img alt="../../_images/asahi_linux_partition.png" src="../../_images/asahi_linux_partition.png" style="width: 560.0px; height: 405.29999999999995px;" /></a>
 <figcaption>
-<p><span class="caption-text">删除Asahi Linux的2个分区后还有一个Asahi Linux启动分区</span><a class="headerlink" href="#id11" title="Link to this image">¶</a></p>
+<p><span class="caption-text">删除Asahi Linux的2个分区后还有一个Asahi Linux启动分区</span><a class="headerlink" href="#id11" title="Link to this image"></a></p>
 </figcaption>
 </figure>
 <p>再删除掉 <code class="docutils literal notranslate"><span class="pre">Asahi</span> <span class="pre">Linux启动分区</span></code> 之后，才真正完全清理了Asahi Linux，然后才能配置 <a class="reference internal" href="../../apple/macos/extfs.html#extfs"><span class="std std-ref">macOS平台使用extFS读写Linux的EXT文件系统</span></a> 工具的内核加载(需要变更 <a class="reference internal" href="../../apple/macos/index.html#macos"><span class="std std-ref">macOS</span></a> 安全策略允许加载第三方内核模块)</p>
 </section>
 <section id="id6">
-<h2>参考<a class="headerlink" href="#id6" title="Link to this heading">¶</a></h2>
+<h2>参考<a class="headerlink" href="#id6" title="Link to this heading"></a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="https://github.com/AsahiLinux/asahi-installer/issues/76">How should I remove Asahi? #76</a></p></li>
 </ul>
@@ -444,25 +459,37 @@ Syncing disks.
 
            </div>
           </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="asahi_linux_wifi.html" class="btn btn-neutral float-left" title="Asahi Linux 无线网络" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="../gentoo_linux/index.html" class="btn btn-neutral float-right" title="Gentoo Linux" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="asahi_linux_wifi.html" class="btn btn-neutral float-left" title="Asahi Linux 无线网络" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="../gentoo_linux/index.html" class="btn btn-neutral float-right" title="Gentoo Linux" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../copyright.html">Copyright</a> 2018 - now, Huatai Huang.</p>
+    <p>&#169; <a href="../../copyright.html">版权所有</a> 2018 - now, Huatai Huang。</p>
   </div>
 
-  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
   
     <!-- your html code here -->
     <br>
-    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡</a></p>
-     
+    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡 👈</a></p>
+    <br>
+    <p>网站采用 <a href="https://utteranc.es/">utterances</a> 评论系统，所有评论存储在<a href="https://github.com/huataihuang/cloud-atlas/issues">GitHub issues</a> 中，如果你看不到下方的评论框，那么可能需要<a href="https://cloud-atlas.readthedocs.io/zh-cn/latest/linux/security/vpn/index.html">自备梯子</a> 👈</p>
+    <div class="articleComments">
+        <comments>
+  <script src="https://utteranc.es/client.js"
+    repo="huataihuang/cloud-atlas"
+    issue-term="pathname"
+    theme="github-light"
+    crossorigin="anonymous"
+    async>
+  </script>
+</comments>
+    </div>
 
 
 </footer>

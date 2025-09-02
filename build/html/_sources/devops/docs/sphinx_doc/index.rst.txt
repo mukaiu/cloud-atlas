@@ -18,20 +18,29 @@ Sphinx文档
 .. toctree::
    :maxdepth: 1
 
+   sphinx_docs-cloud-atlas-io.rst
    sphinx_openstackdocstheme.rst
+   sphinx-intl.rst
    sphinx_show_code.rst
    sphinx_table.rst
    sphinx_image.rst
    sphinx_strike.rst
+   sphinx_markdown.rst
    sphinx_rss_feed.rst
    sphinx_embed_video.rst
    sphinx_embed_youtube.rst
    sphinx_embed_audio.rst
+   sphinx_embed_graphviz.rst
    sphinx_chinese_search.rst
-   sphinx_typeerror.rst
+   sphinx_readthedocs_yaml.rst
    sphinx-extension.rst
    rtd_fail_import_extension.rst
+   sphinx_footer.rst
+   sphinx_comments.rst
    sphinx_disqus.rst
+   readthedocs_slow_builds.rst
+   readthedocs_auto_build.rst
+   sphinx_favicon.rst
 
 .. only::  subproject and html
 

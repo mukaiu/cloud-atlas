@@ -26,15 +26,47 @@ OpenConnect VPN Server，也称为 ``ocserv`` ，采用OpenConnect SSL VPN协议
 
 .. note::
 
-   本文方案实践服务器和客户端都基于Ubuntu 18.10系统，其他发行版可能会有一些差异。
+   本文方案实践服务器和客户端都基于Ubuntu 18.10系统，其他发行版(例如 :ref:`openconnect_vpn_arch_linux` )可能会有一些差异。此外，我也在 :ref:`redhat_linux` 系的AlmaLinux上部署，其中的一些安装差异在本文注明
 
    详细操作步骤参考 `在Ubuntu部署OpenConnect VPN服务器 <https://github.com/huataihuang/cloud-atlas-draft/blob/master/security/vpn/openconnect/deploy_ocserv_vpn_server_on_ubuntu.md>`_
 
-- 安装ocserv::
+- Debian/Ubuntu 安装ocserv::
 
    apt install ocserv
 
+- RedHat/AlmaLinux 需要通过 EPEL 仓库来安装ocserv:
+
+.. literalinclude:: openconnect_vpn/redhat_install_ocserv
+   :caption: :ref:`redhat_linux` 通过EPEL安装ocserv
+
 安装完成后，OpenConnect VPN服务自动启动，可以通过 ``systemctl status ocserv`` 检查。
+
+源代码编译
+------------
+
+在 :ref:`arch_linux` 上安装 ``ocserv`` 比较麻烦一些，需要通过 :ref:`archlinux_aur` 编译安装，也就是先安装 ``yay`` ，然后执行 ``yay -S ocserv`` ，不过在2023年11月的尝试安装失败，原因是 ocserv 依赖的 ``freeradius-client`` (AUR) 引用了一个已经不再维护的 ``libpcl`` ，所以直接安装会失败。所以我实际安装是通过源代码编译安装的:
+
+.. literalinclude:: openconnect_vpn/build_ocserv
+   :caption: 源代码编译安装 ocserv
+
+服务起停配置文件我采用了 :ref:`ubuntu_linux` 提供的 :ref:`systemd` 配置:
+
+- ``/lib/systemd/system/ocserv.service`` :
+
+.. literalinclude:: openconnect_vpn/ocserv.service
+   :caption: :ref:`ubuntu_linux` 提供的ocserv启动systemd配置
+
+- 创建 ``/etc/ocserv/ocserv.conf`` (从 :ref:`ubuntu_linux` 发行版默认配置提取):
+
+.. literalinclude:: openconnect_vpn/ocserv.conf
+   :caption: :ref:`ubuntu_linux` 提供的ocserv默认配置
+
+.. note::
+
+   :ref:`arch_linux` 仓库提供软件包上述配置文件可能已经就绪(不过我尚未实践 :ref:`archlinux_aur` 安装成功)
+
+配置(Let's Encrypt证书)
+============================
 
 - 安装Let's Encrypt客户端（Certbot）::
 
@@ -79,6 +111,39 @@ OpenConnect VPN Server，也称为 ``ocserv`` ，采用OpenConnect SSL VPN协议
    :caption: 配置 /etc/ocserv/ocserv.conf 添加Let’s Encrypt证书
    :emphasize-lines: 13,14
 
+配置(字签名证书)
+==================
+
+自签名证书需要使用 ``guntls`` 工具:
+
+- Debian/Ubuntu安装 ``gnutils`` 工具:
+
+.. literalinclude:: openconnect_vpn/apt_gnutils
+   :caption: 使用 :ref:`apt` 安装 ``gnutls-bin``
+
+- Red Hat Linux/CentOS/AlmaLinux 安装 ``gnutls`` 工具:
+
+.. literalinclude:: openconnect_vpn/dnf_gnutils
+   :caption: 使用 :ref:`dnf` 安装 ``gnutls-utils``
+
+- 首先需要为签发证书准备一个私钥，执行以下命令生成 ``ca-privkey.pem`` 私钥:
+
+.. literalinclude:: openconnect_vpn/generate_privkey
+   :caption: 生成用于签发证书的私钥
+
+- 然后创建一个模板证书文件 ``ca-cert.cfg`` :
+
+.. literalinclude:: openconnect_vpn/ca-cert.cfg
+   :caption: 证书模板文件 ``ca-cert.cfg``
+
+- 结合上面的两个文件，即用私钥 ``ca-privkey.pem`` 和证书模板文件 ``ca-cert.cfg`` 生成字签名证书 ``ca-cert.pem``
+
+.. literalinclude:: openconnect_vpn/generate_ca
+   :caption: 生成服务器CA证书
+
+部署运行
+==============
+
 - 重启ocserv::
 
    sudo systemctl restart ocserv
@@ -89,47 +154,25 @@ OpenConnect VPN Server，也称为 ``ocserv`` ，采用OpenConnect SSL VPN协议
 
 - 激活IP Forwarding （重要步骤）
 
-修改 ``/etc/sysctl.conf`` 添加::
+修改 ``/etc/sysctl.conf`` 添加配置并激活:
 
-   net.ipv4.ip_forward = 1
+.. literalinclude:: openconnect_vpn/ip_forwarding
+   :caption: 激活IP Forwarding
 
-然后执行::
+- 配置防火墙的IP Masquerading (这里假设网卡接口是 ``ens3`` ）以及允许端口访问,配置好以后保存配置(以便后续通过 :ref:`systemd` 启动恢复 :
 
-   sudo sysctl -p
+.. literalinclude:: openconnect_vpn/iptables
+   :caption: iptables激活IP MASQUERATE
 
-- 配置防火墙的IP Masquerading (这里加设网卡接口是 ``ens3`` ） ::
+- 创建一个systemd服务来启动时恢复iptables规则，编辑 ``/etc/systemd/system/iptables-restore.service`` :
 
-   sudo iptables -t nat -A POSTROUTING -o ens3 -j MASQUERADE
+.. literalinclude:: openconnect_vpn/iptables_systemd
+   :caption: 配置systemd服务在启动时恢复iptables规则
 
-- 在防火墙上开启端口443::
+- 激活 ``iptables-restore`` 服务:
 
-   sudo iptables -I INPUT -p tcp --dport 443 -j ACCEPT
-   sudo iptables -I INPUT -p udp --dport 443 -j ACCEPT
-
-保存防火墙配置::
-
-   sudo iptables-save > /etc/iptables.rules
-
-- 创建一个systemd服务来启动时恢复iptables规则，编辑 ``/etc/systemd/system/iptables-restore.service`` ::
-
-   [Unit]
-   Description=Packet Filtering Framework
-   Before=network-pre.target
-   Wants=network-pre.target
-   
-   [Service]
-   Type=oneshot
-   ExecStart=/sbin/iptables-restore /etc/iptables.rules
-   ExecReload=/sbin/iptables-restore /etc/iptables.rules
-   RemainAfterExit=yes
-   
-   [Install]
-   WantedBy=multi-user.target
-
-- 激活 ``iptables-restore`` 服务::
-
-   sudo systemctl daemon-reload
-   sudo systemctl enable iptables-restore
+.. literalinclude:: openconnect_vpn/enable_iptables_systemd
+   :caption: 激活systemd服务在启动时恢复iptables规则
 
 使用OpenConnect VPN Client
 =============================
@@ -156,11 +199,15 @@ OpenConnect VPN Client使用技巧
 - 需要手工输入用户名和密码
 - 服务器证书过期后每次都要手工接受服务器证书 (早期版本可以使用 ``--no-cert-check`` 参数绕过，但是现在不行，必须明确接受服务器证书)
 
-``openconnect`` 提供了 ``-u`` 参数传递账号名，但是使用 ``-p`` 参数传递密码失败，所以改成 ``--passwd-on-stdin`` 从管道获取密码::
+``openconnect`` 提供了 ``-u`` 参数传递账号名，但是使用 ``-p`` 参数传递密码失败，所以改成 ``--passwd-on-stdin`` 从管道获取密码:
 
-   echo mypassword | sudo openconnect -u <myusernae> --passwd-on-stdin <vpnserver>:<vpn_port>
+.. literalinclude:: openconnect_vpn/openconnect_passwd-on-stdin
+   :caption: openconnect从标准输入(管道)获取登陆密码
 
-上述命令可以无需用户干预，只用一条命令就完成VPN服务器连接
+对于接受服务器证书的问题，可以使用 ``--servercert`` 参数来传递服务器证书，这样就不需要每次都手工确认一次了，所以完整的命令
+
+.. literalinclude:: openconnect_vpn/openconnect_passwd-on-stdin_servercert
+   :caption: openconnect从标准输入(管道)获取登陆密码并且使用服务器证书
 
 Cisco AnyConnect VPN Client
 =============================
@@ -199,5 +246,6 @@ Cisco AnyConnect VPN Client
 =======
 
 - `Set up OpenConnect VPN Server (ocserv) on Ubuntu 16.04/18.04 with Let’s Encrypt <https://www.linuxbabe.com/ubuntu/openconnect-vpn-server-ocserv-ubuntu-16-04-17-10-lets-encrypt>`_
+- `Set up Certificate Authentication in OpenConnect VPN Server (ocserv) <https://www.linuxbabe.com/ubuntu/certificate-authentication-openconnect-vpn-server-ocserv>`_ 设置服务器自签名证书和客户端证书
 - `How to Set up an OpenConnect VPN Server <https://www.alibabacloud.com/blog/how-to-set-up-an-openconnect-vpn-server_595185>`_
 - `How to run openconnect with username and password in a line in the terminal? <https://askubuntu.com/questions/1043024/how-to-run-openconnect-with-username-and-password-in-a-line-in-the-terminal>`_

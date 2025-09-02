@@ -1,21 +1,25 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh" data-content_root="../../../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Linux SSD分区对齐 &mdash; Cloud Atlas 0.1 文档</title>
-      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../../_static/graphviz.css" type="text/css" />
+  <title>Linux SSD分区对齐 &mdash; Cloud Atlas: Discovery beta 文档</title>
+      <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/graphviz.css?v=fd3f3429" />
+
+  
+    <link rel="shortcut icon" href="../../../_static/favicon.png"/>
   <!--[if lt IE 9]>
     <script src="../../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="../../../_static/documentation_options.js?v=7c91f8fd"></script>
-        <script src="../../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../../_static/documentation_options.js?v=8534f863"></script>
+        <script src="../../../_static/doctools.js?v=9a2dae69"></script>
         <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
-        <script src="../../../_static/translations.js?v=beaddf03"></script>
     <script src="../../../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../../../genindex.html" />
     <link rel="search" title="搜索" href="../../../search.html" />
@@ -33,61 +37,69 @@
           
           
           <a href="../../../index.html" class="icon icon-home">
-            Cloud Atlas
+            Cloud Atlas: Discovery
           </a>
+              <div class="version">
+                1.1
+              </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../../studio/index.html">Studio Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../infrastructure/index.html">Infrastructure Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../devops/index.html">DevOps Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../kvm/index.html">KVM Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../ceph/index.html">Ceph Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../gluster/index.html">Gluster Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../ovirt/index.html">oVirt Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../openstack/index.html">OpenStack Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../docker/index.html">Docker Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../kubernetes/index.html">Kubernetes Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../kubernetes_from_scratch/index.html">Kubernetes From Scratch (KFS) Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../rancher/index.html">Rancher Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../openshift/index.html">OpenShift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../sql/index.html">SQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../sqlite/index.html">SQLite Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../mysql/index.html">MySQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../pgsql/index.html">PostgreSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../clickhouse/index.html">ClickHouse Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../nosql/index.html">NoSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../redis/index.html">Redis Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../network/index.html">Network Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../infra_service/index.html">Infra-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../infra_search/index.html">Search Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../info_service/index.html">Info-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../web/index.html">Web Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../big_data/index.html">Big Data Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../machine_learning/index.html">Machine Learning Atlas</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">Linux Atlas</a><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../studio/index.html">Studio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../infrastructure/index.html">Infrastructure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../devops/index.html">DevOps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../kvm/index.html">KVM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../ceph/index.html">Ceph</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../gluster/index.html">Gluster</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../ovirt/index.html">oVirt</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../openstack/index.html">OpenStack</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../docker/index.html">Docker</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../kubernetes/index.html">Kubernetes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../k8s_dev/index.html">Kubernetes Develop</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../rancher/index.html">Rancher</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../openshift/index.html">OpenShift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../sql/index.html">SQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../sqlite/index.html">SQLite</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../mysql/index.html">MySQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../pgsql/index.html">PostgreSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../nosql/index.html">NoSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../network/index.html">Network</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../infra_service/index.html">Infra-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../infra_search/index.html">Infra-Search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../web/index.html">Web</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../info_service/index.html">Info-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../big_data/index.html">Big Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../machine_learning/index.html">Machine Learning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../drone/index.html">Drone</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">Linux</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../../best_linux.html">最佳Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../admin/index.html">Linux系统管理</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../redhat_linux/index.html">RedHat Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../arch_linux/index.html">Arch Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../asahi_linux/index.html">Asahi Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../gentoo_linux/index.html">Gentoo Linux</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../lfs_linux/index.html">LFS(Linux from scratch)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../lfs/index.html">LFS(Linux from scratch)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../blfs/index.html">BLFS(Beyond Linux from scratch)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../alfs/index.html">ALFS(Automated Linux from scratch)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pilfs/index.html">PiLFS(Automated Linux from scratch on the Raspberry Pi)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../yocto/index.html">Yocto</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../debian/index.html">Debian</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../ubuntu_linux/index.html">Ubuntu Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../suse_linux/index.html">SUSE Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../kali_linux/index.html">Kali Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../tails_linux/index.html">Tails Linux</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../qubes_os/index.html">Qubes OS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../postmarketos/index.html">postmarketOS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../container_os/index.html">容器化操作系统(Container OS)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../fedora_coreos/index.html">Fedora CoreOS容器操作系统</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../chromium_os/index.html">Chromium OS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../chromeos/index.html">ChromeOS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../alpine_linux/index.html">Alpine Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../subgraph_os/index.html">Subgraph OS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../kaios/index.html">KaiOS - 世界第三手机操作系统</a></li>
@@ -95,6 +107,7 @@
 <li class="toctree-l2 current"><a class="reference internal" href="../index.html">Linux存储</a><ul class="current">
 <li class="toctree-l3 current"><a class="reference internal" href="index.html">Linux磁盘</a><ul class="current">
 <li class="toctree-l4"><a class="reference internal" href="linux_ssd.html">Linux固态驱动器(SSD)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="orico_m2_nvme_sata_udisk.html">奥睿科（ORICO）M.2 NVMe/SATA双协议移动硬盘盒</a></li>
 <li class="toctree-l4"><a class="reference internal" href="smart_monitor.html">存储设备S.M.A.R.T监控</a></li>
 <li class="toctree-l4"><a class="reference internal" href="check_hd_sn.html">检查硬盘SN</a></li>
 <li class="toctree-l4"><a class="reference internal" href="linux_partition.html">Linux分区</a></li>
@@ -107,6 +120,7 @@
 <li class="toctree-l4"><a class="reference internal" href="update_intel_545s_ssd_firmware.html">升级Intel 545s SSD firmware</a></li>
 <li class="toctree-l4"><a class="reference internal" href="using_apple_superdrive_on_linux.html">在Linux系统中使用Apple SuperDrive光驱</a></li>
 <li class="toctree-l4"><a class="reference internal" href="sandisk_cloudspeed_eco_gen_ii_sata_ssd.html">SanDisk CloudSpeed Eco Gen. II SATA SSD企业级固态硬盘</a></li>
+<li class="toctree-l4"><a class="reference internal" href="change_disk_partition_uuid.html">修改磁盘和分区的UUID</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../nvme/index.html">Linux NVMe</a></li>
@@ -121,6 +135,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../stratis/index.html">Stratis - Linux存储系统</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../openmediavault/index.html">openmediavault - Linux NAS存储</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../bcache/index.html">Linux Bcache(块缓存)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../nas/index.html">NAS</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../network/index.html">Linux网络</a></li>
@@ -130,28 +145,30 @@
 <li class="toctree-l2"><a class="reference internal" href="../../linux_tablet/index.html">Linux平板</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../../kernel/index.html">Kernel Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../performance/index.html">Performance Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../distributed_system/index.html">Distributed System Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../shell/index.html">Shell Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../python/index.html">Python Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../django/index.html">Django Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../flask/index.html">Flask Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../javascript/index.html">JavaScript Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../nodejs/index.html">Node.js Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../clang/index.html">C Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../golang/index.html">Go Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../swift/index.html">Swift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../rust/index.html">Rust Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../ruby/index.html">Ruby Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../arm/index.html">ARM Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../android/index.html">Android Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../bsd/index.html">BSD Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../apple/index.html">Apple Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../windows/index.html">Windows Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../real/index.html">Real Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../management/index.html">Management Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../life/index.html">Life Atlas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../kernel/index.html">Kernel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../performance/index.html">Performance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../distributed_system/index.html">Distributed System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../shell/index.html">Shell</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../python/index.html">Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../django/index.html">Django</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../javascript/index.html">JavaScript</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../nodejs/index.html">Node.js</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../clang/index.html">C</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../golang/index.html">Go</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../swift/index.html">Swift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../rust/index.html">Rust</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../ruby/index.html">Ruby</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../lua/index.html">Lua</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../arm/index.html">ARM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../raspberry_pi/index.html">Raspberry Pi</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../android/index.html">Android</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../bsd/index.html">BSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../freebsd/index.html">FreeBSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../apple/index.html">Apple</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../windows/index.html">Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../real/index.html">Real</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../management/index.html">Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../life/index.html">Life</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../copyright.html">Copyright</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../aboutme.html">关于作者</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../donate.html">捐赠</a></li>
@@ -164,22 +181,22 @@
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../../index.html">Cloud Atlas</a>
+          <a href="../../../index.html">Cloud Atlas: Discovery</a>
       </nav>
 
       <div class="wy-nav-content">
         <div class="rst-content">
-          <div role="navigation" aria-label="Page navigation">
+          <div role="navigation" aria-label="页面导航">
   <ul class="wy-breadcrumbs">
       <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
-          <li class="breadcrumb-item"><a href="../../index.html">Linux Atlas</a></li>
+          <li class="breadcrumb-item"><a href="../../index.html">Linux</a></li>
           <li class="breadcrumb-item"><a href="../index.html">Linux存储</a></li>
           <li class="breadcrumb-item"><a href="index.html">Linux磁盘</a></li>
       <li class="breadcrumb-item active">Linux SSD分区对齐</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../../../_sources/linux/storage/disk/linux_ssd_partition_alignment.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../../_sources/linux/storage/disk/linux_ssd_partition_alignment.rst.txt" rel="nofollow"> 查看页面源码</a>
       </li>
   </ul>
   <hr/>
@@ -188,7 +205,7 @@
            <div itemprop="articleBody">
              
   <section id="linux-ssd">
-<span id="linux-ssd-partition-alignment"></span><h1>Linux SSD分区对齐<a class="headerlink" href="#linux-ssd" title="Link to this heading">¶</a></h1>
+<span id="linux-ssd-partition-alignment"></span><h1>Linux SSD分区对齐<a class="headerlink" href="#linux-ssd" title="Link to this heading"></a></h1>
 <div class="admonition note">
 <p class="admonition-title">备注</p>
 <p>本文是探寻为何新购买的USB SSD磁盘起始扇区不是常规的 <code class="docutils literal notranslate"><span class="pre">2048</span></code> 而是 <code class="docutils literal notranslate"><span class="pre">65535</span></code> ，并且使用了 <code class="docutils literal notranslate"><span class="pre">parted</span></code> 强制手段来对齐到 <code class="docutils literal notranslate"><span class="pre">2048</span></code> ( <code class="docutils literal notranslate"><span class="pre">1MiB</span></code> )。</p>
@@ -197,8 +214,8 @@
 </div>
 <p>正如 <a class="reference external" href="https://linux-blog.anracom.com/2018/12/03/linux-ssd-partition-alignment-problems-with-external-usb-to-sata-controllers-i/">Linux SSD partition alignment – problems with external USB-to-SATA controllers – I</a> 开头所说: 当你尝试解决一个问题，就会发现你从来没有意料的新问题出现。</p>
 <section id="id1">
-<h2>奇怪的65535起始扇区<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h2>
-<p>我在构建 <a class="reference internal" href="../../../real/edge_cloud/index.html#edge-cloud"><span class="std std-ref">边缘云计算构建</span></a> 的树莓派集群，选购的 <a class="reference internal" href="../../../arm/raspberry_pi/storage/wd_passport_ssd.html#wd-passport-ssd"><span class="std std-ref">西部数据Passport SSD移动硬盘</span></a> ，在第三次购买的西数Passport SSD虽然 <code class="docutils literal notranslate"><span class="pre">fdisk</span> <span class="pre">-l</span> <span class="pre">/dev/sda</span></code> 显示有:</p>
+<h2>奇怪的65535起始扇区<a class="headerlink" href="#id1" title="Link to this heading"></a></h2>
+<p>我在构建 <a class="reference internal" href="../../../real/edge_cloud/index.html#edge-cloud"><span class="std std-ref">边缘云计算构建</span></a> 的树莓派集群，选购的 <a class="reference internal" href="../../../raspberry_pi/storage/wd_passport_ssd.html#wd-passport-ssd"><span class="std std-ref">西部数据Passport SSD移动硬盘</span></a> ，在第三次购买的西数Passport SSD虽然 <code class="docutils literal notranslate"><span class="pre">fdisk</span> <span class="pre">-l</span> <span class="pre">/dev/sda</span></code> 显示有:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Disk</span> <span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">sda</span><span class="p">:</span> <span class="mf">931.51</span> <span class="n">GiB</span><span class="p">,</span> <span class="mi">1000204886016</span> <span class="nb">bytes</span><span class="p">,</span> <span class="mi">1953525168</span> <span class="n">sectors</span>
 <span class="n">Disk</span> <span class="n">model</span><span class="p">:</span> <span class="n">ssport</span>
 <span class="n">Units</span><span class="p">:</span> <span class="n">sectors</span> <span class="n">of</span> <span class="mi">1</span> <span class="o">*</span> <span class="mi">512</span> <span class="o">=</span> <span class="mi">512</span> <span class="nb">bytes</span>
@@ -285,13 +302,13 @@
 <p><a class="reference external" href="https://askubuntu.com/questions/156994/how-to-fix-partition-does-not-start-on-physical-sector-boundary-warning">How to fix “Partition does not start on physical sector boundary” warning?</a> 提到了西部数据 <a class="reference external" href="https://en.wikipedia.org/wiki/Advanced_Format">Advanced_Format</a> 使用了4096字节的物理扇区取代陈旧的每个扇区512字节。并且西数还提供了一个 <a class="reference external" href="https://web.archive.org/web/20150912110749/http://www.wdc.com/global/products/features/?id=7&amp;language=1">Advanced Format Hard Drive Download Utility</a> 介绍了在旧设备上启用Advanced Formatting提高性
 能。</p>
 <section id="western-digital-dashboard">
-<h3>Western Digital Dashboard<a class="headerlink" href="#western-digital-dashboard" title="Link to this heading">¶</a></h3>
+<h3>Western Digital Dashboard<a class="headerlink" href="#western-digital-dashboard" title="Link to this heading"></a></h3>
 <p>西部数据提供了 <a class="reference external" href="https://support.wdc.com/downloads.aspx?lang=en&amp;p=279">Western Digital Dashboard</a> 帮助用户分析磁盘(包括磁盘型号，容量，firmware版本和SMART属性)以及firmware更新</p>
-<p><a class="reference external" href="https://support.wdc.com/downloads.aspx?lang=en&amp;p=279">Western Digital Dashboard</a> 提供了Windows版本，我部署使用 <a class="reference internal" href="../../alpine_linux/alpine_extended.html#alpine-extended"><span class="std std-ref">U盘运行Alpine Linux</span></a> ，通过 <a class="reference internal" href="../../../kvm/index.html#kvm"><span class="std std-ref">KVM Atlas</span></a> 运行Windows虚拟机来测试SSD 磁盘，验证和排查为何最新购买的SSD磁盘使用了较小的物理扇区(512字节sector)</p>
+<p><a class="reference external" href="https://support.wdc.com/downloads.aspx?lang=en&amp;p=279">Western Digital Dashboard</a> 提供了Windows版本，我部署使用 <a class="reference internal" href="../../alpine_linux/alpine_extended.html#alpine-extended"><span class="std std-ref">U盘运行Alpine Linux</span></a> ，通过 <a class="reference internal" href="../../../kvm/index.html#kvm"><span class="std std-ref">KVM</span></a> 运行Windows虚拟机来测试SSD 磁盘，验证和排查为何最新购买的SSD磁盘使用了较小的物理扇区(512字节sector)</p>
 </section>
 </section>
 <section id="mib-alignment">
-<h2>1 MiB-alignment<a class="headerlink" href="#mib-alignment" title="Link to this heading">¶</a></h2>
+<h2>1 MiB-alignment<a class="headerlink" href="#mib-alignment" title="Link to this heading"></a></h2>
 <p>对于SSD磁盘，通常会希望Linux使用 <code class="docutils literal notranslate"><span class="pre">1</span> <span class="pre">MiB-alignment</span></code> ，也就是以 <code class="docutils literal notranslate"><span class="pre">512</span></code> 字节的逻辑扇区，共计 <code class="docutils literal notranslate"><span class="pre">2048</span></code> 个扇区，磁盘的第一个分区会对齐在 <code class="docutils literal notranslate"><span class="pre">2048</span> <span class="pre">*</span> <span class="pre">512</span> <span class="pre">=</span> <span class="pre">1024</span> <span class="pre">*</span> <span class="pre">1024</span> <span class="pre">=</span> <span class="pre">1</span> <span class="pre">(MiB)</span> <span class="pre">=</span> <span class="pre">256</span> <span class="pre">*</span> <span class="pre">4096</span></code> 。</p>
 <p>这个第一分区的起始扇区也就是称为具备原生4k支持的AF磁盘，不论磁盘底层使用 <code class="docutils literal notranslate"><span class="pre">512</span></code> 字节还是 <code class="docutils literal notranslate"><span class="pre">4096</span></code> 字节，都能保证 <code class="docutils literal notranslate"><span class="pre">1</span> <span class="pre">MiB-alignment</span></code> 能够对齐物理扇区。</p>
 <ul>
@@ -303,7 +320,7 @@
 </div>
 </li>
 </ul>
-<p>可以看到上述存在比较奇怪问题的 <a class="reference internal" href="../../../arm/raspberry_pi/storage/wd_passport_ssd.html#wd-passport-ssd"><span class="std std-ref">西部数据Passport SSD移动硬盘</span></a> 规格是 <code class="docutils literal notranslate"><span class="pre">931.5G</span></code> 。而我另外购买的2快同样型号 <a class="reference internal" href="../../../arm/raspberry_pi/storage/wd_passport_ssd.html#wd-passport-ssd"><span class="std std-ref">西部数据Passport SSD移动硬盘</span></a> 使用 <code class="docutils literal notranslate"><span class="pre">lsblk</span></code> 检查却是 <code class="docutils literal notranslate"><span class="pre">953.8G</span></code></p>
+<p>可以看到上述存在比较奇怪问题的 <a class="reference internal" href="../../../raspberry_pi/storage/wd_passport_ssd.html#wd-passport-ssd"><span class="std std-ref">西部数据Passport SSD移动硬盘</span></a> 规格是 <code class="docutils literal notranslate"><span class="pre">931.5G</span></code> 。而我另外购买的2快同样型号 <a class="reference internal" href="../../../raspberry_pi/storage/wd_passport_ssd.html#wd-passport-ssd"><span class="std std-ref">西部数据Passport SSD移动硬盘</span></a> 使用 <code class="docutils literal notranslate"><span class="pre">lsblk</span></code> 检查却是 <code class="docutils literal notranslate"><span class="pre">953.8G</span></code></p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span># lsblk /dev/sda
 NAME   MAJ:MIN RM   SIZE RO TYPE MOUNTPOINTS
 sda      8:0    0 953.8G  0 disk
@@ -315,7 +332,7 @@ sda      8:0    0 953.8G  0 disk
 <li><p>当使用 <code class="docutils literal notranslate"><span class="pre">fdisk</span></code> 或者 <code class="docutils literal notranslate"><span class="pre">pated</span></code> 分区，就会看到第一个分区始终只能建立在从 <code class="docutils literal notranslate"><span class="pre">65535</span></code> 扇区开始，而这个 <code class="docutils literal notranslate"><span class="pre">65535</span></code> 扇区不是 <code class="docutils literal notranslate"><span class="pre">2048</span></code> 的倍数</p></li>
 </ul>
 <div class="literal-block-wrapper docutils container" id="id9">
-<div class="code-block-caption"><span class="caption-text">fdisk和parted分区显示从 65535 开始</span><a class="headerlink" href="#id9" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">fdisk和parted分区显示从 65535 开始</span><a class="headerlink" href="#id9" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># fdisk /dev/sde</span>
 
 Welcome<span class="w"> </span>to<span class="w"> </span>fdisk<span class="w"> </span><span class="o">(</span>util-linux<span class="w"> </span><span class="m">2</span>.34<span class="o">)</span>.
@@ -365,8 +382,8 @@ Partition<span class="w"> </span><span class="m">1</span><span class="w"> </span
 </ul>
 </section>
 <section id="linux">
-<h2>Linux如何搜集和报告磁盘属性<a class="headerlink" href="#linux" title="Link to this heading">¶</a></h2>
-<p>从 RedHat 的网站上可以找到 <a class="reference external" href="https://people.redhat.com/msnitzer/docs/io-limits.txt">io-limits.txt</a> 说明了 “I/O Limits” 是基于 <code class="docutils literal notranslate"><span class="pre">sysfs</span></code> 和 <code class="docutils literal notranslate"><span class="pre">块设备</span></code> 的 <code class="docutils literal notranslate"><span class="pre">ioctl</span></code> 接口( 如 <code class="docutils literal notranslate"><span class="pre">libblkid</span></code> )获取信息:</p>
+<h2>Linux如何搜集和报告磁盘属性<a class="headerlink" href="#linux" title="Link to this heading"></a></h2>
+<p>从 RedHat 的网站上可以找到 <a class="reference external" href="https://people.redhat.com/msnitzer/docs/io-limits.txt">io-limits.txt</a> 说明了 &quot;I/O Limits&quot; 是基于 <code class="docutils literal notranslate"><span class="pre">sysfs</span></code> 和 <code class="docutils literal notranslate"><span class="pre">块设备</span></code> 的 <code class="docutils literal notranslate"><span class="pre">ioctl</span></code> 接口( 如 <code class="docutils literal notranslate"><span class="pre">libblkid</span></code> )获取信息:</p>
 <ul>
 <li><p><code class="docutils literal notranslate"><span class="pre">sysfs</span> <span class="pre">interface</span></code></p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">/</span><span class="n">sys</span><span class="o">/</span><span class="n">block</span><span class="o">/&lt;</span><span class="n">disk</span><span class="o">&gt;/</span><span class="n">alignment_offset</span>
@@ -381,7 +398,7 @@ Partition<span class="w"> </span><span class="m">1</span><span class="w"> </span
 </ul>
 <p>我们检查这个存在问题的磁盘就可以看到:</p>
 <div class="literal-block-wrapper docutils container" id="id10">
-<div class="code-block-caption"><span class="caption-text">起始扇区65535的磁盘 I/O Limits信息</span><a class="headerlink" href="#id10" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">起始扇区65535的磁盘 I/O Limits信息</span><a class="headerlink" href="#id10" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>cat<span class="w"> </span>/sys/block/sde/alignment_offset
 <span class="m">0</span>
 
@@ -401,7 +418,7 @@ $<span class="w"> </span>cat<span class="w"> </span>/sys/block/sde/queue/optimal
 </div>
 <p>而之前正常磁盘的信息</p>
 <div class="literal-block-wrapper docutils container" id="id11">
-<div class="code-block-caption"><span class="caption-text">起始扇区2048的磁盘 I/O Limits信息</span><a class="headerlink" href="#id11" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">起始扇区2048的磁盘 I/O Limits信息</span><a class="headerlink" href="#id11" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>cat<span class="w"> </span>/sys/block/sda/alignment_offset
 <span class="m">0</span>
 
@@ -419,7 +436,7 @@ $<span class="w"> </span>cat<span class="w"> </span>/sys/block/sda/queue/optimal
 </pre></div>
 </div>
 </div>
-<p>上述信息称为 “I/O Limits” 数据</p>
+<p>上述信息称为 &quot;I/O Limits&quot; 数据</p>
 <p>通过 <code class="docutils literal notranslate"><span class="pre">lsblk</span></code> 命令，我们可以看出上述数据:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">lsblk</span> <span class="o">-</span><span class="n">o</span>  <span class="n">NAME</span><span class="p">,</span><span class="n">ALIGNMENT</span><span class="p">,</span><span class="n">MIN</span><span class="o">-</span><span class="n">IO</span><span class="p">,</span><span class="n">OPT</span><span class="o">-</span><span class="n">IO</span><span class="p">,</span><span class="n">PHY</span><span class="o">-</span><span class="n">SEC</span><span class="p">,</span><span class="n">LOG</span><span class="o">-</span><span class="n">SEC</span>
 </pre></div>
@@ -434,12 +451,12 @@ $<span class="w"> </span>cat<span class="w"> </span>/sys/block/sda/queue/optimal
 <span class="n">sda</span>            <span class="mi">0</span>   <span class="mi">4096</span> <span class="mi">1048576</span>    <span class="mi">4096</span>     <span class="mi">512</span>
 </pre></div>
 </div>
-<p>此外，对比直接连接在SATA接口上的SSD磁盘，会看到这个 <code class="docutils literal notranslate"><span class="pre">optimal_io_size</span></code> 显示是 <code class="docutils literal notranslate"><span class="pre">0</span></code> ，例如，以下是一块intel 内置2.5” SSD固态硬盘:</p>
+<p>此外，对比直接连接在SATA接口上的SSD磁盘，会看到这个 <code class="docutils literal notranslate"><span class="pre">optimal_io_size</span></code> 显示是 <code class="docutils literal notranslate"><span class="pre">0</span></code> ，例如，以下是一块intel 内置2.5&quot; SSD固态硬盘:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">NAME</span>                          <span class="n">ALIGNMENT</span> <span class="n">MIN</span><span class="o">-</span><span class="n">IO</span>   <span class="n">OPT</span><span class="o">-</span><span class="n">IO</span> <span class="n">PHY</span><span class="o">-</span><span class="n">SEC</span> <span class="n">LOG</span><span class="o">-</span><span class="n">SEC</span>
 <span class="n">sda</span>                                   <span class="mi">0</span>    <span class="mi">512</span>        <span class="mi">0</span>     <span class="mi">512</span>     <span class="mi">512</span>
 </pre></div>
 </div>
-<p>将SSD移动硬盘直接接在SATA接口上，则 <code class="docutils literal notranslate"><span class="pre">optimal_io_size</span></code> 显示是 <code class="docutils literal notranslate"><span class="pre">0</span></code> ，而我购买的 <a class="reference internal" href="../../../arm/raspberry_pi/storage/wd_passport_ssd.html#wd-passport-ssd"><span class="std std-ref">西部数据Passport SSD移动硬盘</span></a> 接在USB接口上显示有2种值，一种是比较正常的:</p>
+<p>将SSD移动硬盘直接接在SATA接口上，则 <code class="docutils literal notranslate"><span class="pre">optimal_io_size</span></code> 显示是 <code class="docutils literal notranslate"><span class="pre">0</span></code> ，而我购买的 <a class="reference internal" href="../../../raspberry_pi/storage/wd_passport_ssd.html#wd-passport-ssd"><span class="std std-ref">西部数据Passport SSD移动硬盘</span></a> 接在USB接口上显示有2种值，一种是比较正常的:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">NAME</span>   <span class="n">ALIGNMENT</span> <span class="n">MIN</span><span class="o">-</span><span class="n">IO</span>  <span class="n">OPT</span><span class="o">-</span><span class="n">IO</span> <span class="n">PHY</span><span class="o">-</span><span class="n">SEC</span> <span class="n">LOG</span><span class="o">-</span><span class="n">SEC</span>
 <span class="n">sda</span>            <span class="mi">0</span>   <span class="mi">4096</span> <span class="mi">1048576</span>    <span class="mi">4096</span>     <span class="mi">512</span>
 </pre></div>
@@ -451,7 +468,7 @@ $<span class="w"> </span>cat<span class="w"> </span>/sys/block/sda/queue/optimal
 </div>
 </section>
 <section id="id5">
-<h2>导致不同对齐的原因<a class="headerlink" href="#id5" title="Link to this heading">¶</a></h2>
+<h2>导致不同对齐的原因<a class="headerlink" href="#id5" title="Link to this heading"></a></h2>
 <p>Linux分区工具，例如 <code class="docutils literal notranslate"><span class="pre">parted</span></code> 使用 <code class="docutils literal notranslate"><span class="pre">libblkid</span></code> 的输出信息，而 Linux 则是基于磁盘的属性数据( <code class="docutils literal notranslate"><span class="pre">I/O</span> <span class="pre">Limits</span></code> )来 <code class="docutils literal notranslate"><span class="pre">启发</span></code> 对齐决策，根据: <a class="reference external" href="https://people.redhat.com/msnitzer/docs/io-limits.txt">io-limits.txt</a> 所谓的启发分区:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;The heuristic parted uses is:</span>
 <span class="mi">1</span><span class="p">)</span>  <span class="n">Always</span> <span class="n">use</span> <span class="n">the</span> <span class="n">reported</span> <span class="s1">&#39;alignment_offset&#39;</span> <span class="k">as</span> <span class="n">the</span> <span class="n">offset</span> <span class="k">for</span> <span class="n">the</span>
@@ -474,11 +491,11 @@ $<span class="w"> </span>cat<span class="w"> </span>/sys/block/sda/queue/optimal
 <p>注意，对于直接通过SATA接口连接的intel SSD磁盘，报告的 <code class="docutils literal notranslate"><span class="pre">optimal_io_size:</span> <span class="pre">0</span></code> ，则Linux内核自动把扇区对齐到 1MB 位置。</p>
 <div class="admonition note">
 <p class="admonition-title">备注</p>
-<p>为什么我最近购买的 <a class="reference internal" href="../../../arm/raspberry_pi/storage/wd_passport_ssd.html#wd-passport-ssd"><span class="std std-ref">西部数据Passport SSD移动硬盘</span></a> 会报告一个非常高的 <code class="docutils literal notranslate"><span class="pre">optimal_io_value</span></code> ，高达 32MiB ？</p>
+<p>为什么我最近购买的 <a class="reference internal" href="../../../raspberry_pi/storage/wd_passport_ssd.html#wd-passport-ssd"><span class="std std-ref">西部数据Passport SSD移动硬盘</span></a> 会报告一个非常高的 <code class="docutils literal notranslate"><span class="pre">optimal_io_value</span></code> ，高达 32MiB ？</p>
 </div>
 </section>
 <section id="parted-heuristic">
-<h2>parted忽略 <code class="docutils literal notranslate"><span class="pre">heuristic</span></code><a class="headerlink" href="#parted-heuristic" title="Link to this heading">¶</a></h2>
+<h2>parted忽略 <code class="docutils literal notranslate"><span class="pre">heuristic</span></code><a class="headerlink" href="#parted-heuristic" title="Link to this heading"></a></h2>
 <p>由于Linux的分区工具，是通过 <code class="docutils literal notranslate"><span class="pre">libblkid</span></code> 库来监测磁盘拓扑参数(I/O limits)，通过 <code class="docutils literal notranslate"><span class="pre">heuristic</span> <span class="pre">rules</span></code> (启发式规则)来决定对齐，这就导致了SSD磁盘接在内置SATA磁盘接口和USB转换SATA外置接口不同的参数，引发不同的对齐策略。</p>
 <p>虽然 <code class="docutils literal notranslate"><span class="pre">fdisk</span></code> 和 <code class="docutils literal notranslate"><span class="pre">prated</span></code> 都是使用 <code class="docutils literal notranslate"><span class="pre">libblkid</span></code> 库，导致磁盘起始扇区没有实现 <code class="docutils literal notranslate"><span class="pre">1MiB-alignment</span></code> ，但是，如果使用 <code class="docutils literal notranslate"><span class="pre">gdisk</span></code> 则会忽略这个问题，即使通过外接 <code class="docutils literal notranslate"><span class="pre">USB-to-SATA-controller</span></code> 依然会执行 <code class="docutils literal notranslate"><span class="pre">1MiB-alignment</span></code> 。</p>
 <p>此外，虽然 <code class="docutils literal notranslate"><span class="pre">fdisk</span></code> 不能忽略 <code class="docutils literal notranslate"><span class="pre">65535</span></code> 的起始扇区，但是 <code class="docutils literal notranslate"><span class="pre">parted</span></code> 却提供了强制创建分区(忽略对齐 <code class="docutils literal notranslate"><span class="pre">65535</span></code> ):</p>
@@ -510,7 +527,7 @@ Information: You may need to update /etc/fstab.
 <p>不过，我发现 <code class="docutils literal notranslate"><span class="pre">parted</span></code> 划分的分区只能指定 <code class="docutils literal notranslate"><span class="pre">start</span></code> 和 <code class="docutils literal notranslate"><span class="pre">end</span></code> ，所以实际划分的分区大小和之前使用 <code class="docutils literal notranslate"><span class="pre">fdisk</span></code> 划分分区使用 <code class="docutils literal notranslate"><span class="pre">+32G</span></code> 获得的分区大小有一点点区别。所以最终第2个分区我是使用 <code class="docutils literal notranslate"><span class="pre">fdisk</span></code> 来添加的。使用 <code class="docutils literal notranslate"><span class="pre">fdisk</span></code> 命令添加分区可以直接指定扇区或分区大小(只有第一个分区受到 <code class="docutils literal notranslate"><span class="pre">65535</span></code> 影响无法指定 <code class="docutils literal notranslate"><span class="pre">2048</span></code> ，第二个分区已经超出 <code class="docutils literal notranslate"><span class="pre">65535</span></code> 就还是可以使用 <code class="docutils literal notranslate"><span class="pre">fdisk</span></code> 来管理分配的)</p>
 <p>使用 <code class="docutils literal notranslate"><span class="pre">fdisk</span> <span class="pre">/dev/sde</span></code> 划分第二个分区步骤如下:</p>
 <div class="literal-block-wrapper docutils container" id="id12">
-<div class="code-block-caption"><span class="caption-text">在parted强制划分第一个分区从2048扇区开始，再用fdisk添加第二个扇区</span><a class="headerlink" href="#id12" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">在parted强制划分第一个分区从2048扇区开始，再用fdisk添加第二个扇区</span><a class="headerlink" href="#id12" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Command<span class="w"> </span><span class="o">(</span>m<span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="nb">help</span><span class="o">)</span>:<span class="w"> </span>p
 Disk<span class="w"> </span>/dev/sde:<span class="w"> </span><span class="m">931</span>.53<span class="w"> </span>GiB,<span class="w"> </span><span class="m">1000204886016</span><span class="w"> </span>bytes,<span class="w"> </span><span class="m">1953525168</span><span class="w"> </span>sectors
 Disk<span class="w"> </span>model:<span class="w"> </span>ssport
@@ -583,10 +600,10 @@ Syncing<span class="w"> </span>disks.
 </div>
 </section>
 <section id="id7">
-<h2>参考<a class="headerlink" href="#id7" title="Link to this heading">¶</a></h2>
+<h2>参考<a class="headerlink" href="#id7" title="Link to this heading"></a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="https://linux-blog.anracom.com/2018/12/03/linux-ssd-partition-alignment-problems-with-external-usb-to-sata-controllers-i/">Linux SSD partition alignment – problems with external USB-to-SATA controllers – I</a></p></li>
-<li><p><a class="reference external" href="https://unix.stackexchange.com/questions/303354/why-does-fdisk-insist-on-starting-the-first-partition-at-sector-65535-mib-31-99">Why does fdisk insist on starting the first partition at sector 65535 (MiB 31.9995…)</a></p></li>
+<li><p><a class="reference external" href="https://unix.stackexchange.com/questions/303354/why-does-fdisk-insist-on-starting-the-first-partition-at-sector-65535-mib-31-99">Why does fdisk insist on starting the first partition at sector 65535 (MiB 31.9995...)</a></p></li>
 </ul>
 </section>
 </section>
@@ -594,25 +611,37 @@ Syncing<span class="w"> </span>disks.
 
            </div>
           </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="4k_alignment.html" class="btn btn-neutral float-left" title="磁盘块设备4K对齐" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="wd_advanced_format.html" class="btn btn-neutral float-right" title="西部数据Advanced Format" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="4k_alignment.html" class="btn btn-neutral float-left" title="磁盘块设备4K对齐" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="wd_advanced_format.html" class="btn btn-neutral float-right" title="西部数据Advanced Format" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../../copyright.html">Copyright</a> 2018 - now, Huatai Huang.</p>
+    <p>&#169; <a href="../../../copyright.html">版权所有</a> 2018 - now, Huatai Huang。</p>
   </div>
 
-  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
   
     <!-- your html code here -->
     <br>
-    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡</a></p>
-     
+    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡 👈</a></p>
+    <br>
+    <p>网站采用 <a href="https://utteranc.es/">utterances</a> 评论系统，所有评论存储在<a href="https://github.com/huataihuang/cloud-atlas/issues">GitHub issues</a> 中，如果你看不到下方的评论框，那么可能需要<a href="https://cloud-atlas.readthedocs.io/zh-cn/latest/linux/security/vpn/index.html">自备梯子</a> 👈</p>
+    <div class="articleComments">
+        <comments>
+  <script src="https://utteranc.es/client.js"
+    repo="huataihuang/cloud-atlas"
+    issue-term="pathname"
+    theme="github-light"
+    crossorigin="anonymous"
+    async>
+  </script>
+</comments>
+    </div>
 
 
 </footer>

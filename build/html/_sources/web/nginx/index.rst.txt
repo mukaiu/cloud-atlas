@@ -16,6 +16,7 @@ nginx官方网站提供O'REILLY发布的 Derek DeJonghe 撰写的 `Complete NGIN
    get_nginx_default_config.rst
    nginx_virtual_host.rst
    self_signed_ssl_nginx.rst
+   nginx_autoindex.rst
    nginx_root_alias.rst
    nginx_wpad.rst
    change_nginx_user.rst
@@ -24,9 +25,17 @@ nginx官方网站提供O'REILLY发布的 Derek DeJonghe 撰写的 `Complete NGIN
    nginx_reverse_proxy_troubleshooting.rst
    nginx_reverse_proxy_nodejs.rst
    nginx_reverse_proxy_https.rst
+   sni_esni_ech.rst
+   nginx_cors.rst
+   lets_encrypt_challenge.rst
+   lets_encrypt_wildcard_certificates.rst
+   nginx_config_include.rst
    nginx_redirect_url.rst
+   nginx_port_in_redirect.rst
    nginx_webdav.rst
+   nginx_config_tips.rst
    auth/index
+   nginx_favicon.rst
 
 .. only::  subproject and html
 

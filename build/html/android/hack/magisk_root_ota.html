@@ -1,27 +1,31 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh" data-content_root="../../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Magisk root Android设备并支持OTA更新 &mdash; Cloud Atlas 0.1 文档</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+  <title>Magisk root Android设备并支持OTA更新 &mdash; Cloud Atlas: Discovery beta 文档</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=fd3f3429" />
+
+  
+    <link rel="shortcut icon" href="../../_static/favicon.png"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="../../_static/documentation_options.js?v=7c91f8fd"></script>
-        <script src="../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=8534f863"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
         <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
-        <script src="../../_static/translations.js?v=beaddf03"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../../genindex.html" />
     <link rel="search" title="搜索" href="../../search.html" />
     <link rel="copyright" title="版权所有" href="../../copyright.html" />
-    <link rel="next" title="配置Pixel 3支持中国运营商VoLTE" href="pixel_3_chinese_volte.html" />
-    <link rel="prev" title="Magisk" href="magisk.html" /> 
+    <link rel="next" title="Android Recovery Mode" href="android_recovery_mode.html" />
+    <link rel="prev" title="Magisk Zygisk" href="magisk_zygisk.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -33,62 +37,65 @@
           
           
           <a href="../../index.html" class="icon icon-home">
-            Cloud Atlas
+            Cloud Atlas: Discovery
           </a>
+              <div class="version">
+                1.1
+              </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../studio/index.html">Studio Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../infrastructure/index.html">Infrastructure Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../devops/index.html">DevOps Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kvm/index.html">KVM Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../ceph/index.html">Ceph Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../gluster/index.html">Gluster Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../ovirt/index.html">oVirt Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../openstack/index.html">OpenStack Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../docker/index.html">Docker Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kubernetes/index.html">Kubernetes Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kubernetes_from_scratch/index.html">Kubernetes From Scratch (KFS) Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../rancher/index.html">Rancher Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../openshift/index.html">OpenShift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../sql/index.html">SQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../sqlite/index.html">SQLite Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../mysql/index.html">MySQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../pgsql/index.html">PostgreSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../clickhouse/index.html">ClickHouse Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../nosql/index.html">NoSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../redis/index.html">Redis Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../network/index.html">Network Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../infra_service/index.html">Infra-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../infra_search/index.html">Search Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../info_service/index.html">Info-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../web/index.html">Web Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../big_data/index.html">Big Data Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../machine_learning/index.html">Machine Learning Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../linux/index.html">Linux Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kernel/index.html">Kernel Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../performance/index.html">Performance Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../distributed_system/index.html">Distributed System Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../shell/index.html">Shell Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../python/index.html">Python Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../django/index.html">Django Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../flask/index.html">Flask Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../javascript/index.html">JavaScript Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../nodejs/index.html">Node.js Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../clang/index.html">C Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../golang/index.html">Go Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../swift/index.html">Swift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../rust/index.html">Rust Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../ruby/index.html">Ruby Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../arm/index.html">ARM Atlas</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Android Atlas</a><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../studio/index.html">Studio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../infrastructure/index.html">Infrastructure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../devops/index.html">DevOps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kvm/index.html">KVM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ceph/index.html">Ceph</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../gluster/index.html">Gluster</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ovirt/index.html">oVirt</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../openstack/index.html">OpenStack</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../docker/index.html">Docker</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kubernetes/index.html">Kubernetes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../k8s_dev/index.html">Kubernetes Develop</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../rancher/index.html">Rancher</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../openshift/index.html">OpenShift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../sql/index.html">SQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../sqlite/index.html">SQLite</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../mysql/index.html">MySQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../pgsql/index.html">PostgreSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../nosql/index.html">NoSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../network/index.html">Network</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../infra_service/index.html">Infra-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../infra_search/index.html">Infra-Search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../web/index.html">Web</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../info_service/index.html">Info-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../big_data/index.html">Big Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../machine_learning/index.html">Machine Learning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../drone/index.html">Drone</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../linux/index.html">Linux</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kernel/index.html">Kernel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../performance/index.html">Performance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../distributed_system/index.html">Distributed System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../shell/index.html">Shell</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../python/index.html">Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../django/index.html">Django</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../javascript/index.html">JavaScript</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../nodejs/index.html">Node.js</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../clang/index.html">C</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../golang/index.html">Go</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../swift/index.html">Swift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../rust/index.html">Rust</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ruby/index.html">Ruby</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lua/index.html">Lua</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../arm/index.html">ARM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../raspberry_pi/index.html">Raspberry Pi</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Android</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../device/index.html">Android 设备</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../startup/index.html">Android 起步</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../install/index.html">Android 安装</a></li>
@@ -98,6 +105,7 @@
 <li class="toctree-l3"><a class="reference internal" href="check_secondhand_phone.html">二手手机验机</a></li>
 <li class="toctree-l3"><a class="reference internal" href="ab_seamless_update.html">A/B无缝系统更新</a></li>
 <li class="toctree-l3"><a class="reference internal" href="magisk.html">Magisk</a></li>
+<li class="toctree-l3"><a class="reference internal" href="magisk_zygisk.html">Magisk Zygisk</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Magisk root Android设备并支持OTA更新</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#ota">OTA更新</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#magisk-root-a-bota">Magisk Root, A/B分区和OTA更新</a></li>
@@ -108,8 +116,13 @@
 <li class="toctree-l4"><a class="reference internal" href="#id3">参考</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="android_recovery_mode.html">Android Recovery Mode</a></li>
 <li class="toctree-l3"><a class="reference internal" href="pixel_3_chinese_volte.html">配置Pixel 3支持中国运营商VoLTE</a></li>
 <li class="toctree-l3"><a class="reference internal" href="pixel_4_volte.html">配置Pixel 4支持VoLTE</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cn_samsung_galaxy_watch_4_wich_android.html">原生Android适配使用国行三星Galaxy Watch 4</a></li>
+<li class="toctree-l3"><a class="reference internal" href="samsung_health_monitor.html">三星健康监测器(Samsung Health Monitor)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="samsung_pay_card.html">三星智能卡</a></li>
+<li class="toctree-l3"><a class="reference internal" href="samsung_music.html">Samsung Music</a></li>
 <li class="toctree-l3"><a class="reference internal" href="pixel_6_volte.html">配置Pixel 6支持VoLTE</a></li>
 <li class="toctree-l3"><a class="reference internal" href="change_build_prop.html">修改build.prop文件</a></li>
 <li class="toctree-l3"><a class="reference internal" href="android_busybox.html">Android系统Busybox</a></li>
@@ -125,6 +138,9 @@
 <li class="toctree-l3"><a class="reference internal" href="android_monitor.html">Android手机作为显示器</a></li>
 <li class="toctree-l3"><a class="reference internal" href="android_otg.html">Android OTG</a></li>
 <li class="toctree-l3"><a class="reference internal" href="project_soli.html">Project Soli</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pixel_usb_devices.html">Pixel可用的USB设备</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pixel_uart.html">Pixel UART(Serial Port, Console)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pixel_minicom.html">使用Pixel运行minicom(串口调试服务器)</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../virtual/index.html">Android 虚拟化</a></li>
@@ -136,12 +152,13 @@
 <li class="toctree-l2"><a class="reference internal" href="../mobile_work/index.html">Android 移动工作</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../bsd/index.html">BSD Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../apple/index.html">Apple Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../windows/index.html">Windows Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../real/index.html">Real Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../management/index.html">Management Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../life/index.html">Life Atlas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../bsd/index.html">BSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../freebsd/index.html">FreeBSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../apple/index.html">Apple</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../windows/index.html">Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../real/index.html">Real</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../management/index.html">Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../life/index.html">Life</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../copyright.html">Copyright</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../aboutme.html">关于作者</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../donate.html">捐赠</a></li>
@@ -154,21 +171,21 @@
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../index.html">Cloud Atlas</a>
+          <a href="../../index.html">Cloud Atlas: Discovery</a>
       </nav>
 
       <div class="wy-nav-content">
         <div class="rst-content">
-          <div role="navigation" aria-label="Page navigation">
+          <div role="navigation" aria-label="页面导航">
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
-          <li class="breadcrumb-item"><a href="../index.html">Android Atlas</a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Android</a></li>
           <li class="breadcrumb-item"><a href="index.html">Android Hack</a></li>
       <li class="breadcrumb-item active">Magisk root Android设备并支持OTA更新</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../../_sources/android/hack/magisk_root_ota.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../_sources/android/hack/magisk_root_ota.rst.txt" rel="nofollow"> 查看页面源码</a>
       </li>
   </ul>
   <hr/>
@@ -177,15 +194,15 @@
            <div itemprop="articleBody">
              
   <section id="magisk-root-androidota">
-<span id="magisk-root-ota"></span><h1>Magisk root Android设备并支持OTA更新<a class="headerlink" href="#magisk-root-androidota" title="Link to this heading">¶</a></h1>
+<span id="magisk-root-ota"></span><h1>Magisk root Android设备并支持OTA更新<a class="headerlink" href="#magisk-root-androidota" title="Link to this heading"></a></h1>
 <p>对于已经root过的Android设备，就不能使用OTA更新。不过，对于Pixel设备，由于支持双启动分区，我们依然通过巧妙的配置，在保留root和TWRP情况下实现OTA升级。</p>
 <section id="ota">
-<h2>OTA更新<a class="headerlink" href="#ota" title="Link to this heading">¶</a></h2>
+<h2>OTA更新<a class="headerlink" href="#ota" title="Link to this heading"></a></h2>
 <p>OTA更新即 <code class="docutils literal notranslate"><span class="pre">Over-the-Air</span> <span class="pre">Update</span></code> ，是一种接收和安装升级Android设备软件的无线方法。OTA可以由设备制造商(也称为OEM)远程推送，并且是最容易最有效升级Android设备软件到最新版本到方法。一旦OTA更新发布，就会自动安装或者提示用户手工下载和安装。</p>
 <p>Root一个Android设备提供了用户更为强大的控制能力，并且可以任意修订系统软件。然而，root Android设备也存在缺点，最大的缺点是丧失了自动OTA更新能力。原因是从Android 5.0开始，Google引入了一个 <code class="docutils literal notranslate"><span class="pre">block-based</span> <span class="pre">OTAs</span></code> 的机制，这个机制提供了pre-OTA块校验以验证设备软件的一致性。简单来说，就是一旦安装开始，设备分区(例如system, boot, vendor, dtbo 等)就会被检查是否被修改，例如Root, <a class="reference internal" href="../startup/twrp.html#twrp"><span class="std std-ref">TWRP Recovery管理器</span></a> 对分区数据修改就会被发现，并阻止OTA更新。</p>
 </section>
 <section id="magisk-root-a-bota">
-<h2>Magisk Root, A/B分区和OTA更新<a class="headerlink" href="#magisk-root-a-bota" title="Link to this heading">¶</a></h2>
+<h2>Magisk Root, A/B分区和OTA更新<a class="headerlink" href="#magisk-root-a-bota" title="Link to this heading"></a></h2>
 <p>通过Magisk，我们依然可以在已经root的Android设备上轻易安装OTA更新而不会丢失root。Magisk是一个Universal Systemless Interface，允许无需更改Android设备系统级分区 <code class="docutils literal notranslate"><span class="pre">/system</span></code> 就可以修改Android软件。更为重要的是，Magisk开发出了最为重要的现代化root解决方案 - MagiskSU (Magisk的作者2018年在Reddit介绍了 <a class="reference external" href="https://www.reddit.com/r/Android/comments/7oem7o/the_magisk_story/">The Magisk Story</a> 可以帮助我们了解这个软件)</p>
 <p>有两种方式安装Magisk:</p>
 <ul class="simple">
@@ -194,12 +211,12 @@
 </ul>
 </section>
 <section id="rootandroidota">
-<h2>在root过的Android设备上安装OTA更新<a class="headerlink" href="#rootandroidota" title="Link to this heading">¶</a></h2>
+<h2>在root过的Android设备上安装OTA更新<a class="headerlink" href="#rootandroidota" title="Link to this heading"></a></h2>
 <p>由于大多数最新的OEM Android设备都使用了A/B分区机制，所以对于root过的Android设备，OTA更新可以无缝安装到没有激活的slot中。而当使用Magisk root设备时，它智慧安装到Android设备的当前激活slot，这样就确保了没有激活的slot/partitions不会被修改。</p>
 <p>当OTA发布时，你可以非常简单地在Magisk Manager中回复stock boot image，然后将OTA更新安装到没有激活的slot中。最后，在重启手机之前，你可以将Magisk安装到没有激活的slot来保护更新后的root。</p>
 </section>
 <section id="magiskroot-android">
-<h2>安装Magisk和Root Android<a class="headerlink" href="#magiskroot-android" title="Link to this heading">¶</a></h2>
+<h2>安装Magisk和Root Android<a class="headerlink" href="#magiskroot-android" title="Link to this heading"></a></h2>
 <p>在Android开发社区充斥这大量的修改工具，通常称为 <code class="docutils literal notranslate"><span class="pre">mods</span></code> ，允许定制Android设备中的软件。这些模块帮助我们挖掘出Android设备中OEM不提供给我们的功能。 <code class="docutils literal notranslate"><span class="pre">Magisk</span></code> 就是一个 <code class="docutils literal notranslate"><span class="pre">systemless-ly</span></code> 修改Android设备的超级接口。Magisk在2016年出现时是作为一个软件修改工具，就像 <a class="reference external" href="https://www.thecustomdroid.com/install-xposed-framework-on-android-using-edxposed/">Xposed Framework</a> ，但是和Xposed不同，Magisk允许用户定制软件而不会修改 <code class="docutils literal notranslate"><span class="pre">/system</span></code>
 分区，这样就能通过Goolge的SafetyNet测试。进一步，Magisk提供了新的 <code class="docutils literal notranslate"><span class="pre">MagiskSU</span></code> 功能，也就是root功能，可以通过Magisk来root任何Android设备，包括运行Android 10设备。此外， <code class="docutils literal notranslate"><span class="pre">Magisk</span> <span class="pre">Hide</span></code> 是另外非常有用的功能，可以解决一些应用检测到设备被root就拒绝运行的问题。</p>
 <p>Magisk提供的主要功能:</p>
@@ -224,7 +241,7 @@
 </div>
 </section>
 <section id="fastbootmagisk-patched-boot-image">
-<h2>使用Fastboot刷入Magisk Patched Boot Image<a class="headerlink" href="#fastbootmagisk-patched-boot-image" title="Link to this heading">¶</a></h2>
+<h2>使用Fastboot刷入Magisk Patched Boot Image<a class="headerlink" href="#fastbootmagisk-patched-boot-image" title="Link to this heading"></a></h2>
 <p>如果设备不支持 <a class="reference internal" href="../startup/twrp.html#twrp"><span class="std std-ref">TWRP Recovery管理器</span></a> 或不愿意安装，则我们可以通过刷入Magisk Patched Boot image来安装Magisk:</p>
 <ul class="simple">
 <li><p>下载和安装 <a class="reference external" href="https://www.thecustomdroid.com/firmware-mobi-chainfire-stock-images/">Firmware Mobi by Chainfire – Download Stock Boot, Recovery &amp; Root Images</a></p></li>
@@ -303,10 +320,10 @@
 </ul>
 </section>
 <section id="ota-root">
-<h2>更新OTA(root设备)<a class="headerlink" href="#ota-root" title="Link to this heading">¶</a></h2>
+<h2>更新OTA(root设备)<a class="headerlink" href="#ota-root" title="Link to this heading"></a></h2>
 <p>我们已经root了设备，现在我们就要在root过的设备上通过OTA方式更新系统，步骤分解如下</p>
 <section id="id2">
-<h3>步骤一:关闭自动系统更新<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h3>
+<h3>步骤一:关闭自动系统更新<a class="headerlink" href="#id2" title="Link to this heading"></a></h3>
 <p>在Android 8.0 Oreo以上版本，Google引入了一个自动更新机制，会在OTA发布后自动下载和安装OTA更新。但是这种自动更新方式和root过的设备冲突，所以为了能够在root过的Android设备上继续OTA更新，首先需要关闭系统的自动更新。</p>
 <ul class="simple">
 <li><p>在 <code class="docutils literal notranslate"><span class="pre">Settings</span></code> 菜单中，进入到 <code class="docutils literal notranslate"><span class="pre">About</span> <span class="pre">phone</span></code> 菜单</p></li>
@@ -316,7 +333,7 @@
 </section>
 </section>
 <section id="id3">
-<h2>参考<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h2>
+<h2>参考<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="https://www.thecustomdroid.com/install-ota-update-rooted-android-device-guide/">How to Install OTA Updates on Rooted Android Devices using Magisk [Without Losing Root]</a></p></li>
 <li><p><a class="reference external" href="https://www.thecustomdroid.com/install-magisk-root-android-devices/">How to Install Magisk and Root Android Devices with it [2 Methods]</a></p></li>
@@ -328,25 +345,37 @@
 
            </div>
           </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="magisk.html" class="btn btn-neutral float-left" title="Magisk" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="pixel_3_chinese_volte.html" class="btn btn-neutral float-right" title="配置Pixel 3支持中国运营商VoLTE" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="magisk_zygisk.html" class="btn btn-neutral float-left" title="Magisk Zygisk" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="android_recovery_mode.html" class="btn btn-neutral float-right" title="Android Recovery Mode" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../copyright.html">Copyright</a> 2018 - now, Huatai Huang.</p>
+    <p>&#169; <a href="../../copyright.html">版权所有</a> 2018 - now, Huatai Huang。</p>
   </div>
 
-  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
   
     <!-- your html code here -->
     <br>
-    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡</a></p>
-     
+    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡 👈</a></p>
+    <br>
+    <p>网站采用 <a href="https://utteranc.es/">utterances</a> 评论系统，所有评论存储在<a href="https://github.com/huataihuang/cloud-atlas/issues">GitHub issues</a> 中，如果你看不到下方的评论框，那么可能需要<a href="https://cloud-atlas.readthedocs.io/zh-cn/latest/linux/security/vpn/index.html">自备梯子</a> 👈</p>
+    <div class="articleComments">
+        <comments>
+  <script src="https://utteranc.es/client.js"
+    repo="huataihuang/cloud-atlas"
+    issue-term="pathname"
+    theme="github-light"
+    crossorigin="anonymous"
+    async>
+  </script>
+</comments>
+    </div>
 
 
 </footer>

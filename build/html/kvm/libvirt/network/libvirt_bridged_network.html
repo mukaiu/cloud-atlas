@@ -1,21 +1,25 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh" data-content_root="../../../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>libvirt 网桥型网络 &mdash; Cloud Atlas 0.1 文档</title>
-      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../../_static/graphviz.css" type="text/css" />
+  <title>libvirt 网桥型网络 &mdash; Cloud Atlas: Discovery beta 文档</title>
+      <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/graphviz.css?v=fd3f3429" />
+
+  
+    <link rel="shortcut icon" href="../../../_static/favicon.png"/>
   <!--[if lt IE 9]>
     <script src="../../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="../../../_static/documentation_options.js?v=7c91f8fd"></script>
-        <script src="../../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../../_static/documentation_options.js?v=8534f863"></script>
+        <script src="../../../_static/doctools.js?v=9a2dae69"></script>
         <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
-        <script src="../../../_static/translations.js?v=beaddf03"></script>
     <script src="../../../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../../../genindex.html" />
     <link rel="search" title="搜索" href="../../../search.html" />
@@ -33,26 +37,29 @@
           
           
           <a href="../../../index.html" class="icon icon-home">
-            Cloud Atlas
+            Cloud Atlas: Discovery
           </a>
+              <div class="version">
+                1.1
+              </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../../studio/index.html">Studio Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../infrastructure/index.html">Infrastructure Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../devops/index.html">DevOps Atlas</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">KVM Atlas</a><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../studio/index.html">Studio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../infrastructure/index.html">Infrastructure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../devops/index.html">DevOps</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">KVM</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../../install/index.html">KVM 环境安装</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../startup/index.html">KVM 快速起步</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../hypervisor.html">hypervisor</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../kvm_architecture.html">KVM虚拟化</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../qemu_vs_kvm.html">QEMU v. KVM</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../storage/index.html">KVM 存储</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="../index.html">Libvirt虚拟机管理器</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="../libvirt_architecture.html">libvirt 架构</a></li>
@@ -95,60 +102,58 @@
 <li class="toctree-l2"><a class="reference internal" href="../../gpu_passthrough_with_kvm.html">KVM的GPU直通虚拟化</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../nvidia_cuda_gpu_in_kvm.html">在KVM中使用NVIDIA CUDA GPU</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../amd_rocm_gpu_in_kvm.html">在KVM中使用AMD ROCm GPU</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../macos_xhyve/index.html">macOS平台KVM虚拟化技术xhyve</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../amd_kvm/index.html">AMD硬件环境KVM虚拟化</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../arm_kvm/index.html">ARM硬件环境KVM虚拟化</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../kvm_macos/index.html">KVM虚拟化运行macOS</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../utm/index.html">macOS平台QEMU实现:UTM</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../debug/index.html">KVM故障排查</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../../ceph/index.html">Ceph Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../gluster/index.html">Gluster Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../ovirt/index.html">oVirt Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../openstack/index.html">OpenStack Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../docker/index.html">Docker Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../kubernetes/index.html">Kubernetes Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../kubernetes_from_scratch/index.html">Kubernetes From Scratch (KFS) Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../rancher/index.html">Rancher Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../openshift/index.html">OpenShift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../sql/index.html">SQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../sqlite/index.html">SQLite Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../mysql/index.html">MySQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../pgsql/index.html">PostgreSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../clickhouse/index.html">ClickHouse Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../nosql/index.html">NoSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../redis/index.html">Redis Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../network/index.html">Network Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../infra_service/index.html">Infra-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../infra_search/index.html">Search Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../info_service/index.html">Info-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../web/index.html">Web Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../big_data/index.html">Big Data Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../machine_learning/index.html">Machine Learning Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../linux/index.html">Linux Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../kernel/index.html">Kernel Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../performance/index.html">Performance Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../distributed_system/index.html">Distributed System Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../shell/index.html">Shell Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../python/index.html">Python Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../django/index.html">Django Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../flask/index.html">Flask Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../javascript/index.html">JavaScript Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../nodejs/index.html">Node.js Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../clang/index.html">C Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../golang/index.html">Go Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../swift/index.html">Swift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../rust/index.html">Rust Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../ruby/index.html">Ruby Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../arm/index.html">ARM Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../android/index.html">Android Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../bsd/index.html">BSD Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../apple/index.html">Apple Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../windows/index.html">Windows Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../real/index.html">Real Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../management/index.html">Management Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../life/index.html">Life Atlas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../ceph/index.html">Ceph</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../gluster/index.html">Gluster</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../ovirt/index.html">oVirt</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../openstack/index.html">OpenStack</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../docker/index.html">Docker</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../kubernetes/index.html">Kubernetes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../k8s_dev/index.html">Kubernetes Develop</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../rancher/index.html">Rancher</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../openshift/index.html">OpenShift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../sql/index.html">SQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../sqlite/index.html">SQLite</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../mysql/index.html">MySQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../pgsql/index.html">PostgreSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../nosql/index.html">NoSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../network/index.html">Network</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../infra_service/index.html">Infra-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../infra_search/index.html">Infra-Search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../web/index.html">Web</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../info_service/index.html">Info-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../big_data/index.html">Big Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../machine_learning/index.html">Machine Learning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../drone/index.html">Drone</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../linux/index.html">Linux</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../kernel/index.html">Kernel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../performance/index.html">Performance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../distributed_system/index.html">Distributed System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../shell/index.html">Shell</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../python/index.html">Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../django/index.html">Django</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../javascript/index.html">JavaScript</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../nodejs/index.html">Node.js</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../clang/index.html">C</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../golang/index.html">Go</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../swift/index.html">Swift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../rust/index.html">Rust</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../ruby/index.html">Ruby</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../lua/index.html">Lua</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../arm/index.html">ARM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../raspberry_pi/index.html">Raspberry Pi</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../android/index.html">Android</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../bsd/index.html">BSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../freebsd/index.html">FreeBSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../apple/index.html">Apple</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../windows/index.html">Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../real/index.html">Real</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../management/index.html">Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../life/index.html">Life</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../copyright.html">Copyright</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../aboutme.html">关于作者</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../donate.html">捐赠</a></li>
@@ -161,22 +166,22 @@
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../../index.html">Cloud Atlas</a>
+          <a href="../../../index.html">Cloud Atlas: Discovery</a>
       </nav>
 
       <div class="wy-nav-content">
         <div class="rst-content">
-          <div role="navigation" aria-label="Page navigation">
+          <div role="navigation" aria-label="页面导航">
   <ul class="wy-breadcrumbs">
       <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
-          <li class="breadcrumb-item"><a href="../../index.html">KVM Atlas</a></li>
+          <li class="breadcrumb-item"><a href="../../index.html">KVM</a></li>
           <li class="breadcrumb-item"><a href="../index.html">Libvirt虚拟机管理器</a></li>
           <li class="breadcrumb-item"><a href="index.html">Libvirt网络</a></li>
       <li class="breadcrumb-item active">libvirt 网桥型网络</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../../../_sources/kvm/libvirt/network/libvirt_bridged_network.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../../_sources/kvm/libvirt/network/libvirt_bridged_network.rst.txt" rel="nofollow"> 查看页面源码</a>
       </li>
   </ul>
   <hr/>
@@ -185,14 +190,14 @@
            <div itemprop="articleBody">
              
   <section id="libvirt">
-<span id="libvirt-bridged-network"></span><h1>libvirt 网桥型网络<a class="headerlink" href="#libvirt" title="Link to this heading">¶</a></h1>
+<span id="libvirt-bridged-network"></span><h1>libvirt 网桥型网络<a class="headerlink" href="#libvirt" title="Link to this heading"></a></h1>
 <p>libvirt的网桥型网络(bridged network)是物理主机和虚拟机共享一个真实的以太网设备，每个虚拟机可以绑定局域网的任何可用的IPv4或IPv6地址，就好像一个物理主机。Bridge网络提供了最好的性能以及最易于配置的libvirt网络类型。</p>
 <section id="bridge">
-<h2>Bridge网络限制<a class="headerlink" href="#bridge" title="Link to this heading">¶</a></h2>
+<h2>Bridge网络限制<a class="headerlink" href="#bridge" title="Link to this heading"></a></h2>
 <p>libvirt服务器必须通过以太网有线网络连接，如果是无线网络，则只能使用 <a class="reference internal" href="libvirt_routed_network.html#libvirt-routed-network"><span class="std std-ref">libvirt 路由型网络</span></a> 或者 <a class="reference internal" href="libvirt_nat_network.html#libvirt-nat-network"><span class="std std-ref">libvirt NAT型网络</span></a> 。</p>
 </section>
 <section id="id1">
-<h2>初始步骤<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h2>
+<h2>初始步骤<a class="headerlink" href="#id1" title="Link to this heading"></a></h2>
 <p>实践案例：</p>
 <ul>
 <li><p>主机的以太网设备名 <code class="docutils literal notranslate"><span class="pre">enp0s25</span></code></p></li>
@@ -218,10 +223,10 @@
 </pre></div>
 </div>
 <ul class="simple">
-<li><p><a class="reference external" href="https://bugzilla.redhat.com/show_bug.cgi?id=512206#c0">ntefilter的bridge性能和安全原因</a> ，禁止bridge设备的netfilter，所以创建 <code class="docutils literal notranslate"><span class="pre">/etc/sysctl.d/bridge.conf</span></code> 并通过 <code class="docutils literal notranslate"><span class="pre">sysctl</span></code> 刷新内核配置:</p></li>
+<li><p><a class="reference external" href="https://bugzilla.redhat.com/show_bug.cgi?id=512206#c0">ntefilter的bridge性能和安全原因</a> (避免主机iptables规则影响虚拟机的bridge交换网络)，通常需要禁止bridge设备的netfilter，所以创建 <code class="docutils literal notranslate"><span class="pre">/etc/sysctl.d/bridge.conf</span></code> 并通过 <code class="docutils literal notranslate"><span class="pre">sysctl</span></code> 刷新内核配置:</p></li>
 </ul>
 <div class="literal-block-wrapper docutils container" id="id6">
-<div class="code-block-caption"><span class="caption-text">/etc/sysctl.d/bridge.conf 禁止bridge设备的netfilter</span><a class="headerlink" href="#id6" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">/etc/sysctl.d/bridge.conf 禁止bridge设备的netfilter</span><a class="headerlink" href="#id6" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>cat<span class="w"> </span><span class="s">&lt;&lt; EOF &gt; /etc/sysctl.d/bridge.conf</span>
 <span class="s">net.bridge.bridge-nf-call-ip6tables=0</span>
 <span class="s">net.bridge.bridge-nf-call-iptables=0 </span>
@@ -240,28 +245,29 @@ sysctl<span class="w"> </span>-p<span class="w"> </span>/etc/sysctl.d/bridge.con
 <li><p>创建 <code class="docutils literal notranslate"><span class="pre">/etc/udev/rules.d/99-bridge.rules</span></code> ，这个udev规则将在sysctl设置上述bridge模块时加载。注意，对于Kernel 3.18之前的版本， <code class="docutils literal notranslate"><span class="pre">KERNEL==&quot;br_netfilter&quot;</span></code> 需要修改成 <code class="docutils literal notranslate"><span class="pre">KERNEL==&quot;bridge&quot;</span></code> :</p></li>
 </ul>
 <div class="literal-block-wrapper docutils container" id="id7">
-<div class="code-block-caption"><span class="caption-text">/etc/udev/rules.d/99-bridge.rules 配置bridge模块加载时执行sysctl禁用bridge的netfilter</span><a class="headerlink" href="#id7" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">/etc/udev/rules.d/99-bridge.rules 配置bridge模块加载时执行sysctl禁用bridge的netfilter</span><a class="headerlink" href="#id7" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nv">ACTION</span><span class="o">==</span><span class="s2">&quot;add&quot;</span>,<span class="w"> </span><span class="nv">SUBSYSTEM</span><span class="o">==</span><span class="s2">&quot;module&quot;</span>,<span class="w"> </span><span class="nv">KERNEL</span><span class="o">==</span><span class="s2">&quot;bridge&quot;</span>,<span class="w"> </span><span class="nv">RUN</span><span class="o">+=</span><span class="s2">&quot;/sbin/sysctl -p /etc/sysctl.d/bridge.conf&quot;</span>
 </pre></div>
 </div>
 </div>
 <div class="admonition warning">
 <p class="admonition-title">警告</p>
-<p>配置并执行 <code class="docutils literal notranslate"><span class="pre">/etc/sysctl.d/bridge.conf</span></code> 非常重要，如果没有设置内核 <code class="docutils literal notranslate"><span class="pre">net.bridge.bridge-nf-call-iptables=0</span></code> 这3个参数，则连接在 <code class="docutils literal notranslate"><span class="pre">br0</span></code> 上的虚拟机之间网络不通，虽然这些虚拟机依然能够通过物理网卡连接外部世界。</p>
+<p>配置并执行 <code class="docutils literal notranslate"><span class="pre">/etc/sysctl.d/bridge.conf</span></code> 非常重要，如果没有设置内核 <code class="docutils literal notranslate"><span class="pre">net.bridge.bridge-nf-call-iptables=0</span></code> 这3个参数，则连接在 <code class="docutils literal notranslate"><span class="pre">br0</span></code> 上的虚拟机之间网络不通(受到主机配置的iptables FORWARD规则链影响)，虽然这些虚拟机依然能够通过物理网卡连接外部世界。</p>
+<p>另外需要注意， <a class="reference internal" href="../../../docker/startup/post_install/docker_kernel_bridge-nf-call-iptables.html#docker-kernel-bridge-nf-call-iptables"><span class="std std-ref">docker info 显示 bridge-nf-call-iptables 禁用的处理</span></a> 也有配置 <code class="docutils literal notranslate"><span class="pre">bridge-nf-call-iptables</span></code> 内核参数的需求，但是和 <a class="reference internal" href="../index.html#libvirt"><span class="std std-ref">Libvirt虚拟机管理器</span></a> 相反， <a class="reference internal" href="../../../docker/index.html#docker"><span class="std std-ref">Docker</span></a> 需要启用 <code class="docutils literal notranslate"><span class="pre">bridge-nf-call-iptables</span></code> ( <code class="docutils literal notranslate"><span class="pre">net.bridge.bridge-nf-call-iptables=1</span></code> ) ，原因是容器内部无法处理host主机内核(kvm虚拟机有自己的独立内核)，所以容器网络是通过host主机iptables来管理虚拟交换网络。</p>
 </div>
 <div class="admonition note">
 <p class="admonition-title">备注</p>
-<p>实践发现在RHEL的系统中，存在 <code class="docutils literal notranslate"><span class="pre">/proc/sys/net/bridge/bridge-nf-call-*tables</span></code> 内核配置入口，上述配置在CentOS 7上可以完成。但是在Arch Linux平台没有上述内核配置，所以没有执行。</p>
+<p>实践发现在RHEL的系统中，存在 <code class="docutils literal notranslate"><span class="pre">/proc/sys/net/bridge/bridge-nf-call-*tables</span></code> 内核配置入口，上述配置在CentOS 7上可以完成。但是在Arch Linux/debian等发行版默认没有上述 bridge-nf-call-iptables 内核配置入口，解决方法是加载 <a class="reference internal" href="../../../docker/startup/post_install/docker_kernel_bridge-nf-call-iptables.html#br-netfilter"><span class="std std-ref">br_netfilter 内核模块(提供 bridge-nf-call-iptables 入口)</span></a> 。</p>
 </div>
 </section>
 <section id="id2">
-<h2>配置网桥<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
+<h2>配置网桥<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
 <div class="admonition note">
 <p class="admonition-title">备注</p>
 <p>有多种方法可以用来创建网桥，本文案例实践在arch linux上完成</p>
 </div>
 <section id="iproute2">
-<h3>使用iproute2<a class="headerlink" href="#iproute2" title="Link to this heading">¶</a></h3>
+<h3>使用iproute2<a class="headerlink" href="#iproute2" title="Link to this heading"></a></h3>
 <p>使用 <code class="docutils literal notranslate"><span class="pre">iproute2</span></code> 软件包的 <code class="docutils literal notranslate"><span class="pre">ip</span></code> 工具可以管理网桥</p>
 <ul>
 <li><p>创建新网桥并启动:</p>
@@ -312,7 +318,7 @@ sysctl<span class="w"> </span>-p<span class="w"> </span>/etc/sysctl.d/bridge.con
 </ul>
 </section>
 <section id="bridge-utils">
-<h3>使用bridge-utils<a class="headerlink" href="#bridge-utils" title="Link to this heading">¶</a></h3>
+<h3>使用bridge-utils<a class="headerlink" href="#bridge-utils" title="Link to this heading"></a></h3>
 <p>传统的 <code class="docutils literal notranslate"><span class="pre">brctl</span></code> 工具( <code class="docutils literal notranslate"><span class="pre">bridge-utils</span></code> 软件包)提供了管理网桥的功能。</p>
 <ul>
 <li><p>创建网桥:</p>
@@ -357,7 +363,7 @@ sysctl<span class="w"> </span>-p<span class="w"> </span>/etc/sysctl.d/bridge.con
 </div>
 </section>
 <section id="networkmanager">
-<h3>使用NetworkManager<a class="headerlink" href="#networkmanager" title="Link to this heading">¶</a></h3>
+<h3>使用NetworkManager<a class="headerlink" href="#networkmanager" title="Link to this heading"></a></h3>
 <p>使用NetworkManager配置网络是很多发行版默认的网络配置方法，我在 <a class="reference internal" href="../../../linux/arch_linux/archlinux_on_thinkpad_x220.html#archlinux-on-thinkpad-x220"><span class="std std-ref">ThinkPad X220上运行Arch Linux</span></a> 采用 <a class="reference internal" href="../../../linux/desktop/xfce/index.html#xfce"><span class="std std-ref">xfce</span></a> 桌面，配置无线网络就采用NetworkManager。这个网络配置管理工具和桌面完美结合，使用非常方便。这里介绍如何使用NetworkManager的命令行 <code class="docutils literal notranslate"><span class="pre">nmcli</span></code> 来完成网桥配置。</p>
 <ul>
 <li><p>创建网桥并禁止STP(避免网桥被公告到网络):</p>
@@ -415,7 +421,7 @@ sysctl<span class="w"> </span>-p<span class="w"> </span>/etc/sysctl.d/bridge.con
 </div>
 </section>
 <section id="netplan">
-<h3>使用netplan<a class="headerlink" href="#netplan" title="Link to this heading">¶</a></h3>
+<h3>使用netplan<a class="headerlink" href="#netplan" title="Link to this heading"></a></h3>
 <p>参考:</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://www.techrepublic.com/article/how-to-create-a-bridge-network-on-linux-with-netplan/">How to create a bridge network on Linux with Netplan</a></p></li>
@@ -431,7 +437,7 @@ sysctl<span class="w"> </span>-p<span class="w"> </span>/etc/sysctl.d/bridge.con
 <li><p>然后修订配置如下</p></li>
 </ul>
 <div class="literal-block-wrapper docutils container" id="id8">
-<div class="code-block-caption"><span class="caption-text">/etc/netplan/00-cloud-init.yaml</span><a class="headerlink" href="#id8" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">/etc/netplan/00-cloud-init.yaml</span><a class="headerlink" href="#id8" title="Link to this code"></a></div>
 <div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="nt">network</span><span class="p">:</span>
 <span class="linenos"> 2</span><span class="w">  </span><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2</span>
 <span class="linenos"> 3</span><span class="w">  </span><span class="nt">renderer</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">networkd</span>
@@ -505,18 +511,18 @@ sysctl<span class="w"> </span>-p<span class="w"> </span>/etc/sysctl.d/bridge.con
 </div>
 </section>
 <section id="systemd-networkd">
-<h3>使用systemd-networkd<a class="headerlink" href="#systemd-networkd" title="Link to this heading">¶</a></h3>
+<h3>使用systemd-networkd<a class="headerlink" href="#systemd-networkd" title="Link to this heading"></a></h3>
 <p>参考 <a class="reference external" href="https://wiki.archlinux.org/index.php/Systemd-networkd#Bridge_interface">systemd-networkd#Bridge interface</a></p>
 </section>
 <section id="id3">
-<h3>其他方法<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h3>
+<h3>其他方法<a class="headerlink" href="#id3" title="Link to this heading"></a></h3>
 <ul class="simple">
 <li><p>使用netctl: <a class="reference external" href="https://wiki.archlinux.org/index.php/Bridge_with_netctl">Bridge with netctl</a> (未实践)</p></li>
 </ul>
 </section>
 </section>
 <section id="id4">
-<h2>配置虚拟机<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h2>
+<h2>配置虚拟机<a class="headerlink" href="#id4" title="Link to this heading"></a></h2>
 <ul>
 <li><p>对于新安装虚拟机，可以直接指定网络设备的bridge:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">virt</span><span class="o">-</span><span class="n">install</span> <span class="o">--</span><span class="n">network</span> <span class="n">bridge</span><span class="o">=</span><span class="n">br0</span> <span class="o">...</span>
@@ -539,7 +545,7 @@ sysctl<span class="w"> </span>-p<span class="w"> </span>/etc/sysctl.d/bridge.con
 </div>
 </section>
 <section id="id5">
-<h2>参考<a class="headerlink" href="#id5" title="Link to this heading">¶</a></h2>
+<h2>参考<a class="headerlink" href="#id5" title="Link to this heading"></a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="https://jamielinux.com/docs/libvirt-networking-handbook/bridged-network.html">libvirt Networking Handbook - Bridged network</a></p></li>
 <li><p><a class="reference external" href="https://wiki.archlinux.org/index.php/Network_bridge">Arch Linux社区文档 - Network bridge</a></p></li>
@@ -550,25 +556,37 @@ sysctl<span class="w"> </span>-p<span class="w"> </span>/etc/sysctl.d/bridge.con
 
            </div>
           </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="index.html" class="btn btn-neutral float-left" title="Libvirt网络" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="libvirt_static_ip.html" class="btn btn-neutral float-right" title="Studio环境libvirt静态分配IP" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="index.html" class="btn btn-neutral float-left" title="Libvirt网络" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="libvirt_static_ip.html" class="btn btn-neutral float-right" title="Studio环境libvirt静态分配IP" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../../copyright.html">Copyright</a> 2018 - now, Huatai Huang.</p>
+    <p>&#169; <a href="../../../copyright.html">版权所有</a> 2018 - now, Huatai Huang。</p>
   </div>
 
-  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
   
     <!-- your html code here -->
     <br>
-    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡</a></p>
-     
+    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡 👈</a></p>
+    <br>
+    <p>网站采用 <a href="https://utteranc.es/">utterances</a> 评论系统，所有评论存储在<a href="https://github.com/huataihuang/cloud-atlas/issues">GitHub issues</a> 中，如果你看不到下方的评论框，那么可能需要<a href="https://cloud-atlas.readthedocs.io/zh-cn/latest/linux/security/vpn/index.html">自备梯子</a> 👈</p>
+    <div class="articleComments">
+        <comments>
+  <script src="https://utteranc.es/client.js"
+    repo="huataihuang/cloud-atlas"
+    issue-term="pathname"
+    theme="github-light"
+    crossorigin="anonymous"
+    async>
+  </script>
+</comments>
+    </div>
 
 
 </footer>

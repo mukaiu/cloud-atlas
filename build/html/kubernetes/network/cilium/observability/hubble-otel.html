@@ -1,21 +1,25 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh" data-content_root="../../../../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hubble集成OpenTelemetry &mdash; Cloud Atlas 0.1 文档</title>
-      <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../../../_static/graphviz.css" type="text/css" />
+  <title>Hubble集成OpenTelemetry &mdash; Cloud Atlas: Discovery beta 文档</title>
+      <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../../../_static/graphviz.css?v=fd3f3429" />
+
+  
+    <link rel="shortcut icon" href="../../../../_static/favicon.png"/>
   <!--[if lt IE 9]>
     <script src="../../../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="../../../../_static/documentation_options.js?v=7c91f8fd"></script>
-        <script src="../../../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../../../_static/documentation_options.js?v=8534f863"></script>
+        <script src="../../../../_static/doctools.js?v=9a2dae69"></script>
         <script src="../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
-        <script src="../../../../_static/translations.js?v=beaddf03"></script>
     <script src="../../../../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../../../../genindex.html" />
     <link rel="search" title="搜索" href="../../../../search.html" />
@@ -33,28 +37,32 @@
           
           
           <a href="../../../../index.html" class="icon icon-home">
-            Cloud Atlas
+            Cloud Atlas: Discovery
           </a>
+              <div class="version">
+                1.1
+              </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../../../studio/index.html">Studio Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../infrastructure/index.html">Infrastructure Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../devops/index.html">DevOps Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../kvm/index.html">KVM Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../ceph/index.html">Ceph Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../gluster/index.html">Gluster Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../ovirt/index.html">oVirt Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../openstack/index.html">OpenStack Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../docker/index.html">Docker Atlas</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../../../index.html">Kubernetes Atlas</a><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../../studio/index.html">Studio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../infrastructure/index.html">Infrastructure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../devops/index.html">DevOps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../kvm/index.html">KVM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../ceph/index.html">Ceph</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../gluster/index.html">Gluster</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../ovirt/index.html">oVirt</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../openstack/index.html">OpenStack</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../docker/index.html">Docker</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../../index.html">Kubernetes</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../../think_k8s.html">Kubernetes的思考</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../kubernetes_overview.html">Kubernetes概览</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../startup_prepare/index.html">Kubernetes起步准备</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../startup/index.html">Kubernetes快速起步</a></li>
@@ -76,6 +84,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../../dynamic_dns_loadbalancing_without_cloud_provider.html">没有云计算服务环境下动态DNS和负载均衡</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../k8s_hosts_file_for_pods.html">Kubernetes配置Pods中的hosts文件</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../ingress/index.html">Kubernetes Ingress控制器</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../egress/index.html">Kubernetes Egress控制器</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../flannel/index.html">Flannel网络</a></li>
 <li class="toctree-l3 current"><a class="reference internal" href="../index.html">Cilium网络</a><ul class="current">
 <li class="toctree-l4"><a class="reference internal" href="../intro_cilium.html">cilium技术简介</a></li>
@@ -116,53 +125,56 @@
 <li class="toctree-l2"><a class="reference internal" href="../../../gpu/index.html">GPU Kubernetes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../kubeflow/index.html">Kubeflow - Kubernetes机器学习工作流平台</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../argo/index.html">Argo - 基于Kubernetes的持续集成和工作流</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../kueue/index.html">Kueue - K8s原生批处理调度</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../k8s_android/index.html">Kubernetes运行Android</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../k3s/index.html">K3s - 轻量级Kubernetes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../k0s/index.html">K0s - 轻量级Kubernetes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../platform/index.html">Kubernetes之上的平台</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../cloud/index.html">Kubernetes云厂商</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../develop/index.html">Kubernetes开发</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../cncf/index.html">CNCF(Cloud Native Computing Foudation)</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../kubernetes_from_scratch/index.html">Kubernetes From Scratch (KFS) Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../rancher/index.html">Rancher Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../openshift/index.html">OpenShift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../sql/index.html">SQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../sqlite/index.html">SQLite Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../mysql/index.html">MySQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../pgsql/index.html">PostgreSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../clickhouse/index.html">ClickHouse Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../nosql/index.html">NoSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../redis/index.html">Redis Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../network/index.html">Network Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../infra_service/index.html">Infra-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../infra_search/index.html">Search Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../info_service/index.html">Info-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../web/index.html">Web Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../big_data/index.html">Big Data Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../machine_learning/index.html">Machine Learning Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../linux/index.html">Linux Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../kernel/index.html">Kernel Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../performance/index.html">Performance Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../distributed_system/index.html">Distributed System Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../shell/index.html">Shell Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../python/index.html">Python Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../django/index.html">Django Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../flask/index.html">Flask Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../javascript/index.html">JavaScript Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../nodejs/index.html">Node.js Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../clang/index.html">C Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../golang/index.html">Go Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../swift/index.html">Swift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../rust/index.html">Rust Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../ruby/index.html">Ruby Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../arm/index.html">ARM Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../android/index.html">Android Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../bsd/index.html">BSD Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../apple/index.html">Apple Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../windows/index.html">Windows Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../real/index.html">Real Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../management/index.html">Management Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../life/index.html">Life Atlas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../k8s_dev/index.html">Kubernetes Develop</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../rancher/index.html">Rancher</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../openshift/index.html">OpenShift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../sql/index.html">SQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../sqlite/index.html">SQLite</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../mysql/index.html">MySQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../pgsql/index.html">PostgreSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../nosql/index.html">NoSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../network/index.html">Network</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../infra_service/index.html">Infra-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../infra_search/index.html">Infra-Search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../web/index.html">Web</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../info_service/index.html">Info-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../big_data/index.html">Big Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../machine_learning/index.html">Machine Learning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../drone/index.html">Drone</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../linux/index.html">Linux</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../kernel/index.html">Kernel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../performance/index.html">Performance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../distributed_system/index.html">Distributed System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../shell/index.html">Shell</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../python/index.html">Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../django/index.html">Django</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../javascript/index.html">JavaScript</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../nodejs/index.html">Node.js</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../clang/index.html">C</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../golang/index.html">Go</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../swift/index.html">Swift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../rust/index.html">Rust</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../ruby/index.html">Ruby</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../lua/index.html">Lua</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../arm/index.html">ARM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../raspberry_pi/index.html">Raspberry Pi</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../android/index.html">Android</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../bsd/index.html">BSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../freebsd/index.html">FreeBSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../apple/index.html">Apple</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../windows/index.html">Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../real/index.html">Real</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../management/index.html">Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../life/index.html">Life</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../copyright.html">Copyright</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../aboutme.html">关于作者</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../donate.html">捐赠</a></li>
@@ -175,23 +187,23 @@
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../../../index.html">Cloud Atlas</a>
+          <a href="../../../../index.html">Cloud Atlas: Discovery</a>
       </nav>
 
       <div class="wy-nav-content">
         <div class="rst-content">
-          <div role="navigation" aria-label="Page navigation">
+          <div role="navigation" aria-label="页面导航">
   <ul class="wy-breadcrumbs">
       <li><a href="../../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
-          <li class="breadcrumb-item"><a href="../../../index.html">Kubernetes Atlas</a></li>
+          <li class="breadcrumb-item"><a href="../../../index.html">Kubernetes</a></li>
           <li class="breadcrumb-item"><a href="../../index.html">Kubernetes网络</a></li>
           <li class="breadcrumb-item"><a href="../index.html">Cilium网络</a></li>
           <li class="breadcrumb-item"><a href="index.html">Cilium网络可观测性</a></li>
       <li class="breadcrumb-item active">Hubble集成OpenTelemetry</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../../../../_sources/kubernetes/network/cilium/observability/hubble-otel.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../../../_sources/kubernetes/network/cilium/observability/hubble-otel.rst.txt" rel="nofollow"> 查看页面源码</a>
       </li>
   </ul>
   <hr/>
@@ -200,17 +212,17 @@
            <div itemprop="articleBody">
              
   <section id="hubbleopentelemetry">
-<span id="hubble-otel"></span><h1>Hubble集成OpenTelemetry<a class="headerlink" href="#hubbleopentelemetry" title="Link to this heading">¶</a></h1>
+<span id="hubble-otel"></span><h1>Hubble集成OpenTelemetry<a class="headerlink" href="#hubbleopentelemetry" title="Link to this heading"></a></h1>
 <section id="id1">
-<h2>前置条件<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h2>
+<h2>前置条件<a class="headerlink" href="#id1" title="Link to this heading"></a></h2>
 <ul class="simple">
-<li><p>部署 <a class="reference internal" href="../../../../real/priv_cloud/z-k8s.html#z-k8s"><span class="std std-ref">Kubernetes集群(z-k8s)</span></a> (你也可以 <a class="reference internal" href="../../../startup_prepare/install_run_minikube.html#install-run-minikube"><span class="std std-ref">安装和运行minikube</span></a> )</p></li>
+<li><p>部署 <a class="reference internal" href="../../../../real/priv_cloud/z-k8s.html#z-k8s"><span class="std std-ref">Kubernetes集群(z-k8s)</span></a> (你也可以 <a class="reference internal" href="../../../startup_prepare/install_run_minikube.html#install-run-minikube"><span class="std std-ref">minikube</span></a> )</p></li>
 <li><p><a class="reference internal" href="../installation/cilium_install_with_external_etcd.html#cilium-install-with-external-etcd"><span class="std std-ref">在扩展etcd环境安装cilium</span></a> (也可以简化为 <a class="reference internal" href="../cilium_startup.html#cilium-startup"><span class="std std-ref">cilium快速起步</span></a> )</p></li>
 <li><p><a class="reference internal" href="cilium_hubble.html#cilium-hubble"><span class="std std-ref">Cilium Hubble可观测性</span></a> 部署完成</p></li>
 </ul>
 </section>
 <section id="id2">
-<h2>部署说明<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
+<h2>部署说明<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
 <p>本文实践在 Cilium 网络环境部署 <a class="reference internal" href="../../../monitor/opentelemetry/index.html#opentelemetry"><span class="std std-ref">OpenTelemetry</span></a> 以及采用 <a class="reference internal" href="../../../monitor/jaeger/index.html#jaeger"><span class="std std-ref">Jaeger分布式跟踪系统</span></a> 和 <a class="reference internal" href="../../../security/cert-manager/index.html#cert-manager"><span class="std std-ref">cert-manager: X.509证书管理</span></a> ，同时采用 <code class="docutils literal notranslate"><span class="pre">CiliumNetworkPolicy</span></code> 和 <code class="docutils literal notranslate"><span class="pre">CiliumClusterwideNetworkPolicy</span></code> 来激活DNS和HTTP可视化的部署简单demo:</p>
 <ul class="simple">
 <li><p>第一个 <code class="docutils literal notranslate"><span class="pre">OpenTelemetryCollector</span></code> 配置会部署Hubble adaptor和配置Hubble receiver来访问每个节点的L7流数据，然后将跟踪数据写入到 <a class="reference internal" href="../../../monitor/jaeger/index.html#jaeger"><span class="std std-ref">Jaeger分布式跟踪系统</span></a></p></li>
@@ -218,12 +230,12 @@
 </ul>
 </section>
 <section id="id3">
-<h2>基本设置<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h2>
+<h2>基本设置<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
 <ul class="simple">
 <li><p>安装 <a class="reference internal" href="../../../security/cert-manager/index.html#cert-manager"><span class="std std-ref">cert-manager: X.509证书管理</span></a> (OpenTelemetry operator依赖):</p></li>
 </ul>
 <div class="literal-block-wrapper docutils container" id="id5">
-<div class="code-block-caption"><span class="caption-text">在Cilium的K8s集群中安装cert-manager</span><a class="headerlink" href="#id5" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">在Cilium的K8s集群中安装cert-manager</span><a class="headerlink" href="#id5" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>kubectl<span class="w"> </span>apply<span class="w"> </span>-k<span class="w"> </span>github.com/cilium/kustomize-bases/cert-manager
 </pre></div>
 </div>
@@ -232,7 +244,7 @@
 <li><p>执行以下命令确保 cert-manager 完全就绪:</p></li>
 </ul>
 <div class="literal-block-wrapper docutils container" id="id6">
-<div class="code-block-caption"><span class="caption-text">等待cert-manager就绪</span><a class="headerlink" href="#id6" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">等待cert-manager就绪</span><a class="headerlink" href="#id6" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">(</span>
 <span class="w">  </span><span class="nb">set</span><span class="w"> </span>-e
 <span class="w">  </span>kubectl<span class="w"> </span><span class="nb">wait</span><span class="w"> </span>deployment<span class="w"> </span>--namespace<span class="o">=</span><span class="s2">&quot;cert-manager&quot;</span><span class="w"> </span>--for<span class="o">=</span><span class="s2">&quot;condition=Available&quot;</span><span class="w"> </span>cert-manager-webhook<span class="w"> </span>cert-manager-cainjector<span class="w"> </span>cert-manager<span class="w"> </span>--timeout<span class="o">=</span>3m
@@ -245,7 +257,7 @@
 </div>
 <p>输出显示:</p>
 <div class="literal-block-wrapper docutils container" id="id7">
-<div class="code-block-caption"><span class="caption-text">cert-manager就绪</span><a class="headerlink" href="#id7" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">cert-manager就绪</span><a class="headerlink" href="#id7" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>deployment.apps/cert-manager-webhook<span class="w"> </span>condition<span class="w"> </span>met
 deployment.apps/cert-manager-cainjector<span class="w"> </span>condition<span class="w"> </span>met
 deployment.apps/cert-manager<span class="w"> </span>condition<span class="w"> </span>met
@@ -263,14 +275,14 @@ cert-manager-webhook-ca<span class="w">   </span>Opaque<span class="w">   </span
 <li><p>部署 <a class="reference internal" href="../../../monitor/jaeger/index.html#jaeger"><span class="std std-ref">Jaeger分布式跟踪系统</span></a> operator:</p></li>
 </ul>
 <div class="literal-block-wrapper docutils container" id="id8">
-<div class="code-block-caption"><span class="caption-text">在Cilium的K8s集群中安装Jaeger operator</span><a class="headerlink" href="#id8" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">在Cilium的K8s集群中安装Jaeger operator</span><a class="headerlink" href="#id8" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>kubectl<span class="w"> </span>apply<span class="w"> </span>-k<span class="w"> </span>github.com/cilium/kustomize-bases/jaeger
 </pre></div>
 </div>
 </div>
 <p>输出显示:</p>
 <div class="literal-block-wrapper docutils container" id="id9">
-<div class="code-block-caption"><span class="caption-text">在Cilium的K8s集群中安装Jaeger operator输出信息</span><a class="headerlink" href="#id9" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">在Cilium的K8s集群中安装Jaeger operator输出信息</span><a class="headerlink" href="#id9" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>namespace/jaeger<span class="w"> </span>created
 customresourcedefinition.apiextensions.k8s.io/jaegers.jaegertracing.io<span class="w"> </span>created
 serviceaccount/jaeger-operator<span class="w"> </span>created
@@ -286,7 +298,7 @@ deployment.apps/jaeger-operator<span class="w"> </span>created
 <li><p>配置一个内存后端的 <a class="reference internal" href="../../../monitor/jaeger/index.html#jaeger"><span class="std std-ref">Jaeger分布式跟踪系统</span></a> 实例:</p></li>
 </ul>
 <div class="literal-block-wrapper docutils container" id="id10">
-<div class="code-block-caption"><span class="caption-text">配置一个内存后端的 jaeger 实例</span><a class="headerlink" href="#id10" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">配置一个内存后端的 jaeger 实例</span><a class="headerlink" href="#id10" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>cat<span class="w"> </span>&gt;<span class="w"> </span>jaeger.yaml<span class="w"> </span><span class="s">&lt;&lt; EOF</span>
 <span class="s">apiVersion: jaegertracing.io/v1</span>
 <span class="s">kind: Jaeger</span>
@@ -313,7 +325,7 @@ kubectl<span class="w"> </span>apply<span class="w"> </span>-f<span class="w"> <
 <li><p>部署 <a class="reference internal" href="../../../monitor/opentelemetry/index.html#opentelemetry"><span class="std std-ref">OpenTelemetry</span></a> operator:</p></li>
 </ul>
 <div class="literal-block-wrapper docutils container" id="id11">
-<div class="code-block-caption"><span class="caption-text">在Cilium的K8s集群中安装OpenTelemetry operator</span><a class="headerlink" href="#id11" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">在Cilium的K8s集群中安装OpenTelemetry operator</span><a class="headerlink" href="#id11" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>kubectl<span class="w"> </span>apply<span class="w"> </span>-k<span class="w"> </span>github.com/cilium/kustomize-bases/opentelemetry
 </pre></div>
 </div>
@@ -322,7 +334,7 @@ kubectl<span class="w"> </span>apply<span class="w"> </span>-f<span class="w"> <
 <li><p>配置Hubble receiver 和 Jaeger exporter:</p></li>
 </ul>
 <div class="literal-block-wrapper docutils container" id="id12">
-<div class="code-block-caption"><span class="caption-text">在Cilium的K8s集群中配置Hubble receiver 和 Jaeger exporter</span><a class="headerlink" href="#id12" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">在Cilium的K8s集群中配置Hubble receiver 和 Jaeger exporter</span><a class="headerlink" href="#id12" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>cat<span class="w"> </span>&gt;<span class="w"> </span>otelcol.yaml<span class="w"> </span><span class="s">&lt;&lt; EOF</span>
 <span class="s">apiVersion: opentelemetry.io/v1alpha1</span>
 <span class="s">kind: OpenTelemetryCollector</span>
@@ -418,14 +430,14 @@ kubectl<span class="w"> </span>apply<span class="w"> </span>-f<span class="w"> <
 </div>
 <p>然后检查collector作为 <a class="reference internal" href="../../../concepts/workloads/controllers/daemonset.html#daemonset"><span class="std std-ref">DaemonSet</span></a> 正确运行:</p>
 <div class="literal-block-wrapper docutils container" id="id13">
-<div class="code-block-caption"><span class="caption-text">在Cilium的K8s集群中检查otelcol-hubble-collector是否正常运行</span><a class="headerlink" href="#id13" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">在Cilium的K8s集群中检查otelcol-hubble-collector是否正常运行</span><a class="headerlink" href="#id13" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>kubectl<span class="w"> </span>get<span class="w"> </span>pod<span class="w"> </span>-n<span class="w"> </span>kube-system<span class="w"> </span>-l<span class="w"> </span>app.kubernetes.io/name<span class="o">=</span>otelcol-hubble-collector
 </pre></div>
 </div>
 </div>
 <p>如果正常，会看到每个worker节点正常运行了如下:</p>
 <div class="literal-block-wrapper docutils container" id="id14">
-<div class="code-block-caption"><span class="caption-text">在Cilium的K8s集群中检查otelcol-hubble-collector输出信息</span><a class="headerlink" href="#id14" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">在Cilium的K8s集群中检查otelcol-hubble-collector输出信息</span><a class="headerlink" href="#id14" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>NAME<span class="w">                             </span>READY<span class="w">   </span>STATUS<span class="w">    </span>RESTARTS<span class="w">   </span>AGE
 otelcol-hubble-collector-2g82m<span class="w">   </span><span class="m">1</span>/1<span class="w">     </span>Running<span class="w">   </span><span class="m">0</span><span class="w">          </span>5m15s
 otelcol-hubble-collector-46gtj<span class="w">   </span><span class="m">1</span>/1<span class="w">     </span>Running<span class="w">   </span><span class="m">0</span><span class="w">          </span>5m15s
@@ -439,7 +451,7 @@ otelcol-hubble-collector-xt7xl<span class="w">   </span><span class="m">1</span>
 <li><p>现在可以检查日志:</p></li>
 </ul>
 <div class="literal-block-wrapper docutils container" id="id15">
-<div class="code-block-caption"><span class="caption-text">在Cilium的K8s集群中检查otelcol-hubble-collector日志</span><a class="headerlink" href="#id15" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">在Cilium的K8s集群中检查otelcol-hubble-collector日志</span><a class="headerlink" href="#id15" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>kubectl<span class="w"> </span>logs<span class="w"> </span>-n<span class="w"> </span>kube-system<span class="w"> </span>-l<span class="w"> </span>app.kubernetes.io/name<span class="o">=</span>otelcol-hubble-collector
 </pre></div>
 </div>
@@ -448,14 +460,14 @@ otelcol-hubble-collector-xt7xl<span class="w">   </span><span class="m">1</span>
 <li><p>现在就可以访问 <a class="reference internal" href="../../../monitor/jaeger/index.html#jaeger"><span class="std std-ref">Jaeger分布式跟踪系统</span></a> 管理界面:</p></li>
 </ul>
 <div class="literal-block-wrapper docutils container" id="id16">
-<div class="code-block-caption"><span class="caption-text">通过kubectl port-forward访问jaeger的管理界面</span><a class="headerlink" href="#id16" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">通过kubectl port-forward访问jaeger的管理界面</span><a class="headerlink" href="#id16" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>kubectl<span class="w"> </span>port-forward<span class="w"> </span>svc/jaeger-default-query<span class="w"> </span>-n<span class="w"> </span>jaeger<span class="w"> </span><span class="m">16686</span>
 </pre></div>
 </div>
 </div>
 </section>
 <section id="podinfo-demon">
-<h2>部署podinfo demon应用<a class="headerlink" href="#podinfo-demon" title="Link to this heading">¶</a></h2>
+<h2>部署podinfo demon应用<a class="headerlink" href="#podinfo-demon" title="Link to this heading"></a></h2>
 <p>以下部署案例是为了验证前面部署的trace系统，提供一个DNS和HTTP跟踪演示</p>
 <ul>
 <li><p>创建一个 demo 应用的名字空间:</p>
@@ -466,7 +478,7 @@ otelcol-hubble-collector-xt7xl<span class="w">   </span><span class="m">1</span>
 <li><p>激活 podinfo 应用的HTTP可视化以及所有DNS流量:</p></li>
 </ul>
 <div class="literal-block-wrapper docutils container" id="id17">
-<div class="code-block-caption"><span class="caption-text">配置cilium可视化策略</span><a class="headerlink" href="#id17" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">配置cilium可视化策略</span><a class="headerlink" href="#id17" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>cat<span class="w"> </span>&gt;<span class="w"> </span>visibility-policies.yaml<span class="w"> </span><span class="s">&lt;&lt; EOF</span>
 <span class="s">---</span>
 <span class="s">apiVersion: cilium.io/v2</span>
@@ -537,7 +549,7 @@ kubectl<span class="w"> </span>apply<span class="w"> </span>-f<span class="w"> <
 <li><p>podinfo应用是OpenTelemetry SDK检测，导出跟踪的一种方法是使用collector sidecar: 添加sidecar配置</p></li>
 </ul>
 <div class="literal-block-wrapper docutils container" id="id18">
-<div class="code-block-caption"><span class="caption-text">配置OpenTelemetry sidecar</span><a class="headerlink" href="#id18" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">配置OpenTelemetry sidecar</span><a class="headerlink" href="#id18" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>cat<span class="w"> </span>&gt;<span class="w"> </span>otelcol-podinfo.yaml<span class="w"> </span><span class="s">&lt;&lt; EOF</span>
 <span class="s">apiVersion: opentelemetry.io/v1alpha1</span>
 <span class="s">kind: OpenTelemetryCollector</span>
@@ -577,7 +589,7 @@ kubectl<span class="w"> </span>apply<span class="w"> </span>-f<span class="w"> <
 <li><p>现在部署podinfo应用:</p></li>
 </ul>
 <div class="literal-block-wrapper docutils container" id="id19">
-<div class="code-block-caption"><span class="caption-text">部署podinfo示例应用</span><a class="headerlink" href="#id19" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">部署podinfo示例应用</span><a class="headerlink" href="#id19" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>kubectl<span class="w"> </span>apply<span class="w"> </span>-k<span class="w"> </span>github.com/cilium/kustomize-bases/podinfo
 </pre></div>
 </div>
@@ -586,14 +598,14 @@ kubectl<span class="w"> </span>apply<span class="w"> </span>-f<span class="w"> <
 <li><p>检查部署和服务:</p></li>
 </ul>
 <div class="literal-block-wrapper docutils container" id="id20">
-<div class="code-block-caption"><span class="caption-text">部署podinfo的部署和服务检查</span><a class="headerlink" href="#id20" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">部署podinfo的部署和服务检查</span><a class="headerlink" href="#id20" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>kubectl<span class="w"> </span>get<span class="w"> </span>-n<span class="w"> </span>podinfo<span class="w"> </span>deployments,services
 </pre></div>
 </div>
 </div>
 <p>输出显示:</p>
 <div class="literal-block-wrapper docutils container" id="id21">
-<div class="code-block-caption"><span class="caption-text">部署podinfo的部署和服务检查的信息</span><a class="headerlink" href="#id21" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">部署podinfo的部署和服务检查的信息</span><a class="headerlink" href="#id21" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>NAME<span class="w">                               </span>READY<span class="w">   </span>UP-TO-DATE<span class="w">   </span>AVAILABLE<span class="w">   </span>AGE
 deployment.apps/podinfo-backend<span class="w">    </span><span class="m">2</span>/2<span class="w">     </span><span class="m">2</span><span class="w">            </span><span class="m">2</span><span class="w">           </span>81s
 deployment.apps/podinfo-client<span class="w">     </span><span class="m">1</span>/2<span class="w">     </span><span class="m">2</span><span class="w">            </span><span class="m">1</span><span class="w">           </span>81s
@@ -623,7 +635,7 @@ service/podinfo-frontend<span class="w">   </span>ClusterIP<span class="w">   </
 </figure>
 </section>
 <section id="id4">
-<h2>参考<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h2>
+<h2>参考<a class="headerlink" href="#id4" title="Link to this heading"></a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="https://github.com/cilium/hubble-otel">Hubble adaptor for OpenTelemetry</a></p></li>
 </ul>
@@ -633,25 +645,37 @@ service/podinfo-frontend<span class="w">   </span>ClusterIP<span class="w">   </
 
            </div>
           </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="cilium_service_map_hubble_ui.html" class="btn btn-neutral float-left" title="Cilium服务地图和Hubble UI" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="../networking/index.html" class="btn btn-neutral float-right" title="Cilium网络配置" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="cilium_service_map_hubble_ui.html" class="btn btn-neutral float-left" title="Cilium服务地图和Hubble UI" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="../networking/index.html" class="btn btn-neutral float-right" title="Cilium网络配置" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../../../copyright.html">Copyright</a> 2018 - now, Huatai Huang.</p>
+    <p>&#169; <a href="../../../../copyright.html">版权所有</a> 2018 - now, Huatai Huang。</p>
   </div>
 
-  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
   
     <!-- your html code here -->
     <br>
-    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡</a></p>
-     
+    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡 👈</a></p>
+    <br>
+    <p>网站采用 <a href="https://utteranc.es/">utterances</a> 评论系统，所有评论存储在<a href="https://github.com/huataihuang/cloud-atlas/issues">GitHub issues</a> 中，如果你看不到下方的评论框，那么可能需要<a href="https://cloud-atlas.readthedocs.io/zh-cn/latest/linux/security/vpn/index.html">自备梯子</a> 👈</p>
+    <div class="articleComments">
+        <comments>
+  <script src="https://utteranc.es/client.js"
+    repo="huataihuang/cloud-atlas"
+    issue-term="pathname"
+    theme="github-light"
+    crossorigin="anonymous"
+    async>
+  </script>
+</comments>
+    </div>
 
 
 </footer>

@@ -1,21 +1,25 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh" data-content_root="../../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>排查磁盘空间消耗 &mdash; Cloud Atlas 0.1 文档</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+  <title>排查磁盘空间消耗 &mdash; Cloud Atlas: Discovery beta 文档</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=fd3f3429" />
+
+  
+    <link rel="shortcut icon" href="../../_static/favicon.png"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="../../_static/documentation_options.js?v=7c91f8fd"></script>
-        <script src="../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=8534f863"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
         <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
-        <script src="../../_static/translations.js?v=beaddf03"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../../genindex.html" />
     <link rel="search" title="搜索" href="../../search.html" />
@@ -33,50 +37,52 @@
           
           
           <a href="../../index.html" class="icon icon-home">
-            Cloud Atlas
+            Cloud Atlas: Discovery
           </a>
+              <div class="version">
+                1.1
+              </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../studio/index.html">Studio Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../infrastructure/index.html">Infrastructure Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../devops/index.html">DevOps Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kvm/index.html">KVM Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../ceph/index.html">Ceph Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../gluster/index.html">Gluster Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../ovirt/index.html">oVirt Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../openstack/index.html">OpenStack Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../docker/index.html">Docker Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kubernetes/index.html">Kubernetes Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kubernetes_from_scratch/index.html">Kubernetes From Scratch (KFS) Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../rancher/index.html">Rancher Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../openshift/index.html">OpenShift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../sql/index.html">SQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../sqlite/index.html">SQLite Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../mysql/index.html">MySQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../pgsql/index.html">PostgreSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../clickhouse/index.html">ClickHouse Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../nosql/index.html">NoSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../redis/index.html">Redis Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../network/index.html">Network Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../infra_service/index.html">Infra-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../infra_search/index.html">Search Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../info_service/index.html">Info-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../web/index.html">Web Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../big_data/index.html">Big Data Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../machine_learning/index.html">Machine Learning Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../linux/index.html">Linux Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kernel/index.html">Kernel Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../performance/index.html">Performance Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../distributed_system/index.html">Distributed System Atlas</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Shell Atlas</a><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../studio/index.html">Studio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../infrastructure/index.html">Infrastructure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../devops/index.html">DevOps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kvm/index.html">KVM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ceph/index.html">Ceph</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../gluster/index.html">Gluster</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ovirt/index.html">oVirt</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../openstack/index.html">OpenStack</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../docker/index.html">Docker</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kubernetes/index.html">Kubernetes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../k8s_dev/index.html">Kubernetes Develop</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../rancher/index.html">Rancher</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../openshift/index.html">OpenShift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../sql/index.html">SQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../sqlite/index.html">SQLite</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../mysql/index.html">MySQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../pgsql/index.html">PostgreSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../nosql/index.html">NoSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../network/index.html">Network</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../infra_service/index.html">Infra-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../infra_search/index.html">Infra-Search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../web/index.html">Web</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../info_service/index.html">Info-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../big_data/index.html">Big Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../machine_learning/index.html">Machine Learning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../drone/index.html">Drone</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../linux/index.html">Linux</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kernel/index.html">Kernel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../performance/index.html">Performance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../distributed_system/index.html">Distributed System</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Shell</a><ul class="current">
 <li class="toctree-l2 current"><a class="reference internal" href="index.html">Bash</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="shell_style.html">Shell风格</a></li>
 <li class="toctree-l3"><a class="reference internal" href="bash_shutcut.html">Bash快捷键</a></li>
@@ -98,7 +104,9 @@
 <li class="toctree-l3"><a class="reference internal" href="bash_multi_variable_assigment.html">在bash中多变量赋值</a></li>
 <li class="toctree-l3"><a class="reference internal" href="convert_csv_to_json.html">CSV转换JSON</a></li>
 <li class="toctree-l3"><a class="reference internal" href="remove_last_n_characters_from_a_string_in_bash.html">在Bash中实现删除字符串最后n个字符</a></li>
+<li class="toctree-l3"><a class="reference internal" href="remove_add_characters.html">删除和添加字符</a></li>
 <li class="toctree-l3"><a class="reference internal" href="shell_array.html">SHELL数组</a></li>
+<li class="toctree-l3"><a class="reference internal" href="suspend_process.html">挂起进程(信号和方法)</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../zsh/index.html">Zsh</a></li>
@@ -106,24 +114,26 @@
 <li class="toctree-l2"><a class="reference internal" href="../utils/index.html">Shell 实用工具</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../python/index.html">Python Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../django/index.html">Django Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../flask/index.html">Flask Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../javascript/index.html">JavaScript Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../nodejs/index.html">Node.js Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../clang/index.html">C Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../golang/index.html">Go Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../swift/index.html">Swift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../rust/index.html">Rust Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../ruby/index.html">Ruby Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../arm/index.html">ARM Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../android/index.html">Android Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../bsd/index.html">BSD Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../apple/index.html">Apple Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../windows/index.html">Windows Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../real/index.html">Real Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../management/index.html">Management Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../life/index.html">Life Atlas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../python/index.html">Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../django/index.html">Django</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../javascript/index.html">JavaScript</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../nodejs/index.html">Node.js</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../clang/index.html">C</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../golang/index.html">Go</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../swift/index.html">Swift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../rust/index.html">Rust</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ruby/index.html">Ruby</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lua/index.html">Lua</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../arm/index.html">ARM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../raspberry_pi/index.html">Raspberry Pi</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../android/index.html">Android</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../bsd/index.html">BSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../freebsd/index.html">FreeBSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../apple/index.html">Apple</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../windows/index.html">Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../real/index.html">Real</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../management/index.html">Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../life/index.html">Life</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../copyright.html">Copyright</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../aboutme.html">关于作者</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../donate.html">捐赠</a></li>
@@ -136,21 +146,21 @@
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../index.html">Cloud Atlas</a>
+          <a href="../../index.html">Cloud Atlas: Discovery</a>
       </nav>
 
       <div class="wy-nav-content">
         <div class="rst-content">
-          <div role="navigation" aria-label="Page navigation">
+          <div role="navigation" aria-label="页面导航">
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
-          <li class="breadcrumb-item"><a href="../index.html">Shell Atlas</a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Shell</a></li>
           <li class="breadcrumb-item"><a href="index.html">Bash</a></li>
       <li class="breadcrumb-item active">排查磁盘空间消耗</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../../_sources/shell/bash/trace_disk_space_usage.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../_sources/shell/bash/trace_disk_space_usage.rst.txt" rel="nofollow"> 查看页面源码</a>
       </li>
   </ul>
   <hr/>
@@ -159,7 +169,7 @@
            <div itemprop="articleBody">
              
   <section id="trace-disk-space-usage">
-<span id="id1"></span><h1>排查磁盘空间消耗<a class="headerlink" href="#trace-disk-space-usage" title="Link to this heading">¶</a></h1>
+<span id="id1"></span><h1>排查磁盘空间消耗<a class="headerlink" href="#trace-disk-space-usage" title="Link to this heading"></a></h1>
 <p>在生产环境中，经常会遇到磁盘被耗尽的问题需要排查，通常我们会使用2个工具:</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">df</span></code> 检查文件系统总体使用情况</p>
@@ -174,25 +184,25 @@
 </li>
 </ul>
 <section id="ncdu">
-<h2>ncdu<a class="headerlink" href="#ncdu" title="Link to this heading">¶</a></h2>
+<h2>ncdu<a class="headerlink" href="#ncdu" title="Link to this heading"></a></h2>
 <p>不过，我们经常会需要找出磁盘中占用最多的目录进行排查和清理，这时候，有一个基于 <code class="docutils literal notranslate"><span class="pre">ncurse</span></code> 终端交互命令 <code class="docutils literal notranslate"><span class="pre">ncdu</span></code> 非常有用，提供了默认从大到小排序功能，并且启动时完成扫描，然后就可以交互找到最占用磁盘空间的目录:</p>
 <figure class="align-default">
 <img alt="../../_images/ncdu.png" src="../../_images/ncdu.png" />
 </figure>
 </section>
 <section id="id2">
-<h2>直接找出占用空间最大的目录(剔除子目录)<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
+<h2>直接找出占用空间最大的目录(剔除子目录)<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
 <p>那么我们在脚本中该如何找到占用最大的目录呢？</p>
 <p>虽然我们可以使用 <code class="docutils literal notranslate"><span class="pre">du</span> <span class="pre">-sh</span> <span class="pre">*</span></code> 一级级查找，但是在脚本中需要使用一条命令来找到最多消耗的目录:</p>
 <div class="literal-block-wrapper docutils container" id="id8">
-<div class="code-block-caption"><span class="caption-text">查找消耗磁盘空间最大的目录</span><a class="headerlink" href="#id8" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">查找消耗磁盘空间最大的目录</span><a class="headerlink" href="#id8" title="Link to this code"></a></div>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">du</span> <span class="o">-</span><span class="n">Sh</span> <span class="o">|</span> <span class="n">sort</span> <span class="o">-</span><span class="n">rh</span> <span class="o">|</span> <span class="n">head</span> <span class="o">-</span><span class="mi">5</span>
 </pre></div>
 </div>
 </div>
 <p>输出类似:</p>
 <div class="literal-block-wrapper docutils container" id="id9">
-<div class="code-block-caption"><span class="caption-text">查找消耗磁盘空间最大的目录输出案例(占用最大空间的的是容器镜像)</span><a class="headerlink" href="#id9" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">查找消耗磁盘空间最大的目录输出案例(占用最大空间的的是容器镜像)</span><a class="headerlink" href="#id9" title="Link to this code"></a></div>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="hll"><span class="mf">1.2</span><span class="n">G</span> <span class="o">./</span><span class="n">var</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">containerd</span><span class="o">/</span><span class="n">io</span><span class="o">.</span><span class="n">containerd</span><span class="o">.</span><span class="n">content</span><span class="o">.</span><span class="n">v1</span><span class="o">.</span><span class="n">content</span><span class="o">/</span><span class="n">blobs</span><span class="o">/</span><span class="n">sha256</span>
 </span><span class="mi">445</span><span class="n">M</span> <span class="o">./</span><span class="n">usr</span><span class="o">/</span><span class="nb">bin</span>
 <span class="mi">332</span><span class="n">M</span> <span class="o">./</span><span class="n">run</span><span class="o">/</span><span class="n">containerd</span><span class="o">/</span><span class="n">io</span><span class="o">.</span><span class="n">containerd</span><span class="o">.</span><span class="n">runtime</span><span class="o">.</span><span class="n">v2</span><span class="o">.</span><span class="n">task</span><span class="o">/</span><span class="n">k8s</span><span class="o">.</span><span class="n">io</span><span class="o">/</span><span class="mi">6</span><span class="n">bd8822f911f8cbbc51826a3c2d37c0016ec44a8138c9d835fb5dbae99db269f</span><span class="o">/</span><span class="n">rootfs</span><span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="nb">bin</span>
@@ -208,7 +218,7 @@
 </div>
 <p>这是因为我们希望能够直接找出是哪个目录包含了最多空间占用的文件，而不是一个目录包含了所有子目录的空间统计。这样会非常方便真正找到可以清理空间的最大占用目录。</p>
 <section id="id3">
-<h3>排除(不包括)指定目录<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h3>
+<h3>排除(不包括)指定目录<a class="headerlink" href="#id3" title="Link to this heading"></a></h3>
 <p>此外，如果在根目录上执行上述命令，往往会把多个磁盘挂载都统计在内。而有时候我们已经知道某些磁盘挂载目录不必统计，该如何剔除呢？</p>
 <p><code class="docutils literal notranslate"><span class="pre">du</span></code> 提供了一个 <code class="docutils literal notranslate"><span class="pre">--exclude=</span></code> 参数，并且可以多次使用，可以将多个挂载目录排除在统计范围之外，举例:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">du</span> <span class="o">-</span><span class="n">Sh</span> <span class="o">--</span><span class="n">exclude</span><span class="o">=./</span><span class="n">var</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">docker</span> <span class="o">|</span> <span class="n">sort</span> <span class="o">-</span><span class="n">rh</span> <span class="o">|</span> <span class="n">head</span> <span class="o">-</span><span class="mi">5</span>
@@ -217,7 +227,7 @@
 <p>这里 <code class="docutils literal notranslate"><span class="pre">/var/lib/docker</span></code> 是我单独挂载的 <a class="reference internal" href="../../linux/storage/btrfs/index.html#btrfs"><span class="std std-ref">Btrfs</span></a> 磁盘目录，无需统计。另外需要注意，一定要在在前面加一个 <code class="docutils literal notranslate"><span class="pre">.</span></code> 表示当前目录(这点虽然有点奇怪)，即使用 <code class="docutils literal notranslate"><span class="pre">--exclude=./var/lib/docker</span></code> 而不是 <code class="docutils literal notranslate"><span class="pre">--exclude=/var/lib/docker</span></code> ，否则还会统计进去。</p>
 </section>
 <section id="id4">
-<h3>只检查当前文件系统<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h3>
+<h3>只检查当前文件系统<a class="headerlink" href="#id4" title="Link to this heading"></a></h3>
 <p>在Linux系统中，能够挂载多个文件系统(磁盘分区)到各个挂载点( <code class="docutils literal notranslate"><span class="pre">mount</span></code> )，这就带来一个问题，如果在 <code class="docutils literal notranslate"><span class="pre">/</span></code> 根目录下执行 <code class="docutils literal notranslate"><span class="pre">du</span> <span class="pre">-Sh</span></code> 会将整个系统所有挂载目录(文件系统)全部扫描一遍。对于生产环境的海量文件系统，几乎是 <a class="reference external" href="https://movie.douban.com/subject/1292484/">不可能完成的任务</a> 。</p>
 <p>当然，我们可以使用上面所说的 <code class="docutils literal notranslate"><span class="pre">--exclude</span></code> 参数来一一指定排除的目录，但是一来繁琐，二来很多情况下就是一个简单的统计根磁盘空间使用，不包含其他数据存储磁盘。这时，有一个非常有用的参数:</p>
 <ul class="simple">
@@ -225,14 +235,14 @@
 </ul>
 <p>上述检查磁盘消耗目录的命令可以改进为:</p>
 <div class="literal-block-wrapper docutils container" id="id10">
-<div class="code-block-caption"><span class="caption-text">只统计当前目录挂载磁盘的使用空间(不跨物理磁盘)</span><a class="headerlink" href="#id10" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">只统计当前目录挂载磁盘的使用空间(不跨物理磁盘)</span><a class="headerlink" href="#id10" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>du<span class="w"> </span>-Shx<span class="w"> </span><span class="p">|</span><span class="w"> </span>sort<span class="w"> </span>-rh<span class="w"> </span><span class="p">|</span><span class="w"> </span>head<span class="w"> </span>-10
 </pre></div>
 </div>
 </div>
 <p>通过这个方式，检查生产环境的一个案例，就可以发现非常奇怪的磁盘消耗:</p>
 <div class="literal-block-wrapper docutils container" id="id11">
-<div class="code-block-caption"><span class="caption-text">只统计当前/目录挂载磁盘的使用空间，发现异常的空间消耗</span><a class="headerlink" href="#id11" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">只统计当前/目录挂载磁盘的使用空间，发现异常的空间消耗</span><a class="headerlink" href="#id11" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="hll">14G<span class="w">	</span>./mnt
 </span><span class="hll">14G<span class="w">	</span>./home/t4/sigma-slave/logs
 </span><span class="m">8</span>.3G<span class="w">	</span>./usr/local/cuda-11.4/targets/x86_64-linux/lib
@@ -249,7 +259,7 @@
 </section>
 </section>
 <section id="id6">
-<h2>删除文件不释放空间<a class="headerlink" href="#id6" title="Link to this heading">¶</a></h2>
+<h2>删除文件不释放空间<a class="headerlink" href="#id6" title="Link to this heading"></a></h2>
 <p>在线上环境，我们经常会发现有些(大)文件被删除后却没有释放空间: 这通产是因为运行的进程打开文件进行读写，但是文件被强行删除，此时文件句柄没有释放，则对操作系统来说删除的文件占用空间不会释放。</p>
 <ul>
 <li><p>首先我们要找出这些被强行杀出但是没有释放空间的文件，以及对应的还没有释放句柄的进程:</p>
@@ -299,13 +309,13 @@
 <p>此时，虽然文件句柄还不释放，但是已经把该文件句柄对应文件系统空间完全清零了，也就是释放出了空间</p>
 </section>
 <section id="id7">
-<h2>参考<a class="headerlink" href="#id7" title="Link to this heading">¶</a></h2>
+<h2>参考<a class="headerlink" href="#id7" title="Link to this heading"></a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="https://unix.stackexchange.com/questions/125429/tracking-down-where-disk-space-has-gone-on-linux">Tracking down where disk space has gone on Linux?</a></p></li>
 <li><p><a class="reference external" href="https://access.redhat.com/solutions/2316">Why is space not being freed from disk after deleting a file in Red Hat Enterprise Linux?</a></p></li>
-<li><p><a class="reference external" href="https://unix.stackexchange.com/questions/23692/using-exclude-with-the-du-command">Using –exclude with the du command</a></p></li>
+<li><p><a class="reference external" href="https://unix.stackexchange.com/questions/23692/using-exclude-with-the-du-command">Using --exclude with the du command</a></p></li>
 <li><p><a class="reference external" href="https://unix.stackexchange.com/questions/646039/showing-disk-usage-only-for-the-top-level-partition">Showing Disk Usage Only for the Top Level Partition</a></p></li>
-<li><p><a class="reference external" href="https://www.redhat.com/sysadmin/sort-du-output">Make du’s output more useful with this neat trick</a></p></li>
+<li><p><a class="reference external" href="https://www.redhat.com/sysadmin/sort-du-output">Make du's output more useful with this neat trick</a></p></li>
 </ul>
 </section>
 </section>
@@ -313,25 +323,37 @@
 
            </div>
           </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="date_caculate.html" class="btn btn-neutral float-left" title="date计算时间差" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="bash_multi_variable_assigment.html" class="btn btn-neutral float-right" title="在bash中多变量赋值" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="date_caculate.html" class="btn btn-neutral float-left" title="date计算时间差" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="bash_multi_variable_assigment.html" class="btn btn-neutral float-right" title="在bash中多变量赋值" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../copyright.html">Copyright</a> 2018 - now, Huatai Huang.</p>
+    <p>&#169; <a href="../../copyright.html">版权所有</a> 2018 - now, Huatai Huang。</p>
   </div>
 
-  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
   
     <!-- your html code here -->
     <br>
-    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡</a></p>
-     
+    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡 👈</a></p>
+    <br>
+    <p>网站采用 <a href="https://utteranc.es/">utterances</a> 评论系统，所有评论存储在<a href="https://github.com/huataihuang/cloud-atlas/issues">GitHub issues</a> 中，如果你看不到下方的评论框，那么可能需要<a href="https://cloud-atlas.readthedocs.io/zh-cn/latest/linux/security/vpn/index.html">自备梯子</a> 👈</p>
+    <div class="articleComments">
+        <comments>
+  <script src="https://utteranc.es/client.js"
+    repo="huataihuang/cloud-atlas"
+    issue-term="pathname"
+    theme="github-light"
+    crossorigin="anonymous"
+    async>
+  </script>
+</comments>
+    </div>
 
 
 </footer>

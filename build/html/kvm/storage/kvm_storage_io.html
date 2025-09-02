@@ -1,21 +1,25 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh" data-content_root="../../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>KVM存储I/O &mdash; Cloud Atlas 0.1 文档</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+  <title>KVM存储I/O &mdash; Cloud Atlas: Discovery beta 文档</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=fd3f3429" />
+
+  
+    <link rel="shortcut icon" href="../../_static/favicon.png"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="../../_static/documentation_options.js?v=7c91f8fd"></script>
-        <script src="../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=8534f863"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
         <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
-        <script src="../../_static/translations.js?v=beaddf03"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../../genindex.html" />
     <link rel="search" title="搜索" href="../../search.html" />
@@ -33,26 +37,29 @@
           
           
           <a href="../../index.html" class="icon icon-home">
-            Cloud Atlas
+            Cloud Atlas: Discovery
           </a>
+              <div class="version">
+                1.1
+              </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../studio/index.html">Studio Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../infrastructure/index.html">Infrastructure Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../devops/index.html">DevOps Atlas</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../index.html">KVM Atlas</a><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../studio/index.html">Studio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../infrastructure/index.html">Infrastructure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../devops/index.html">DevOps</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">KVM</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../install/index.html">KVM 环境安装</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../startup/index.html">KVM 快速起步</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../hypervisor.html">hypervisor</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../kvm_architecture.html">KVM虚拟化</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../qemu_vs_kvm.html">QEMU v. KVM</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="index.html">KVM 存储</a><ul class="current">
 <li class="toctree-l3 current"><a class="current reference internal" href="#">KVM存储I/O</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#i-o-scheduler">I/O Scheduler</a></li>
@@ -86,60 +93,58 @@
 <li class="toctree-l2"><a class="reference internal" href="../gpu_passthrough_with_kvm.html">KVM的GPU直通虚拟化</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../nvidia_cuda_gpu_in_kvm.html">在KVM中使用NVIDIA CUDA GPU</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../amd_rocm_gpu_in_kvm.html">在KVM中使用AMD ROCm GPU</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../macos_xhyve/index.html">macOS平台KVM虚拟化技术xhyve</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../amd_kvm/index.html">AMD硬件环境KVM虚拟化</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../arm_kvm/index.html">ARM硬件环境KVM虚拟化</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../kvm_macos/index.html">KVM虚拟化运行macOS</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../utm/index.html">macOS平台QEMU实现:UTM</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../debug/index.html">KVM故障排查</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../ceph/index.html">Ceph Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../gluster/index.html">Gluster Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../ovirt/index.html">oVirt Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../openstack/index.html">OpenStack Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../docker/index.html">Docker Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kubernetes/index.html">Kubernetes Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kubernetes_from_scratch/index.html">Kubernetes From Scratch (KFS) Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../rancher/index.html">Rancher Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../openshift/index.html">OpenShift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../sql/index.html">SQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../sqlite/index.html">SQLite Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../mysql/index.html">MySQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../pgsql/index.html">PostgreSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../clickhouse/index.html">ClickHouse Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../nosql/index.html">NoSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../redis/index.html">Redis Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../network/index.html">Network Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../infra_service/index.html">Infra-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../infra_search/index.html">Search Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../info_service/index.html">Info-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../web/index.html">Web Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../big_data/index.html">Big Data Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../machine_learning/index.html">Machine Learning Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../linux/index.html">Linux Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kernel/index.html">Kernel Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../performance/index.html">Performance Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../distributed_system/index.html">Distributed System Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../shell/index.html">Shell Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../python/index.html">Python Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../django/index.html">Django Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../flask/index.html">Flask Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../javascript/index.html">JavaScript Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../nodejs/index.html">Node.js Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../clang/index.html">C Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../golang/index.html">Go Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../swift/index.html">Swift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../rust/index.html">Rust Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../ruby/index.html">Ruby Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../arm/index.html">ARM Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../android/index.html">Android Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../bsd/index.html">BSD Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../apple/index.html">Apple Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../windows/index.html">Windows Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../real/index.html">Real Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../management/index.html">Management Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../life/index.html">Life Atlas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ceph/index.html">Ceph</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../gluster/index.html">Gluster</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ovirt/index.html">oVirt</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../openstack/index.html">OpenStack</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../docker/index.html">Docker</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kubernetes/index.html">Kubernetes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../k8s_dev/index.html">Kubernetes Develop</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../rancher/index.html">Rancher</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../openshift/index.html">OpenShift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../sql/index.html">SQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../sqlite/index.html">SQLite</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../mysql/index.html">MySQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../pgsql/index.html">PostgreSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../nosql/index.html">NoSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../network/index.html">Network</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../infra_service/index.html">Infra-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../infra_search/index.html">Infra-Search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../web/index.html">Web</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../info_service/index.html">Info-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../big_data/index.html">Big Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../machine_learning/index.html">Machine Learning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../drone/index.html">Drone</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../linux/index.html">Linux</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kernel/index.html">Kernel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../performance/index.html">Performance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../distributed_system/index.html">Distributed System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../shell/index.html">Shell</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../python/index.html">Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../django/index.html">Django</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../javascript/index.html">JavaScript</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../nodejs/index.html">Node.js</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../clang/index.html">C</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../golang/index.html">Go</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../swift/index.html">Swift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../rust/index.html">Rust</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ruby/index.html">Ruby</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lua/index.html">Lua</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../arm/index.html">ARM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../raspberry_pi/index.html">Raspberry Pi</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../android/index.html">Android</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../bsd/index.html">BSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../freebsd/index.html">FreeBSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../apple/index.html">Apple</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../windows/index.html">Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../real/index.html">Real</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../management/index.html">Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../life/index.html">Life</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../copyright.html">Copyright</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../aboutme.html">关于作者</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../donate.html">捐赠</a></li>
@@ -152,21 +157,21 @@
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../index.html">Cloud Atlas</a>
+          <a href="../../index.html">Cloud Atlas: Discovery</a>
       </nav>
 
       <div class="wy-nav-content">
         <div class="rst-content">
-          <div role="navigation" aria-label="Page navigation">
+          <div role="navigation" aria-label="页面导航">
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
-          <li class="breadcrumb-item"><a href="../index.html">KVM Atlas</a></li>
+          <li class="breadcrumb-item"><a href="../index.html">KVM</a></li>
           <li class="breadcrumb-item"><a href="index.html">KVM 存储</a></li>
       <li class="breadcrumb-item active">KVM存储I/O</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../../_sources/kvm/storage/kvm_storage_io.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../_sources/kvm/storage/kvm_storage_io.rst.txt" rel="nofollow"> 查看页面源码</a>
       </li>
   </ul>
   <hr/>
@@ -175,9 +180,9 @@
            <div itemprop="articleBody">
              
   <section id="kvmi-o">
-<span id="kvm-storage-io"></span><h1>KVM存储I/O<a class="headerlink" href="#kvmi-o" title="Link to this heading">¶</a></h1>
+<span id="kvm-storage-io"></span><h1>KVM存储I/O<a class="headerlink" href="#kvmi-o" title="Link to this heading"></a></h1>
 <section id="i-o-scheduler">
-<h2>I/O Scheduler<a class="headerlink" href="#i-o-scheduler" title="Link to this heading">¶</a></h2>
+<h2>I/O Scheduler<a class="headerlink" href="#i-o-scheduler" title="Link to this heading"></a></h2>
 <p>默认HDD的磁盘I/O调度是完全公平队列(CFQ)，这种调度提供了对所有进程完全公平对磁盘I/O带宽。不过，在虚拟化环境中，需要针对不同设备使用不同I/O调度。</p>
 <p>为了能够获得host主机和VM虚拟机的最佳性能，在虚拟化的物理主机上建议使用 <code class="docutils literal notranslate"><span class="pre">deadline</span></code> scheduler(针对SSD优化)，而在VM Guest虚拟机中则使用 <code class="docutils literal notranslate"><span class="pre">noop</span></code> scheduler(禁用I/O调度)。</p>
 <ul>
@@ -209,7 +214,7 @@
 </div>
 </section>
 <section id="i-o">
-<h2>异步I/O<a class="headerlink" href="#i-o" title="Link to this heading">¶</a></h2>
+<h2>异步I/O<a class="headerlink" href="#i-o" title="Link to this heading"></a></h2>
 <p>很多虚拟磁盘后端的实现采用了Linux异步I/O (Asynchronous I/O, aio)。默认情况下，aio上下文的最大数量是 <code class="docutils literal notranslate"><span class="pre">65536</span></code> ，但主机上运行了上百使用Linux异步I/O的VM虚拟机时候，有可能会超出这个限制。所以，当在VM Host主机上运行大量VM Guests时，需要增加 <code class="docutils literal notranslate"><span class="pre">/proc/sys/fs/aio-max-nr</span></code></p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cat</span> <span class="o">/</span><span class="n">proc</span><span class="o">/</span><span class="n">sys</span><span class="o">/</span><span class="n">fs</span><span class="o">/</span><span class="n">aio</span><span class="o">-</span><span class="nb">max</span><span class="o">-</span><span class="n">nr</span>
 </pre></div>
@@ -232,14 +237,14 @@
 </ul>
 </section>
 <section id="id1">
-<h2>I/O虚拟化<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h2>
+<h2>I/O虚拟化<a class="headerlink" href="#id1" title="Link to this heading"></a></h2>
 <p>I/O虚拟化有不同的技术，各自具有利弊</p>
 <table class="docutils align-default" id="id7">
-<caption><span class="caption-text">I/O虚拟化解决方案</span><a class="headerlink" href="#id7" title="Link to this table">¶</a></caption>
+<caption><span class="caption-text">I/O虚拟化解决方案</span><a class="headerlink" href="#id7" title="Link to this table"></a></caption>
 <colgroup>
-<col style="width: 30%" />
-<col style="width: 30%" />
-<col style="width: 40%" />
+<col style="width: 30.0%" />
+<col style="width: 30.0%" />
+<col style="width: 40.0%" />
 </colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>技术</p></th>
@@ -294,12 +299,12 @@
 <li><p>系统提供了VFIO架构，也即是内核加载了模块 <code class="docutils literal notranslate"><span class="pre">vfio_pci</span></code></p></li>
 </ul>
 <section id="pass-through-nvme">
-<h3>pass-through NVMe存储<a class="headerlink" href="#pass-through-nvme" title="Link to this heading">¶</a></h3>
+<h3>pass-through NVMe存储<a class="headerlink" href="#pass-through-nvme" title="Link to this heading"></a></h3>
 <p>NVMe可以通过PCIe直接分配给虚拟机使用，可以实现最大化的存储性能。这种方式绕过了物理主机上的操作系统控制，并且直接通过PCIe总线访问存储，是虚拟化存储中性能最高的技术。</p>
 <p>通过 <a class="reference internal" href="../iommu/ovmf.html#ovmf"><span class="std std-ref">Open Virtual Machine Firmware(OMVF)</span></a> 可以实现PCI设备直通给虚拟机，获得最好的I/O性能</p>
 </section>
 <section id="pass-through-sata">
-<h3>pass-through SATA控制器<a class="headerlink" href="#pass-through-sata" title="Link to this heading">¶</a></h3>
+<h3>pass-through SATA控制器<a class="headerlink" href="#pass-through-sata" title="Link to this heading"></a></h3>
 <p>SATA控制器是位于PCI总线，所以可以将SATA控制器直接passthrough给虚拟机，这样就几乎没有延迟或超载，提供了最高的带宽。这个方案的缺点是整个SATA控制器都被VM控制，所以这个SATA控制器无法在Host主机使用，也就是说你必须有2个SATA控制器，一个给Host主机使用，一个给VM虚拟机使用。由于主机上的SATA控制器数量有限(通常就2个)，扩展管理非常麻烦(Guest虚拟机使用这个SATA控制器时候，物理主机不能使用这个SATA控制器上的所有磁盘)。</p>
 <div class="admonition note">
 <p class="admonition-title">备注</p>
@@ -307,7 +312,7 @@
 </div>
 </section>
 <section id="pass-through">
-<h3>pass-through 分区或磁盘<a class="headerlink" href="#pass-through" title="Link to this heading">¶</a></h3>
+<h3>pass-through 分区或磁盘<a class="headerlink" href="#pass-through" title="Link to this heading"></a></h3>
 <p>参考 <a class="reference external" href="https://www.reddit.com/r/VFIO/comments/j443ad/pass_through_a_partition/">Pass through a partition?</a></p>
 <ul class="simple">
 <li><p>可以将一个磁盘分区pass through给虚拟机，但是需要注意分区在虚拟机内部会视为一个完整磁盘，所以虚拟机在这个分区中创建完整的GPT分区表，从外部看来这是一个嵌套的(nested)分区</p></li>
@@ -319,7 +324,7 @@
 </section>
 </section>
 <section id="id2">
-<h2>基于磁盘的虚拟化存储<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
+<h2>基于磁盘的虚拟化存储<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
 <p><a class="reference external" href="https://www.heiko-sieger.info/tuning-vm-disk-performance/">Tuning VM Disk Performance</a> 的 <code class="docutils literal notranslate"><span class="pre">Disk-based</span> <span class="pre">storage</span></code> 方案和我设想相近:</p>
 <ul class="simple">
 <li><p>使用LVM逻辑卷来构建 <code class="docutils literal notranslate"><span class="pre">raw</span></code> 磁盘，直接分配给虚拟机使用(虽然也能直接用分区，但是分区只能固定数量，很难调节，而LVM卷可以在底层伸缩)</p></li>
@@ -329,8 +334,8 @@
 <p>实际上Red Hat虚拟化文档就提供了这个解决方法 <a class="reference external" href="https://access.redhat.com/documentation/zh-cn/red_hat_enterprise_linux/8/html/configuring_and_managing_logical_volumes/assembly_thinly-provisioned-logical-volumes_configuring-and-managing-logical-volumes">第 12 章 创建和管理精简配置的逻辑卷（精简卷）</a></p>
 </section>
 <section id="qemuio">
-<h2>QEMU磁盘IO的比较<a class="headerlink" href="#qemuio" title="Link to this heading">¶</a></h2>
-<p>Libvirt对于磁盘设备的AIO有异步(Asynchronous IO, AIO=Native)和同步(Synchronous, AIO=Threads)两种模式，在 <a class="reference internal" href="../../openstack/index.html#openstack"><span class="std std-ref">OpenStack Atlas</span></a> 默认使用 <code class="docutils literal notranslate"><span class="pre">aio=theads</span></code></p>
+<h2>QEMU磁盘IO的比较<a class="headerlink" href="#qemuio" title="Link to this heading"></a></h2>
+<p>Libvirt对于磁盘设备的AIO有异步(Asynchronous IO, AIO=Native)和同步(Synchronous, AIO=Threads)两种模式，在 <a class="reference internal" href="../../openstack/index.html#openstack"><span class="std std-ref">OpenStack</span></a> 默认使用 <code class="docutils literal notranslate"><span class="pre">aio=theads</span></code></p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">disk</span> <span class="nb">type</span><span class="o">=</span><span class="s1">&#39;file&#39;</span> <span class="n">device</span><span class="o">=</span><span class="s1">&#39;disk&#39;</span><span class="o">&gt;</span>
   <span class="o">&lt;</span><span class="n">driver</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;qemu&#39;</span> <span class="n">typ</span><span class="s1">&#39;qcow2&#39;</span> <span class="n">cache</span><span class="o">=</span><span class="s1">&#39;none&#39;</span> <span class="n">io</span><span class="o">=</span><span class="s1">&#39;native&#39;</span><span class="o">/&gt;</span>
   <span class="o">&lt;</span><span class="n">source</span> <span class="n">file</span><span class="o">=</span><span class="s1">&#39;/home/psurise/xfs/vm2-native-ssd.qcow2&#39;</span><span class="o">/&gt;</span>
@@ -405,7 +410,7 @@
 </div>
 </section>
 <section id="id4">
-<h2>小结<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h2>
+<h2>小结<a class="headerlink" href="#id4" title="Link to this heading"></a></h2>
 <ul class="simple">
 <li><p>通过pass-through（VFIO)方式获得最高性能(接近于物理主机): 对于存储、网络、GPU，使用VFIO都是性能最优方法</p></li>
 <li><p>如果设备(GPU或网卡)支持 <a class="reference internal" href="../iommu/sr-iov/index.html#sr-iov"><span class="std std-ref">Sigle Root I/O Virtualization(SR-IOV)</span></a> 则可以结合 VFIO 实现将 VF 设备pass-through给虚拟机，不仅实现高性能I/O，同时也实现一个物理设备按需切分分配给不同虚拟机，最大化使用率</p></li>
@@ -420,8 +425,8 @@
 <li><p>虚拟机采用 <code class="docutils literal notranslate"><span class="pre">XFS</span></code> 文件系统，参数设置 <code class="docutils literal notranslate"><span class="pre">noop</span></code> (或者 <code class="docutils literal notranslate"><span class="pre">deadline</span></code> 需要性能压测)</p></li>
 </ul>
 </li>
-<li><p>独立的两块机械硬盘 <code class="docutils literal notranslate"><span class="pre">/dev/sdb</span></code> 和 <code class="docutils literal notranslate"><span class="pre">/dev/sdc</span></code> 通过 <code class="docutils literal notranslate"><span class="pre">virtio-blk</span></code> 直接输出给虚拟机使用，构建 <a class="reference internal" href="../../gluster/index.html#gluster"><span class="std std-ref">Gluster Atlas</span></a></p></li>
-<li><p>购买NVMe扩展卡并使用 <a class="reference internal" href="../../linux/server/hardware/hpe/pcie_bifurcation.html#pcie-bifurcation"><span class="std std-ref">PCIe bifurcation</span></a> 将 PCIe 3.0 X16 切分成 X4X4X4X4 ，分别安装4个NVMe m.2存储设备，其中1个提供物理主机的libvirt作为虚拟机存储池，另外3个通过 VFIO 直接 pass-through 给3个虚拟机，构建 <a class="reference internal" href="../../ceph/index.html#ceph"><span class="std std-ref">Ceph Atlas</span></a></p></li>
+<li><p>独立的两块机械硬盘 <code class="docutils literal notranslate"><span class="pre">/dev/sdb</span></code> 和 <code class="docutils literal notranslate"><span class="pre">/dev/sdc</span></code> 通过 <code class="docutils literal notranslate"><span class="pre">virtio-blk</span></code> 直接输出给虚拟机使用，构建 <a class="reference internal" href="../../gluster/index.html#gluster"><span class="std std-ref">Gluster</span></a></p></li>
+<li><p>购买NVMe扩展卡并使用 <a class="reference internal" href="../../linux/server/hardware/hpe/pcie_bifurcation.html#pcie-bifurcation"><span class="std std-ref">PCIe bifurcation</span></a> 将 PCIe 3.0 X16 切分成 X4X4X4X4 ，分别安装4个NVMe m.2存储设备，其中1个提供物理主机的libvirt作为虚拟机存储池，另外3个通过 VFIO 直接 pass-through 给3个虚拟机，构建 <a class="reference internal" href="../../ceph/index.html#ceph"><span class="std std-ref">Ceph</span></a></p></li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">备注</p>
@@ -429,7 +434,7 @@
 </div>
 </section>
 <section id="id5">
-<h2>参考<a class="headerlink" href="#id5" title="Link to this heading">¶</a></h2>
+<h2>参考<a class="headerlink" href="#id5" title="Link to this heading"></a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="https://documentation.suse.com/sles/15-SP1/pdf/article-vt-best-practices_color_en.pdf">SUSE Linux Enterprise Server 15 SP1 Virtualization Best Practices</a></p></li>
 <li><p><a class="reference external" href="https://documentation.suse.com/sles/15-SP1/html/SLES-all/book-virt.html">SUSE Linux Enterprise Server 15 SP1 Virtualization Guide</a></p></li>
@@ -442,25 +447,37 @@
 
            </div>
           </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="index.html" class="btn btn-neutral float-left" title="KVM 存储" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="vm_nfs_vs_iscsi.html" class="btn btn-neutral float-right" title="虚拟机存储方案: NFS vs. iSCSI" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="index.html" class="btn btn-neutral float-left" title="KVM 存储" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="vm_nfs_vs_iscsi.html" class="btn btn-neutral float-right" title="虚拟机存储方案: NFS vs. iSCSI" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../copyright.html">Copyright</a> 2018 - now, Huatai Huang.</p>
+    <p>&#169; <a href="../../copyright.html">版权所有</a> 2018 - now, Huatai Huang。</p>
   </div>
 
-  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
   
     <!-- your html code here -->
     <br>
-    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡</a></p>
-     
+    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡 👈</a></p>
+    <br>
+    <p>网站采用 <a href="https://utteranc.es/">utterances</a> 评论系统，所有评论存储在<a href="https://github.com/huataihuang/cloud-atlas/issues">GitHub issues</a> 中，如果你看不到下方的评论框，那么可能需要<a href="https://cloud-atlas.readthedocs.io/zh-cn/latest/linux/security/vpn/index.html">自备梯子</a> 👈</p>
+    <div class="articleComments">
+        <comments>
+  <script src="https://utteranc.es/client.js"
+    repo="huataihuang/cloud-atlas"
+    issue-term="pathname"
+    theme="github-light"
+    crossorigin="anonymous"
+    async>
+  </script>
+</comments>
+    </div>
 
 
 </footer>

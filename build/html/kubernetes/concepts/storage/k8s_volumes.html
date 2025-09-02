@@ -1,21 +1,25 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh" data-content_root="../../../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kubernetes存储卷 &mdash; Cloud Atlas 0.1 文档</title>
-      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../../_static/graphviz.css" type="text/css" />
+  <title>Kubernetes存储卷 &mdash; Cloud Atlas: Discovery beta 文档</title>
+      <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/graphviz.css?v=fd3f3429" />
+
+  
+    <link rel="shortcut icon" href="../../../_static/favicon.png"/>
   <!--[if lt IE 9]>
     <script src="../../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="../../../_static/documentation_options.js?v=7c91f8fd"></script>
-        <script src="../../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../../_static/documentation_options.js?v=8534f863"></script>
+        <script src="../../../_static/doctools.js?v=9a2dae69"></script>
         <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
-        <script src="../../../_static/translations.js?v=beaddf03"></script>
     <script src="../../../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../../../genindex.html" />
     <link rel="search" title="搜索" href="../../../search.html" />
@@ -33,28 +37,32 @@
           
           
           <a href="../../../index.html" class="icon icon-home">
-            Cloud Atlas
+            Cloud Atlas: Discovery
           </a>
+              <div class="version">
+                1.1
+              </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../../studio/index.html">Studio Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../infrastructure/index.html">Infrastructure Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../devops/index.html">DevOps Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../kvm/index.html">KVM Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../ceph/index.html">Ceph Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../gluster/index.html">Gluster Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../ovirt/index.html">oVirt Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../openstack/index.html">OpenStack Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../docker/index.html">Docker Atlas</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">Kubernetes Atlas</a><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../studio/index.html">Studio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../infrastructure/index.html">Infrastructure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../devops/index.html">DevOps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../kvm/index.html">KVM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../ceph/index.html">Ceph</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../gluster/index.html">Gluster</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../ovirt/index.html">oVirt</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../openstack/index.html">OpenStack</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../docker/index.html">Docker</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">Kubernetes</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../think_k8s.html">Kubernetes的思考</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../kubernetes_overview.html">Kubernetes概览</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../startup_prepare/index.html">Kubernetes起步准备</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../startup/index.html">Kubernetes快速起步</a></li>
@@ -109,53 +117,56 @@
 <li class="toctree-l2"><a class="reference internal" href="../../gpu/index.html">GPU Kubernetes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../kubeflow/index.html">Kubeflow - Kubernetes机器学习工作流平台</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../argo/index.html">Argo - 基于Kubernetes的持续集成和工作流</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../kueue/index.html">Kueue - K8s原生批处理调度</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../k8s_android/index.html">Kubernetes运行Android</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../k3s/index.html">K3s - 轻量级Kubernetes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../k0s/index.html">K0s - 轻量级Kubernetes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../platform/index.html">Kubernetes之上的平台</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../cloud/index.html">Kubernetes云厂商</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../develop/index.html">Kubernetes开发</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../cncf/index.html">CNCF(Cloud Native Computing Foudation)</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../../kubernetes_from_scratch/index.html">Kubernetes From Scratch (KFS) Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../rancher/index.html">Rancher Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../openshift/index.html">OpenShift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../sql/index.html">SQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../sqlite/index.html">SQLite Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../mysql/index.html">MySQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../pgsql/index.html">PostgreSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../clickhouse/index.html">ClickHouse Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../nosql/index.html">NoSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../redis/index.html">Redis Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../network/index.html">Network Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../infra_service/index.html">Infra-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../infra_search/index.html">Search Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../info_service/index.html">Info-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../web/index.html">Web Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../big_data/index.html">Big Data Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../machine_learning/index.html">Machine Learning Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../linux/index.html">Linux Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../kernel/index.html">Kernel Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../performance/index.html">Performance Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../distributed_system/index.html">Distributed System Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../shell/index.html">Shell Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../python/index.html">Python Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../django/index.html">Django Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../flask/index.html">Flask Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../javascript/index.html">JavaScript Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../nodejs/index.html">Node.js Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../clang/index.html">C Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../golang/index.html">Go Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../swift/index.html">Swift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../rust/index.html">Rust Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../ruby/index.html">Ruby Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../arm/index.html">ARM Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../android/index.html">Android Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../bsd/index.html">BSD Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../apple/index.html">Apple Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../windows/index.html">Windows Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../real/index.html">Real Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../management/index.html">Management Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../life/index.html">Life Atlas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../k8s_dev/index.html">Kubernetes Develop</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../rancher/index.html">Rancher</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../openshift/index.html">OpenShift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../sql/index.html">SQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../sqlite/index.html">SQLite</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../mysql/index.html">MySQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../pgsql/index.html">PostgreSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../nosql/index.html">NoSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../network/index.html">Network</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../infra_service/index.html">Infra-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../infra_search/index.html">Infra-Search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../web/index.html">Web</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../info_service/index.html">Info-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../big_data/index.html">Big Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../machine_learning/index.html">Machine Learning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../drone/index.html">Drone</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../linux/index.html">Linux</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../kernel/index.html">Kernel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../performance/index.html">Performance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../distributed_system/index.html">Distributed System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../shell/index.html">Shell</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../python/index.html">Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../django/index.html">Django</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../javascript/index.html">JavaScript</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../nodejs/index.html">Node.js</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../clang/index.html">C</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../golang/index.html">Go</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../swift/index.html">Swift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../rust/index.html">Rust</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../ruby/index.html">Ruby</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../lua/index.html">Lua</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../arm/index.html">ARM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../raspberry_pi/index.html">Raspberry Pi</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../android/index.html">Android</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../bsd/index.html">BSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../freebsd/index.html">FreeBSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../apple/index.html">Apple</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../windows/index.html">Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../real/index.html">Real</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../management/index.html">Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../life/index.html">Life</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../copyright.html">Copyright</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../aboutme.html">关于作者</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../donate.html">捐赠</a></li>
@@ -168,22 +179,22 @@
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../../index.html">Cloud Atlas</a>
+          <a href="../../../index.html">Cloud Atlas: Discovery</a>
       </nav>
 
       <div class="wy-nav-content">
         <div class="rst-content">
-          <div role="navigation" aria-label="Page navigation">
+          <div role="navigation" aria-label="页面导航">
   <ul class="wy-breadcrumbs">
       <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
-          <li class="breadcrumb-item"><a href="../../index.html">Kubernetes Atlas</a></li>
+          <li class="breadcrumb-item"><a href="../../index.html">Kubernetes</a></li>
           <li class="breadcrumb-item"><a href="../index.html">Kubernetes概念辨析</a></li>
           <li class="breadcrumb-item"><a href="index.html">Kubernetes存储概念</a></li>
       <li class="breadcrumb-item active">Kubernetes存储卷</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../../../_sources/kubernetes/concepts/storage/k8s_volumes.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../../_sources/kubernetes/concepts/storage/k8s_volumes.rst.txt" rel="nofollow"> 查看页面源码</a>
       </li>
   </ul>
   <hr/>
@@ -192,7 +203,7 @@
            <div itemprop="articleBody">
              
   <section id="kubernetes">
-<span id="k8s-volumes"></span><h1>Kubernetes存储卷<a class="headerlink" href="#kubernetes" title="Link to this heading">¶</a></h1>
+<span id="k8s-volumes"></span><h1>Kubernetes存储卷<a class="headerlink" href="#kubernetes" title="Link to this heading"></a></h1>
 <p>在容器环境中，容器内部的数据层( 见 <a class="reference internal" href="../../../docker/storage/docker_storage_driver.html#docker-storage-driver"><span class="std std-ref">Docker存储驱动</span></a> )存在以下限制(缺点):</p>
 <ul class="simple">
 <li><p>通过存储驱动写入的数据(层)读写性能低下</p></li>
@@ -204,7 +215,7 @@
 <li><p>Kubernetes卷有一个明确的lifetime概念</p></li>
 <li><p>Kubernetes卷是在Pod中所有容器所共享的，并且容器重启不影响卷上的数据</p></li>
 <li><p>卷的存在时间会超出 Pod 中运行的所有容器，并且在容器重新启动时数据也会得到保留</p></li>
-<li><p><strong>当Pod停止存在，则卷也停止存在</strong> (卷和持久卷的差异点:卷和Pod共存亡，持久化卷则与”天地同寿”(玩笑))</p></li>
+<li><p><strong>当Pod停止存在，则卷也停止存在</strong> (卷和持久卷的差异点:卷和Pod共存亡，持久化卷则与&quot;天地同寿&quot;(玩笑))</p></li>
 <li><p>临时卷类型的生命周期与 Pod 相同，但持久卷可以比 Pod 的存活期长</p></li>
 <li><p>Pod 可以同时使用任意数目的卷类型</p></li>
 </ul>
@@ -217,29 +228,29 @@
 <li><p>每个Pod中容器必须和挂载的任何一个卷都没有依赖关系</p></li>
 </ul>
 <section id="id1">
-<h2>Kubernetes卷类型<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h2>
+<h2>Kubernetes卷类型<a class="headerlink" href="#id1" title="Link to this heading"></a></h2>
 <div class="admonition note">
 <p class="admonition-title">备注</p>
 <p>我只摘录和实践我在学习和生产中所使用的Kubernetes卷，所以本文不会包含所有Kubernetes支持的卷类型。详细信息请参考官方原文 <a class="reference external" href="https://kubernetes.io/docs/concepts/storage/volumes/#types-of-volumes">Kubernetes Types of Volumes</a></p>
 </div>
 <section id="cephfs">
-<h3>cephfs<a class="headerlink" href="#cephfs" title="Link to this heading">¶</a></h3>
+<h3>cephfs<a class="headerlink" href="#cephfs" title="Link to this heading"></a></h3>
 <p><code class="docutils literal notranslate"><span class="pre">cephfs</span></code> 卷是现有的CephFS卷挂载到Pod中。和 <code class="docutils literal notranslate"><span class="pre">emptyDir</span></code> 不同， <code class="docutils literal notranslate"><span class="pre">emptyDir</span></code> 在Pod销毁的时候消失，而 <code class="docutils literal notranslate"><span class="pre">cephfs</span></code> 卷则始终存在，只是卸载了卷。这意味着CephFS可以预先填充数据，并且这些数据可以在不同的Pods之间共享。CephFS可以挂载成被多个写入器并发写入。</p>
 <div class="admonition note">
 <p class="admonition-title">备注</p>
-<p>这里cephfs可以并发写入我还不理解原理，有待实践…</p>
+<p>这里cephfs可以并发写入我还不理解原理，有待实践...</p>
 <p>官方有一个 <a class="reference external" href="https://github.com/kubernetes/examples/tree/master/volumes/cephfs/">CephFS example</a></p>
 </div>
 </section>
 <section id="cinder">
-<h3>cinder<a class="headerlink" href="#cinder" title="Link to this heading">¶</a></h3>
+<h3>cinder<a class="headerlink" href="#cinder" title="Link to this heading"></a></h3>
 <div class="admonition note">
 <p class="admonition-title">备注</p>
-<p>cinder 是 <a class="reference internal" href="../../../openstack/index.html#openstack"><span class="std std-ref">OpenStack Atlas</span></a> 的对象存储，对于Kubernetes需要基于 OpenStack Cloud Provider配置，请参考 <a class="reference internal" href="../cluster_administration/cloud_providers.html#cloud-providers"><span class="std std-ref">Kubernetes底层云服务</span></a> 中OpenStack部分。</p>
+<p>cinder 是 <a class="reference internal" href="../../../openstack/index.html#openstack"><span class="std std-ref">OpenStack</span></a> 的对象存储，对于Kubernetes需要基于 OpenStack Cloud Provider配置，请参考 <a class="reference internal" href="../cluster_administration/cloud_providers.html#cloud-providers"><span class="std std-ref">Kubernetes底层云服务</span></a> 中OpenStack部分。</p>
 </div>
 </section>
 <section id="configmap">
-<h3>configMap卷<a class="headerlink" href="#configmap" title="Link to this heading">¶</a></h3>
+<h3>configMap卷<a class="headerlink" href="#configmap" title="Link to this heading"></a></h3>
 <p><code class="docutils literal notranslate"><span class="pre">configMap</span></code> 资源提供了一种将配置数据插入Pod的方法。存储在一个 <code class="docutils literal notranslate"><span class="pre">ConfigMap</span></code> 对象中的数据可以被引用为类型 <code class="docutils literal notranslate"><span class="pre">configMap</span></code> 的卷，然后被容器化应用在Pod中使用。</p>
 <p>当引用一个 <code class="docutils literal notranslate"><span class="pre">configMap</span></code> 对象，你可以简单提供在卷中的它的名字来引用。可以可以定制自定义路径来用于ConfigMap中特定入口。例如，要挂载 <code class="docutils literal notranslate"><span class="pre">log-config</span></code> ConfigMap 到名为 <code class="docutils literal notranslate"><span class="pre">configmap-pod</span></code> 的Pod，可以配置YAML如下:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">apiVersion</span><span class="p">:</span> <span class="n">v1</span>
@@ -270,7 +281,7 @@
 </div>
 </section>
 <section id="hostpath">
-<span id="k8s-hostpath-volumes"></span><h3>hostPath<a class="headerlink" href="#hostpath" title="Link to this heading">¶</a></h3>
+<span id="k8s-hostpath-volumes"></span><h3>hostPath<a class="headerlink" href="#hostpath" title="Link to this heading"></a></h3>
 <p><code class="docutils literal notranslate"><span class="pre">hostPath</span></code> 卷用于将主机节点文件系统上的文件或目录挂载到Pod中。使用 <code class="docutils literal notranslate"><span class="pre">hostPath</span></code> 的局限性在于：如果你要保证调度的pod不错乱(例如访问到不同节点的相同命名的hostPath卷)，你需要在 PodTemplate 中设置 <code class="docutils literal notranslate"><span class="pre">spec.nodeSelector</span></code> 来指定服务器分配pod，这样通常可以避免错乱:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">apiVersion</span><span class="p">:</span> <span class="n">apps</span><span class="o">/</span><span class="n">v1beta1</span>
 <span class="n">kind</span><span class="p">:</span> <span class="n">Deployment</span>
@@ -303,7 +314,7 @@
 <p>由于 <code class="docutils literal notranslate"><span class="pre">hostPath</span></code> 限制较多，所以通常只用于所有node节点都一致都目录映射，并且应用可以自己避免数据错乱的场景。所以，通常使用本地存储会采用 <code class="docutils literal notranslate"><span class="pre">local</span></code> 持久化卷。</p>
 </section>
 <section id="local">
-<h3>local<a class="headerlink" href="#local" title="Link to this heading">¶</a></h3>
+<h3>local<a class="headerlink" href="#local" title="Link to this heading"></a></h3>
 <p><code class="docutils literal notranslate"><span class="pre">local</span></code> 卷特点:</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">local</span></code> 卷带包某个被挂载的本地存储设备，例如磁盘、分区或目录。</p></li>
@@ -328,11 +339,46 @@
 </div>
 </section>
 </section>
+<section id="kunbernetes">
+<span id="k8s-volume-mount-propagation"></span><h2>Kunbernetes挂载卷传播(特性)<a class="headerlink" href="#kunbernetes" title="Link to this heading"></a></h2>
+<p>Kubernetes的挂载卷有一个 <code class="docutils literal notranslate"><span class="pre">mount</span> <span class="pre">propagation</span></code> (挂载传播)特性: 这个 <code class="docutils literal notranslate"><span class="pre">mount</span> <span class="pre">propagation</span></code> 指允许容器安装的卷共享到 <strong>同一个Pod</strong> 中的其他容器，甚至共享到 <strong>同一节点上的其他Pod</strong> 。</p>
+<p><code class="docutils literal notranslate"><span class="pre">mount</span> <span class="pre">propagation</span></code> 特性由 <code class="docutils literal notranslate"><span class="pre">Container.volumeMounts</span></code> 的 <code class="docutils literal notranslate"><span class="pre">mountPropagation</span></code> 字段控制:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">None</span></code> : 卷挂载将不会感知到主机后续在此卷或其任何子目录上执行的挂载变化。类似的，容器所创建的卷挂载在主机上是不可兼得。 这是 <strong>默认</strong> 模式</p>
+<ul>
+<li><p>这个选项相当于 <code class="docutils literal notranslate"><span class="pre">mount</span></code> 命令的参数 <code class="docutils literal notranslate"><span class="pre">rprivate</span></code></p></li>
+<li><p>当 <code class="docutils literal notranslate"><span class="pre">rprivate</span></code> 传播选项不适用是，CRI运行时可以转为选择 <code class="docutils literal notranslate"><span class="pre">rslave</span></code> 挂载传播选项(即 <code class="docutils literal notranslate"><span class="pre">HostToContainer</span></code> )。当挂载源包含Docker daemon的根目录( <code class="docutils literal notranslate"><span class="pre">/var/lib/docker</span></code> )时， <code class="docutils literal notranslate"><span class="pre">cri-docker</span></code> (Docker)已知可以选择 <code class="docutils literal notranslate"><span class="pre">rslave</span></code> 挂载传播选项</p></li>
+</ul>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">HostToContainer</span></code> : 卷挂载将会感知主机后续针对此卷或其任何子目录的挂载操作。</p>
+<ul>
+<li><p>也就是说，如果主机在这个挂载卷中挂载任何内容，容器内能够看到它被挂载在那里</p></li>
+<li><p>类似的，配置了 <code class="docutils literal notranslate"><span class="pre">Bidirectional</span></code> 挂载传播选项的Pod如果在同一个卷上挂载了内容，则挂载传播选项为 <code class="docutils literal notranslate"><span class="pre">HostToContainer</span></code> 的容器都能看到这个变化</p></li>
+<li><p>该模式相当于 <code class="docutils literal notranslate"><span class="pre">mount</span></code> 命令的参数 <code class="docutils literal notranslate"><span class="pre">rslave</span></code></p></li>
+</ul>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Bidirectional</span></code> : 卷挂载和 <code class="docutils literal notranslate"><span class="pre">HostToContainer</span></code> 挂载表现相同</p>
+<ul>
+<li><p>容器创建的卷挂载将被传播回至主机和使用同一卷的所有Pod的所有容器</p></li>
+<li><p>该模式相当于 <code class="docutils literal notranslate"><span class="pre">mount</span></code> 命令的参数 <code class="docutils literal notranslate"><span class="pre">rshared</span></code></p></li>
+</ul>
+</li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">警告</p>
+<p><code class="docutils literal notranslate"><span class="pre">Bidirectional</span></code> 模式的挂载传播可能比较危险:</p>
+<ul class="simple">
+<li><p><strong>它可以破坏主机操作系统</strong> ，所以只允许在特权容器 <code class="docutils literal notranslate"><span class="pre">privileged</span> <span class="pre">container</span></code> 中使用</p></li>
+<li><p>特权容器可以访问Host主机的内核，所以强烈建议你需要熟悉Linux内核特性</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Bidirectional</span></code> 模式的Pod中容器创建的任何卷挂载必须在终止时由容器销毁(卸载)</p></li>
+</ul>
+</div>
+</section>
 <section id="id2">
-<h2>参考<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
+<h2>参考<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="https://kubernetes.io/zh/docs/concepts/storage/volumes/">Kubernetes文档/概念/存储/卷</a></p></li>
-<li><p><a class="reference external" href="https://kubernetes.io/blog/2019/04/04/kubernetes-1.14-local-persistent-volumes-ga/">Kubernetes 1.14: Local Persistent Volumes GA</a> 的 “How is it different from a HostPath Volume?”</p></li>
+<li><p><a class="reference external" href="https://kubernetes.io/blog/2019/04/04/kubernetes-1.14-local-persistent-volumes-ga/">Kubernetes 1.14: Local Persistent Volumes GA</a> 的 &quot;How is it different from a HostPath Volume?&quot;</p></li>
 </ul>
 </section>
 </section>
@@ -340,25 +386,37 @@
 
            </div>
           </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="index.html" class="btn btn-neutral float-left" title="Kubernetes存储概念" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="k8s_persistent_volumes.html" class="btn btn-neutral float-right" title="Kubernetes持久化存储卷" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="index.html" class="btn btn-neutral float-left" title="Kubernetes存储概念" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="k8s_persistent_volumes.html" class="btn btn-neutral float-right" title="Kubernetes持久化存储卷" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../../copyright.html">Copyright</a> 2018 - now, Huatai Huang.</p>
+    <p>&#169; <a href="../../../copyright.html">版权所有</a> 2018 - now, Huatai Huang。</p>
   </div>
 
-  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
   
     <!-- your html code here -->
     <br>
-    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡</a></p>
-     
+    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡 👈</a></p>
+    <br>
+    <p>网站采用 <a href="https://utteranc.es/">utterances</a> 评论系统，所有评论存储在<a href="https://github.com/huataihuang/cloud-atlas/issues">GitHub issues</a> 中，如果你看不到下方的评论框，那么可能需要<a href="https://cloud-atlas.readthedocs.io/zh-cn/latest/linux/security/vpn/index.html">自备梯子</a> 👈</p>
+    <div class="articleComments">
+        <comments>
+  <script src="https://utteranc.es/client.js"
+    repo="huataihuang/cloud-atlas"
+    issue-term="pathname"
+    theme="github-light"
+    crossorigin="anonymous"
+    async>
+  </script>
+</comments>
+    </div>
 
 
 </footer>

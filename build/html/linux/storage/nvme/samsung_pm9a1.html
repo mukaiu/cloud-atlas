@@ -1,26 +1,30 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh" data-content_root="../../../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>三星PM9A1 NVMe存储 &mdash; Cloud Atlas 0.1 文档</title>
-      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../../_static/graphviz.css" type="text/css" />
+  <title>三星PM9A1 NVMe存储 &mdash; Cloud Atlas: Discovery beta 文档</title>
+      <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/graphviz.css?v=fd3f3429" />
+
+  
+    <link rel="shortcut icon" href="../../../_static/favicon.png"/>
   <!--[if lt IE 9]>
     <script src="../../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="../../../_static/documentation_options.js?v=7c91f8fd"></script>
-        <script src="../../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../../_static/documentation_options.js?v=8534f863"></script>
+        <script src="../../../_static/doctools.js?v=9a2dae69"></script>
         <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
-        <script src="../../../_static/translations.js?v=beaddf03"></script>
     <script src="../../../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../../../genindex.html" />
     <link rel="search" title="搜索" href="../../../search.html" />
     <link rel="copyright" title="版权所有" href="../../../copyright.html" />
-    <link rel="next" title="nvme-cli用户工具" href="nvme-cli.html" />
+    <link rel="next" title="三星PM9A1 通过RTL9210B NVMe转USB" href="samsung_pm9a1_rtl9210b.html" />
     <link rel="prev" title="硬盘U.2和M.2接口" href="u2_m2.html" /> 
 </head>
 
@@ -33,61 +37,69 @@
           
           
           <a href="../../../index.html" class="icon icon-home">
-            Cloud Atlas
+            Cloud Atlas: Discovery
           </a>
+              <div class="version">
+                1.1
+              </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../../studio/index.html">Studio Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../infrastructure/index.html">Infrastructure Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../devops/index.html">DevOps Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../kvm/index.html">KVM Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../ceph/index.html">Ceph Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../gluster/index.html">Gluster Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../ovirt/index.html">oVirt Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../openstack/index.html">OpenStack Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../docker/index.html">Docker Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../kubernetes/index.html">Kubernetes Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../kubernetes_from_scratch/index.html">Kubernetes From Scratch (KFS) Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../rancher/index.html">Rancher Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../openshift/index.html">OpenShift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../sql/index.html">SQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../sqlite/index.html">SQLite Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../mysql/index.html">MySQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../pgsql/index.html">PostgreSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../clickhouse/index.html">ClickHouse Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../nosql/index.html">NoSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../redis/index.html">Redis Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../network/index.html">Network Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../infra_service/index.html">Infra-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../infra_search/index.html">Search Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../info_service/index.html">Info-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../web/index.html">Web Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../big_data/index.html">Big Data Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../machine_learning/index.html">Machine Learning Atlas</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">Linux Atlas</a><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../studio/index.html">Studio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../infrastructure/index.html">Infrastructure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../devops/index.html">DevOps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../kvm/index.html">KVM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../ceph/index.html">Ceph</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../gluster/index.html">Gluster</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../ovirt/index.html">oVirt</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../openstack/index.html">OpenStack</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../docker/index.html">Docker</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../kubernetes/index.html">Kubernetes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../k8s_dev/index.html">Kubernetes Develop</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../rancher/index.html">Rancher</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../openshift/index.html">OpenShift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../sql/index.html">SQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../sqlite/index.html">SQLite</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../mysql/index.html">MySQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../pgsql/index.html">PostgreSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../nosql/index.html">NoSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../network/index.html">Network</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../infra_service/index.html">Infra-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../infra_search/index.html">Infra-Search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../web/index.html">Web</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../info_service/index.html">Info-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../big_data/index.html">Big Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../machine_learning/index.html">Machine Learning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../drone/index.html">Drone</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">Linux</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../../best_linux.html">最佳Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../admin/index.html">Linux系统管理</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../redhat_linux/index.html">RedHat Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../arch_linux/index.html">Arch Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../asahi_linux/index.html">Asahi Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../gentoo_linux/index.html">Gentoo Linux</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../lfs_linux/index.html">LFS(Linux from scratch)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../lfs/index.html">LFS(Linux from scratch)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../blfs/index.html">BLFS(Beyond Linux from scratch)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../alfs/index.html">ALFS(Automated Linux from scratch)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pilfs/index.html">PiLFS(Automated Linux from scratch on the Raspberry Pi)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../yocto/index.html">Yocto</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../debian/index.html">Debian</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../ubuntu_linux/index.html">Ubuntu Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../suse_linux/index.html">SUSE Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../kali_linux/index.html">Kali Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../tails_linux/index.html">Tails Linux</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../qubes_os/index.html">Qubes OS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../postmarketos/index.html">postmarketOS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../container_os/index.html">容器化操作系统(Container OS)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../fedora_coreos/index.html">Fedora CoreOS容器操作系统</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../chromium_os/index.html">Chromium OS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../chromeos/index.html">ChromeOS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../alpine_linux/index.html">Alpine Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../subgraph_os/index.html">Subgraph OS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../kaios/index.html">KaiOS - 世界第三手机操作系统</a></li>
@@ -98,6 +110,14 @@
 <li class="toctree-l4"><a class="reference internal" href="nvme.html">NVMe存储</a></li>
 <li class="toctree-l4"><a class="reference internal" href="u2_m2.html">硬盘U.2和M.2接口</a></li>
 <li class="toctree-l4 current"><a class="current reference internal" href="#">三星PM9A1 NVMe存储</a></li>
+<li class="toctree-l4"><a class="reference internal" href="samsung_pm9a1_rtl9210b.html">三星PM9A1 通过RTL9210B NVMe转USB</a></li>
+<li class="toctree-l4"><a class="reference internal" href="update_samsung_pm9a1_firmware.html">更新三星PM9A1 NVMe存储firmware</a></li>
+<li class="toctree-l4"><a class="reference internal" href="samsung_storage_tools.html">三星存储工具</a></li>
+<li class="toctree-l4"><a class="reference internal" href="samsung_pm9a1_timeout_failure.html">三星PM9A1 NVMe存储初始化timeout无法识别</a></li>
+<li class="toctree-l4"><a class="reference internal" href="kioxia_exceria_g2.html">铠侠KIOXIA EXCERIA G2 NVMe SSD存储</a></li>
+<li class="toctree-l4"><a class="reference internal" href="crucial_p3.html">英睿达Crucial P3 NVMe SSD存储</a></li>
+<li class="toctree-l4"><a class="reference internal" href="intel_optane_m10.html">Intel Optane(傲腾) M10</a></li>
+<li class="toctree-l4"><a class="reference internal" href="4_nvme_usb_disk.html">四盘位NVMe转USB3.2硬盘盒</a></li>
 <li class="toctree-l4"><a class="reference internal" href="nvme-cli.html">nvme-cli用户工具</a></li>
 <li class="toctree-l4"><a class="reference internal" href="nvme_ssd_management.html">SSD故障分析-NVMe SSD管理</a></li>
 <li class="toctree-l4"><a class="reference internal" href="nvme_passthru.html">NVMe passthru技术概述</a></li>
@@ -117,6 +137,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../stratis/index.html">Stratis - Linux存储系统</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../openmediavault/index.html">openmediavault - Linux NAS存储</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../bcache/index.html">Linux Bcache(块缓存)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../nas/index.html">NAS</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../network/index.html">Linux网络</a></li>
@@ -126,28 +147,30 @@
 <li class="toctree-l2"><a class="reference internal" href="../../linux_tablet/index.html">Linux平板</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../../kernel/index.html">Kernel Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../performance/index.html">Performance Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../distributed_system/index.html">Distributed System Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../shell/index.html">Shell Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../python/index.html">Python Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../django/index.html">Django Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../flask/index.html">Flask Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../javascript/index.html">JavaScript Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../nodejs/index.html">Node.js Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../clang/index.html">C Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../golang/index.html">Go Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../swift/index.html">Swift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../rust/index.html">Rust Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../ruby/index.html">Ruby Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../arm/index.html">ARM Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../android/index.html">Android Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../bsd/index.html">BSD Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../apple/index.html">Apple Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../windows/index.html">Windows Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../real/index.html">Real Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../management/index.html">Management Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../life/index.html">Life Atlas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../kernel/index.html">Kernel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../performance/index.html">Performance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../distributed_system/index.html">Distributed System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../shell/index.html">Shell</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../python/index.html">Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../django/index.html">Django</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../javascript/index.html">JavaScript</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../nodejs/index.html">Node.js</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../clang/index.html">C</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../golang/index.html">Go</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../swift/index.html">Swift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../rust/index.html">Rust</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../ruby/index.html">Ruby</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../lua/index.html">Lua</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../arm/index.html">ARM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../raspberry_pi/index.html">Raspberry Pi</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../android/index.html">Android</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../bsd/index.html">BSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../freebsd/index.html">FreeBSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../apple/index.html">Apple</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../windows/index.html">Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../real/index.html">Real</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../management/index.html">Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../life/index.html">Life</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../copyright.html">Copyright</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../aboutme.html">关于作者</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../donate.html">捐赠</a></li>
@@ -160,22 +183,22 @@
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../../index.html">Cloud Atlas</a>
+          <a href="../../../index.html">Cloud Atlas: Discovery</a>
       </nav>
 
       <div class="wy-nav-content">
         <div class="rst-content">
-          <div role="navigation" aria-label="Page navigation">
+          <div role="navigation" aria-label="页面导航">
   <ul class="wy-breadcrumbs">
       <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
-          <li class="breadcrumb-item"><a href="../../index.html">Linux Atlas</a></li>
+          <li class="breadcrumb-item"><a href="../../index.html">Linux</a></li>
           <li class="breadcrumb-item"><a href="../index.html">Linux存储</a></li>
           <li class="breadcrumb-item"><a href="index.html">Linux NVMe</a></li>
       <li class="breadcrumb-item active">三星PM9A1 NVMe存储</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../../../_sources/linux/storage/nvme/samsung_pm9a1.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../../_sources/linux/storage/nvme/samsung_pm9a1.rst.txt" rel="nofollow"> 查看页面源码</a>
       </li>
   </ul>
   <hr/>
@@ -184,10 +207,15 @@
            <div itemprop="articleBody">
              
   <section id="pm9a1-nvme">
-<span id="samsung-pm9a1"></span><h1>三星PM9A1 NVMe存储<a class="headerlink" href="#pm9a1-nvme" title="Link to this heading">¶</a></h1>
+<span id="samsung-pm9a1"></span><h1>三星PM9A1 NVMe存储<a class="headerlink" href="#pm9a1-nvme" title="Link to this heading"></a></h1>
+<div class="admonition warning">
+<p class="admonition-title">警告</p>
+<p>我 <strong>非常后悔</strong> 连续入手了4块 ，其中3块早期版本很有可能有软硬件隐患，在某次安装使用后同时出现 <a class="reference internal" href="samsung_pm9a1_timeout_failure.html#samsung-pm9a1-timeout-failure"><span class="std std-ref">三星PM9A1 NVMe存储初始化timeout无法识别</span></a> ，怀疑在特定使用环境中会触发控制器异常。并且多次尝试修复都失败了，非常痛心...</p>
+<p>我感觉三星为了快速占据市场，研发和品控可能存在疏漏，而且OEM版本无法得到售后保障，所以不推荐购买!!!</p>
+</div>
 <div class="admonition note">
 <p class="admonition-title">备注</p>
-<p>如果经费宽裕，建议购买 <code class="docutils literal notranslate"><span class="pre">三星PM9A3</span></code> (企业级)，使用寿命更长:</p>
+<p>如果经费宽裕， <span class="sphinxnotes-strike" style="text-decoration: line-through;">建议购买</span> <code class="docutils literal notranslate"><span class="pre">三星PM9A3</span></code> (企业级)，使用寿命更长:</p>
 <ul class="simple">
 <li><p>可靠性预测 2 Mio. Hours (比PM9A1提高了33%)</p></li>
 <li><p>使用寿命 1.3 DWPD for 3 years (确实，现在V-NAND TLC存储即使是三星企业级也无法做到以前MLC的超长使用寿命)，比消费级PM9A1提高了 62.5%</p></li>
@@ -197,12 +225,12 @@
 <p>三星PM9A1 NVMe存储是三星发布的PCIe Gen4 NVMe存储，是目前能够买到的性能最强(也许也是性价比最高的)消费级NVMe存储。</p>
 <p>这款NVMe SSD是三星为笔记本厂商提供的OEM产品，使用了三星 Elpis (S4LV003) 控制器(8nm制程工艺)，具备8通道以及512MB LPDDR4 RAM。PM9A1 NVMe存储模块使用了三星的3D-NAND TLC 128层加工工艺</p>
 <section id="id1">
-<h2>技术参数<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h2>
+<h2>技术参数<a class="headerlink" href="#id1" title="Link to this heading"></a></h2>
 <table class="docutils align-default" id="id4">
-<caption><span class="caption-text">三星PM9A1 NVMe存储技术规格</span><a class="headerlink" href="#id4" title="Link to this table">¶</a></caption>
+<caption><span class="caption-text">三星PM9A1 NVMe存储技术规格</span><a class="headerlink" href="#id4" title="Link to this table"></a></caption>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 75%" />
+<col style="width: 25.0%" />
+<col style="width: 75.0%" />
 </colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>类型</p></th>
@@ -215,6 +243,18 @@
 </tr>
 <tr class="row-odd"><td><p>接口</p></td>
 <td><p>M.2/M-Key (PCIe 4.0 x4)</p></td>
+</tr>
+<tr class="row-even"><td><p>NAND闪存</p></td>
+<td><p>Samsung V-NAND</p></td>
+</tr>
+<tr class="row-odd"><td><p>工作功耗(Active)</p></td>
+<td><p>5.8W</p></td>
+</tr>
+<tr class="row-even"><td><p>待机功耗(Idle)</p></td>
+<td><p>35mW</p></td>
+</tr>
+<tr class="row-odd"><td><p>电能消耗</p></td>
+<td><p>运行和最大的参数未提供 0.035W (idle) 0.005W (Sleep mode)</p></td>
 </tr>
 <tr class="row-even"><td><p>读取速度</p></td>
 <td><p>7000MB/s</p></td>
@@ -229,34 +269,40 @@
 <td><p>3D-NAND TLC Samsung 128 Layer (V-NAND v6)</p></td>
 </tr>
 <tr class="row-even"><td><p>TBW</p></td>
-<td><p>600TB</p></td>
+<td><p>600TB(1TB规格/其他规格按容量类推)</p></td>
 </tr>
 <tr class="row-odd"><td><p>DWPD</p></td>
 <td><p>0.8 DWPD for 3 years</p></td>
 </tr>
-<tr class="row-even"><td><p>可靠性预测</p></td>
-<td><p>1.5 Mio. hours (MTBF)</p></td>
+<tr class="row-even"><td><p>不可纠正Bit错误率(Uncorrectable Bit Error Rate/UBER)</p></td>
+<td><p>&lt;1 sector per 10^15 bits read</p></td>
 </tr>
-<tr class="row-odd"><td><p>控制器</p></td>
+<tr class="row-odd"><td><p>可靠性预测(Mean Time Between Failure/MTBF)</p></td>
+<td><p>1.5 Mio.(150万) hours</p></td>
+</tr>
+<tr class="row-even"><td><p>控制器</p></td>
 <td><p>Samsung Elpis (S4LV003) 8 channels</p></td>
 </tr>
-<tr class="row-even"><td><p>缓存</p></td>
+<tr class="row-odd"><td><p>缓存</p></td>
 <td><p>1GB (LPDDR4) SLC-Cache</p></td>
 </tr>
-<tr class="row-odd"><td><p>协议</p></td>
+<tr class="row-even"><td><p>协议</p></td>
 <td><p>NVMe 1.3c</p></td>
 </tr>
-<tr class="row-even"><td><p>数据保护功能</p></td>
+<tr class="row-odd"><td><p>数据保护功能</p></td>
 <td><p>256bit AES TCG opal 2.0</p></td>
-</tr>
-<tr class="row-odd"><td><p>电能消耗</p></td>
-<td><p>运行和最大的参数未提供 0.035W (idle) 0.005W (Sleep mode)</p></td>
 </tr>
 <tr class="row-even"><td><p>尺寸</p></td>
 <td><p>80x22x2.38mm</p></td>
 </tr>
 <tr class="row-odd"><td><p>特殊功能</p></td>
 <td><p>L1.2 Low-Power-standby</p></td>
+</tr>
+<tr class="row-even"><td><p>每个扇区字节(Bytes per Sector)</p></td>
+<td><p>512MB</p></td>
+</tr>
+<tr class="row-odd"><td><p>工作温度</p></td>
+<td><p>0~70度</p></td>
 </tr>
 <tr class="row-even"><td><p>质保</p></td>
 <td><p>三年 (仅对OEM)</p></td>
@@ -270,18 +316,18 @@
 <p>在上述技术规格中值得关注的有：</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">TBW</span></code> : 写入容量(TB Write)，也就是SSD保修期内最大数据写入总量，超出即为过保。可以看到 Samsung PM9A1 SSD 保修范围总计写入300TB数据。需要注意，这个是厂商的保修承诺，并不是达到600TB写入量存储就会损坏。另外一个对应的寿命参数是 <code class="docutils literal notranslate"><span class="pre">P/E</span></code> , <code class="docutils literal notranslate"><span class="pre">P/E</span> <span class="pre">=</span> <span class="pre">TBW</span> <span class="pre">/</span> <span class="pre">存储容量</span></code> ，对于我购买的 1TB 规格 <code class="docutils literal notranslate"><span class="pre">PM9A1</span></code> ， <code class="docutils literal notranslate"><span class="pre">P/E</span> <span class="pre">=</span> <span class="pre">600TBW</span> <span class="pre">/</span> <span class="pre">1TB</span></code> 数值就是 <code class="docutils literal notranslate"><span class="pre">600</span></code> 。这个数值实际上就是SSD存储行业的消费级TLC颗粒SSD的主流寿命相符，其他品牌差不多也是这个水平。(也是，实际上生产SSD颗粒也就是三星、Micron有限的几家厂商)</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">MTBF</span></code> : 即 <code class="docutils literal notranslate"><span class="pre">Mean</span> <span class="pre">Time</span> <span class="pre">betwween</span> <span class="pre">Failures</span></code> 平均故障间隔时间，即产品在总的使用阶段累计工作时间与故障次数的比值。MTBF反映了产品的时间质量，产品故障越少，MTBF越高，产品可靠性也越高。Samsung PM9A1 NVMe 1TB 标称MTBF是 1.5 百万小时，业界的企业级MTBF通常是 2 百万小时。不过这个数值是基于一定样本量、一定时间段（通过加速因子加速）进行统计推断，模拟典型用户场景，通过实测验证理论值，代表用户提前验收产品质量。看看就好…</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">MTBF</span></code> : 即 <code class="docutils literal notranslate"><span class="pre">Mean</span> <span class="pre">Time</span> <span class="pre">betwween</span> <span class="pre">Failures</span></code> 平均故障间隔时间，即产品在总的使用阶段累计工作时间与故障次数的比值。MTBF反映了产品的时间质量，产品故障越少，MTBF越高，产品可靠性也越高。Samsung PM9A1 NVMe 1TB 标称MTBF是 1.5 百万小时，业界的企业级MTBF通常是 2 百万小时。不过这个数值是基于一定样本量、一定时间段（通过加速因子加速）进行统计推断，模拟典型用户场景，通过实测验证理论值，代表用户提前验收产品质量。看看就好...</p></li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">备注</p>
 <p>在企业级固态硬盘市场有一个寿命描述方法 <code class="docutils literal notranslate"><span class="pre">DWPD</span></code> 也就是 <code class="docutils literal notranslate"><span class="pre">Drive</span> <span class="pre">Writes</span> <span class="pre">Per</span> <span class="pre">Day</span></code> ，即 <code class="docutils literal notranslate"><span class="pre">每日全盘写入次数</span></code> 。例如Intel企业级P4500， DWPD是4.62，也就是按照5年保修期，用户每天可以把硬盘写满4.62遍，可以满足服务器这种需要大量数据写入的应用场景。</p>
 </div>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">IOPS</span> <span class="pre">4K</span> <span class="pre">read/Write</span></code> : 4K读写IOPS 是SSD的重要性能指标，三星的NVMe SSD的性能指标极高。可以使用 <a class="reference internal" href="../../../performance/performance_tools/fio/index.html#fio"><span class="std std-ref">fio 存储性能测试</span></a> 测试，不过这个测试非常磨损，我只能做简单测试，毕竟舍不得…</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">IOPS</span> <span class="pre">4K</span> <span class="pre">read/Write</span></code> : 4K读写IOPS 是SSD的重要性能指标，三星的NVMe SSD的性能指标极高。可以使用 <a class="reference internal" href="../../../performance/performance_tools/fio/index.html#fio"><span class="std std-ref">fio 存储性能测试</span></a> 测试，不过这个测试非常磨损，我只能做简单测试，毕竟舍不得...</p></li>
 </ul>
 </section>
 <section id="id2">
-<h2>检查<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
+<h2>检查<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
 <p><a class="reference internal" href="nvme-cli.html#nvme-cli"><span class="std std-ref">nvme-cli用户工具</span></a> 提供了检查NVMe的功能</p>
 <ul>
 <li><p>检查控制器:</p>
@@ -308,7 +354,7 @@
 </li>
 </ul>
 <div class="literal-block-wrapper docutils container" id="id5">
-<div class="code-block-caption"><span class="caption-text">nvme list 输出</span><a class="headerlink" href="#id5" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">nvme list 输出</span><a class="headerlink" href="#id5" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span>Node<span class="w">          </span>SN<span class="w">              </span>Model<span class="w">                       </span>Namespace<span class="w"> </span>Usage<span class="w">                  </span>Format<span class="w">          </span>FW<span class="w"> </span>Rev<span class="w">  </span>
 <span class="linenos">2</span>-------------<span class="w"> </span>---------------<span class="w"> </span>---------------------------<span class="w"> </span>---------<span class="w"> </span>----------------------<span class="w"> </span>---------------<span class="w"> </span>--------
 <span class="linenos">3</span>/dev/nvme0n1<span class="w">  </span>S676NF0R908202<span class="w">  </span>SAMSUNG<span class="w"> </span>MZVL21T0HCLR-00B00<span class="w">  </span><span class="m">1</span><span class="w">         </span><span class="m">0</span>.00<span class="w">   </span>B<span class="w"> </span>/<span class="w">   </span><span class="m">1</span>.02<span class="w">  </span>TB<span class="w">  </span><span class="m">512</span><span class="w">   </span>B<span class="w"> </span>+<span class="w">  </span><span class="m">0</span><span class="w"> </span>B<span class="w">  </span>GXA7401Q
@@ -320,7 +366,7 @@
 <p>可以看到我购买的NVMe存储是三星 <code class="docutils literal notranslate"><span class="pre">PM9A1</span></code> m.2 接口，firmware版本是 <code class="docutils literal notranslate"><span class="pre">GXA7401Q</span></code> ，型号是 <code class="docutils literal notranslate"><span class="pre">SAMSUNG</span> <span class="pre">MZVL21T0HCLR-00B00</span></code></p>
 </section>
 <section id="id3">
-<h2>参考<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h2>
+<h2>参考<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="https://www.samsung.com/semiconductor/cn/ssd/pm9a1/">三星官网 PM9A1 介绍</a></p></li>
 <li><p><a class="reference external" href="https://www.163.com/dy/article/GMI18U5H0512MJDN.html">三星PM9A1 2T单品测评</a></p></li>
@@ -330,6 +376,7 @@
 <li><p><a class="reference external" href="https://skinflint.co.uk/samsung-oem-client-ssd-pm9a1-1tb-mzvl21t0hclr-00b00-a2454424.html">Samsung OEM Client SSD PM9A1 1TB, M.2 (MZVL21T0HCLR-00B00)</a></p></li>
 <li><p><a class="reference external" href="https://www.jianshu.com/p/ce9edc670de7">SSD固态硬盘选购指标-寿命：P/E、TBW 、DWPD</a></p></li>
 <li><p><a class="reference external" href="https://xie.infoq.cn/article/5b1b691e4dd01901c0ec1886d">SSD 可靠性指标 MTTF、MTBF、AFR 解析</a></p></li>
+<li><p><a class="reference external" href="https://download.semiconductor.samsung.com/resources/brochure/Product%20Overviews%20PM9A1%20SSD%20Storage%20for%20the%20Next-Generation%20PC.pdf">Product Brief | PM9A1</a></p></li>
 </ul>
 </section>
 </section>
@@ -337,25 +384,37 @@
 
            </div>
           </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="u2_m2.html" class="btn btn-neutral float-left" title="硬盘U.2和M.2接口" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="nvme-cli.html" class="btn btn-neutral float-right" title="nvme-cli用户工具" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="u2_m2.html" class="btn btn-neutral float-left" title="硬盘U.2和M.2接口" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="samsung_pm9a1_rtl9210b.html" class="btn btn-neutral float-right" title="三星PM9A1 通过RTL9210B NVMe转USB" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../../copyright.html">Copyright</a> 2018 - now, Huatai Huang.</p>
+    <p>&#169; <a href="../../../copyright.html">版权所有</a> 2018 - now, Huatai Huang。</p>
   </div>
 
-  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
   
     <!-- your html code here -->
     <br>
-    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡</a></p>
-     
+    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡 👈</a></p>
+    <br>
+    <p>网站采用 <a href="https://utteranc.es/">utterances</a> 评论系统，所有评论存储在<a href="https://github.com/huataihuang/cloud-atlas/issues">GitHub issues</a> 中，如果你看不到下方的评论框，那么可能需要<a href="https://cloud-atlas.readthedocs.io/zh-cn/latest/linux/security/vpn/index.html">自备梯子</a> 👈</p>
+    <div class="articleComments">
+        <comments>
+  <script src="https://utteranc.es/client.js"
+    repo="huataihuang/cloud-atlas"
+    issue-term="pathname"
+    theme="github-light"
+    crossorigin="anonymous"
+    async>
+  </script>
+</comments>
+    </div>
 
 
 </footer>

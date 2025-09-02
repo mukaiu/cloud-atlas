@@ -1,26 +1,30 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh" data-content_root="../../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>git快速起步 &mdash; Cloud Atlas 0.1 文档</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+  <title>git快速起步 &mdash; Cloud Atlas: Discovery beta 文档</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=fd3f3429" />
+
+  
+    <link rel="shortcut icon" href="../../_static/favicon.png"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="../../_static/documentation_options.js?v=7c91f8fd"></script>
-        <script src="../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=8534f863"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
         <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
-        <script src="../../_static/translations.js?v=beaddf03"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../../genindex.html" />
     <link rel="search" title="搜索" href="../../search.html" />
     <link rel="copyright" title="版权所有" href="../../copyright.html" />
-    <link rel="next" title="git merge 和 git rebase" href="git_merge_rebase.html" />
+    <link rel="next" title="Git Large File Storage" href="git-lfs.html" />
     <link rel="prev" title="git" href="index.html" /> 
 </head>
 
@@ -33,103 +37,117 @@
           
           
           <a href="../../index.html" class="icon icon-home">
-            Cloud Atlas
+            Cloud Atlas: Discovery
           </a>
+              <div class="version">
+                1.1
+              </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../studio/index.html">Studio Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../infrastructure/index.html">Infrastructure Atlas</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../index.html">DevOps Atlas</a><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../studio/index.html">Studio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../infrastructure/index.html">Infrastructure</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">DevOps</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../thought/index.html">DevOps 思考集锦</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../sre/index.html">SRE - 站点可靠性工程师</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="index.html">git</a><ul class="current">
 <li class="toctree-l3 current"><a class="current reference internal" href="#">git快速起步</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#id1">配置提交用户</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id2">配置git终端色彩</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id3">获取远程版本</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id4">分支</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id5">回滚</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id8">合并分支</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id9">删除分支</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id10">查看分支间的不同</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id11">其他进阶</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id12">参考</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id1">快速初始化</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id2">配置提交用户</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id3">配置git终端色彩</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id4">获取远程版本</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id5">分支</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id6">回滚</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id9">合并分支</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id10">删除分支</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id11">查看分支间的不同</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id12">其他进阶</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id13">参考</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="git-lfs.html">Git Large File Storage</a></li>
+<li class="toctree-l3"><a class="reference internal" href="git_commit_or_stash.html">Git提交变更或放弃变更</a></li>
 <li class="toctree-l3"><a class="reference internal" href="git_merge_rebase.html">git merge 和 git rebase</a></li>
 <li class="toctree-l3"><a class="reference internal" href="git_merge_fix_conflicts.html">git合并冲突修复</a></li>
 <li class="toctree-l3"><a class="reference internal" href="git_config.html">git配置</a></li>
+<li class="toctree-l3"><a class="reference internal" href="git_ignorecase.html">git默认不区分文件名大小写</a></li>
 <li class="toctree-l3"><a class="reference internal" href="git_proxy.html">git配置代理</a></li>
+<li class="toctree-l3"><a class="reference internal" href="git_ssh_script.html">git SSH操作脚本</a></li>
+<li class="toctree-l3"><a class="reference internal" href="git-openssl.html">使用OpenSSL的git</a></li>
 <li class="toctree-l3"><a class="reference internal" href="reduce_git_repo_size.html">缩减git仓库大小</a></li>
 <li class="toctree-l3"><a class="reference internal" href="git-flow.html">git-flow发布工作流</a></li>
+<li class="toctree-l3"><a class="reference internal" href="git_clone_subdirectory.html">git clone仓库指定子目录</a></li>
+<li class="toctree-l3"><a class="reference internal" href="gitweb.html">GitWeb</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../gitlab/index.html">GitLab</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../jenkins/index.html">Jenkins</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../gitea/index.html">Gitea</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../terraform/index.html">Terraform基础架构管理平台</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../heroku/index.html">Heroku</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ansible/index.html">Ansible</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../jsonnet/index.html">Jsonnet数据模版语言</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../airflow/index.html">Airflow</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../checkov/index.html">checkov静态代码分析工具</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../utils/index.html">DevOps 工具集</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../docs/index.html">DevOps 文档</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../kvm/index.html">KVM Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../ceph/index.html">Ceph Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../gluster/index.html">Gluster Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../ovirt/index.html">oVirt Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../openstack/index.html">OpenStack Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../docker/index.html">Docker Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kubernetes/index.html">Kubernetes Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kubernetes_from_scratch/index.html">Kubernetes From Scratch (KFS) Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../rancher/index.html">Rancher Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../openshift/index.html">OpenShift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../sql/index.html">SQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../sqlite/index.html">SQLite Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../mysql/index.html">MySQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../pgsql/index.html">PostgreSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../clickhouse/index.html">ClickHouse Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../nosql/index.html">NoSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../redis/index.html">Redis Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../network/index.html">Network Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../infra_service/index.html">Infra-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../infra_search/index.html">Search Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../info_service/index.html">Info-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../web/index.html">Web Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../big_data/index.html">Big Data Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../machine_learning/index.html">Machine Learning Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../linux/index.html">Linux Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kernel/index.html">Kernel Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../performance/index.html">Performance Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../distributed_system/index.html">Distributed System Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../shell/index.html">Shell Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../python/index.html">Python Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../django/index.html">Django Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../flask/index.html">Flask Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../javascript/index.html">JavaScript Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../nodejs/index.html">Node.js Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../clang/index.html">C Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../golang/index.html">Go Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../swift/index.html">Swift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../rust/index.html">Rust Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../ruby/index.html">Ruby Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../arm/index.html">ARM Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../android/index.html">Android Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../bsd/index.html">BSD Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../apple/index.html">Apple Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../windows/index.html">Windows Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../real/index.html">Real Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../management/index.html">Management Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../life/index.html">Life Atlas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kvm/index.html">KVM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ceph/index.html">Ceph</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../gluster/index.html">Gluster</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ovirt/index.html">oVirt</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../openstack/index.html">OpenStack</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../docker/index.html">Docker</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kubernetes/index.html">Kubernetes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../k8s_dev/index.html">Kubernetes Develop</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../rancher/index.html">Rancher</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../openshift/index.html">OpenShift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../sql/index.html">SQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../sqlite/index.html">SQLite</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../mysql/index.html">MySQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../pgsql/index.html">PostgreSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../nosql/index.html">NoSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../network/index.html">Network</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../infra_service/index.html">Infra-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../infra_search/index.html">Infra-Search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../web/index.html">Web</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../info_service/index.html">Info-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../big_data/index.html">Big Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../machine_learning/index.html">Machine Learning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../drone/index.html">Drone</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../linux/index.html">Linux</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kernel/index.html">Kernel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../performance/index.html">Performance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../distributed_system/index.html">Distributed System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../shell/index.html">Shell</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../python/index.html">Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../django/index.html">Django</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../javascript/index.html">JavaScript</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../nodejs/index.html">Node.js</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../clang/index.html">C</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../golang/index.html">Go</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../swift/index.html">Swift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../rust/index.html">Rust</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ruby/index.html">Ruby</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lua/index.html">Lua</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../arm/index.html">ARM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../raspberry_pi/index.html">Raspberry Pi</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../android/index.html">Android</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../bsd/index.html">BSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../freebsd/index.html">FreeBSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../apple/index.html">Apple</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../windows/index.html">Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../real/index.html">Real</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../management/index.html">Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../life/index.html">Life</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../copyright.html">Copyright</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../aboutme.html">关于作者</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../donate.html">捐赠</a></li>
@@ -142,21 +160,21 @@
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../index.html">Cloud Atlas</a>
+          <a href="../../index.html">Cloud Atlas: Discovery</a>
       </nav>
 
       <div class="wy-nav-content">
         <div class="rst-content">
-          <div role="navigation" aria-label="Page navigation">
+          <div role="navigation" aria-label="页面导航">
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
-          <li class="breadcrumb-item"><a href="../index.html">DevOps Atlas</a></li>
+          <li class="breadcrumb-item"><a href="../index.html">DevOps</a></li>
           <li class="breadcrumb-item"><a href="index.html">git</a></li>
       <li class="breadcrumb-item active">git快速起步</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../../_sources/devops/git/git_startup.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../_sources/devops/git/git_startup.rst.txt" rel="nofollow"> 查看页面源码</a>
       </li>
   </ul>
   <hr/>
@@ -165,13 +183,25 @@
            <div itemprop="articleBody">
              
   <section id="git">
-<span id="git-startup"></span><h1>git快速起步<a class="headerlink" href="#git" title="Link to this heading">¶</a></h1>
+<span id="git-startup"></span><h1>git快速起步<a class="headerlink" href="#git" title="Link to this heading"></a></h1>
 <div class="admonition note">
 <p class="admonition-title">备注</p>
 <p>本文以实用为主，介绍如何将远程仓库下载到本，创建开发分支，提交远程仓库以及合并等简单操作，目的是辅助完成开发。所以不深究细节和原理，仅完成日常80%操作为主。</p>
 </div>
 <section id="id1">
-<h2>配置提交用户<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h2>
+<h2>快速初始化<a class="headerlink" href="#id1" title="Link to this heading"></a></h2>
+<div class="literal-block-wrapper docutils container" id="id16">
+<div class="code-block-caption"><span class="caption-text">简单的初始化git配置</span><a class="headerlink" href="#id16" title="Link to this code"></a></div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">config</span> <span class="o">--</span><span class="k">global</span> <span class="n">core</span><span class="o">.</span><span class="n">editor</span> <span class="s2">&quot;vim&quot;</span>
+<span class="n">git</span> <span class="n">config</span> <span class="o">--</span><span class="k">global</span> <span class="n">color</span><span class="o">.</span><span class="n">ui</span> <span class="n">auto</span>
+<span class="n">git</span> <span class="n">config</span> <span class="o">--</span><span class="k">global</span> <span class="n">user</span><span class="o">.</span><span class="n">name</span> <span class="o">&lt;</span><span class="n">your_name</span><span class="o">&gt;</span>
+<span class="n">git</span> <span class="n">config</span> <span class="o">--</span><span class="k">global</span> <span class="n">user</span><span class="o">.</span><span class="n">email</span> <span class="o">&lt;</span><span class="n">your_email</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+</div>
+</section>
+<section id="id2">
+<h2>配置提交用户<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
 <p>在提交软件仓库前需要先配置提交人账号，配置分为全局 <code class="docutils literal notranslate"><span class="pre">global</span></code> 和针对某个特定仓库的 <code class="docutils literal notranslate"><span class="pre">local</span></code> 。一般常用提交人账号配置为 <code class="docutils literal notranslate"><span class="pre">global</span></code> ，而少量仓库则配置 <code class="docutils literal notranslate"><span class="pre">local</span></code></p>
 <ul>
 <li><p>配置全局账号:</p>
@@ -189,15 +219,15 @@
 </li>
 </ul>
 </section>
-<section id="id2">
-<h2>配置git终端色彩<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
+<section id="id3">
+<h2>配置git终端色彩<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
 <p>git提供了支持终端的色彩显示，用以下命令开启:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">config</span> <span class="o">--</span><span class="k">global</span> <span class="n">color</span><span class="o">.</span><span class="n">ui</span> <span class="n">auto</span>
 </pre></div>
 </div>
 </section>
-<section id="id3">
-<h2>获取远程版本<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h2>
+<section id="id4">
+<h2>获取远程版本<a class="headerlink" href="#id4" title="Link to this heading"></a></h2>
 <ul>
 <li><p>从远程主机clone出一个版本库:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">clone</span> <span class="n">git</span><span class="nd">@github</span><span class="o">.</span><span class="n">com</span><span class="p">:</span><span class="n">huataihuang</span><span class="o">/</span><span class="n">cloud</span><span class="o">-</span><span class="n">atlas</span><span class="o">.</span><span class="n">git</span>
@@ -216,8 +246,8 @@
 </li>
 </ul>
 </section>
-<section id="id4">
-<h2>分支<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h2>
+<section id="id5">
+<h2>分支<a class="headerlink" href="#id5" title="Link to this heading"></a></h2>
 <ul>
 <li><p>切换分支:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">checkout</span> <span class="n">XXX</span>
@@ -238,10 +268,10 @@
 </ul>
 <p>注意：本地分支名字必须和远程分支名字相同，例如，这里分支名字是 <code class="docutils literal notranslate"><span class="pre">new_fix_XXX</span></code></p>
 </section>
-<section id="id5">
-<h2>回滚<a class="headerlink" href="#id5" title="Link to this heading">¶</a></h2>
+<section id="id6">
+<h2>回滚<a class="headerlink" href="#id6" title="Link to this heading"></a></h2>
 <section id="git-add">
-<h3>如果还没有git add缓存代码树<a class="headerlink" href="#git-add" title="Link to this heading">¶</a></h3>
+<h3>如果还没有git add缓存代码树<a class="headerlink" href="#git-add" title="Link to this heading"></a></h3>
 <p>有时候本地修改文件还没有执行过 <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">add</span></code> 添加到缓存，此时只需要重新 <code class="docutils literal notranslate"><span class="pre">checkout</span></code> 代码仓储中指定文件回来覆盖掉本地文件就行:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">checkout</span> <span class="o">--</span> <span class="n">filepathname</span>
 </pre></div>
@@ -253,8 +283,8 @@
 </div>
 <p>注意，刚新建的文件还没有加入git的管理系统，对于git是未知的，需要手工删除</p>
 </section>
-<section id="id6">
-<h3>如果还没有提交到远程库的回滚<a class="headerlink" href="#id6" title="Link to this heading">¶</a></h3>
+<section id="id7">
+<h3>如果还没有提交到远程库的回滚<a class="headerlink" href="#id7" title="Link to this heading"></a></h3>
 <p>如果还没有提交到远程代码库，放弃修改的方法如下:</p>
 <ul>
 <li><p>先查看有哪些 <code class="docutils literal notranslate"><span class="pre">commit</span></code></p>
@@ -284,8 +314,8 @@
 </li>
 </ul>
 </section>
-<section id="id7">
-<h3>放弃修改并更新远程分支<a class="headerlink" href="#id7" title="Link to this heading">¶</a></h3>
+<section id="id8">
+<h3>放弃修改并更新远程分支<a class="headerlink" href="#id8" title="Link to this heading"></a></h3>
 <ul>
 <li><p>本地代码回滚到上一版本（或者指定版本）:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">reset</span> <span class="o">--</span><span class="n">hard</span> <span class="n">HEAD</span><span class="o">~</span><span class="mi">1</span>
@@ -301,8 +331,8 @@
 </ul>
 </section>
 </section>
-<section id="id8">
-<h2>合并分支<a class="headerlink" href="#id8" title="Link to this heading">¶</a></h2>
+<section id="id9">
+<h2>合并分支<a class="headerlink" href="#id9" title="Link to this heading"></a></h2>
 <ul>
 <li><p>将hotfix分支合并到当前分支中:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">merge</span> <span class="n">hoxfix</span>
@@ -315,8 +345,8 @@
 <p>如果出现合并冲突，则采用 <a class="reference internal" href="git_merge_fix_conflicts.html#git-merge-fix-conflicts"><span class="std std-ref">git合并冲突修复</span></a></p>
 </div>
 </section>
-<section id="id9">
-<h2>删除分支<a class="headerlink" href="#id9" title="Link to this heading">¶</a></h2>
+<section id="id10">
+<h2>删除分支<a class="headerlink" href="#id10" title="Link to this heading"></a></h2>
 <ul>
 <li><p>删除分支hotfix， <code class="docutils literal notranslate"><span class="pre">-d</span></code> 选项只能删除被当前分支所合并过的分支，要强制删除没有被合并过的分支，使用参数 <code class="docutils literal notranslate"><span class="pre">-D</span></code></p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">branch</span> <span class="o">-</span><span class="n">d</span> <span class="n">hotfix</span>
@@ -325,8 +355,8 @@
 </li>
 </ul>
 </section>
-<section id="id10">
-<h2>查看分支间的不同<a class="headerlink" href="#id10" title="Link to this heading">¶</a></h2>
+<section id="id11">
+<h2>查看分支间的不同<a class="headerlink" href="#id11" title="Link to this heading"></a></h2>
 <ul>
 <li><p>比较当前分支和 <code class="docutils literal notranslate"><span class="pre">branchName</span></code> 分支之间的不同:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">diff</span> <span class="n">branchName</span>
@@ -356,14 +386,14 @@
 </li>
 </ul>
 </section>
-<section id="id11">
-<h2>其他进阶<a class="headerlink" href="#id11" title="Link to this heading">¶</a></h2>
+<section id="id12">
+<h2>其他进阶<a class="headerlink" href="#id12" title="Link to this heading"></a></h2>
 <ul class="simple">
 <li><p><a class="reference internal" href="git_merge_fix_conflicts.html#git-merge-fix-conflicts"><span class="std std-ref">git合并冲突修复</span></a></p></li>
 </ul>
 </section>
-<section id="id12">
-<h2>参考<a class="headerlink" href="#id12" title="Link to this heading">¶</a></h2>
+<section id="id13">
+<h2>参考<a class="headerlink" href="#id13" title="Link to this heading"></a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="http://www.ruanyifeng.com/blog/2014/06/git_remote.html">Git远程操作详解</a></p></li>
 <li><p><a class="reference external" href="http://stackoverflow.com/questions/67699/how-to-clone-all-remote-branches-in-git">How to clone all remote branches in Git?</a></p></li>
@@ -379,25 +409,37 @@
 
            </div>
           </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="index.html" class="btn btn-neutral float-left" title="git" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="git_merge_rebase.html" class="btn btn-neutral float-right" title="git merge 和 git rebase" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="index.html" class="btn btn-neutral float-left" title="git" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="git-lfs.html" class="btn btn-neutral float-right" title="Git Large File Storage" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../copyright.html">Copyright</a> 2018 - now, Huatai Huang.</p>
+    <p>&#169; <a href="../../copyright.html">版权所有</a> 2018 - now, Huatai Huang。</p>
   </div>
 
-  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
   
     <!-- your html code here -->
     <br>
-    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡</a></p>
-     
+    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡 👈</a></p>
+    <br>
+    <p>网站采用 <a href="https://utteranc.es/">utterances</a> 评论系统，所有评论存储在<a href="https://github.com/huataihuang/cloud-atlas/issues">GitHub issues</a> 中，如果你看不到下方的评论框，那么可能需要<a href="https://cloud-atlas.readthedocs.io/zh-cn/latest/linux/security/vpn/index.html">自备梯子</a> 👈</p>
+    <div class="articleComments">
+        <comments>
+  <script src="https://utteranc.es/client.js"
+    repo="huataihuang/cloud-atlas"
+    issue-term="pathname"
+    theme="github-light"
+    crossorigin="anonymous"
+    async>
+  </script>
+</comments>
+    </div>
 
 
 </footer>

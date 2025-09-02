@@ -1,21 +1,25 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh" data-content_root="../../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>pssh - 并行SSH &mdash; Cloud Atlas 0.1 文档</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+  <title>pssh - 并行SSH &mdash; Cloud Atlas: Discovery beta 文档</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=fd3f3429" />
+
+  
+    <link rel="shortcut icon" href="../../_static/favicon.png"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="../../_static/documentation_options.js?v=7c91f8fd"></script>
-        <script src="../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=8534f863"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
         <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
-        <script src="../../_static/translations.js?v=beaddf03"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../../genindex.html" />
     <link rel="search" title="搜索" href="../../search.html" />
@@ -33,21 +37,24 @@
           
           
           <a href="../../index.html" class="icon icon-home">
-            Cloud Atlas
+            Cloud Atlas: Discovery
           </a>
+              <div class="version">
+                1.1
+              </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../studio/index.html">Studio Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../infrastructure/index.html">Infrastructure Atlas</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../index.html">DevOps Atlas</a><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../studio/index.html">Studio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../infrastructure/index.html">Infrastructure</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">DevOps</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../thought/index.html">DevOps 思考集锦</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../sre/index.html">SRE - 站点可靠性工程师</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../git/index.html">git</a></li>
@@ -55,9 +62,11 @@
 <li class="toctree-l2"><a class="reference internal" href="../jenkins/index.html">Jenkins</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../gitea/index.html">Gitea</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../terraform/index.html">Terraform基础架构管理平台</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../heroku/index.html">Heroku</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ansible/index.html">Ansible</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../jsonnet/index.html">Jsonnet数据模版语言</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../airflow/index.html">Airflow</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../checkov/index.html">checkov静态代码分析工具</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="index.html">DevOps 工具集</a><ul class="current">
 <li class="toctree-l3 current"><a class="current reference internal" href="#">pssh - 并行SSH</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#id1">安装pssh</a></li>
@@ -72,53 +81,54 @@
 <li class="toctree-l2"><a class="reference internal" href="../docs/index.html">DevOps 文档</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../kvm/index.html">KVM Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../ceph/index.html">Ceph Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../gluster/index.html">Gluster Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../ovirt/index.html">oVirt Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../openstack/index.html">OpenStack Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../docker/index.html">Docker Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kubernetes/index.html">Kubernetes Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kubernetes_from_scratch/index.html">Kubernetes From Scratch (KFS) Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../rancher/index.html">Rancher Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../openshift/index.html">OpenShift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../sql/index.html">SQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../sqlite/index.html">SQLite Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../mysql/index.html">MySQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../pgsql/index.html">PostgreSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../clickhouse/index.html">ClickHouse Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../nosql/index.html">NoSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../redis/index.html">Redis Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../network/index.html">Network Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../infra_service/index.html">Infra-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../infra_search/index.html">Search Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../info_service/index.html">Info-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../web/index.html">Web Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../big_data/index.html">Big Data Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../machine_learning/index.html">Machine Learning Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../linux/index.html">Linux Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kernel/index.html">Kernel Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../performance/index.html">Performance Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../distributed_system/index.html">Distributed System Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../shell/index.html">Shell Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../python/index.html">Python Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../django/index.html">Django Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../flask/index.html">Flask Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../javascript/index.html">JavaScript Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../nodejs/index.html">Node.js Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../clang/index.html">C Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../golang/index.html">Go Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../swift/index.html">Swift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../rust/index.html">Rust Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../ruby/index.html">Ruby Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../arm/index.html">ARM Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../android/index.html">Android Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../bsd/index.html">BSD Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../apple/index.html">Apple Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../windows/index.html">Windows Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../real/index.html">Real Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../management/index.html">Management Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../life/index.html">Life Atlas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kvm/index.html">KVM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ceph/index.html">Ceph</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../gluster/index.html">Gluster</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ovirt/index.html">oVirt</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../openstack/index.html">OpenStack</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../docker/index.html">Docker</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kubernetes/index.html">Kubernetes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../k8s_dev/index.html">Kubernetes Develop</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../rancher/index.html">Rancher</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../openshift/index.html">OpenShift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../sql/index.html">SQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../sqlite/index.html">SQLite</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../mysql/index.html">MySQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../pgsql/index.html">PostgreSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../nosql/index.html">NoSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../network/index.html">Network</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../infra_service/index.html">Infra-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../infra_search/index.html">Infra-Search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../web/index.html">Web</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../info_service/index.html">Info-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../big_data/index.html">Big Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../machine_learning/index.html">Machine Learning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../drone/index.html">Drone</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../linux/index.html">Linux</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kernel/index.html">Kernel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../performance/index.html">Performance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../distributed_system/index.html">Distributed System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../shell/index.html">Shell</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../python/index.html">Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../django/index.html">Django</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../javascript/index.html">JavaScript</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../nodejs/index.html">Node.js</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../clang/index.html">C</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../golang/index.html">Go</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../swift/index.html">Swift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../rust/index.html">Rust</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ruby/index.html">Ruby</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lua/index.html">Lua</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../arm/index.html">ARM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../raspberry_pi/index.html">Raspberry Pi</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../android/index.html">Android</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../bsd/index.html">BSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../freebsd/index.html">FreeBSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../apple/index.html">Apple</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../windows/index.html">Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../real/index.html">Real</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../management/index.html">Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../life/index.html">Life</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../copyright.html">Copyright</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../aboutme.html">关于作者</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../donate.html">捐赠</a></li>
@@ -131,21 +141,21 @@
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../index.html">Cloud Atlas</a>
+          <a href="../../index.html">Cloud Atlas: Discovery</a>
       </nav>
 
       <div class="wy-nav-content">
         <div class="rst-content">
-          <div role="navigation" aria-label="Page navigation">
+          <div role="navigation" aria-label="页面导航">
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
-          <li class="breadcrumb-item"><a href="../index.html">DevOps Atlas</a></li>
+          <li class="breadcrumb-item"><a href="../index.html">DevOps</a></li>
           <li class="breadcrumb-item"><a href="index.html">DevOps 工具集</a></li>
       <li class="breadcrumb-item active">pssh - 并行SSH</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../../_sources/devops/utils/pssh.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../_sources/devops/utils/pssh.rst.txt" rel="nofollow"> 查看页面源码</a>
       </li>
   </ul>
   <hr/>
@@ -154,7 +164,7 @@
            <div itemprop="articleBody">
              
   <section id="pssh-ssh">
-<span id="pssh"></span><h1>pssh - 并行SSH<a class="headerlink" href="#pssh-ssh" title="Link to this heading">¶</a></h1>
+<span id="pssh"></span><h1>pssh - 并行SSH<a class="headerlink" href="#pssh-ssh" title="Link to this heading"></a></h1>
 <p>在维护集群时，常常需要在大量服务器上执行相同的命令，虽然可以自己写循环执行脚本，但是不仅麻烦而且执行效率不高。此时我们通常会使用pssh工具来并发执行SSH指令。</p>
 <p>我个人觉得pssh是每个SA的必备工具，非常适合需要执行少量应急命令的情况。但是，这个强大的并行命令也是双刃剑，执行效率太高也会使得误操作影响面扩大。所以，一定要谨慎操作，并且我强烈建议在测试环境做好演练，同时review操作命令，注意检查判断逻辑。</p>
 <p>可行的情况下，还是以执行脚本来完成操作，pssh仅作为批量分发脚本以及批量执行脚本check脚本执行结果为好。因为脚本相对容易避免转义符号冲突，也方便检查代码。</p>
@@ -163,12 +173,12 @@
 <p>pssh是早期在Python 2上开发的工具，最早开源在google code上，后来代码库搬迁到github <a class="reference external" href="https://github.com/robinbowes/pssh">robinbowes/pssh</a> 已经很久没有更新了(最后更新是2012年)，甚至在 <a class="reference external" href="https://pypi.org/project/pssh">pssh · PyPI</a> 也没有说明这个软件包在Python 3上运行是存在兼容问题的。不过，Github上 <a class="reference external" href="https://github.com/lilydjwg/pssh">lilydjwg/pssh</a> 提供了兼容Python 3的修正。</p>
 </div>
 <section id="id1">
-<h2>安装pssh<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h2>
+<h2>安装pssh<a class="headerlink" href="#id1" title="Link to this heading"></a></h2>
 <section id="ubuntupssh">
-<h3>Ubuntu安装pssh<a class="headerlink" href="#ubuntupssh" title="Link to this heading">¶</a></h3>
+<h3>Ubuntu安装pssh<a class="headerlink" href="#ubuntupssh" title="Link to this heading"></a></h3>
 <p>在Ubuntu上通过安装 <code class="docutils literal notranslate"><span class="pre">pssh</span></code> 软件包可以完成安装，但是直接执行 <code class="docutils literal notranslate"><span class="pre">pssh</span></code> 命令会提示无法找到指令。实际上Ubuntu安装 <code class="docutils literal notranslate"><span class="pre">pssh</span></code> 软件包后实际的执行程序是采用了 <code class="docutils literal notranslate"><span class="pre">parallel-</span></code> 开头的命令，例如 <code class="docutils literal notranslate"><span class="pre">parallel-ssh</span></code> 和 <code class="docutils literal notranslate"><span class="pre">parallel-scp</span></code> 等。所以，为了方便使用，可以建立软链接:</p>
 <div class="literal-block-wrapper docutils container" id="id9">
-<div class="code-block-caption"><span class="caption-text">在Ubuntu环境安装pssh</span><a class="headerlink" href="#id9" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">在Ubuntu环境安装pssh</span><a class="headerlink" href="#id9" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>pssh
 <span class="nb">cd</span><span class="w"> </span>/usr/bin
 sudo<span class="w"> </span>ln<span class="w"> </span>-s<span class="w"> </span>parallel-ssh<span class="w"> </span>pssh
@@ -181,22 +191,22 @@ sudo<span class="w"> </span>ln<span class="w"> </span>-s<span class="w"> </span>
 </div>
 </section>
 <section id="centos-7pssh">
-<h3>CentOS 7安装pssh<a class="headerlink" href="#centos-7pssh" title="Link to this heading">¶</a></h3>
+<h3>CentOS 7安装pssh<a class="headerlink" href="#centos-7pssh" title="Link to this heading"></a></h3>
 <ul class="simple">
 <li><p>CentOS 7需要首先安装EPEL:</p></li>
 </ul>
 <div class="literal-block-wrapper docutils container" id="id10">
-<div class="code-block-caption"><span class="caption-text">yum命令安装EPEL仓库</span><a class="headerlink" href="#id10" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">yum命令安装EPEL仓库</span><a class="headerlink" href="#id10" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>yum<span class="w"> </span>install<span class="w"> </span>https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
 </pre></div>
 </div>
 </div>
 </section>
 <section id="centos-8mpssh">
-<h3>CentOS 8安装mpssh<a class="headerlink" href="#centos-8mpssh" title="Link to this heading">¶</a></h3>
+<h3>CentOS 8安装mpssh<a class="headerlink" href="#centos-8mpssh" title="Link to this heading"></a></h3>
 <p>CentOS可以使用EPEL安装pssh，但是现在(CentOS 8)只提供MPSSH(Mass Parallel Secure Shell)来并发执行SSH:</p>
 <div class="literal-block-wrapper docutils container" id="id11">
-<div class="code-block-caption"><span class="caption-text">在CentOS 8环境安装pssh</span><a class="headerlink" href="#id11" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">在CentOS 8环境安装pssh</span><a class="headerlink" href="#id11" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>dnf<span class="w"> </span>--enablerepo<span class="o">=</span>epel<span class="w"> </span>-y<span class="w"> </span>install<span class="w"> </span>mpssh
 </pre></div>
 </div>
@@ -218,7 +228,7 @@ sudo<span class="w"> </span>ln<span class="w"> </span>-s<span class="w"> </span>
 <p>之后就可以通过 <code class="docutils literal notranslate"><span class="pre">mpssh</span></code> 并发执行ssh命令。</p>
 </section>
 <section id="pip">
-<h3>通过pip安装(推荐使用这个通用方法安装)<a class="headerlink" href="#pip" title="Link to this heading">¶</a></h3>
+<h3>通过pip安装(推荐使用这个通用方法安装)<a class="headerlink" href="#pip" title="Link to this heading"></a></h3>
 <p>pssh实际上是一个python程序，所以可以通过 Python pip方式安装。通过pip安装可以用于Python 2环境通用，而且，通过Python virtualenv方式，可以自主在个人用户目录下安装，非常方便。</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># 如果是RHEL/CentOS则使用以下yum安装命令</span>
 <span class="n">yum</span> <span class="n">install</span> <span class="n">python</span><span class="o">-</span><span class="n">pip</span>
@@ -248,7 +258,7 @@ sudo<span class="w"> </span>ln<span class="w"> </span>-s<span class="w"> </span>
 </div>
 </section>
 <section id="virtualenvpssh">
-<h3>在virtualenv中安装pssh(强烈推荐)<a class="headerlink" href="#virtualenvpssh" title="Link to this heading">¶</a></h3>
+<h3>在virtualenv中安装pssh(强烈推荐)<a class="headerlink" href="#virtualenvpssh" title="Link to this heading"></a></h3>
 <p>上文已经推荐了通过 <code class="docutils literal notranslate"><span class="pre">pip</span></code> 安装pssh，不过是全局安装需要root权限。实际上pssh是一个python程序，所以可以通过 <a class="reference internal" href="../../python/startup/virtualenv.html#virtualenv"><span class="std std-ref">Python virtualenv</span></a> 来安装部署:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">yum</span> <span class="o">-</span><span class="n">y</span> <span class="n">update</span>
 <span class="n">yum</span> <span class="o">-</span><span class="n">y</span> <span class="n">install</span> <span class="n">python</span><span class="o">-</span><span class="n">pip</span>
@@ -281,12 +291,12 @@ virtualenv venv2
 </section>
 </section>
 <section id="id3">
-<h2>命令说明<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h2>
+<h2>命令说明<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
 <table class="docutils align-default" id="id12">
-<caption><span class="caption-text">pssh命令说明</span><a class="headerlink" href="#id12" title="Link to this table">¶</a></caption>
+<caption><span class="caption-text">pssh命令说明</span><a class="headerlink" href="#id12" title="Link to this table"></a></caption>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 67%" />
+<col style="width: 33.3%" />
+<col style="width: 66.7%" />
 </colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>命令</p></th>
@@ -313,7 +323,7 @@ virtualenv venv2
 </table>
 </section>
 <section id="id4">
-<h2>使用pssh指令<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h2>
+<h2>使用pssh指令<a class="headerlink" href="#id4" title="Link to this heading"></a></h2>
 <ul>
 <li><p>首先创建一个hosts文件，名字可以按需设置，例如，我要访问ceph集群，则创建 <code class="docutils literal notranslate"><span class="pre">ceph-hosts</span></code> 配置文件，内容如下:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mf">172.18.0.11</span>
@@ -330,10 +340,10 @@ virtualenv venv2
 <li><p>常用参数</p></li>
 </ul>
 <table class="docutils align-default" id="id13">
-<caption><span class="caption-text">pssh命令参数</span><a class="headerlink" href="#id13" title="Link to this table">¶</a></caption>
+<caption><span class="caption-text">pssh命令参数</span><a class="headerlink" href="#id13" title="Link to this table"></a></caption>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 67%" />
+<col style="width: 33.3%" />
+<col style="width: 66.7%" />
 </colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>参数</p></th>
@@ -361,20 +371,20 @@ virtualenv venv2
 </div>
 </section>
 <section id="psshtips">
-<h2>pssh使用的tips<a class="headerlink" href="#psshtips" title="Link to this heading">¶</a></h2>
+<h2>pssh使用的tips<a class="headerlink" href="#psshtips" title="Link to this heading"></a></h2>
 <section id="id5">
-<h3>忽略服务器密钥<a class="headerlink" href="#id5" title="Link to this heading">¶</a></h3>
+<h3>忽略服务器密钥<a class="headerlink" href="#id5" title="Link to this heading"></a></h3>
 <p>在批量处理主机时，如果需要每个服务器都确认服务器密钥是不现实的，这里就需要使用ssh的一个参数 <code class="docutils literal notranslate"><span class="pre">-O</span> <span class="pre">StrictHostKeyChecking=no</span></code> ，这个参数也可以传递给pssh:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pssh</span> <span class="o">-</span><span class="n">O</span> <span class="n">StrictHostKeyChecking</span><span class="o">=</span><span class="n">no</span> <span class="o">-</span><span class="n">ih</span> <span class="n">hosts_ip</span> <span class="o">-</span><span class="n">l</span> <span class="n">huatai</span> <span class="o">-</span><span class="n">A</span> <span class="s2">&quot;uptime&quot;</span>
 </pre></div>
 </div>
 </section>
 <section id="id6">
-<h3>忽略错误密码<a class="headerlink" href="#id6" title="Link to this heading">¶</a></h3>
+<h3>忽略错误密码<a class="headerlink" href="#id6" title="Link to this heading"></a></h3>
 <p>对于部分主机密码错误，我们希望直接跳过错误密码的节点，可以使用ssh的批处理模式 <code class="docutils literal notranslate"><span class="pre">BatchMode=yes</span></code> ，可以配置在用户的 <code class="docutils literal notranslate"><span class="pre">~/.ssh/config</span></code> 中，这样执行pssh命令可以直接忽略错误密码的节点。</p>
 </section>
 <section id="tty">
-<h3>终端tty<a class="headerlink" href="#tty" title="Link to this heading">¶</a></h3>
+<h3>终端tty<a class="headerlink" href="#tty" title="Link to this heading"></a></h3>
 <p>在pssh执行 <code class="docutils literal notranslate"><span class="pre">sudo</span></code> 命令时候，会出现报错:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">...</span>
 <span class="p">[</span><span class="mi">14</span><span class="p">]</span> <span class="mi">14</span><span class="p">:</span><span class="mi">45</span><span class="p">:</span><span class="mi">00</span> <span class="p">[</span><span class="n">FAILURE</span><span class="p">]</span> <span class="mf">192.168.1.11</span> <span class="n">Exited</span> <span class="k">with</span> <span class="n">error</span> <span class="n">code</span> <span class="mi">1</span>
@@ -392,7 +402,7 @@ virtualenv venv2
 </div>
 </section>
 <section id="ssh">
-<h3>使用ssh密钥登陆<a class="headerlink" href="#ssh" title="Link to this heading">¶</a></h3>
+<h3>使用ssh密钥登陆<a class="headerlink" href="#ssh" title="Link to this heading"></a></h3>
 <p>对于使用SSH密钥的登陆方式，需要使用参数 <code class="docutils literal notranslate"><span class="pre">-x</span></code> 来使用扩展ssh参数指定密钥登陆，举例:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pssh</span> <span class="o">-</span><span class="n">i</span> <span class="o">-</span><span class="n">h</span> <span class="n">list_of_hosts</span> \
 <span class="o">-</span><span class="n">x</span> <span class="s2">&quot;-oStrictHostKeyChecking=no  -i /home/xxx/.ssh/ec2.pem&quot;</span> <span class="s1">&#39;uptime&#39;</span>
@@ -406,7 +416,7 @@ virtualenv venv2
 </div>
 </section>
 <section id="id7">
-<h3>密码保护的密钥<a class="headerlink" href="#id7" title="Link to this heading">¶</a></h3>
+<h3>密码保护的密钥<a class="headerlink" href="#id7" title="Link to this heading"></a></h3>
 <div class="admonition note">
 <p class="admonition-title">备注</p>
 <p>最好的方法还是采用 keychain 来解决密钥认证，实际上就不需要使用 <code class="docutils literal notranslate"><span class="pre">-x</span></code> 参数来扩展。</p>
@@ -426,7 +436,7 @@ keychain ~/.ssh/id_rsa
 </section>
 </section>
 <section id="id8">
-<h2>参考<a class="headerlink" href="#id8" title="Link to this heading">¶</a></h2>
+<h2>参考<a class="headerlink" href="#id8" title="Link to this heading"></a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="https://www.tecmint.com/execute-commands-on-multiple-linux-servers-using-pssh/">Pssh – Execute Commands on Multiple Remote Linux Servers Using Single Terminal</a></p></li>
 <li><p><a class="reference external" href="http://manpages.ubuntu.com/manpages/precise/man1/parallel-ssh.1.html">parallel-ssh</a></p></li>
@@ -439,25 +449,37 @@ keychain ~/.ssh/id_rsa
 
            </div>
           </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="index.html" class="btn btn-neutral float-left" title="DevOps 工具集" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="../docs/index.html" class="btn btn-neutral float-right" title="DevOps 文档" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="index.html" class="btn btn-neutral float-left" title="DevOps 工具集" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="../docs/index.html" class="btn btn-neutral float-right" title="DevOps 文档" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../copyright.html">Copyright</a> 2018 - now, Huatai Huang.</p>
+    <p>&#169; <a href="../../copyright.html">版权所有</a> 2018 - now, Huatai Huang。</p>
   </div>
 
-  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
   
     <!-- your html code here -->
     <br>
-    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡</a></p>
-     
+    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡 👈</a></p>
+    <br>
+    <p>网站采用 <a href="https://utteranc.es/">utterances</a> 评论系统，所有评论存储在<a href="https://github.com/huataihuang/cloud-atlas/issues">GitHub issues</a> 中，如果你看不到下方的评论框，那么可能需要<a href="https://cloud-atlas.readthedocs.io/zh-cn/latest/linux/security/vpn/index.html">自备梯子</a> 👈</p>
+    <div class="articleComments">
+        <comments>
+  <script src="https://utteranc.es/client.js"
+    repo="huataihuang/cloud-atlas"
+    issue-term="pathname"
+    theme="github-light"
+    crossorigin="anonymous"
+    async>
+  </script>
+</comments>
+    </div>
 
 
 </footer>

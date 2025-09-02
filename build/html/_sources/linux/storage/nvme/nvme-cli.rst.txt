@@ -4,7 +4,7 @@
 nvme-cli用户工具
 =================
 
-由于数据中心需要很多监控SSD健康度和耐用度，以及更新firmware，安全擦除数据，读取设备日志等管理功能， NVMe组织 <https://nvmexpress.org/>`_ 开发了Linux用户空间命令行工具 ``nvme-cli`` ，可以在Linux系统中管理NVM-Express设备。
+由于数据中心需要很多监控SSD健康度和耐用度，以及更新firmware，安全擦除数据，读取设备日志等管理功能， `NVMe组织 <https://nvmexpress.org/>`_ 开发了Linux用户空间命令行工具 ``nvme-cli`` ，可以在Linux系统中管理NVM-Express设备。
 
 .. note::
 
@@ -51,15 +51,15 @@ nvme-cli用户工具
       :widths: 25, 75
       :header-rows: 1
 
-- 列出系统所有安装的NVMe SSD::
+- 列出系统所有安装的NVMe SSD:
 
-   sudo nvme list
+.. literalinclude:: nvme-cli/nvme_list
+   :caption: 列出系统安装NVMe
 
 在我的 :ref:`hpe_dl360_gen9` 上通过 :ref:`pcie_bifurcation` 安装了3根 :ref:`samsung_pm9a1` :
 
 .. literalinclude:: nvme-cli/nvme_list.txt
    :language: bash
-   :linenos:
    :caption: nvme list 输出
 
 - 检查NVMe控制器以及支持的功能::

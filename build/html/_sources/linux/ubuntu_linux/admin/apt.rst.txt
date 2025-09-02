@@ -14,6 +14,8 @@ contrib/non-free软件包
    deb http://deb.debian.org/debian buster main contrib non-free
    deb-src http://deb.debian.org/debian buster main contrib non-free
 
+.. _apt_proxy:
+
 APT代理
 ========
 
@@ -36,7 +38,7 @@ Ubuntu/Debian使用的APT软件包管理也支持代理配置，这里我结合 
 
    "http://username:password@yourproxyaddress:proxyport";
 
-上述翻墙方式采用本地运行 :ref:`squid` 代理服务器，所以APT代理设置是 ``http`` 协议，实际在 :ref:`` 采用如下配置::
+上述翻墙方式采用本地运行 :ref:`squid` 代理服务器，所以APT代理设置是 ``http`` 协议，采用如下配置::
 
    Acquire::http::Proxy "http://192.168.6.200:3128/";
 
@@ -96,9 +98,10 @@ proxy.conf
 
    sudo add-apt-repository ppa:apandada1/foliate
 
-然后更新仓库::
+然后更新仓库:
 
-   sudo apt update
+.. literalinclude:: apt/apt_update
+   :caption: apt更新系统
 
 此时可能报错::
 
@@ -154,6 +157,42 @@ apt hold保持包不更新
 - 解锁 ``hold`` 住的软件包::
 
    apt-mark unhold kubelet kubeadm kubectl
+
+apt源代码安装和编译
+=====================
+
+我在 :ref:`build_lineageos_20_pixel_4` 遇到一个需要编译 ``git with openssl`` 来解决通过 :ref:`squid_socks_peer` 使用 :ref:`git_proxy` 的问题。这个案例采用了ubuntu发行版提供的软件包源代码编译安装，步骤是可借鉴的:
+
+- 安装编译环境:
+
+.. literalinclude:: ../../../devops/git/git-openssl/gt_build_dependencies
+   :caption: 安装git编译依赖环境
+
+- 修改 ``/etc/apt/sources.list`` 将源代码仓库激活(默认没有激活或配置):
+
+.. literalinclude:: ../../../devops/git/git-openssl/sources.list
+   :caption: 配置apt源代码源
+   :emphasize-lines: 2,4,6
+
+- 更新仓库索引然后安装 ``git`` 源代码:
+
+.. literalinclude:: ../../../devops/git/git-openssl/apt_source_git
+   :caption: 更新仓库索引然后安装 ``git`` 源代码
+
+- 安装 ``libcurl`` :
+
+.. literalinclude:: ../../../devops/git/git-openssl/apt_libcurl
+   :caption: 安装 libcurl
+
+- 进入git源代码目录，修改2个文件，然后重新编译git:
+
+.. literalinclude:: ../../../devops/git/git-openssl/recompile_git_with_openssl
+   :caption: 修订配置后重新编译git with openssl
+
+- 然后进入上级目录安装编译后的deb包:
+
+.. literalinclude:: ../../../devops/git/git-openssl/pkg_install_git_with_openssl
+   :caption: 安装编译后的deb包
 
 参考
 ========

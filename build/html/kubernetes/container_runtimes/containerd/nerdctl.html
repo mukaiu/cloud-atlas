@@ -1,21 +1,25 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh" data-content_root="../../../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>nerdctl &mdash; Cloud Atlas 0.1 文档</title>
-      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../../_static/graphviz.css" type="text/css" />
+  <title>nerdctl &mdash; Cloud Atlas: Discovery beta 文档</title>
+      <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/graphviz.css?v=fd3f3429" />
+
+  
+    <link rel="shortcut icon" href="../../../_static/favicon.png"/>
   <!--[if lt IE 9]>
     <script src="../../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="../../../_static/documentation_options.js?v=7c91f8fd"></script>
-        <script src="../../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../../_static/documentation_options.js?v=8534f863"></script>
+        <script src="../../../_static/doctools.js?v=9a2dae69"></script>
         <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
-        <script src="../../../_static/translations.js?v=beaddf03"></script>
     <script src="../../../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../../../genindex.html" />
     <link rel="search" title="搜索" href="../../../search.html" />
@@ -33,28 +37,32 @@
           
           
           <a href="../../../index.html" class="icon icon-home">
-            Cloud Atlas
+            Cloud Atlas: Discovery
           </a>
+              <div class="version">
+                1.1
+              </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../../studio/index.html">Studio Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../infrastructure/index.html">Infrastructure Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../devops/index.html">DevOps Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../kvm/index.html">KVM Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../ceph/index.html">Ceph Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../gluster/index.html">Gluster Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../ovirt/index.html">oVirt Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../openstack/index.html">OpenStack Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../docker/index.html">Docker Atlas</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">Kubernetes Atlas</a><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../studio/index.html">Studio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../infrastructure/index.html">Infrastructure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../devops/index.html">DevOps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../kvm/index.html">KVM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../ceph/index.html">Ceph</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../gluster/index.html">Gluster</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../ovirt/index.html">oVirt</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../openstack/index.html">OpenStack</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../docker/index.html">Docker</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">Kubernetes</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../think_k8s.html">Kubernetes的思考</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../kubernetes_overview.html">Kubernetes概览</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../startup_prepare/index.html">Kubernetes起步准备</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../startup/index.html">Kubernetes快速起步</a></li>
@@ -107,53 +115,56 @@
 <li class="toctree-l2"><a class="reference internal" href="../../gpu/index.html">GPU Kubernetes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../kubeflow/index.html">Kubeflow - Kubernetes机器学习工作流平台</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../argo/index.html">Argo - 基于Kubernetes的持续集成和工作流</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../kueue/index.html">Kueue - K8s原生批处理调度</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../k8s_android/index.html">Kubernetes运行Android</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../k3s/index.html">K3s - 轻量级Kubernetes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../k0s/index.html">K0s - 轻量级Kubernetes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../platform/index.html">Kubernetes之上的平台</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../cloud/index.html">Kubernetes云厂商</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../develop/index.html">Kubernetes开发</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../cncf/index.html">CNCF(Cloud Native Computing Foudation)</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../../kubernetes_from_scratch/index.html">Kubernetes From Scratch (KFS) Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../rancher/index.html">Rancher Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../openshift/index.html">OpenShift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../sql/index.html">SQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../sqlite/index.html">SQLite Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../mysql/index.html">MySQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../pgsql/index.html">PostgreSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../clickhouse/index.html">ClickHouse Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../nosql/index.html">NoSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../redis/index.html">Redis Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../network/index.html">Network Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../infra_service/index.html">Infra-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../infra_search/index.html">Search Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../info_service/index.html">Info-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../web/index.html">Web Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../big_data/index.html">Big Data Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../machine_learning/index.html">Machine Learning Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../linux/index.html">Linux Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../kernel/index.html">Kernel Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../performance/index.html">Performance Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../distributed_system/index.html">Distributed System Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../shell/index.html">Shell Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../python/index.html">Python Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../django/index.html">Django Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../flask/index.html">Flask Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../javascript/index.html">JavaScript Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../nodejs/index.html">Node.js Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../clang/index.html">C Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../golang/index.html">Go Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../swift/index.html">Swift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../rust/index.html">Rust Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../ruby/index.html">Ruby Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../arm/index.html">ARM Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../android/index.html">Android Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../bsd/index.html">BSD Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../apple/index.html">Apple Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../windows/index.html">Windows Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../real/index.html">Real Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../management/index.html">Management Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../life/index.html">Life Atlas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../k8s_dev/index.html">Kubernetes Develop</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../rancher/index.html">Rancher</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../openshift/index.html">OpenShift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../sql/index.html">SQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../sqlite/index.html">SQLite</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../mysql/index.html">MySQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../pgsql/index.html">PostgreSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../nosql/index.html">NoSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../network/index.html">Network</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../infra_service/index.html">Infra-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../infra_search/index.html">Infra-Search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../web/index.html">Web</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../info_service/index.html">Info-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../big_data/index.html">Big Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../machine_learning/index.html">Machine Learning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../drone/index.html">Drone</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../linux/index.html">Linux</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../kernel/index.html">Kernel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../performance/index.html">Performance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../distributed_system/index.html">Distributed System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../shell/index.html">Shell</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../python/index.html">Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../django/index.html">Django</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../javascript/index.html">JavaScript</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../nodejs/index.html">Node.js</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../clang/index.html">C</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../golang/index.html">Go</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../swift/index.html">Swift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../rust/index.html">Rust</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../ruby/index.html">Ruby</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../lua/index.html">Lua</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../arm/index.html">ARM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../raspberry_pi/index.html">Raspberry Pi</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../android/index.html">Android</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../bsd/index.html">BSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../freebsd/index.html">FreeBSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../apple/index.html">Apple</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../windows/index.html">Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../real/index.html">Real</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../management/index.html">Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../life/index.html">Life</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../copyright.html">Copyright</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../aboutme.html">关于作者</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../donate.html">捐赠</a></li>
@@ -166,22 +177,22 @@
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../../index.html">Cloud Atlas</a>
+          <a href="../../../index.html">Cloud Atlas: Discovery</a>
       </nav>
 
       <div class="wy-nav-content">
         <div class="rst-content">
-          <div role="navigation" aria-label="Page navigation">
+          <div role="navigation" aria-label="页面导航">
   <ul class="wy-breadcrumbs">
       <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
-          <li class="breadcrumb-item"><a href="../../index.html">Kubernetes Atlas</a></li>
+          <li class="breadcrumb-item"><a href="../../index.html">Kubernetes</a></li>
           <li class="breadcrumb-item"><a href="../index.html">容器运行时(Container Runtimes)</a></li>
           <li class="breadcrumb-item"><a href="index.html">containerd运行时(runtime)</a></li>
       <li class="breadcrumb-item active">nerdctl</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../../../_sources/kubernetes/container_runtimes/containerd/nerdctl.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../../_sources/kubernetes/container_runtimes/containerd/nerdctl.rst.txt" rel="nofollow"> 查看页面源码</a>
       </li>
   </ul>
   <hr/>
@@ -190,10 +201,10 @@
            <div itemprop="articleBody">
              
   <section id="nerdctl">
-<span id="id1"></span><h1>nerdctl<a class="headerlink" href="#nerdctl" title="Link to this heading">¶</a></h1>
+<span id="id1"></span><h1>nerdctl<a class="headerlink" href="#nerdctl" title="Link to this heading"></a></h1>
 <p>nerdctl 是 <code class="docutils literal notranslate"><span class="pre">containerd</span></code> 子项目，提供Docker兼容的CLI命令:</p>
 <ul class="simple">
-<li><p>类似 <a class="reference internal" href="../../../docker/index.html#docker"><span class="std std-ref">Docker Atlas</span></a> 的交互方式</p></li>
+<li><p>类似 <a class="reference internal" href="../../../docker/index.html#docker"><span class="std std-ref">Docker</span></a> 的交互方式</p></li>
 <li><p>支持Docker Compose</p></li>
 <li><p>支持rootless模式</p></li>
 <li><p>支持 lazy-pulling (例如 <a class="reference internal" href="estargz_lazy_pulling.html#estargz-lazy-pulling"><span class="std std-ref">用于延迟拉取(Lazy Pulling)的eStargz(容器镜像层标准兼容扩展)</span></a> )</p></li>
@@ -202,7 +213,7 @@
 <li><p>支持容器镜像签名和验证</p></li>
 </ul>
 <section id="id2">
-<h2>安装<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
+<h2>安装<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
 <ul class="simple">
 <li><p>从 <a class="reference external" href="https://github.com/containerd/nerdctl/releases">nerdctl releases</a> 下载软件包:</p></li>
 </ul>
@@ -224,9 +235,13 @@ sudo<span class="w"> </span>mv<span class="w"> </span>nerdctl<span class="w"> </
 </ul>
 </div></blockquote>
 <p>我安装的是Minimal版本，其他组件按需各自安装</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>在 <a class="reference internal" href="../../../apple/macos/index.html#macos"><span class="std std-ref">macOS</span></a> 上运行 <a class="reference internal" href="../../../docker/colima/index.html#colima"><span class="std std-ref">Colima</span></a> 可以获得开源的容器运行环境，支持采用 <a class="reference internal" href="index.html#containerd"><span class="std std-ref">containerd运行时(runtime)</span></a> 作为运行时。</p>
+</div>
 </section>
 <section id="id3">
-<h2>快速起步<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h2>
+<h2>快速起步<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
 <ul>
 <li><p>有root权限方式:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">systemctl</span> <span class="n">enable</span> <span class="o">--</span><span class="n">now</span> <span class="n">containerd</span>
@@ -274,7 +289,7 @@ sudo<span class="w"> </span>mv<span class="w"> </span>nerdctl<span class="w"> </
 </li>
 </ul>
 <section id="id4">
-<h3>容器探索<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h3>
+<h3>容器探索<a class="headerlink" href="#id4" title="Link to this heading"></a></h3>
 <p>我在下文尝试通过 <a class="reference internal" href="../../../docker/moby/buildkit/index.html#buildkit"><span class="std std-ref">Buildkit</span></a> 构建镜像遇到容器内部不能通网络的问题，所以，我返回来先验证官方镜像是否能够正常运行，并排查网络</p>
 <ul>
 <li><p>进入 <code class="docutils literal notranslate"><span class="pre">nginx</span></code> 容器:</p>
@@ -315,7 +330,7 @@ sudo<span class="w"> </span>mv<span class="w"> </span>nerdctl<span class="w"> </
 <span class="mf">10.4.0.0</span><span class="o">/</span><span class="mi">24</span> <span class="n">dev</span> <span class="n">eth0</span> <span class="n">proto</span> <span class="n">kernel</span> <span class="n">scope</span> <span class="n">link</span> <span class="n">src</span> <span class="mf">10.4.0.2</span>
 </pre></div>
 </div>
-<p>为什么容器内部默认就能够连接外网呢？这明显就是类似 <a class="reference internal" href="../../../docker/index.html#docker"><span class="std std-ref">Docker Atlas</span></a> 的NAT网络么</p>
+<p>为什么容器内部默认就能够连接外网呢？这明显就是类似 <a class="reference internal" href="../../../docker/index.html#docker"><span class="std std-ref">Docker</span></a> 的NAT网络么</p>
 <ul>
 <li><p>在物理主机上检查:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">brctl</span> <span class="n">show</span>
@@ -331,10 +346,10 @@ sudo<span class="w"> </span>mv<span class="w"> </span>nerdctl<span class="w"> </
 </section>
 </section>
 <section id="id5">
-<h2>实践:镜像<a class="headerlink" href="#id5" title="Link to this heading">¶</a></h2>
+<h2>实践:镜像<a class="headerlink" href="#id5" title="Link to this heading"></a></h2>
 <p><code class="docutils literal notranslate"><span class="pre">nerdctl</span></code> 对镜像的制作是采用 <a class="reference internal" href="../../../docker/moby/buildkit/index.html#buildkit"><span class="std std-ref">Buildkit</span></a> 实现的，请先安装 <code class="docutils literal notranslate"><span class="pre">buildkit</span></code> 并运行 <code class="docutils literal notranslate"><span class="pre">buildkitd</span></code> 服务进程</p>
 <div class="literal-block-wrapper docutils container" id="id7">
-<div class="code-block-caption"><span class="caption-text">使用root身份运行buildkitd，启动后工作在前台等待客户端连接</span><a class="headerlink" href="#id7" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">使用root身份运行buildkitd，启动后工作在前台等待客户端连接</span><a class="headerlink" href="#id7" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>buildkitd
 </pre></div>
 </div>
@@ -343,7 +358,7 @@ sudo<span class="w"> </span>mv<span class="w"> </span>nerdctl<span class="w"> </
 <li><p>我这里采用 <a class="reference internal" href="../../../docker/admin/dockerfile.html#dockerfile"><span class="std std-ref">从Dockerfile构建Docker镜像</span></a> 的 <code class="docutils literal notranslate"><span class="pre">centos8-ssh</span></code> :</p></li>
 </ul>
 <div class="literal-block-wrapper docutils container" id="id8">
-<div class="code-block-caption"><span class="caption-text">CentOS 8的Dockerfile，包括ssh安装</span><a class="headerlink" href="#id8" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">CentOS 8的Dockerfile，包括ssh安装</span><a class="headerlink" href="#id8" title="Link to this code"></a></div>
 <div class="highlight-dockerfile notranslate"><div class="highlight"><pre><span></span><span class="c"># Build centos 8 image with ssh:</span>
 <span class="c"># ------------------------------</span>
 <span class="c"># docker build -f centos8-ssh -t local:centos8-ssh</span>
@@ -411,14 +426,14 @@ sudo<span class="w"> </span>mv<span class="w"> </span>nerdctl<span class="w"> </
 </div>
 <p>执行以下命令构建:</p>
 <div class="literal-block-wrapper docutils container" id="id9">
-<div class="code-block-caption"><span class="caption-text">nerdctl build构建容器镜像</span><a class="headerlink" href="#id9" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">nerdctl build构建容器镜像</span><a class="headerlink" href="#id9" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>nerdctl<span class="w"> </span>build<span class="w"> </span>-t<span class="w"> </span>local:centos8-ssh<span class="w"> </span>.
 </pre></div>
 </div>
 </div>
 <p>此时提示信息:</p>
 <div class="literal-block-wrapper docutils container" id="id10">
-<div class="code-block-caption"><span class="caption-text">nerdctl build构建容器镜像的输出信息</span><a class="headerlink" href="#id10" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">nerdctl build构建容器镜像的输出信息</span><a class="headerlink" href="#id10" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">[</span>+<span class="o">]</span><span class="w"> </span>Building<span class="w"> </span><span class="m">53</span>.6s<span class="w"> </span><span class="o">(</span><span class="m">7</span>/19<span class="o">)</span>
 <span class="w"> </span><span class="o">=</span>&gt;<span class="w"> </span><span class="o">[</span>internal<span class="o">]</span><span class="w"> </span>load<span class="w"> </span>build<span class="w"> </span>definition<span class="w"> </span>from<span class="w"> </span>Dockerfile<span class="w">                                                                                                                                </span><span class="m">0</span>.6s
 <span class="w"> </span><span class="o">=</span>&gt;<span class="w"> </span><span class="o">=</span>&gt;<span class="w"> </span>transferring<span class="w"> </span>dockerfile:<span class="w"> </span><span class="m">1</span>.00kB<span class="w">                                                                                                                                              </span><span class="m">0</span>.0s
@@ -469,7 +484,7 @@ FATA<span class="o">[</span><span class="m">0053</span><span class="o">]</span><
 <p>我尝试通过 <code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">buildkitd</span> <span class="pre">--oci-worker=false</span> <span class="pre">--containerd-worker=true</span></code> 运行 <code class="docutils literal notranslate"><span class="pre">buildkitd</span></code> （指定使用containerd worker) ，但是依然没有解决这个问题</p>
 <p>但是，我注意到 <code class="docutils literal notranslate"><span class="pre">buildkitd</span></code> 的终端输出信息显示:</p>
 <div class="literal-block-wrapper docutils container" id="id11">
-<div class="code-block-caption"><span class="caption-text">nerdctl build失败，显示使用了 systemd-resolve</span><a class="headerlink" href="#id11" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">nerdctl build失败，显示使用了 systemd-resolve</span><a class="headerlink" href="#id11" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>WARN<span class="o">[</span><span class="m">2022</span>-08-11T00:48:34+08:00<span class="o">]</span><span class="w"> </span>using<span class="w"> </span>host<span class="w"> </span>network<span class="w"> </span>as<span class="w"> </span>the<span class="w"> </span>default
 WARN<span class="o">[</span><span class="m">2022</span>-08-11T00:48:34+08:00<span class="o">]</span><span class="w"> </span>git<span class="w"> </span><span class="nb">source</span><span class="w"> </span>cannot<span class="w"> </span>be<span class="w"> </span>enabled:<span class="w"> </span>failed<span class="w"> </span>to<span class="w"> </span>find<span class="w"> </span>git<span class="w"> </span>binary:<span class="w"> </span>exec:<span class="w"> </span><span class="s2">&quot;git&quot;</span>:<span class="w"> </span>executable<span class="w"> </span>file<span class="w"> </span>not<span class="w"> </span>found<span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="nv">$PATH</span>
 INFO<span class="o">[</span><span class="m">2022</span>-08-11T00:48:34+08:00<span class="o">]</span><span class="w"> </span>found<span class="w"> </span>worker<span class="w"> </span><span class="s2">&quot;ndtir74093ai7v0l9y6qrxppp&quot;</span>,<span class="w"> </span><span class="nv">labels</span><span class="o">=</span>map<span class="o">[</span>org.mobyproject.buildkit.worker.containerd.namespace:default<span class="w"> </span>org.mobyproject.buildkit.worker.containerd.uuid:c1b0bbf7-00fd-4fd9-8ff7-5fe4da6fa866<span class="w"> </span>org.mobyproject.buildkit.worker.executor:containerd<span class="w"> </span>org.mobyproject.buildkit.worker.hostname:z-k8s-m-1<span class="w"> </span>org.mobyproject.buildkit.worker.network:host<span class="w"> </span>org.mobyproject.buildkit.worker.snapshotter:overlayfs<span class="o">]</span>,<span class="w"> </span><span class="nv">platforms</span><span class="o">=[</span>linux/amd64<span class="w"> </span>linux/amd64/v2<span class="w"> </span>linux/amd64/v3<span class="w"> </span>linux/386<span class="o">]</span>
@@ -490,13 +505,13 @@ ERRO<span class="o">[</span><span class="m">2022</span>-08-11T00:54:49+08:00<spa
 </div>
 <p>我在 <code class="docutils literal notranslate"><span class="pre">192.168.6.200</span></code> 上运行的 DNSmasq ，修订配置添加 <code class="docutils literal notranslate"><span class="pre">log-queries</span></code> (开启DNS查询日志)，然后重启dnsmasq，再次执行 <code class="docutils literal notranslate"><span class="pre">nerdctl</span> <span class="pre">build</span></code> ，观察DNS服务器端是否收到查询请求: 确实收到了DNS查询</p>
 <section id="centos-8centos-stream">
-<span id="centos-8-convert-stream"></span><h3>CentOS 8转换CentOS Stream<a class="headerlink" href="#centos-8centos-stream" title="Link to this heading">¶</a></h3>
+<span id="centos-8-convert-stream"></span><h3>CentOS 8转换CentOS Stream<a class="headerlink" href="#centos-8centos-stream" title="Link to this heading"></a></h3>
 <p><strong>我发现我犯了一个低级错误</strong></p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">#0 1.355 CentOS Linux 8 - AppStream                       66  B/s |  38  B     00:00</span>
 <span class="c1">#0 1.366 Error: Failed to download metadata for repo &#39;appstream&#39;: Cannot prepare internal mirrorlist: No URLs in mirrorlist</span>
 </pre></div>
 </div>
-<p>参考 <a class="reference external" href="https://stackoverflow.com/questions/70963985/error-failed-to-download-metadata-for-repo-appstream-cannot-prepare-internal">Error: Failed to download metadata for repo ‘appstream’: Cannot prepare internal mirrorlist: No URLs in mirrorlist</a> 很简单，CentOS已经走到了生命尽头，需要切换到 <code class="docutils literal notranslate"><span class="pre">stream</span></code> 版本才能正常工作，所以Docker官方镜像已经无法直接使用</p>
+<p>参考 <a class="reference external" href="https://stackoverflow.com/questions/70963985/error-failed-to-download-metadata-for-repo-appstream-cannot-prepare-internal">Error: Failed to download metadata for repo 'appstream': Cannot prepare internal mirrorlist: No URLs in mirrorlist</a> 很简单，CentOS已经走到了生命尽头，需要切换到 <code class="docutils literal notranslate"><span class="pre">stream</span></code> 版本才能正常工作，所以Docker官方镜像已经无法直接使用</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">CentOS</span> <span class="mi">8</span> <span class="n">reached</span> <span class="n">EOL</span> <span class="n">on</span> <span class="mi">2021</span><span class="o">-</span><span class="mi">12</span><span class="o">-</span><span class="mi">31</span>
 </pre></div>
 </div>
@@ -507,7 +522,7 @@ ERRO<span class="o">[</span><span class="m">2022</span>-08-11T00:54:49+08:00<spa
 <li><p>修复的方法是采用在Dockerfile中增加切换 <code class="docutils literal notranslate"><span class="pre">CentOS</span> <span class="pre">Stream</span> <span class="pre">8</span></code> :</p></li>
 </ul>
 <div class="literal-block-wrapper docutils container" id="id12">
-<div class="code-block-caption"><span class="caption-text">CentOS Stream 8(取代已经 EOL CentOS 8)的Dockerfile，包括ssh安装</span><a class="headerlink" href="#id12" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">CentOS Stream 8(取代已经 EOL CentOS 8)的Dockerfile，包括ssh安装</span><a class="headerlink" href="#id12" title="Link to this code"></a></div>
 <div class="highlight-dockerfile notranslate"><div class="highlight"><pre><span></span><span class="c"># Build centos 8 image with ssh:</span>
 <span class="c"># ------------------------------</span>
 <span class="c"># docker build -f centos8-ssh -t local:centos8-ssh</span>
@@ -579,7 +594,7 @@ ERRO<span class="o">[</span><span class="m">2022</span>-08-11T00:54:49+08:00<spa
 <li><p>然后执行:</p></li>
 </ul>
 <div class="literal-block-wrapper docutils container" id="id13">
-<div class="code-block-caption"><span class="caption-text">nerdctl build构建容器镜像centos-stream-8-ssh</span><a class="headerlink" href="#id13" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">nerdctl build构建容器镜像centos-stream-8-ssh</span><a class="headerlink" href="#id13" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>nerdctl<span class="w"> </span>build<span class="w"> </span>-t<span class="w"> </span>local:centos-stream-8-ssh<span class="w"> </span>.
 </pre></div>
 </div>
@@ -606,13 +621,13 @@ ERRO<span class="o">[</span><span class="m">2022</span>-08-11T00:54:49+08:00<spa
 </section>
 </section>
 <section id="nerdctlkubernetes">
-<span id="nerdctl-load-images-k8s"></span><h2>nerdctl加载镜像到Kubernetes<a class="headerlink" href="#nerdctlkubernetes" title="Link to this heading">¶</a></h2>
+<span id="nerdctl-load-images-k8s"></span><h2>nerdctl加载镜像到Kubernetes<a class="headerlink" href="#nerdctlkubernetes" title="Link to this heading"></a></h2>
 <p><code class="docutils literal notranslate"><span class="pre">nerdctl</span></code> 可以直接为本地Kubernetes构建镜像而无需registry:</p>
 <ul class="simple">
 <li><p>这里采用 <a class="reference internal" href="containerd_centos_systemd.html#containerd-centos-systemd"><span class="std std-ref">Containerd环境CentOS容器运行systemd</span></a> 实践验证通过的 <code class="docutils literal notranslate"><span class="pre">Dockerfile</span></code> :</p></li>
 </ul>
 <div class="literal-block-wrapper docutils container" id="id14">
-<div class="code-block-caption"><span class="caption-text">CentOS Stream 8 启用systemd(正确)</span><a class="headerlink" href="#id14" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">CentOS Stream 8 启用systemd(正确)</span><a class="headerlink" href="#id14" title="Link to this code"></a></div>
 <div class="highlight-dockerfile notranslate"><div class="highlight"><pre><span></span><span class="c"># USE DOCKER</span>
 <span class="c"># docker build --rm -t local/centos-stream-8-systemd .</span>
 <span class="c"># docker run -itd --privileged=true -p 1122:22 --hostname myserver --name myserver local:centos-stream-8-systemd</span>
@@ -684,7 +699,7 @@ rm<span class="w"> </span>-f<span class="w"> </span>/lib/systemd/system/anaconda
 <li><p>执行以下命令为Kuberntes构建镜像:</p></li>
 </ul>
 <div class="literal-block-wrapper docutils container" id="id15">
-<div class="code-block-caption"><span class="caption-text">nerdctl build为本地Kubernetes构建镜像</span><a class="headerlink" href="#id15" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">nerdctl build为本地Kubernetes构建镜像</span><a class="headerlink" href="#id15" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>nerdctl<span class="w"> </span>--namespace<span class="w"> </span>k8s.io<span class="w"> </span>build<span class="w"> </span>-t<span class="w"> </span>centos-stream-8-systemd<span class="w"> </span>.
 </pre></div>
 </div>
@@ -707,7 +722,7 @@ rm<span class="w"> </span>-f<span class="w"> </span>/lib/systemd/system/anaconda
 <li><p>然后在Kubernetes集群生成pod:</p></li>
 </ul>
 <div class="literal-block-wrapper docutils container" id="id16">
-<div class="code-block-caption"><span class="caption-text">执行kubeclt apply 将 nerdctl build为本地Kubernetes构建镜像 生成可运行pod</span><a class="headerlink" href="#id16" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">执行kubeclt apply 将 nerdctl build为本地Kubernetes构建镜像 生成可运行pod</span><a class="headerlink" href="#id16" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>kubectl<span class="w"> </span>apply<span class="w"> </span>-f<span class="w"> </span>-<span class="w"> </span><span class="s">&lt;&lt;EOF</span>
 <span class="s">apiVersion: v1</span>
 <span class="s">kind: Pod</span>
@@ -769,7 +784,7 @@ centos-stream-8   0/1     ErrImageNeverPull   0          4m41s   10.0.4.224   z-
 <p class="admonition-title">备注</p>
 <p><code class="docutils literal notranslate"><span class="pre">nerdctl</span></code> 的 <code class="docutils literal notranslate"><span class="pre">save</span></code> 和 <code class="docutils literal notranslate"><span class="pre">load</span></code> 完全和 <code class="docutils literal notranslate"><span class="pre">docker</span></code> 的 <a class="reference internal" href="../../../docker/admin/transfer_docker_image_without_registry.html#transfer-docker-image-without-registry"><span class="std std-ref">无需Docker Registry传输Docker镜像</span></a> 兼容，相互之间可以转换传输。此外，命令格式其实也一样，例如可以使用和 <code class="docutils literal notranslate"><span class="pre">docker</span></code> 一样的参数保存镜像和导入镜像:</p>
 <div class="literal-block-wrapper docutils container" id="id17">
-<div class="code-block-caption"><span class="caption-text">nerdctl保存和加载镜像命令</span><a class="headerlink" href="#id17" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">nerdctl保存和加载镜像命令</span><a class="headerlink" href="#id17" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>nerdctl<span class="w"> </span>save<span class="w"> </span>-o<span class="w"> </span>~/x-dev.tar<span class="w"> </span>local:x-dev
 nerdctl<span class="w"> </span>load<span class="w"> </span>-i<span class="w"> </span>~/x-dev.tar
 </pre></div>
@@ -854,7 +869,7 @@ nerdctl<span class="w"> </span>load<span class="w"> </span>-i<span class="w"> </
 </ul>
 </section>
 <section id="nodeport">
-<h2>简单的NodePort输出验证<a class="headerlink" href="#nodeport" title="Link to this heading">¶</a></h2>
+<h2>简单的NodePort输出验证<a class="headerlink" href="#nodeport" title="Link to this heading"></a></h2>
 <div class="admonition note">
 <p class="admonition-title">备注</p>
 <p>参考 <a class="reference internal" href="../../network/cilium/networking/cilium_kubeproxy_free.html#cilium-kubeproxy-free"><span class="std std-ref">Cilium完全取代kube-proxy运行Kubernetes</span></a> 验证方法，将ssh服务输出到集群</p>
@@ -924,7 +939,7 @@ nerdctl<span class="w"> </span>load<span class="w"> </span>-i<span class="w"> </
 <p>登陆到容器内部进行运维</p>
 </section>
 <section id="id6">
-<h2>参考<a class="headerlink" href="#id6" title="Link to this heading">¶</a></h2>
+<h2>参考<a class="headerlink" href="#id6" title="Link to this heading"></a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="https://github.com/containerd/nerdctl">nerdctl: Docker-compatible CLI for containerd</a></p></li>
 <li><p><a class="reference external" href="https://docs.rancherdesktop.io/tutorials/working-with-images">Rancher desktop: Working with Images</a></p></li>
@@ -936,25 +951,37 @@ nerdctl<span class="w"> </span>load<span class="w"> </span>-i<span class="w"> </
 
            </div>
           </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="ctr.html" class="btn btn-neutral float-left" title="ctr" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="containerd_cni_plugin.html" class="btn btn-neutral float-right" title="containerd CNI plugin" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="ctr.html" class="btn btn-neutral float-left" title="ctr" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="containerd_cni_plugin.html" class="btn btn-neutral float-right" title="containerd CNI plugin" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../../copyright.html">Copyright</a> 2018 - now, Huatai Huang.</p>
+    <p>&#169; <a href="../../../copyright.html">版权所有</a> 2018 - now, Huatai Huang。</p>
   </div>
 
-  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
   
     <!-- your html code here -->
     <br>
-    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡</a></p>
-     
+    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡 👈</a></p>
+    <br>
+    <p>网站采用 <a href="https://utteranc.es/">utterances</a> 评论系统，所有评论存储在<a href="https://github.com/huataihuang/cloud-atlas/issues">GitHub issues</a> 中，如果你看不到下方的评论框，那么可能需要<a href="https://cloud-atlas.readthedocs.io/zh-cn/latest/linux/security/vpn/index.html">自备梯子</a> 👈</p>
+    <div class="articleComments">
+        <comments>
+  <script src="https://utteranc.es/client.js"
+    repo="huataihuang/cloud-atlas"
+    issue-term="pathname"
+    theme="github-light"
+    crossorigin="anonymous"
+    async>
+  </script>
+</comments>
+    </div>
 
 
 </footer>

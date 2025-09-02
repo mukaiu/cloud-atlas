@@ -1,21 +1,25 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh" data-content_root="../../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Arch Linux Hibernates &mdash; Cloud Atlas 0.1 文档</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+  <title>Arch Linux Hibernates &mdash; Cloud Atlas: Discovery beta 文档</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=fd3f3429" />
+
+  
+    <link rel="shortcut icon" href="../../_static/favicon.png"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="../../_static/documentation_options.js?v=7c91f8fd"></script>
-        <script src="../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=8534f863"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
         <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
-        <script src="../../_static/translations.js?v=beaddf03"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../../genindex.html" />
     <link rel="search" title="搜索" href="../../search.html" />
@@ -33,60 +37,68 @@
           
           
           <a href="../../index.html" class="icon icon-home">
-            Cloud Atlas
+            Cloud Atlas: Discovery
           </a>
+              <div class="version">
+                1.1
+              </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../studio/index.html">Studio Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../infrastructure/index.html">Infrastructure Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../devops/index.html">DevOps Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kvm/index.html">KVM Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../ceph/index.html">Ceph Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../gluster/index.html">Gluster Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../ovirt/index.html">oVirt Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../openstack/index.html">OpenStack Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../docker/index.html">Docker Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kubernetes/index.html">Kubernetes Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kubernetes_from_scratch/index.html">Kubernetes From Scratch (KFS) Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../rancher/index.html">Rancher Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../openshift/index.html">OpenShift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../sql/index.html">SQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../sqlite/index.html">SQLite Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../mysql/index.html">MySQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../pgsql/index.html">PostgreSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../clickhouse/index.html">ClickHouse Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../nosql/index.html">NoSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../redis/index.html">Redis Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../network/index.html">Network Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../infra_service/index.html">Infra-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../infra_search/index.html">Search Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../info_service/index.html">Info-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../web/index.html">Web Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../big_data/index.html">Big Data Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../machine_learning/index.html">Machine Learning Atlas</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Linux Atlas</a><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../studio/index.html">Studio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../infrastructure/index.html">Infrastructure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../devops/index.html">DevOps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kvm/index.html">KVM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ceph/index.html">Ceph</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../gluster/index.html">Gluster</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ovirt/index.html">oVirt</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../openstack/index.html">OpenStack</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../docker/index.html">Docker</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kubernetes/index.html">Kubernetes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../k8s_dev/index.html">Kubernetes Develop</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../rancher/index.html">Rancher</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../openshift/index.html">OpenShift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../sql/index.html">SQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../sqlite/index.html">SQLite</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../mysql/index.html">MySQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../pgsql/index.html">PostgreSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../nosql/index.html">NoSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../network/index.html">Network</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../infra_service/index.html">Infra-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../infra_search/index.html">Infra-Search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../web/index.html">Web</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../info_service/index.html">Info-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../big_data/index.html">Big Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../machine_learning/index.html">Machine Learning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../drone/index.html">Drone</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Linux</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../best_linux.html">最佳Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../admin/index.html">Linux系统管理</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../redhat_linux/index.html">RedHat Linux</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="index.html">Arch Linux</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="intro_archlinux.html">Arch Linux简介</a></li>
 <li class="toctree-l3"><a class="reference internal" href="best_archlinux.html">最佳Arch Linux发行版</a></li>
 <li class="toctree-l3"><a class="reference internal" href="archlinux_on_mbp.html">MacBook Pro上运行Arch Linux</a></li>
 <li class="toctree-l3"><a class="reference internal" href="archlinux_on_thinkpad_x220.html">ThinkPad X220上运行Arch Linux</a></li>
 <li class="toctree-l3"><a class="reference internal" href="archlinux_on_thinkpad_x220_u_disk.html">ThinkPad X220上运行Arch Linux(U盘)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="archlinux_on_mba.html">MacBook Air上运行Arch Linux</a></li>
+<li class="toctree-l3"><a class="reference internal" href="kinto.html">Kinto.sh - 为Linux/Windows提供 <code class="docutils literal notranslate"><span class="pre">Mac风格快捷键</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="archlinux_init.html">Arch Linux精简系统初始化</a></li>
 <li class="toctree-l3"><a class="reference internal" href="archlinux_chinese_mirrorlist.html">arch linux添加国内源(mirrorlist)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="archlinux_config_ip.html">arch linux配置IP(静态或动态)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="archlinux_wpa_supplicant.html">arch linux使用wpa_supplicant连接无线网络</a></li>
 <li class="toctree-l3"><a class="reference internal" href="archlinux_sway.html">archlinux Sway图形桌面</a></li>
 <li class="toctree-l3"><a class="reference internal" href="archlinux_chinese.html">arch linux中文环境</a></li>
+<li class="toctree-l3"><a class="reference internal" href="archlinux_sway_chinese.html">archlinux Sway图形桌面和中文环境</a></li>
 <li class="toctree-l3"><a class="reference internal" href="archlinux_ms_fonts.html">Arch Linux Windows字体</a></li>
+<li class="toctree-l3"><a class="reference internal" href="archlinux_vultr.html">在Vultr VPS中运行Arch Linux</a></li>
 <li class="toctree-l3"><a class="reference internal" href="pacman.html">Pacman</a></li>
 <li class="toctree-l3"><a class="reference internal" href="pacman_proxy.html">pacman使用代理服务器</a></li>
 <li class="toctree-l3"><a class="reference internal" href="archlinux_downgrade_package.html">arch linux降级软件包</a></li>
@@ -107,21 +119,30 @@
 <li class="toctree-l3"><a class="reference internal" href="xmodmap.html">Xmodmap修改键盘映射</a></li>
 <li class="toctree-l3"><a class="reference internal" href="dropbox.html">Arch Linux上使用Dropbox</a></li>
 <li class="toctree-l3"><a class="reference internal" href="cross_compile.html">交叉编译</a></li>
+<li class="toctree-l3"><a class="reference internal" href="archlinux_makepkg.html">Arch Linux makepkg</a></li>
 <li class="toctree-l3"><a class="reference internal" href="archlinux_wine.html">ArchLinux平台wine环境运行Windows程序</a></li>
 <li class="toctree-l3"><a class="reference internal" href="archlinux_build_kernel.html">Arch Linux编译内核</a></li>
+<li class="toctree-l3"><a class="reference internal" href="archlinux_kernel.html">Arch Linux 内核</a></li>
+<li class="toctree-l3"><a class="reference internal" href="archlinux_novnc.html">在浏览器中访问arch linux(noVNC)</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../asahi_linux/index.html">Asahi Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../gentoo_linux/index.html">Gentoo Linux</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../lfs_linux/index.html">LFS(Linux from scratch)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lfs/index.html">LFS(Linux from scratch)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../blfs/index.html">BLFS(Beyond Linux from scratch)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../alfs/index.html">ALFS(Automated Linux from scratch)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pilfs/index.html">PiLFS(Automated Linux from scratch on the Raspberry Pi)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../yocto/index.html">Yocto</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../debian/index.html">Debian</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ubuntu_linux/index.html">Ubuntu Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../suse_linux/index.html">SUSE Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../kali_linux/index.html">Kali Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../tails_linux/index.html">Tails Linux</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../qubes_os/index.html">Qubes OS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../postmarketos/index.html">postmarketOS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../container_os/index.html">容器化操作系统(Container OS)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../fedora_coreos/index.html">Fedora CoreOS容器操作系统</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../chromium_os/index.html">Chromium OS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chromeos/index.html">ChromeOS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../alpine_linux/index.html">Alpine Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../subgraph_os/index.html">Subgraph OS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../kaios/index.html">KaiOS - 世界第三手机操作系统</a></li>
@@ -134,28 +155,30 @@
 <li class="toctree-l2"><a class="reference internal" href="../linux_tablet/index.html">Linux平板</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../kernel/index.html">Kernel Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../performance/index.html">Performance Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../distributed_system/index.html">Distributed System Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../shell/index.html">Shell Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../python/index.html">Python Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../django/index.html">Django Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../flask/index.html">Flask Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../javascript/index.html">JavaScript Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../nodejs/index.html">Node.js Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../clang/index.html">C Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../golang/index.html">Go Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../swift/index.html">Swift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../rust/index.html">Rust Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../ruby/index.html">Ruby Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../arm/index.html">ARM Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../android/index.html">Android Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../bsd/index.html">BSD Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../apple/index.html">Apple Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../windows/index.html">Windows Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../real/index.html">Real Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../management/index.html">Management Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../life/index.html">Life Atlas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kernel/index.html">Kernel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../performance/index.html">Performance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../distributed_system/index.html">Distributed System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../shell/index.html">Shell</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../python/index.html">Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../django/index.html">Django</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../javascript/index.html">JavaScript</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../nodejs/index.html">Node.js</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../clang/index.html">C</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../golang/index.html">Go</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../swift/index.html">Swift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../rust/index.html">Rust</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ruby/index.html">Ruby</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lua/index.html">Lua</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../arm/index.html">ARM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../raspberry_pi/index.html">Raspberry Pi</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../android/index.html">Android</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../bsd/index.html">BSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../freebsd/index.html">FreeBSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../apple/index.html">Apple</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../windows/index.html">Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../real/index.html">Real</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../management/index.html">Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../life/index.html">Life</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../copyright.html">Copyright</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../aboutme.html">关于作者</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../donate.html">捐赠</a></li>
@@ -168,21 +191,21 @@
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../index.html">Cloud Atlas</a>
+          <a href="../../index.html">Cloud Atlas: Discovery</a>
       </nav>
 
       <div class="wy-nav-content">
         <div class="rst-content">
-          <div role="navigation" aria-label="Page navigation">
+          <div role="navigation" aria-label="页面导航">
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
-          <li class="breadcrumb-item"><a href="../index.html">Linux Atlas</a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Linux</a></li>
           <li class="breadcrumb-item"><a href="index.html">Arch Linux</a></li>
       <li class="breadcrumb-item active">Arch Linux Hibernates</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../../_sources/linux/arch_linux/archlinux_hibernates.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../_sources/linux/arch_linux/archlinux_hibernates.rst.txt" rel="nofollow"> 查看页面源码</a>
       </li>
   </ul>
   <hr/>
@@ -191,14 +214,14 @@
            <div itemprop="articleBody">
              
   <section id="arch-linux-hibernates">
-<span id="archlinux-hibernates"></span><h1>Arch Linux Hibernates<a class="headerlink" href="#arch-linux-hibernates" title="Link to this heading">¶</a></h1>
+<span id="archlinux-hibernates"></span><h1>Arch Linux Hibernates<a class="headerlink" href="#arch-linux-hibernates" title="Link to this heading"></a></h1>
 <p>在 <a class="reference internal" href="archlinux_on_mbp.html#archlinux-on-mbp"><span class="std std-ref">MacBook Pro上运行Arch Linux</span></a> 采用的是双操作系统，由于工作原因，需要经常在macOS和Linux之间切换，如果每次重新登陆到Linux操作系统，都要重头开始准备工作环境会非常繁琐(例如打开同样的编辑器和编辑文件，浏览器以及终端)。采用 Hibernages 可以将运行状态存储到磁盘中，这样下次切换到Linux就可以立即恢复到离开时的状态，提高了工作效率。</p>
 <div class="admonition note">
 <p class="admonition-title">备注</p>
 <p>我在 <a class="reference internal" href="../ubuntu_linux/ubuntu_hibernate.html#ubuntu-hibernate"><span class="std std-ref">Ubuntu Hibernate休眠</span></a> 实践中也有一些经验可以参考。</p>
 </div>
 <section id="id1">
-<h2>电源管理<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h2>
+<h2>电源管理<a class="headerlink" href="#id1" title="Link to this heading"></a></h2>
 <p>Linux支持3中不同的挂起系统模式：</p>
 <ul class="simple">
 <li><p>suspend to RAM(也称为suspend): 切断主机大多数部件的电源，但保持RAM电力，这样RAM可以存储主机的状态。由于维持内存的电力消耗很小，所以suspend可以让笔记本电池较长时间供电，并且恢复运行非常迅速。</p></li>
@@ -207,34 +230,34 @@
 </ul>
 </section>
 <section id="id2">
-<h2>底层接口<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
+<h2>底层接口<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
 <div class="admonition note">
 <p class="admonition-title">备注</p>
 <p>虽然可以直接使用底层接口实现suspend/hibernate，并且速度较快，但是高层接口可以实现pre-和post-suspend hooks，例如设置硬件时钟，恢复无线网络等。</p>
 </div>
 <section id="swsusp">
-<h3>内核级接口(swsusp)<a class="headerlink" href="#swsusp" title="Link to this heading">¶</a></h3>
+<h3>内核级接口(swsusp)<a class="headerlink" href="#swsusp" title="Link to this heading"></a></h3>
 <p>在内核的 <code class="docutils literal notranslate"><span class="pre">/sys/power/state</span></code> 接口写入相应字符串可以触发suspend。在内核文档中 <a class="reference external" href="https://www.kernel.org/doc/Documentation/power/states.txt">states.txt</a> 有详细说明。</p>
 </section>
 <section id="uswsusp">
-<h3>用户级软件设置(uswsusp)<a class="headerlink" href="#uswsusp" title="Link to this heading">¶</a></h3>
-<p>uswsusp(“Userspace Software Suspend”)是包装了内核suspend-to-RAM机制，提供在suspsend和resume时候执行一些图形卡配置。</p>
+<h3>用户级软件设置(uswsusp)<a class="headerlink" href="#uswsusp" title="Link to this heading"></a></h3>
+<p>uswsusp(&quot;Userspace Software Suspend&quot;)是包装了内核suspend-to-RAM机制，提供在suspsend和resume时候执行一些图形卡配置。</p>
 </section>
 </section>
 <section id="id3">
-<h2>高层接口<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h2>
+<h2>高层接口<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
 <section id="systemd">
-<h3>systemd<a class="headerlink" href="#systemd" title="Link to this heading">¶</a></h3>
+<h3>systemd<a class="headerlink" href="#systemd" title="Link to this heading"></a></h3>
 <p>systemd原生提供了suspend, hibernate 和 hybrid 支持，这也是Arch Linux使用的默认接口。</p>
 <section id="hibernation">
-<h4>hibernation<a class="headerlink" href="#hibernation" title="Link to this heading">¶</a></h4>
+<h4>hibernation<a class="headerlink" href="#hibernation" title="Link to this heading"></a></h4>
 <p>要使用hibernate，需要创建swap磁盘，并且在内核启动参数 <code class="docutils literal notranslate"><span class="pre">resume=</span></code> 中指定内核使用swap，也就是需要配置 initramfs 来告诉内核从用户空间指定的swap恢复。</p>
 <p>对于swap分区小于RAM，依然能够实现hibernate：</p>
 <p><code class="docutils literal notranslate"><span class="pre">/sys/power/image_size</span></code> 控制了 <code class="docutils literal notranslate"><span class="pre">suspend-to-disk</span></code> 机制创建的镜像大小，这个值是一个非负的整数，默认设置为内存的 2/5 。</p>
 <p>可以调整 <code class="docutils literal notranslate"><span class="pre">/sys/power/image_size</span></code> 大小，可以尽可能缩小这个swap大小，也可以增加这个swap大小来加速hibernate处理速度。注意，suspend镜像不能跨多个swap分区或者多个swap文件，必须完全存储在一个swap分区或者一个swap文件。</p>
 </section>
 <section id="id4">
-<h4>需要的内核参数<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h4>
+<h4>需要的内核参数<a class="headerlink" href="#id4" title="Link to this heading"></a></h4>
 <p>需要使用内核参数 <code class="docutils literal notranslate"><span class="pre">resume=swap_device</span></code> ，这里的 <code class="docutils literal notranslate"><span class="pre">swap_device</span></code> 是持久化块设备命名，例如:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">resume</span><span class="o">=</span><span class="n">UUID</span><span class="o">=</span><span class="mi">4209</span><span class="n">c845</span><span class="o">-</span><span class="n">f495</span><span class="o">-</span><span class="mi">4</span><span class="n">c43</span><span class="o">-</span><span class="mi">8</span><span class="n">a03</span><span class="o">-</span><span class="mi">5363</span><span class="n">dd433153</span>
 <span class="n">resume</span><span class="o">=</span><span class="s2">&quot;PARTLABEL=Swap partition&quot;</span>
@@ -245,7 +268,7 @@
 </section>
 </section>
 <section id="hibernationswap">
-<h2>Hibernation到swap文件<a class="headerlink" href="#hibernationswap" title="Link to this heading">¶</a></h2>
+<h2>Hibernation到swap文件<a class="headerlink" href="#hibernationswap" title="Link to this heading"></a></h2>
 <div class="admonition note">
 <p class="admonition-title">备注</p>
 <p>内核5.0之前不支持Btrfs文件系统的swap文件，如果在Btrfs文件系统中使用swap文件存储hibernetes会导致文件系统损坏。虽然能够在Btrfs中将swap文件挂载成一个loop设备，但是这样会显著降低swap性能。</p>
@@ -278,7 +301,7 @@
 </div>
 </section>
 <section id="hibernate">
-<h2>Hibernate设置实践<a class="headerlink" href="#hibernate" title="Link to this heading">¶</a></h2>
+<h2>Hibernate设置实践<a class="headerlink" href="#hibernate" title="Link to this heading"></a></h2>
 <ul>
 <li><p>获取swap文件应该设置的大小:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">/</span><span class="n">sys</span><span class="o">/</span><span class="n">power</span><span class="o">/</span><span class="n">image_size</span>
@@ -373,12 +396,12 @@
 </pre></div>
 </div>
 <p>通过直接 <code class="docutils literal notranslate"><span class="pre">echo</span> <span class="pre">disk</span> <span class="pre">&gt;</span> <span class="pre">/sys/power/state</span></code> 应该能够直接 suspend to disk ，但是我发现在字符终端显示设备不能写入？ why</p>
-<p>…</p>
+<p>...</p>
 </section>
 <section id="id5">
-<h2>参考<a class="headerlink" href="#id5" title="Link to this heading">¶</a></h2>
+<h2>参考<a class="headerlink" href="#id5" title="Link to this heading"></a></h2>
 <ul class="simple">
-<li><p><a class="reference external" href="https://wiki.archlinux.org/index.php/Power_management/Suspend_and_hibernate">Power management/Suspend and hibernate</a></p></li>
+<li><p><a class="reference external" href="https://wiki.archlinux.org/index.php/Power_management/Suspend_and_hibernate">archlinux wiki:Power management/Suspend and hibernate</a></p></li>
 </ul>
 </section>
 </section>
@@ -386,25 +409,37 @@
 
            </div>
           </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="archlinux_alsa.html" class="btn btn-neutral float-left" title="Arch Linux ALSA声音系统" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="alien_convert_package.html" class="btn btn-neutral float-right" title="alien转换安装包" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="archlinux_alsa.html" class="btn btn-neutral float-left" title="Arch Linux ALSA声音系统" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="alien_convert_package.html" class="btn btn-neutral float-right" title="alien转换安装包" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../copyright.html">Copyright</a> 2018 - now, Huatai Huang.</p>
+    <p>&#169; <a href="../../copyright.html">版权所有</a> 2018 - now, Huatai Huang。</p>
   </div>
 
-  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
   
     <!-- your html code here -->
     <br>
-    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡</a></p>
-     
+    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡 👈</a></p>
+    <br>
+    <p>网站采用 <a href="https://utteranc.es/">utterances</a> 评论系统，所有评论存储在<a href="https://github.com/huataihuang/cloud-atlas/issues">GitHub issues</a> 中，如果你看不到下方的评论框，那么可能需要<a href="https://cloud-atlas.readthedocs.io/zh-cn/latest/linux/security/vpn/index.html">自备梯子</a> 👈</p>
+    <div class="articleComments">
+        <comments>
+  <script src="https://utteranc.es/client.js"
+    repo="huataihuang/cloud-atlas"
+    issue-term="pathname"
+    theme="github-light"
+    crossorigin="anonymous"
+    async>
+  </script>
+</comments>
+    </div>
 
 
 </footer>

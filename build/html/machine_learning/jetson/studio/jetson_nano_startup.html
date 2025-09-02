@@ -1,26 +1,30 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh" data-content_root="../../../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jetson Nano快速起步 &mdash; Cloud Atlas 0.1 文档</title>
-      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../../_static/graphviz.css" type="text/css" />
+  <title>Jetson Nano快速起步 &mdash; Cloud Atlas: Discovery beta 文档</title>
+      <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/graphviz.css?v=fd3f3429" />
+
+  
+    <link rel="shortcut icon" href="../../../_static/favicon.png"/>
   <!--[if lt IE 9]>
     <script src="../../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="../../../_static/documentation_options.js?v=7c91f8fd"></script>
-        <script src="../../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../../_static/documentation_options.js?v=8534f863"></script>
+        <script src="../../../_static/doctools.js?v=9a2dae69"></script>
         <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
-        <script src="../../../_static/translations.js?v=beaddf03"></script>
     <script src="../../../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../../../genindex.html" />
     <link rel="search" title="搜索" href="../../../search.html" />
     <link rel="copyright" title="版权所有" href="../../../copyright.html" />
-    <link rel="next" title="部署Jetson Nano Server" href="deploy_jetson_server.html" />
+    <link rel="next" title="从USB启动Jetson Nano" href="jetson_nano_boot_from_usb.html" />
     <link rel="prev" title="NVIDIA Jetson工作室构建" href="index.html" /> 
 </head>
 
@@ -33,53 +37,61 @@
           
           
           <a href="../../../index.html" class="icon icon-home">
-            Cloud Atlas
+            Cloud Atlas: Discovery
           </a>
+              <div class="version">
+                1.1
+              </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../../studio/index.html">Studio Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../infrastructure/index.html">Infrastructure Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../devops/index.html">DevOps Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../kvm/index.html">KVM Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../ceph/index.html">Ceph Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../gluster/index.html">Gluster Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../ovirt/index.html">oVirt Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../openstack/index.html">OpenStack Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../docker/index.html">Docker Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../kubernetes/index.html">Kubernetes Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../kubernetes_from_scratch/index.html">Kubernetes From Scratch (KFS) Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../rancher/index.html">Rancher Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../openshift/index.html">OpenShift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../sql/index.html">SQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../sqlite/index.html">SQLite Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../mysql/index.html">MySQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../pgsql/index.html">PostgreSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../clickhouse/index.html">ClickHouse Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../nosql/index.html">NoSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../redis/index.html">Redis Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../network/index.html">Network Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../infra_service/index.html">Infra-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../infra_search/index.html">Search Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../info_service/index.html">Info-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../web/index.html">Web Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../big_data/index.html">Big Data Atlas</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">Machine Learning Atlas</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="../../gpt/index.html">GPT</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../studio/index.html">Studio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../infrastructure/index.html">Infrastructure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../devops/index.html">DevOps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../kvm/index.html">KVM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../ceph/index.html">Ceph</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../gluster/index.html">Gluster</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../ovirt/index.html">oVirt</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../openstack/index.html">OpenStack</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../docker/index.html">Docker</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../kubernetes/index.html">Kubernetes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../k8s_dev/index.html">Kubernetes Develop</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../rancher/index.html">Rancher</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../openshift/index.html">OpenShift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../sql/index.html">SQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../sqlite/index.html">SQLite</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../mysql/index.html">MySQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../pgsql/index.html">PostgreSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../nosql/index.html">NoSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../network/index.html">Network</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../infra_service/index.html">Infra-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../infra_search/index.html">Infra-Search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../web/index.html">Web</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../info_service/index.html">Info-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../big_data/index.html">Big Data</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">Machine Learning</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../become_a_machine_learning_practitioner.html">成为一名机器学习实践者</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../basic/index.html">机器学习基础</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../startup/index.html">机器学习起步</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../concept/index.html">机器学习概念</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../deep_learning/index.html">深度学习</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../reinforcement_learning/index.html">强化学习</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../gpt/index.html">GPT</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../llm/index.html">LLM 大型语言模型</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../studio/index.html">机器学习工作室</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../hardware/index.html">机器学习硬件</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="../index.html">NVIDIA Jetson</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="../jetson_nano.html">Jetson Nano</a></li>
 <li class="toctree-l3 current"><a class="reference internal" href="index.html">NVIDIA Jetson工作室构建</a><ul class="current">
 <li class="toctree-l4 current"><a class="current reference internal" href="#">Jetson Nano快速起步</a></li>
+<li class="toctree-l4"><a class="reference internal" href="jetson_nano_boot_from_usb.html">从USB启动Jetson Nano</a></li>
 <li class="toctree-l4"><a class="reference internal" href="deploy_jetson_server.html">部署Jetson Nano Server</a></li>
 <li class="toctree-l4"><a class="reference internal" href="backup_restore_jetson.html">备份和恢复Jetson完整系统</a></li>
 <li class="toctree-l4"><a class="reference internal" href="clone_jetson_system.html">克隆Jetson系统</a></li>
@@ -100,35 +112,44 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../cuda/index.html">NVIDIA CUDA</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../openvino/index.html">Intel OpenVINO</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pytorch/index.html">Pytorch</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../tensorflow/index.html">Tensorflow</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../stable_diffusion/index.html">Stable Diffusion模型方法</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../fauxpilot/index.html">FauxPilot</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../codellama/index.html">Code Llama</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../deepseek/index.html">DeepSeek</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../qwen/index.html">Qwen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../comfyui/index.html">ComfyUI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../freebsd/index.html">FreeBSD机器学习</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../../linux/index.html">Linux Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../kernel/index.html">Kernel Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../performance/index.html">Performance Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../distributed_system/index.html">Distributed System Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../shell/index.html">Shell Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../python/index.html">Python Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../django/index.html">Django Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../flask/index.html">Flask Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../javascript/index.html">JavaScript Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../nodejs/index.html">Node.js Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../clang/index.html">C Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../golang/index.html">Go Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../swift/index.html">Swift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../rust/index.html">Rust Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../ruby/index.html">Ruby Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../arm/index.html">ARM Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../android/index.html">Android Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../bsd/index.html">BSD Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../apple/index.html">Apple Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../windows/index.html">Windows Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../real/index.html">Real Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../management/index.html">Management Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../life/index.html">Life Atlas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../drone/index.html">Drone</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../linux/index.html">Linux</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../kernel/index.html">Kernel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../performance/index.html">Performance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../distributed_system/index.html">Distributed System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../shell/index.html">Shell</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../python/index.html">Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../django/index.html">Django</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../javascript/index.html">JavaScript</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../nodejs/index.html">Node.js</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../clang/index.html">C</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../golang/index.html">Go</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../swift/index.html">Swift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../rust/index.html">Rust</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../ruby/index.html">Ruby</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../lua/index.html">Lua</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../arm/index.html">ARM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../raspberry_pi/index.html">Raspberry Pi</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../android/index.html">Android</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../bsd/index.html">BSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../freebsd/index.html">FreeBSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../apple/index.html">Apple</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../windows/index.html">Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../real/index.html">Real</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../management/index.html">Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../life/index.html">Life</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../copyright.html">Copyright</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../aboutme.html">关于作者</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../donate.html">捐赠</a></li>
@@ -141,22 +162,22 @@
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../../index.html">Cloud Atlas</a>
+          <a href="../../../index.html">Cloud Atlas: Discovery</a>
       </nav>
 
       <div class="wy-nav-content">
         <div class="rst-content">
-          <div role="navigation" aria-label="Page navigation">
+          <div role="navigation" aria-label="页面导航">
   <ul class="wy-breadcrumbs">
       <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
-          <li class="breadcrumb-item"><a href="../../index.html">Machine Learning Atlas</a></li>
+          <li class="breadcrumb-item"><a href="../../index.html">Machine Learning</a></li>
           <li class="breadcrumb-item"><a href="../index.html">NVIDIA Jetson</a></li>
           <li class="breadcrumb-item"><a href="index.html">NVIDIA Jetson工作室构建</a></li>
       <li class="breadcrumb-item active">Jetson Nano快速起步</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../../../_sources/machine_learning/jetson/studio/jetson_nano_startup.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../../_sources/machine_learning/jetson/studio/jetson_nano_startup.rst.txt" rel="nofollow"> 查看页面源码</a>
       </li>
   </ul>
   <hr/>
@@ -165,22 +186,74 @@
            <div itemprop="articleBody">
              
   <section id="jetson-nano">
-<span id="jetson-nano-startup"></span><h1>Jetson Nano快速起步<a class="headerlink" href="#jetson-nano" title="Link to this heading">¶</a></h1>
+<span id="jetson-nano-startup"></span><h1>Jetson Nano快速起步<a class="headerlink" href="#jetson-nano" title="Link to this heading"></a></h1>
 <p>NVIDIA <a class="reference internal" href="../jetson_nano.html#jetson-nano"><span class="std std-ref">Jetson Nano</span></a> Developer Kit是一个小型AI计算机，面向创客、学习者和开发者。使用这个mini设备，可以构建AI应用，超酷的AI机器人，甚至更多的 <a class="reference external" href="https://developer.nvidia.com/embedded/community/jetson-projects">Jetson 社区项目</a> 。</p>
 <div class="admonition note">
 <p class="admonition-title">备注</p>
 <p>2021年初，我重新 <a class="reference internal" href="deploy_jetson_server.html#deploy-jetson-server"><span class="std std-ref">部署Jetson Nano Server</span></a> 来作为 <a class="reference internal" href="../../../kubernetes/arm/index.html#arm-k8s"><span class="std std-ref">ARM架构Kubernetes</span></a> 集群工作节点。有一些部署改进和调整，请参考。</p>
 </div>
 <section id="id1">
-<h2>下载和准备启动<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h2>
-<p>从 <a class="reference external" href="https://developer.nvidia.com/embedded/downloads">Jetson Download Center</a> 下载 <code class="docutils literal notranslate"><span class="pre">Jetson</span> <span class="pre">Nano</span> <span class="pre">Developer</span> <span class="pre">Kit</span> <span class="pre">SD</span> <span class="pre">Card</span> <span class="pre">Image</span></code> ，然后使用如下命令刻录到SD Card:</p>
+<h2>下载和准备启动<a class="headerlink" href="#id1" title="Link to this heading"></a></h2>
+<p>从 <a class="reference external" href="https://developer.nvidia.com/embedded/downloads">Jetson Download Center</a> 下载</p>
+<ul class="simple">
+<li><p><span class="sphinxnotes-strike" style="text-decoration: line-through;">Jetson Nano Developer Kit SD Card Image</span> 现已改名为 <code class="docutils literal notranslate"><span class="pre">NVIDIA</span> <span class="pre">JetPack</span> <span class="pre">SDK</span></code> ，然后使用如下命令刻录到SD Card:</p></li>
+</ul>
+<p>早期实践记录:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">unzip</span> <span class="n">nv</span><span class="o">-</span><span class="n">jetson</span><span class="o">-</span><span class="n">nano</span><span class="o">-</span><span class="n">sd</span><span class="o">-</span><span class="n">card</span><span class="o">-</span><span class="n">image</span><span class="o">-</span><span class="n">r32</span><span class="mf">.3.1</span><span class="o">.</span><span class="n">zip</span>
 <span class="n">sudo</span> <span class="n">dd</span> <span class="k">if</span><span class="o">=</span><span class="n">sd</span><span class="o">-</span><span class="n">blob</span><span class="o">-</span><span class="n">b01</span><span class="o">.</span><span class="n">img</span> <span class="n">of</span><span class="o">=/</span><span class="n">dev</span><span class="o">/</span><span class="n">rdisk2</span> <span class="n">bs</span><span class="o">=</span><span class="mi">100</span><span class="n">m</span>
 </pre></div>
 </div>
+<p>2024年3月实践:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">NVIDIA</span> <span class="pre">JetPack</span> <span class="pre">SDK</span></code> <a class="reference external" href="https://developer.download.nvidia.cn/embedded/L4T/r35_Release_v1.0/JP_SD_5.0.2_b231/Jetson_SD_Xavier_NX/JP502-xnx-sd-card-image-b231.zip">JetPack 5.0.2</a> : JetPack 5.0.2 是生产级质量版本，包括搭载 Linux 内核 5.10 的 Jetson Linux 35.1 BSP、基于 Ubuntu 20.04 的根文件系统、基于 UEFI 的引导加载程序以及作为可信执行环境的 OP-TEE。新版计算栈，配备了 CUDA 11.4、TensorRT 8.4.1 和 cuDNN 8.4.1</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">NVIDIA</span> <span class="pre">JetPack</span> <span class="pre">SDK</span></code> <a class="reference external" href="https://developer.download.nvidia.cn/embedded/L4T/r36_Release_v2.0/jp60dp-orin-nano-sd-card-image.zip">JetPack 6 Preview</a> ，操作系统版本和相应软件堆栈有进一步提升:  Linux Kernel 5.15, UEFI based bootloader, Ubuntu 22.04 based root file system, NVIDIA drivers, necessary firmwares, toolchain and more.</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>由于NVIDIA不支持 JetPack 5 升级到 6，并且我也为了能够体验最新技术，我实践安装了 <code class="docutils literal notranslate"><span class="pre">JetPack</span> <span class="pre">6</span> <span class="pre">Preview</span></code></p>
+</div>
+<div class="literal-block-wrapper docutils container" id="id15">
+<div class="code-block-caption"><span class="caption-text">制作JetPack启动U盘</span><a class="headerlink" href="#id15" title="Link to this code"></a></div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">unzip</span> <span class="n">jp60dp</span><span class="o">-</span><span class="n">orin</span><span class="o">-</span><span class="n">nano</span><span class="o">-</span><span class="n">sd</span><span class="o">-</span><span class="n">card</span><span class="o">-</span><span class="n">image</span><span class="o">.</span><span class="n">zip</span>
+<span class="n">dd</span> <span class="k">if</span><span class="o">=</span><span class="n">sd</span><span class="o">-</span><span class="n">blob</span><span class="o">.</span><span class="n">img</span> <span class="n">of</span><span class="o">=/</span><span class="n">dev</span><span class="o">/</span><span class="n">sdb</span> <span class="n">bs</span><span class="o">=</span><span class="mi">200</span><span class="n">MB</span>
+</pre></div>
+</div>
+</div>
+<p>JetPack使用了很多分区，执行 <code class="docutils literal notranslate"><span class="pre">fdisk</span> <span class="pre">-l</span> <span class="pre">/dev/sdb</span></code> 可以看到:</p>
+<div class="literal-block-wrapper docutils container" id="id16">
+<div class="code-block-caption"><span class="caption-text">JetPack的分需众多，初始显示如下</span><a class="headerlink" href="#id16" title="Link to this code"></a></div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Disk</span> <span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">sdb</span><span class="p">:</span> <span class="mf">59.48</span> <span class="n">GiB</span><span class="p">,</span> <span class="mi">63864569856</span> <span class="nb">bytes</span><span class="p">,</span> <span class="mi">124735488</span> <span class="n">sectors</span>
+<span class="n">Disk</span> <span class="n">model</span><span class="p">:</span> <span class="n">MassStorageClass</span>
+<span class="n">Units</span><span class="p">:</span> <span class="n">sectors</span> <span class="n">of</span> <span class="mi">1</span> <span class="o">*</span> <span class="mi">512</span> <span class="o">=</span> <span class="mi">512</span> <span class="nb">bytes</span>
+<span class="n">Sector</span> <span class="n">size</span> <span class="p">(</span><span class="n">logical</span><span class="o">/</span><span class="n">physical</span><span class="p">):</span> <span class="mi">512</span> <span class="nb">bytes</span> <span class="o">/</span> <span class="mi">512</span> <span class="nb">bytes</span>
+<span class="n">I</span><span class="o">/</span><span class="n">O</span> <span class="n">size</span> <span class="p">(</span><span class="n">minimum</span><span class="o">/</span><span class="n">optimal</span><span class="p">):</span> <span class="mi">512</span> <span class="nb">bytes</span> <span class="o">/</span> <span class="mi">512</span> <span class="nb">bytes</span>
+<span class="n">Disklabel</span> <span class="nb">type</span><span class="p">:</span> <span class="n">gpt</span>
+<span class="n">Disk</span> <span class="n">identifier</span><span class="p">:</span> <span class="n">D286F765</span><span class="o">-</span><span class="mi">5</span><span class="n">ECA</span><span class="o">-</span><span class="mi">43</span><span class="n">C3</span><span class="o">-</span><span class="n">AF2E</span><span class="o">-</span><span class="mf">11825261E3</span><span class="n">A8</span>
+
+<span class="n">Device</span>       <span class="n">Start</span>      <span class="n">End</span>  <span class="n">Sectors</span>   <span class="n">Size</span> <span class="n">Type</span>
+<span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">sdb1</span>  <span class="mi">3057664</span> <span class="mi">57065471</span> <span class="mi">54007808</span>  <span class="mf">25.8</span><span class="n">G</span> <span class="n">Linux</span> <span class="n">filesystem</span>
+<span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">sdb2</span>     <span class="mi">2048</span>   <span class="mi">264191</span>   <span class="mi">262144</span>   <span class="mi">128</span><span class="n">M</span> <span class="n">Linux</span> <span class="n">filesystem</span>
+<span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">sdb3</span>   <span class="mi">264192</span>   <span class="mi">265727</span>     <span class="mi">1536</span>   <span class="mi">768</span><span class="n">K</span> <span class="n">Linux</span> <span class="n">filesystem</span>
+<span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">sdb4</span>   <span class="mi">266240</span>   <span class="mi">331007</span>    <span class="mi">64768</span>  <span class="mf">31.6</span><span class="n">M</span> <span class="n">Linux</span> <span class="n">filesystem</span>
+<span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">sdb5</span>   <span class="mi">331776</span>   <span class="mi">593919</span>   <span class="mi">262144</span>   <span class="mi">128</span><span class="n">M</span> <span class="n">Linux</span> <span class="n">filesystem</span>
+<span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">sdb6</span>   <span class="mi">593920</span>   <span class="mi">595455</span>     <span class="mi">1536</span>   <span class="mi">768</span><span class="n">K</span> <span class="n">Linux</span> <span class="n">filesystem</span>
+<span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">sdb7</span>   <span class="mi">595968</span>   <span class="mi">660735</span>    <span class="mi">64768</span>  <span class="mf">31.6</span><span class="n">M</span> <span class="n">Linux</span> <span class="n">filesystem</span>
+<span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">sdb8</span>   <span class="mi">661504</span>   <span class="mi">825343</span>   <span class="mi">163840</span>    <span class="mi">80</span><span class="n">M</span> <span class="n">Linux</span> <span class="n">filesystem</span>
+<span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">sdb9</span>   <span class="mi">825344</span>   <span class="mi">826367</span>     <span class="mi">1024</span>   <span class="mi">512</span><span class="n">K</span> <span class="n">Linux</span> <span class="n">filesystem</span>
+<span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">sdb10</span>  <span class="mi">827392</span>   <span class="mi">958463</span>   <span class="mi">131072</span>    <span class="mi">64</span><span class="n">M</span> <span class="n">EFI</span> <span class="n">System</span>
+<span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">sdb11</span>  <span class="mi">958464</span>  <span class="mi">1122303</span>   <span class="mi">163840</span>    <span class="mi">80</span><span class="n">M</span> <span class="n">Linux</span> <span class="n">filesystem</span>
+<span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">sdb12</span> <span class="mi">1122304</span>  <span class="mi">1123327</span>     <span class="mi">1024</span>   <span class="mi">512</span><span class="n">K</span> <span class="n">Linux</span> <span class="n">filesystem</span>
+<span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">sdb13</span> <span class="mi">1124352</span>  <span class="mi">1255423</span>   <span class="mi">131072</span>    <span class="mi">64</span><span class="n">M</span> <span class="n">Linux</span> <span class="n">filesystem</span>
+<span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">sdb14</span> <span class="mi">1255424</span>  <span class="mi">2074623</span>   <span class="mi">819200</span>   <span class="mi">400</span><span class="n">M</span> <span class="n">Linux</span> <span class="n">filesystem</span>
+<span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">sdb15</span> <span class="mi">2074624</span>  <span class="mi">3056639</span>   <span class="mi">982016</span> <span class="mf">479.5</span><span class="n">M</span> <span class="n">Linux</span> <span class="n">filesystem</span>
+
+<span class="n">Partition</span> <span class="n">table</span> <span class="n">entries</span> <span class="n">are</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">disk</span> <span class="n">order</span><span class="o">.</span>
+</pre></div>
+</div>
+</div>
 </section>
 <section id="id2">
-<h2>电源跳线<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
+<h2>电源跳线<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
 <p>Jetson Nano有3种供电方式：</p>
 <ul class="simple">
 <li><p>通过Micro-USB接口供电：这种USB供电可以提供 <code class="docutils literal notranslate"><span class="pre">5V⎓2A</span></code> 电力，通常对于不带附件的方式已经足够电力。可以很方便移动使用。</p></li>
@@ -189,10 +262,11 @@
 <div class="admonition note">
 <p class="admonition-title">备注</p>
 <p>主板上 J48 跳线是用来切换外接电源还是Micro-USB供电。默认是使用Micro-USB供电(跳线没有使用)，如果要使用外接电源，务必将该跳线连接上。</p>
+<p>详情参考 <a class="reference external" href="https://forums.developer.nvidia.com/t/power-supply-considerations-for-jetson-nano-developer-kit/71637">Power supply considerations for Jetson Nano Developer Kit</a></p>
 </div>
 </section>
 <section id="id3">
-<h2>初始化<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h2>
+<h2>初始化<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
 <p>NVIDIA Jetson Nano Developer Kit操作系统提示问题：</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">APP</span> <span class="pre">Patition</span> <span class="pre">Size</span></code> 配置，这是因为安装镜像初始时候只占据大约13G， <code class="docutils literal notranslate"><span class="pre">dd</span></code> 到SD卡之后，初始化时提示可以扩展到整个SD卡存储空间。不过，我为了能够后续通过磁盘卷管理更好分配磁盘空间，所以只设置扩展到 <code class="docutils literal notranslate"><span class="pre">24G</span></code> 空间 (28896MB)</p></li>
@@ -204,7 +278,7 @@
 <p>我的初始设置比较简单，就是将有线网卡设置为固定IP地址 <code class="docutils literal notranslate"><span class="pre">192.168.6.10</span></code> ，这样我就可以通过笔记本的有线网络连接到Jetson系统中，并进行远程操作。这样可以不需要连接显示器。</p>
 </section>
 <section id="id4">
-<h2>桌面修改<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h2>
+<h2>桌面修改<a class="headerlink" href="#id4" title="Link to this heading"></a></h2>
 <p>桌面改为轻量级桌面， <a class="reference internal" href="jetson_xfce4.html#jetson-xfce4"><span class="std std-ref">Jetson运行Xfce4桌面</span></a> :</p>
 <ul class="simple">
 <li><p>这个步骤首先完成，可以节约大量磁盘空间和内存占用，同时也避免了大量桌面软件更新</p></li>
@@ -212,7 +286,7 @@
 </ul>
 </section>
 <section id="id5">
-<h2>瘦身<a class="headerlink" href="#id5" title="Link to this heading">¶</a></h2>
+<h2>瘦身<a class="headerlink" href="#id5" title="Link to this heading"></a></h2>
 <p>NVIDIA Jetson nano的官方发行版默认安装了实际上对于我平时使用并没有用处的Office软件，所以我准备清理掉不需要的软件包:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">apt</span> <span class="n">remove</span> <span class="o">--</span><span class="n">purge</span> <span class="n">libreoffice</span><span class="o">*</span> <span class="o">-</span><span class="n">y</span>
 <span class="n">sudo</span> <span class="n">apt</span> <span class="n">remove</span> <span class="o">--</span><span class="n">purge</span> <span class="n">thunderbird</span><span class="o">*</span> <span class="o">-</span><span class="n">y</span>
@@ -231,14 +305,14 @@
 <span class="n">sudo</span> <span class="n">apt</span> <span class="n">install</span> <span class="n">synergy</span> <span class="n">keepassx</span>
 </pre></div>
 </div>
-<p>你可以选择轻量级 <a class="reference internal" href="../../../linux/desktop/xfce/index.html#xfce"><span class="std std-ref">xfce</span></a> ，也可以 <a class="reference internal" href="deploy_jetson_server.html#deploy-jetson-server"><span class="std std-ref">部署Jetson Nano Server</span></a> ，将主机加入到 <a class="reference internal" href="../../../kubernetes/index.html#kubernetes"><span class="std std-ref">Kubernetes Atlas</span></a> 作为worker节点。</p>
+<p>你可以选择轻量级 <a class="reference internal" href="../../../linux/desktop/xfce/index.html#xfce"><span class="std std-ref">xfce</span></a> ，也可以 <a class="reference internal" href="deploy_jetson_server.html#deploy-jetson-server"><span class="std std-ref">部署Jetson Nano Server</span></a> ，将主机加入到 <a class="reference internal" href="../../../kubernetes/index.html#kubernetes"><span class="std std-ref">Kubernetes</span></a> 作为worker节点。</p>
 <div class="admonition note">
 <p class="admonition-title">备注</p>
-<p>实际上我是将Jetson作为 <a class="reference internal" href="../../../kubernetes/index.html#kubernetes"><span class="std std-ref">Kubernetes Atlas</span></a> 的工作节点来运行的，所以不需要图形桌面系统。我在2021年初再次重装时，选择移除Gnome桌面，但是也不安装任何桌面系统。系统保留了一些基础的X window程序，供后续通过 <a class="reference internal" href="../../../linux/desktop/remote_linux_desktop.html#remote-linux-desktop"><span class="std std-ref">远程访问Linux桌面</span></a> 和 <a class="reference internal" href="../../../linux/desktop/xpra/index.html#xpra"><span class="std std-ref">X持久化远程应用Xpra</span></a> 来实现远程桌面访问。或者，我可以部署一个 <a class="reference internal" href="../../../big_data/jupyter/index.html#jupyter"><span class="std std-ref">Jupyter - 数据科学开发平台</span></a> 的Hub模式，通过浏览器来使用图形系统。</p>
+<p>实际上我是将Jetson作为 <a class="reference internal" href="../../../kubernetes/index.html#kubernetes"><span class="std std-ref">Kubernetes</span></a> 的工作节点来运行的，所以不需要图形桌面系统。我在2021年初再次重装时，选择移除Gnome桌面，但是也不安装任何桌面系统。系统保留了一些基础的X window程序，供后续通过 <a class="reference internal" href="../../../linux/desktop/remote_linux_desktop.html#remote-linux-desktop"><span class="std std-ref">远程访问Linux桌面</span></a> 和 <a class="reference internal" href="../../../linux/desktop/xpra/index.html#xpra"><span class="std std-ref">X持久化远程应用Xpra</span></a> 来实现远程桌面访问。或者，我可以部署一个 <a class="reference internal" href="../../../big_data/jupyter/index.html#jupyter"><span class="std std-ref">Jupyter - 数据科学开发平台</span></a> 的Hub模式，通过浏览器来使用图形系统。</p>
 </div>
 </section>
 <section id="id6">
-<h2>电源管理<a class="headerlink" href="#id6" title="Link to this heading">¶</a></h2>
+<h2>电源管理<a class="headerlink" href="#id6" title="Link to this heading"></a></h2>
 <p>为能够获得较好的桌面性能，按照 <a class="reference internal" href="../../../arm/power_manage/defs.html#defs"><span class="std std-ref">ARM cpufreq(DVFS)</span></a> 设置CPU按照performance模式运行:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">cpufrequtils</span>
 <span class="n">echo</span> <span class="s1">&#39;GOVERNOR=&quot;performance&quot;&#39;</span> <span class="o">|</span> <span class="n">sudo</span> <span class="n">tee</span> <span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">default</span><span class="o">/</span><span class="n">cpufrequtils</span>
@@ -247,17 +321,17 @@
 </div>
 </section>
 <section id="id7">
-<h2>网络<a class="headerlink" href="#id7" title="Link to this heading">¶</a></h2>
+<h2>网络<a class="headerlink" href="#id7" title="Link to this heading"></a></h2>
 <section id="netplan">
-<h3>使用Netplan配置网络(未成功)<a class="headerlink" href="#netplan" title="Link to this heading">¶</a></h3>
-<p><a class="reference internal" href="../../../linux/ubuntu_linux/network/netplan.html#netplan"><span class="std std-ref">netplan网络配置</span></a> 是Ubuntu 20.04开始主要的网络配置工具，比较简单易用。使用netplan作为前端配置工具，后端可以使用NetworkManager，也可以使用 <code class="docutils literal notranslate"><span class="pre">syatemd-networkd</span></code> 进行网络配置。对于比较简单的网络配置，特别是在 <a class="reference internal" href="../../../arm/index.html#arm"><span class="std std-ref">ARM Atlas</span></a> 运行环境，我希望尽量少占用系统资源，所以倾向于使用 <code class="docutils literal notranslate"><span class="pre">systemd-networkd</span></code> 避免再多安装一个 <code class="docutils literal notranslate"><span class="pre">NetwrokManager</span></code> 服务。</p>
+<h3>使用Netplan配置网络(未成功)<a class="headerlink" href="#netplan" title="Link to this heading"></a></h3>
+<p><a class="reference internal" href="../../../linux/ubuntu_linux/network/netplan.html#netplan"><span class="std std-ref">netplan网络配置</span></a> 是Ubuntu 20.04开始主要的网络配置工具，比较简单易用。使用netplan作为前端配置工具，后端可以使用NetworkManager，也可以使用 <code class="docutils literal notranslate"><span class="pre">syatemd-networkd</span></code> 进行网络配置。对于比较简单的网络配置，特别是在 <a class="reference internal" href="../../../arm/index.html#arm"><span class="std std-ref">ARM</span></a> 运行环境，我希望尽量少占用系统资源，所以倾向于使用 <code class="docutils literal notranslate"><span class="pre">systemd-networkd</span></code> 避免再多安装一个 <code class="docutils literal notranslate"><span class="pre">NetwrokManager</span></code> 服务。</p>
 <p>按照 <a class="reference internal" href="../../../linux/ubuntu_linux/network/netplan.html#netplan"><span class="std std-ref">netplan网络配置</span></a> 配置网络，但是目前遇到无法调用systemd-networkd生成正确配置，暂时放弃。</p>
 </section>
 <section id="network-manager">
-<h3>使用Network Manager配置无线(旧版)<a class="headerlink" href="#network-manager" title="Link to this heading">¶</a></h3>
+<h3>使用Network Manager配置无线(旧版)<a class="headerlink" href="#network-manager" title="Link to this heading"></a></h3>
 <div class="admonition note">
 <p class="admonition-title">备注</p>
-<p>当前我已经改为采用 <a class="reference internal" href="../../../linux/ubuntu_linux/network/netplan.html#netplan"><span class="std std-ref">netplan网络配置</span></a> 来配置管理网络，主要原因是最新的Ubuntu 20.04默认采用netplan配置，我在 <a class="reference internal" href="../../../arm/raspberry_pi/startup/ubuntu64bit_pi.html#ubuntu64bit-pi"><span class="std std-ref">树莓派4b运行64位Ubuntu</span></a> 就采用了netplan，所以在Jetson上尝试netplan没有成功，所以目前还使用 <a class="reference internal" href="../../../linux/ubuntu_linux/network/networkmanager.html#networkmanager"><span class="std std-ref">NetworkManager</span></a> 配置网络。</p>
+<p>当前我已经改为采用 <a class="reference internal" href="../../../linux/ubuntu_linux/network/netplan.html#netplan"><span class="std std-ref">netplan网络配置</span></a> 来配置管理网络，主要原因是最新的Ubuntu 20.04默认采用netplan配置，我在 <a class="reference internal" href="../../../raspberry_pi/startup/ubuntu64bit_pi.html#ubuntu64bit-pi"><span class="std std-ref">树莓派4b运行64位Ubuntu</span></a> 就采用了netplan，所以在Jetson上尝试netplan没有成功，所以目前还使用 <a class="reference internal" href="../../../linux/ubuntu_linux/network/networkmanager.html#networkmanager"><span class="std std-ref">NetworkManager</span></a> 配置网络。</p>
 </div>
 <p>Jetson Nano主板没有集成无线网卡，不过，主板m2接口可以安装笔记本通用的无线网卡。我选购的是Intel 8265AC NGW无线网卡，同时集成了蓝牙 4.2。</p>
 <p>安装 Intel Wireless-AC8265无线模块 之后，使用 <code class="docutils literal notranslate"><span class="pre">lspci</span></code> 命令检查可以看到无线网络设备:</p>
@@ -299,13 +373,13 @@
 </div>
 </section>
 <section id="id8">
-<h3>使用Network Manager配置无线(新版)<a class="headerlink" href="#id8" title="Link to this heading">¶</a></h3>
+<h3>使用Network Manager配置无线(新版)<a class="headerlink" href="#id8" title="Link to this heading"></a></h3>
 <p>2021年下半年，由于TF存储卡损坏，不得不重新安装了一次操作系统。此时我发现，网络配置管理默认已经改成了 <a class="reference internal" href="../../../linux/redhat_linux/systemd/systemd_networkd.html#systemd-networkd"><span class="std std-ref">Systemd Networkd服务</span></a> ，所以需要配置 <a class="reference internal" href="../../../linux/redhat_linux/systemd/systemd_networkd.html#systemd-networkd"><span class="std std-ref">Systemd Networkd服务</span></a> 和 <a class="reference internal" href="../../../linux/redhat_linux/systemd/systemd_networkd_wlan.html#systemd-networkd-wlan"><span class="std std-ref">使用systemd-networkd配置无线</span></a></p>
 <ul class="simple">
 <li><p>有线网卡配置 <code class="docutils literal notranslate"><span class="pre">/etc/systemd/network/10-eth0.network</span></code> 参考 <a class="reference internal" href="../../../linux/redhat_linux/systemd/systemd_networkd.html#systemd-networkd"><span class="std std-ref">Systemd Networkd服务</span></a> :</p></li>
 </ul>
-<div class="literal-block-wrapper docutils container" id="id15">
-<div class="code-block-caption"><span class="caption-text">jetson_nano_startup/10-eth0.network</span><a class="headerlink" href="#id15" title="Link to this code">¶</a></div>
+<div class="literal-block-wrapper docutils container" id="id17">
+<div class="code-block-caption"><span class="caption-text">jetson_nano_startup/10-eth0.network</span><a class="headerlink" href="#id17" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="o">[</span>Match<span class="o">]</span>
 <span class="linenos">2</span><span class="nv">MACAddress</span><span class="o">=</span><span class="m">00</span>:00:00:00:00:01
 <span class="linenos">3</span>
@@ -319,8 +393,8 @@
 <ul class="simple">
 <li><p>无线网卡配置 <code class="docutils literal notranslate"><span class="pre">/etc/systemd/network/20-wlan0.network</span></code> 参考 <a class="reference internal" href="../../../linux/redhat_linux/systemd/systemd_networkd_wlan.html#systemd-networkd-wlan"><span class="std std-ref">使用systemd-networkd配置无线</span></a> :</p></li>
 </ul>
-<div class="literal-block-wrapper docutils container" id="id16">
-<div class="code-block-caption"><span class="caption-text">jetson_nano_startup/20-wlan0.network</span><a class="headerlink" href="#id16" title="Link to this code">¶</a></div>
+<div class="literal-block-wrapper docutils container" id="id18">
+<div class="code-block-caption"><span class="caption-text">jetson_nano_startup/20-wlan0.network</span><a class="headerlink" href="#id18" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="o">[</span>Match<span class="o">]</span>
 <span class="linenos">2</span><span class="nv">MACAddress</span><span class="o">=</span>&lt;original<span class="w"> </span>MAC&gt;
 <span class="linenos">3</span>
@@ -341,8 +415,8 @@
 </li>
 <li><p>创建 <code class="docutils literal notranslate"><span class="pre">/etc/wpa_supplicant/wpa_supplicant-wlan0.conf</span></code> :</p></li>
 </ul>
-<div class="literal-block-wrapper docutils container" id="id17">
-<div class="code-block-caption"><span class="caption-text">jetson_nano_startup/wpa_supplicant-wlan0.conf</span><a class="headerlink" href="#id17" title="Link to this code">¶</a></div>
+<div class="literal-block-wrapper docutils container" id="id19">
+<div class="code-block-caption"><span class="caption-text">jetson_nano_startup/wpa_supplicant-wlan0.conf</span><a class="headerlink" href="#id19" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="nv">ctrl_interface</span><span class="o">=</span><span class="nv">DIR</span><span class="o">=</span>/var/run/wpa_supplicant<span class="w"> </span><span class="nv">GROUP</span><span class="o">=</span>netdev
 <span class="linenos"> 2</span><span class="nv">update_config</span><span class="o">=</span><span class="m">1</span>
 <span class="linenos"> 3</span>
@@ -386,7 +460,7 @@
 </section>
 </section>
 <section id="id9">
-<h2>蓝牙(可选)<a class="headerlink" href="#id9" title="Link to this heading">¶</a></h2>
+<h2>蓝牙(可选)<a class="headerlink" href="#id9" title="Link to this heading"></a></h2>
 <ul>
 <li><p>安装蓝牙管理工具:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">apt</span> <span class="n">install</span> <span class="n">bluetools</span> <span class="n">blueman</span>
@@ -406,7 +480,7 @@
 </div>
 </section>
 <section id="id10">
-<h2>初始设置<a class="headerlink" href="#id10" title="Link to this heading">¶</a></h2>
+<h2>初始设置<a class="headerlink" href="#id10" title="Link to this heading"></a></h2>
 <ul>
 <li><p>修改 <code class="docutils literal notranslate"><span class="pre">/etc/sudoers</span></code> 将个人账号所在的 <code class="docutils literal notranslate"><span class="pre">sudo</span></code> 组设置为无需密码:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Allow members of group sudo to execute any command</span>
@@ -418,7 +492,7 @@
 </ul>
 </section>
 <section id="id11">
-<h2>软件更新<a class="headerlink" href="#id11" title="Link to this heading">¶</a></h2>
+<h2>软件更新<a class="headerlink" href="#id11" title="Link to this heading"></a></h2>
 <p>为了能够更好使用Jetson Nano，建议经常更新系统保持和官方软件版本同步。</p>
 <div class="admonition note">
 <p class="admonition-title">备注</p>
@@ -439,14 +513,14 @@
 </ul>
 </section>
 <section id="id12">
-<h2>远程访问<a class="headerlink" href="#id12" title="Link to this heading">¶</a></h2>
+<h2>远程访问<a class="headerlink" href="#id12" title="Link to this heading"></a></h2>
 <section id="xprax">
-<h3>Xpra远程X应用(推荐)<a class="headerlink" href="#xprax" title="Link to this heading">¶</a></h3>
+<h3>Xpra远程X应用(推荐)<a class="headerlink" href="#xprax" title="Link to this heading"></a></h3>
 <p>为了能够随时进入开发状态，我现在采用 <a class="reference internal" href="../../../linux/desktop/xpra/index.html#xpra"><span class="std std-ref">X持久化远程应用Xpra</span></a> 来实现远程X window程序运行，非常轻量级的融合VNC和X window的远程图形运行方案。</p>
 <p>我在 <a class="reference internal" href="jetson_xpra.html#jetson-xpra"><span class="std std-ref">通过Xpra使用Jetson Nano图形桌面</span></a> 中详细记录在ARM架构下实践。</p>
 </section>
 <section id="id13">
-<h3>远程桌面(可选)<a class="headerlink" href="#id13" title="Link to this heading">¶</a></h3>
+<h3>远程桌面(可选)<a class="headerlink" href="#id13" title="Link to this heading"></a></h3>
 <div class="admonition note">
 <p class="admonition-title">备注</p>
 <p>如果你需要完整的桌面系统，可以选择采用xrdp方式的远程桌面，如本小节概述。这是我最初远程访问Jetson的方法，并且也是比较通用桌面访问方法(客户端跨平台，特别是对Windows用户非常友好)。</p>
@@ -460,7 +534,7 @@
 </section>
 </section>
 <section id="id14">
-<h2>参考<a class="headerlink" href="#id14" title="Link to this heading">¶</a></h2>
+<h2>参考<a class="headerlink" href="#id14" title="Link to this heading"></a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit">Getting Started With Jetson Nano Developer Kit</a></p></li>
 <li><p><a class="reference external" href="https://developer.nvidia.com/embedded/dlc/jetson-nano-developer-kit-user-guide">Jetson Nano Developer Kit User Guide</a></p></li>
@@ -474,25 +548,37 @@
 
            </div>
           </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="index.html" class="btn btn-neutral float-left" title="NVIDIA Jetson工作室构建" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="deploy_jetson_server.html" class="btn btn-neutral float-right" title="部署Jetson Nano Server" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="index.html" class="btn btn-neutral float-left" title="NVIDIA Jetson工作室构建" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="jetson_nano_boot_from_usb.html" class="btn btn-neutral float-right" title="从USB启动Jetson Nano" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../../copyright.html">Copyright</a> 2018 - now, Huatai Huang.</p>
+    <p>&#169; <a href="../../../copyright.html">版权所有</a> 2018 - now, Huatai Huang。</p>
   </div>
 
-  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
   
     <!-- your html code here -->
     <br>
-    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡</a></p>
-     
+    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡 👈</a></p>
+    <br>
+    <p>网站采用 <a href="https://utteranc.es/">utterances</a> 评论系统，所有评论存储在<a href="https://github.com/huataihuang/cloud-atlas/issues">GitHub issues</a> 中，如果你看不到下方的评论框，那么可能需要<a href="https://cloud-atlas.readthedocs.io/zh-cn/latest/linux/security/vpn/index.html">自备梯子</a> 👈</p>
+    <div class="articleComments">
+        <comments>
+  <script src="https://utteranc.es/client.js"
+    repo="huataihuang/cloud-atlas"
+    issue-term="pathname"
+    theme="github-light"
+    crossorigin="anonymous"
+    async>
+  </script>
+</comments>
+    </div>
 
 
 </footer>

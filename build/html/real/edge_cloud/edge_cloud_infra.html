@@ -1,26 +1,30 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh" data-content_root="../../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>边缘云计算架构 &mdash; Cloud Atlas 0.1 文档</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+  <title>边缘云计算架构(旧版) &mdash; Cloud Atlas: Discovery beta 文档</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=fd3f3429" />
+
+  
+    <link rel="shortcut icon" href="../../_static/favicon.png"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="../../_static/documentation_options.js?v=7c91f8fd"></script>
-        <script src="../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=8534f863"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
         <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
-        <script src="../../_static/translations.js?v=beaddf03"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../../genindex.html" />
     <link rel="search" title="搜索" href="../../search.html" />
     <link rel="copyright" title="版权所有" href="../../copyright.html" />
-    <link rel="next" title="边缘计算Jetson Nano" href="edge_jetson.html" />
+    <link rel="next" title="边缘云计算架构(2024)" href="edge_cloud_infra_2024.html" />
     <link rel="prev" title="边缘云计算构建" href="index.html" /> 
 </head>
 
@@ -33,77 +37,82 @@
           
           
           <a href="../../index.html" class="icon icon-home">
-            Cloud Atlas
+            Cloud Atlas: Discovery
           </a>
+              <div class="version">
+                1.1
+              </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../studio/index.html">Studio Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../infrastructure/index.html">Infrastructure Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../devops/index.html">DevOps Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kvm/index.html">KVM Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../ceph/index.html">Ceph Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../gluster/index.html">Gluster Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../ovirt/index.html">oVirt Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../openstack/index.html">OpenStack Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../docker/index.html">Docker Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kubernetes/index.html">Kubernetes Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kubernetes_from_scratch/index.html">Kubernetes From Scratch (KFS) Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../rancher/index.html">Rancher Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../openshift/index.html">OpenShift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../sql/index.html">SQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../sqlite/index.html">SQLite Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../mysql/index.html">MySQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../pgsql/index.html">PostgreSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../clickhouse/index.html">ClickHouse Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../nosql/index.html">NoSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../redis/index.html">Redis Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../network/index.html">Network Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../infra_service/index.html">Infra-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../infra_search/index.html">Search Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../info_service/index.html">Info-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../web/index.html">Web Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../big_data/index.html">Big Data Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../machine_learning/index.html">Machine Learning Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../linux/index.html">Linux Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kernel/index.html">Kernel Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../performance/index.html">Performance Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../distributed_system/index.html">Distributed System Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../shell/index.html">Shell Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../python/index.html">Python Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../django/index.html">Django Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../flask/index.html">Flask Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../javascript/index.html">JavaScript Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../nodejs/index.html">Node.js Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../clang/index.html">C Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../golang/index.html">Go Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../swift/index.html">Swift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../rust/index.html">Rust Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../ruby/index.html">Ruby Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../arm/index.html">ARM Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../android/index.html">Android Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../bsd/index.html">BSD Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../apple/index.html">Apple Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../windows/index.html">Windows Atlas</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Real Atlas</a><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../studio/index.html">Studio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../infrastructure/index.html">Infrastructure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../devops/index.html">DevOps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kvm/index.html">KVM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ceph/index.html">Ceph</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../gluster/index.html">Gluster</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ovirt/index.html">oVirt</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../openstack/index.html">OpenStack</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../docker/index.html">Docker</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kubernetes/index.html">Kubernetes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../k8s_dev/index.html">Kubernetes Develop</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../rancher/index.html">Rancher</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../openshift/index.html">OpenShift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../sql/index.html">SQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../sqlite/index.html">SQLite</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../mysql/index.html">MySQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../pgsql/index.html">PostgreSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../nosql/index.html">NoSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../network/index.html">Network</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../infra_service/index.html">Infra-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../infra_search/index.html">Infra-Search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../web/index.html">Web</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../info_service/index.html">Info-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../big_data/index.html">Big Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../machine_learning/index.html">Machine Learning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../drone/index.html">Drone</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../linux/index.html">Linux</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kernel/index.html">Kernel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../performance/index.html">Performance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../distributed_system/index.html">Distributed System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../shell/index.html">Shell</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../python/index.html">Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../django/index.html">Django</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../javascript/index.html">JavaScript</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../nodejs/index.html">Node.js</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../clang/index.html">C</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../golang/index.html">Go</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../swift/index.html">Swift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../rust/index.html">Rust</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ruby/index.html">Ruby</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lua/index.html">Lua</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../arm/index.html">ARM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../raspberry_pi/index.html">Raspberry Pi</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../android/index.html">Android</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../bsd/index.html">BSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../freebsd/index.html">FreeBSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../apple/index.html">Apple</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../windows/index.html">Windows</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Real</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../real_think/index.html">真实世界的技术思考</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../prepare/index.html">真实云计算的构建准备</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../priv_cloud/index.html">私有云计算构建</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="index.html">边缘云计算构建</a><ul class="current">
-<li class="toctree-l3 current"><a class="current reference internal" href="#">边缘云计算架构</a><ul>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">边缘云计算架构(旧版)</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#id2">硬件环境</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#arm">ARM服务器分布</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#id3">网络互联(原构想)</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#id4">网络互联</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="edge_cloud_infra_2024.html">边缘云计算架构(2024)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="edge_jetson.html">边缘计算Jetson Nano</a></li>
 <li class="toctree-l3"><a class="reference internal" href="edge_jetson_net.html">边缘计算Jetson Nano网络</a></li>
 <li class="toctree-l3"><a class="reference internal" href="edge_pi.html">边缘计算树莓派</a></li>
@@ -116,10 +125,11 @@
 <li class="toctree-l2"><a class="reference internal" href="../network/index.html">真实荒漠</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../mobile_work/index.html">移动工作</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../mobile_cloud/index.html">移动云计算构建</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../bsd_cloud/index.html">FreeBSD云计算构建</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../management/index.html">Management Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../life/index.html">Life Atlas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../management/index.html">Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../life/index.html">Life</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../copyright.html">Copyright</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../aboutme.html">关于作者</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../donate.html">捐赠</a></li>
@@ -132,21 +142,21 @@
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../index.html">Cloud Atlas</a>
+          <a href="../../index.html">Cloud Atlas: Discovery</a>
       </nav>
 
       <div class="wy-nav-content">
         <div class="rst-content">
-          <div role="navigation" aria-label="Page navigation">
+          <div role="navigation" aria-label="页面导航">
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
-          <li class="breadcrumb-item"><a href="../index.html">Real Atlas</a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Real</a></li>
           <li class="breadcrumb-item"><a href="index.html">边缘云计算构建</a></li>
-      <li class="breadcrumb-item active">边缘云计算架构</li>
+      <li class="breadcrumb-item active">边缘云计算架构(旧版)</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../../_sources/real/edge_cloud/edge_cloud_infra.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../_sources/real/edge_cloud/edge_cloud_infra.rst.txt" rel="nofollow"> 查看页面源码</a>
       </li>
   </ul>
   <hr/>
@@ -155,59 +165,68 @@
            <div itemprop="articleBody">
              
   <section id="edge-cloud-infra">
-<span id="id1"></span><h1>边缘云计算架构<a class="headerlink" href="#edge-cloud-infra" title="Link to this heading">¶</a></h1>
-<p>我陆续购买多多代 <a class="reference internal" href="../../arm/raspberry_pi/index.html#raspberry-pi"><span class="std std-ref">Raspberry Pi</span></a> 设备，在最初构建 <a class="reference internal" href="../priv_cloud/priv_cloud_infra.html#priv-cloud-infra"><span class="std std-ref">私有云架构</span></a> 时，我采用的还是完整的 <a class="reference internal" href="../../kubernetes/arm/index.html#arm-k8s"><span class="std std-ref">ARM架构Kubernetes</span></a> 。不过，我也在思考如何能够尽可能少消耗树莓派的硬件资源来完成更多的计算。轻量级始终是ARM架构(资源有限的系统)的技术关键，类似 <a class="reference internal" href="../../infrastructure/akraino/index.html#akraino"><span class="std std-ref">Akraino边缘计算</span></a> ，我逐步想要在ARM架构上构建一个轻量级的边缘计算平台。</p>
+<span id="id1"></span><h1>边缘云计算架构(旧版)<a class="headerlink" href="#edge-cloud-infra" title="Link to this heading"></a></h1>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>2024年我重建了自己的 <a class="reference internal" href="edge_cloud_infra_2024.html#edge-cloud-infra-2024"><span class="std std-ref">边缘云计算架构(2024)</span></a> ，将采用最新的 <a class="reference internal" href="../../raspberry_pi/hardware/pi_5.html#pi-5"><span class="std std-ref">树莓派Raspberry Pi 5</span></a> 和 <a class="reference internal" href="../../raspberry_pi/hardware/pi_4.html#pi-4"><span class="std std-ref">树莓派Raspberry Pi 4</span></a> 混合构建，作为自己日常 <a class="reference internal" href="../mobile_work/index.html#mobile-work"><span class="std std-ref">移动工作</span></a> 的 <a class="reference internal" href="index.html#edge-cloud"><span class="std std-ref">边缘云计算构建</span></a> : 我在各地旅行时会携带这个小型的 <a class="reference internal" href="../../raspberry_pi/index.html#raspberry-pi"><span class="std std-ref">Raspberry Pi</span></a> 堆叠集群，来学习和实践技术。</p>
+<p><strong>所以本文的 &quot;边缘云计算架构&quot; 暂时不会再更新(归档)，而重新开始新的边缘云实践</strong></p>
+</div>
+<p>我陆续购买多多代 <a class="reference internal" href="../../raspberry_pi/index.html#raspberry-pi"><span class="std std-ref">Raspberry Pi</span></a> 设备，在最初构建 <a class="reference internal" href="../priv_cloud/priv_cloud_infra.html#priv-cloud-infra"><span class="std std-ref">私有云架构</span></a> 时，我采用的还是完整的 <a class="reference internal" href="../../kubernetes/arm/index.html#arm-k8s"><span class="std std-ref">ARM架构Kubernetes</span></a> 。不过，我也在思考如何能够尽可能少消耗树莓派的硬件资源来完成更多的计算。轻量级始终是ARM架构(资源有限的系统)的技术关键，类似 <a class="reference internal" href="../../infrastructure/akraino/index.html#akraino"><span class="std std-ref">Akraino边缘计算</span></a> ，我逐步想要在ARM架构上构建一个轻量级的边缘计算平台。</p>
 <div class="admonition note">
 <p class="admonition-title">备注</p>
 <p>最近在部署 <a class="reference internal" href="../../kubernetes/k3s/index.html#k3s"><span class="std std-ref">K3s - 轻量级Kubernetes</span></a> 集群时候，偶然发现原来有人和我类似的思路，并且已经实践并分享了方案和经验，请参考 <a class="reference external" href="https://rpi4cluster.com/">rpi4cluster.com</a> ，方案和文档非常清晰完备。</p>
 <p>我准备借鉴并尝试不同的应用应用迭代，构建适合自己同时能够进一步完善的解决方案。</p>
 </div>
-<p>我将树莓派组建成一个微型集群，运行 <a class="reference internal" href="../../kubernetes/k3s/index.html#k3s"><span class="std std-ref">K3s - 轻量级Kubernetes</span></a> 并通过 <a class="reference internal" href="../../rancher/index.html#rancher"><span class="std std-ref">Rancher Atlas</span></a> 实现一个PaaS环境。这是一个个人开发和实践环境，通过完整的CI/CD来实现个人工作室。</p>
+<p>我将树莓派组建成一个微型集群，运行 <a class="reference internal" href="../../kubernetes/k3s/index.html#k3s"><span class="std std-ref">K3s - 轻量级Kubernetes</span></a> 并通过 <a class="reference internal" href="../../rancher/index.html#rancher"><span class="std std-ref">Rancher</span></a> 实现一个PaaS环境。这是一个个人开发和实践环境，通过完整的CI/CD来实现个人工作室。</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>2024年3月，重新部署 <a class="reference internal" href="../../raspberry_pi/index.html#raspberry-pi"><span class="std std-ref">Raspberry Pi</span></a> 集群，采用了树莓派官方 <a class="reference internal" href="../../raspberry_pi/startup/raspberry_pi_os.html#raspberry-pi-os"><span class="std std-ref">Raspbery Pi OS(Raspbian)</span></a> 操作系统，原因是官方系统现已完美支持64位，并且由于使用广泛，可以通过社区获得较好的支持。我计划重新部署 <a class="reference internal" href="../../kubernetes/index.html#kubernetes"><span class="std std-ref">Kubernetes</span></a> 集群，构建完整的模拟Cloud Atlas集群</p>
+</div>
 <section id="id2">
-<h2>硬件环境<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
+<h2>硬件环境<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
 <p>我购买过多代树莓派产品以及 <a class="reference internal" href="../../machine_learning/jetson/jetson_nano.html#jetson-nano"><span class="std std-ref">Jetson Nano</span></a> :</p>
 <ul class="simple">
-<li><p><a class="reference internal" href="../../arm/raspberry_pi/hardware/pi_1.html#pi-1"><span class="std std-ref">树莓派一代</span></a> - <span class="sphinxnotes-strike" style="text-decoration: line-through;">构建边缘云计算(监控)</span> (考虑到组装树莓派集群需要小巧，类似 <a class="reference internal" href="../../arm/raspberry_pi/hardware/turing_pi/index.html#turing-pi"><span class="std std-ref">Turing Pi 树莓派mini集群</span></a> ，所以我还是决定舍弃 <a class="reference internal" href="../../arm/raspberry_pi/hardware/pi_1.html#pi-1"><span class="std std-ref">树莓派一代</span></a> ，改为采用一台低配置 <a class="reference internal" href="../../arm/raspberry_pi/hardware/pi_4.html#pi-4"><span class="std std-ref">树莓派Raspberry Pi 4</span></a> 来实现管理和监控)</p></li>
-<li><p><a class="reference internal" href="../../arm/raspberry_pi/hardware/pi_3.html#pi-3"><span class="std std-ref">树莓派Raspberry Pi 3</span></a> - 构建边缘云计算(管控节点)</p></li>
-<li><p><a class="reference internal" href="../../arm/raspberry_pi/hardware/pi_4.html#pi-4"><span class="std std-ref">树莓派Raspberry Pi 4</span></a> - 构建边缘云计算(计算节点)</p>
+<li><p><a class="reference internal" href="../../raspberry_pi/hardware/pi_1.html#pi-1"><span class="std std-ref">树莓派一代</span></a> - <span class="sphinxnotes-strike" style="text-decoration: line-through;">构建边缘云计算(监控)</span> (考虑到组装树莓派集群需要小巧，类似 <a class="reference internal" href="../../raspberry_pi/hardware/turing_pi/index.html#turing-pi"><span class="std std-ref">Turing Pi 树莓派mini集群</span></a> ，所以我还是决定舍弃 <a class="reference internal" href="../../raspberry_pi/hardware/pi_1.html#pi-1"><span class="std std-ref">树莓派一代</span></a> ，改为采用一台低配置 <a class="reference internal" href="../../raspberry_pi/hardware/pi_4.html#pi-4"><span class="std std-ref">树莓派Raspberry Pi 4</span></a> 来实现管理和监控)</p></li>
+<li><p><a class="reference internal" href="../../raspberry_pi/hardware/pi_3.html#pi-3"><span class="std std-ref">树莓派Raspberry Pi 3</span></a> - 构建边缘云计算(管控节点)</p></li>
+<li><p><a class="reference internal" href="../../raspberry_pi/hardware/pi_4.html#pi-4"><span class="std std-ref">树莓派Raspberry Pi 4</span></a> - 构建边缘云计算(计算节点)</p>
 <ul>
-<li><p>其中一台 <code class="docutils literal notranslate"><span class="pre">2G</span></code> 内存配置的 <a class="reference internal" href="../../arm/raspberry_pi/hardware/pi_4.html#pi-4"><span class="std std-ref">树莓派Raspberry Pi 4</span></a> 独立作为监控和管理服务器，提供这个 <a class="reference internal" href="index.html#edge-cloud"><span class="std std-ref">边缘云计算构建</span></a> 的监控</p>
+<li><p>其中一台 <code class="docutils literal notranslate"><span class="pre">2G</span></code> 内存配置的 <a class="reference internal" href="../../raspberry_pi/hardware/pi_4.html#pi-4"><span class="std std-ref">树莓派Raspberry Pi 4</span></a> 独立作为监控和管理服务器，提供这个 <a class="reference internal" href="index.html#edge-cloud"><span class="std std-ref">边缘云计算构建</span></a> 的监控</p>
 <ul>
 <li><p>资源有限，并且要有一个 <a class="reference internal" href="../../kubernetes/monitor/prometheus/index.html#prometheus"><span class="std std-ref">Prometheus监控</span></a> 体系之外的单独监控，所以该节点运行轻量级监控以及对外通知</p></li>
 <li><p>采用监控( <a class="reference internal" href="../../kubernetes/monitor/prometheus/index.html#prometheus"><span class="std std-ref">Prometheus监控</span></a> 结合跟多网络管理平台 )</p></li>
 </ul>
 </li>
-<li><p>在3台 <a class="reference internal" href="../../arm/raspberry_pi/hardware/pi_4.html#pi-4"><span class="std std-ref">树莓派Raspberry Pi 4</span></a> 作为工作节点( <code class="docutils literal notranslate"><span class="pre">worker</span></code> )</p>
+<li><p>在3台 <a class="reference internal" href="../../raspberry_pi/hardware/pi_4.html#pi-4"><span class="std std-ref">树莓派Raspberry Pi 4</span></a> 作为工作节点( <code class="docutils literal notranslate"><span class="pre">worker</span></code> )</p>
 <ul>
-<li><p>由于3个 <a class="reference internal" href="../../arm/raspberry_pi/hardware/pi_4.html#pi-4"><span class="std std-ref">树莓派Raspberry Pi 4</span></a> 的其中一个只有 <code class="docutils literal notranslate"><span class="pre">2G</span></code> 内存，调度只分配监控服务 <a class="reference internal" href="../../kubernetes/monitor/prometheus/index.html#prometheus"><span class="std std-ref">Prometheus监控</span></a> / <a class="reference internal" href="../../kubernetes/monitor/grafana/index.html#grafana"><span class="std std-ref">Grafana通用可视分析平台</span></a> / <a class="reference internal" href="../../kubernetes/monitor/thanos/index.html#thanos"><span class="std std-ref">Thanos 分布式时序存储</span></a> 来构建集群监控</p></li>
+<li><p>由于3个 <a class="reference internal" href="../../raspberry_pi/hardware/pi_4.html#pi-4"><span class="std std-ref">树莓派Raspberry Pi 4</span></a> 的其中一个只有 <code class="docutils literal notranslate"><span class="pre">2G</span></code> 内存，调度只分配监控服务 <a class="reference internal" href="../../kubernetes/monitor/prometheus/index.html#prometheus"><span class="std std-ref">Prometheus监控</span></a> / <a class="reference internal" href="../../kubernetes/monitor/grafana/index.html#grafana"><span class="std std-ref">Grafana通用可视分析平台</span></a> / <a class="reference internal" href="../../kubernetes/monitor/thanos/index.html#thanos"><span class="std std-ref">Thanos 分布式时序存储</span></a> 来构建集群监控</p></li>
 </ul>
 </li>
-<li><p>另外两台 <code class="docutils literal notranslate"><span class="pre">8G</span></code> 内存配置的 <a class="reference internal" href="../../arm/raspberry_pi/hardware/pi_4.html#pi-4"><span class="std std-ref">树莓派Raspberry Pi 4</span></a> 加入 <a class="reference internal" href="../../kubernetes/k3s/index.html#k3s"><span class="std std-ref">K3s - 轻量级Kubernetes</span></a> 作为工作节点</p>
+<li><p>另外两台 <code class="docutils literal notranslate"><span class="pre">8G</span></code> 内存配置的 <a class="reference internal" href="../../raspberry_pi/hardware/pi_4.html#pi-4"><span class="std std-ref">树莓派Raspberry Pi 4</span></a> 加入 <a class="reference internal" href="../../kubernetes/k3s/index.html#k3s"><span class="std std-ref">K3s - 轻量级Kubernetes</span></a> 作为工作节点</p>
 <ul>
-<li><p><code class="docutils literal notranslate"><span class="pre">8G</span></code> 节点内存，部署 <a class="reference internal" href="../../devops/jenkins/index.html#jenkins"><span class="std std-ref">Jenkins</span></a> (集成在 <a class="reference internal" href="../../rancher/index.html#rancher"><span class="std std-ref">Rancher Atlas</span></a> 中作为 pipeline)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">8G</span></code> 节点内存，部署 <a class="reference internal" href="../../devops/jenkins/index.html#jenkins"><span class="std std-ref">Jenkins</span></a> (集成在 <a class="reference internal" href="../../rancher/index.html#rancher"><span class="std std-ref">Rancher</span></a> 中作为 pipeline)</p></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><p><a class="reference internal" href="../../machine_learning/jetson/jetson_nano.html#jetson-nano"><span class="std std-ref">Jetson Nano</span></a> - 构建边缘云计算( <a class="reference internal" href="../../machine_learning/index.html#machine-learning"><span class="std std-ref">Machine Learning Atlas</span></a> )</p></li>
-<li><p><a class="reference internal" href="../../arm/raspberry_pi/hardware/pi_400.html#pi-400"><span class="std std-ref">树莓派Raspberry Pi 400</span></a> - 作为管理和操作</p></li>
+<li><p><a class="reference internal" href="../../machine_learning/jetson/jetson_nano.html#jetson-nano"><span class="std std-ref">Jetson Nano</span></a> - 构建边缘云计算( <a class="reference internal" href="../../machine_learning/index.html#machine-learning"><span class="std std-ref">Machine Learning</span></a> )</p></li>
+<li><p><a class="reference internal" href="../../raspberry_pi/hardware/pi_400.html#pi-400"><span class="std std-ref">树莓派Raspberry Pi 400</span></a> - 作为管理和操作(悲剧: 已损坏)</p></li>
 </ul>
-<p>我将 3个 <a class="reference internal" href="../../arm/raspberry_pi/hardware/pi_4.html#pi-4"><span class="std std-ref">树莓派Raspberry Pi 4</span></a> 和 3 个 <a class="reference internal" href="../../arm/raspberry_pi/hardware/pi_3.html#pi-3"><span class="std std-ref">树莓派Raspberry Pi 3</span></a> 堆叠起来，构建一个mini的树莓派集群:</p>
+<p>我将 3个 <a class="reference internal" href="../../raspberry_pi/hardware/pi_4.html#pi-4"><span class="std std-ref">树莓派Raspberry Pi 4</span></a> 和 3 个 <a class="reference internal" href="../../raspberry_pi/hardware/pi_3.html#pi-3"><span class="std std-ref">树莓派Raspberry Pi 3</span></a> 堆叠起来，构建一个mini的树莓派集群:</p>
 <figure class="align-default">
 <a class="reference internal image-reference" href="../../_images/edge_cloud_pi.jpg"><img alt="../../_images/edge_cloud_pi.jpg" src="../../_images/edge_cloud_pi.jpg" style="width: 614.4px; height: 460.79999999999995px;" /></a>
 </figure>
 </section>
 <section id="arm">
-<h2>ARM服务器分布<a class="headerlink" href="#arm" title="Link to this heading">¶</a></h2>
+<h2>ARM服务器分布<a class="headerlink" href="#arm" title="Link to this heading"></a></h2>
 <table class="docutils align-default" id="id5">
-<caption><span class="caption-text">ARM边缘计算主机分配</span><a class="headerlink" href="#id5" title="Link to this table">¶</a></caption>
+<caption><span class="caption-text">ARM边缘计算主机分配</span><a class="headerlink" href="#id5" title="Link to this table"></a></caption>
 <colgroup>
-<col style="width: 20%" />
-<col style="width: 10%" />
-<col style="width: 10%" />
-<col style="width: 10%" />
-<col style="width: 20%" />
-<col style="width: 30%" />
+<col style="width: 20.0%" />
+<col style="width: 10.0%" />
+<col style="width: 10.0%" />
+<col style="width: 10.0%" />
+<col style="width: 20.0%" />
+<col style="width: 30.0%" />
 </colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>主机IP</p></th>
@@ -240,126 +259,119 @@
 <td><p>16 SD</p></td>
 <td><p>树莓派1B</p></td>
 </tr>
-<tr class="row-odd"><td><p>192.168.7.1</p></td>
-<td><p>x-adm</p></td>
-<td><p>4</p></td>
-<td><p>4</p></td>
-<td><p>128 SD</p></td>
-<td><p>树莓派 400</p></td>
+<tr class="row-odd"><td><p>192.168.1.1</p></td>
+<td><p>默认网关</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
-<tr class="row-even"><td><p>192.168.7.2</p></td>
+<tr class="row-even"><td><p>192.168.1.2</p></td>
 <td><p>x-zero</p></td>
 <td><p>1</p></td>
 <td><p>0.5</p></td>
 <td><p>128 SD</p></td>
 <td><p>树莓派zero-w</p></td>
 </tr>
-<tr class="row-odd"><td><p>192.168.7.11</p></td>
-<td><p>x-k3s-m-1</p></td>
+<tr class="row-odd"><td><p>192.168.1.211</p></td>
+<td><p>x-m-1</p></td>
 <td><p>4</p></td>
 <td><p>1</p></td>
 <td><p>64 SD</p></td>
 <td><p>树莓派 B3 - k3s master</p></td>
 </tr>
-<tr class="row-even"><td><p>192.168.7.11</p></td>
+<tr class="row-even"><td><p>192.168.1.211</p></td>
 <td><p>etcd</p></td>
 <td></td>
 <td></td>
 <td></td>
 <td><p>etcd服务DNS RoundRobin</p></td>
 </tr>
-<tr class="row-odd"><td><p>192.168.7.11</p></td>
+<tr class="row-odd"><td><p>192.168.1.211</p></td>
 <td><p>apiserver</p></td>
 <td></td>
 <td></td>
 <td></td>
 <td><p>apiserver服务DNS RoundRobin</p></td>
 </tr>
-<tr class="row-even"><td><p>192.168.7.12</p></td>
-<td><p>x-k3s-m-2</p></td>
+<tr class="row-even"><td><p>192.168.1.212</p></td>
+<td><p>x-m-2</p></td>
 <td><p>4</p></td>
 <td><p>1</p></td>
 <td><p>64 SD</p></td>
 <td><p>树莓派 B3 - k3s master</p></td>
 </tr>
-<tr class="row-odd"><td><p>192.168.7.12</p></td>
+<tr class="row-odd"><td><p>192.168.1.212</p></td>
 <td><p>etcd</p></td>
 <td></td>
 <td></td>
 <td></td>
 <td><p>etcd服务DNS RoundRobin</p></td>
 </tr>
-<tr class="row-even"><td><p>192.168.7.12</p></td>
+<tr class="row-even"><td><p>192.168.1.212</p></td>
 <td><p>apiserver</p></td>
 <td></td>
 <td></td>
 <td></td>
 <td><p>apiserver服务DNS RoundRobin</p></td>
 </tr>
-<tr class="row-odd"><td><p>192.168.7.13</p></td>
-<td><p>x-k3s-m-3</p></td>
+<tr class="row-odd"><td><p>192.168.1.213</p></td>
+<td><p>x-m-3</p></td>
 <td><p>4</p></td>
 <td><p>1</p></td>
 <td><p>64 SD</p></td>
 <td><p>树莓派 B3 - k3s master</p></td>
 </tr>
-<tr class="row-even"><td><p>192.168.7.13</p></td>
+<tr class="row-even"><td><p>192.168.1.213</p></td>
 <td><p>etcd</p></td>
 <td></td>
 <td></td>
 <td></td>
 <td><p>etcd服务DNS RoundRobin</p></td>
 </tr>
-<tr class="row-odd"><td><p>192.168.7.13</p></td>
+<tr class="row-odd"><td><p>192.168.1.213</p></td>
 <td><p>apiserver</p></td>
 <td></td>
 <td></td>
 <td></td>
 <td><p>apiserver服务DNS RoundRobin</p></td>
 </tr>
-<tr class="row-even"><td><p>192.168.7.12</p></td>
-<td><p>x-k3s-m-2</p></td>
+<tr class="row-even"><td><p>192.168.1.221</p></td>
+<td><p>x-n-1</p></td>
 <td><p>4</p></td>
-<td><p>1</p></td>
-<td><p>64 SD</p></td>
-<td><p>树莓派 B3 - k3s master</p></td>
+<td><p>8</p></td>
+<td><p>1T</p></td>
+<td><p>树莓派 B4 - ceph ds/monitor</p></td>
 </tr>
-<tr class="row-odd"><td><p>192.168.7.20</p></td>
-<td><p>x-k3s-n-0</p></td>
+<tr class="row-odd"><td><p>192.168.1.222</p></td>
+<td><p>x-n-2</p></td>
+<td><p>4</p></td>
+<td><p>8</p></td>
+<td><p>1T</p></td>
+<td><p>树莓派 B4 - ceph ds/dashboard</p></td>
+</tr>
+<tr class="row-even"><td><p>192.168.1.223</p></td>
+<td><p>x-n-3</p></td>
 <td><p>4</p></td>
 <td><p>2</p></td>
-<td><p>512SSD</p></td>
-<td><p>树莓派 B4 - ceph/monitor</p></td>
+<td><p>1T</p></td>
+<td><p>树莓派 B4 - ceph ds</p></td>
 </tr>
-<tr class="row-even"><td><p>192.168.7.21</p></td>
-<td><p>x-k3s-n-1</p></td>
-<td><p>4</p></td>
-<td><p>8</p></td>
-<td><p>512SSD</p></td>
-<td><p>树莓派 B4 - ceph/k3s node</p></td>
-</tr>
-<tr class="row-odd"><td><p>192.168.7.22</p></td>
-<td><p>x-k3s-n-2</p></td>
-<td><p>4</p></td>
-<td><p>8</p></td>
-<td><p>512SSD</p></td>
-<td><p>树莓派 B4 - ceph/k3s node</p></td>
-</tr>
-<tr class="row-even"><td><p>192.168.7.23</p></td>
-<td><p>x-k3s-n-3</p></td>
+<tr class="row-odd"><td><p>192.168.1.224</p></td>
+<td><p>x-n-4</p></td>
 <td><p>4</p></td>
 <td><p>4</p></td>
 <td><p>128 SD</p></td>
-<td><p>Jetson Nano - GPU/k3s node</p></td>
+<td><p>Jetson Nano - GPU</p></td>
 </tr>
-<tr class="row-odd"><td><p>192.168.7.253</p></td>
+<tr class="row-even"><td><p>192.168.1.253</p></td>
 <td><p>x-dev</p></td>
 <td><p>2</p></td>
 <td><p>2</p></td>
 <td><p>6</p></td>
 <td><p>容器</p></td>
 </tr>
-<tr class="row-even"><td><p>192.168.7.254</p></td>
+<tr class="row-odd"><td><p>192.168.1.254</p></td>
 <td><p>raspberrypi</p></td>
 <td><p>4</p></td>
 <td></td>
@@ -368,8 +380,8 @@
 </tr>
 </tbody>
 </table>
-<p>ARM架构的边缘计算采用了 <code class="docutils literal notranslate"><span class="pre">192.168.7.x</span></code> 作为网络IP段，和 <a class="reference internal" href="../priv_cloud/priv_cloud_infra.html#priv-cloud-infra"><span class="std std-ref">私有云架构</span></a> 的 <code class="docutils literal notranslate"><span class="pre">192.168.6.x</span></code> 隔离，中间采用 3层 <a class="reference internal" href="../../network/cisco/index.html#cisco"><span class="std std-ref">Cisco 网络</span></a> 路由</p>
-<p>虽然也可以在树莓派上实现 <a class="reference internal" href="../../kvm/arm_kvm/index.html#arm-kvm"><span class="std std-ref">ARM硬件环境KVM虚拟化</span></a> ，但是考虑到边缘计算硬件性能有限，所以采用轻量级 <a class="reference internal" href="../../kubernetes/index.html#kubernetes"><span class="std std-ref">Kubernetes Atlas</span></a> 实现 <a class="reference internal" href="../../kubernetes/k3s/index.html#k3s"><span class="std std-ref">K3s - 轻量级Kubernetes</span></a> 来构建mini集群，目标是实现:</p>
+<p>ARM架构的边缘计算采用了 <code class="docutils literal notranslate"><span class="pre">192.168.7.x</span></code> 作为网络IP段(融入到我的家庭网络)，和 <a class="reference internal" href="../priv_cloud/priv_cloud_infra.html#priv-cloud-infra"><span class="std std-ref">私有云架构</span></a> 的 <code class="docutils literal notranslate"><span class="pre">192.168.6.x</span></code> 隔离，中间采用 3层 <a class="reference internal" href="../../network/cisco/index.html#cisco"><span class="std std-ref">Cisco 网络</span></a> 路由</p>
+<p>虽然也可以在树莓派上实现 <a class="reference internal" href="../../kvm/arm_kvm/index.html#arm-kvm"><span class="std std-ref">ARM硬件环境KVM虚拟化</span></a> ，但是考虑到边缘计算硬件性能有限，所以采用轻量级 <a class="reference internal" href="../../kubernetes/index.html#kubernetes"><span class="std std-ref">Kubernetes</span></a> 实现 <a class="reference internal" href="../../kubernetes/k3s/index.html#k3s"><span class="std std-ref">K3s - 轻量级Kubernetes</span></a> 来构建mini集群，目标是实现:</p>
 <ul class="simple">
 <li><p>任意调度计算资源实现服务的伸缩、高可用</p></li>
 <li><p>构建边缘计算场景: 传感器数据采集、存储、传输，以及独立的AI计算，结合 <a class="reference internal" href="../priv_cloud/index.html#priv-cloud"><span class="std std-ref">私有云计算构建</span></a> 的强大算力，实现云计算的合理分布</p></li>
@@ -392,7 +404,7 @@
 </div>
 </section>
 <section id="id3">
-<h2>网络互联(原构想)<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h2>
+<h2>网络互联(原构想)<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
 <p>模拟多机房互联:</p>
 <ul class="simple">
 <li><p>(废弃)使用 <a class="reference internal" href="../../studio/hardware/thinkpad_x220.html#thinkpad-x220"><span class="std std-ref">ThinkPad X220笔记本</span></a> 构建VPN中心节点，实现多机房集中到中心节点连接</p></li>
@@ -400,7 +412,7 @@
 </ul>
 </section>
 <section id="id4">
-<h2>网络互联<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h2>
+<h2>网络互联<a class="headerlink" href="#id4" title="Link to this heading"></a></h2>
 <p>作为边缘云计算集群，ARM设备的低功耗适合构建在无需风扇散热的角落里。我在家中采用树莓派构建一个无风扇的静音集群，安装在桌子底下的树莓派设备，完全不会影响工作生活。那么，如何实现树莓派连接外部网络，以及对外提供服务访问呢:</p>
 <ul class="simple">
 <li></li>
@@ -411,25 +423,37 @@
 
            </div>
           </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="index.html" class="btn btn-neutral float-left" title="边缘云计算构建" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="edge_jetson.html" class="btn btn-neutral float-right" title="边缘计算Jetson Nano" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="index.html" class="btn btn-neutral float-left" title="边缘云计算构建" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="edge_cloud_infra_2024.html" class="btn btn-neutral float-right" title="边缘云计算架构(2024)" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../copyright.html">Copyright</a> 2018 - now, Huatai Huang.</p>
+    <p>&#169; <a href="../../copyright.html">版权所有</a> 2018 - now, Huatai Huang。</p>
   </div>
 
-  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
   
     <!-- your html code here -->
     <br>
-    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡</a></p>
-     
+    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡 👈</a></p>
+    <br>
+    <p>网站采用 <a href="https://utteranc.es/">utterances</a> 评论系统，所有评论存储在<a href="https://github.com/huataihuang/cloud-atlas/issues">GitHub issues</a> 中，如果你看不到下方的评论框，那么可能需要<a href="https://cloud-atlas.readthedocs.io/zh-cn/latest/linux/security/vpn/index.html">自备梯子</a> 👈</p>
+    <div class="articleComments">
+        <comments>
+  <script src="https://utteranc.es/client.js"
+    repo="huataihuang/cloud-atlas"
+    issue-term="pathname"
+    theme="github-light"
+    crossorigin="anonymous"
+    async>
+  </script>
+</comments>
+    </div>
 
 
 </footer>

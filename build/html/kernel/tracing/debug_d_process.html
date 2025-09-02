@@ -1,26 +1,30 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh" data-content_root="../../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>排查Linux D住进程原因 &mdash; Cloud Atlas 0.1 文档</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+  <title>排查Linux D住进程原因 &mdash; Cloud Atlas: Discovery beta 文档</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=fd3f3429" />
+
+  
+    <link rel="shortcut icon" href="../../_static/favicon.png"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="../../_static/documentation_options.js?v=7c91f8fd"></script>
-        <script src="../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=8534f863"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
         <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
-        <script src="../../_static/translations.js?v=beaddf03"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../../genindex.html" />
     <link rel="search" title="搜索" href="../../search.html" />
     <link rel="copyright" title="版权所有" href="../../copyright.html" />
-    <link rel="next" title="“Bad RIP value”含义" href="bad_rip_value.html" />
+    <link rel="next" title="&#34;Bad RIP value&#34;含义" href="bad_rip_value.html" />
     <link rel="prev" title="debug占用很高system的进程" href="debug_high_sys_process.html" /> 
 </head>
 
@@ -33,52 +37,55 @@
           
           
           <a href="../../index.html" class="icon icon-home">
-            Cloud Atlas
+            Cloud Atlas: Discovery
           </a>
+              <div class="version">
+                1.1
+              </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../studio/index.html">Studio Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../infrastructure/index.html">Infrastructure Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../devops/index.html">DevOps Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kvm/index.html">KVM Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../ceph/index.html">Ceph Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../gluster/index.html">Gluster Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../ovirt/index.html">oVirt Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../openstack/index.html">OpenStack Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../docker/index.html">Docker Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kubernetes/index.html">Kubernetes Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kubernetes_from_scratch/index.html">Kubernetes From Scratch (KFS) Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../rancher/index.html">Rancher Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../openshift/index.html">OpenShift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../sql/index.html">SQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../sqlite/index.html">SQLite Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../mysql/index.html">MySQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../pgsql/index.html">PostgreSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../clickhouse/index.html">ClickHouse Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../nosql/index.html">NoSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../redis/index.html">Redis Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../network/index.html">Network Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../infra_service/index.html">Infra-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../infra_search/index.html">Search Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../info_service/index.html">Info-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../web/index.html">Web Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../big_data/index.html">Big Data Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../machine_learning/index.html">Machine Learning Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../linux/index.html">Linux Atlas</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Kernel Atlas</a><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../studio/index.html">Studio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../infrastructure/index.html">Infrastructure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../devops/index.html">DevOps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kvm/index.html">KVM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ceph/index.html">Ceph</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../gluster/index.html">Gluster</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ovirt/index.html">oVirt</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../openstack/index.html">OpenStack</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../docker/index.html">Docker</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kubernetes/index.html">Kubernetes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../k8s_dev/index.html">Kubernetes Develop</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../rancher/index.html">Rancher</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../openshift/index.html">OpenShift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../sql/index.html">SQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../sqlite/index.html">SQLite</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../mysql/index.html">MySQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../pgsql/index.html">PostgreSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../nosql/index.html">NoSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../network/index.html">Network</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../infra_service/index.html">Infra-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../infra_search/index.html">Infra-Search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../web/index.html">Web</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../info_service/index.html">Info-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../big_data/index.html">Big Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../machine_learning/index.html">Machine Learning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../drone/index.html">Drone</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../linux/index.html">Linux</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Kernel</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../startup/index.html">Kernel起步</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../cpu/index.html">CPU</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../scheduler/index.html">Linux调度器</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../cgroup/index.html">Kernel Cgroup</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../process/index.html">内核进程管理</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../core_api/index.html">kernel核心API</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../flame_graph.html">火焰图</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../kms.html">KMS (Kernel mode setting)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../accounting/index.html">内核记账</a></li>
@@ -91,7 +98,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../network/index.html">Linux内核网络实现</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../power/index.html">内核电源管理</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="index.html">Linux内核追踪</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="sysrq.html">Linux “魔力” 系统请求组合键 SysRq</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sysrq.html">Linux &quot;魔力&quot; 系统请求组合键 SysRq</a></li>
 <li class="toctree-l3"><a class="reference internal" href="find_high_sys_process.html">找出消耗CPU的sys的进程</a></li>
 <li class="toctree-l3"><a class="reference internal" href="debug_high_sys_process.html">debug占用很高system的进程</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">排查Linux D住进程原因</a><ul>
@@ -101,37 +108,39 @@
 <li class="toctree-l4"><a class="reference internal" href="#id2">参考</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="bad_rip_value.html">“Bad RIP value”含义</a></li>
+<li class="toctree-l3"><a class="reference internal" href="bad_rip_value.html">&quot;Bad RIP value&quot;含义</a></li>
 <li class="toctree-l3"><a class="reference internal" href="debug_system_crash.html">排查系统crash</a></li>
 <li class="toctree-l3"><a class="reference internal" href="strace.html">strace系统调用跟踪</a></li>
 <li class="toctree-l3"><a class="reference internal" href="debug_lscpu_slow.html">排查lscpu缓慢</a></li>
-<li class="toctree-l3"><a class="reference internal" href="illegal_instruction_core_dumped.html">排查 “Illegal instruction (core dumped)”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="illegal_instruction_core_dumped.html">排查 &quot;Illegal instruction (core dumped)&quot;</a></li>
 <li class="toctree-l3"><a class="reference internal" href="kdump/index.html">Linux内核Kdump</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../performance/index.html">Performance Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../distributed_system/index.html">Distributed System Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../shell/index.html">Shell Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../python/index.html">Python Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../django/index.html">Django Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../flask/index.html">Flask Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../javascript/index.html">JavaScript Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../nodejs/index.html">Node.js Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../clang/index.html">C Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../golang/index.html">Go Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../swift/index.html">Swift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../rust/index.html">Rust Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../ruby/index.html">Ruby Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../arm/index.html">ARM Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../android/index.html">Android Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../bsd/index.html">BSD Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../apple/index.html">Apple Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../windows/index.html">Windows Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../real/index.html">Real Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../management/index.html">Management Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../life/index.html">Life Atlas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../performance/index.html">Performance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../distributed_system/index.html">Distributed System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../shell/index.html">Shell</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../python/index.html">Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../django/index.html">Django</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../javascript/index.html">JavaScript</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../nodejs/index.html">Node.js</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../clang/index.html">C</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../golang/index.html">Go</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../swift/index.html">Swift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../rust/index.html">Rust</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ruby/index.html">Ruby</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lua/index.html">Lua</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../arm/index.html">ARM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../raspberry_pi/index.html">Raspberry Pi</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../android/index.html">Android</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../bsd/index.html">BSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../freebsd/index.html">FreeBSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../apple/index.html">Apple</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../windows/index.html">Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../real/index.html">Real</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../management/index.html">Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../life/index.html">Life</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../copyright.html">Copyright</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../aboutme.html">关于作者</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../donate.html">捐赠</a></li>
@@ -144,21 +153,21 @@
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../index.html">Cloud Atlas</a>
+          <a href="../../index.html">Cloud Atlas: Discovery</a>
       </nav>
 
       <div class="wy-nav-content">
         <div class="rst-content">
-          <div role="navigation" aria-label="Page navigation">
+          <div role="navigation" aria-label="页面导航">
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
-          <li class="breadcrumb-item"><a href="../index.html">Kernel Atlas</a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Kernel</a></li>
           <li class="breadcrumb-item"><a href="index.html">Linux内核追踪</a></li>
       <li class="breadcrumb-item active">排查Linux D住进程原因</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../../_sources/kernel/tracing/debug_d_process.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../_sources/kernel/tracing/debug_d_process.rst.txt" rel="nofollow"> 查看页面源码</a>
       </li>
   </ul>
   <hr/>
@@ -167,9 +176,9 @@
            <div itemprop="articleBody">
              
   <section id="linux-d">
-<span id="debug-d-process"></span><h1>排查Linux D住进程原因<a class="headerlink" href="#linux-d" title="Link to this heading">¶</a></h1>
+<span id="debug-d-process"></span><h1>排查Linux D住进程原因<a class="headerlink" href="#linux-d" title="Link to this heading"></a></h1>
 <section id="d">
-<h2>查询僵尸和D进程<a class="headerlink" href="#d" title="Link to this heading">¶</a></h2>
+<h2>查询僵尸和D进程<a class="headerlink" href="#d" title="Link to this heading"></a></h2>
 <p>僵尸进程 <code class="docutils literal notranslate"><span class="pre">zombie</span></code> 是虽然不占用资源，但是表明系统有不正常的资源回收问题。</p>
 <p>根据经验，我们知道Linux中有一种状态为 <code class="docutils literal notranslate"><span class="pre">D</span></code> 的进程，会阻塞CPU使用(因为CPU需要等待设备返回，例如等待磁盘)，所以我们检查一下系统是否存在 <code class="docutils literal notranslate"><span class="pre">D</span></code> 进程:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ps</span> <span class="n">r</span> <span class="o">-</span><span class="n">A</span>
@@ -189,7 +198,7 @@
 <li><p>检查 <code class="docutils literal notranslate"><span class="pre">D</span></code> 住进程的堆栈:</p></li>
 </ul>
 <div class="literal-block-wrapper docutils container" id="id3">
-<div class="code-block-caption"><span class="caption-text">d_process_stack</span><a class="headerlink" href="#id3" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">d_process_stack</span><a class="headerlink" href="#id3" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="c1">#cat /proc/932/stack </span>
 <span class="linenos"> 2</span><span class="o">[</span>&lt;<span class="m">0</span>&gt;<span class="o">]</span><span class="w"> </span>load_calc_func+0x57/0x130
 <span class="linenos"> 3</span><span class="o">[</span>&lt;<span class="m">0</span>&gt;<span class="o">]</span><span class="w"> </span>kthread+0xf5/0x130
@@ -227,17 +236,17 @@
 </ul>
 </section>
 <section id="id1">
-<h2>进程信息排查<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h2>
-<p><a class="reference internal" href="sysrq.html#sysrq"><span class="std std-ref">Linux “魔力” 系统请求组合键 SysRq</span></a> 的提供了 <code class="docutils literal notranslate"><span class="pre">t</span></code> 指令dump出当前任务的信息，所以我在服务器上执行以下命令，打开进程信息:</p>
+<h2>进程信息排查<a class="headerlink" href="#id1" title="Link to this heading"></a></h2>
+<p><a class="reference internal" href="sysrq.html#sysrq"><span class="std std-ref">Linux &quot;魔力&quot; 系统请求组合键 SysRq</span></a> 的提供了 <code class="docutils literal notranslate"><span class="pre">t</span></code> 指令dump出当前任务的信息，所以我在服务器上执行以下命令，打开进程信息:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">echo</span> <span class="n">t</span> <span class="o">&gt;</span> <span class="o">/</span><span class="n">proc</span><span class="o">/</span><span class="n">sysrq</span><span class="o">-</span><span class="n">trigger</span>
 </pre></div>
 </div>
 <ul class="simple">
-<li><p>此时， <code class="docutils literal notranslate"><span class="pre">dmesg</span> <span class="pre">-T</span></code> 可以看到大量的系统调用被记录下来，其中有非常值得注意的 <a class="reference internal" href="bad_rip_value.html#bad-rip-value"><span class="std std-ref">“Bad RIP value”含义</span></a></p></li>
+<li><p>此时， <code class="docutils literal notranslate"><span class="pre">dmesg</span> <span class="pre">-T</span></code> 可以看到大量的系统调用被记录下来，其中有非常值得注意的 <a class="reference internal" href="bad_rip_value.html#bad-rip-value"><span class="std std-ref">&quot;Bad RIP value&quot;含义</span></a></p></li>
 </ul>
-<p>可以看到 <a class="reference internal" href="bad_rip_value.html#bad-rip-value"><span class="std std-ref">“Bad RIP value”含义</span></a> 同样集中在系统调用 <code class="docutils literal notranslate"><span class="pre">entry_SYSCALL_64_after_hwframe+0x44/0xa9</span></code> ，也就是阻塞进程的调用。</p>
+<p>可以看到 <a class="reference internal" href="bad_rip_value.html#bad-rip-value"><span class="std std-ref">&quot;Bad RIP value&quot;含义</span></a> 同样集中在系统调用 <code class="docutils literal notranslate"><span class="pre">entry_SYSCALL_64_after_hwframe+0x44/0xa9</span></code> ，也就是阻塞进程的调用。</p>
 <div class="literal-block-wrapper docutils container" id="id4">
-<div class="code-block-caption"><span class="caption-text">dump_tasks_info</span><a class="headerlink" href="#id4" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">dump_tasks_info</span><a class="headerlink" href="#id4" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="o">[</span>Tue<span class="w"> </span>Aug<span class="w"> </span><span class="m">10</span><span class="w"> </span><span class="m">17</span>:16:00<span class="w"> </span><span class="m">2021</span><span class="o">]</span><span class="w"> </span>Call<span class="w"> </span>Trace:
 <span class="linenos"> 2</span><span class="o">[</span>Tue<span class="w"> </span>Aug<span class="w"> </span><span class="m">10</span><span class="w"> </span><span class="m">17</span>:16:00<span class="w"> </span><span class="m">2021</span><span class="o">]</span><span class="w">  </span>?<span class="w"> </span>__schedule+0x3cf/0x660
 <span class="linenos"> 3</span><span class="o">[</span>Tue<span class="w"> </span>Aug<span class="w"> </span><span class="m">10</span><span class="w"> </span><span class="m">17</span>:16:00<span class="w"> </span><span class="m">2021</span><span class="o">]</span><span class="w">  </span>schedule+0x33/0xc0
@@ -284,10 +293,10 @@
 </div>
 </section>
 <section id="load-calc-d">
-<h2>再次出现 <code class="docutils literal notranslate"><span class="pre">[load_calc]</span></code> 系统进程D<a class="headerlink" href="#load-calc-d" title="Link to this heading">¶</a></h2>
+<h2>再次出现 <code class="docutils literal notranslate"><span class="pre">[load_calc]</span></code> 系统进程D<a class="headerlink" href="#load-calc-d" title="Link to this heading"></a></h2>
 <p>我在 <a class="reference internal" href="../cpu/amd/amd_cpu_c-state.html#amd-cpu-c-state"><span class="std std-ref">AMD CPU c-state</span></a> ，调整了内核参数( <code class="docutils literal notranslate"><span class="pre">processor.max_cstate=1</span> <span class="pre">intel_idle.max_cstate=0</span></code> )关闭海光CPU的电源管理，禁止进入idle状态( <a class="reference internal" href="../cpu/intel/cpufreq/cpu_c-state.html#cpu-c-state"><span class="std std-ref">CPU c-state</span></a> )。但是，服务器重启，再次出现 <code class="docutils literal notranslate"><span class="pre">[load_calc]</span></code> 进程D。检查进程堆栈，也和上文相同。</p>
 <ul>
-<li><p>我尝试上文方法 <a class="reference internal" href="sysrq.html#sysrq"><span class="std std-ref">Linux “魔力” 系统请求组合键 SysRq</span></a> 的提供了 <code class="docutils literal notranslate"><span class="pre">t</span></code> 指令dump出当前任务的信息:</p>
+<li><p>我尝试上文方法 <a class="reference internal" href="sysrq.html#sysrq"><span class="std std-ref">Linux &quot;魔力&quot; 系统请求组合键 SysRq</span></a> 的提供了 <code class="docutils literal notranslate"><span class="pre">t</span></code> 指令dump出当前任务的信息:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">echo</span> <span class="n">t</span> <span class="o">&gt;</span> <span class="o">/</span><span class="n">proc</span><span class="o">/</span><span class="n">sysrq</span><span class="o">-</span><span class="n">trigger</span>
 </pre></div>
 </div>
@@ -310,7 +319,7 @@
 </div>
 <p>重复出现如下调用 :</p>
 <div class="literal-block-wrapper docutils container" id="id5">
-<div class="code-block-caption"><span class="caption-text">重复出现大量 entry_SYSCALL_64_after_hwframe D住</span><a class="headerlink" href="#id5" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">重复出现大量 entry_SYSCALL_64_after_hwframe D住</span><a class="headerlink" href="#id5" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">[</span>Thu<span class="w"> </span>Jul<span class="w"> </span><span class="m">21</span><span class="w"> </span><span class="m">22</span>:46:47<span class="w"> </span><span class="m">2022</span><span class="o">]</span><span class="w"> </span>RIP:<span class="w"> </span><span class="m">0033</span>:0x460193
 <span class="o">[</span>Thu<span class="w"> </span>Jul<span class="w"> </span><span class="m">21</span><span class="w"> </span><span class="m">22</span>:46:47<span class="w"> </span><span class="m">2022</span><span class="o">]</span><span class="w"> </span>Code:<span class="w"> </span><span class="m">63</span><span class="w"> </span>d5<span class="w"> </span><span class="m">48</span><span class="w"> </span>8b<span class="w"> </span><span class="m">34</span><span class="w"> </span>d0<span class="w"> </span>e8<span class="w"> </span>1c<span class="w"> </span>ae<span class="w"> </span>fb<span class="w"> </span>ff<span class="w"> </span><span class="m">83</span><span class="w"> </span>c5<span class="w"> </span><span class="m">01</span><span class="w"> </span><span class="m">48</span><span class="w"> </span><span class="m">89</span><span class="w"> </span>d8<span class="w"> </span><span class="m">89</span><span class="w"> </span>2d<span class="w"> </span>a8<span class="w"> </span><span class="m">87</span><span class="w"> </span><span class="m">28</span><span class="w"> </span><span class="m">00</span><span class="w"> </span><span class="m">48</span><span class="w"> </span><span class="m">83</span><span class="w"> </span>c4<span class="w"> </span><span class="m">08</span><span class="w"> </span>5b<span class="w"> </span>5d<span class="w"> </span>c3<span class="w"> </span><span class="m">66</span><span class="w"> </span>0f<span class="w"> </span>1f<span class="w"> </span><span class="m">84</span><span class="w"> </span><span class="m">00</span><span class="w"> </span><span class="m">00</span><span class="w"> </span><span class="m">00</span><span class="w"> </span><span class="m">00</span><span class="w"> </span><span class="m">00</span><span class="w"> </span>b3<span class="w"> </span><span class="m">01</span><span class="w"> </span>c7<span class="w"> </span>&lt;<span class="m">05</span>&gt;<span class="w"> </span>a4<span class="w"> </span><span class="m">87</span><span class="w"> </span><span class="m">28</span><span class="w"> </span><span class="m">00</span><span class="w"> </span><span class="m">01</span><span class="w"> </span><span class="m">00</span><span class="w"> </span><span class="m">00</span><span class="w"> </span><span class="m">00</span><span class="w"> </span>b2<span class="w"> </span><span class="m">01</span><span class="w"> </span><span class="m">48</span><span class="w"> </span><span class="m">01</span><span class="w"> </span>eb<span class="w"> </span><span class="m">80</span><span class="w"> </span>3b<span class="w"> </span>7b<span class="w"> </span>0f<span class="w"> </span><span class="m">85</span><span class="w"> </span>cc<span class="w"> </span>fe<span class="w"> </span>ff
 <span class="o">[</span>Thu<span class="w"> </span>Jul<span class="w"> </span><span class="m">21</span><span class="w"> </span><span class="m">22</span>:46:47<span class="w"> </span><span class="m">2022</span><span class="o">]</span><span class="w"> </span>RSP:<span class="w"> </span>002b:000000c0009a1df8<span class="w"> </span>EFLAGS:<span class="w"> </span><span class="m">00000286</span><span class="w"> </span>ORIG_RAX:<span class="w"> </span>00000000000000ca
@@ -335,7 +344,7 @@
 </div>
 </div>
 <div class="literal-block-wrapper docutils container" id="id6">
-<div class="code-block-caption"><span class="caption-text">退出用户态也卡住</span><a class="headerlink" href="#id6" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">退出用户态也卡住</span><a class="headerlink" href="#id6" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">[</span>Thu<span class="w"> </span>Jul<span class="w"> </span><span class="m">21</span><span class="w"> </span><span class="m">22</span>:46:49<span class="w"> </span><span class="m">2022</span><span class="o">]</span><span class="w"> </span>RIP:<span class="w"> </span><span class="m">0033</span>:0x40a821
 <span class="o">[</span>Thu<span class="w"> </span>Jul<span class="w"> </span><span class="m">21</span><span class="w"> </span><span class="m">22</span>:46:49<span class="w"> </span><span class="m">2022</span><span class="o">]</span><span class="w"> </span>Code:<span class="w"> </span><span class="m">00</span><span class="w"> </span><span class="m">17</span><span class="w"> </span>4b<span class="w"> </span><span class="m">00</span><span class="w"> </span><span class="m">00</span><span class="w"> </span><span class="m">11</span><span class="w"> </span><span class="m">00</span><span class="w"> </span><span class="m">19</span><span class="w"> </span><span class="m">00</span><span class="w"> </span>f0<span class="w"> </span>a5<span class="w"> </span>6e<span class="w"> </span><span class="m">00</span><span class="w"> </span><span class="m">00</span><span class="w"> </span><span class="m">00</span><span class="w"> </span><span class="m">00</span><span class="w"> </span><span class="m">00</span><span class="w"> </span><span class="m">08</span><span class="w"> </span><span class="m">00</span><span class="w"> </span><span class="m">00</span><span class="w"> </span><span class="m">00</span><span class="w"> </span><span class="m">00</span><span class="w"> </span><span class="m">00</span><span class="w"> </span><span class="m">00</span><span class="w"> </span><span class="m">00</span><span class="w"> </span>bf<span class="w"> </span>7e<span class="w"> </span><span class="m">00</span><span class="w"> </span><span class="m">00</span><span class="w"> </span><span class="m">12</span><span class="w"> </span><span class="m">00</span><span class="w"> </span>0d<span class="w"> </span><span class="m">00</span><span class="w"> </span><span class="m">40</span><span class="w"> </span><span class="m">15</span><span class="w"> </span><span class="m">44</span><span class="w"> </span><span class="m">00</span><span class="w"> </span><span class="m">00</span><span class="w"> </span><span class="m">00</span><span class="w"> </span><span class="m">00</span><span class="w"> </span><span class="m">00</span><span class="w"> </span><span class="m">72</span><span class="w"> </span>&lt;<span class="m">05</span>&gt;<span class="w"> </span><span class="m">00</span><span class="w"> </span><span class="m">00</span><span class="w"> </span><span class="m">00</span><span class="w"> </span><span class="m">00</span><span class="w"> </span><span class="m">00</span><span class="w"> </span><span class="m">00</span><span class="w"> </span>a5<span class="w"> </span>1f<span class="w"> </span><span class="m">00</span><span class="w"> </span><span class="m">00</span><span class="w"> </span><span class="m">12</span><span class="w"> </span><span class="m">00</span><span class="w"> </span>0d<span class="w"> </span><span class="m">00</span><span class="w"> </span>b0<span class="w"> </span><span class="m">51</span><span class="w"> </span><span class="m">45</span><span class="w"> </span><span class="m">00</span><span class="w"> </span><span class="m">00</span><span class="w"> </span><span class="m">00</span><span class="w"> </span><span class="m">00</span>
 <span class="o">[</span>Thu<span class="w"> </span>Jul<span class="w"> </span><span class="m">21</span><span class="w"> </span><span class="m">22</span>:46:49<span class="w"> </span><span class="m">2022</span><span class="o">]</span><span class="w"> </span>RSP:<span class="w"> </span>002b:000000c0016d3ed8<span class="w"> </span>EFLAGS:<span class="w"> </span><span class="m">00000206</span><span class="w"> </span>ORIG_RAX:<span class="w"> </span>ffffffffffffff13
@@ -393,10 +402,10 @@
 </li>
 <li><p>采用 <a class="reference internal" href="kdump/kernel_crash_dump.html#kernel-crash-dump"><span class="std std-ref">内核崩溃dump解决方案</span></a> 强制core dump，重启服务器</p></li>
 </ul>
-<p>重启后 <code class="docutils literal notranslate"><span class="pre">[load_calc]</span></code> 系统进程依然 <code class="docutils literal notranslate"><span class="pre">D</span></code> 但是看不出其他异常，系统运行应用完全正常。这个问题后续再想办法排查…</p>
+<p>重启后 <code class="docutils literal notranslate"><span class="pre">[load_calc]</span></code> 系统进程依然 <code class="docutils literal notranslate"><span class="pre">D</span></code> 但是看不出其他异常，系统运行应用完全正常。这个问题后续再想办法排查...</p>
 </section>
 <section id="id2">
-<h2>参考<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
+<h2>参考<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="https://newspaint.wordpress.com/2013/07/24/how-to-diagnose-high-sys-cpu-on-linux/">How To Diagnose High Sys CPU On Linux</a></p></li>
 <li><p><a class="reference external" href="https://www.pythian.com/blog/debugging-high-cpu-usage-using-perf-tool-and-vmcore-analysis/">Debugging High CPU Usage Using Perf Tool and vmcore Analysis</a></p></li>
@@ -407,25 +416,37 @@
 
            </div>
           </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="debug_high_sys_process.html" class="btn btn-neutral float-left" title="debug占用很高system的进程" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="bad_rip_value.html" class="btn btn-neutral float-right" title="“Bad RIP value”含义" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="debug_high_sys_process.html" class="btn btn-neutral float-left" title="debug占用很高system的进程" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="bad_rip_value.html" class="btn btn-neutral float-right" title="&#34;Bad RIP value&#34;含义" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../copyright.html">Copyright</a> 2018 - now, Huatai Huang.</p>
+    <p>&#169; <a href="../../copyright.html">版权所有</a> 2018 - now, Huatai Huang。</p>
   </div>
 
-  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
   
     <!-- your html code here -->
     <br>
-    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡</a></p>
-     
+    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡 👈</a></p>
+    <br>
+    <p>网站采用 <a href="https://utteranc.es/">utterances</a> 评论系统，所有评论存储在<a href="https://github.com/huataihuang/cloud-atlas/issues">GitHub issues</a> 中，如果你看不到下方的评论框，那么可能需要<a href="https://cloud-atlas.readthedocs.io/zh-cn/latest/linux/security/vpn/index.html">自备梯子</a> 👈</p>
+    <div class="articleComments">
+        <comments>
+  <script src="https://utteranc.es/client.js"
+    repo="huataihuang/cloud-atlas"
+    issue-term="pathname"
+    theme="github-light"
+    crossorigin="anonymous"
+    async>
+  </script>
+</comments>
+    </div>
 
 
 </footer>

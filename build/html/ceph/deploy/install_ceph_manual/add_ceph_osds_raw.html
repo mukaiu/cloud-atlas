@@ -1,21 +1,25 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh" data-content_root="../../../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>添加Ceph OSDs (RAW磁盘) &mdash; Cloud Atlas 0.1 文档</title>
-      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../../_static/graphviz.css" type="text/css" />
+  <title>添加Ceph OSDs (RAW磁盘) &mdash; Cloud Atlas: Discovery beta 文档</title>
+      <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/graphviz.css?v=fd3f3429" />
+
+  
+    <link rel="shortcut icon" href="../../../_static/favicon.png"/>
   <!--[if lt IE 9]>
     <script src="../../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="../../../_static/documentation_options.js?v=7c91f8fd"></script>
-        <script src="../../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../../_static/documentation_options.js?v=8534f863"></script>
+        <script src="../../../_static/doctools.js?v=9a2dae69"></script>
         <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
-        <script src="../../../_static/translations.js?v=beaddf03"></script>
     <script src="../../../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../../../genindex.html" />
     <link rel="search" title="搜索" href="../../../search.html" />
@@ -33,23 +37,26 @@
           
           
           <a href="../../../index.html" class="icon icon-home">
-            Cloud Atlas
+            Cloud Atlas: Discovery
           </a>
+              <div class="version">
+                1.1
+              </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../../studio/index.html">Studio Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../infrastructure/index.html">Infrastructure Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../devops/index.html">DevOps Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../kvm/index.html">KVM Atlas</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">Ceph Atlas</a><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../studio/index.html">Studio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../infrastructure/index.html">Infrastructure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../devops/index.html">DevOps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../kvm/index.html">KVM</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">Ceph</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../../intro_ceph.html">Ceph存储介绍</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../gluster/gluster_vs_ceph.html">Gluster和Ceph对比</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../ceph_recommend.html">Ceph部署软硬件推荐</a></li>
@@ -75,6 +82,7 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../install_ceph_manual_zdata/index.html">Ceph 手工部署zdata集群(暂未成功)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../install_mobile_cloud_ceph/index.html">移动云计算部署Ceph</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../install_freebsd_ceph/index.html">FreeBSD云计算部署Ceph</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../mgr/index.html">Ceph Manager Daemon</a></li>
@@ -88,55 +96,56 @@
 <li class="toctree-l2"><a class="reference internal" href="../../debug/index.html">Ceph 故障排查</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../arm/index.html">ARM架构Ceph</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../arch/index.html">Ceph 架构</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pgsql_on_ceph/index.html">Ceph 上运行PostgreSQL</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../tunning/index.html">Ceph 优化</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../kubernetes/storage/rook/index.html">Rook - 云原生存储调度器</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../../gluster/index.html">Gluster Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../ovirt/index.html">oVirt Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../openstack/index.html">OpenStack Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../docker/index.html">Docker Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../kubernetes/index.html">Kubernetes Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../kubernetes_from_scratch/index.html">Kubernetes From Scratch (KFS) Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../rancher/index.html">Rancher Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../openshift/index.html">OpenShift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../sql/index.html">SQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../sqlite/index.html">SQLite Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../mysql/index.html">MySQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../pgsql/index.html">PostgreSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../clickhouse/index.html">ClickHouse Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../nosql/index.html">NoSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../redis/index.html">Redis Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../network/index.html">Network Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../infra_service/index.html">Infra-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../infra_search/index.html">Search Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../info_service/index.html">Info-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../web/index.html">Web Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../big_data/index.html">Big Data Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../machine_learning/index.html">Machine Learning Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../linux/index.html">Linux Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../kernel/index.html">Kernel Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../performance/index.html">Performance Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../distributed_system/index.html">Distributed System Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../shell/index.html">Shell Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../python/index.html">Python Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../django/index.html">Django Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../flask/index.html">Flask Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../javascript/index.html">JavaScript Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../nodejs/index.html">Node.js Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../clang/index.html">C Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../golang/index.html">Go Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../swift/index.html">Swift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../rust/index.html">Rust Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../ruby/index.html">Ruby Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../arm/index.html">ARM Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../android/index.html">Android Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../bsd/index.html">BSD Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../apple/index.html">Apple Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../windows/index.html">Windows Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../real/index.html">Real Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../management/index.html">Management Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../life/index.html">Life Atlas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../gluster/index.html">Gluster</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../ovirt/index.html">oVirt</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../openstack/index.html">OpenStack</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../docker/index.html">Docker</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../kubernetes/index.html">Kubernetes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../k8s_dev/index.html">Kubernetes Develop</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../rancher/index.html">Rancher</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../openshift/index.html">OpenShift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../sql/index.html">SQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../sqlite/index.html">SQLite</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../mysql/index.html">MySQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../pgsql/index.html">PostgreSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../nosql/index.html">NoSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../network/index.html">Network</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../infra_service/index.html">Infra-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../infra_search/index.html">Infra-Search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../web/index.html">Web</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../info_service/index.html">Info-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../big_data/index.html">Big Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../machine_learning/index.html">Machine Learning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../drone/index.html">Drone</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../linux/index.html">Linux</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../kernel/index.html">Kernel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../performance/index.html">Performance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../distributed_system/index.html">Distributed System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../shell/index.html">Shell</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../python/index.html">Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../django/index.html">Django</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../javascript/index.html">JavaScript</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../nodejs/index.html">Node.js</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../clang/index.html">C</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../golang/index.html">Go</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../swift/index.html">Swift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../rust/index.html">Rust</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../ruby/index.html">Ruby</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../lua/index.html">Lua</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../arm/index.html">ARM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../raspberry_pi/index.html">Raspberry Pi</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../android/index.html">Android</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../bsd/index.html">BSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../freebsd/index.html">FreeBSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../apple/index.html">Apple</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../windows/index.html">Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../real/index.html">Real</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../management/index.html">Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../life/index.html">Life</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../copyright.html">Copyright</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../aboutme.html">关于作者</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../donate.html">捐赠</a></li>
@@ -149,22 +158,22 @@
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../../index.html">Cloud Atlas</a>
+          <a href="../../../index.html">Cloud Atlas: Discovery</a>
       </nav>
 
       <div class="wy-nav-content">
         <div class="rst-content">
-          <div role="navigation" aria-label="Page navigation">
+          <div role="navigation" aria-label="页面导航">
   <ul class="wy-breadcrumbs">
       <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
-          <li class="breadcrumb-item"><a href="../../index.html">Ceph Atlas</a></li>
+          <li class="breadcrumb-item"><a href="../../index.html">Ceph</a></li>
           <li class="breadcrumb-item"><a href="../index.html">Ceph 部署</a></li>
           <li class="breadcrumb-item"><a href="index.html">手工部署Ceph</a></li>
       <li class="breadcrumb-item active">添加Ceph OSDs (RAW磁盘)</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../../../_sources/ceph/deploy/install_ceph_manual/add_ceph_osds_raw.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../../_sources/ceph/deploy/install_ceph_manual/add_ceph_osds_raw.rst.txt" rel="nofollow"> 查看页面源码</a>
       </li>
   </ul>
   <hr/>
@@ -173,7 +182,7 @@
            <div itemprop="articleBody">
              
   <section id="ceph-osds-raw">
-<span id="add-ceph-osds-raw"></span><h1>添加Ceph OSDs (RAW磁盘)<a class="headerlink" href="#ceph-osds-raw" title="Link to this heading">¶</a></h1>
+<span id="add-ceph-osds-raw"></span><h1>添加Ceph OSDs (RAW磁盘)<a class="headerlink" href="#ceph-osds-raw" title="Link to this heading"></a></h1>
 <div class="admonition warning">
 <p class="admonition-title">警告</p>
 <p>我尝试通过默认集群名来避免 <a class="reference internal" href="../install_ceph_manual_zdata/add_ceph_osds_zdata.html#add-ceph-osds-zdata"><span class="std std-ref">添加Ceph OSDs (zdata)</span></a> 遇到的无法传递自定义集群名的问题，但是本次尝试依然失败(虽然也有一些经验积累)。所以我准备重新开始采用标准 <a class="reference internal" href="add_ceph_osds_lvm.html#add-ceph-osds-lvm"><span class="std std-ref">添加Ceph OSDs (LVM卷)</span></a> 部署，后续再准备虚拟机环境解决本文实践问题。`</p>
@@ -190,12 +199,12 @@
 <p>我这里的测试环境，采用简化的 <code class="docutils literal notranslate"><span class="pre">磁盘分区</span></code> 来提供Ceph <a class="reference internal" href="../../arch/bluestore.html#bluestore"><span class="std std-ref">Ceph后端存储引擎BlueStore</span></a> 存储，原因是我需要简化配置，同时我的测试服务器也没有硬件进行后续扩容。</p>
 </div>
 <section id="bluestore">
-<h2>bluestore<a class="headerlink" href="#bluestore" title="Link to this heading">¶</a></h2>
+<h2>bluestore<a class="headerlink" href="#bluestore" title="Link to this heading"></a></h2>
 <p><a class="reference internal" href="../../arch/bluestore.html#bluestore"><span class="std std-ref">Ceph后端存储引擎BlueStore</span></a> 是最新的Ceph采用的默认高性能存储引擎，底层不再使用OS的文件系统，可以直接管理磁盘硬件。</p>
 <p>需要部署OSD的服务器首先准备存储，通常采用LVM卷作为底层存储块设备，这样可以通过LVM逻辑卷灵活调整块设备大小(有可能随着数据存储增长需要调整设备)。</p>
 <p>作为我的实践环境 <a class="reference internal" href="../../../linux/server/hardware/hpe/hpe_dl360_gen9.html#hpe-dl360-gen9"><span class="std std-ref">HPE ProLiant DL360 Gen9服务器</span></a> 每个 <a class="reference internal" href="../../../kvm/iommu/ovmf.html#ovmf"><span class="std std-ref">Open Virtual Machine Firmware(OMVF)</span></a> 虚拟机仅有一个pass-through PCIe NVMe存储，所以我没有划分不同存储设备来分别存放 <code class="docutils literal notranslate"><span class="pre">block</span></code> / <code class="docutils literal notranslate"><span class="pre">block.db</span></code> 和 <code class="docutils literal notranslate"><span class="pre">block.wal</span></code> 。并且也因为无法扩展存储，我就尝试不使用LVM卷，而直接采用磁盘分区。</p>
 <section id="rawbluestore">
-<h3>使用raw分区作为bluestore底层(失败)<a class="headerlink" href="#rawbluestore" title="Link to this heading">¶</a></h3>
+<h3>使用raw分区作为bluestore底层(失败)<a class="headerlink" href="#rawbluestore" title="Link to this heading"></a></h3>
 <ul>
 <li><p>执行 <code class="docutils literal notranslate"><span class="pre">ceph-volume</span> <span class="pre">--help</span></code> 可以看到支持3种底层存储:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">lvm</span>                      <span class="n">Use</span> <span class="n">LVM</span> <span class="ow">and</span> <span class="n">LVM</span><span class="o">-</span><span class="n">based</span> <span class="n">technologies</span> <span class="n">to</span> <span class="n">deploy</span> <span class="n">OSDs</span>
@@ -307,7 +316,7 @@ vda2 252:2    0  5.8G  0 part /
 </div>
 <p>但是 <code class="docutils literal notranslate"><span class="pre">ceph-volume</span> <span class="pre">raw</span> <span class="pre">prepare</span></code> 报错:</p>
 <div class="literal-block-wrapper docutils container" id="id9">
-<div class="code-block-caption"><span class="caption-text">ceph-volume raw 输出(错误)</span><a class="headerlink" href="#id9" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">ceph-volume raw 输出(错误)</span><a class="headerlink" href="#id9" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="w"> </span>stderr:<span class="w"> </span>lsblk:<span class="w"> </span>/dev/nvme0n1p1:<span class="w"> </span>not<span class="w"> </span>a<span class="w"> </span>block<span class="w"> </span>device
 <span class="linenos"> 2</span><span class="w"> </span>stderr:<span class="w"> </span>Unknown<span class="w"> </span>device<span class="w"> </span><span class="s2">&quot;/dev/nvme0n1p1&quot;</span>:<span class="w"> </span>Inappropriate<span class="w"> </span>ioctl<span class="w"> </span><span class="k">for</span><span class="w"> </span>device
 <span class="linenos"> 3</span>Running<span class="w"> </span>command:<span class="w"> </span>/usr/bin/ceph-authtool<span class="w"> </span>--gen-print-key
@@ -342,7 +351,7 @@ vda2 252:2    0  5.8G  0 part /
 </div>
 </div>
 <section id="id1">
-<h4>问题根源<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h4>
+<h4>问题根源<a class="headerlink" href="#id1" title="Link to this heading"></a></h4>
 <p>实际我也发现即使采用 <code class="docutils literal notranslate"><span class="pre">ceph-volume</span> <span class="pre">lvm</span> <span class="pre">create</span></code> 也是失败的，提示信息中也有:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">stderr</span><span class="p">:</span> <span class="n">lsblk</span><span class="p">:</span> <span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">nvme0n1p1</span><span class="p">:</span> <span class="ow">not</span> <span class="n">a</span> <span class="n">block</span> <span class="n">device</span>
 </pre></div>
@@ -374,7 +383,7 @@ brw-rw---- 1 root disk 259, 2 Nov 29 20:33 /dev/nvme0n1p1
 </div>
 <p>然后重新执行创建OSD磁盘成功:</p>
 <div class="literal-block-wrapper docutils container" id="id10">
-<div class="code-block-caption"><span class="caption-text">ceph-volume raw 输出(成功)</span><a class="headerlink" href="#id10" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">ceph-volume raw 输出(成功)</span><a class="headerlink" href="#id10" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span>Running<span class="w"> </span>command:<span class="w"> </span>/usr/bin/ceph-authtool<span class="w"> </span>--gen-print-key
 <span class="linenos"> 2</span>Running<span class="w"> </span>command:<span class="w"> </span>/usr/bin/ceph<span class="w"> </span>--cluster<span class="w"> </span>ceph<span class="w"> </span>--name<span class="w"> </span>client.bootstrap-osd<span class="w"> </span>--keyring<span class="w"> </span>/var/lib/ceph/bootstrap-osd/ceph.keyring<span class="w"> </span>-i<span class="w"> </span>-<span class="w"> </span>osd<span class="w"> </span>new<span class="w"> </span>8d889fc0-110c-45fa-a259-6a876183bc46
 <span class="linenos"> 3</span>Running<span class="w"> </span>command:<span class="w"> </span>/usr/bin/ceph-authtool<span class="w"> </span>--gen-print-key
@@ -527,7 +536,7 @@ Nov 29 22:44:40 z-b-data-1 ceph-osd[1382]: 2021-11-29T22:44:40.336+0800 7f081898
 </section>
 </section>
 <section id="id2">
-<h2>重启操作系统验证<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
+<h2>重启操作系统验证<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
 <p>重启操作系统 <code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">shutdown</span> <span class="pre">-r</span> <span class="pre">now</span></code></p>
 <ul>
 <li><p>启动后检查:</p>
@@ -556,7 +565,7 @@ Nov 29 22:44:40 z-b-data-1 ceph-osd[1382]: 2021-11-29T22:44:40.336+0800 7f081898
 </div>
 <p>也即是 OSD没有启动成功</p>
 <section id="osd">
-<h3>重新激活OSD<a class="headerlink" href="#osd" title="Link to this heading">¶</a></h3>
+<h3>重新激活OSD<a class="headerlink" href="#osd" title="Link to this heading"></a></h3>
 <p>为何重启系统之前已经配置成功的OSD无法启动呢？</p>
 <ul>
 <li><p>检查OSD服务:</p>
@@ -748,7 +757,7 @@ Nov 29 23:50:17 z-b-data-1 systemd[1]: Failed to start Ceph object storage daemo
 </section>
 </section>
 <section id="id3">
-<h2>重新开始<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h2>
+<h2>重新开始<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
 <p>由于解决不了问题，我参考 <a class="reference external" href="https://docs.ceph.com/en/latest/rados/operations/add-or-rm-osds/">Adding/Removing OSDs</a> 删除掉osd，然后重新开始:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">ceph</span> <span class="n">osd</span> <span class="n">stop</span> <span class="mi">0</span>
 <span class="n">sudo</span> <span class="n">ceph</span> <span class="n">osd</span> <span class="n">purge</span> <span class="mi">0</span> <span class="o">--</span><span class="n">yes</span><span class="o">-</span><span class="n">i</span><span class="o">-</span><span class="n">really</span><span class="o">-</span><span class="n">mean</span><span class="o">-</span><span class="n">it</span>
@@ -1070,7 +1079,7 @@ Nov 30 21:18:06 z-b-data-1 systemd[1]: Failed to start Ceph object storage daemo
 </div>
 <p>当挂载 <code class="docutils literal notranslate"><span class="pre">/var/lib/ceph/osd/ceph-0</span></code> 时，ceph会dump这些内容到tmpfs目录。</p>
 <p>根据之前 <code class="docutils literal notranslate"><span class="pre">ceph-volume</span> <span class="pre">raw</span> <span class="pre">activate</span></code> 可以看到 <code class="docutils literal notranslate"><span class="pre">/var/lib/ceph/osd/ceph-0</span></code> 挂载了 <code class="docutils literal notranslate"><span class="pre">tmpfs</span></code> 并获得了所有必须的 <code class="docutils literal notranslate"><span class="pre">keyring</span></code> 等文件，然后才能正确 <code class="docutils literal notranslate"><span class="pre">systemctl</span> <span class="pre">start</span> <span class="pre">ceph-osd&#64;0.service</span></code> 。也就是说，能够正常启动 <code class="docutils literal notranslate"><span class="pre">ceph-osd</span></code> 进程的前提条件是 <code class="docutils literal notranslate"><span class="pre">/var/lib/ceph/osd/ceph-0</span></code> 目录正确挂载( <code class="docutils literal notranslate"><span class="pre">activate</span></code> )。操作系统重启，没有正确挂载和准备好这个目录，是导致无法启动 <code class="docutils literal notranslate"><span class="pre">ceph-osd</span></code> 的原因，那么是在哪里完成这个启动挂载配置呢？</p>
-<p>应该有一个 <code class="docutils literal notranslate"><span class="pre">/etc/ceph/osd/xxxx.json</span></code> 配置提供了ceph启动时准备好目录挂载，这样就能正确启动 <code class="docutils literal notranslate"><span class="pre">ceph-osd&#64;0.service</span></code> …</p>
+<p>应该有一个 <code class="docutils literal notranslate"><span class="pre">/etc/ceph/osd/xxxx.json</span></code> 配置提供了ceph启动时准备好目录挂载，这样就能正确启动 <code class="docutils literal notranslate"><span class="pre">ceph-osd&#64;0.service</span></code> ...</p>
 <p><a class="reference external" href="http://lists.ceph.com/pipermail/ceph-users-ceph.com/2018-April/025914.html">how the files in /var/lib/ceph/osd/ceph-0 are generated</a> 讨论，有人回答了这个准备 <code class="docutils literal notranslate"><span class="pre">osd</span></code> 目录的工具命令是 <code class="docutils literal notranslate"><span class="pre">ceph-bluestore-tool</span> <span class="pre">prime-osd-dir</span></code> ，可以重新创建所有的文件正确指向OSD block设备，所以我执行以下命令:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">ceph</span><span class="o">-</span><span class="n">bluestore</span><span class="o">-</span><span class="n">tool</span> <span class="n">prime</span><span class="o">-</span><span class="n">osd</span><span class="o">-</span><span class="nb">dir</span> <span class="o">--</span><span class="n">dev</span> <span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">nvme0n1p1</span> <span class="o">--</span><span class="n">path</span> <span class="o">/</span><span class="n">var</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">ceph</span><span class="o">/</span><span class="n">osd</span><span class="o">/</span><span class="n">ceph</span><span class="o">-</span><span class="mi">0</span>
 </pre></div>
@@ -1115,7 +1124,7 @@ Nov 30 21:18:06 z-b-data-1 systemd[1]: Failed to start Ceph object storage daemo
 <p>完整 <code class="docutils literal notranslate"><span class="pre">activate</span></code> BlueStore的过程见文档 <a class="reference external" href="https://docs.ceph.com/en/latest/ceph-volume/lvm/activate/#summary">ceph-volume » activate</a></p>
 </div>
 <section id="id6">
-<h3>总结<a class="headerlink" href="#id6" title="Link to this heading">¶</a></h3>
+<h3>总结<a class="headerlink" href="#id6" title="Link to this heading"></a></h3>
 <ul>
 <li><p>删除掉OSD.0 准备重新开始:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">ceph</span> <span class="n">osd</span> <span class="n">purge</span> <span class="mi">0</span> <span class="o">--</span><span class="n">yes</span><span class="o">-</span><span class="n">i</span><span class="o">-</span><span class="n">really</span><span class="o">-</span><span class="n">mean</span><span class="o">-</span><span class="n">it</span>
@@ -1205,7 +1214,7 @@ Nov 30 21:18:06 z-b-data-1 systemd[1]: Failed to start Ceph object storage daemo
 </section>
 </section>
 <section id="id7">
-<h2>添加OSD<a class="headerlink" href="#id7" title="Link to this heading">¶</a></h2>
+<h2>添加OSD<a class="headerlink" href="#id7" title="Link to this heading"></a></h2>
 <p>需要满足3副本要求，我们需要在服务器本地或者其他服务器上添加OSD。为了能够冗余，我采用集群3个服务器上每个服务器都启动 <code class="docutils literal notranslate"><span class="pre">ceph-mon</span></code> 和 <code class="docutils literal notranslate"><span class="pre">ceph-osd</span></code> ，所以下面我们来完成:</p>
 <ul class="simple">
 <li><p><a class="reference internal" href="add_ceph_mons.html#add-ceph-mons"><span class="std std-ref">Ceph集群添加ceph-mon</span></a></p></li>
@@ -1216,10 +1225,10 @@ Nov 30 21:18:06 z-b-data-1 systemd[1]: Failed to start Ceph object storage daemo
 </ul>
 </section>
 <section id="id8">
-<h2>参考<a class="headerlink" href="#id8" title="Link to this heading">¶</a></h2>
+<h2>参考<a class="headerlink" href="#id8" title="Link to this heading"></a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="http://docs.ceph.com/docs/master/install/">Ceph document - Installation (Manual)</a></p></li>
-<li><p><a class="reference external" href="https://tracker.ceph.com/issues/48783">raw osd’s are not started on boot after upgrade from 14.2.11 to 14.2.16 ; ceph-volume raw activate claim systemd support not yet implemented</a></p></li>
+<li><p><a class="reference external" href="https://tracker.ceph.com/issues/48783">raw osd's are not started on boot after upgrade from 14.2.11 to 14.2.16 ; ceph-volume raw activate claim systemd support not yet implemented</a></p></li>
 </ul>
 </section>
 </section>
@@ -1227,25 +1236,37 @@ Nov 30 21:18:06 z-b-data-1 systemd[1]: Failed to start Ceph object storage daemo
 
            </div>
           </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="install_ceph_mgr.html" class="btn btn-neutral float-left" title="安装 ceph-mgr" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="add_ceph_osds_lvm.html" class="btn btn-neutral float-right" title="添加Ceph OSDs (LVM卷)" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="install_ceph_mgr.html" class="btn btn-neutral float-left" title="安装 ceph-mgr" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="add_ceph_osds_lvm.html" class="btn btn-neutral float-right" title="添加Ceph OSDs (LVM卷)" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../../copyright.html">Copyright</a> 2018 - now, Huatai Huang.</p>
+    <p>&#169; <a href="../../../copyright.html">版权所有</a> 2018 - now, Huatai Huang。</p>
   </div>
 
-  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
   
     <!-- your html code here -->
     <br>
-    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡</a></p>
-     
+    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡 👈</a></p>
+    <br>
+    <p>网站采用 <a href="https://utteranc.es/">utterances</a> 评论系统，所有评论存储在<a href="https://github.com/huataihuang/cloud-atlas/issues">GitHub issues</a> 中，如果你看不到下方的评论框，那么可能需要<a href="https://cloud-atlas.readthedocs.io/zh-cn/latest/linux/security/vpn/index.html">自备梯子</a> 👈</p>
+    <div class="articleComments">
+        <comments>
+  <script src="https://utteranc.es/client.js"
+    repo="huataihuang/cloud-atlas"
+    issue-term="pathname"
+    theme="github-light"
+    crossorigin="anonymous"
+    async>
+  </script>
+</comments>
+    </div>
 
 
 </footer>

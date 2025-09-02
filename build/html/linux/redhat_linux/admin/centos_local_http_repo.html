@@ -1,26 +1,30 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh" data-content_root="../../../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CentOS本地HTTP软件仓库 &mdash; Cloud Atlas 0.1 文档</title>
-      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../../_static/graphviz.css" type="text/css" />
+  <title>CentOS本地HTTP软件仓库 &mdash; Cloud Atlas: Discovery beta 文档</title>
+      <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/graphviz.css?v=fd3f3429" />
+
+  
+    <link rel="shortcut icon" href="../../../_static/favicon.png"/>
   <!--[if lt IE 9]>
     <script src="../../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="../../../_static/documentation_options.js?v=7c91f8fd"></script>
-        <script src="../../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../../_static/documentation_options.js?v=8534f863"></script>
+        <script src="../../../_static/doctools.js?v=9a2dae69"></script>
         <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
-        <script src="../../../_static/translations.js?v=beaddf03"></script>
     <script src="../../../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../../../genindex.html" />
     <link rel="search" title="搜索" href="../../../search.html" />
     <link rel="copyright" title="版权所有" href="../../../copyright.html" />
-    <link rel="next" title="Systemd进程管理器" href="../systemd/index.html" />
+    <link rel="next" title="激活SELinux" href="enable_selinux.html" />
     <link rel="prev" title="CentOS本地软件仓库" href="centos_local_repo.html" /> 
 </head>
 
@@ -33,51 +37,55 @@
           
           
           <a href="../../../index.html" class="icon icon-home">
-            Cloud Atlas
+            Cloud Atlas: Discovery
           </a>
+              <div class="version">
+                1.1
+              </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../../studio/index.html">Studio Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../infrastructure/index.html">Infrastructure Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../devops/index.html">DevOps Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../kvm/index.html">KVM Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../ceph/index.html">Ceph Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../gluster/index.html">Gluster Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../ovirt/index.html">oVirt Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../openstack/index.html">OpenStack Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../docker/index.html">Docker Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../kubernetes/index.html">Kubernetes Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../kubernetes_from_scratch/index.html">Kubernetes From Scratch (KFS) Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../rancher/index.html">Rancher Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../openshift/index.html">OpenShift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../sql/index.html">SQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../sqlite/index.html">SQLite Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../mysql/index.html">MySQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../pgsql/index.html">PostgreSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../clickhouse/index.html">ClickHouse Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../nosql/index.html">NoSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../redis/index.html">Redis Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../network/index.html">Network Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../infra_service/index.html">Infra-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../infra_search/index.html">Search Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../info_service/index.html">Info-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../web/index.html">Web Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../big_data/index.html">Big Data Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../machine_learning/index.html">Machine Learning Atlas</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">Linux Atlas</a><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../studio/index.html">Studio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../infrastructure/index.html">Infrastructure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../devops/index.html">DevOps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../kvm/index.html">KVM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../ceph/index.html">Ceph</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../gluster/index.html">Gluster</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../ovirt/index.html">oVirt</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../openstack/index.html">OpenStack</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../docker/index.html">Docker</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../kubernetes/index.html">Kubernetes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../k8s_dev/index.html">Kubernetes Develop</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../rancher/index.html">Rancher</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../openshift/index.html">OpenShift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../sql/index.html">SQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../sqlite/index.html">SQLite</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../mysql/index.html">MySQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../pgsql/index.html">PostgreSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../nosql/index.html">NoSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../network/index.html">Network</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../infra_service/index.html">Infra-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../infra_search/index.html">Infra-Search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../web/index.html">Web</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../info_service/index.html">Info-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../big_data/index.html">Big Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../machine_learning/index.html">Machine Learning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../drone/index.html">Drone</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">Linux</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../../best_linux.html">最佳Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../admin/index.html">Linux系统管理</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="../index.html">RedHat Linux</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="../redhat_linux_state.html">Red Hat系企业级Linux版本</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../centos/index.html">CentOS</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../rockylinux/index.html">Rocky Linux</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../fedora/index.html">Fedora</a></li>
 <li class="toctree-l3 current"><a class="reference internal" href="index.html">RedHat Linux 系统管理</a><ul class="current">
 <li class="toctree-l4"><a class="reference internal" href="check_linux_version.html">检查Linux操作系统版本</a></li>
 <li class="toctree-l4"><a class="reference internal" href="init_centos.html">CentOS系统管理初始化</a></li>
@@ -87,12 +95,12 @@
 <li class="toctree-l4"><a class="reference internal" href="firewalld.html">firewalld防护墙服务</a></li>
 <li class="toctree-l4"><a class="reference internal" href="centos_local_repo.html">CentOS本地软件仓库</a></li>
 <li class="toctree-l4 current"><a class="current reference internal" href="#">CentOS本地HTTP软件仓库</a></li>
+<li class="toctree-l4"><a class="reference internal" href="enable_selinux.html">激活SELinux</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../systemd/index.html">Systemd进程管理器</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../udev/index.html">udev</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../cgroup/index.html">RedHat Linux 资源管理(cgroup)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../fedora/index.html">Fedora</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../kernel/index.html">RHEL(Red Hat Enterprise Linux)内核</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../performance/index.html">RHEL(Red Hat Enterprise Linux)性能优化</a></li>
 </ul>
@@ -100,15 +108,21 @@
 <li class="toctree-l2"><a class="reference internal" href="../../arch_linux/index.html">Arch Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../asahi_linux/index.html">Asahi Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../gentoo_linux/index.html">Gentoo Linux</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../lfs_linux/index.html">LFS(Linux from scratch)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../lfs/index.html">LFS(Linux from scratch)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../blfs/index.html">BLFS(Beyond Linux from scratch)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../alfs/index.html">ALFS(Automated Linux from scratch)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pilfs/index.html">PiLFS(Automated Linux from scratch on the Raspberry Pi)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../yocto/index.html">Yocto</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../debian/index.html">Debian</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../ubuntu_linux/index.html">Ubuntu Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../suse_linux/index.html">SUSE Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../kali_linux/index.html">Kali Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../tails_linux/index.html">Tails Linux</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../qubes_os/index.html">Qubes OS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../postmarketos/index.html">postmarketOS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../container_os/index.html">容器化操作系统(Container OS)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../fedora_coreos/index.html">Fedora CoreOS容器操作系统</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../chromium_os/index.html">Chromium OS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../chromeos/index.html">ChromeOS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../alpine_linux/index.html">Alpine Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../subgraph_os/index.html">Subgraph OS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../kaios/index.html">KaiOS - 世界第三手机操作系统</a></li>
@@ -121,28 +135,30 @@
 <li class="toctree-l2"><a class="reference internal" href="../../linux_tablet/index.html">Linux平板</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../../kernel/index.html">Kernel Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../performance/index.html">Performance Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../distributed_system/index.html">Distributed System Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../shell/index.html">Shell Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../python/index.html">Python Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../django/index.html">Django Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../flask/index.html">Flask Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../javascript/index.html">JavaScript Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../nodejs/index.html">Node.js Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../clang/index.html">C Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../golang/index.html">Go Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../swift/index.html">Swift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../rust/index.html">Rust Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../ruby/index.html">Ruby Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../arm/index.html">ARM Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../android/index.html">Android Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../bsd/index.html">BSD Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../apple/index.html">Apple Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../windows/index.html">Windows Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../real/index.html">Real Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../management/index.html">Management Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../life/index.html">Life Atlas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../kernel/index.html">Kernel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../performance/index.html">Performance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../distributed_system/index.html">Distributed System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../shell/index.html">Shell</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../python/index.html">Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../django/index.html">Django</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../javascript/index.html">JavaScript</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../nodejs/index.html">Node.js</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../clang/index.html">C</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../golang/index.html">Go</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../swift/index.html">Swift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../rust/index.html">Rust</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../ruby/index.html">Ruby</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../lua/index.html">Lua</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../arm/index.html">ARM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../raspberry_pi/index.html">Raspberry Pi</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../android/index.html">Android</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../bsd/index.html">BSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../freebsd/index.html">FreeBSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../apple/index.html">Apple</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../windows/index.html">Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../real/index.html">Real</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../management/index.html">Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../life/index.html">Life</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../copyright.html">Copyright</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../aboutme.html">关于作者</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../donate.html">捐赠</a></li>
@@ -155,22 +171,22 @@
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../../index.html">Cloud Atlas</a>
+          <a href="../../../index.html">Cloud Atlas: Discovery</a>
       </nav>
 
       <div class="wy-nav-content">
         <div class="rst-content">
-          <div role="navigation" aria-label="Page navigation">
+          <div role="navigation" aria-label="页面导航">
   <ul class="wy-breadcrumbs">
       <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
-          <li class="breadcrumb-item"><a href="../../index.html">Linux Atlas</a></li>
+          <li class="breadcrumb-item"><a href="../../index.html">Linux</a></li>
           <li class="breadcrumb-item"><a href="../index.html">RedHat Linux</a></li>
           <li class="breadcrumb-item"><a href="index.html">RedHat Linux 系统管理</a></li>
       <li class="breadcrumb-item active">CentOS本地HTTP软件仓库</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../../../_sources/linux/redhat_linux/admin/centos_local_http_repo.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../../_sources/linux/redhat_linux/admin/centos_local_http_repo.rst.txt" rel="nofollow"> 查看页面源码</a>
       </li>
   </ul>
   <hr/>
@@ -179,12 +195,12 @@
            <div itemprop="articleBody">
              
   <section id="centoshttp">
-<span id="centos-local-http-repo"></span><h1>CentOS本地HTTP软件仓库<a class="headerlink" href="#centoshttp" title="Link to this heading">¶</a></h1>
+<span id="centos-local-http-repo"></span><h1>CentOS本地HTTP软件仓库<a class="headerlink" href="#centoshttp" title="Link to this heading"></a></h1>
 <p>当一次次通过Internet安装和更新CentOS，当运维当服务器越来越多，你一定会有一个强烈的愿望，构建一个本地CentOS软件仓库。这样只要同步一次集中的软件仓库，就可以提供本地局域网所有CentOS服务器更新到相同版本。</p>
 <div class="admonition note">
 <p class="admonition-title">备注</p>
 <p>强烈推荐使用 <code class="docutils literal notranslate"><span class="pre">reposync</span></code> 工具进行软件仓库同步，这个工具是通用工具，不仅适合CentOS发行版的软件仓库，也可以用于其他符合Red Hat YUM仓库规范的软件仓库同步。例如，我也使用这个工具来同步Docker CE和Kubernetes仓库，可以提供给本地局域网服务器公用安装。</p>
-<p>如果要同步不同软件版本，例如，要同步CentOS 7/6/5或者不同架构。我觉得可以采用Docker方式来运行专用同步客户端，甚至可以采用 <a class="reference internal" href="../../../kubernetes/index.html#kubernetes"><span class="std std-ref">Kubernetes Atlas</span></a> 运行 <a class="reference internal" href="../../../kubernetes/concepts/workloads/controllers/daemonset.html#daemonset"><span class="std std-ref">DaemonSet</span></a> 来完成。后续我可能会再部署一整套同步方案，来适用于不同Red Hat发行版，Ubuntu发行版，SUSE发行版以及ARM架构的Fedora/Ubuntu同步。构建一个完整的仓库镜像方案。</p>
+<p>如果要同步不同软件版本，例如，要同步CentOS 7/6/5或者不同架构。我觉得可以采用Docker方式来运行专用同步客户端，甚至可以采用 <a class="reference internal" href="../../../kubernetes/index.html#kubernetes"><span class="std std-ref">Kubernetes</span></a> 运行 <a class="reference internal" href="../../../kubernetes/concepts/workloads/controllers/daemonset.html#daemonset"><span class="std std-ref">DaemonSet</span></a> 来完成。后续我可能会再部署一整套同步方案，来适用于不同Red Hat发行版，Ubuntu发行版，SUSE发行版以及ARM架构的Fedora/Ubuntu同步。构建一个完整的仓库镜像方案。</p>
 </div>
 <p>CentOS 8包含2个仓库: <code class="docutils literal notranslate"><span class="pre">BaseOS</span></code> 和 <code class="docutils literal notranslate"><span class="pre">AppStream</span></code> (Application Stream):</p>
 <ul class="simple">
@@ -192,7 +208,7 @@
 <li><p>AppStream则包含其余软件包，依赖和数据库</p></li>
 </ul>
 <section id="http-nginx">
-<h2>安装HTTP服务(Nginx)<a class="headerlink" href="#http-nginx" title="Link to this heading">¶</a></h2>
+<h2>安装HTTP服务(Nginx)<a class="headerlink" href="#http-nginx" title="Link to this heading"></a></h2>
 <ul>
 <li><p>安装Nginx软件包:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">dnf</span> <span class="n">install</span> <span class="n">epel</span><span class="o">-</span><span class="n">release</span>
@@ -222,7 +238,7 @@
 </ul>
 </section>
 <section id="iso">
-<h2>镜像ISO文件创建仓库<a class="headerlink" href="#iso" title="Link to this heading">¶</a></h2>
+<h2>镜像ISO文件创建仓库<a class="headerlink" href="#iso" title="Link to this heading"></a></h2>
 <ul>
 <li><p>如果你手边有安装光盘ISO文件，则采用以下方法挂载ISO文件:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">mount</span> <span class="o">-</span><span class="n">ro</span> <span class="n">loop</span> <span class="n">CentOS</span><span class="o">-</span><span class="mf">8.2.2004</span><span class="o">-</span><span class="n">x86_64</span><span class="o">-</span><span class="n">dvd1</span><span class="o">.</span><span class="n">iso</span> <span class="o">/</span><span class="n">mnt</span>
@@ -251,7 +267,7 @@
 </div>
 </section>
 <section id="repo">
-<h2>同步repo<a class="headerlink" href="#repo" title="Link to this heading">¶</a></h2>
+<h2>同步repo<a class="headerlink" href="#repo" title="Link to this heading"></a></h2>
 <p>DNF提供了 <code class="docutils literal notranslate"><span class="pre">reposync</span></code> 插件，这个插件在以前yum时候包含在 <code class="docutils literal notranslate"><span class="pre">yum-utils</span></code> 中，现在也是可以通过 <code class="docutils literal notranslate"><span class="pre">yum-utils</span></code> 获得:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">dnf</span> <span class="n">install</span> <span class="n">yum</span><span class="o">-</span><span class="n">utils</span> <span class="n">createrepo</span>
 </pre></div>
@@ -263,7 +279,7 @@
 <p>执行 <code class="docutils literal notranslate"><span class="pre">dnf</span> <span class="pre">reposync</span> <span class="pre">[options]</span></code> 可以将Internet上的软件仓库镜像到本地。</p>
 </section>
 <section id="centos-8">
-<h2>CentOS 8仓库<a class="headerlink" href="#centos-8" title="Link to this heading">¶</a></h2>
+<h2>CentOS 8仓库<a class="headerlink" href="#centos-8" title="Link to this heading"></a></h2>
 <ul>
 <li><p>在本地创建对应目录:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">mkdir</span> <span class="o">-</span><span class="n">p</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">share</span><span class="o">/</span><span class="n">nginx</span><span class="o">/</span><span class="n">html</span><span class="o">/</span><span class="n">centos</span><span class="o">/</span><span class="mi">8</span><span class="o">/</span><span class="p">{</span><span class="n">BaseOS</span><span class="p">,</span><span class="n">AppStream</span><span class="p">,</span><span class="n">extras</span><span class="p">}</span><span class="o">/</span><span class="n">x86_64</span><span class="o">/</span><span class="n">os</span><span class="o">/</span>
@@ -304,7 +320,7 @@
 <li><p>为了能够方便进行多个repo同步，实际我采用以下脚本 <code class="docutils literal notranslate"><span class="pre">reposync.sh</span></code></p></li>
 </ul>
 <div class="literal-block-wrapper docutils container" id="id4">
-<div class="code-block-caption"><span class="caption-text">yum.repos.d/reposync_sh</span><a class="headerlink" href="#id4" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">yum.repos.d/reposync_sh</span><a class="headerlink" href="#id4" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="ch">#!/usr/bin/env bash</span>
 <span class="linenos"> 2</span>
 <span class="linenos"> 3</span><span class="nv">VER</span><span class="o">=</span><span class="s1">&#39;8&#39;</span>
@@ -334,10 +350,10 @@
 </div>
 </section>
 <section id="id1">
-<h2>客户端repo配置<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h2>
+<h2>客户端repo配置<a class="headerlink" href="#id1" title="Link to this heading"></a></h2>
 <p>客户端的配置是修订发行版软件仓库配置来实现的，基本方式就是注释掉 <code class="docutils literal notranslate"><span class="pre">mirrorlist=</span></code> 配置，然后启用 <code class="docutils literal notranslate"><span class="pre">baseurl=</span></code> 配置，但是采用本地局域网提供软件仓库的服务器IP地址或者内部域名。举例：</p>
 <div class="literal-block-wrapper docutils container" id="id5">
-<div class="code-block-caption"><span class="caption-text">yum.repos.d/CentOS-Base.repo</span><a class="headerlink" href="#id5" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">yum.repos.d/CentOS-Base.repo</span><a class="headerlink" href="#id5" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="c1"># CentOS-Base.repo</span>
 <span class="linenos"> 2</span><span class="c1">#</span>
 <span class="linenos"> 3</span><span class="c1"># The mirror system uses the connecting IP address of the client and the</span>
@@ -367,7 +383,7 @@
 </div>
 <p>我为了方便分发客户端配置，采用了脚本:</p>
 <div class="literal-block-wrapper docutils container" id="id6">
-<div class="code-block-caption"><span class="caption-text">yum.repos.d/replace_repo_file</span><a class="headerlink" href="#id6" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">yum.repos.d/replace_repo_file</span><a class="headerlink" href="#id6" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="nv">repo_list</span><span class="o">=</span><span class="sb">`</span>ls<span class="w"> </span>*.repo<span class="sb">`</span>
 <span class="linenos">2</span>ssh<span class="w"> </span>root@<span class="nv">$1</span><span class="w"> </span><span class="s2">&quot;if [ ! -d /etc/yum.repos.d/backup ];then mkdir /etc/yum.repos.d/backup;fi &amp;&amp; cp /etc/yum.repos.d/*.repo /etc/yum.repos.d/backup/&quot;</span>
 <span class="linenos">3</span>
@@ -390,11 +406,11 @@
 </ul>
 </section>
 <section id="id2">
-<h2>每天定时执行仓库更新<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
+<h2>每天定时执行仓库更新<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
 <p>为了能够每天更新软件仓库，可以将 <code class="docutils literal notranslate"><span class="pre">reposync.sh</span></code> 脚本复制到 <code class="docutils literal notranslate"><span class="pre">/etc/cron.daily</span></code> 目录下，这样每天会执行一次同步。</p>
 </section>
 <section id="id3">
-<h2>参考<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h2>
+<h2>参考<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="https://access.redhat.com/solutions/23016">How to create a local mirror of the latest update for Red Hat Enterprise Linux 5, 6, 7, 8 without using Satellite server?</a></p></li>
 <li><p><a class="reference external" href="https://www.server-world.info/en/note?os=CentOS_8&amp;p=localrepo">Configure DNF/Yum Mirror Server</a></p></li>
@@ -410,25 +426,37 @@
 
            </div>
           </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="centos_local_repo.html" class="btn btn-neutral float-left" title="CentOS本地软件仓库" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="../systemd/index.html" class="btn btn-neutral float-right" title="Systemd进程管理器" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="centos_local_repo.html" class="btn btn-neutral float-left" title="CentOS本地软件仓库" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="enable_selinux.html" class="btn btn-neutral float-right" title="激活SELinux" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../../copyright.html">Copyright</a> 2018 - now, Huatai Huang.</p>
+    <p>&#169; <a href="../../../copyright.html">版权所有</a> 2018 - now, Huatai Huang。</p>
   </div>
 
-  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
   
     <!-- your html code here -->
     <br>
-    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡</a></p>
-     
+    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡 👈</a></p>
+    <br>
+    <p>网站采用 <a href="https://utteranc.es/">utterances</a> 评论系统，所有评论存储在<a href="https://github.com/huataihuang/cloud-atlas/issues">GitHub issues</a> 中，如果你看不到下方的评论框，那么可能需要<a href="https://cloud-atlas.readthedocs.io/zh-cn/latest/linux/security/vpn/index.html">自备梯子</a> 👈</p>
+    <div class="articleComments">
+        <comments>
+  <script src="https://utteranc.es/client.js"
+    repo="huataihuang/cloud-atlas"
+    issue-term="pathname"
+    theme="github-light"
+    crossorigin="anonymous"
+    async>
+  </script>
+</comments>
+    </div>
 
 
 </footer>

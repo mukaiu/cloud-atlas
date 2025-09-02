@@ -1,26 +1,30 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh" data-content_root="../../../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>通过udev重命名网络设备名 &mdash; Cloud Atlas 0.1 文档</title>
-      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../../_static/graphviz.css" type="text/css" />
+  <title>通过udev重命名网络设备名 &mdash; Cloud Atlas: Discovery beta 文档</title>
+      <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/graphviz.css?v=fd3f3429" />
+
+  
+    <link rel="shortcut icon" href="../../../_static/favicon.png"/>
   <!--[if lt IE 9]>
     <script src="../../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="../../../_static/documentation_options.js?v=7c91f8fd"></script>
-        <script src="../../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../../_static/documentation_options.js?v=8534f863"></script>
+        <script src="../../../_static/doctools.js?v=9a2dae69"></script>
         <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
-        <script src="../../../_static/translations.js?v=beaddf03"></script>
     <script src="../../../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../../../genindex.html" />
     <link rel="search" title="搜索" href="../../../search.html" />
     <link rel="copyright" title="版权所有" href="../../../copyright.html" />
-    <link rel="next" title="RedHat Linux 资源管理(cgroup)" href="../cgroup/index.html" />
+    <link rel="next" title="OpenRC udev" href="../../alpine_linux/openrc/openrc_udev.html" />
     <link rel="prev" title="udev配置块设备属主" href="udev_set_device_owner.html" /> 
 </head>
 
@@ -33,61 +37,67 @@
           
           
           <a href="../../../index.html" class="icon icon-home">
-            Cloud Atlas
+            Cloud Atlas: Discovery
           </a>
+              <div class="version">
+                1.1
+              </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../../studio/index.html">Studio Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../infrastructure/index.html">Infrastructure Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../devops/index.html">DevOps Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../kvm/index.html">KVM Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../ceph/index.html">Ceph Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../gluster/index.html">Gluster Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../ovirt/index.html">oVirt Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../openstack/index.html">OpenStack Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../docker/index.html">Docker Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../kubernetes/index.html">Kubernetes Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../kubernetes_from_scratch/index.html">Kubernetes From Scratch (KFS) Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../rancher/index.html">Rancher Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../openshift/index.html">OpenShift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../sql/index.html">SQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../sqlite/index.html">SQLite Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../mysql/index.html">MySQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../pgsql/index.html">PostgreSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../clickhouse/index.html">ClickHouse Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../nosql/index.html">NoSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../redis/index.html">Redis Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../network/index.html">Network Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../infra_service/index.html">Infra-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../infra_search/index.html">Search Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../info_service/index.html">Info-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../web/index.html">Web Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../big_data/index.html">Big Data Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../machine_learning/index.html">Machine Learning Atlas</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">Linux Atlas</a><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../studio/index.html">Studio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../infrastructure/index.html">Infrastructure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../devops/index.html">DevOps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../kvm/index.html">KVM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../ceph/index.html">Ceph</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../gluster/index.html">Gluster</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../ovirt/index.html">oVirt</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../openstack/index.html">OpenStack</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../docker/index.html">Docker</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../kubernetes/index.html">Kubernetes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../k8s_dev/index.html">Kubernetes Develop</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../rancher/index.html">Rancher</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../openshift/index.html">OpenShift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../sql/index.html">SQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../sqlite/index.html">SQLite</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../mysql/index.html">MySQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../pgsql/index.html">PostgreSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../nosql/index.html">NoSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../network/index.html">Network</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../infra_service/index.html">Infra-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../infra_search/index.html">Infra-Search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../web/index.html">Web</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../info_service/index.html">Info-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../big_data/index.html">Big Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../machine_learning/index.html">Machine Learning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../drone/index.html">Drone</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">Linux</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../../best_linux.html">最佳Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../admin/index.html">Linux系统管理</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="../index.html">RedHat Linux</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="../redhat_linux_state.html">Red Hat系企业级Linux版本</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../centos/index.html">CentOS</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../rockylinux/index.html">Rocky Linux</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../fedora/index.html">Fedora</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../admin/index.html">RedHat Linux 系统管理</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../systemd/index.html">Systemd进程管理器</a></li>
 <li class="toctree-l3 current"><a class="reference internal" href="index.html">udev</a><ul class="current">
-<li class="toctree-l4"><a class="reference internal" href="intro_udev.html">udev简介</a></li>
+<li class="toctree-l4"><a class="reference internal" href="udev_startup.html">udev快速起步</a></li>
 <li class="toctree-l4"><a class="reference internal" href="udev_set_device_owner.html">udev配置块设备属主</a></li>
 <li class="toctree-l4 current"><a class="current reference internal" href="#">通过udev重命名网络设备名</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../systemd/systemd_udevd.html">systemd-udevd</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../alpine_linux/openrc/openrc_udev.html">OpenRC udev</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../gentoo_linux/gentoo_udev.html">Gentoo udev</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../cgroup/index.html">RedHat Linux 资源管理(cgroup)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../fedora/index.html">Fedora</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../kernel/index.html">RHEL(Red Hat Enterprise Linux)内核</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../performance/index.html">RHEL(Red Hat Enterprise Linux)性能优化</a></li>
 </ul>
@@ -95,15 +105,21 @@
 <li class="toctree-l2"><a class="reference internal" href="../../arch_linux/index.html">Arch Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../asahi_linux/index.html">Asahi Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../gentoo_linux/index.html">Gentoo Linux</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../lfs_linux/index.html">LFS(Linux from scratch)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../lfs/index.html">LFS(Linux from scratch)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../blfs/index.html">BLFS(Beyond Linux from scratch)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../alfs/index.html">ALFS(Automated Linux from scratch)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pilfs/index.html">PiLFS(Automated Linux from scratch on the Raspberry Pi)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../yocto/index.html">Yocto</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../debian/index.html">Debian</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../ubuntu_linux/index.html">Ubuntu Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../suse_linux/index.html">SUSE Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../kali_linux/index.html">Kali Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../tails_linux/index.html">Tails Linux</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../qubes_os/index.html">Qubes OS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../postmarketos/index.html">postmarketOS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../container_os/index.html">容器化操作系统(Container OS)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../fedora_coreos/index.html">Fedora CoreOS容器操作系统</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../chromium_os/index.html">Chromium OS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../chromeos/index.html">ChromeOS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../alpine_linux/index.html">Alpine Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../subgraph_os/index.html">Subgraph OS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../kaios/index.html">KaiOS - 世界第三手机操作系统</a></li>
@@ -116,28 +132,30 @@
 <li class="toctree-l2"><a class="reference internal" href="../../linux_tablet/index.html">Linux平板</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../../kernel/index.html">Kernel Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../performance/index.html">Performance Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../distributed_system/index.html">Distributed System Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../shell/index.html">Shell Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../python/index.html">Python Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../django/index.html">Django Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../flask/index.html">Flask Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../javascript/index.html">JavaScript Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../nodejs/index.html">Node.js Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../clang/index.html">C Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../golang/index.html">Go Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../swift/index.html">Swift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../rust/index.html">Rust Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../ruby/index.html">Ruby Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../arm/index.html">ARM Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../android/index.html">Android Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../bsd/index.html">BSD Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../apple/index.html">Apple Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../windows/index.html">Windows Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../real/index.html">Real Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../management/index.html">Management Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../life/index.html">Life Atlas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../kernel/index.html">Kernel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../performance/index.html">Performance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../distributed_system/index.html">Distributed System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../shell/index.html">Shell</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../python/index.html">Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../django/index.html">Django</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../javascript/index.html">JavaScript</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../nodejs/index.html">Node.js</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../clang/index.html">C</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../golang/index.html">Go</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../swift/index.html">Swift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../rust/index.html">Rust</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../ruby/index.html">Ruby</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../lua/index.html">Lua</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../arm/index.html">ARM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../raspberry_pi/index.html">Raspberry Pi</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../android/index.html">Android</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../bsd/index.html">BSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../freebsd/index.html">FreeBSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../apple/index.html">Apple</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../windows/index.html">Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../real/index.html">Real</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../management/index.html">Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../life/index.html">Life</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../copyright.html">Copyright</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../aboutme.html">关于作者</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../donate.html">捐赠</a></li>
@@ -150,22 +168,22 @@
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../../index.html">Cloud Atlas</a>
+          <a href="../../../index.html">Cloud Atlas: Discovery</a>
       </nav>
 
       <div class="wy-nav-content">
         <div class="rst-content">
-          <div role="navigation" aria-label="Page navigation">
+          <div role="navigation" aria-label="页面导航">
   <ul class="wy-breadcrumbs">
       <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
-          <li class="breadcrumb-item"><a href="../../index.html">Linux Atlas</a></li>
+          <li class="breadcrumb-item"><a href="../../index.html">Linux</a></li>
           <li class="breadcrumb-item"><a href="../index.html">RedHat Linux</a></li>
           <li class="breadcrumb-item"><a href="index.html">udev</a></li>
       <li class="breadcrumb-item active">通过udev重命名网络设备名</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../../../_sources/linux/redhat_linux/udev/udev_rename_nic.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../../_sources/linux/redhat_linux/udev/udev_rename_nic.rst.txt" rel="nofollow"> 查看页面源码</a>
       </li>
   </ul>
   <hr/>
@@ -174,7 +192,7 @@
            <div itemprop="articleBody">
              
   <section id="udev">
-<span id="udev-rename-nic"></span><h1>通过udev重命名网络设备名<a class="headerlink" href="#udev" title="Link to this heading">¶</a></h1>
+<span id="udev-rename-nic"></span><h1>通过udev重命名网络设备名<a class="headerlink" href="#udev" title="Link to this heading"></a></h1>
 <p>在 <a class="reference internal" href="../../../studio/hardware/thinkpad_x220.html#thinkpad-x220"><span class="std std-ref">ThinkPad X220笔记本</span></a> 上安装Linux系统，会看到网络设备命名不是约定俗成的 <code class="docutils literal notranslate"><span class="pre">eth0</span></code> 和 <code class="docutils literal notranslate"><span class="pre">wlan0</span></code> 而是:</p>
 <ul class="simple">
 <li><p>Intel 82579LM 千兆有线网卡: <code class="docutils literal notranslate"><span class="pre">enp0s25</span></code></p></li>
@@ -183,7 +201,7 @@
 <p>这对一些配置工作带来困扰，也不方便编写通用的网络配置脚本。</p>
 <p>为了能够稳定识别网络设备并转换成标准的 <code class="docutils literal notranslate"><span class="pre">eth0</span></code> 和 <code class="docutils literal notranslate"><span class="pre">wlan0</span></code> ，方便 <a class="reference internal" href="../../arch_linux/archlinux_config_ip.html#archlinux-config-ip"><span class="std std-ref">arch linux配置IP(静态或动态)</span></a> ，使用 <code class="docutils literal notranslate"><span class="pre">udev</span></code> 规则来完成命名转换。</p>
 <section id="id1">
-<h2>操作步骤<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h2>
+<h2>操作步骤<a class="headerlink" href="#id1" title="Link to this heading"></a></h2>
 <ul>
 <li><p>首先找出网络设备的MAC地址，这个MAC地址将用于 <code class="docutils literal notranslate"><span class="pre">udev</span></code> 规则匹配设备:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ip</span> <span class="n">link</span>
@@ -205,7 +223,7 @@
 </div>
 </section>
 <section id="id2">
-<h2>为什么网络设备会这样命名<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
+<h2>为什么网络设备会这样命名<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
 <p>实际上网络设备命名是为了唯一标识设备，所以操作系统启动时内核特意把网络设备按照驱动进行重命令。例如:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">dmesg</span> <span class="o">|</span> <span class="n">grep</span> <span class="n">enp</span>
 </pre></div>
@@ -245,7 +263,7 @@
 </ul>
 </section>
 <section id="id4">
-<h2>如何禁用 <code class="docutils literal notranslate"><span class="pre">可预测的网络接口命名</span></code><a class="headerlink" href="#id4" title="Link to this heading">¶</a></h2>
+<h2>如何禁用 <code class="docutils literal notranslate"><span class="pre">可预测的网络接口命名</span></code><a class="headerlink" href="#id4" title="Link to this heading"></a></h2>
 <p>由于某些兼容性原因，或者你就是不需要，则可以通过以下 <code class="docutils literal notranslate"><span class="pre">3种方式之一</span></code> <strong>禁用</strong> <code class="docutils literal notranslate"><span class="pre">可预测的网络接口命名</span></code> :</p>
 <ul>
 <li><p>使用屏蔽掉 <code class="docutils literal notranslate"><span class="pre">udev</span></code> 的软连接来恢复使用以前的那种不可预测内核设备名:</p>
@@ -256,7 +274,7 @@
 <li><p>创建自己的手动命名计划(scheme)，例如可以命名为 <code class="docutils literal notranslate"><span class="pre">internet0</span></code> , <code class="docutils literal notranslate"><span class="pre">dmz0</span></code> 或 <code class="docutils literal notranslate"><span class="pre">lan0</span></code> 等。详细语法参考 <a class="reference external" href="https://www.freedesktop.org/software/systemd/man/systemd.link.html">systemd.link(5)</a> ，简单的案例如下 <code class="docutils literal notranslate"><span class="pre">/etc/systemd/network/10-dmz.link</span></code> :</p></li>
 </ul>
 <div class="literal-block-wrapper docutils container" id="id7">
-<div class="code-block-caption"><span class="caption-text">/etc/systemd/network/10-dmz.link</span><a class="headerlink" href="#id7" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">/etc/systemd/network/10-dmz.link</span><a class="headerlink" href="#id7" title="Link to this code"></a></div>
 <div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[Match]</span>
 <span class="na">MACAddress</span><span class="o">=</span><span class="s">00:a0:de:63:7a:e6</span>
 
@@ -270,19 +288,21 @@
 </ul>
 </section>
 <section id="id5">
-<h2>使用 <code class="docutils literal notranslate"><span class="pre">udev</span></code> 规则重命名设备<a class="headerlink" href="#id5" title="Link to this heading">¶</a></h2>
+<h2>使用 <code class="docutils literal notranslate"><span class="pre">udev</span></code> 规则重命名设备<a class="headerlink" href="#id5" title="Link to this heading"></a></h2>
 <div class="admonition note">
 <p class="admonition-title">备注</p>
-<p>使用 <code class="docutils literal notranslate"><span class="pre">udev</span></code> 规则重命名设备是一种比较常用且约定俗成的运维方法。当然，也可以使用上文 “如何禁用 <code class="docutils literal notranslate"><span class="pre">可预测的网络接口命名</span></code> ” 方法二，使用类似 <code class="docutils literal notranslate"><span class="pre">/etc/systemd/network/10-dmz.link</span></code> 配置来通过 <a class="reference internal" href="../systemd/systemd_networkd.html#systemd-networkd"><span class="std std-ref">Systemd Networkd服务</span></a> 配置设备命名</p>
+<p>使用 <code class="docutils literal notranslate"><span class="pre">udev</span></code> 规则重命名设备是一种比较常用且约定俗成的运维方法。当然，也可以使用上文 &quot;如何禁用 <code class="docutils literal notranslate"><span class="pre">可预测的网络接口命名</span></code> &quot; 方法二，使用类似 <code class="docutils literal notranslate"><span class="pre">/etc/systemd/network/10-dmz.link</span></code> 配置来通过 <a class="reference internal" href="../systemd/systemd_networkd.html#systemd-networkd"><span class="std std-ref">Systemd Networkd服务</span></a> 配置设备命名</p>
 </div>
-<ul>
-<li><p>配置 <code class="docutils literal notranslate"><span class="pre">/etc/udev/rules.d/30-net_names.rules</span></code></p>
-<blockquote>
-<div><p>SUBSYSTEM==”net”, ACTION==”add”, ATTR{address}==”ff:ff:ff:ff:ff:ff”, NAME=”eth0”
-SUBSYSTEM==”net”, ACTION==”add”, ATTR{address}==”ee:ee:ee:ee:ee:ee”, NAME=”wlan0”</p>
-</div></blockquote>
-</li>
+<ul class="simple">
+<li><p>配置 <code class="docutils literal notranslate"><span class="pre">/etc/udev/rules.d/30-net_names.rules</span></code></p></li>
 </ul>
+<div class="literal-block-wrapper docutils container" id="id8">
+<div class="code-block-caption"><span class="caption-text">网络设备添加时通过udev规则重命名设备</span><a class="headerlink" href="#id8" title="Link to this code"></a></div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">SUBSYSTEM</span><span class="o">==</span><span class="s2">&quot;net&quot;</span><span class="p">,</span> <span class="n">ACTION</span><span class="o">==</span><span class="s2">&quot;add&quot;</span><span class="p">,</span> <span class="n">ATTR</span><span class="p">{</span><span class="n">address</span><span class="p">}</span><span class="o">==</span><span class="s2">&quot;ff:ff:ff:ff:ff:ff&quot;</span><span class="p">,</span> <span class="n">NAME</span><span class="o">=</span><span class="s2">&quot;eth0&quot;</span>
+<span class="n">SUBSYSTEM</span><span class="o">==</span><span class="s2">&quot;net&quot;</span><span class="p">,</span> <span class="n">ACTION</span><span class="o">==</span><span class="s2">&quot;add&quot;</span><span class="p">,</span> <span class="n">ATTR</span><span class="p">{</span><span class="n">address</span><span class="p">}</span><span class="o">==</span><span class="s2">&quot;ee:ee:ee:ee:ee:ee&quot;</span><span class="p">,</span> <span class="n">NAME</span><span class="o">=</span><span class="s2">&quot;wlan0&quot;</span>
+</pre></div>
+</div>
+</div>
 <p>重启系统后，对应的有线和无线网卡会分别重命名为 <code class="docutils literal notranslate"><span class="pre">eth0</span></code> 和 <code class="docutils literal notranslate"><span class="pre">wlan0</span></code></p>
 <p>其他配置案例也可以采用以下方式:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">KERNEL</span><span class="o">==</span><span class="s2">&quot;eth*&quot;</span><span class="p">,</span> <span class="n">SYSFS</span><span class="p">{</span><span class="n">address</span><span class="p">}</span><span class="o">==</span><span class="s2">&quot;00:12:34:fe:dc:ba&quot;</span><span class="p">,</span> <span class="n">NAME</span><span class="o">=</span><span class="s2">&quot;eth0&quot;</span>
@@ -291,7 +311,7 @@ SUBSYSTEM==”net”, ACTION==”add”, ATTR{address}==”ee:ee:ee:ee:ee:ee”,
 </div>
 </section>
 <section id="id6">
-<h2>参考<a class="headerlink" href="#id6" title="Link to this heading">¶</a></h2>
+<h2>参考<a class="headerlink" href="#id6" title="Link to this heading"></a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="https://www.suse.com/support/kb/doc/?id=000015954">How to rename Ethernet devices through udev</a></p></li>
 <li><p><a class="reference external" href="http://www.debianhelp.co.uk/udev.htm">Rename Network Interface using udev in Debian</a></p></li>
@@ -305,25 +325,37 @@ SUBSYSTEM==”net”, ACTION==”add”, ATTR{address}==”ee:ee:ee:ee:ee:ee”,
 
            </div>
           </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="udev_set_device_owner.html" class="btn btn-neutral float-left" title="udev配置块设备属主" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="../cgroup/index.html" class="btn btn-neutral float-right" title="RedHat Linux 资源管理(cgroup)" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="udev_set_device_owner.html" class="btn btn-neutral float-left" title="udev配置块设备属主" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="../../alpine_linux/openrc/openrc_udev.html" class="btn btn-neutral float-right" title="OpenRC udev" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../../copyright.html">Copyright</a> 2018 - now, Huatai Huang.</p>
+    <p>&#169; <a href="../../../copyright.html">版权所有</a> 2018 - now, Huatai Huang。</p>
   </div>
 
-  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
   
     <!-- your html code here -->
     <br>
-    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡</a></p>
-     
+    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡 👈</a></p>
+    <br>
+    <p>网站采用 <a href="https://utteranc.es/">utterances</a> 评论系统，所有评论存储在<a href="https://github.com/huataihuang/cloud-atlas/issues">GitHub issues</a> 中，如果你看不到下方的评论框，那么可能需要<a href="https://cloud-atlas.readthedocs.io/zh-cn/latest/linux/security/vpn/index.html">自备梯子</a> 👈</p>
+    <div class="articleComments">
+        <comments>
+  <script src="https://utteranc.es/client.js"
+    repo="huataihuang/cloud-atlas"
+    issue-term="pathname"
+    theme="github-light"
+    crossorigin="anonymous"
+    async>
+  </script>
+</comments>
+    </div>
 
 
 </footer>

@@ -1,21 +1,25 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh" data-content_root="../../../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>内存大页(huge memory pages)简介 &mdash; Cloud Atlas 0.1 文档</title>
-      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../../_static/graphviz.css" type="text/css" />
+  <title>内存大页(huge memory pages)简介 &mdash; Cloud Atlas: Discovery beta 文档</title>
+      <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/graphviz.css?v=fd3f3429" />
+
+  
+    <link rel="shortcut icon" href="../../../_static/favicon.png"/>
   <!--[if lt IE 9]>
     <script src="../../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="../../../_static/documentation_options.js?v=7c91f8fd"></script>
-        <script src="../../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../../_static/documentation_options.js?v=8534f863"></script>
+        <script src="../../../_static/doctools.js?v=9a2dae69"></script>
         <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
-        <script src="../../../_static/translations.js?v=beaddf03"></script>
     <script src="../../../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../../../genindex.html" />
     <link rel="search" title="搜索" href="../../../search.html" />
@@ -33,52 +37,55 @@
           
           
           <a href="../../../index.html" class="icon icon-home">
-            Cloud Atlas
+            Cloud Atlas: Discovery
           </a>
+              <div class="version">
+                1.1
+              </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../../studio/index.html">Studio Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../infrastructure/index.html">Infrastructure Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../devops/index.html">DevOps Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../kvm/index.html">KVM Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../ceph/index.html">Ceph Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../gluster/index.html">Gluster Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../ovirt/index.html">oVirt Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../openstack/index.html">OpenStack Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../docker/index.html">Docker Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../kubernetes/index.html">Kubernetes Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../kubernetes_from_scratch/index.html">Kubernetes From Scratch (KFS) Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../rancher/index.html">Rancher Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../openshift/index.html">OpenShift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../sql/index.html">SQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../sqlite/index.html">SQLite Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../mysql/index.html">MySQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../pgsql/index.html">PostgreSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../clickhouse/index.html">ClickHouse Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../nosql/index.html">NoSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../redis/index.html">Redis Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../network/index.html">Network Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../infra_service/index.html">Infra-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../infra_search/index.html">Search Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../info_service/index.html">Info-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../web/index.html">Web Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../big_data/index.html">Big Data Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../machine_learning/index.html">Machine Learning Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../linux/index.html">Linux Atlas</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">Kernel Atlas</a><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../studio/index.html">Studio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../infrastructure/index.html">Infrastructure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../devops/index.html">DevOps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../kvm/index.html">KVM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../ceph/index.html">Ceph</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../gluster/index.html">Gluster</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../ovirt/index.html">oVirt</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../openstack/index.html">OpenStack</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../docker/index.html">Docker</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../kubernetes/index.html">Kubernetes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../k8s_dev/index.html">Kubernetes Develop</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../rancher/index.html">Rancher</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../openshift/index.html">OpenShift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../sql/index.html">SQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../sqlite/index.html">SQLite</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../mysql/index.html">MySQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../pgsql/index.html">PostgreSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../nosql/index.html">NoSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../network/index.html">Network</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../infra_service/index.html">Infra-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../infra_search/index.html">Infra-Search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../web/index.html">Web</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../info_service/index.html">Info-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../big_data/index.html">Big Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../machine_learning/index.html">Machine Learning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../drone/index.html">Drone</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../linux/index.html">Linux</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">Kernel</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../../startup/index.html">Kernel起步</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../cpu/index.html">CPU</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../scheduler/index.html">Linux调度器</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../cgroup/index.html">Kernel Cgroup</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../process/index.html">内核进程管理</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../core_api/index.html">kernel核心API</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../flame_graph.html">火焰图</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../kms.html">KMS (Kernel mode setting)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../accounting/index.html">内核记账</a></li>
@@ -91,6 +98,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../linux_mmu.html">Linux系统内存管理单元(MMU)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../slab_allocator.html">内核Slab分配器</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../pgfault.html">Page Fault</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../maps_smaps_memory_stats.html">进程的 <code class="docutils literal notranslate"><span class="pre">maps</span></code> / <code class="docutils literal notranslate"><span class="pre">smaps</span></code> / <code class="docutils literal notranslate"><span class="pre">stat</span></code></a></li>
 <li class="toctree-l3 current"><a class="reference internal" href="index.html">Linux内存大页</a><ul class="current">
 <li class="toctree-l4 current"><a class="current reference internal" href="#">内存大页(huge memory pages)简介</a></li>
 <li class="toctree-l4"><a class="reference internal" href="hugetlb_page.html">HugeTLB Pages</a></li>
@@ -107,27 +115,29 @@
 <li class="toctree-l2"><a class="reference internal" href="../../tracing/index.html">Linux内核追踪</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../../performance/index.html">Performance Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../distributed_system/index.html">Distributed System Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../shell/index.html">Shell Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../python/index.html">Python Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../django/index.html">Django Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../flask/index.html">Flask Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../javascript/index.html">JavaScript Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../nodejs/index.html">Node.js Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../clang/index.html">C Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../golang/index.html">Go Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../swift/index.html">Swift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../rust/index.html">Rust Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../ruby/index.html">Ruby Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../arm/index.html">ARM Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../android/index.html">Android Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../bsd/index.html">BSD Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../apple/index.html">Apple Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../windows/index.html">Windows Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../real/index.html">Real Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../management/index.html">Management Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../life/index.html">Life Atlas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../performance/index.html">Performance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../distributed_system/index.html">Distributed System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../shell/index.html">Shell</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../python/index.html">Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../django/index.html">Django</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../javascript/index.html">JavaScript</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../nodejs/index.html">Node.js</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../clang/index.html">C</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../golang/index.html">Go</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../swift/index.html">Swift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../rust/index.html">Rust</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../ruby/index.html">Ruby</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../lua/index.html">Lua</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../arm/index.html">ARM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../raspberry_pi/index.html">Raspberry Pi</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../android/index.html">Android</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../bsd/index.html">BSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../freebsd/index.html">FreeBSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../apple/index.html">Apple</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../windows/index.html">Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../real/index.html">Real</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../management/index.html">Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../life/index.html">Life</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../copyright.html">Copyright</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../aboutme.html">关于作者</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../donate.html">捐赠</a></li>
@@ -140,22 +150,22 @@
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../../index.html">Cloud Atlas</a>
+          <a href="../../../index.html">Cloud Atlas: Discovery</a>
       </nav>
 
       <div class="wy-nav-content">
         <div class="rst-content">
-          <div role="navigation" aria-label="Page navigation">
+          <div role="navigation" aria-label="页面导航">
   <ul class="wy-breadcrumbs">
       <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
-          <li class="breadcrumb-item"><a href="../../index.html">Kernel Atlas</a></li>
+          <li class="breadcrumb-item"><a href="../../index.html">Kernel</a></li>
           <li class="breadcrumb-item"><a href="../index.html">Linux内存管理</a></li>
           <li class="breadcrumb-item"><a href="index.html">Linux内存大页</a></li>
       <li class="breadcrumb-item active">内存大页(huge memory pages)简介</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../../../_sources/kernel/memory/huge_memory_pages/intro_huge_memory_pages.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../../_sources/kernel/memory/huge_memory_pages/intro_huge_memory_pages.rst.txt" rel="nofollow"> 查看页面源码</a>
       </li>
   </ul>
   <hr/>
@@ -164,15 +174,15 @@
            <div itemprop="articleBody">
              
   <section id="huge-memory-pages">
-<span id="intro-huge-memory-pages"></span><h1>内存大页(huge memory pages)简介<a class="headerlink" href="#huge-memory-pages" title="Link to this heading">¶</a></h1>
+<span id="intro-huge-memory-pages"></span><h1>内存大页(huge memory pages)简介<a class="headerlink" href="#huge-memory-pages" title="Link to this heading"></a></h1>
 <div class="admonition note">
 <p class="admonition-title">备注</p>
-<p>在 <a class="reference internal" href="../../../kvm/index.html#kvm"><span class="std std-ref">KVM Atlas</span></a> 虚拟化技术中，提高虚拟机性能的有效手段之一就是采用内存大页，但是这项技术的使用有很多特定适用场景，使用不当可能产生 <code class="docutils literal notranslate"><span class="pre">负优化</span></code> ，所以需要仔细研究规划并实践验证。</p>
+<p>在 <a class="reference internal" href="../../../kvm/index.html#kvm"><span class="std std-ref">KVM</span></a> 虚拟化技术中，提高虚拟机性能的有效手段之一就是采用内存大页，但是这项技术的使用有很多特定适用场景，使用不当可能产生 <code class="docutils literal notranslate"><span class="pre">负优化</span></code> ，所以需要仔细研究规划并实践验证。</p>
 </div>
-<p>在处理需要大量内存的应用程序，内存延迟可能会成文一个问题，因为使用的内存页越多，则应用程序就越可能跨多个内存页面访问信息。解析内存页的实际地址需要花费多个步骤，所以CPU通常会缓存最近使用的内存页来使得后续访问相同内存页更快。对于使用大量内存的应用，有一个问题，例如使用4GB内存的虚拟机需要将内存切分成104万个4KB内存页，这意味着这种缓存没有命中的概率非常高，导致极大增加了内存延迟。(内存)大页面(huge pages)的存在就是为了给这些应用程序提供更大的独立页面(larger individual
+<p>在处理需要大量内存的应用程序，内存延迟可能会成为一个问题，因为使用的内存页越多，则应用程序就越可能跨多个内存页面访问信息。解析内存页的实际地址需要花费多个步骤，所以CPU通常会缓存最近使用的内存页来使得后续访问相同内存页更快。对于使用大量内存的应用，有一个问题，例如使用4GB内存的虚拟机需要将内存切分成104万个4KB内存页，这意味着这种缓存没有命中的概率非常高，导致极大增加了内存延迟。(内存)大页面(huge pages)的存在就是为了给这些应用程序提供更大的独立页面(larger individual
 pages)，从而增加多个操作连续针对同一个页面的可能性。</p>
 <section id="transparent-huge-page">
-<h2><a class="reference internal" href="transparent_huge_page.html#transparent-huge-page"><span class="std std-ref">透明大页(transparent huge pages,THP)</span></a><a class="headerlink" href="#transparent-huge-page" title="Link to this heading">¶</a></h2>
+<h2><a class="reference internal" href="transparent_huge_page.html#transparent-huge-page"><span class="std std-ref">透明大页(transparent huge pages,THP)</span></a><a class="headerlink" href="#transparent-huge-page" title="Link to this heading"></a></h2>
 <p><a class="reference internal" href="../../../kvm/qemu/index.html#qemu"><span class="std std-ref">QEMU</span></a> 自动使用2MB大小的透明大页(transparent huge pages)，而无需在QEMU或者 <a class="reference internal" href="../../../kvm/libvirt/index.html#libvirt"><span class="std std-ref">Libvirt虚拟机管理器</span></a> 中显式配置。但是需要注意的是，使用 <a class="reference internal" href="../../../kvm/iommu/vfio.html#vfio"><span class="std std-ref">VFIO - Virtual Function I/O</span></a> 时，内存页面在启动时锁定，并且在虚拟机首次启动时预先分配好透明大页。但是，如果内核内存高度碎片化，或者虚拟机正在使用大部分剩余空闲内存，则内存可能没有足够的2MB内存页面来完全满足分配。此时，QEMU会混合使用2MB和4KB内存页。 <strong>由于内存页面在 vfio
 模式下被锁定</strong> ，内核就无法在虚拟机启动后再将4KB内存页转换成大页(convert 4KB pages to huge pages)。</p>
 <p>例如，我在 <a class="reference internal" href="../../../real/priv_cloud/priv_cloud_infra.html#priv-cloud-infra"><span class="std std-ref">私有云架构</span></a> 中运行了3个作为底层 <a class="reference internal" href="../../../real/priv_cloud/zdata_ceph.html#zdata-ceph"><span class="std std-ref">私有云数据层 ZData Ceph</span></a> 虚拟机:</p>
@@ -186,7 +196,7 @@ pages)，从而增加多个操作连续针对同一个页面的可能性。</p>
 </div>
 <p>此时我们检查当前整个物理主机上THP(透明大页)的数量:</p>
 <div class="literal-block-wrapper docutils container" id="id4">
-<div class="code-block-caption"><span class="caption-text">通过 /proc/meminfo 获取主机的透明大页分配量</span><a class="headerlink" href="#id4" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">通过 /proc/meminfo 获取主机的透明大页分配量</span><a class="headerlink" href="#id4" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>grep<span class="w"> </span>AnonHugePages<span class="w"> </span>/proc/meminfo
 </pre></div>
 </div>
@@ -197,7 +207,7 @@ pages)，从而增加多个操作连续针对同一个页面的可能性。</p>
 </div>
 <p>我们来看一下上述3个虚拟机的QEMU实例分配的透明大页大小:</p>
 <div class="literal-block-wrapper docutils container" id="id5">
-<div class="code-block-caption"><span class="caption-text">检查QEMU虚拟机分配的透明大页</span><a class="headerlink" href="#id5" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">检查QEMU虚拟机分配的透明大页</span><a class="headerlink" href="#id5" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1">#获取VM的qemu进程的pid</span>
 <span class="nv">vm_pid</span><span class="o">=()</span>
 <span class="nv">vm_pid</span><span class="o">=</span><span class="k">$(for</span><span class="w"> </span>vm<span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="sb">`</span>virsh<span class="w"> </span>list<span class="w"> </span>--name<span class="sb">`</span><span class="p">;</span><span class="k">do</span><span class="w"> </span>ps<span class="w"> </span>aux<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>qemu<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span><span class="nv">$vm</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>awk<span class="w"> </span><span class="s1">&#39;{print $2}&#39;</span><span class="p">;</span><span class="k">done)</span>
@@ -219,7 +229,7 @@ pages)，从而增加多个操作连续针对同一个页面的可能性。</p>
 pages)</strong></p>
 </section>
 <section id="static-huge-pages">
-<h2>静态大页(static huge pages)<a class="headerlink" href="#static-huge-pages" title="Link to this heading">¶</a></h2>
+<h2>静态大页(static huge pages)<a class="headerlink" href="#static-huge-pages" title="Link to this heading"></a></h2>
 <p>虽然透明大页( <a class="reference internal" href="transparent_huge_page.html#transparent-huge-page"><span class="std std-ref">透明大页(transparent huge pages,THP)</span></a> )在大多数情况下都能够工作，但是也可以在引导期间静态分配。不过这种情况是需要在支持静态大页的机器上使用 <code class="docutils literal notranslate"><span class="pre">1GiB</span></code> 大页，因为 <strong>透明大页通常最多只能达到 2MiB</strong> 。</p>
 <div class="admonition warning">
 <p class="admonition-title">警告</p>
@@ -245,12 +255,12 @@ pages)</strong></p>
 </div>
 </section>
 <section id="dynamic-huge-pages">
-<h2>动态大页(dynamic huge pages)<a class="headerlink" href="#dynamic-huge-pages" title="Link to this heading">¶</a></h2>
+<h2>动态大页(dynamic huge pages)<a class="headerlink" href="#dynamic-huge-pages" title="Link to this heading"></a></h2>
 <p>内存大页页可以通过 <code class="docutils literal notranslate"><span class="pre">sysctl</span></code> 参数 <code class="docutils literal notranslate"><span class="pre">vm.nr_overcommit_hugepages</span></code> 配置，不过 <a class="reference external" href="https://wiki.archlinux.org/title/PCI_passthrough_via_OVMF#Huge_memory_pages">PCI passthrough via OVMF: Huge memory pages</a> 原文写得不清晰，我页没有实践。</p>
 <p>Red Hat官方的手册 <a class="reference external" href="https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/performance_tuning_guide/sect-red_hat_enterprise_linux-performance_tuning_guide-memory-configuring-huge-pages">Configuring HugeTLB Huge Pages</a> 提供了为 <a class="reference internal" href="../numa/index.html#numa"><span class="std std-ref">NUMA架构</span></a> 配置Huge Pages。</p>
 </section>
 <section id="id1">
-<h2>参考<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h2>
+<h2>参考<a class="headerlink" href="#id1" title="Link to this heading"></a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="https://wiki.archlinux.org/title/PCI_passthrough_via_OVMF#Huge_memory_pages">PCI passthrough via OVMF: Huge memory pages</a></p></li>
 <li><p><a class="reference external" href="https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/performance_tuning_guide/sect-red_hat_enterprise_linux-performance_tuning_guide-memory-configuring-huge-pages">Configuring HugeTLB Huge Pages</a></p></li>
@@ -261,25 +271,37 @@ pages)</strong></p>
 
            </div>
           </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="index.html" class="btn btn-neutral float-left" title="Linux内存大页" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="hugetlb_page.html" class="btn btn-neutral float-right" title="HugeTLB Pages" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="index.html" class="btn btn-neutral float-left" title="Linux内存大页" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="hugetlb_page.html" class="btn btn-neutral float-right" title="HugeTLB Pages" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../../copyright.html">Copyright</a> 2018 - now, Huatai Huang.</p>
+    <p>&#169; <a href="../../../copyright.html">版权所有</a> 2018 - now, Huatai Huang。</p>
   </div>
 
-  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
   
     <!-- your html code here -->
     <br>
-    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡</a></p>
-     
+    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡 👈</a></p>
+    <br>
+    <p>网站采用 <a href="https://utteranc.es/">utterances</a> 评论系统，所有评论存储在<a href="https://github.com/huataihuang/cloud-atlas/issues">GitHub issues</a> 中，如果你看不到下方的评论框，那么可能需要<a href="https://cloud-atlas.readthedocs.io/zh-cn/latest/linux/security/vpn/index.html">自备梯子</a> 👈</p>
+    <div class="articleComments">
+        <comments>
+  <script src="https://utteranc.es/client.js"
+    repo="huataihuang/cloud-atlas"
+    issue-term="pathname"
+    theme="github-light"
+    crossorigin="anonymous"
+    async>
+  </script>
+</comments>
+    </div>
 
 
 </footer>

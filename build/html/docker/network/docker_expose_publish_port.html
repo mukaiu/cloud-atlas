@@ -1,27 +1,31 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh" data-content_root="../../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Docker的expose和publish端口差异和关系 &mdash; Cloud Atlas 0.1 文档</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+  <title>Docker的expose和publish端口差异和关系 &mdash; Cloud Atlas: Discovery beta 文档</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=fd3f3429" />
+
+  
+    <link rel="shortcut icon" href="../../_static/favicon.png"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="../../_static/documentation_options.js?v=7c91f8fd"></script>
-        <script src="../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=8534f863"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
         <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
-        <script src="../../_static/translations.js?v=beaddf03"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../../genindex.html" />
     <link rel="search" title="搜索" href="../../search.html" />
     <link rel="copyright" title="版权所有" href="../../copyright.html" />
     <link rel="next" title="Docker GPU设备" href="../gpu/index.html" />
-    <link rel="prev" title="配置Docker使用代理" href="docker_proxy.html" /> 
+    <link rel="prev" title="Docker 代理快速起步" href="docker_proxy_quickstart.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -33,32 +37,36 @@
           
           
           <a href="../../index.html" class="icon icon-home">
-            Cloud Atlas
+            Cloud Atlas: Discovery
           </a>
+              <div class="version">
+                1.1
+              </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../studio/index.html">Studio Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../infrastructure/index.html">Infrastructure Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../devops/index.html">DevOps Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kvm/index.html">KVM Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../ceph/index.html">Ceph Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../gluster/index.html">Gluster Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../ovirt/index.html">oVirt Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../openstack/index.html">OpenStack Atlas</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Docker Atlas</a><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../studio/index.html">Studio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../infrastructure/index.html">Infrastructure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../devops/index.html">DevOps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kvm/index.html">KVM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ceph/index.html">Ceph</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../gluster/index.html">Gluster</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ovirt/index.html">oVirt</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../openstack/index.html">OpenStack</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Docker</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../startup/index.html">Docker 起步</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../desktop/index.html">Docker Desktop</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../colima/index.html">Colima</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../images/index.html">Docker 镜像</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../rootless/index.html">Docker Rootless模式</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../moby/index.html">Docker Moby</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../moby/index.html">Moby</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../podman/index.html">podman</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../config/index.html">Docker配置</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../linuxserver/index.html">Docker LinuxServer.io</a></li>
@@ -68,15 +76,17 @@
 <li class="toctree-l2"><a class="reference internal" href="../storage/index.html">Docker存储</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="index.html">Docker网络</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="docker_proxy.html">配置Docker使用代理</a></li>
+<li class="toctree-l3"><a class="reference internal" href="docker_proxy_quickstart.html">Docker 代理快速起步</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Docker的expose和publish端口差异和关系</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#dockerfileexpose">Dockerfile中的EXPOSE指令</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#exposepublish">EXPOSE和PUBLISH</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#publish">PUBLISH端口</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id1">PUBLISH <code class="docutils literal notranslate"><span class="pre">所有</span></code> 端口</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id2">使用端口范围</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id3">什么时候不需要 <code class="docutils literal notranslate"><span class="pre">PUBLISH</span></code> 端口</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id4">且慢，真的能访问容器内部的 <code class="docutils literal notranslate"><span class="pre">3000</span></code> 端口服务了吗?</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id5">参考</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id1">PUBLISH 多个端口</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id2">PUBLISH <code class="docutils literal notranslate"><span class="pre">所有</span></code> 端口</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id3">使用端口范围</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id4">什么时候不需要 <code class="docutils literal notranslate"><span class="pre">PUBLISH</span></code> 端口</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id5">且慢，真的能访问容器内部的 <code class="docutils literal notranslate"><span class="pre">3000</span></code> 端口服务了吗?</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id6">参考</a></li>
 </ul>
 </li>
 </ul>
@@ -88,47 +98,48 @@
 <li class="toctree-l2"><a class="reference internal" href="../debug/index.html">Docker异常排查</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../kubernetes/index.html">Kubernetes Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kubernetes_from_scratch/index.html">Kubernetes From Scratch (KFS) Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../rancher/index.html">Rancher Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../openshift/index.html">OpenShift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../sql/index.html">SQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../sqlite/index.html">SQLite Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../mysql/index.html">MySQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../pgsql/index.html">PostgreSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../clickhouse/index.html">ClickHouse Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../nosql/index.html">NoSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../redis/index.html">Redis Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../network/index.html">Network Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../infra_service/index.html">Infra-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../infra_search/index.html">Search Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../info_service/index.html">Info-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../web/index.html">Web Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../big_data/index.html">Big Data Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../machine_learning/index.html">Machine Learning Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../linux/index.html">Linux Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kernel/index.html">Kernel Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../performance/index.html">Performance Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../distributed_system/index.html">Distributed System Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../shell/index.html">Shell Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../python/index.html">Python Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../django/index.html">Django Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../flask/index.html">Flask Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../javascript/index.html">JavaScript Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../nodejs/index.html">Node.js Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../clang/index.html">C Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../golang/index.html">Go Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../swift/index.html">Swift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../rust/index.html">Rust Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../ruby/index.html">Ruby Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../arm/index.html">ARM Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../android/index.html">Android Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../bsd/index.html">BSD Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../apple/index.html">Apple Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../windows/index.html">Windows Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../real/index.html">Real Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../management/index.html">Management Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../life/index.html">Life Atlas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kubernetes/index.html">Kubernetes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../k8s_dev/index.html">Kubernetes Develop</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../rancher/index.html">Rancher</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../openshift/index.html">OpenShift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../sql/index.html">SQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../sqlite/index.html">SQLite</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../mysql/index.html">MySQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../pgsql/index.html">PostgreSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../nosql/index.html">NoSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../network/index.html">Network</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../infra_service/index.html">Infra-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../infra_search/index.html">Infra-Search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../web/index.html">Web</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../info_service/index.html">Info-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../big_data/index.html">Big Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../machine_learning/index.html">Machine Learning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../drone/index.html">Drone</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../linux/index.html">Linux</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kernel/index.html">Kernel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../performance/index.html">Performance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../distributed_system/index.html">Distributed System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../shell/index.html">Shell</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../python/index.html">Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../django/index.html">Django</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../javascript/index.html">JavaScript</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../nodejs/index.html">Node.js</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../clang/index.html">C</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../golang/index.html">Go</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../swift/index.html">Swift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../rust/index.html">Rust</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ruby/index.html">Ruby</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lua/index.html">Lua</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../arm/index.html">ARM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../raspberry_pi/index.html">Raspberry Pi</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../android/index.html">Android</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../bsd/index.html">BSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../freebsd/index.html">FreeBSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../apple/index.html">Apple</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../windows/index.html">Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../real/index.html">Real</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../management/index.html">Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../life/index.html">Life</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../copyright.html">Copyright</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../aboutme.html">关于作者</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../donate.html">捐赠</a></li>
@@ -141,21 +152,21 @@
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../index.html">Cloud Atlas</a>
+          <a href="../../index.html">Cloud Atlas: Discovery</a>
       </nav>
 
       <div class="wy-nav-content">
         <div class="rst-content">
-          <div role="navigation" aria-label="Page navigation">
+          <div role="navigation" aria-label="页面导航">
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
-          <li class="breadcrumb-item"><a href="../index.html">Docker Atlas</a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Docker</a></li>
           <li class="breadcrumb-item"><a href="index.html">Docker网络</a></li>
       <li class="breadcrumb-item active">Docker的expose和publish端口差异和关系</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../../_sources/docker/network/docker_expose_publish_port.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../_sources/docker/network/docker_expose_publish_port.rst.txt" rel="nofollow"> 查看页面源码</a>
       </li>
   </ul>
   <hr/>
@@ -164,12 +175,12 @@
            <div itemprop="articleBody">
              
   <section id="dockerexposepublish">
-<span id="docker-expose-publish-port"></span><h1>Docker的expose和publish端口差异和关系<a class="headerlink" href="#dockerexposepublish" title="Link to this heading">¶</a></h1>
+<span id="docker-expose-publish-port"></span><h1>Docker的expose和publish端口差异和关系<a class="headerlink" href="#dockerexposepublish" title="Link to this heading"></a></h1>
 <section id="dockerfileexpose">
-<h2>Dockerfile中的EXPOSE指令<a class="headerlink" href="#dockerfileexpose" title="Link to this heading">¶</a></h2>
+<h2>Dockerfile中的EXPOSE指令<a class="headerlink" href="#dockerfileexpose" title="Link to this heading"></a></h2>
 <p>在配置 <a class="reference internal" href="../admin/dockerfile.html#dockerfile"><span class="std std-ref">从Dockerfile构建Docker镜像</span></a> 时候，你会注意到Dockerfile中往往会有一行配置了容器 <code class="docutils literal notranslate"><span class="pre">EXPOSE</span></code> 端口的配置，例如:</p>
-<div class="literal-block-wrapper docutils container" id="id6">
-<div class="code-block-caption"><span class="caption-text">alpine构建运行node的容器Dockerfile</span><a class="headerlink" href="#id6" title="Link to this code">¶</a></div>
+<div class="literal-block-wrapper docutils container" id="id7">
+<div class="code-block-caption"><span class="caption-text">alpine构建运行node的容器Dockerfile</span><a class="headerlink" href="#id7" title="Link to this code"></a></div>
 <div class="highlight-dockerfile notranslate"><div class="highlight"><pre><span></span><span class="k">FROM</span><span class="w"> </span><span class="s">alpine:latest</span>
 <span class="k">RUN</span><span class="w"> </span>apk<span class="w"> </span>update<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>apk<span class="w"> </span>upgrade
 <span class="k">RUN</span><span class="w"> </span>apk<span class="w"> </span>add<span class="w"> </span>--no-cache<span class="w"> </span>nodejs<span class="w"> </span>npm
@@ -184,10 +195,10 @@
 </pre></div>
 </div>
 </div>
-<p>这里我的案例是 <a class="reference internal" href="../../linux/alpine_linux/alpine_dev.html#alpine-dev"><span class="std std-ref">Alpine Linux软件开发环境构建</span></a> 时一个运行 <a class="reference internal" href="../../nodejs/index.html#nodejs"><span class="std std-ref">Node.js Atlas</span></a> 的容器，采用Node.js官方指导文档 <a class="reference external" href="https://nodejs.org/en/docs/guides/getting-started-guide/">How do I start with Node.js after I installed it?</a> 中的Hello World代码 <code class="docutils literal notranslate"><span class="pre">app.js</span></code> :</p>
+<p>这里我的案例是 <a class="reference internal" href="../../linux/alpine_linux/alpine_dev.html#alpine-dev"><span class="std std-ref">Alpine Linux软件开发环境构建</span></a> 时一个运行 <a class="reference internal" href="../../nodejs/index.html#nodejs"><span class="std std-ref">Node.js</span></a> 的容器，采用Node.js官方指导文档 <a class="reference external" href="https://nodejs.org/en/docs/guides/getting-started-guide/">How do I start with Node.js after I installed it?</a> 中的Hello World代码 <code class="docutils literal notranslate"><span class="pre">app.js</span></code> :</p>
 <blockquote>
-<div><div class="literal-block-wrapper docutils container" id="id7">
-<div class="code-block-caption"><span class="caption-text">nodejs Hello World (绑定127.0.0.1)</span><a class="headerlink" href="#id7" title="Link to this code">¶</a></div>
+<div><div class="literal-block-wrapper docutils container" id="id8">
+<div class="code-block-caption"><span class="caption-text">nodejs Hello World (绑定127.0.0.1)</span><a class="headerlink" href="#id8" title="Link to this code"></a></div>
 <div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">const</span><span class="w"> </span><span class="nx">http</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">require</span><span class="p">(</span><span class="s1">&#39;http&#39;</span><span class="p">);</span>
 
 <span class="kd">const</span><span class="w"> </span><span class="nx">hostname</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;127.0.0.1&#39;</span><span class="p">;</span>
@@ -225,9 +236,92 @@
 </pre></div>
 </div>
 <p>可以看到完全是空的，也就是在外部无法访问容器内部端口</p>
+<section id="expose">
+<h3>多端口EXPOSE<a class="headerlink" href="#expose" title="Link to this heading"></a></h3>
+<p>在部署我的开发测试环境，我采用 <a class="reference internal" href="../../linux/gentoo_linux/gentoo_on_gentoo.html#gentoo-on-gentoo"><span class="std std-ref">在Gentoo上运行Gentoo(容器)</span></a> 方式运行 <a class="reference internal" href="../images/gentoo_image.html#gentoo-image"><span class="std std-ref">Gentoo镜像</span></a> 容器，默认情况下，我希望我的开发测试服务器能够对外输出常用的端口。 <code class="docutils literal notranslate"><span class="pre">Dockerfile</span></code> 支持同时输出多个端口，案例采用 <code class="docutils literal notranslate"><span class="pre">gentoo-dev</span></code> 镜像:</p>
+<div class="literal-block-wrapper docutils container" id="id9">
+<div class="code-block-caption"><span class="caption-text">在 <code class="docutils literal notranslate"><span class="pre">gentoo-dev</span></code> 上输出多个常用端口</span><a class="headerlink" href="#id9" title="Link to this code"></a></div>
+<div class="highlight-dockerfile notranslate"><div class="highlight"><pre><span></span><span class="c"># name the portage image</span>
+<span class="k">FROM</span><span class="w"> </span><span class="s">gentoo/portage:latest</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="s">portage</span>
+
+<span class="c"># based on stage3 image</span>
+<span class="k">FROM</span><span class="w"> </span><span class="s">gentoo/stage3:latest</span>
+
+<span class="c"># copy the entire portage volume in</span>
+<span class="k">COPY</span><span class="w"> </span>--from<span class="o">=</span>portage<span class="w"> </span>/var/db/repos/gentoo<span class="w"> </span>/var/db/repos/gentoo
+
+<span class="c"># config make.conf:  use chinese mirror</span>
+<span class="k">RUN</span><span class="w"> </span><span class="nb">echo</span><span class="w"> </span><span class="s1">&#39;GENTOO_MIRRORS=&quot;http://mirrors.aliyun.com/gentoo http://distfiles.gentoo.org http://www.ibiblio.org/pub/Linux/distributions/gentoo&quot;&#39;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>/etc/portage/make.conf
+<span class="k">RUN</span><span class="w"> </span>sed<span class="w"> </span>-i<span class="w"> </span><span class="s1">&#39;s/\-O2 \-pipe/\-march=native \-O2 \-pipe/g&#39;</span><span class="w"> </span>/etc/portage/make.conf
+
+<span class="c"># config gentoo.conf: use chinese repos</span>
+<span class="k">RUN</span><span class="w"> </span>mkdir<span class="w"> </span>/etc/portage/repos.conf
+<span class="k">RUN</span><span class="w"> </span>cp<span class="w"> </span>/usr/share/portage/config/repos.conf<span class="w"> </span>/etc/portage/repos.conf/gentoo.conf
+<span class="k">RUN</span><span class="w"> </span>sed<span class="w"> </span>-i<span class="w"> </span><span class="s1">&#39;s/rsync.gentoo.org/rsync.cn.gentoo.org/g&#39;</span><span class="w"> </span>/etc/portage/repos.conf/gentoo.conf
+
+<span class="c"># timezone</span>
+<span class="k">RUN</span><span class="w"> </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Asia/Shanghai&quot;</span><span class="w"> </span>&gt;<span class="w"> </span>/etc/timezone
+<span class="k">RUN</span><span class="w"> </span>emerge<span class="w"> </span>--config<span class="w"> </span>sys-libs/timezone-data
+
+<span class="c"># sync</span>
+<span class="k">RUN</span><span class="w"> </span>emaint<span class="w"> </span>-a<span class="w"> </span>sync
+
+<span class="c"># USE for cpu</span>
+<span class="k">RUN</span><span class="w"> </span>emerge<span class="w"> </span>-qv<span class="w"> </span>app-portage/cpuid2cpuflags
+<span class="k">RUN</span><span class="w"> </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;*/* </span><span class="k">$(</span>cpuid2cpuflags<span class="k">)</span><span class="s2">&quot;</span><span class="w"> </span>&gt;<span class="w"> </span>/etc/portage/package.use/00cpu-flags
+
+<span class="c"># upgrade: emerge quiet (-q)</span>
+<span class="k">RUN</span><span class="w"> </span>emerge<span class="w"> </span>-qvuDN<span class="w"> </span>@world
+
+<span class="c"># continue with image build ...</span>
+<span class="k">RUN</span><span class="w"> </span>emerge<span class="w"> </span>-qv<span class="w"> </span>sys-apps/openrc
+<span class="k">RUN</span><span class="w"> </span>emerge<span class="w"> </span>-qv<span class="w"> </span>sys-apps/mlocate
+<span class="k">RUN</span><span class="w"> </span>emerge<span class="w"> </span>-qv<span class="w"> </span>net-dns/bind-tools
+<span class="k">RUN</span><span class="w"> </span>emerge<span class="w"> </span>-qv<span class="w"> </span>net-analyzer/netcat
+<span class="k">RUN</span><span class="w"> </span>emerge<span class="w"> </span>-qv<span class="w"> </span>app-editors/neovim
+<span class="k">RUN</span><span class="w"> </span>emerge<span class="w"> </span>-qv<span class="w"> </span>app-admin/sudo
+<span class="k">RUN</span><span class="w"> </span>emerge<span class="w"> </span>-qv<span class="w"> </span>app-misc/tmux
+
+<span class="c"># sshd</span>
+<span class="k">RUN</span><span class="w"> </span>rc-update<span class="w"> </span>add<span class="w"> </span>sshd<span class="w"> </span>default
+
+<span class="c"># add account &quot;admin&quot; and give sudo privilege</span>
+<span class="k">RUN</span><span class="w"> </span>groupadd<span class="w"> </span>-g<span class="w"> </span><span class="m">1001</span><span class="w"> </span>admin
+<span class="k">RUN</span><span class="w"> </span>useradd<span class="w"> </span>-g<span class="w"> </span><span class="m">1001</span><span class="w"> </span>-u<span class="w"> </span><span class="m">1001</span><span class="w"> </span>-d<span class="w"> </span>/home/admin<span class="w"> </span>-m<span class="w"> </span>admin
+<span class="k">RUN</span><span class="w"> </span>usermod<span class="w"> </span>-aG<span class="w"> </span>wheel<span class="w"> </span>admin
+<span class="k">RUN</span><span class="w"> </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;%wheel        ALL=(ALL)       NOPASSWD: ALL&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>/etc/sudoers
+
+<span class="c"># Add ssh public key for login</span>
+<span class="k">RUN</span><span class="w"> </span>mkdir<span class="w"> </span>-p<span class="w"> </span>/home/admin/.ssh
+<span class="k">COPY</span><span class="w"> </span>authorized_keys<span class="w"> </span>/home/admin/.ssh/authorized_keys
+<span class="k">RUN</span><span class="w"> </span>chown<span class="w"> </span>-R<span class="w"> </span>admin:admin<span class="w"> </span>/home/admin/.ssh
+<span class="k">RUN</span><span class="w"> </span>chmod<span class="w"> </span><span class="m">600</span><span class="w"> </span>/home/admin/.ssh/authorized_keys
+<span class="k">RUN</span><span class="w"> </span>chmod<span class="w"> </span><span class="m">700</span><span class="w"> </span>/home/admin/.ssh
+
+<span class="c"># 墙内RVM安装需要梯子，在Dockerfile中注入代理配置</span>
+<span class="c">#ENV HTTP_PROXY &quot;http://192.168.6.200:3128&quot;</span>
+<span class="c">#ENV HTTPS_PROXY &quot;http://192.168.6.200:3128&quot;</span>
+<span class="c">#ENV NO_PROXY &quot;*.baidu.com,.taobao.com&quot;</span>
+
+<span class="c"># Ruby Rails (master)</span>
+<span class="k">RUN</span><span class="w"> </span>gpg2<span class="w"> </span>--keyserver<span class="w"> </span>keyserver.ubuntu.com<span class="w"> </span>--recv-keys<span class="w"> </span>409B6B1796C275462A1703113804BB82D39DC0E3<span class="w"> </span>7D2BAF1CF37B13E2069D6956105BD0E739499BDB
+<span class="k">RUN</span><span class="w"> </span>curl<span class="w"> </span>-sSL<span class="w"> </span>https://get.rvm.io<span class="w"> </span><span class="p">|</span><span class="w"> </span>bash<span class="w"> </span>-s<span class="w"> </span>master<span class="w"> </span>--rails
+
+<span class="hll"><span class="c"># expose ssh/http/https AND some dev ports</span>
+</span><span class="hll"><span class="k">EXPOSE</span><span class="w"> </span><span class="s">22</span>
+</span><span class="hll"><span class="k">EXPOSE</span><span class="w"> </span><span class="s">80</span>
+</span><span class="k">EXPOSE</span><span class="w"> </span><span class="s">443</span>
+<span class="c">#EXPOSE 3000</span>
+<span class="c">#EXPOSE 8000</span>
+
+<span class="k">CMD</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;/sbin/init&quot;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</section>
 </section>
 <section id="exposepublish">
-<h2>EXPOSE和PUBLISH<a class="headerlink" href="#exposepublish" title="Link to this heading">¶</a></h2>
+<h2>EXPOSE和PUBLISH<a class="headerlink" href="#exposepublish" title="Link to this heading"></a></h2>
 <p>在Docker的概念中， <code class="docutils literal notranslate"><span class="pre">EXPOSE</span></code> 和 <code class="docutils literal notranslate"><span class="pre">PUBLISH</span></code> 是两个不同但是又有关联的概念:</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">EXPOSE</span></code> 端口只是在 <a class="reference internal" href="../admin/dockerfile.html#dockerfile"><span class="std std-ref">从Dockerfile构建Docker镜像</span></a> 的 <code class="docutils literal notranslate"><span class="pre">metadata</span></code> 中定义了暴露端口</p></li>
@@ -261,7 +355,7 @@
 <p>这样用户在启动容器时候就可以配置相应的 <code class="docutils literal notranslate"><span class="pre">PUBLISH</span></code> 端口了，见下文。</p>
 </section>
 <section id="publish">
-<h2>PUBLISH端口<a class="headerlink" href="#publish" title="Link to this heading">¶</a></h2>
+<h2>PUBLISH端口<a class="headerlink" href="#publish" title="Link to this heading"></a></h2>
 <p>既然 <code class="docutils literal notranslate"><span class="pre">EXPOSE</span></code> 端口只是定义可暴露端口而并没有输出端口，我们就需要在 <code class="docutils literal notranslate"><span class="pre">docker</span> <span class="pre">run</span></code> 命令中 <code class="docutils literal notranslate"><span class="pre">显式</span></code> 地 <code class="docutils literal notranslate"><span class="pre">PUBLISH</span></code> (发布)端口:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">docker</span> <span class="n">run</span> <span class="o">-</span><span class="n">itd</span> <span class="o">-</span><span class="n">p</span> <span class="mi">3000</span><span class="p">:</span><span class="mi">3000</span> <span class="n">alpine</span><span class="o">-</span><span class="n">node</span><span class="p">:</span><span class="n">latest</span>
 </pre></div>
@@ -282,7 +376,18 @@
 </div>
 </section>
 <section id="id1">
-<h2>PUBLISH <code class="docutils literal notranslate"><span class="pre">所有</span></code> 端口<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h2>
+<h2>PUBLISH 多个端口<a class="headerlink" href="#id1" title="Link to this heading"></a></h2>
+<p>结合多个 <code class="docutils literal notranslate"><span class="pre">-p</span></code> 参数来执行 <code class="docutils literal notranslate"><span class="pre">docker</span> <span class="pre">run</span></code> 可以向外发布容器的多个服务端口，同样以 <code class="docutils literal notranslate"><span class="pre">gentoo-dev</span></code> 为例:</p>
+<div class="literal-block-wrapper docutils container" id="id10">
+<div class="code-block-caption"><span class="caption-text">运行 <code class="docutils literal notranslate"><span class="pre">gentoo-dev</span></code> 容器 输出多个服务端口</span><a class="headerlink" href="#id10" title="Link to this code"></a></div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>docker<span class="w"> </span>run<span class="w"> </span>-dt<span class="w"> </span>-p<span class="w"> </span><span class="m">1122</span>:22<span class="w"> </span>-p<span class="w"> </span><span class="m">1180</span>:80<span class="w"> </span>-p<span class="w"> </span><span class="m">11443</span>:443<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>--name<span class="w"> </span>gentoo-dev<span class="w"> </span>--hostname<span class="w"> </span>gentoo-dev<span class="w"> </span>gentoo-dev
+</pre></div>
+</div>
+</div>
+</section>
+<section id="id2">
+<h2>PUBLISH <code class="docutils literal notranslate"><span class="pre">所有</span></code> 端口<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
 <p><code class="docutils literal notranslate"><span class="pre">docker</span></code> 运行时候还提供了一个 <code class="docutils literal notranslate"><span class="pre">--publish-all</span></code> 参数，也就是 <code class="docutils literal notranslate"><span class="pre">-P</span></code> (大写)，会将Dockerfile中所有 <code class="docutils literal notranslate"><span class="pre">EXPOSE</span></code> 列出的端口全部 <code class="docutils literal notranslate"><span class="pre">PUBLISH</span></code> 出去:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">docker</span> <span class="n">run</span> <span class="o">-</span><span class="n">itd</span> <span class="o">-</span><span class="n">P</span> <span class="n">alpine</span><span class="o">-</span><span class="n">node</span><span class="p">:</span><span class="n">latest</span>
 </pre></div>
@@ -294,8 +399,8 @@
 </div>
 <p>虽然非常简单，但是有一个问题，就是在 <code class="docutils literal notranslate"><span class="pre">host</span></code> 主机上输出的端口是随机的，对于测试工作来说比较方便，但是如果是对外提供稳定服务则显然不受控制。</p>
 </section>
-<section id="id2">
-<h2>使用端口范围<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
+<section id="id3">
+<h2>使用端口范围<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
 <p>有时候容器内部需要 <code class="docutils literal notranslate"><span class="pre">EXPOSE</span></code> 一个端口范围:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">EXPOSE</span> <span class="mi">8000</span><span class="o">-</span><span class="mi">8100</span>
 </pre></div>
@@ -306,8 +411,8 @@
 </div>
 <p>当然也可以使用 <code class="docutils literal notranslate"><span class="pre">docker</span> <span class="pre">run</span> <span class="pre">--publish-all</span></code> 把这100个端口直接输出，只不过物理主机上随机100个端口监听管理起来非常不方便。</p>
 </section>
-<section id="id3">
-<h2>什么时候不需要 <code class="docutils literal notranslate"><span class="pre">PUBLISH</span></code> 端口<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h2>
+<section id="id4">
+<h2>什么时候不需要 <code class="docutils literal notranslate"><span class="pre">PUBLISH</span></code> 端口<a class="headerlink" href="#id4" title="Link to this heading"></a></h2>
 <p>如果你的容器只是在 <code class="docutils literal notranslate"><span class="pre">host</span></code> 物理主机内部做一个开发环境，并不对外通讯，你可以创建一个独立的内部网络，然后将这些容器连接到这个独立网络，而不会对外暴露(安全性):</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">docker</span> <span class="n">network</span> <span class="n">create</span> <span class="n">demo</span><span class="o">-</span><span class="n">network</span>
 <span class="n">docker</span> <span class="n">run</span> <span class="o">-</span><span class="n">d</span> <span class="o">--</span><span class="n">network</span> <span class="n">demo</span><span class="o">-</span><span class="n">network</span> <span class="o">--</span><span class="n">name</span> <span class="n">web</span> <span class="n">web</span><span class="p">:</span><span class="n">latest</span>
@@ -315,8 +420,8 @@
 </pre></div>
 </div>
 </section>
-<section id="id4">
-<h2>且慢，真的能访问容器内部的 <code class="docutils literal notranslate"><span class="pre">3000</span></code> 端口服务了吗?<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h2>
+<section id="id5">
+<h2>且慢，真的能访问容器内部的 <code class="docutils literal notranslate"><span class="pre">3000</span></code> 端口服务了吗?<a class="headerlink" href="#id5" title="Link to this heading"></a></h2>
 <p>如果你完全参考我上文的案例，并使用 <code class="docutils literal notranslate"><span class="pre">EXPOSE</span> <span class="pre">3000</span></code> 结合 <code class="docutils literal notranslate"><span class="pre">docker</span> <span class="pre">run</span> <span class="pre">-p</span> <span class="pre">3000:3000</span> <span class="pre">alpine-node:latest</span></code> 来运行Nodes.js案例程序，你会惊讶地发现，依然无法访问应用界面的 <code class="docutils literal notranslate"><span class="pre">Hellow</span> <span class="pre">World</span></code> ，原因就是 <code class="docutils literal notranslate"><span class="pre">app-localhost.js</span></code> 使用了:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">const</span> <span class="n">hostname</span> <span class="o">=</span> <span class="s1">&#39;127.0.0.1&#39;</span><span class="p">;</span>
 </pre></div>
@@ -327,8 +432,8 @@
 </figure>
 <p>解决方法是修改 <code class="docutils literal notranslate"><span class="pre">app.js</span></code> 监听 <code class="docutils literal notranslate"><span class="pre">0.0.0.0</span></code> ，如下:</p>
 <blockquote>
-<div><div class="literal-block-wrapper docutils container" id="id8">
-<div class="code-block-caption"><span class="caption-text">nodejs Hello World (绑定0.0.0.0)</span><a class="headerlink" href="#id8" title="Link to this code">¶</a></div>
+<div><div class="literal-block-wrapper docutils container" id="id11">
+<div class="code-block-caption"><span class="caption-text">nodejs Hello World (绑定0.0.0.0)</span><a class="headerlink" href="#id11" title="Link to this code"></a></div>
 <div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">const</span><span class="w"> </span><span class="nx">http</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">require</span><span class="p">(</span><span class="s1">&#39;http&#39;</span><span class="p">);</span>
 
 <span class="c1">//const hostname = &#39;127.0.0.1&#39;;</span>
@@ -354,11 +459,13 @@
 <a class="reference internal image-reference" href="../../_images/container_all_interfaces.png"><img alt="../../_images/container_all_interfaces.png" src="../../_images/container_all_interfaces.png" style="width: 650.0px; height: 460.0px;" /></a>
 </figure>
 </section>
-<section id="id5">
-<h2>参考<a class="headerlink" href="#id5" title="Link to this heading">¶</a></h2>
+<section id="id6">
+<h2>参考<a class="headerlink" href="#id6" title="Link to this heading"></a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="https://www.cloudsavvyit.com/14880/whats-the-difference-between-exposing-and-publishing-a-docker-port/">What’s the Difference Between Exposing and Publishing a Docker Port?</a></p></li>
 <li><p><a class="reference external" href="https://pythonspeed.com/articles/docker-connection-refused/">Connection refused? Docker networking and how it impacts your image</a></p></li>
+<li><p><a class="reference external" href="https://we-are.bookmyshow.com/understanding-expose-in-dockerfile-266938b6a33d">Understanding “EXPOSE” in Dockerfile</a></p></li>
+<li><p><a class="reference external" href="https://stackoverflow.com/questions/20845056/how-can-i-expose-more-than-1-port-with-docker">How can I expose more than 1 port with Docker?</a></p></li>
 </ul>
 </section>
 </section>
@@ -366,25 +473,37 @@
 
            </div>
           </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="docker_proxy.html" class="btn btn-neutral float-left" title="配置Docker使用代理" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="../gpu/index.html" class="btn btn-neutral float-right" title="Docker GPU设备" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="docker_proxy_quickstart.html" class="btn btn-neutral float-left" title="Docker 代理快速起步" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="../gpu/index.html" class="btn btn-neutral float-right" title="Docker GPU设备" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../copyright.html">Copyright</a> 2018 - now, Huatai Huang.</p>
+    <p>&#169; <a href="../../copyright.html">版权所有</a> 2018 - now, Huatai Huang。</p>
   </div>
 
-  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
   
     <!-- your html code here -->
     <br>
-    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡</a></p>
-     
+    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡 👈</a></p>
+    <br>
+    <p>网站采用 <a href="https://utteranc.es/">utterances</a> 评论系统，所有评论存储在<a href="https://github.com/huataihuang/cloud-atlas/issues">GitHub issues</a> 中，如果你看不到下方的评论框，那么可能需要<a href="https://cloud-atlas.readthedocs.io/zh-cn/latest/linux/security/vpn/index.html">自备梯子</a> 👈</p>
+    <div class="articleComments">
+        <comments>
+  <script src="https://utteranc.es/client.js"
+    repo="huataihuang/cloud-atlas"
+    issue-term="pathname"
+    theme="github-light"
+    crossorigin="anonymous"
+    async>
+  </script>
+</comments>
+    </div>
 
 
 </footer>

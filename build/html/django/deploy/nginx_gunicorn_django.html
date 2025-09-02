@@ -1,21 +1,25 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh" data-content_root="../../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>使用Nginx和Gunicorn运行Django &mdash; Cloud Atlas 0.1 文档</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+  <title>使用Nginx和Gunicorn运行Django &mdash; Cloud Atlas: Discovery beta 文档</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=fd3f3429" />
+
+  
+    <link rel="shortcut icon" href="../../_static/favicon.png"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="../../_static/documentation_options.js?v=7c91f8fd"></script>
-        <script src="../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=8534f863"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
         <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
-        <script src="../../_static/translations.js?v=beaddf03"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../../genindex.html" />
     <link rel="search" title="搜索" href="../../search.html" />
@@ -33,52 +37,73 @@
           
           
           <a href="../../index.html" class="icon icon-home">
-            Cloud Atlas
+            Cloud Atlas: Discovery
           </a>
+              <div class="version">
+                1.1
+              </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../studio/index.html">Studio Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../infrastructure/index.html">Infrastructure Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../devops/index.html">DevOps Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kvm/index.html">KVM Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../ceph/index.html">Ceph Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../gluster/index.html">Gluster Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../ovirt/index.html">oVirt Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../openstack/index.html">OpenStack Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../docker/index.html">Docker Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kubernetes/index.html">Kubernetes Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kubernetes_from_scratch/index.html">Kubernetes From Scratch (KFS) Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../rancher/index.html">Rancher Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../openshift/index.html">OpenShift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../sql/index.html">SQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../sqlite/index.html">SQLite Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../mysql/index.html">MySQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../pgsql/index.html">PostgreSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../clickhouse/index.html">ClickHouse Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../nosql/index.html">NoSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../redis/index.html">Redis Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../network/index.html">Network Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../infra_service/index.html">Infra-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../infra_search/index.html">Search Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../info_service/index.html">Info-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../web/index.html">Web Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../big_data/index.html">Big Data Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../machine_learning/index.html">Machine Learning Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../linux/index.html">Linux Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kernel/index.html">Kernel Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../performance/index.html">Performance Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../distributed_system/index.html">Distributed System Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../shell/index.html">Shell Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../python/index.html">Python Atlas</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Django Atlas</a><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../studio/index.html">Studio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../infrastructure/index.html">Infrastructure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../devops/index.html">DevOps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kvm/index.html">KVM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ceph/index.html">Ceph</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../gluster/index.html">Gluster</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ovirt/index.html">oVirt</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../openstack/index.html">OpenStack</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../docker/index.html">Docker</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kubernetes/index.html">Kubernetes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../k8s_dev/index.html">Kubernetes Develop</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../rancher/index.html">Rancher</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../openshift/index.html">OpenShift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../sql/index.html">SQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../sqlite/index.html">SQLite</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../mysql/index.html">MySQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../pgsql/index.html">PostgreSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../nosql/index.html">NoSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../network/index.html">Network</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../infra_service/index.html">Infra-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../infra_search/index.html">Infra-Search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../web/index.html">Web</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../info_service/index.html">Info-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../big_data/index.html">Big Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../machine_learning/index.html">Machine Learning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../drone/index.html">Drone</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../linux/index.html">Linux</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kernel/index.html">Kernel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../performance/index.html">Performance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../distributed_system/index.html">Distributed System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../shell/index.html">Shell</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../python/index.html">Python</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../python/intro_python.html">Python简介</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../python/startup/index.html">Python起步</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../python/os/index.html">Python os 模块</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../python/dictionary/index.html">Python 字典(dictionary)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../python/network/index.html">Python网络编程</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../python/database/index.html">Python数据库编程</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../python/web/index.html">Python Web开发</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="../../python/web/index.html#id2">线路</a><ul class="current">
+<li class="toctree-l4 current"><a class="reference internal" href="../index.html">Django</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../python/web/flask/index.html">Flask</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../python/gui/index.html">Python图形用户界面(gui)编程</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../python/deploy/index.html">Python应用部署</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../python/regular_exresssions.html">正则表达式(regular expressions)</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Django</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../startup/index.html">Django 起步</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="index.html">Django 部署</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="uwsgi_vs_gunicorn.html">运行Django - uWSGI vs. Gunicorn</a></li>
@@ -97,22 +122,24 @@
 <li class="toctree-l2"><a class="reference internal" href="../rest_framework/index.html">Django REST framework(DRF)</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../flask/index.html">Flask Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../javascript/index.html">JavaScript Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../nodejs/index.html">Node.js Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../clang/index.html">C Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../golang/index.html">Go Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../swift/index.html">Swift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../rust/index.html">Rust Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../ruby/index.html">Ruby Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../arm/index.html">ARM Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../android/index.html">Android Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../bsd/index.html">BSD Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../apple/index.html">Apple Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../windows/index.html">Windows Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../real/index.html">Real Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../management/index.html">Management Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../life/index.html">Life Atlas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../javascript/index.html">JavaScript</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../nodejs/index.html">Node.js</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../clang/index.html">C</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../golang/index.html">Go</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../swift/index.html">Swift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../rust/index.html">Rust</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ruby/index.html">Ruby</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lua/index.html">Lua</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../arm/index.html">ARM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../raspberry_pi/index.html">Raspberry Pi</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../android/index.html">Android</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../bsd/index.html">BSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../freebsd/index.html">FreeBSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../apple/index.html">Apple</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../windows/index.html">Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../real/index.html">Real</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../management/index.html">Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../life/index.html">Life</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../copyright.html">Copyright</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../aboutme.html">关于作者</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../donate.html">捐赠</a></li>
@@ -125,21 +152,23 @@
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../index.html">Cloud Atlas</a>
+          <a href="../../index.html">Cloud Atlas: Discovery</a>
       </nav>
 
       <div class="wy-nav-content">
         <div class="rst-content">
-          <div role="navigation" aria-label="Page navigation">
+          <div role="navigation" aria-label="页面导航">
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
-          <li class="breadcrumb-item"><a href="../index.html">Django Atlas</a></li>
+          <li class="breadcrumb-item"><a href="../../python/index.html">Python</a></li>
+          <li class="breadcrumb-item"><a href="../../python/web/index.html">Python Web开发</a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Django</a></li>
           <li class="breadcrumb-item"><a href="index.html">Django 部署</a></li>
       <li class="breadcrumb-item active">使用Nginx和Gunicorn运行Django</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../../_sources/django/deploy/nginx_gunicorn_django.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../_sources/django/deploy/nginx_gunicorn_django.rst.txt" rel="nofollow"> 查看页面源码</a>
       </li>
   </ul>
   <hr/>
@@ -148,18 +177,18 @@
            <div itemprop="articleBody">
              
   <section id="nginxgunicorndjango">
-<span id="nginx-gunicorn-django"></span><h1>使用Nginx和Gunicorn运行Django<a class="headerlink" href="#nginxgunicorndjango" title="Link to this heading">¶</a></h1>
+<span id="nginx-gunicorn-django"></span><h1>使用Nginx和Gunicorn运行Django<a class="headerlink" href="#nginxgunicorndjango" title="Link to this heading"></a></h1>
 <p>虽然 <a class="reference internal" href="../startup/run_django.html#run-django"><span class="std std-ref">运行Django</span></a> 非常简单，能够快速完成开发工作。但是对于生产环境，显然不能仅仅使用Django运行在8000端口对外提供服务，因为Django内建的简单的开发服务器仅适合本地测试代码，在生产环境需要更为安全和强大的WEB服务器。</p>
 <p><a class="reference external" href="https://gunicorn.org/">Gunicom</a> ( <code class="docutils literal notranslate"><span class="pre">Green</span> <span class="pre">Unicorn</span></code> ) 是一个纯Python WSGI，可以通过 <code class="docutils literal notranslate"><span class="pre">pip</span></code> 安装，结合 Nginx反向代理，可以提供安全和高性能的WEB服务。</p>
 <section id="gunicorn">
-<h2>安装Gunicorn<a class="headerlink" href="#gunicorn" title="Link to this heading">¶</a></h2>
+<h2>安装Gunicorn<a class="headerlink" href="#gunicorn" title="Link to this heading"></a></h2>
 <p>Gunicorn是一个纯Python程序，安装通过 <code class="docutils literal notranslate"><span class="pre">pip</span></code> 非常简单:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="o">-</span><span class="n">m</span> <span class="n">pip</span> <span class="n">install</span> <span class="n">gunicorn</span>
 </pre></div>
 </div>
 </section>
 <section id="wsgigunicorndjango">
-<h2>作为通用WSGI应用在Gunicorn中运行Django<a class="headerlink" href="#wsgigunicorndjango" title="Link to this heading">¶</a></h2>
+<h2>作为通用WSGI应用在Gunicorn中运行Django<a class="headerlink" href="#wsgigunicorndjango" title="Link to this heading"></a></h2>
 <ul>
 <li><p><code class="docutils literal notranslate"><span class="pre">gunicorn</span></code> 命令可以启动 Gunicorn服务集成，最简单的就是在项目目录下以项目名称运行:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">gunicorn</span> <span class="n">myproject</span><span class="o">.</span><span class="n">wsgi</span>
@@ -192,13 +221,13 @@
 </ul>
 </section>
 <section id="systemdgunicorn">
-<h2>配置systemd运行gunicorn<a class="headerlink" href="#systemdgunicorn" title="Link to this heading">¶</a></h2>
+<h2>配置systemd运行gunicorn<a class="headerlink" href="#systemdgunicorn" title="Link to this heading"></a></h2>
 <p>为了方便运行 gunicorn ，最好是配置 systemd 这样的进程管理器来实现服务起停。</p>
 <ul class="simple">
 <li><p>创建 <code class="docutils literal notranslate"><span class="pre">/etc/systemd/system/gunicorn.socket</span></code></p></li>
 </ul>
 <div class="literal-block-wrapper docutils container" id="id2">
-<div class="code-block-caption"><span class="caption-text">nginx_gunicorn_django/gunicorn.socket</span><a class="headerlink" href="#id2" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">nginx_gunicorn_django/gunicorn.socket</span><a class="headerlink" href="#id2" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="o">[</span>Unit<span class="o">]</span>
 <span class="linenos">2</span><span class="nv">Description</span><span class="o">=</span>gunicorn<span class="w"> </span>socket
 <span class="linenos">3</span>
@@ -214,7 +243,7 @@
 <li><p>创建 <code class="docutils literal notranslate"><span class="pre">/etc/systemd/system/gunicorn.service</span></code></p></li>
 </ul>
 <div class="literal-block-wrapper docutils container" id="id3">
-<div class="code-block-caption"><span class="caption-text">nginx_gunicorn_django/gunicorn.service</span><a class="headerlink" href="#id3" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">nginx_gunicorn_django/gunicorn.service</span><a class="headerlink" href="#id3" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="o">[</span>Unit<span class="o">]</span>
 <span class="linenos"> 2</span><span class="nv">Description</span><span class="o">=</span>gunicorn<span class="w"> </span>daemon
 <span class="linenos"> 3</span><span class="nv">Requires</span><span class="o">=</span>gunicorn.socket
@@ -263,7 +292,7 @@
 </ul>
 </section>
 <section id="nginxgunicorn">
-<h2>配置Nginx反向代理到Gunicorn<a class="headerlink" href="#nginxgunicorn" title="Link to this heading">¶</a></h2>
+<h2>配置Nginx反向代理到Gunicorn<a class="headerlink" href="#nginxgunicorn" title="Link to this heading"></a></h2>
 <ul>
 <li><p>在CentOS 7上安装Nginx需要先安装EPEL:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">yum</span> <span class="n">install</span> <span class="n">epel</span><span class="o">-</span><span class="n">release</span>
@@ -278,7 +307,7 @@
 <li><p>检查 <code class="docutils literal notranslate"><span class="pre">/etc/nginx/nginx.conf</span></code> 查看配置默认会包含哪些配置目录，有的配置版本是包含 <code class="docutils literal notranslate"><span class="pre">/etc/nginx/sites-available/</span></code> ，有的则是包含 <code class="docutils literal notranslate"><span class="pre">/etc/nginx/conf.d/</span></code> 目录。在配置目录下添加项目配置 <code class="docutils literal notranslate"><span class="pre">onesre-core.conf</span></code> (案例项目名)</p></li>
 </ul>
 <div class="literal-block-wrapper docutils container" id="id4">
-<div class="code-block-caption"><span class="caption-text">nginx_gunicorn_django/onesre-core.conf</span><a class="headerlink" href="#id4" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">nginx_gunicorn_django/onesre-core.conf</span><a class="headerlink" href="#id4" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span>server<span class="w"> </span><span class="o">{</span>
 <span class="linenos"> 2</span><span class="w">    </span>listen<span class="w"> </span><span class="m">80</span><span class="p">;</span>
 <span class="linenos"> 3</span><span class="w">    </span>server_name<span class="w"> </span>onesre.huatai.me<span class="p">;</span>
@@ -299,7 +328,7 @@
 </div>
 <p>上述配置中引用了 <code class="docutils literal notranslate"><span class="pre">proxy_params</span></code> 可能在某些早期版本nginx中没有包含，参考 <a class="reference external" href="https://www.vionblog.com/setup-nginx-reverse-proxy/">Setup nginx Reverse Proxy</a> :</p>
 <div class="literal-block-wrapper docutils container" id="id5">
-<div class="code-block-caption"><span class="caption-text">nginx_gunicorn_django/proxy_params</span><a class="headerlink" href="#id5" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">nginx_gunicorn_django/proxy_params</span><a class="headerlink" href="#id5" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span>proxy_set_header<span class="w"> </span>Host<span class="w"> </span><span class="nv">$host</span><span class="p">;</span>
 <span class="linenos"> 2</span>proxy_set_header<span class="w"> </span>X-Real-IP<span class="w"> </span><span class="nv">$remote_addr</span><span class="p">;</span>
 <span class="linenos"> 3</span>proxy_set_header<span class="w"> </span>X-Forwarded-For<span class="w"> </span><span class="nv">$proxy_add_x_forwarded_for</span><span class="p">;</span>
@@ -332,7 +361,7 @@
 </ul>
 </section>
 <section id="id1">
-<h2>参考<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h2>
+<h2>参考<a class="headerlink" href="#id1" title="Link to this heading"></a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="https://docs.djangoproject.com/en/3.1/howto/deployment/wsgi/gunicorn/">How to use Django with Gunicorn</a></p></li>
 <li><p><a class="reference external" href="https://www.digitalocean.com/community/tutorials/how-to-set-up-django-with-postgres-nginx-and-gunicorn-on-ubuntu-20-04">How To Set Up Django with Postgres, Nginx, and Gunicorn on Ubuntu 20.04</a></p></li>
@@ -344,25 +373,37 @@
 
            </div>
           </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="uwsgi_vs_gunicorn.html" class="btn btn-neutral float-left" title="运行Django - uWSGI vs. Gunicorn" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="nginx_uwsgi_django.html" class="btn btn-neutral float-right" title="使用Nginx和uWSGI运行Django" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="uwsgi_vs_gunicorn.html" class="btn btn-neutral float-left" title="运行Django - uWSGI vs. Gunicorn" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="nginx_uwsgi_django.html" class="btn btn-neutral float-right" title="使用Nginx和uWSGI运行Django" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../copyright.html">Copyright</a> 2018 - now, Huatai Huang.</p>
+    <p>&#169; <a href="../../copyright.html">版权所有</a> 2018 - now, Huatai Huang。</p>
   </div>
 
-  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
   
     <!-- your html code here -->
     <br>
-    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡</a></p>
-     
+    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡 👈</a></p>
+    <br>
+    <p>网站采用 <a href="https://utteranc.es/">utterances</a> 评论系统，所有评论存储在<a href="https://github.com/huataihuang/cloud-atlas/issues">GitHub issues</a> 中，如果你看不到下方的评论框，那么可能需要<a href="https://cloud-atlas.readthedocs.io/zh-cn/latest/linux/security/vpn/index.html">自备梯子</a> 👈</p>
+    <div class="articleComments">
+        <comments>
+  <script src="https://utteranc.es/client.js"
+    repo="huataihuang/cloud-atlas"
+    issue-term="pathname"
+    theme="github-light"
+    crossorigin="anonymous"
+    async>
+  </script>
+</comments>
+    </div>
 
 
 </footer>

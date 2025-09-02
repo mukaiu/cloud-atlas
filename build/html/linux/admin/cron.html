@@ -1,26 +1,30 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh" data-content_root="../../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cron定时运行 &mdash; Cloud Atlas 0.1 文档</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+  <title>Cron定时运行 &mdash; Cloud Atlas: Discovery beta 文档</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=fd3f3429" />
+
+  
+    <link rel="shortcut icon" href="../../_static/favicon.png"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="../../_static/documentation_options.js?v=7c91f8fd"></script>
-        <script src="../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=8534f863"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
         <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
-        <script src="../../_static/translations.js?v=beaddf03"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../../genindex.html" />
     <link rel="search" title="搜索" href="../../search.html" />
     <link rel="copyright" title="版权所有" href="../../copyright.html" />
-    <link rel="next" title="执行报错”fork failed: Resource temporarily unavailable”" href="os_fork_resource_unavailable.html" />
+    <link rel="next" title="执行报错&#34;fork failed: Resource temporarily unavailable&#34;" href="os_fork_resource_unavailable.html" />
     <link rel="prev" title="Linux swap" href="linux_swap.html" /> 
 </head>
 
@@ -33,61 +37,66 @@
           
           
           <a href="../../index.html" class="icon icon-home">
-            Cloud Atlas
+            Cloud Atlas: Discovery
           </a>
+              <div class="version">
+                1.1
+              </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../studio/index.html">Studio Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../infrastructure/index.html">Infrastructure Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../devops/index.html">DevOps Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kvm/index.html">KVM Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../ceph/index.html">Ceph Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../gluster/index.html">Gluster Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../ovirt/index.html">oVirt Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../openstack/index.html">OpenStack Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../docker/index.html">Docker Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kubernetes/index.html">Kubernetes Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kubernetes_from_scratch/index.html">Kubernetes From Scratch (KFS) Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../rancher/index.html">Rancher Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../openshift/index.html">OpenShift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../sql/index.html">SQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../sqlite/index.html">SQLite Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../mysql/index.html">MySQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../pgsql/index.html">PostgreSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../clickhouse/index.html">ClickHouse Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../nosql/index.html">NoSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../redis/index.html">Redis Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../network/index.html">Network Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../infra_service/index.html">Infra-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../infra_search/index.html">Search Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../info_service/index.html">Info-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../web/index.html">Web Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../big_data/index.html">Big Data Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../machine_learning/index.html">Machine Learning Atlas</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Linux Atlas</a><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../studio/index.html">Studio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../infrastructure/index.html">Infrastructure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../devops/index.html">DevOps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kvm/index.html">KVM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ceph/index.html">Ceph</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../gluster/index.html">Gluster</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ovirt/index.html">oVirt</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../openstack/index.html">OpenStack</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../docker/index.html">Docker</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kubernetes/index.html">Kubernetes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../k8s_dev/index.html">Kubernetes Develop</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../rancher/index.html">Rancher</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../openshift/index.html">OpenShift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../sql/index.html">SQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../sqlite/index.html">SQLite</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../mysql/index.html">MySQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../pgsql/index.html">PostgreSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../nosql/index.html">NoSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../network/index.html">Network</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../infra_service/index.html">Infra-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../infra_search/index.html">Infra-Search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../web/index.html">Web</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../info_service/index.html">Info-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../big_data/index.html">Big Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../machine_learning/index.html">Machine Learning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../drone/index.html">Drone</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Linux</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../best_linux.html">最佳Linux</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="index.html">Linux系统管理</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="linux_rename_user.html">Linux系统用户改名</a></li>
+<li class="toctree-l3"><a class="reference internal" href="btop.html">btop</a></li>
 <li class="toctree-l3"><a class="reference internal" href="locale_env.html">Linux环境的本地化配置</a></li>
 <li class="toctree-l3"><a class="reference internal" href="linux_swap.html">Linux swap</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Cron定时运行</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#crontab">使用crontab</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id4">限制cron访问</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id5">系统级别配置cron</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id4">在 <code class="docutils literal notranslate"><span class="pre">cron</span></code> 中切换用户身份运行脚本</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id5">限制cron访问</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id6">系统级别配置cron</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cron-d"><code class="docutils literal notranslate"><span class="pre">cron.d</span></code> 配置要点总结</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#anacron">anacron</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#etc-cron-d-xxxx">无法运行的 <code class="docutils literal notranslate"><span class="pre">/etc/cron.d/XXXX</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id8">参考</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id9">参考</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="os_fork_resource_unavailable.html">执行报错”fork failed: Resource temporarily unavailable”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="os_fork_resource_unavailable.html">执行报错&quot;fork failed: Resource temporarily unavailable&quot;</a></li>
 <li class="toctree-l3"><a class="reference internal" href="linux_backlight.html">Linux屏幕背光</a></li>
 <li class="toctree-l3"><a class="reference internal" href="linux_system_time.html">Linux系统时间</a></li>
 <li class="toctree-l3"><a class="reference internal" href="linux_file_descriptor.html">Linux文件描述符(文件句柄)</a></li>
@@ -99,15 +108,21 @@
 <li class="toctree-l2"><a class="reference internal" href="../arch_linux/index.html">Arch Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../asahi_linux/index.html">Asahi Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../gentoo_linux/index.html">Gentoo Linux</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../lfs_linux/index.html">LFS(Linux from scratch)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lfs/index.html">LFS(Linux from scratch)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../blfs/index.html">BLFS(Beyond Linux from scratch)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../alfs/index.html">ALFS(Automated Linux from scratch)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pilfs/index.html">PiLFS(Automated Linux from scratch on the Raspberry Pi)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../yocto/index.html">Yocto</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../debian/index.html">Debian</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ubuntu_linux/index.html">Ubuntu Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../suse_linux/index.html">SUSE Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../kali_linux/index.html">Kali Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../tails_linux/index.html">Tails Linux</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../qubes_os/index.html">Qubes OS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../postmarketos/index.html">postmarketOS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../container_os/index.html">容器化操作系统(Container OS)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../fedora_coreos/index.html">Fedora CoreOS容器操作系统</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../chromium_os/index.html">Chromium OS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chromeos/index.html">ChromeOS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../alpine_linux/index.html">Alpine Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../subgraph_os/index.html">Subgraph OS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../kaios/index.html">KaiOS - 世界第三手机操作系统</a></li>
@@ -120,28 +135,30 @@
 <li class="toctree-l2"><a class="reference internal" href="../linux_tablet/index.html">Linux平板</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../kernel/index.html">Kernel Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../performance/index.html">Performance Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../distributed_system/index.html">Distributed System Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../shell/index.html">Shell Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../python/index.html">Python Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../django/index.html">Django Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../flask/index.html">Flask Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../javascript/index.html">JavaScript Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../nodejs/index.html">Node.js Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../clang/index.html">C Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../golang/index.html">Go Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../swift/index.html">Swift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../rust/index.html">Rust Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../ruby/index.html">Ruby Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../arm/index.html">ARM Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../android/index.html">Android Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../bsd/index.html">BSD Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../apple/index.html">Apple Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../windows/index.html">Windows Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../real/index.html">Real Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../management/index.html">Management Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../life/index.html">Life Atlas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kernel/index.html">Kernel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../performance/index.html">Performance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../distributed_system/index.html">Distributed System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../shell/index.html">Shell</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../python/index.html">Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../django/index.html">Django</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../javascript/index.html">JavaScript</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../nodejs/index.html">Node.js</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../clang/index.html">C</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../golang/index.html">Go</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../swift/index.html">Swift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../rust/index.html">Rust</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ruby/index.html">Ruby</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lua/index.html">Lua</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../arm/index.html">ARM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../raspberry_pi/index.html">Raspberry Pi</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../android/index.html">Android</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../bsd/index.html">BSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../freebsd/index.html">FreeBSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../apple/index.html">Apple</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../windows/index.html">Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../real/index.html">Real</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../management/index.html">Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../life/index.html">Life</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../copyright.html">Copyright</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../aboutme.html">关于作者</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../donate.html">捐赠</a></li>
@@ -154,21 +171,21 @@
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../index.html">Cloud Atlas</a>
+          <a href="../../index.html">Cloud Atlas: Discovery</a>
       </nav>
 
       <div class="wy-nav-content">
         <div class="rst-content">
-          <div role="navigation" aria-label="Page navigation">
+          <div role="navigation" aria-label="页面导航">
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
-          <li class="breadcrumb-item"><a href="../index.html">Linux Atlas</a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Linux</a></li>
           <li class="breadcrumb-item"><a href="index.html">Linux系统管理</a></li>
       <li class="breadcrumb-item active">Cron定时运行</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../../_sources/linux/admin/cron.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../_sources/linux/admin/cron.rst.txt" rel="nofollow"> 查看页面源码</a>
       </li>
   </ul>
   <hr/>
@@ -177,7 +194,7 @@
            <div itemprop="articleBody">
              
   <section id="cron">
-<span id="id1"></span><h1>Cron定时运行<a class="headerlink" href="#cron" title="Link to this heading">¶</a></h1>
+<span id="id1"></span><h1>Cron定时运行<a class="headerlink" href="#cron" title="Link to this heading"></a></h1>
 <p>Unix/Linux系统的cron服务是一个非常重要的系统服务，提供了定时运行程序的能力。这样你可以不必人工运行程序，而让操作系统定时触发运行。</p>
 <div class="admonition note">
 <p class="admonition-title">备注</p>
@@ -191,9 +208,10 @@
 <li><p>定时系统监控数据采集</p></li>
 </ul>
 <p><code class="docutils literal notranslate"><span class="pre">cron</span></code> 作为定时任务配置服务，可以通过 <code class="docutils literal notranslate"><span class="pre">crontab</span></code> 进行交互式编辑，或者通过 <code class="docutils literal notranslate"><span class="pre">/etc/cron.d/</span></code> 目录下配置文件设置，此外 cron 服务还会检查 <code class="docutils literal notranslate"><span class="pre">/var/spool/cron</span></code> 目录下配置文件和 <code class="docutils literal notranslate"><span class="pre">/etc/anacrontab</span></code> 配置文件。</p>
-<p>独立用户的 <code class="docutils literal notranslate"><span class="pre">cron</span></code> 文件位于 <code class="docutils literal notranslate"><span class="pre">/var/spool/cron</span></code> 目录下配置文件；而系统服务和应用程序通常把cron任务配置存放在 <code class="docutils literal notranslate"><span class="pre">/etc/cron.d</span></code> 目录。至于 <code class="docutils literal notranslate"><span class="pre">/etc/anacrontab</span></code> 是一个特殊配置。</p>
+<p>独立用户的 <code class="docutils literal notranslate"><span class="pre">cron</span></code> 文件位于 <code class="docutils literal notranslate"><span class="pre">/var/spool/cron</span></code> 目录下配置文件，例如 <code class="docutils literal notranslate"><span class="pre">root</span></code> 用户的独立配置文件就是 <code class="docutils literal notranslate"><span class="pre">/var/spool/cron/crontabs/root</span></code></p>
+<p>而系统服务和应用程序通常把cron任务配置存放在 <code class="docutils literal notranslate"><span class="pre">/etc/cron.d</span></code> 目录。至于 <code class="docutils literal notranslate"><span class="pre">/etc/anacrontab</span></code> 是一个特殊配置。</p>
 <section id="crontab">
-<h2>使用crontab<a class="headerlink" href="#crontab" title="Link to this heading">¶</a></h2>
+<h2>使用crontab<a class="headerlink" href="#crontab" title="Link to this heading"></a></h2>
 <p>cron工具基于一个cron表格(cron table, <code class="docutils literal notranslate"><span class="pre">crontab</span></code>)指定的命令来运行程序。每个用户，包括系统 <code class="docutils literal notranslate"><span class="pre">root</span></code> 用户，都可以具备一个cron文件。这个cron文件默认并不存在，但是可以通过 <code class="docutils literal notranslate"><span class="pre">crontab</span> <span class="pre">-e</span></code> 命令在 <code class="docutils literal notranslate"><span class="pre">/var/spool/cron</span></code> 目录下创建，每个用户一个文件。</p>
 <p>举例， <code class="docutils literal notranslate"><span class="pre">huatai</span></code> 用户使用命令 <code class="docutils literal notranslate"><span class="pre">crontab</span> <span class="pre">-e</span></code> 编辑cron文件（crontab默认底层使用 <code class="docutils literal notranslate"><span class="pre">vi</span></code> 进行编辑），添加以下一行内容:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>*<span class="w"> </span>*<span class="w"> </span>*<span class="w"> </span>*<span class="w"> </span>*<span class="w"> </span>touch<span class="w"> </span>/tmp/test
@@ -207,7 +225,7 @@ total<span class="w"> </span><span class="m">4</span>.0K
 </pre></div>
 </div>
 <section id="id2">
-<h3>cron配置定时的案例<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h3>
+<h3>cron配置定时的案例<a class="headerlink" href="#id2" title="Link to this heading"></a></h3>
 <p>上述 <code class="docutils literal notranslate"><span class="pre">crontab</span></code> 配置的前5列是配置脚本或命令执行的周期:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Example of job definition:</span>
 <span class="c1"># .---------------- minute (0 - 59)</span>
@@ -218,6 +236,10 @@ total<span class="w"> </span><span class="m">4</span>.0K
 <span class="c1"># |  |  |  |  |</span>
 <span class="c1"># *  *  *  *  * user-name  command to be executed</span>
 </pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>只有 <code class="docutils literal notranslate"><span class="pre">/etc/crontab</span></code> 和 <code class="docutils literal notranslate"><span class="pre">/etc/cron.d/</span></code> 目录下的配置文件有一个 <code class="docutils literal notranslate"><span class="pre">user-name</span></code> 字段，可以用来配置执行命令的属主</p>
 </div>
 <ul class="simple">
 <li><p>每天凌晨 <code class="docutils literal notranslate"><span class="pre">01:01</span></code> 运行一次脚本</p></li>
@@ -239,7 +261,7 @@ total<span class="w"> </span><span class="m">4</span>.0K
 </div>
 </section>
 <section id="id3">
-<h3>cron运行脚本<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h3>
+<h3>cron运行脚本<a class="headerlink" href="#id3" title="Link to this heading"></a></h3>
 <p>通过 <code class="docutils literal notranslate"><span class="pre">cron</span></code> 运行的脚本有一个非常重要的要点，往往是初次使用cron的用户忽视的。 <strong>``cron`` 执行脚本没有提供shell环境设置</strong> ！</p>
 <p>通常用户登陆到Linux终端时，系统会为用户配置一个 <code class="docutils literal notranslate"><span class="pre">SHELL</span></code> 环境，包括了一些环境变量，例如用户 <code class="docutils literal notranslate"><span class="pre">HOME</span></code> 目录，用户执行命令的 <code class="docutils literal notranslate"><span class="pre">PATH</span></code> (命令搜索路径) 变量。所以，用户可以不用输入完整的全路径就可以运行 <code class="docutils literal notranslate"><span class="pre">/usr/local/bin</span></code> 以及 <code class="docutils literal notranslate"><span class="pre">/usr/bin</span></code> 目录下的可执行程序。但是，对于 <code class="docutils literal notranslate"><span class="pre">cron</span></code> 来说，则不提供 <code class="docutils literal notranslate"><span class="pre">SHELL</span></code> 环境，所以脚本中没有配置好环境变量，往往就导致很多没有提供全路径的执行程序无法执行，导致cron没有正确运行脚本。</p>
 <p>解决的方法有以下一些常用方法：</p>
@@ -272,7 +294,22 @@ total<span class="w"> </span><span class="m">4</span>.0K
 </section>
 </section>
 <section id="id4">
-<h2>限制cron访问<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h2>
+<h2>在 <code class="docutils literal notranslate"><span class="pre">cron</span></code> 中切换用户身份运行脚本<a class="headerlink" href="#id4" title="Link to this heading"></a></h2>
+<p>在上文中，我们已经看到了 <code class="docutils literal notranslate"><span class="pre">/etc/crontab</span></code> 和 <code class="docutils literal notranslate"><span class="pre">/etc/cron.d/</span></code> 目录下的配置文件有一个 <code class="docutils literal notranslate"><span class="pre">user-name</span></code> 字段，可以用来配置执行命令的属主</p>
+<p>可以结合 <a class="reference internal" href="../../shell/utils/sudo.html#sudo"><span class="std std-ref">sudo</span></a> 来实现整个命令管道中不同命令执行身份的切换，例如 <a class="reference internal" href="../../kubernetes/monitor/prometheus/prometheus_exporters/node_exporter_smartctl_text_plugin.html#node-exporter-smartctl-text-plugin"><span class="std std-ref">Node Exporter smartctl 文本插件</span></a> 采用了配置 <code class="docutils literal notranslate"><span class="pre">/etc/cron.d/node_exporter_textfile_collector</span></code> 通过 <code class="docutils literal notranslate"><span class="pre">|</span></code> 管道连接命令，且不同命令采用了不同用户身份:</p>
+<div class="literal-block-wrapper docutils container" id="id10">
+<div class="code-block-caption"><span class="caption-text">配置定时执行 <code class="docutils literal notranslate"><span class="pre">node_exporter</span></code> 的 <code class="docutils literal notranslate"><span class="pre">textfile</span></code> Collectors</span><a class="headerlink" href="#id10" title="Link to this code"></a></div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nv">PATH</span><span class="o">=</span>/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
+*<span class="w"> </span>*<span class="w"> </span>*<span class="w"> </span>*<span class="w"> </span>*<span class="w"> </span>root<span class="w"> </span>ipmitool<span class="w"> </span>sensor<span class="w"> </span><span class="p">|</span><span class="w"> </span>sudo<span class="w"> </span>-u<span class="w"> </span>prometheus<span class="w"> </span>/etc/prometheus/node-exporter-textfile-collector-scripts/ipmitool<span class="w"> </span><span class="p">|</span><span class="w"> </span>sudo<span class="w"> </span>-u<span class="w"> </span>prometheus<span class="w"> </span>sponge<span class="w"> </span>/var/lib/node_exporter/textfile_collector/ipmitool.prom
+
+<span class="hll">*<span class="w"> </span>*<span class="w"> </span>*<span class="w"> </span>*<span class="w"> </span>*<span class="w"> </span>root<span class="w"> </span>/etc/prometheus/node-exporter-textfile-collector-scripts/smartmon.sh<span class="w"> </span><span class="p">|</span><span class="w"> </span>sudo<span class="w"> </span>-u<span class="w"> </span>prometheus<span class="w"> </span>sponge<span class="w"> </span>/var/lib/node_exporter/textfile_collector/smartmon.prom
+</span></pre></div>
+</div>
+</div>
+</section>
+<section id="id5">
+<h2>限制cron访问<a class="headerlink" href="#id5" title="Link to this heading"></a></h2>
 <p>通常用户都能配置cron定时任务，但是滥用cron会导致系统资源过度消耗。为了防止这种资源滥用，系统管理员可以通过创建 <code class="docutils literal notranslate"><span class="pre">/etc/cron.allow</span></code> 来仅仅包含允许的用户列表，限制cron创建。</p>
 <p>另外，系统也有一个反向配置 <code class="docutils literal notranslate"><span class="pre">/etc/cron.deny</span></code> 来明确拒绝某些用户使用cron。</p>
 <p>举例，系统管理员配置了 <code class="docutils literal notranslate"><span class="pre">/etc/cron.allow</span></code> 配置文件，只加入一行 <code class="docutils literal notranslate"><span class="pre">admin</span></code> 用户。则其他系统用户，例如 <code class="docutils literal notranslate"><span class="pre">huatai</span></code> 用户尝试使用<code class="docutils literal notranslate"><span class="pre">crontab</span> <span class="pre">-e</span></code>时会看到以下错误提示:</p>
@@ -281,15 +318,15 @@ total<span class="w"> </span><span class="m">4</span>.0K
 </pre></div>
 </div>
 </section>
-<section id="id5">
-<h2>系统级别配置cron<a class="headerlink" href="#id5" title="Link to this heading">¶</a></h2>
+<section id="id6">
+<h2>系统级别配置cron<a class="headerlink" href="#id6" title="Link to this heading"></a></h2>
 <p>在 <code class="docutils literal notranslate"><span class="pre">/etc/cron.d</span></code> 目录下提供了系统级别运行脚本的配置。需要注意的是，如果没有指定运行用户角色，则默认使用root身份运行。所以，对于一些需要特定用户身份来运行的脚本，需要注意配置用户角色，例如，mysql备份脚本:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">0</span> <span class="mi">1</span> <span class="o">*</span> <span class="o">*</span> <span class="o">*</span> <span class="n">mysql</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="nb">bin</span><span class="o">/</span><span class="n">mysql_backup</span><span class="o">.</span><span class="n">sh</span>
 </pre></div>
 </div>
 </section>
 <section id="cron-d">
-<h2><code class="docutils literal notranslate"><span class="pre">cron.d</span></code> 配置要点总结<a class="headerlink" href="#cron-d" title="Link to this heading">¶</a></h2>
+<h2><code class="docutils literal notranslate"><span class="pre">cron.d</span></code> 配置要点总结<a class="headerlink" href="#cron-d" title="Link to this heading"></a></h2>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">/etc/cron.d</span></code> 目录采用了各自独立的配置文件，适合通过脚本进行管理。</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">/etc/cron.d</span></code> 文件名命名必须符合 <code class="docutils literal notranslate"><span class="pre">run-parts</span></code> 命名方式，即使用字母，数字，下划线和中划线（不能使用点符号）</p></li>
@@ -306,11 +343,11 @@ total<span class="w"> </span><span class="m">4</span>.0K
 </ul>
 </section>
 <section id="anacron">
-<h2>anacron<a class="headerlink" href="#anacron" title="Link to this heading">¶</a></h2>
+<h2>anacron<a class="headerlink" href="#anacron" title="Link to this heading"></a></h2>
 <p><code class="docutils literal notranslate"><span class="pre">anacron</span></code> 一个非常特别的类似 <code class="docutils literal notranslate"><span class="pre">crond</span></code> 相似功能的程序，但是增加了运行被跳过定时任务的执行能力，例如主机被关闭或者在某个循环周期中因故没有运行的定时任务。这个功能在一些笔记本电脑或经常关闭或休眠的电脑主机上非常有用。</p>
 <p>当主机被关闭或重启，错过了某个或多个定时任务，则当主机再次启动时，会立即执行这些定时任务。注意，被错过的定时任务只会执行一次，不管错过了几个运行周期，都只运行一次。</p>
-<section id="id6">
-<h3>周期性运行<a class="headerlink" href="#id6" title="Link to this heading">¶</a></h3>
+<section id="id7">
+<h3>周期性运行<a class="headerlink" href="#id7" title="Link to this heading"></a></h3>
 <p><code class="docutils literal notranslate"><span class="pre">anacron</span></code> 程序还提供了一个非常易于理解和配置的周期定时任务方法(最小运行周期是小时)，就是将脚本存放到 <code class="docutils literal notranslate"><span class="pre">/etc/cron.[hourly|daily|weekly|monthly]</span></code> 目录下，就会按照不同的周期运行。非常直观简便。</p>
 <ul class="simple">
 <li><p>这个窍门就在 <code class="docutils literal notranslate"><span class="pre">/etc/cron.d/0hourly</span></code> 配置:</p></li>
@@ -348,8 +385,8 @@ total<span class="w"> </span><span class="m">4</span>.0K
 <p><code class="docutils literal notranslate"><span class="pre">anacron</span></code> 程序会每天运行 <code class="docutils literal notranslate"><span class="pre">/etc/cron.daily</span></code> 目录下的程序，并且每周运行一次 <code class="docutils literal notranslate"><span class="pre">/etc/cron.weekly</span></code> 目录下任务，以及每月运行一次 <code class="docutils literal notranslate"><span class="pre">/etc/cron.monthly</span></code> 目录下任务。需要注意，在每一行配置中都有一个 <code class="docutils literal notranslate"><span class="pre">delay</span></code> 时间，会随机延迟支持。这是为了避免系统集中执行定时任务导致过载。</p>
 <p>需要注意 <code class="docutils literal notranslate"><span class="pre">anacron</span></code> 程序是一种特殊的定时任务，目的是运行在特定时间范围内，例如上面配置 <code class="docutils literal notranslate"><span class="pre">START_HOURS_RANGE</span></code> 是每天凌晨3点开始到晚上22点时间范围，才会开始执行定时任务。</p>
 </section>
-<section id="id7">
-<h3>anacron快捷方式<a class="headerlink" href="#id7" title="Link to this heading">¶</a></h3>
+<section id="id8">
+<h3>anacron快捷方式<a class="headerlink" href="#id8" title="Link to this heading"></a></h3>
 <p><code class="docutils literal notranslate"><span class="pre">/etc/anacrontab</span></code> 配置中各有一些快捷方式，这些快捷方式取代了常规 <code class="docutils literal notranslate"><span class="pre">crontab</span></code> 配置中精确的5个字段时间设置。快捷方式使用 <code class="docutils literal notranslate"><span class="pre">&#64;</span></code> 字符开头来表示cron快捷方式：</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">&#64;reboot</span></code> : 重启后运行一次</p></li>
@@ -363,7 +400,7 @@ total<span class="w"> </span><span class="m">4</span>.0K
 </section>
 </section>
 <section id="etc-cron-d-xxxx">
-<h2>无法运行的 <code class="docutils literal notranslate"><span class="pre">/etc/cron.d/XXXX</span></code><a class="headerlink" href="#etc-cron-d-xxxx" title="Link to this heading">¶</a></h2>
+<h2>无法运行的 <code class="docutils literal notranslate"><span class="pre">/etc/cron.d/XXXX</span></code><a class="headerlink" href="#etc-cron-d-xxxx" title="Link to this heading"></a></h2>
 <p>最近遇到一个通过脚本配置的 <code class="docutils literal notranslate"><span class="pre">/etc/cron.d/my_cron_script</span></code> 无法执行，非常奇特的是，同样的配置内容，之前在测试集群是完全正常的。</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">*</span> <span class="o">*</span> <span class="o">*</span> <span class="o">*</span> <span class="o">*</span> <span class="n">root</span> <span class="o">/</span><span class="n">opt</span><span class="o">/</span><span class="n">my_cron_script</span><span class="o">.</span><span class="n">sh</span> <span class="o">&gt;</span> <span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">null</span> <span class="mi">2</span><span class="o">&gt;&amp;</span><span class="mi">1</span>
 </pre></div>
@@ -389,12 +426,13 @@ followed by a <strong>``newline character``</strong> .</p>
 </pre></div>
 </div>
 </section>
-<section id="id8">
-<h2>参考<a class="headerlink" href="#id8" title="Link to this heading">¶</a></h2>
+<section id="id9">
+<h2>参考<a class="headerlink" href="#id9" title="Link to this heading"></a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="https://opensource.com/article/17/11/how-use-cron-linux">How to use cron in Linux</a></p></li>
 <li><p><a class="reference external" href="https://unix.stackexchange.com/questions/417323/what-is-the-difference-between-cron-d-as-in-etc-cron-d-and-crontab">What is the difference between cron.d (as in /etc/cron.d/) and crontab?</a></p></li>
 <li><p><a class="reference external" href="https://help.ubuntu.com/community/CronHowto">CronHowto</a></p></li>
+<li><p><a class="reference external" href="https://serverfault.com/questions/352835/crontab-running-as-a-specific-user">crontab running as a specific user</a></p></li>
 </ul>
 </section>
 </section>
@@ -402,25 +440,37 @@ followed by a <strong>``newline character``</strong> .</p>
 
            </div>
           </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="linux_swap.html" class="btn btn-neutral float-left" title="Linux swap" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="os_fork_resource_unavailable.html" class="btn btn-neutral float-right" title="执行报错”fork failed: Resource temporarily unavailable”" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="linux_swap.html" class="btn btn-neutral float-left" title="Linux swap" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="os_fork_resource_unavailable.html" class="btn btn-neutral float-right" title="执行报错&#34;fork failed: Resource temporarily unavailable&#34;" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../copyright.html">Copyright</a> 2018 - now, Huatai Huang.</p>
+    <p>&#169; <a href="../../copyright.html">版权所有</a> 2018 - now, Huatai Huang。</p>
   </div>
 
-  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
   
     <!-- your html code here -->
     <br>
-    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡</a></p>
-     
+    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡 👈</a></p>
+    <br>
+    <p>网站采用 <a href="https://utteranc.es/">utterances</a> 评论系统，所有评论存储在<a href="https://github.com/huataihuang/cloud-atlas/issues">GitHub issues</a> 中，如果你看不到下方的评论框，那么可能需要<a href="https://cloud-atlas.readthedocs.io/zh-cn/latest/linux/security/vpn/index.html">自备梯子</a> 👈</p>
+    <div class="articleComments">
+        <comments>
+  <script src="https://utteranc.es/client.js"
+    repo="huataihuang/cloud-atlas"
+    issue-term="pathname"
+    theme="github-light"
+    crossorigin="anonymous"
+    async>
+  </script>
+</comments>
+    </div>
 
 
 </footer>

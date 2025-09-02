@@ -1,27 +1,31 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh" data-content_root="../../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Linux屏幕背光 &mdash; Cloud Atlas 0.1 文档</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+  <title>Linux屏幕背光 &mdash; Cloud Atlas: Discovery beta 文档</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=fd3f3429" />
+
+  
+    <link rel="shortcut icon" href="../../_static/favicon.png"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="../../_static/documentation_options.js?v=7c91f8fd"></script>
-        <script src="../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=8534f863"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
         <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
-        <script src="../../_static/translations.js?v=beaddf03"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../../genindex.html" />
     <link rel="search" title="搜索" href="../../search.html" />
     <link rel="copyright" title="版权所有" href="../../copyright.html" />
     <link rel="next" title="Linux系统时间" href="linux_system_time.html" />
-    <link rel="prev" title="执行报错”fork failed: Resource temporarily unavailable”" href="os_fork_resource_unavailable.html" /> 
+    <link rel="prev" title="执行报错&#34;fork failed: Resource temporarily unavailable&#34;" href="os_fork_resource_unavailable.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -33,52 +37,56 @@
           
           
           <a href="../../index.html" class="icon icon-home">
-            Cloud Atlas
+            Cloud Atlas: Discovery
           </a>
+              <div class="version">
+                1.1
+              </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../studio/index.html">Studio Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../infrastructure/index.html">Infrastructure Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../devops/index.html">DevOps Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kvm/index.html">KVM Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../ceph/index.html">Ceph Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../gluster/index.html">Gluster Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../ovirt/index.html">oVirt Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../openstack/index.html">OpenStack Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../docker/index.html">Docker Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kubernetes/index.html">Kubernetes Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kubernetes_from_scratch/index.html">Kubernetes From Scratch (KFS) Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../rancher/index.html">Rancher Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../openshift/index.html">OpenShift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../sql/index.html">SQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../sqlite/index.html">SQLite Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../mysql/index.html">MySQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../pgsql/index.html">PostgreSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../clickhouse/index.html">ClickHouse Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../nosql/index.html">NoSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../redis/index.html">Redis Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../network/index.html">Network Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../infra_service/index.html">Infra-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../infra_search/index.html">Search Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../info_service/index.html">Info-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../web/index.html">Web Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../big_data/index.html">Big Data Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../machine_learning/index.html">Machine Learning Atlas</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Linux Atlas</a><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../studio/index.html">Studio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../infrastructure/index.html">Infrastructure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../devops/index.html">DevOps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kvm/index.html">KVM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ceph/index.html">Ceph</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../gluster/index.html">Gluster</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ovirt/index.html">oVirt</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../openstack/index.html">OpenStack</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../docker/index.html">Docker</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kubernetes/index.html">Kubernetes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../k8s_dev/index.html">Kubernetes Develop</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../rancher/index.html">Rancher</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../openshift/index.html">OpenShift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../sql/index.html">SQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../sqlite/index.html">SQLite</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../mysql/index.html">MySQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../pgsql/index.html">PostgreSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../nosql/index.html">NoSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../network/index.html">Network</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../infra_service/index.html">Infra-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../infra_search/index.html">Infra-Search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../web/index.html">Web</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../info_service/index.html">Info-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../big_data/index.html">Big Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../machine_learning/index.html">Machine Learning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../drone/index.html">Drone</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Linux</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../best_linux.html">最佳Linux</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="index.html">Linux系统管理</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="linux_rename_user.html">Linux系统用户改名</a></li>
+<li class="toctree-l3"><a class="reference internal" href="btop.html">btop</a></li>
 <li class="toctree-l3"><a class="reference internal" href="locale_env.html">Linux环境的本地化配置</a></li>
 <li class="toctree-l3"><a class="reference internal" href="linux_swap.html">Linux swap</a></li>
 <li class="toctree-l3"><a class="reference internal" href="cron.html">Cron定时运行</a></li>
-<li class="toctree-l3"><a class="reference internal" href="os_fork_resource_unavailable.html">执行报错”fork failed: Resource temporarily unavailable”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="os_fork_resource_unavailable.html">执行报错&quot;fork failed: Resource temporarily unavailable&quot;</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Linux屏幕背光</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#id1">硬件接口</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#id2">树莓派</a></li>
@@ -95,15 +103,21 @@
 <li class="toctree-l2"><a class="reference internal" href="../arch_linux/index.html">Arch Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../asahi_linux/index.html">Asahi Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../gentoo_linux/index.html">Gentoo Linux</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../lfs_linux/index.html">LFS(Linux from scratch)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lfs/index.html">LFS(Linux from scratch)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../blfs/index.html">BLFS(Beyond Linux from scratch)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../alfs/index.html">ALFS(Automated Linux from scratch)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pilfs/index.html">PiLFS(Automated Linux from scratch on the Raspberry Pi)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../yocto/index.html">Yocto</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../debian/index.html">Debian</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ubuntu_linux/index.html">Ubuntu Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../suse_linux/index.html">SUSE Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../kali_linux/index.html">Kali Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../tails_linux/index.html">Tails Linux</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../qubes_os/index.html">Qubes OS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../postmarketos/index.html">postmarketOS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../container_os/index.html">容器化操作系统(Container OS)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../fedora_coreos/index.html">Fedora CoreOS容器操作系统</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../chromium_os/index.html">Chromium OS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chromeos/index.html">ChromeOS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../alpine_linux/index.html">Alpine Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../subgraph_os/index.html">Subgraph OS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../kaios/index.html">KaiOS - 世界第三手机操作系统</a></li>
@@ -116,28 +130,30 @@
 <li class="toctree-l2"><a class="reference internal" href="../linux_tablet/index.html">Linux平板</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../kernel/index.html">Kernel Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../performance/index.html">Performance Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../distributed_system/index.html">Distributed System Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../shell/index.html">Shell Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../python/index.html">Python Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../django/index.html">Django Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../flask/index.html">Flask Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../javascript/index.html">JavaScript Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../nodejs/index.html">Node.js Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../clang/index.html">C Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../golang/index.html">Go Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../swift/index.html">Swift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../rust/index.html">Rust Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../ruby/index.html">Ruby Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../arm/index.html">ARM Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../android/index.html">Android Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../bsd/index.html">BSD Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../apple/index.html">Apple Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../windows/index.html">Windows Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../real/index.html">Real Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../management/index.html">Management Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../life/index.html">Life Atlas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kernel/index.html">Kernel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../performance/index.html">Performance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../distributed_system/index.html">Distributed System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../shell/index.html">Shell</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../python/index.html">Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../django/index.html">Django</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../javascript/index.html">JavaScript</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../nodejs/index.html">Node.js</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../clang/index.html">C</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../golang/index.html">Go</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../swift/index.html">Swift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../rust/index.html">Rust</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ruby/index.html">Ruby</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lua/index.html">Lua</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../arm/index.html">ARM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../raspberry_pi/index.html">Raspberry Pi</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../android/index.html">Android</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../bsd/index.html">BSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../freebsd/index.html">FreeBSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../apple/index.html">Apple</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../windows/index.html">Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../real/index.html">Real</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../management/index.html">Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../life/index.html">Life</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../copyright.html">Copyright</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../aboutme.html">关于作者</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../donate.html">捐赠</a></li>
@@ -150,21 +166,21 @@
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../index.html">Cloud Atlas</a>
+          <a href="../../index.html">Cloud Atlas: Discovery</a>
       </nav>
 
       <div class="wy-nav-content">
         <div class="rst-content">
-          <div role="navigation" aria-label="Page navigation">
+          <div role="navigation" aria-label="页面导航">
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
-          <li class="breadcrumb-item"><a href="../index.html">Linux Atlas</a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Linux</a></li>
           <li class="breadcrumb-item"><a href="index.html">Linux系统管理</a></li>
       <li class="breadcrumb-item active">Linux屏幕背光</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../../_sources/linux/admin/linux_backlight.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../_sources/linux/admin/linux_backlight.rst.txt" rel="nofollow"> 查看页面源码</a>
       </li>
   </ul>
   <hr/>
@@ -173,21 +189,21 @@
            <div itemprop="articleBody">
              
   <section id="linux">
-<span id="linux-backlight"></span><h1>Linux屏幕背光<a class="headerlink" href="#linux" title="Link to this heading">¶</a></h1>
+<span id="linux-backlight"></span><h1>Linux屏幕背光<a class="headerlink" href="#linux" title="Link to this heading"></a></h1>
 <p>当黎明或深夜时，使用Linux主机进行开发和运维工作，你会感到屏幕的背光十分刺目，让你双眼酸痛。然而，显示器的内置硬件调整菜单非常原始，调整起来既麻烦又无法快速恢复。这时候，你会想是否可以像Mac主机一样，通过快捷按键来调整屏幕亮度呢？</p>
 <p>在Linux系统中，除了硬件厂商直接提供的特定快捷键外，还可以提供过两种软件方式来设置屏幕亮度:</p>
 <ul class="simple">
-<li><p>通过 ACPI ( <a class="reference internal" href="../../arm/raspberry_pi/uefi/pi_uefi_acpi.html#pi-uefi-acpi"><span class="std std-ref">树莓派UEFI+ACPI</span></a> )、显卡或者平台驱动，可以将屏幕背光控制输出到 <code class="docutils literal notranslate"><span class="pre">/sys/class/backlight</span></code> ，这样就能通过用户侧 <code class="docutils literal notranslate"><span class="pre">backlight</span></code> 工具来控制</p></li>
+<li><p>通过 ACPI ( <a class="reference internal" href="../../raspberry_pi/uefi/pi_uefi_acpi.html#pi-uefi-acpi"><span class="std std-ref">树莓派UEFI+ACPI</span></a> )、显卡或者平台驱动，可以将屏幕背光控制输出到 <code class="docutils literal notranslate"><span class="pre">/sys/class/backlight</span></code> ，这样就能通过用户侧 <code class="docutils literal notranslate"><span class="pre">backlight</span></code> 工具来控制</p></li>
 <li><p>通过 <code class="docutils literal notranslate"><span class="pre">setpci</span></code> 可以向显卡寄存器设置值</p></li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">备注</p>
-<p><a class="reference internal" href="../../arm/raspberry_pi/index.html#raspberry-pi"><span class="std std-ref">Raspberry Pi</span></a> 默认没有使用 <a class="reference internal" href="../../arm/raspberry_pi/uefi/index.html#pi-uefi"><span class="std std-ref">树莓派UEFI</span></a> ，所以无法启用ACPI，也就无法通过ACPI调整显示器背光。这个问题，后续我将在完成 <a class="reference internal" href="../../arm/raspberry_pi/uefi/pi_uefi_acpi.html#pi-uefi-acpi"><span class="std std-ref">树莓派UEFI+ACPI</span></a> 转换后再次实践。</p>
+<p><a class="reference internal" href="../../raspberry_pi/index.html#raspberry-pi"><span class="std std-ref">Raspberry Pi</span></a> 默认没有使用 <a class="reference internal" href="../../raspberry_pi/uefi/index.html#pi-uefi"><span class="std std-ref">树莓派UEFI</span></a> ，所以无法启用ACPI，也就无法通过ACPI调整显示器背光。这个问题，后续我将在完成 <a class="reference internal" href="../../raspberry_pi/uefi/pi_uefi_acpi.html#pi-uefi-acpi"><span class="std std-ref">树莓派UEFI+ACPI</span></a> 转换后再次实践。</p>
 </div>
 <section id="id1">
-<h2>硬件接口<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h2>
+<h2>硬件接口<a class="headerlink" href="#id1" title="Link to this heading"></a></h2>
 <section id="acpi">
-<h3>ACPI<a class="headerlink" href="#acpi" title="Link to this heading">¶</a></h3>
+<h3>ACPI<a class="headerlink" href="#acpi" title="Link to this heading"></a></h3>
 <p>屏幕背光亮度是同u哦设置LEDs的能源级别实现的，这个能源级别通常使用视频的ACPI内核模块控制。这个模块的接口通过 <code class="docutils literal notranslate"><span class="pre">sysfs</span></code> 目录 <code class="docutils literal notranslate"><span class="pre">/sys/class/backlight/</span></code> 来提供。</p>
 <p>需要注意ACPI BIOS提供了通过通用ACPI接口控制背光的，但是没有具体模式的实现。所以需要硬件提供ACPI驱动注册，并且不能使用任何笔记本专用驱动。满足上述条件之后，就可以在内核启动参数中添加:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">acpi_backlight</span><span class="o">=</span><span class="n">vendor</span>
@@ -197,7 +213,7 @@
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">thinkpad</span><span class="o">-</span><span class="n">acpi</span><span class="o">.</span><span class="n">brightness_enable</span><span class="o">=</span><span class="mi">1</span>
 </pre></div>
 </div>
-<p>注意，内核接口需要有 <code class="docutils literal notranslate"><span class="pre">/proc/acpi/video</span></code> ，对于 <a class="reference internal" href="../../arm/raspberry_pi/index.html#raspberry-pi"><span class="std std-ref">Raspberry Pi</span></a> 需要 <a class="reference internal" href="../../arm/raspberry_pi/uefi/index.html#pi-uefi"><span class="std std-ref">树莓派UEFI</span></a> 支持才能实现:</p>
+<p>注意，内核接口需要有 <code class="docutils literal notranslate"><span class="pre">/proc/acpi/video</span></code> ，对于 <a class="reference internal" href="../../raspberry_pi/index.html#raspberry-pi"><span class="std std-ref">Raspberry Pi</span></a> 需要 <a class="reference internal" href="../../raspberry_pi/uefi/index.html#pi-uefi"><span class="std std-ref">树莓派UEFI</span></a> 支持才能实现:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">/</span><span class="n">proc</span><span class="o">/</span><span class="n">acpi</span><span class="o">/</span><span class="n">video</span><span class="o">/</span>
  <span class="o">|</span>
  <span class="o">+-</span> <span class="o">&lt;</span><span class="n">GFX</span> <span class="n">card</span><span class="o">&gt;</span>
@@ -214,7 +230,7 @@
 </div>
 <div class="admonition note">
 <p class="admonition-title">备注</p>
-<p><a class="reference external" href="https://wiki.ubuntu.com/Kernel/Debugging/Backlight">ubuntu wiki: Backlight</a> 文档中有很多检查案例方法，待后续 <a class="reference internal" href="../../arm/raspberry_pi/uefi/pi_uefi_acpi.html#pi-uefi-acpi"><span class="std std-ref">树莓派UEFI+ACPI</span></a> 环境具备后实践</p>
+<p><a class="reference external" href="https://wiki.ubuntu.com/Kernel/Debugging/Backlight">ubuntu wiki: Backlight</a> 文档中有很多检查案例方法，待后续 <a class="reference internal" href="../../raspberry_pi/uefi/pi_uefi_acpi.html#pi-uefi-acpi"><span class="std std-ref">树莓派UEFI+ACPI</span></a> 环境具备后实践</p>
 </div>
 <p>通过以下命令可以检查目录下显卡型号:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ls</span> <span class="o">/</span><span class="n">sys</span><span class="o">/</span><span class="n">class</span><span class="o">/</span><span class="n">backlight</span><span class="o">/</span>
@@ -226,7 +242,7 @@
 </div>
 <div class="admonition note">
 <p class="admonition-title">备注</p>
-<p>目前我没有相应测试环境，例如 <a class="reference internal" href="../../arm/raspberry_pi/index.html#raspberry-pi"><span class="std std-ref">Raspberry Pi</span></a> 不支持ACPI，没有 <code class="docutils literal notranslate"><span class="pre">/sys/class/backlight/</span></code> 目录</p>
+<p>目前我没有相应测试环境，例如 <a class="reference internal" href="../../raspberry_pi/index.html#raspberry-pi"><span class="std std-ref">Raspberry Pi</span></a> 不支持ACPI，没有 <code class="docutils literal notranslate"><span class="pre">/sys/class/backlight/</span></code> 目录</p>
 </div>
 <ul>
 <li><p>在启用了ACPI的环境中，可以检查 <code class="docutils literal notranslate"><span class="pre">/sys/class/backlight/acpi_video0/</span></code> ，输出类似:</p>
@@ -260,12 +276,12 @@
 </section>
 </section>
 <section id="id2">
-<h2>树莓派<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
-<p><a class="reference external" href="https://github.com/linusg/rpi-backlight">linusg/rpi-backlight</a> 是一个Python模块可以用来控制树莓派官方提供的Raspberry Pi 7” touch display显示器的功耗和亮度。并且提供了详细的 <a class="reference external" href="https://rpi-backlight.readthedocs.io/en/latest/index.html">rpi-backlight Documentation</a> 。</p>
+<h2>树莓派<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
+<p><a class="reference external" href="https://github.com/linusg/rpi-backlight">linusg/rpi-backlight</a> 是一个Python模块可以用来控制树莓派官方提供的Raspberry Pi 7&quot; touch display显示器的功耗和亮度。并且提供了详细的 <a class="reference external" href="https://rpi-backlight.readthedocs.io/en/latest/index.html">rpi-backlight Documentation</a> 。</p>
 <p>结合光线传感器，可以实现 <a class="reference external" href="http://www.yoctopuce.com/EN/article/automated-brightness-control-for-the-raspberry-pi">Automated brightness control for the Raspberry Pi</a></p>
 </section>
 <section id="id3">
-<h2>参考<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h2>
+<h2>参考<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="https://wiki.archlinux.org/title/backlight">arch linux wiki: Backlight</a></p></li>
 <li><p><a class="reference external" href="https://wiki.ubuntu.com/Kernel/Debugging/Backlight">ubuntu wiki: Backlight</a></p></li>
@@ -277,25 +293,37 @@
 
            </div>
           </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="os_fork_resource_unavailable.html" class="btn btn-neutral float-left" title="执行报错”fork failed: Resource temporarily unavailable”" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="linux_system_time.html" class="btn btn-neutral float-right" title="Linux系统时间" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="os_fork_resource_unavailable.html" class="btn btn-neutral float-left" title="执行报错&#34;fork failed: Resource temporarily unavailable&#34;" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="linux_system_time.html" class="btn btn-neutral float-right" title="Linux系统时间" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../copyright.html">Copyright</a> 2018 - now, Huatai Huang.</p>
+    <p>&#169; <a href="../../copyright.html">版权所有</a> 2018 - now, Huatai Huang。</p>
   </div>
 
-  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
   
     <!-- your html code here -->
     <br>
-    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡</a></p>
-     
+    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡 👈</a></p>
+    <br>
+    <p>网站采用 <a href="https://utteranc.es/">utterances</a> 评论系统，所有评论存储在<a href="https://github.com/huataihuang/cloud-atlas/issues">GitHub issues</a> 中，如果你看不到下方的评论框，那么可能需要<a href="https://cloud-atlas.readthedocs.io/zh-cn/latest/linux/security/vpn/index.html">自备梯子</a> 👈</p>
+    <div class="articleComments">
+        <comments>
+  <script src="https://utteranc.es/client.js"
+    repo="huataihuang/cloud-atlas"
+    issue-term="pathname"
+    theme="github-light"
+    crossorigin="anonymous"
+    async>
+  </script>
+</comments>
+    </div>
 
 
 </footer>

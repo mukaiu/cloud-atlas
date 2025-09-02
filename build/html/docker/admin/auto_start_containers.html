@@ -1,21 +1,25 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh" data-content_root="../../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>自动启动Docker容器 &mdash; Cloud Atlas 0.1 文档</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+  <title>自动启动Docker容器 &mdash; Cloud Atlas: Discovery beta 文档</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=fd3f3429" />
+
+  
+    <link rel="shortcut icon" href="../../_static/favicon.png"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="../../_static/documentation_options.js?v=7c91f8fd"></script>
-        <script src="../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=8534f863"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
         <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
-        <script src="../../_static/translations.js?v=beaddf03"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../../genindex.html" />
     <link rel="search" title="搜索" href="../../search.html" />
@@ -33,32 +37,36 @@
           
           
           <a href="../../index.html" class="icon icon-home">
-            Cloud Atlas
+            Cloud Atlas: Discovery
           </a>
+              <div class="version">
+                1.1
+              </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../studio/index.html">Studio Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../infrastructure/index.html">Infrastructure Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../devops/index.html">DevOps Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kvm/index.html">KVM Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../ceph/index.html">Ceph Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../gluster/index.html">Gluster Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../ovirt/index.html">oVirt Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../openstack/index.html">OpenStack Atlas</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Docker Atlas</a><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../studio/index.html">Studio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../infrastructure/index.html">Infrastructure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../devops/index.html">DevOps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kvm/index.html">KVM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ceph/index.html">Ceph</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../gluster/index.html">Gluster</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ovirt/index.html">oVirt</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../openstack/index.html">OpenStack</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Docker</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../startup/index.html">Docker 起步</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../desktop/index.html">Docker Desktop</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../colima/index.html">Colima</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../images/index.html">Docker 镜像</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../rootless/index.html">Docker Rootless模式</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../moby/index.html">Docker Moby</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../moby/index.html">Moby</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../podman/index.html">podman</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../config/index.html">Docker配置</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../linuxserver/index.html">Docker LinuxServer.io</a></li>
@@ -95,47 +103,48 @@
 <li class="toctree-l2"><a class="reference internal" href="../debug/index.html">Docker异常排查</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../kubernetes/index.html">Kubernetes Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kubernetes_from_scratch/index.html">Kubernetes From Scratch (KFS) Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../rancher/index.html">Rancher Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../openshift/index.html">OpenShift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../sql/index.html">SQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../sqlite/index.html">SQLite Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../mysql/index.html">MySQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../pgsql/index.html">PostgreSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../clickhouse/index.html">ClickHouse Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../nosql/index.html">NoSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../redis/index.html">Redis Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../network/index.html">Network Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../infra_service/index.html">Infra-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../infra_search/index.html">Search Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../info_service/index.html">Info-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../web/index.html">Web Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../big_data/index.html">Big Data Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../machine_learning/index.html">Machine Learning Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../linux/index.html">Linux Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kernel/index.html">Kernel Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../performance/index.html">Performance Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../distributed_system/index.html">Distributed System Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../shell/index.html">Shell Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../python/index.html">Python Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../django/index.html">Django Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../flask/index.html">Flask Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../javascript/index.html">JavaScript Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../nodejs/index.html">Node.js Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../clang/index.html">C Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../golang/index.html">Go Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../swift/index.html">Swift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../rust/index.html">Rust Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../ruby/index.html">Ruby Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../arm/index.html">ARM Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../android/index.html">Android Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../bsd/index.html">BSD Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../apple/index.html">Apple Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../windows/index.html">Windows Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../real/index.html">Real Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../management/index.html">Management Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../life/index.html">Life Atlas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kubernetes/index.html">Kubernetes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../k8s_dev/index.html">Kubernetes Develop</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../rancher/index.html">Rancher</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../openshift/index.html">OpenShift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../sql/index.html">SQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../sqlite/index.html">SQLite</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../mysql/index.html">MySQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../pgsql/index.html">PostgreSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../nosql/index.html">NoSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../network/index.html">Network</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../infra_service/index.html">Infra-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../infra_search/index.html">Infra-Search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../web/index.html">Web</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../info_service/index.html">Info-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../big_data/index.html">Big Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../machine_learning/index.html">Machine Learning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../drone/index.html">Drone</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../linux/index.html">Linux</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kernel/index.html">Kernel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../performance/index.html">Performance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../distributed_system/index.html">Distributed System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../shell/index.html">Shell</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../python/index.html">Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../django/index.html">Django</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../javascript/index.html">JavaScript</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../nodejs/index.html">Node.js</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../clang/index.html">C</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../golang/index.html">Go</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../swift/index.html">Swift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../rust/index.html">Rust</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ruby/index.html">Ruby</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lua/index.html">Lua</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../arm/index.html">ARM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../raspberry_pi/index.html">Raspberry Pi</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../android/index.html">Android</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../bsd/index.html">BSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../freebsd/index.html">FreeBSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../apple/index.html">Apple</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../windows/index.html">Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../real/index.html">Real</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../management/index.html">Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../life/index.html">Life</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../copyright.html">Copyright</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../aboutme.html">关于作者</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../donate.html">捐赠</a></li>
@@ -148,21 +157,21 @@
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../index.html">Cloud Atlas</a>
+          <a href="../../index.html">Cloud Atlas: Discovery</a>
       </nav>
 
       <div class="wy-nav-content">
         <div class="rst-content">
-          <div role="navigation" aria-label="Page navigation">
+          <div role="navigation" aria-label="页面导航">
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
-          <li class="breadcrumb-item"><a href="../index.html">Docker Atlas</a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Docker</a></li>
           <li class="breadcrumb-item"><a href="index.html">Docker 管理</a></li>
       <li class="breadcrumb-item active">自动启动Docker容器</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../../_sources/docker/admin/auto_start_containers.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../_sources/docker/admin/auto_start_containers.rst.txt" rel="nofollow"> 查看页面源码</a>
       </li>
   </ul>
   <hr/>
@@ -171,21 +180,21 @@
            <div itemprop="articleBody">
              
   <section id="docker">
-<span id="auto-start-containers"></span><h1>自动启动Docker容器<a class="headerlink" href="#docker" title="Link to this heading">¶</a></h1>
+<span id="auto-start-containers"></span><h1>自动启动Docker容器<a class="headerlink" href="#docker" title="Link to this heading"></a></h1>
 <p>在 <a class="reference internal" href="../../ceph/ceph_docker_in_studio.html#ceph-docker-in-studio"><span class="std std-ref">Stuido环境Docker容器运行Ceph</span></a> 时，Ceph是作为整个OpenStack集群的基础服务来运行的，所以需要设置操作系统启动时自动启动这些Ceph容器，以便能够为上层OpenStack提供基础。在生产环境中，如果是通过Docker容器来运行基础服务，往往也需要能够自动启动这些Docker容器。</p>
 <div class="admonition note">
 <p class="admonition-title">备注</p>
-<p>使用Kubernetes ( <a class="reference internal" href="../../kubernetes/index.html#kubernetes"><span class="std std-ref">Kubernetes Atlas</span></a> ) 的调度可以自动实现稳定的容器服务，但是在 <a class="reference internal" href="../../studio/introduce_my_studio.html#introduce-my-studio"><span class="std std-ref">模拟云计算的Studio</span></a> ，直接采用Docker <a class="reference external" href="https://docs.docker.com/v17.09/engine/reference/run/#restart-policies---restart">restart policies</a> 可以无需复杂的部署（消耗大量主机资源）实现底层分布式存储服务持续运行。</p>
+<p>使用Kubernetes ( <a class="reference internal" href="../../kubernetes/index.html#kubernetes"><span class="std std-ref">Kubernetes</span></a> ) 的调度可以自动实现稳定的容器服务，但是在 <a class="reference internal" href="../../studio/introduce_my_studio.html#introduce-my-studio"><span class="std std-ref">模拟云计算的Studio</span></a> ，直接采用Docker <a class="reference external" href="https://docs.docker.com/v17.09/engine/reference/run/#restart-policies---restart">restart policies</a> 可以无需复杂的部署（消耗大量主机资源）实现底层分布式存储服务持续运行。</p>
 </div>
 <section id="id1">
-<h2>Docker重启策略<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h2>
+<h2>Docker重启策略<a class="headerlink" href="#id1" title="Link to this heading"></a></h2>
 <p>Docker 提供了 <code class="docutils literal notranslate"><span class="pre">restart</span> <span class="pre">policies</span></code> 来控制容器退出或者Docker重启时候是否自动启动容器。重启策略确保了链接的容器按照正确顺序启动。Docker建议使用restart策略而不是使用进程管理器（例如systemd）来启动容器。</p>
 <div class="admonition note">
 <p class="admonition-title">备注</p>
 <p>Docker的重启策略和 <code class="docutils literal notranslate"><span class="pre">dockerd</span></code> 的 <code class="docutils literal notranslate"><span class="pre">--live-restore</span></code> 开关是不同的。 <code class="docutils literal notranslate"><span class="pre">--live-restore</span></code> 开关允许在Docker升级的时候保持容器继续运行，虽然升级过程中容器的网络和用户输入是中断的。请参考 <a class="reference internal" href="container_live_restore.html#container-live-restore"><span class="std std-ref">Docker daemon停止时保持容器运行</span></a></p>
 </div>
 <section id="id2">
-<h3>使用重启策略<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h3>
+<h3>使用重启策略<a class="headerlink" href="#id2" title="Link to this heading"></a></h3>
 <p>在执行 <code class="docutils literal notranslate"><span class="pre">docker</span> <span class="pre">run</span></code> 指令时，可以使用 <code class="docutils literal notranslate"><span class="pre">--restart</span></code> 参数来配置容器的重启策略，可用值：</p>
 <table class="docutils align-default">
 <thead>
@@ -214,7 +223,7 @@
 </div>
 </section>
 <section id="id3">
-<h3>重启策略要点<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h3>
+<h3>重启策略要点<a class="headerlink" href="#id3" title="Link to this heading"></a></h3>
 <p>在使用重启策略时要牢记以下要点：</p>
 <ul class="simple">
 <li><p>重启策略只有在容器成功启动之后才会生效。这种情况下，所谓成功启动是指容器启动至少10秒钟并且Docker已经开始监控容器。这种模式避免容器没有成功启动而不断循环重启的问题。</p></li>
@@ -224,14 +233,14 @@
 </section>
 </section>
 <section id="id4">
-<h2>使用进程管理器自动重启容器<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h2>
+<h2>使用进程管理器自动重启容器<a class="headerlink" href="#id4" title="Link to this heading"></a></h2>
 <p>如果容器的内建重启策略不能满足需求，例如Docker之外的进程依赖Docker容器，你可以使用进程管理器例如 <a class="reference external" href="http://upstart.ubuntu.com/">upstart</a> ， <a class="reference external" href="http://freedesktop.org/wiki/Software/systemd/">systemd</a> 或者 <a class="reference external" href="http://supervisord.org/">supervisor</a> 来管理容器重启。</p>
 <div class="admonition warning">
 <p class="admonition-title">警告</p>
 <p>不要试图同时使用Docker内建的重启策略和host级别的进程管理器，这会导致两者冲突。</p>
 </div>
 <section id="id5">
-<h3>使用systemd自动启动容器<a class="headerlink" href="#id5" title="Link to this heading">¶</a></h3>
+<h3>使用systemd自动启动容器<a class="headerlink" href="#id5" title="Link to this heading"></a></h3>
 <p>通过SystemD可以启动和停止服务，也可以跟踪依赖以及检查日志，对于docker，主要是wrap命令并正确命名。</p>
 <ul>
 <li><p>通过systemd启动redis服务(参考 <a class="reference external" href="https://karlstoney.com/2017/03/03/docker-containers-as-systemd-services/">Using Docker containers as Systemd services</a> ):</p>
@@ -295,7 +304,7 @@
 </section>
 </section>
 <section id="id6">
-<h2>在容器内部使用进程管理器<a class="headerlink" href="#id6" title="Link to this heading">¶</a></h2>
+<h2>在容器内部使用进程管理器<a class="headerlink" href="#id6" title="Link to this heading"></a></h2>
 <p>可以在容器内部运行进程管理器来检查一个进程是否运行或者进程没有运行时启动或重启进程。</p>
 <div class="admonition warning">
 <p class="admonition-title">警告</p>
@@ -303,7 +312,7 @@
 </div>
 </section>
 <section id="id7">
-<h2>参考<a class="headerlink" href="#id7" title="Link to this heading">¶</a></h2>
+<h2>参考<a class="headerlink" href="#id7" title="Link to this heading"></a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="https://docs.docker.com/config/containers/start-containers-automatically/">Start containers automatically</a></p></li>
 <li><p><a class="reference external" href="https://karlstoney.com/2017/03/03/docker-containers-as-systemd-services/">Using Docker containers as Systemd services</a></p></li>
@@ -315,25 +324,37 @@
 
            </div>
           </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="docker_studio.html" class="btn btn-neutral float-left" title="Docker运行Studio容器" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="docker_timezone.html" class="btn btn-neutral float-right" title="Docker时区" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="docker_studio.html" class="btn btn-neutral float-left" title="Docker运行Studio容器" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="docker_timezone.html" class="btn btn-neutral float-right" title="Docker时区" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../copyright.html">Copyright</a> 2018 - now, Huatai Huang.</p>
+    <p>&#169; <a href="../../copyright.html">版权所有</a> 2018 - now, Huatai Huang。</p>
   </div>
 
-  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
   
     <!-- your html code here -->
     <br>
-    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡</a></p>
-     
+    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡 👈</a></p>
+    <br>
+    <p>网站采用 <a href="https://utteranc.es/">utterances</a> 评论系统，所有评论存储在<a href="https://github.com/huataihuang/cloud-atlas/issues">GitHub issues</a> 中，如果你看不到下方的评论框，那么可能需要<a href="https://cloud-atlas.readthedocs.io/zh-cn/latest/linux/security/vpn/index.html">自备梯子</a> 👈</p>
+    <div class="articleComments">
+        <comments>
+  <script src="https://utteranc.es/client.js"
+    repo="huataihuang/cloud-atlas"
+    issue-term="pathname"
+    theme="github-light"
+    crossorigin="anonymous"
+    async>
+  </script>
+</comments>
+    </div>
 
 
 </footer>

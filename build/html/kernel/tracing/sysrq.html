@@ -1,21 +1,25 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh" data-content_root="../../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Linux “魔力” 系统请求组合键 SysRq &mdash; Cloud Atlas 0.1 文档</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+  <title>Linux &#34;魔力&#34; 系统请求组合键 SysRq &mdash; Cloud Atlas: Discovery beta 文档</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=fd3f3429" />
+
+  
+    <link rel="shortcut icon" href="../../_static/favicon.png"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="../../_static/documentation_options.js?v=7c91f8fd"></script>
-        <script src="../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=8534f863"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
         <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
-        <script src="../../_static/translations.js?v=beaddf03"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../../genindex.html" />
     <link rel="search" title="搜索" href="../../search.html" />
@@ -33,52 +37,55 @@
           
           
           <a href="../../index.html" class="icon icon-home">
-            Cloud Atlas
+            Cloud Atlas: Discovery
           </a>
+              <div class="version">
+                1.1
+              </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../studio/index.html">Studio Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../infrastructure/index.html">Infrastructure Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../devops/index.html">DevOps Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kvm/index.html">KVM Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../ceph/index.html">Ceph Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../gluster/index.html">Gluster Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../ovirt/index.html">oVirt Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../openstack/index.html">OpenStack Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../docker/index.html">Docker Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kubernetes/index.html">Kubernetes Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kubernetes_from_scratch/index.html">Kubernetes From Scratch (KFS) Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../rancher/index.html">Rancher Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../openshift/index.html">OpenShift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../sql/index.html">SQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../sqlite/index.html">SQLite Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../mysql/index.html">MySQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../pgsql/index.html">PostgreSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../clickhouse/index.html">ClickHouse Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../nosql/index.html">NoSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../redis/index.html">Redis Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../network/index.html">Network Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../infra_service/index.html">Infra-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../infra_search/index.html">Search Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../info_service/index.html">Info-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../web/index.html">Web Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../big_data/index.html">Big Data Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../machine_learning/index.html">Machine Learning Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../linux/index.html">Linux Atlas</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Kernel Atlas</a><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../studio/index.html">Studio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../infrastructure/index.html">Infrastructure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../devops/index.html">DevOps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kvm/index.html">KVM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ceph/index.html">Ceph</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../gluster/index.html">Gluster</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ovirt/index.html">oVirt</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../openstack/index.html">OpenStack</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../docker/index.html">Docker</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kubernetes/index.html">Kubernetes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../k8s_dev/index.html">Kubernetes Develop</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../rancher/index.html">Rancher</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../openshift/index.html">OpenShift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../sql/index.html">SQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../sqlite/index.html">SQLite</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../mysql/index.html">MySQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../pgsql/index.html">PostgreSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../nosql/index.html">NoSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../network/index.html">Network</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../infra_service/index.html">Infra-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../infra_search/index.html">Infra-Search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../web/index.html">Web</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../info_service/index.html">Info-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../big_data/index.html">Big Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../machine_learning/index.html">Machine Learning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../drone/index.html">Drone</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../linux/index.html">Linux</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Kernel</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../startup/index.html">Kernel起步</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../cpu/index.html">CPU</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../scheduler/index.html">Linux调度器</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../cgroup/index.html">Kernel Cgroup</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../process/index.html">内核进程管理</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../core_api/index.html">kernel核心API</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../flame_graph.html">火焰图</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../kms.html">KMS (Kernel mode setting)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../accounting/index.html">内核记账</a></li>
@@ -91,7 +98,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../network/index.html">Linux内核网络实现</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../power/index.html">内核电源管理</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="index.html">Linux内核追踪</a><ul class="current">
-<li class="toctree-l3 current"><a class="current reference internal" href="#">Linux “魔力” 系统请求组合键 SysRq</a><ul>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Linux &quot;魔力&quot; 系统请求组合键 SysRq</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#magic-sysrq-key">如何激活magic SysRq key</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#id1">使用SysRq</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#id2">SysRq <code class="docutils literal notranslate"><span class="pre">&lt;命令键&gt;</span></code></a></li>
@@ -101,37 +108,39 @@
 <li class="toctree-l3"><a class="reference internal" href="find_high_sys_process.html">找出消耗CPU的sys的进程</a></li>
 <li class="toctree-l3"><a class="reference internal" href="debug_high_sys_process.html">debug占用很高system的进程</a></li>
 <li class="toctree-l3"><a class="reference internal" href="debug_d_process.html">排查Linux D住进程原因</a></li>
-<li class="toctree-l3"><a class="reference internal" href="bad_rip_value.html">“Bad RIP value”含义</a></li>
+<li class="toctree-l3"><a class="reference internal" href="bad_rip_value.html">&quot;Bad RIP value&quot;含义</a></li>
 <li class="toctree-l3"><a class="reference internal" href="debug_system_crash.html">排查系统crash</a></li>
 <li class="toctree-l3"><a class="reference internal" href="strace.html">strace系统调用跟踪</a></li>
 <li class="toctree-l3"><a class="reference internal" href="debug_lscpu_slow.html">排查lscpu缓慢</a></li>
-<li class="toctree-l3"><a class="reference internal" href="illegal_instruction_core_dumped.html">排查 “Illegal instruction (core dumped)”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="illegal_instruction_core_dumped.html">排查 &quot;Illegal instruction (core dumped)&quot;</a></li>
 <li class="toctree-l3"><a class="reference internal" href="kdump/index.html">Linux内核Kdump</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../performance/index.html">Performance Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../distributed_system/index.html">Distributed System Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../shell/index.html">Shell Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../python/index.html">Python Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../django/index.html">Django Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../flask/index.html">Flask Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../javascript/index.html">JavaScript Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../nodejs/index.html">Node.js Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../clang/index.html">C Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../golang/index.html">Go Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../swift/index.html">Swift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../rust/index.html">Rust Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../ruby/index.html">Ruby Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../arm/index.html">ARM Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../android/index.html">Android Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../bsd/index.html">BSD Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../apple/index.html">Apple Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../windows/index.html">Windows Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../real/index.html">Real Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../management/index.html">Management Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../life/index.html">Life Atlas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../performance/index.html">Performance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../distributed_system/index.html">Distributed System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../shell/index.html">Shell</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../python/index.html">Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../django/index.html">Django</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../javascript/index.html">JavaScript</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../nodejs/index.html">Node.js</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../clang/index.html">C</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../golang/index.html">Go</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../swift/index.html">Swift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../rust/index.html">Rust</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ruby/index.html">Ruby</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lua/index.html">Lua</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../arm/index.html">ARM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../raspberry_pi/index.html">Raspberry Pi</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../android/index.html">Android</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../bsd/index.html">BSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../freebsd/index.html">FreeBSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../apple/index.html">Apple</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../windows/index.html">Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../real/index.html">Real</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../management/index.html">Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../life/index.html">Life</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../copyright.html">Copyright</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../aboutme.html">关于作者</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../donate.html">捐赠</a></li>
@@ -144,21 +153,21 @@
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../index.html">Cloud Atlas</a>
+          <a href="../../index.html">Cloud Atlas: Discovery</a>
       </nav>
 
       <div class="wy-nav-content">
         <div class="rst-content">
-          <div role="navigation" aria-label="Page navigation">
+          <div role="navigation" aria-label="页面导航">
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
-          <li class="breadcrumb-item"><a href="../index.html">Kernel Atlas</a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Kernel</a></li>
           <li class="breadcrumb-item"><a href="index.html">Linux内核追踪</a></li>
-      <li class="breadcrumb-item active">Linux “魔力” 系统请求组合键 SysRq</li>
+      <li class="breadcrumb-item active">Linux &quot;魔力&quot; 系统请求组合键 SysRq</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../../_sources/kernel/tracing/sysrq.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../_sources/kernel/tracing/sysrq.rst.txt" rel="nofollow"> 查看页面源码</a>
       </li>
   </ul>
   <hr/>
@@ -167,18 +176,18 @@
            <div itemprop="articleBody">
              
   <section id="linux-sysrq">
-<span id="sysrq"></span><h1>Linux “魔力” 系统请求组合键 SysRq<a class="headerlink" href="#linux-sysrq" title="Link to this heading">¶</a></h1>
+<span id="sysrq"></span><h1>Linux &quot;魔力&quot; 系统请求组合键 SysRq<a class="headerlink" href="#linux-sysrq" title="Link to this heading"></a></h1>
 <p>所谓 <code class="docutils literal notranslate"><span class="pre">&quot;魔力&quot;</span> <span class="pre">系统请求组合键</span></code> 是指不论内核在做什么，都会响应这个组合键 <code class="docutils literal notranslate"><span class="pre">magical</span> <span class="pre">key</span> <span class="pre">combo</span></code> (除非内核完全锁死)。我们通常会使用 <code class="docutils literal notranslate"><span class="pre">magic</span> <span class="pre">SysRq</span> <span class="pre">key</span></code> 来实现内核级的调试信息输出。</p>
 <section id="magic-sysrq-key">
-<h2>如何激活magic SysRq key<a class="headerlink" href="#magic-sysrq-key" title="Link to this heading">¶</a></h2>
+<h2>如何激活magic SysRq key<a class="headerlink" href="#magic-sysrq-key" title="Link to this heading"></a></h2>
 <p>首先在内核配置上，需要配置 <code class="docutils literal notranslate"><span class="pre">CONFIG_MAGIC_SYSRQ=Y</span></code> ，这样编译出来的支持SysRq的内核，启动后会提供一个 <code class="docutils literal notranslate"><span class="pre">/proc/sys/kernel/sysrq</span></code> 控制功能，允许使用SysRq键。</p>
 <p>其次，在内核 <code class="docutils literal notranslate"><span class="pre">CONFIG_MAGIC_SYSRQ_DEFAULT_ENABLE</span></code> 配置符号，默认设置是 <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
 <table class="docutils align-default" id="id4">
-<caption><span class="caption-text">激活SysRq功能: 内核配置 <code class="docutils literal notranslate"><span class="pre">CONFIG_MAGIC_SYSRQ_DEFAULT_ENABLE</span></code> 或者 <code class="docutils literal notranslate"><span class="pre">echo</span> <span class="pre">&lt;SysRq配置值&gt;</span> <span class="pre">&gt;</span> <span class="pre">/proc/sys/kernel/sysrq</span></code></span><a class="headerlink" href="#id4" title="Link to this table">¶</a></caption>
+<caption><span class="caption-text">激活SysRq功能: 内核配置 <code class="docutils literal notranslate"><span class="pre">CONFIG_MAGIC_SYSRQ_DEFAULT_ENABLE</span></code> 或者 <code class="docutils literal notranslate"><span class="pre">echo</span> <span class="pre">&lt;SysRq配置值&gt;</span> <span class="pre">&gt;</span> <span class="pre">/proc/sys/kernel/sysrq</span></code></span><a class="headerlink" href="#id4" title="Link to this table"></a></caption>
 <colgroup>
-<col style="width: 30%" />
-<col style="width: 20%" />
-<col style="width: 50%" />
+<col style="width: 30.0%" />
+<col style="width: 20.0%" />
+<col style="width: 50.0%" />
 </colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>SysRq配置值</p></th>
@@ -248,17 +257,17 @@
 </div>
 </section>
 <section id="id1">
-<h2>使用SysRq<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h2>
+<h2>使用SysRq<a class="headerlink" href="#id1" title="Link to this heading"></a></h2>
 <p>在不同的硬件平台有着不同的组合键出发 <code class="docutils literal notranslate"><span class="pre">SysRq</span></code> :</p>
 <div class="admonition note">
 <p class="admonition-title">备注</p>
 <p>一些键盘没有标记为 <code class="docutils literal notranslate"><span class="pre">SysRq</span></code> 的按键，而 <code class="docutils literal notranslate"><span class="pre">SysRq</span></code> 键也称为 <code class="docutils literal notranslate"><span class="pre">Print</span> <span class="pre">Screen</span></code> 键。此外，一些键盘可能无法同时按下 <code class="docutils literal notranslate"><span class="pre">SysRq</span></code> 组合键，可以尝试按住 <code class="docutils literal notranslate"><span class="pre">Alt</span></code> 键不放，然后顺序按下 <code class="docutils literal notranslate"><span class="pre">SysRq</span></code> ，释放 <code class="docutils literal notranslate"><span class="pre">SysRq</span></code> 键，再按下 <code class="docutils literal notranslate"><span class="pre">&lt;命令键&gt;</span></code> ，然后释放所有键来完成触发。</p>
 </div>
 <table class="docutils align-default" id="id5">
-<caption><span class="caption-text">SysRq组合键</span><a class="headerlink" href="#id5" title="Link to this table">¶</a></caption>
+<caption><span class="caption-text">SysRq组合键</span><a class="headerlink" href="#id5" title="Link to this table"></a></caption>
 <colgroup>
-<col style="width: 20%" />
-<col style="width: 80%" />
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
 </colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>不同平台</p></th>
@@ -285,12 +294,12 @@
 </table>
 </section>
 <section id="id2">
-<h2>SysRq <code class="docutils literal notranslate"><span class="pre">&lt;命令键&gt;</span></code><a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
+<h2>SysRq <code class="docutils literal notranslate"><span class="pre">&lt;命令键&gt;</span></code><a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
 <table class="docutils align-default" id="id6">
-<caption><span class="caption-text">SysRq命令键</span><a class="headerlink" href="#id6" title="Link to this table">¶</a></caption>
+<caption><span class="caption-text">SysRq命令键</span><a class="headerlink" href="#id6" title="Link to this table"></a></caption>
 <colgroup>
-<col style="width: 20%" />
-<col style="width: 80%" />
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
 </colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>命令</p></th>
@@ -323,7 +332,7 @@
 <td><p>向除init进程外的所有进程发送 <code class="docutils literal notranslate"><span class="pre">SIGKILL</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p>j</p></td>
-<td><p>强行”解冻它” - 通过 <code class="docutils literal notranslate"><span class="pre">FIFREEZE</span></code> ioctl 冻结的文件系统</p></td>
+<td><p>强行&quot;解冻它&quot; - 通过 <code class="docutils literal notranslate"><span class="pre">FIFREEZE</span></code> ioctl 冻结的文件系统</p></td>
 </tr>
 <tr class="row-odd"><td><p>k</p></td>
 <td><p>安全访问密钥(Secure Access Key， SAK)杀死当前虚拟控制台上所有进程，注意参考下文SAK部分的重要注释</p></td>
@@ -381,9 +390,9 @@
 </tr>
 </tbody>
 </table>
-<p>使用 <code class="docutils literal notranslate"><span class="pre">SysRq</span> <span class="pre">t</span></code> 排查 <a class="reference internal" href="debug_high_sys_process.html#debug-high-sys-process"><span class="std std-ref">debug占用很高system的进程</span></a> 是一个很好的方法( <a class="reference internal" href="bad_rip_value.html#bad-rip-value"><span class="std std-ref">“Bad RIP value”含义</span></a> )，能够快速找出导致系统死锁的进程(在系统日志中会看到大量的 <code class="docutils literal notranslate"><span class="pre">Call</span> <span class="pre">Trace</span></code> )，通过 <code class="docutils literal notranslate"><span class="pre">Call</span> <span class="pre">Trace</span></code> 可以定位到大量系统调用以及锁信息。例如，我在排查 <a class="reference internal" href="../../kubernetes/index.html#kubernetes"><span class="std std-ref">Kubernetes Atlas</span></a> 管控服务器的 <code class="docutils literal notranslate"><span class="pre">sys</span></code> 高(CPU的 <code class="docutils literal notranslate"><span class="pre">us</span></code> 极低)就采用这个方法，定位到 <code class="docutils literal notranslate"><span class="pre">prog-extension</span></code> 进程出现 <code class="docutils literal notranslate"><span class="pre">futex_wait</span></code> (用户空间锁等待):</p>
+<p>使用 <code class="docutils literal notranslate"><span class="pre">SysRq</span> <span class="pre">t</span></code> 排查 <a class="reference internal" href="debug_high_sys_process.html#debug-high-sys-process"><span class="std std-ref">debug占用很高system的进程</span></a> 是一个很好的方法( <a class="reference internal" href="bad_rip_value.html#bad-rip-value"><span class="std std-ref">&quot;Bad RIP value&quot;含义</span></a> )，能够快速找出导致系统死锁的进程(在系统日志中会看到大量的 <code class="docutils literal notranslate"><span class="pre">Call</span> <span class="pre">Trace</span></code> )，通过 <code class="docutils literal notranslate"><span class="pre">Call</span> <span class="pre">Trace</span></code> 可以定位到大量系统调用以及锁信息。例如，我在排查 <a class="reference internal" href="../../kubernetes/index.html#kubernetes"><span class="std std-ref">Kubernetes</span></a> 管控服务器的 <code class="docutils literal notranslate"><span class="pre">sys</span></code> 高(CPU的 <code class="docutils literal notranslate"><span class="pre">us</span></code> 极低)就采用这个方法，定位到 <code class="docutils literal notranslate"><span class="pre">prog-extension</span></code> 进程出现 <code class="docutils literal notranslate"><span class="pre">futex_wait</span></code> (用户空间锁等待):</p>
 <div class="literal-block-wrapper docutils container" id="id7">
-<div class="code-block-caption"><span class="caption-text">使用 <code class="docutils literal notranslate"><span class="pre">echo</span> <span class="pre">t</span> <span class="pre">&gt;</span> <span class="pre">/proc/sysrq-trigger</span></code> 找出系统死锁进程</span><a class="headerlink" href="#id7" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">使用 <code class="docutils literal notranslate"><span class="pre">echo</span> <span class="pre">t</span> <span class="pre">&gt;</span> <span class="pre">/proc/sysrq-trigger</span></code> 找出系统死锁进程</span><a class="headerlink" href="#id7" title="Link to this code"></a></div>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>[Tue Feb 28 16:06:33 2023] prog-extensio S    0 51268  49038 0x00000000
 [Tue Feb 28 16:06:33 2023]  ffff88355a77c200 0000000000000000 ffff8830ddaa4ec0 ffff883f7ed19f40
 [Tue Feb 28 16:06:33 2023]  ffff883f64d50000 ffffc90031857c70 ffffffff8173ca3b ffff88355a77c200
@@ -408,7 +417,7 @@
 </div>
 </section>
 <section id="id3">
-<h2>参考<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h2>
+<h2>参考<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="https://www.kernel.org/doc/html/latest/admin-guide/sysrq.html">Linux Magic System Request Key Hacks</a></p></li>
 </ul>
@@ -418,25 +427,37 @@
 
            </div>
           </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="index.html" class="btn btn-neutral float-left" title="Linux内核追踪" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="find_high_sys_process.html" class="btn btn-neutral float-right" title="找出消耗CPU的sys的进程" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="index.html" class="btn btn-neutral float-left" title="Linux内核追踪" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="find_high_sys_process.html" class="btn btn-neutral float-right" title="找出消耗CPU的sys的进程" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../copyright.html">Copyright</a> 2018 - now, Huatai Huang.</p>
+    <p>&#169; <a href="../../copyright.html">版权所有</a> 2018 - now, Huatai Huang。</p>
   </div>
 
-  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
   
     <!-- your html code here -->
     <br>
-    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡</a></p>
-     
+    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡 👈</a></p>
+    <br>
+    <p>网站采用 <a href="https://utteranc.es/">utterances</a> 评论系统，所有评论存储在<a href="https://github.com/huataihuang/cloud-atlas/issues">GitHub issues</a> 中，如果你看不到下方的评论框，那么可能需要<a href="https://cloud-atlas.readthedocs.io/zh-cn/latest/linux/security/vpn/index.html">自备梯子</a> 👈</p>
+    <div class="articleComments">
+        <comments>
+  <script src="https://utteranc.es/client.js"
+    repo="huataihuang/cloud-atlas"
+    issue-term="pathname"
+    theme="github-light"
+    crossorigin="anonymous"
+    async>
+  </script>
+</comments>
+    </div>
 
 
 </footer>

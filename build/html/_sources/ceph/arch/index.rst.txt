@@ -10,6 +10,8 @@ Ceph 架构
    :maxdepth: 1
 
    bluestore.rst
+   crush.rst
+   erasure_code.rst
 
 .. only::  subproject and html
 

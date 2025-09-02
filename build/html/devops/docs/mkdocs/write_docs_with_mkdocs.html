@@ -1,21 +1,25 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh" data-content_root="../../../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>使用MkDocs撰写文档 &mdash; Cloud Atlas 0.1 文档</title>
-      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../../_static/graphviz.css" type="text/css" />
+  <title>使用MkDocs撰写文档 &mdash; Cloud Atlas: Discovery beta 文档</title>
+      <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/graphviz.css?v=fd3f3429" />
+
+  
+    <link rel="shortcut icon" href="../../../_static/favicon.png"/>
   <!--[if lt IE 9]>
     <script src="../../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="../../../_static/documentation_options.js?v=7c91f8fd"></script>
-        <script src="../../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../../_static/documentation_options.js?v=8534f863"></script>
+        <script src="../../../_static/doctools.js?v=9a2dae69"></script>
         <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
-        <script src="../../../_static/translations.js?v=beaddf03"></script>
     <script src="../../../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../../../genindex.html" />
     <link rel="search" title="搜索" href="../../../search.html" />
@@ -33,21 +37,24 @@
           
           
           <a href="../../../index.html" class="icon icon-home">
-            Cloud Atlas
+            Cloud Atlas: Discovery
           </a>
+              <div class="version">
+                1.1
+              </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../../studio/index.html">Studio Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../infrastructure/index.html">Infrastructure Atlas</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">DevOps Atlas</a><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../studio/index.html">Studio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../infrastructure/index.html">Infrastructure</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">DevOps</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../../thought/index.html">DevOps 思考集锦</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../sre/index.html">SRE - 站点可靠性工程师</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../git/index.html">git</a></li>
@@ -55,15 +62,20 @@
 <li class="toctree-l2"><a class="reference internal" href="../../jenkins/index.html">Jenkins</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../gitea/index.html">Gitea</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../terraform/index.html">Terraform基础架构管理平台</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../heroku/index.html">Heroku</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../ansible/index.html">Ansible</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../jsonnet/index.html">Jsonnet数据模版语言</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../airflow/index.html">Airflow</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../checkov/index.html">checkov静态代码分析工具</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../utils/index.html">DevOps 工具集</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="../index.html">DevOps 文档</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="../think_write_doc.html">文档撰写的思考</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../docs_as_code.html">Docs-as-Code</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../write_doc.html">写文档</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../static_website.html">静态网站</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../obsidian.html">Obsidian Markdown知识管理</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../sphinx_doc/index.html">Sphinx文档</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../tiddlywiki/index.html">TiddlyWiki</a></li>
 <li class="toctree-l3 current"><a class="reference internal" href="index.html">MkDocs文档</a><ul class="current">
 <li class="toctree-l4"><a class="reference internal" href="intro_mkdocs.html">MkDocs简介</a></li>
 <li class="toctree-l4"><a class="reference internal" href="install_mkdocs.html">安装MkDocs</a></li>
@@ -73,9 +85,17 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../joplin/index.html">Joplin - 开源Markdown记事本</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../jekyll/index.html">Jekyll静态网站</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../hugo/index.html">Hugo文档</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../hugo/index.html">Hugo</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../hexo/index.html">Hexo静态网站</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../nextra/index.html">Nextra</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../docusaurus/index.html">Docusaurus</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../fossflow.html">FossFLOW</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../excalidraw.html">Excalidraw</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../tldraw.html">tldraw</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../diagrams.html">diagrams</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../mermaid.html">Mermaid</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../kindle/index.html">Kindle在，书未老</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../kobo/index.html">Kobo电子阅读器</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../pandoc.html">pandoc 文档转换工具</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../ffmpeg.html">ffmpeg</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../imagemagick.html">ImageMagick</a></li>
@@ -83,53 +103,54 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../../kvm/index.html">KVM Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../ceph/index.html">Ceph Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../gluster/index.html">Gluster Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../ovirt/index.html">oVirt Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../openstack/index.html">OpenStack Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../docker/index.html">Docker Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../kubernetes/index.html">Kubernetes Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../kubernetes_from_scratch/index.html">Kubernetes From Scratch (KFS) Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../rancher/index.html">Rancher Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../openshift/index.html">OpenShift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../sql/index.html">SQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../sqlite/index.html">SQLite Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../mysql/index.html">MySQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../pgsql/index.html">PostgreSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../clickhouse/index.html">ClickHouse Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../nosql/index.html">NoSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../redis/index.html">Redis Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../network/index.html">Network Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../infra_service/index.html">Infra-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../infra_search/index.html">Search Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../info_service/index.html">Info-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../web/index.html">Web Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../big_data/index.html">Big Data Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../machine_learning/index.html">Machine Learning Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../linux/index.html">Linux Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../kernel/index.html">Kernel Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../performance/index.html">Performance Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../distributed_system/index.html">Distributed System Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../shell/index.html">Shell Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../python/index.html">Python Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../django/index.html">Django Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../flask/index.html">Flask Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../javascript/index.html">JavaScript Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../nodejs/index.html">Node.js Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../clang/index.html">C Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../golang/index.html">Go Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../swift/index.html">Swift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../rust/index.html">Rust Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../ruby/index.html">Ruby Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../arm/index.html">ARM Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../android/index.html">Android Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../bsd/index.html">BSD Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../apple/index.html">Apple Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../windows/index.html">Windows Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../real/index.html">Real Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../management/index.html">Management Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../life/index.html">Life Atlas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../kvm/index.html">KVM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../ceph/index.html">Ceph</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../gluster/index.html">Gluster</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../ovirt/index.html">oVirt</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../openstack/index.html">OpenStack</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../docker/index.html">Docker</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../kubernetes/index.html">Kubernetes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../k8s_dev/index.html">Kubernetes Develop</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../rancher/index.html">Rancher</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../openshift/index.html">OpenShift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../sql/index.html">SQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../sqlite/index.html">SQLite</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../mysql/index.html">MySQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../pgsql/index.html">PostgreSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../nosql/index.html">NoSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../network/index.html">Network</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../infra_service/index.html">Infra-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../infra_search/index.html">Infra-Search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../web/index.html">Web</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../info_service/index.html">Info-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../big_data/index.html">Big Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../machine_learning/index.html">Machine Learning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../drone/index.html">Drone</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../linux/index.html">Linux</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../kernel/index.html">Kernel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../performance/index.html">Performance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../distributed_system/index.html">Distributed System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../shell/index.html">Shell</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../python/index.html">Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../django/index.html">Django</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../javascript/index.html">JavaScript</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../nodejs/index.html">Node.js</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../clang/index.html">C</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../golang/index.html">Go</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../swift/index.html">Swift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../rust/index.html">Rust</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../ruby/index.html">Ruby</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../lua/index.html">Lua</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../arm/index.html">ARM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../raspberry_pi/index.html">Raspberry Pi</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../android/index.html">Android</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../bsd/index.html">BSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../freebsd/index.html">FreeBSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../apple/index.html">Apple</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../windows/index.html">Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../real/index.html">Real</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../management/index.html">Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../life/index.html">Life</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../copyright.html">Copyright</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../aboutme.html">关于作者</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../donate.html">捐赠</a></li>
@@ -142,22 +163,22 @@
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../../index.html">Cloud Atlas</a>
+          <a href="../../../index.html">Cloud Atlas: Discovery</a>
       </nav>
 
       <div class="wy-nav-content">
         <div class="rst-content">
-          <div role="navigation" aria-label="Page navigation">
+          <div role="navigation" aria-label="页面导航">
   <ul class="wy-breadcrumbs">
       <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
-          <li class="breadcrumb-item"><a href="../../index.html">DevOps Atlas</a></li>
+          <li class="breadcrumb-item"><a href="../../index.html">DevOps</a></li>
           <li class="breadcrumb-item"><a href="../index.html">DevOps 文档</a></li>
           <li class="breadcrumb-item"><a href="index.html">MkDocs文档</a></li>
       <li class="breadcrumb-item active">使用MkDocs撰写文档</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../../../_sources/devops/docs/mkdocs/write_docs_with_mkdocs.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../../_sources/devops/docs/mkdocs/write_docs_with_mkdocs.rst.txt" rel="nofollow"> 查看页面源码</a>
       </li>
   </ul>
   <hr/>
@@ -166,12 +187,12 @@
            <div itemprop="articleBody">
              
   <section id="mkdocs">
-<span id="write-docs-with-mkdocs"></span><h1>使用MkDocs撰写文档<a class="headerlink" href="#mkdocs" title="Link to this heading">¶</a></h1>
+<span id="write-docs-with-mkdocs"></span><h1>使用MkDocs撰写文档<a class="headerlink" href="#mkdocs" title="Link to this heading"></a></h1>
 <section id="id1">
-<h2>初始化文档<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h2>
+<h2>初始化文档<a class="headerlink" href="#id1" title="Link to this heading"></a></h2>
 <p>在 <a class="reference internal" href="install_mkdocs.html#install-mkdocs"><span class="std std-ref">安装MkDocs</span></a> 之后，就可以开始撰写文档。第一个步骤是初始化文档结构:</p>
 <div class="literal-block-wrapper docutils container" id="id7">
-<div class="code-block-caption"><span class="caption-text">mkdocs new 创建 works 项目目录结构</span><a class="headerlink" href="#id7" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">mkdocs new 创建 works 项目目录结构</span><a class="headerlink" href="#id7" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mkdocs<span class="w"> </span>new<span class="w"> </span>works
 <span class="nb">cd</span><span class="w"> </span>works
 </pre></div>
@@ -179,7 +200,7 @@
 </div>
 </section>
 <section id="id2">
-<h2>文档布局<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
+<h2>文档布局<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
 <p>在MkDocs中，文档就是常规的Markdown文件，存放在 <code class="docutils literal notranslate"><span class="pre">docs_dir</span></code> 配置对应的目录(默认是 <code class="docutils literal notranslate"><span class="pre">docs</span></code> 目录):</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">mkdocs</span><span class="o">.</span><span class="n">yml</span>
 <span class="n">docs</span><span class="o">/</span>
@@ -188,10 +209,10 @@
 </div>
 </section>
 <section id="id3">
-<h2>如何合理布局<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h2>
+<h2>如何合理布局<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
 <p>其实我也是依样画葫芦，在网上能够找到大量的采用 MkDocs 撰写的文档库，可以直接clone下来参考构建自己的文档。例如，我参考 <a class="reference external" href="https://argoproj.github.io/argo-cd/">Argo CD 官方文档</a> 的 <a class="reference external" href="https://github.com/argoproj/argo-cd/blob/master/mkdocs.yml">Argo CD 手册案例</a> ，构建文档索引:</p>
 <div class="literal-block-wrapper docutils container" id="id8">
-<div class="code-block-caption"><span class="caption-text">mkdocs.yml</span><a class="headerlink" href="#id8" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">mkdocs.yml</span><a class="headerlink" href="#id8" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>site_name:<span class="w"> </span>My<span class="w"> </span>Works
 theme:<span class="w"> </span><span class="s1">&#39;material&#39;</span>
 plugins:
@@ -220,7 +241,7 @@ nav:
 </div>
 </section>
 <section id="id6">
-<h2>参考<a class="headerlink" href="#id6" title="Link to this heading">¶</a></h2>
+<h2>参考<a class="headerlink" href="#id6" title="Link to this heading"></a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="https://www.mkdocs.org/user-guide/writing-your-docs/">Writing your docs - How to layout and write your Markdown source files.</a></p></li>
 </ul>
@@ -230,25 +251,37 @@ nav:
 
            </div>
           </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="install_mkdocs.html" class="btn btn-neutral float-left" title="安装MkDocs" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="mkdocs_chinese_search.html" class="btn btn-neutral float-right" title="MkDocs中文搜索" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="install_mkdocs.html" class="btn btn-neutral float-left" title="安装MkDocs" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="mkdocs_chinese_search.html" class="btn btn-neutral float-right" title="MkDocs中文搜索" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../../copyright.html">Copyright</a> 2018 - now, Huatai Huang.</p>
+    <p>&#169; <a href="../../../copyright.html">版权所有</a> 2018 - now, Huatai Huang。</p>
   </div>
 
-  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
   
     <!-- your html code here -->
     <br>
-    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡</a></p>
-     
+    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡 👈</a></p>
+    <br>
+    <p>网站采用 <a href="https://utteranc.es/">utterances</a> 评论系统，所有评论存储在<a href="https://github.com/huataihuang/cloud-atlas/issues">GitHub issues</a> 中，如果你看不到下方的评论框，那么可能需要<a href="https://cloud-atlas.readthedocs.io/zh-cn/latest/linux/security/vpn/index.html">自备梯子</a> 👈</p>
+    <div class="articleComments">
+        <comments>
+  <script src="https://utteranc.es/client.js"
+    repo="huataihuang/cloud-atlas"
+    issue-term="pathname"
+    theme="github-light"
+    crossorigin="anonymous"
+    async>
+  </script>
+</comments>
+    </div>
 
 
 </footer>

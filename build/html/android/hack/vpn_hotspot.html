@@ -1,21 +1,25 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh" data-content_root="../../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>VPN Hotspot &mdash; Cloud Atlas 0.1 文档</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+  <title>VPN Hotspot &mdash; Cloud Atlas: Discovery beta 文档</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=fd3f3429" />
+
+  
+    <link rel="shortcut icon" href="../../_static/favicon.png"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="../../_static/documentation_options.js?v=7c91f8fd"></script>
-        <script src="../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=8534f863"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
         <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
-        <script src="../../_static/translations.js?v=beaddf03"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../../genindex.html" />
     <link rel="search" title="搜索" href="../../search.html" />
@@ -33,62 +37,65 @@
           
           
           <a href="../../index.html" class="icon icon-home">
-            Cloud Atlas
+            Cloud Atlas: Discovery
           </a>
+              <div class="version">
+                1.1
+              </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../studio/index.html">Studio Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../infrastructure/index.html">Infrastructure Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../devops/index.html">DevOps Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kvm/index.html">KVM Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../ceph/index.html">Ceph Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../gluster/index.html">Gluster Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../ovirt/index.html">oVirt Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../openstack/index.html">OpenStack Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../docker/index.html">Docker Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kubernetes/index.html">Kubernetes Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kubernetes_from_scratch/index.html">Kubernetes From Scratch (KFS) Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../rancher/index.html">Rancher Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../openshift/index.html">OpenShift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../sql/index.html">SQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../sqlite/index.html">SQLite Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../mysql/index.html">MySQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../pgsql/index.html">PostgreSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../clickhouse/index.html">ClickHouse Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../nosql/index.html">NoSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../redis/index.html">Redis Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../network/index.html">Network Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../infra_service/index.html">Infra-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../infra_search/index.html">Search Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../info_service/index.html">Info-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../web/index.html">Web Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../big_data/index.html">Big Data Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../machine_learning/index.html">Machine Learning Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../linux/index.html">Linux Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kernel/index.html">Kernel Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../performance/index.html">Performance Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../distributed_system/index.html">Distributed System Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../shell/index.html">Shell Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../python/index.html">Python Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../django/index.html">Django Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../flask/index.html">Flask Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../javascript/index.html">JavaScript Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../nodejs/index.html">Node.js Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../clang/index.html">C Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../golang/index.html">Go Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../swift/index.html">Swift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../rust/index.html">Rust Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../ruby/index.html">Ruby Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../arm/index.html">ARM Atlas</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Android Atlas</a><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../studio/index.html">Studio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../infrastructure/index.html">Infrastructure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../devops/index.html">DevOps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kvm/index.html">KVM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ceph/index.html">Ceph</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../gluster/index.html">Gluster</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ovirt/index.html">oVirt</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../openstack/index.html">OpenStack</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../docker/index.html">Docker</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kubernetes/index.html">Kubernetes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../k8s_dev/index.html">Kubernetes Develop</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../rancher/index.html">Rancher</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../openshift/index.html">OpenShift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../sql/index.html">SQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../sqlite/index.html">SQLite</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../mysql/index.html">MySQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../pgsql/index.html">PostgreSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../nosql/index.html">NoSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../network/index.html">Network</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../infra_service/index.html">Infra-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../infra_search/index.html">Infra-Search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../web/index.html">Web</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../info_service/index.html">Info-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../big_data/index.html">Big Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../machine_learning/index.html">Machine Learning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../drone/index.html">Drone</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../linux/index.html">Linux</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kernel/index.html">Kernel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../performance/index.html">Performance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../distributed_system/index.html">Distributed System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../shell/index.html">Shell</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../python/index.html">Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../django/index.html">Django</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../javascript/index.html">JavaScript</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../nodejs/index.html">Node.js</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../clang/index.html">C</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../golang/index.html">Go</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../swift/index.html">Swift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../rust/index.html">Rust</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ruby/index.html">Ruby</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lua/index.html">Lua</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../arm/index.html">ARM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../raspberry_pi/index.html">Raspberry Pi</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Android</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../device/index.html">Android 设备</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../startup/index.html">Android 起步</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../install/index.html">Android 安装</a></li>
@@ -98,9 +105,15 @@
 <li class="toctree-l3"><a class="reference internal" href="check_secondhand_phone.html">二手手机验机</a></li>
 <li class="toctree-l3"><a class="reference internal" href="ab_seamless_update.html">A/B无缝系统更新</a></li>
 <li class="toctree-l3"><a class="reference internal" href="magisk.html">Magisk</a></li>
+<li class="toctree-l3"><a class="reference internal" href="magisk_zygisk.html">Magisk Zygisk</a></li>
 <li class="toctree-l3"><a class="reference internal" href="magisk_root_ota.html">Magisk root Android设备并支持OTA更新</a></li>
+<li class="toctree-l3"><a class="reference internal" href="android_recovery_mode.html">Android Recovery Mode</a></li>
 <li class="toctree-l3"><a class="reference internal" href="pixel_3_chinese_volte.html">配置Pixel 3支持中国运营商VoLTE</a></li>
 <li class="toctree-l3"><a class="reference internal" href="pixel_4_volte.html">配置Pixel 4支持VoLTE</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cn_samsung_galaxy_watch_4_wich_android.html">原生Android适配使用国行三星Galaxy Watch 4</a></li>
+<li class="toctree-l3"><a class="reference internal" href="samsung_health_monitor.html">三星健康监测器(Samsung Health Monitor)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="samsung_pay_card.html">三星智能卡</a></li>
+<li class="toctree-l3"><a class="reference internal" href="samsung_music.html">Samsung Music</a></li>
 <li class="toctree-l3"><a class="reference internal" href="pixel_6_volte.html">配置Pixel 6支持VoLTE</a></li>
 <li class="toctree-l3"><a class="reference internal" href="change_build_prop.html">修改build.prop文件</a></li>
 <li class="toctree-l3"><a class="reference internal" href="android_busybox.html">Android系统Busybox</a></li>
@@ -121,6 +134,9 @@
 <li class="toctree-l3"><a class="reference internal" href="android_monitor.html">Android手机作为显示器</a></li>
 <li class="toctree-l3"><a class="reference internal" href="android_otg.html">Android OTG</a></li>
 <li class="toctree-l3"><a class="reference internal" href="project_soli.html">Project Soli</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pixel_usb_devices.html">Pixel可用的USB设备</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pixel_uart.html">Pixel UART(Serial Port, Console)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pixel_minicom.html">使用Pixel运行minicom(串口调试服务器)</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../virtual/index.html">Android 虚拟化</a></li>
@@ -132,12 +148,13 @@
 <li class="toctree-l2"><a class="reference internal" href="../mobile_work/index.html">Android 移动工作</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../bsd/index.html">BSD Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../apple/index.html">Apple Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../windows/index.html">Windows Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../real/index.html">Real Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../management/index.html">Management Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../life/index.html">Life Atlas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../bsd/index.html">BSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../freebsd/index.html">FreeBSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../apple/index.html">Apple</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../windows/index.html">Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../real/index.html">Real</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../management/index.html">Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../life/index.html">Life</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../copyright.html">Copyright</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../aboutme.html">关于作者</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../donate.html">捐赠</a></li>
@@ -150,21 +167,21 @@
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../index.html">Cloud Atlas</a>
+          <a href="../../index.html">Cloud Atlas: Discovery</a>
       </nav>
 
       <div class="wy-nav-content">
         <div class="rst-content">
-          <div role="navigation" aria-label="Page navigation">
+          <div role="navigation" aria-label="页面导航">
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
-          <li class="breadcrumb-item"><a href="../index.html">Android Atlas</a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Android</a></li>
           <li class="breadcrumb-item"><a href="index.html">Android Hack</a></li>
       <li class="breadcrumb-item active">VPN Hotspot</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../../_sources/android/hack/vpn_hotspot.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../_sources/android/hack/vpn_hotspot.rst.txt" rel="nofollow"> 查看页面源码</a>
       </li>
   </ul>
   <hr/>
@@ -173,7 +190,7 @@
            <div itemprop="articleBody">
              
   <section id="vpn-hotspot">
-<span id="id1"></span><h1>VPN Hotspot<a class="headerlink" href="#vpn-hotspot" title="Link to this heading">¶</a></h1>
+<span id="id1"></span><h1>VPN Hotspot<a class="headerlink" href="#vpn-hotspot" title="Link to this heading"></a></h1>
 <div class="admonition note">
 <p class="admonition-title">备注</p>
 <p>Linux平台VPN连接是可以通过NAT方式共享给局域网其他主机的，例如你可以使用 <a class="reference internal" href="../../linux/security/vpn/ocserv/openconnect_vpn.html#openconnect-vpn"><span class="std std-ref">OpenConnect VPN</span></a> 翻墙，然后局域网其他主机默认路由指向这台主机，只要在这个主机上启用NAT，则其他主机也能够流畅访问网络。</p>
@@ -185,7 +202,7 @@
 <p>Android设备安全限制相对灵活，只要Android手机Root过了，就可以通过VPNHotspot应用共享VPN上网。本文就是在Pixel手机上实践共享VPN的记录。</p>
 </div>
 <section id="id2">
-<h2>原理<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
+<h2>原理<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
 <p><a class="reference external" href="https://github.com/Mygod/VPNHotspot">VPN Hotspot</a> 是一个开源共享VPN连接给hotspot或repeater的Android程序，不过运行需要root过的Android环境。可以从 <a class="reference external" href="https://labs.xda-developers.com/store/app/be.mygod.vpnhotspot">XDA labs的vpnhotspot</a> 下载，也可以直接从Goolge Play安装。</p>
 <p>VPN Hotspot程序默认设置是一种通用型并且最大兼容的设置，但是这个设置可能并没有为电池寿命做优化。</p>
 <div class="admonition note">
@@ -193,7 +210,7 @@
 <p>共享热点也称为 <code class="docutils literal notranslate"><span class="pre">Tethering</span></code> 技术，特别是通过USB共享Internet连接，称为 <code class="docutils literal notranslate"><span class="pre">USB</span> <span class="pre">Tethering</span></code> 。不过，macOS默认没有包含Android USB Tethering驱动，所以在Android手机上激活USB Tethering后，通过USB连接到Mac电脑上是没有任何响应的，需要安装和设置 <a class="reference internal" href="android_usb_tethering.html#android-usb-tethering"><span class="std std-ref">通过USB Tethering方式共享Android的Internet连接</span></a> 驱动。</p>
 </div>
 <section id="upstream">
-<h3>Upstream<a class="headerlink" href="#upstream" title="Link to this heading">¶</a></h3>
+<h3>Upstream<a class="headerlink" href="#upstream" title="Link to this heading"></a></h3>
 <ul class="simple">
 <li><p>Upstream network interface: 在VPN Hotspot中主要的upstream是用于重路由数据流量的。如果保持空白则表示自动检测系统VPN(允许/在使用VPN时不允许绕过本程序)。如果设置为 <code class="docutils literal notranslate"><span class="pre">none</span></code> 就阻止绑定VPN</p></li>
 <li><p>Fallback upstream: Fallack upstream是用于某些VPN将一些失效路由返到默认网卡。如果该设置空白就表示自动检测。如果设置 <code class="docutils literal notranslate"><span class="pre">none</span></code> 就禁止 fallback。你可以设置一个接口</p></li>
@@ -204,7 +221,7 @@
 </ul>
 </section>
 <section id="downstream">
-<h3>Downstream<a class="headerlink" href="#downstream" title="Link to this heading">¶</a></h3>
+<h3>Downstream<a class="headerlink" href="#downstream" title="Link to this heading"></a></h3>
 <ul class="simple">
 <li><p>Disable IPv6 tethering: 启用这个选项禁止系统绑定IPv6。这可以阻止IPv6泄漏，因为当前程序不能处理IPv6 VPN 绑定</p></li>
 <li><p>(从Android 8.1开始)Tethering hardware acceleration: 这个功能是系统开发者模式的相同设置的快捷方式。为了让VPN绑在系统绑定上工作可能必须关闭这个选项，但是当绑定激活时候可能降低电池寿命</p></li>
@@ -212,7 +229,7 @@
 </ul>
 </section>
 <section id="misc">
-<h3>Misc<a class="headerlink" href="#misc" title="Link to this heading">¶</a></h3>
+<h3>Misc<a class="headerlink" href="#misc" title="Link to this heading"></a></h3>
 <ul class="simple">
 <li><p>Keep Wi-Fi alive: 当开启repeater, temporary hotspot 或 system VPN hotspot时，锁定Wi-Fi</p>
 <ul>
@@ -234,12 +251,15 @@
 </section>
 </section>
 <section id="id4">
-<h2>使用VPN HotSpot<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h2>
+<h2>使用VPN HotSpot<a class="headerlink" href="#id4" title="Link to this heading"></a></h2>
+<section id="usb-usb-tethering">
+<h3>USB网络共享(USB tethering)<a class="headerlink" href="#usb-usb-tethering" title="Link to this heading"></a></h3>
+<p>USB网络共享(USB
+tethering)就是将手机和电脑使用USB线连接，不需要启动WiFi功能(无需手机和电脑连接相同的无线网络)，此时手机就相当于电脑的一个外接有线网卡。这个方式对于个人电脑使用非常方便，但是缺陷是需要电脑能够识别这种特定驱动的外接模拟网卡。对于Linux系统，操作系统内置支持 <a class="reference internal" href="android_usb_tethering.html#android-usb-tethering"><span class="std std-ref">通过USB Tethering方式共享Android的Internet连接</span></a> 驱动，但是对于 <a class="reference internal" href="../../apple/macos/index.html#macos"><span class="std std-ref">macOS</span></a> 则需要安装 <a class="reference external" href="https://github.com/jwise/horndis">HoRNDIS(the USB tethering driver for Mac OS X)</a> 驱动。</p>
 <div class="admonition note">
 <p class="admonition-title">备注</p>
-<p>如果是使用移动数据网络建立的VPN连接，则可以使用 <code class="docutils literal notranslate"><span class="pre">Wi-Fi</span> <span class="pre">Hotspot</span></code> 。但是，如果是已经在Wi-Fi网络上启用了VPN，就不可以使用 <code class="docutils literal notranslate"><span class="pre">Wi-Fi</span> <span class="pre">Hotspot</span></code> ，否则会导致VPN断开(因为无线网卡被改为AP热点导致直联的WLAN断开)</p>
+<p>USB网络共享可能需要Android手机开启开发者模式(USB Debug)</p>
 </div>
-<p>通常有3步操作：</p>
 <ul class="simple">
 <li><p>启动VPN - 可以使用Cisco AnyConnect连接VPN，连接完成后，切换到VPN Hot Spot程序</p></li>
 <li><p>启用 <code class="docutils literal notranslate"><span class="pre">Wi-Fi</span> <span class="pre">Hotspot</span></code> 或 <code class="docutils literal notranslate"><span class="pre">USB</span> <span class="pre">Tethering</span></code> 或 <code class="docutils literal notranslate"><span class="pre">Bluetooth</span> <span class="pre">Tething</span></code> ，也可以组合这几种Tethering设置。这是调用Android系统内建的Tethering设置。</p></li>
@@ -263,8 +283,27 @@
 <p>Andorid系统默认不能连接隐藏的网络，需要在设置添加无线SSID时候选择 <code class="docutils literal notranslate"><span class="pre">Advanced</span> <span class="pre">options</span> <span class="pre">&gt;&gt;</span> <span class="pre">Hidden</span> <span class="pre">network</span> <span class="pre">&gt;&gt;</span> <span class="pre">Yes</span></code> 才能连接到Hidden(stealth) WiFi network。否则会始终提示WiFi status是 <code class="docutils literal notranslate"><span class="pre">out</span> <span class="pre">of</span> <span class="pre">range</span></code> (参考 <a class="reference external" href="https://supportcommunity.zebra.com/s/article/000020035?language=en_US">Android 10: Connect To A Hidden Network</a> )</p>
 </div>
 </section>
+<section id="wlan-wifi">
+<h3>WLAN热点(WiFi共享)<a class="headerlink" href="#wlan-wifi" title="Link to this heading"></a></h3>
+<p>另一种更为通用的方式是使用 <code class="docutils literal notranslate"><span class="pre">VPN</span> <span class="pre">Hotspot</span></code> 的共享WLAN热点，也就是Android手机自己模拟出一个WiFi AP，同时共享VPN(tun)，这样所有连接到手机共享的WiFi热点，就能共享VPN访问。这种方式无需电脑上安装任何驱动，对于电脑来说，就是换一个AP连接，然后就能够通过手机端VPN线路。</p>
+<figure class="align-default" id="id7">
+<img alt="../../_images/vpn_share_wlan.png" src="../../_images/vpn_share_wlan.png" />
+<figcaption>
+<p><span class="caption-text">启用WLAN共享方式VPN访问</span><a class="headerlink" href="#id7" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<ul class="simple">
+<li><p>点击 <code class="docutils literal notranslate"><span class="pre">WLAN热点</span></code> 开启Android上共享WiFi热点，此时会类似USB网络共享一样，出现一个 <code class="docutils literal notranslate"><span class="pre">wlan1</span></code> 设备接口</p></li>
+<li><p>再点击 <code class="docutils literal notranslate"><span class="pre">wlan1</span></code> 设备启用它，此时连接到共享热点的客户端就能够通过共享VPN访问特定网络</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>共享 <code class="docutils literal notranslate"><span class="pre">WLAN热点</span></code> 会自动配置一个随机密码，这个密码需要点击左上角的WiFi加密图标来进一步菜单获得</p>
+</div>
+</section>
+</section>
 <section id="id5">
-<h2>参考<a class="headerlink" href="#id5" title="Link to this heading">¶</a></h2>
+<h2>参考<a class="headerlink" href="#id5" title="Link to this heading"></a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="https://www.technadu.com/share-vpn-connection/38816/">How to Share Your VPN Connection? – Step-By-Step Guide Covering Windows, MacOS, Android &amp; iOS!</a></p></li>
 <li><p><a class="reference external" href="https://github.com/Mygod/VPNHotspot">VPN Hotspot</a></p></li>
@@ -275,25 +314,37 @@
 
            </div>
           </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="android_sshd.html" class="btn btn-neutral float-left" title="Android SSH服务" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="androidscreencast.html" class="btn btn-neutral float-right" title="AndroidScreencast控制Android" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="android_sshd.html" class="btn btn-neutral float-left" title="Android SSH服务" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="androidscreencast.html" class="btn btn-neutral float-right" title="AndroidScreencast控制Android" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../copyright.html">Copyright</a> 2018 - now, Huatai Huang.</p>
+    <p>&#169; <a href="../../copyright.html">版权所有</a> 2018 - now, Huatai Huang。</p>
   </div>
 
-  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
   
     <!-- your html code here -->
     <br>
-    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡</a></p>
-     
+    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡 👈</a></p>
+    <br>
+    <p>网站采用 <a href="https://utteranc.es/">utterances</a> 评论系统，所有评论存储在<a href="https://github.com/huataihuang/cloud-atlas/issues">GitHub issues</a> 中，如果你看不到下方的评论框，那么可能需要<a href="https://cloud-atlas.readthedocs.io/zh-cn/latest/linux/security/vpn/index.html">自备梯子</a> 👈</p>
+    <div class="articleComments">
+        <comments>
+  <script src="https://utteranc.es/client.js"
+    repo="huataihuang/cloud-atlas"
+    issue-term="pathname"
+    theme="github-light"
+    crossorigin="anonymous"
+    async>
+  </script>
+</comments>
+    </div>
 
 
 </footer>

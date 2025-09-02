@@ -1,7 +1,7 @@
 .. _big_data:
 
 =================================
-Big Data Atlas
+Big Data
 =================================
 
 
@@ -17,6 +17,7 @@ Big Data Atlas
    :maxdepth: 1
 
    introduce_big_data.rst
+   log_systems.rst
    spark_vs_flink.rst
    presto_vs_impala.rst
    message_queue/index
@@ -25,7 +26,7 @@ Big Data Atlas
    spark/index
    kafka/index
    flink/index
-   presto/index
+   trino/index
    elasticsearch/index
    log_analysis.rst
    fluentd/index

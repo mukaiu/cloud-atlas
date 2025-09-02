@@ -9,6 +9,7 @@
 
    tcpdump/index
    wireshark/index
+   ntop/index
 
 .. only::  subproject and html
 

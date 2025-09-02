@@ -1,21 +1,25 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh" data-content_root="../../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>创建KVM虚拟机 &mdash; Cloud Atlas 0.1 文档</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+  <title>创建KVM虚拟机 &mdash; Cloud Atlas: Discovery beta 文档</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=fd3f3429" />
+
+  
+    <link rel="shortcut icon" href="../../_static/favicon.png"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="../../_static/documentation_options.js?v=7c91f8fd"></script>
-        <script src="../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=8534f863"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
         <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
-        <script src="../../_static/translations.js?v=beaddf03"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../../genindex.html" />
     <link rel="search" title="搜索" href="../../search.html" />
@@ -33,22 +37,25 @@
           
           
           <a href="../../index.html" class="icon icon-home">
-            Cloud Atlas
+            Cloud Atlas: Discovery
           </a>
+              <div class="version">
+                1.1
+              </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../studio/index.html">Studio Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../infrastructure/index.html">Infrastructure Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../devops/index.html">DevOps Atlas</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../index.html">KVM Atlas</a><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../studio/index.html">Studio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../infrastructure/index.html">Infrastructure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../devops/index.html">DevOps</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">KVM</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../install/index.html">KVM 环境安装</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="index.html">KVM 快速起步</a><ul class="current">
 <li class="toctree-l3 current"><a class="current reference internal" href="#">创建KVM虚拟机</a><ul>
@@ -58,6 +65,7 @@
 <li class="toctree-l4"><a class="reference internal" href="#centos-7-vault">创建CentOS 7 (vault)虚拟机</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#centos-9-stream">创建CentOS 9 Stream虚拟机</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#suse">创建SUSE虚拟机</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#lfs">创建LFS虚拟机</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#bridge">虚拟机bridge网络</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#id1">虚拟机串口设置</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#id3">虚拟机内部初始设置</a></li>
@@ -74,7 +82,7 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../hypervisor.html">hypervisor</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../kvm_architecture.html">KVM虚拟化</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../qemu_vs_kvm.html">QEMU v. KVM</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../storage/index.html">KVM 存储</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../libvirt/index.html">Libvirt虚拟机管理器</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../remote_desktop/index.html">远程桌面</a></li>
@@ -94,60 +102,58 @@
 <li class="toctree-l2"><a class="reference internal" href="../gpu_passthrough_with_kvm.html">KVM的GPU直通虚拟化</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../nvidia_cuda_gpu_in_kvm.html">在KVM中使用NVIDIA CUDA GPU</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../amd_rocm_gpu_in_kvm.html">在KVM中使用AMD ROCm GPU</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../macos_xhyve/index.html">macOS平台KVM虚拟化技术xhyve</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../amd_kvm/index.html">AMD硬件环境KVM虚拟化</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../arm_kvm/index.html">ARM硬件环境KVM虚拟化</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../kvm_macos/index.html">KVM虚拟化运行macOS</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../utm/index.html">macOS平台QEMU实现:UTM</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../debug/index.html">KVM故障排查</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../ceph/index.html">Ceph Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../gluster/index.html">Gluster Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../ovirt/index.html">oVirt Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../openstack/index.html">OpenStack Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../docker/index.html">Docker Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kubernetes/index.html">Kubernetes Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kubernetes_from_scratch/index.html">Kubernetes From Scratch (KFS) Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../rancher/index.html">Rancher Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../openshift/index.html">OpenShift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../sql/index.html">SQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../sqlite/index.html">SQLite Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../mysql/index.html">MySQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../pgsql/index.html">PostgreSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../clickhouse/index.html">ClickHouse Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../nosql/index.html">NoSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../redis/index.html">Redis Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../network/index.html">Network Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../infra_service/index.html">Infra-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../infra_search/index.html">Search Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../info_service/index.html">Info-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../web/index.html">Web Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../big_data/index.html">Big Data Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../machine_learning/index.html">Machine Learning Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../linux/index.html">Linux Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kernel/index.html">Kernel Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../performance/index.html">Performance Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../distributed_system/index.html">Distributed System Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../shell/index.html">Shell Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../python/index.html">Python Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../django/index.html">Django Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../flask/index.html">Flask Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../javascript/index.html">JavaScript Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../nodejs/index.html">Node.js Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../clang/index.html">C Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../golang/index.html">Go Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../swift/index.html">Swift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../rust/index.html">Rust Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../ruby/index.html">Ruby Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../arm/index.html">ARM Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../android/index.html">Android Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../bsd/index.html">BSD Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../apple/index.html">Apple Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../windows/index.html">Windows Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../real/index.html">Real Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../management/index.html">Management Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../life/index.html">Life Atlas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ceph/index.html">Ceph</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../gluster/index.html">Gluster</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ovirt/index.html">oVirt</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../openstack/index.html">OpenStack</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../docker/index.html">Docker</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kubernetes/index.html">Kubernetes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../k8s_dev/index.html">Kubernetes Develop</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../rancher/index.html">Rancher</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../openshift/index.html">OpenShift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../sql/index.html">SQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../sqlite/index.html">SQLite</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../mysql/index.html">MySQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../pgsql/index.html">PostgreSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../nosql/index.html">NoSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../network/index.html">Network</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../infra_service/index.html">Infra-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../infra_search/index.html">Infra-Search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../web/index.html">Web</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../info_service/index.html">Info-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../big_data/index.html">Big Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../machine_learning/index.html">Machine Learning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../drone/index.html">Drone</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../linux/index.html">Linux</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kernel/index.html">Kernel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../performance/index.html">Performance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../distributed_system/index.html">Distributed System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../shell/index.html">Shell</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../python/index.html">Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../django/index.html">Django</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../javascript/index.html">JavaScript</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../nodejs/index.html">Node.js</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../clang/index.html">C</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../golang/index.html">Go</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../swift/index.html">Swift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../rust/index.html">Rust</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ruby/index.html">Ruby</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lua/index.html">Lua</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../arm/index.html">ARM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../raspberry_pi/index.html">Raspberry Pi</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../android/index.html">Android</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../bsd/index.html">BSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../freebsd/index.html">FreeBSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../apple/index.html">Apple</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../windows/index.html">Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../real/index.html">Real</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../management/index.html">Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../life/index.html">Life</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../copyright.html">Copyright</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../aboutme.html">关于作者</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../donate.html">捐赠</a></li>
@@ -160,21 +166,21 @@
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../index.html">Cloud Atlas</a>
+          <a href="../../index.html">Cloud Atlas: Discovery</a>
       </nav>
 
       <div class="wy-nav-content">
         <div class="rst-content">
-          <div role="navigation" aria-label="Page navigation">
+          <div role="navigation" aria-label="页面导航">
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
-          <li class="breadcrumb-item"><a href="../index.html">KVM Atlas</a></li>
+          <li class="breadcrumb-item"><a href="../index.html">KVM</a></li>
           <li class="breadcrumb-item"><a href="index.html">KVM 快速起步</a></li>
       <li class="breadcrumb-item active">创建KVM虚拟机</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../../_sources/kvm/startup/create_vm.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../_sources/kvm/startup/create_vm.rst.txt" rel="nofollow"> 查看页面源码</a>
       </li>
   </ul>
   <hr/>
@@ -183,7 +189,7 @@
            <div itemprop="articleBody">
              
   <section id="kvm">
-<span id="create-vm"></span><h1>创建KVM虚拟机<a class="headerlink" href="#kvm" title="Link to this heading">¶</a></h1>
+<span id="create-vm"></span><h1>创建KVM虚拟机<a class="headerlink" href="#kvm" title="Link to this heading"></a></h1>
 <p>KVM虚拟化是实现模拟数据中心的核心。因为单纯的Docker+Kubernetes无法模拟多台物理服务器，虽然容器技术更为轻量级。</p>
 <p>常规的虚拟机采用 <code class="docutils literal notranslate"><span class="pre">qcow2</span></code> 镜像文件作为虚拟磁盘，性能有限。为了能够提高虚拟机性能，我们需要采用 <a class="reference internal" href="../iommu/ovmf.html#ovmf"><span class="std std-ref">Open Virtual Machine Firmware(OMVF)</span></a> 来实现PCIe pass-through，可以加速网络、存储、图形性能，接近物理主机的性能：</p>
 <ul class="simple">
@@ -191,9 +197,9 @@
 <li><p><a class="reference internal" href="../../real/priv_cloud/priv_kvm.html#priv-kvm"><span class="std std-ref">私有云KVM环境</span></a> 使用 <a class="reference internal" href="../../linux/server/hardware/hpe/hpe_dl360_gen9.html#hpe-dl360-gen9"><span class="std std-ref">HPE ProLiant DL360 Gen9服务器</span></a> ，内核配置 <code class="docutils literal notranslate"><span class="pre">GRUB_CMDLINE_LINUX_DEFAULT=&quot;intel_iommu=on</span> <span class="pre">vfio-pci.ids=144d:a80a&quot;</span></code> 详见 <a class="reference internal" href="../../real/priv_cloud/priv_kvm.html#priv-kvm"><span class="std std-ref">私有云KVM环境</span></a></p></li>
 </ul>
 <section id="ubuntu">
-<h2>创建Ubuntu虚拟机<a class="headerlink" href="#ubuntu" title="Link to this heading">¶</a></h2>
+<h2>创建Ubuntu虚拟机<a class="headerlink" href="#ubuntu" title="Link to this heading"></a></h2>
 <section id="x86ubuntu">
-<h3>X86环境Ubuntu虚拟机<a class="headerlink" href="#x86ubuntu" title="Link to this heading">¶</a></h3>
+<h3>X86环境Ubuntu虚拟机<a class="headerlink" href="#x86ubuntu" title="Link to this heading"></a></h3>
 <ul>
 <li><p>创建虚拟机安装Guest操作系统:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">virt</span><span class="o">-</span><span class="n">install</span> \
@@ -252,7 +258,7 @@
 </ul>
 <div class="admonition note">
 <p class="admonition-title">备注</p>
-<p>安装命令参考 <a class="reference external" href="https://askubuntu.com/questions/1237165/cant-install-ubuntu-20-04-kvm-guest">Can’t Install Ubuntu 20.04 KVM Guest</a></p>
+<p>安装命令参考 <a class="reference external" href="https://askubuntu.com/questions/1237165/cant-install-ubuntu-20-04-kvm-guest">Can't Install Ubuntu 20.04 KVM Guest</a></p>
 </div>
 <p>安装中磁盘划分:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Virtual</span> <span class="n">disk</span> <span class="mi">1</span> <span class="p">(</span><span class="n">vda</span><span class="p">)</span> <span class="o">-</span> <span class="mf">6.4</span> <span class="n">GB</span> <span class="n">Virtio</span> <span class="n">Block</span> <span class="n">Device</span>
@@ -262,7 +268,7 @@
 </div>
 </section>
 <section id="armubuntu">
-<h3>ARM环境Ubuntu虚拟机<a class="headerlink" href="#armubuntu" title="Link to this heading">¶</a></h3>
+<h3>ARM环境Ubuntu虚拟机<a class="headerlink" href="#armubuntu" title="Link to this heading"></a></h3>
 <p>我在 <a class="reference internal" href="../arm_kvm/arm_kvm_startup.html#arm-kvm-startup"><span class="std std-ref">ARM环境KVM快速起步</span></a> 中使用以下命令安装Ubuntu 20.04.2 LTS虚拟机:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">virt</span><span class="o">-</span><span class="n">install</span> \
   <span class="o">--</span><span class="n">network</span> <span class="n">bridge</span><span class="p">:</span><span class="n">virbr0</span> \
@@ -297,7 +303,7 @@
 </section>
 </section>
 <section id="centos">
-<h2>创建CentOS虚拟机<a class="headerlink" href="#centos" title="Link to this heading">¶</a></h2>
+<h2>创建CentOS虚拟机<a class="headerlink" href="#centos" title="Link to this heading"></a></h2>
 <ul>
 <li><p>CentOS 8虚拟机安装:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">virt</span><span class="o">-</span><span class="n">install</span> \
@@ -346,6 +352,27 @@
 </pre></div>
 </div>
 </li>
+<li><p>CentOS 7虚拟机在线安装( 使用 <a class="reference internal" href="../libvirt/storage/libvirt_zfs_pool.html#libvirt-zfs-pool"><span class="std std-ref">libvirt ZFS存储池</span></a> ，创建方法同下文 <strong>创建CentOS 7 (vault)虚拟机</strong>  ):</p></li>
+</ul>
+<div class="literal-block-wrapper docutils container" id="id6">
+<div class="code-block-caption"><span class="caption-text">在 <a class="reference internal" href="../libvirt/storage/libvirt_zfs_pool.html#libvirt-zfs-pool"><span class="std std-ref">libvirt ZFS存储池</span></a> 创建CentOS 7虚拟机</span><a class="headerlink" href="#id6" title="Link to this code"></a></div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># virsh vol-create-as images_zfs centos7-zfs 20G</span>
+
+<span class="n">virt</span><span class="o">-</span><span class="n">install</span> \
+  <span class="o">--</span><span class="n">network</span> <span class="n">bridge</span><span class="p">:</span><span class="n">br0</span> \
+  <span class="o">--</span><span class="n">name</span> <span class="n">centos7</span><span class="o">-</span><span class="n">zfs</span> \
+  <span class="o">--</span><span class="n">ram</span><span class="o">=</span><span class="mi">4096</span> \
+  <span class="o">--</span><span class="n">vcpus</span><span class="o">=</span><span class="mi">2</span> \
+  <span class="o">--</span><span class="n">os</span><span class="o">-</span><span class="nb">type</span><span class="o">=</span><span class="n">Linux</span> <span class="o">--</span><span class="n">os</span><span class="o">-</span><span class="n">variant</span><span class="o">=</span><span class="n">rhl7</span> \
+  <span class="o">--</span><span class="n">boot</span> <span class="n">uefi</span> <span class="o">--</span><span class="n">cpu</span> <span class="n">host</span><span class="o">-</span><span class="n">passthrough</span> \
+  <span class="o">--</span><span class="n">disk</span> <span class="n">vol</span><span class="o">=</span><span class="n">images_zfs</span><span class="o">/</span><span class="n">centos7</span><span class="o">-</span><span class="n">zfs</span><span class="p">,</span><span class="n">sparse</span><span class="o">=</span><span class="n">false</span><span class="p">,</span><span class="nb">format</span><span class="o">=</span><span class="n">raw</span><span class="p">,</span><span class="n">bus</span><span class="o">=</span><span class="n">virtio</span><span class="p">,</span><span class="n">cache</span><span class="o">=</span><span class="n">none</span><span class="p">,</span><span class="n">io</span><span class="o">=</span><span class="n">native</span> \
+  <span class="o">--</span><span class="n">graphics</span> <span class="n">none</span> \
+  <span class="o">--</span><span class="n">location</span><span class="o">=</span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">mirrors</span><span class="mf">.163</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">centos</span><span class="o">-</span><span class="n">vault</span><span class="o">/</span><span class="mf">7.8.2003</span><span class="o">/</span><span class="n">os</span><span class="o">/</span><span class="n">x86_64</span><span class="o">/</span> \
+  <span class="o">--</span><span class="n">extra</span><span class="o">-</span><span class="n">args</span><span class="o">=</span><span class="s2">&quot;console=tty0 console=ttyS0,115200&quot;</span>
+</pre></div>
+</div>
+</div>
+<ul>
 <li><p>CentOS 6.10 虚拟机在线安装:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">virt</span><span class="o">-</span><span class="n">install</span> \
   <span class="o">--</span><span class="n">network</span> <span class="n">bridge</span><span class="p">:</span><span class="n">virbr0</span> \
@@ -367,7 +394,7 @@
 </div>
 </section>
 <section id="fedora">
-<h2>创建Fedora虚拟机<a class="headerlink" href="#fedora" title="Link to this heading">¶</a></h2>
+<h2>创建Fedora虚拟机<a class="headerlink" href="#fedora" title="Link to this heading"></a></h2>
 <ul>
 <li><p>Fedora 35 Server虚拟机安装:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">virt</span><span class="o">-</span><span class="n">install</span> \
@@ -413,22 +440,41 @@
 </pre></div>
 </div>
 </li>
+<li><p>使用 <a class="reference internal" href="../libvirt/storage/libvirt_zfs_pool.html#libvirt-zfs-pool"><span class="std std-ref">libvirt ZFS存储池</span></a> 则先创建ZFS卷再创建虚拟机:</p></li>
 </ul>
+<div class="literal-block-wrapper docutils container" id="id7">
+<div class="code-block-caption"><span class="caption-text">创建ZFS存储卷上的Fedora 40虚拟机</span><a class="headerlink" href="#id7" title="Link to this code"></a></div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># virsh vol-create-as images_zfs fedora-sway-40 10G</span>
+
+<span class="n">virt</span><span class="o">-</span><span class="n">install</span> \
+     <span class="o">--</span><span class="n">network</span> <span class="n">bridge</span><span class="p">:</span><span class="n">virbr0</span> \
+     <span class="o">--</span><span class="n">name</span> <span class="n">fedora</span><span class="o">-</span><span class="n">sway</span><span class="o">-</span><span class="mi">40</span> \
+     <span class="o">--</span><span class="n">ram</span><span class="o">=</span><span class="mi">4096</span> \
+     <span class="o">--</span><span class="n">vcpus</span><span class="o">=</span><span class="mi">2</span> \
+     <span class="o">--</span><span class="n">os</span><span class="o">-</span><span class="n">variant</span><span class="o">=</span><span class="n">fedora40</span> \
+     <span class="o">--</span><span class="n">boot</span> <span class="n">uefi</span> <span class="o">--</span><span class="n">cpu</span> <span class="n">host</span><span class="o">-</span><span class="n">passthrough</span> \
+     <span class="o">--</span><span class="n">disk</span> <span class="n">vol</span><span class="o">=</span><span class="n">images_zfs</span><span class="o">/</span><span class="n">fedora</span><span class="o">-</span><span class="n">sway</span><span class="o">-</span><span class="mi">40</span><span class="p">,</span><span class="n">sparse</span><span class="o">=</span><span class="n">false</span><span class="p">,</span><span class="nb">format</span><span class="o">=</span><span class="n">raw</span><span class="p">,</span><span class="n">bus</span><span class="o">=</span><span class="n">virtio</span><span class="p">,</span><span class="n">cache</span><span class="o">=</span><span class="n">none</span><span class="p">,</span><span class="n">io</span><span class="o">=</span><span class="n">native</span> \
+     <span class="o">--</span><span class="n">graphics</span> <span class="n">spice</span> \
+     <span class="o">--</span><span class="n">cdrom</span><span class="o">=/</span><span class="n">var</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">libvirt</span><span class="o">/</span><span class="n">images</span><span class="o">/</span><span class="n">Fedora</span><span class="o">-</span><span class="n">Xfce</span><span class="o">-</span><span class="n">Live</span><span class="o">-</span><span class="n">x86_64</span><span class="o">-</span><span class="mi">40</span><span class="o">-</span><span class="mf">1.14</span><span class="o">.</span><span class="n">iso</span>
+     <span class="c1">#--cdrom=/var/lib/libvirt/images/Fedora-Sway-Live-x86_64-40-1.14.iso</span>
+</pre></div>
+</div>
+</div>
 </section>
 <section id="centos-7-vault">
-<h2>创建CentOS 7 (vault)虚拟机<a class="headerlink" href="#centos-7-vault" title="Link to this heading">¶</a></h2>
+<h2>创建CentOS 7 (vault)虚拟机<a class="headerlink" href="#centos-7-vault" title="Link to this heading"></a></h2>
 <div class="admonition note">
 <p class="admonition-title">备注</p>
 <ul class="simple">
 <li><p>存储采用 <a class="reference internal" href="../../ceph/rbd/ceph_rbd_libvirt.html#ceph-rbd-libvirt"><span class="std std-ref">Libvirt集成Ceph RBD</span></a></p></li>
-<li><p>和 <a class="reference internal" href="../../linux/redhat_linux/centos/centos_8_replacement.html#centos-8-replacement"><span class="std std-ref">CentOS 8已死:选择替代</span></a> 相似，需要采用 <a class="reference external" href="http://mirrors.163.com/centos-vault/">centos-vault 163镜像</a> 安装</p></li>
+<li><p>和 <a class="reference internal" href="../../linux/redhat_linux/centos/centos_8_replacement_docker_image.html#centos-8-replacement-docker-image"><span class="std std-ref">CentOS 8 已死:选择替代的docker镜像</span></a> 相似，需要采用 <a class="reference external" href="http://mirrors.163.com/centos-vault/">centos-vault 163镜像</a> 安装</p></li>
 </ul>
 </div>
 <ul class="simple">
 <li><p>在 <a class="reference internal" href="../../ceph/rbd/ceph_rbd_libvirt.html#ceph-rbd-libvirt"><span class="std std-ref">Libvirt集成Ceph RBD</span></a> 上构建 RBD磁盘:</p></li>
 </ul>
-<div class="literal-block-wrapper docutils container" id="id6">
-<div class="code-block-caption"><span class="caption-text">在 <a class="reference internal" href="../../ceph/rbd/ceph_rbd_libvirt.html#ceph-rbd-libvirt"><span class="std std-ref">Libvirt集成Ceph RBD</span></a> 创建基于RBD的CentOS 7虚拟机</span><a class="headerlink" href="#id6" title="Link to this code">¶</a></div>
+<div class="literal-block-wrapper docutils container" id="id8">
+<div class="code-block-caption"><span class="caption-text">在 <a class="reference internal" href="../../ceph/rbd/ceph_rbd_libvirt.html#ceph-rbd-libvirt"><span class="std std-ref">Libvirt集成Ceph RBD</span></a> 创建基于RBD的CentOS 7虚拟机</span><a class="headerlink" href="#id8" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>virsh<span class="w"> </span>vol-create-as<span class="w"> </span>images_rbd<span class="w"> </span>z-centos7-rbd<span class="w"> </span>--capacity<span class="w"> </span>20GB<span class="w"> </span>--format<span class="w"> </span>raw
 
 virt-install<span class="w"> </span><span class="se">\</span>
@@ -453,7 +499,7 @@ virt-install<span class="w"> </span><span class="se">\</span>
 <p>完成后用于 <a class="reference internal" href="../../gluster/build/build_glusterfs_11_for_centos_7.html#build-glusterfs-11-for-centos-7"><span class="std std-ref">CentOS 7环境编译GlusterFS 11</span></a></p>
 </section>
 <section id="centos-9-stream">
-<h2>创建CentOS 9 Stream虚拟机<a class="headerlink" href="#centos-9-stream" title="Link to this heading">¶</a></h2>
+<h2>创建CentOS 9 Stream虚拟机<a class="headerlink" href="#centos-9-stream" title="Link to this heading"></a></h2>
 <div class="admonition note">
 <p class="admonition-title">备注</p>
 <p>存储采用 <a class="reference internal" href="../../ceph/rbd/ceph_rbd_libvirt.html#ceph-rbd-libvirt"><span class="std std-ref">Libvirt集成Ceph RBD</span></a></p>
@@ -533,7 +579,7 @@ virt-install<span class="w"> </span><span class="se">\</span>
 </div>
 </section>
 <section id="suse">
-<h2>创建SUSE虚拟机<a class="headerlink" href="#suse" title="Link to this heading">¶</a></h2>
+<h2>创建SUSE虚拟机<a class="headerlink" href="#suse" title="Link to this heading"></a></h2>
 <ul>
 <li><p>部署suse server 12 sp3:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">virt</span><span class="o">-</span><span class="n">install</span> \
@@ -589,17 +635,44 @@ virt-install<span class="w"> </span><span class="se">\</span>
 </div>
 <div class="admonition note">
 <p class="admonition-title">备注</p>
-<p>KVM提供的VNC访问方式在macOS上需要使用第三方VNC客户端来访问，例如 <a class="reference external" href="https://tigervnc.org">TigerVNC</a> ，使用macOS内置的vnc无法打开访问。使用VNC客户端访问本地 <code class="docutils literal notranslate"><span class="pre">127.0.0.1:5900</span></code> 则可以看到远程虚拟机的终端界面，就可以开始进一步安装:</p>
+<p>KVM提供的VNC访问方式在macOS上需要使用第三方VNC客户端来访问，例如 <a class="reference external" href="https://tigervnc.org">TigerVNC</a> 或者 <code class="docutils literal notranslate"><span class="pre">Remote</span> <span class="pre">Ripple</span></code> (从苹果应用商店安装，推荐) ，使用macOS内置的vnc无法打开访问。使用VNC客户端访问本地 <code class="docutils literal notranslate"><span class="pre">127.0.0.1:5900</span></code> 则可以看到远程虚拟机的终端界面，就可以开始进一步安装:</p>
 <figure class="align-default">
 <a class="reference internal image-reference" href="../../_images/tigervnc_install_sles12.png"><img alt="../../_images/tigervnc_install_sles12.png" src="../../_images/tigervnc_install_sles12.png" style="width: 600.0px; height: 466.5px;" /></a>
 </figure>
+<p>另外，需要注意苹果的 <a class="reference internal" href="../../apple/macos/index.html#macos"><span class="std std-ref">macOS</span></a> 提供了内置的VNC Server，也就是 <code class="docutils literal notranslate"><span class="pre">Screen</span> <span class="pre">Sharing</span></code> 功能(从 <code class="docutils literal notranslate"><span class="pre">System</span> <span class="pre">Settings</span> <span class="pre">&gt;&gt;</span> <span class="pre">General</span> <span class="pre">&gt;&gt;</span> <span class="pre">Sharing</span></code> 进入菜单)，这个 <code class="docutils literal notranslate"><span class="pre">Screen</span> <span class="pre">Sharing</span></code> 功能占用 <code class="docutils literal notranslate"><span class="pre">5900</span></code> 端口，所以在苹果macOS上使用上上述ssh端口转发登陆服务器，需要避免端口冲突</p>
 </div>
 </section>
+<section id="lfs">
+<h2>创建LFS虚拟机<a class="headerlink" href="#lfs" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p>使用 <a class="reference internal" href="../libvirt/storage/libvirt_zfs_pool.html#libvirt-zfs-pool"><span class="std std-ref">libvirt ZFS存储池</span></a> 则先创建ZFS卷再创建虚拟机:</p></li>
+</ul>
+<div class="literal-block-wrapper docutils container" id="id9">
+<div class="code-block-caption"><span class="caption-text">创建ZFS存储卷上的 LFS 虚拟机(使用Fedora LiveCD)</span><a class="headerlink" href="#id9" title="Link to this code"></a></div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># virsh vol-create-as images_zfs fedora-sway-40 10G</span>
+
+<span class="n">virt</span><span class="o">-</span><span class="n">install</span> \
+     <span class="o">--</span><span class="n">network</span> <span class="n">bridge</span><span class="p">:</span><span class="n">virbr0</span> \
+     <span class="o">--</span><span class="n">name</span> <span class="n">fedora</span><span class="o">-</span><span class="n">sway</span><span class="o">-</span><span class="mi">40</span> \
+     <span class="o">--</span><span class="n">ram</span><span class="o">=</span><span class="mi">4096</span> \
+     <span class="o">--</span><span class="n">vcpus</span><span class="o">=</span><span class="mi">2</span> \
+<span class="hll">     <span class="o">--</span><span class="n">os</span><span class="o">-</span><span class="n">variant</span><span class="o">=</span><span class="n">fedora40</span> \
+</span>     <span class="o">--</span><span class="n">boot</span> <span class="n">uefi</span> <span class="o">--</span><span class="n">cpu</span> <span class="n">host</span><span class="o">-</span><span class="n">passthrough</span> \
+     <span class="o">--</span><span class="n">disk</span> <span class="n">vol</span><span class="o">=</span><span class="n">images_zfs</span><span class="o">/</span><span class="n">fedora</span><span class="o">-</span><span class="n">sway</span><span class="o">-</span><span class="mi">40</span><span class="p">,</span><span class="n">sparse</span><span class="o">=</span><span class="n">false</span><span class="p">,</span><span class="nb">format</span><span class="o">=</span><span class="n">raw</span><span class="p">,</span><span class="n">bus</span><span class="o">=</span><span class="n">virtio</span><span class="p">,</span><span class="n">cache</span><span class="o">=</span><span class="n">none</span><span class="p">,</span><span class="n">io</span><span class="o">=</span><span class="n">native</span> \
+     <span class="o">--</span><span class="n">graphics</span> <span class="n">spice</span> \
+     <span class="o">--</span><span class="n">cdrom</span><span class="o">=/</span><span class="n">var</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">libvirt</span><span class="o">/</span><span class="n">images</span><span class="o">/</span><span class="n">Fedora</span><span class="o">-</span><span class="n">Xfce</span><span class="o">-</span><span class="n">Live</span><span class="o">-</span><span class="n">x86_64</span><span class="o">-</span><span class="mi">40</span><span class="o">-</span><span class="mf">1.14</span><span class="o">.</span><span class="n">iso</span>
+     <span class="c1">#--cdrom=/var/lib/libvirt/images/Fedora-Sway-Live-x86_64-40-1.14.iso</span>
+</pre></div>
+</div>
+</div>
+<p>注意 <code class="docutils literal notranslate"><span class="pre">--os-type</span></code> 参数已经废弃，现在需要使用 <code class="docutils literal notranslate"><span class="pre">--os-variant/--osinfo</span></code> 传递操作系统名字，这里因为使用LFS不属于常见的Linux发行版，选择了通用的 <code class="docutils literal notranslate"><span class="pre">--os-variant=linux2022</span></code> (使用 <code class="docutils literal notranslate"><span class="pre">osinfo-query</span> <span class="pre">os</span></code> 获取支持列表名)</p>
+<p>这里使用了 <code class="docutils literal notranslate"><span class="pre">--graphics</span> <span class="pre">spice</span></code> 参数指定图形界面，需要使用 <a class="reference internal" href="../libvirt/graphics/virt-viewer.html#virt-viewer"><span class="std std-ref">virt-viewer虚拟机图形管理接口工具</span></a> 来访问，所以 <a class="reference internal" href="../../linux/gentoo_linux/gentoo_virtualization.html#gentoo-virtualization"><span class="std std-ref">Gentoo 虚拟化</span></a> 需要安装 <code class="docutils literal notranslate"><span class="pre">virt-viewer</span></code> 软件包</p>
+</section>
 <section id="bridge">
-<h2>虚拟机bridge网络<a class="headerlink" href="#bridge" title="Link to this heading">¶</a></h2>
+<h2>虚拟机bridge网络<a class="headerlink" href="#bridge" title="Link to this heading"></a></h2>
 <p>上述创建虚拟机都采用了 <code class="docutils literal notranslate"><span class="pre">--network</span> <span class="pre">bridge:virbr0</span></code> 参数，这个参数是 <a class="reference internal" href="../libvirt/network/libvirt_nat_network.html#libvirt-nat-network"><span class="std std-ref">libvirt NAT型网络</span></a> ，设置简单，但是不方便对外提供服务，并且性能不如 <a class="reference internal" href="../libvirt/network/libvirt_bridged_network.html#libvirt-bridged-network"><span class="std std-ref">libvirt 网桥型网络</span></a> 。为了方便模拟生产环境，我在服务器内部管理网段 <code class="docutils literal notranslate"><span class="pre">192.168.6.x</span></code> 采用bridge网络，并且采用 <a class="reference internal" href="../../linux/redhat_linux/systemd/systemd_networkd.html#systemd-networkd"><span class="std std-ref">Systemd Networkd服务</span></a> 创建网桥 <code class="docutils literal notranslate"><span class="pre">br0</span></code> 。</p>
 <section id="br0">
-<h3>创建网桥br0<a class="headerlink" href="#br0" title="Link to this heading">¶</a></h3>
+<h3>创建网桥br0<a class="headerlink" href="#br0" title="Link to this heading"></a></h3>
 <p>需要配置3个 <code class="docutils literal notranslate"><span class="pre">/etc/systemd/network</span></code> 目录下网桥和bind配置:</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">mybridge.netdev</span></code> :</p></li>
@@ -644,7 +717,7 @@ virt-install<span class="w"> </span><span class="se">\</span>
 </ul>
 </section>
 <section id="libvirtbr0">
-<h3>修订libvirt配置绑定br0<a class="headerlink" href="#libvirtbr0" title="Link to this heading">¶</a></h3>
+<h3>修订libvirt配置绑定br0<a class="headerlink" href="#libvirtbr0" title="Link to this heading"></a></h3>
 <ul>
 <li><p>执行 <code class="docutils literal notranslate"><span class="pre">virsh</span> <span class="pre">edit</span> <span class="pre">sles12-sp3</span></code> 修订虚拟机配置:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">interface</span> <span class="nb">type</span><span class="o">=</span><span class="s1">&#39;bridge&#39;</span><span class="o">&gt;</span>
@@ -679,7 +752,7 @@ virt-install<span class="w"> </span><span class="se">\</span>
 </section>
 </section>
 <section id="id1">
-<h2>虚拟机串口设置<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h2>
+<h2>虚拟机串口设置<a class="headerlink" href="#id1" title="Link to this heading"></a></h2>
 <ul class="simple">
 <li><p>设置虚拟机串口输出</p></li>
 </ul>
@@ -718,7 +791,7 @@ virt-install<span class="w"> </span><span class="se">\</span>
 </div>
 </section>
 <section id="id3">
-<h2>虚拟机内部初始设置<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h2>
+<h2>虚拟机内部初始设置<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
 <ul>
 <li><p>修改Guest系统的 <code class="docutils literal notranslate"><span class="pre">/etc/sudoers</span></code> 允许 <code class="docutils literal notranslate"><span class="pre">sudo</span></code> 用户组可以无密码执行:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">#%sudo    ALL=(ALL:ALL) ALL</span>
@@ -745,7 +818,7 @@ virt-install<span class="w"> </span><span class="se">\</span>
 </ul>
 </section>
 <section id="id4">
-<h2>准备虚拟机的动态调整<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h2>
+<h2>准备虚拟机的动态调整<a class="headerlink" href="#id4" title="Link to this heading"></a></h2>
 <ul>
 <li><p>配置模版虚拟机的 <code class="docutils literal notranslate"><span class="pre">setmaxmem</span></code> 和手工修改配置，以便后续能够根据需要动态修改虚拟机的vcpu和mem:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">virsh</span> <span class="n">setmaxmem</span> <span class="n">ubuntu18</span><span class="mf">.04</span> <span class="mi">16</span><span class="n">G</span>
@@ -767,7 +840,7 @@ virt-install<span class="w"> </span><span class="se">\</span>
 </div>
 </section>
 <section id="id5">
-<h2>下一步<a class="headerlink" href="#id5" title="Link to this heading">¶</a></h2>
+<h2>下一步<a class="headerlink" href="#id5" title="Link to this heading"></a></h2>
 <p>现在我们已经创建了第一个可用的KVM虚拟机，并且对虚拟机做了调整。现在用这个虚拟机作为模版，我们可以快速clone出实验所需的虚拟机：</p>
 <ul class="simple">
 <li><p><a class="reference internal" href="clone_vm.html#clone-vm"><span class="std std-ref">复制KVM虚拟机</span></a></p></li>
@@ -778,25 +851,37 @@ virt-install<span class="w"> </span><span class="se">\</span>
 
            </div>
           </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="index.html" class="btn btn-neutral float-left" title="KVM 快速起步" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="virsh_manage_vm.html" class="btn btn-neutral float-right" title="virsh管理虚拟机" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="index.html" class="btn btn-neutral float-left" title="KVM 快速起步" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="virsh_manage_vm.html" class="btn btn-neutral float-right" title="virsh管理虚拟机" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../copyright.html">Copyright</a> 2018 - now, Huatai Huang.</p>
+    <p>&#169; <a href="../../copyright.html">版权所有</a> 2018 - now, Huatai Huang。</p>
   </div>
 
-  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
   
     <!-- your html code here -->
     <br>
-    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡</a></p>
-     
+    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡 👈</a></p>
+    <br>
+    <p>网站采用 <a href="https://utteranc.es/">utterances</a> 评论系统，所有评论存储在<a href="https://github.com/huataihuang/cloud-atlas/issues">GitHub issues</a> 中，如果你看不到下方的评论框，那么可能需要<a href="https://cloud-atlas.readthedocs.io/zh-cn/latest/linux/security/vpn/index.html">自备梯子</a> 👈</p>
+    <div class="articleComments">
+        <comments>
+  <script src="https://utteranc.es/client.js"
+    repo="huataihuang/cloud-atlas"
+    issue-term="pathname"
+    theme="github-light"
+    crossorigin="anonymous"
+    async>
+  </script>
+</comments>
+    </div>
 
 
 </footer>

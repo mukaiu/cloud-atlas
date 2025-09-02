@@ -40,9 +40,9 @@ HPE ProLiant DL360 Gen9服务器是通用型1U机架式服务器，提供了不�
 
 .. note::
 
-   实际上我最终没有采购CMR HDD机械磁盘，因为我发现目前由于磁记录技术停滞发展，已经没有超过2T规格的CMR HDD了。小规格HDD售价和SSD相差无几，性能又大为落后，所以如果要实现高性能分布式集群，还是采用 NVMe SSD实现更佳。
+   实际上我最终没有采购CMR HDD机械磁盘，因为我发现目前由于磁记录技术停滞发展，已经没有超过2T规格的 ``2.5"`` CMR HDD了。小规格HDD售价和SSD相差无几，性能又大为落后，所以如果要实现高性能分布式集群，还是采用 NVMe SSD实现更佳。
 
-   目前我先临时采用旧有的500GB HDD磁盘来模拟实验，并且采购 PCIe 3.0 slot 转接 :strike:`4个` 3个NVMe SSD磁盘(原因是 DL360 Gen9 :ref:`pcie_bifurcation` 只能在slot1上设置，并且只支持分成2个 x8，导致加上 slot 2，我只能安装3个NVMe - :ref:`samsung_pm9a1` )，来实现高性能 :ref:`ceph` 集群:
+   目前我先临时采用旧有的500GB 笔记本HDD磁盘来模拟实验，并且采购 PCIe 3.0 slot 转接 :strike:`4个` 3个NVMe SSD磁盘(原因是 DL360 Gen9 :ref:`pcie_bifurcation` 只能在slot1上设置，并且只支持分成2个 x8，导致加上 slot 2，我只能安装3个NVMe - :ref:`samsung_pm9a1` )，来实现高性能 :ref:`ceph` 集群:
 
    - PCIe 3.0 x16 (slot1) 转接 :strike:`4个` 2个 NVMe SSD磁盘(需要主板支持 :ref:`pcie_bifurcation` )
    - 需要升级 :ref:`hpe_dl360_gen9` BIOS 才能支持 ``PCIe Bifurcation Options``
@@ -82,6 +82,10 @@ HPE ProLiant DL360 Gen9服务器是通用型1U机架式服务器，提供了不�
    :widths: 25, 75
    :header-rows: 1
 
+.. note::
+
+   我在 :ref:`edac` 实践中了解到，内存插槽和硬件检测故障定位有密切关系，需要注意 :ref:`hpe_dl360_gen9_memory` ，并且确保 ``DIMM labels`` 数据配置文件和实际服务器DIMM插槽正确对应，这样才能帮助运维人员快速定位故障内存
+
 PCIe
 --------
 
@@ -98,9 +102,16 @@ PCIe
 FlexibleLOM Adapter
 -----------------------
 
-可选的 ``FlexibleLOM Bay`` 网卡有多种规格，千兆、万兆甚至25Gb。常见的是Intel 4口千兆网卡 ``HP Ethernet 1Gb 4-port 366FLR Adapter`` (部件编号 ``665240-B21``) 。
+可选的 ``FlexibleLOM Bay`` 网卡有多种规格，千兆、万兆甚至25Gb。常见的是:
+
+- Intel 4口千兆网卡 ``HP Ethernet 1Gb 4-port 366FLR Adapter`` (部件编号 ``665240-B21`` )
+- Intel 82599控制芯片 ``HPE Ethernet 10Gb 2-port 560SFP+ Adapter`` (部件编号 ``665249-B21`` ) 
 
 不过我从淘宝购买二手DL360服务器，这块可选网卡被拆除了，需要单独购买 220 元。虽然有些小贵，但是考虑到不用占用服务器宝贵的PCIe插槽，并且是Intel网卡芯片，可以结合Intel开发的驱动以及DPDK技术加速网络虚拟化性能，我准备用来构建Linux交换设备，来连接我的多个 :ref:`pi_cluster` ，实现混合架构 :ref:`kubernetes` 。
+
+.. note::
+
+   部件选择以 `HPE ProLiant DL360 Gen9 Server QuickSpecs <https://support.hpe.com/hpesc/public/docDisplay?docLocale=en_US&docId=c04346229>`_ 为准。HPE服务器网络配件 `HPE Ethernet 10Gb 2-port 530FLR-SFP+ Adapter (手册) <https://www.hpe.com/psnow/doc/c04111479>`_ 采用 QLogic 控制芯片，适配列表是 (DL360p) Gen8 ，没有包含在 (DL360) Gen9 兼容列表中。
 
 内部改造
 -----------
@@ -121,7 +132,7 @@ HPE ProLiant DL360 Gen9 服务器综合配置介于 :ref:`dell_r630` 和 :ref:`d
 
 .. csv-table:: HPE ProLiant DL360 Gen9 支持E5-2600 v3/v4处理器
    :file: hpe_dl360_gen9/hpe_dl360_gen9_cpu.csv
-   :widths: 25, 15, 10, 10, 10, 15, 15
+   :widths: 20,10,10, 10, 10, 10, 10, 20
    :header-rows: 1
 
 - 内存支持和 :ref:`dell_r640` 类似，同时支持不同类型(超越了Dell R630)
@@ -149,7 +160,12 @@ DL360服务器有两种大小规格的磁盘 - 4LFF(3.5") 和 8SFF(2.5")/10SFF(2
 .. figure:: ../../../../_static/linux/server/hardware/hpe/hpe_dl360_gen9_10disks.png
    :scale: 50
 
-10SFF配置有一种性能极致的配置: ``HP DL360 Gen9 6 NVMe + 4 SAS/SATA Express Bay Enablement Kit  817676-B21`` 背板替换后，可以支持 4个SAS/SATA 加上 6个NVMe (U.2接口)设备，但是这个配件的价格约在 800 刀到 1000 刀，并且万能淘宝也找不到，只有海外直购，所以并不现实。
+10SFF配置有一种性能极致的配置: ``HP DL360 Gen9 6 NVMe + 4 SAS/SATA Express Bay Enablement Kit  817676-B21`` 背板替换后，可以支持 4个SAS/SATA 加上 6个NVMe (U.2接口)设备，但是这个配件的价格约在 800 刀到 1000 刀， :strike:`并且万能淘宝也找不到，只有海外直购，所以并不现实。 ``实际上也有非官方的解决方案`` : **现在淘宝上已经普及了 PCIe 转 U.2 NVMe 扩展卡** : 
+
+- PLX8749/PLX8748免拆分PCIe扩展卡: 可以在服务器内部/外部连接GPU卡和U.2 SSD
+- SFF8654转U.2数据线
+
+使用场景包括通过 ``双卡槽底座+支架`` 安装2块GPU / 服务器内部通过 ``SFF8654转U.2数据线`` 连接4块 U.2 SSD存储组建阵列等等...
 
 .. note::
 

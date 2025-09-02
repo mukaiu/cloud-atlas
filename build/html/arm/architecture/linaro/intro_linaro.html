@@ -1,21 +1,25 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh" data-content_root="../../../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Linaro ARM生态简介 &mdash; Cloud Atlas 0.1 文档</title>
-      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../../_static/graphviz.css" type="text/css" />
+  <title>Linaro ARM生态简介 &mdash; Cloud Atlas: Discovery beta 文档</title>
+      <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/graphviz.css?v=fd3f3429" />
+
+  
+    <link rel="shortcut icon" href="../../../_static/favicon.png"/>
   <!--[if lt IE 9]>
     <script src="../../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="../../../_static/documentation_options.js?v=7c91f8fd"></script>
-        <script src="../../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../../_static/documentation_options.js?v=8534f863"></script>
+        <script src="../../../_static/doctools.js?v=9a2dae69"></script>
         <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
-        <script src="../../../_static/translations.js?v=beaddf03"></script>
     <script src="../../../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../../../genindex.html" />
     <link rel="search" title="搜索" href="../../../search.html" />
@@ -33,68 +37,70 @@
           
           
           <a href="../../../index.html" class="icon icon-home">
-            Cloud Atlas
+            Cloud Atlas: Discovery
           </a>
+              <div class="version">
+                1.1
+              </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../../studio/index.html">Studio Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../infrastructure/index.html">Infrastructure Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../devops/index.html">DevOps Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../kvm/index.html">KVM Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../ceph/index.html">Ceph Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../gluster/index.html">Gluster Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../ovirt/index.html">oVirt Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../openstack/index.html">OpenStack Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../docker/index.html">Docker Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../kubernetes/index.html">Kubernetes Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../kubernetes_from_scratch/index.html">Kubernetes From Scratch (KFS) Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../rancher/index.html">Rancher Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../openshift/index.html">OpenShift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../sql/index.html">SQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../sqlite/index.html">SQLite Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../mysql/index.html">MySQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../pgsql/index.html">PostgreSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../clickhouse/index.html">ClickHouse Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../nosql/index.html">NoSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../redis/index.html">Redis Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../network/index.html">Network Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../infra_service/index.html">Infra-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../infra_search/index.html">Search Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../info_service/index.html">Info-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../web/index.html">Web Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../big_data/index.html">Big Data Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../machine_learning/index.html">Machine Learning Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../linux/index.html">Linux Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../kernel/index.html">Kernel Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../performance/index.html">Performance Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../distributed_system/index.html">Distributed System Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../shell/index.html">Shell Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../python/index.html">Python Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../django/index.html">Django Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../flask/index.html">Flask Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../javascript/index.html">JavaScript Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../nodejs/index.html">Node.js Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../clang/index.html">C Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../golang/index.html">Go Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../swift/index.html">Swift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../rust/index.html">Rust Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../ruby/index.html">Ruby Atlas</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">ARM Atlas</a><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../studio/index.html">Studio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../infrastructure/index.html">Infrastructure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../devops/index.html">DevOps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../kvm/index.html">KVM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../ceph/index.html">Ceph</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../gluster/index.html">Gluster</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../ovirt/index.html">oVirt</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../openstack/index.html">OpenStack</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../docker/index.html">Docker</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../kubernetes/index.html">Kubernetes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../k8s_dev/index.html">Kubernetes Develop</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../rancher/index.html">Rancher</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../openshift/index.html">OpenShift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../sql/index.html">SQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../sqlite/index.html">SQLite</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../mysql/index.html">MySQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../pgsql/index.html">PostgreSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../nosql/index.html">NoSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../network/index.html">Network</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../infra_service/index.html">Infra-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../infra_search/index.html">Infra-Search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../web/index.html">Web</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../info_service/index.html">Info-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../big_data/index.html">Big Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../machine_learning/index.html">Machine Learning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../drone/index.html">Drone</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../linux/index.html">Linux</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../kernel/index.html">Kernel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../performance/index.html">Performance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../distributed_system/index.html">Distributed System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../shell/index.html">Shell</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../python/index.html">Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../django/index.html">Django</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../javascript/index.html">JavaScript</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../nodejs/index.html">Node.js</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../clang/index.html">C</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../golang/index.html">Go</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../swift/index.html">Swift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../rust/index.html">Rust</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../ruby/index.html">Ruby</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../lua/index.html">Lua</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">ARM</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../../hardware/index.html">ARM 硬件概述</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="../index.html">ARM 架构随想</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="../arm_cloud.html">ARM云计算</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../arm_cpu.html">ARM处理器</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../arm_infra.html">ARM架构版本和处理器系列</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../arm_microarch.html">ARM微架构(microarchitecture)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../arm_illegal_instruction.html">ARM平台执行程序报错”Illegal instruction”解析</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../arm_illegal_instruction.html">ARM平台执行程序报错&quot;Illegal instruction&quot;解析</a></li>
 <li class="toctree-l3 current"><a class="reference internal" href="index.html">Linaro ARM生态</a><ul class="current">
 <li class="toctree-l4 current"><a class="current reference internal" href="#">Linaro ARM生态简介</a></li>
 </ul>
@@ -104,20 +110,21 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../power_manage/index.html">ARM电源管理</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../blackberry/index.html">BlackBerry(黑莓)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../raspberry_pi/index.html">Raspberry Pi</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../nanopi/index.html">NanoPi</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pine64/index.html">Pine64</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../openwrt/index.html">OpenWrt</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../build/index.html">ARM编译</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../../android/index.html">Android Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../bsd/index.html">BSD Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../apple/index.html">Apple Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../windows/index.html">Windows Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../real/index.html">Real Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../management/index.html">Management Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../life/index.html">Life Atlas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../raspberry_pi/index.html">Raspberry Pi</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../android/index.html">Android</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../bsd/index.html">BSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../freebsd/index.html">FreeBSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../apple/index.html">Apple</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../windows/index.html">Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../real/index.html">Real</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../management/index.html">Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../life/index.html">Life</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../copyright.html">Copyright</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../aboutme.html">关于作者</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../donate.html">捐赠</a></li>
@@ -130,22 +137,22 @@
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../../index.html">Cloud Atlas</a>
+          <a href="../../../index.html">Cloud Atlas: Discovery</a>
       </nav>
 
       <div class="wy-nav-content">
         <div class="rst-content">
-          <div role="navigation" aria-label="Page navigation">
+          <div role="navigation" aria-label="页面导航">
   <ul class="wy-breadcrumbs">
       <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
-          <li class="breadcrumb-item"><a href="../../index.html">ARM Atlas</a></li>
+          <li class="breadcrumb-item"><a href="../../index.html">ARM</a></li>
           <li class="breadcrumb-item"><a href="../index.html">ARM 架构随想</a></li>
           <li class="breadcrumb-item"><a href="index.html">Linaro ARM生态</a></li>
       <li class="breadcrumb-item active">Linaro ARM生态简介</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../../../_sources/arm/architecture/linaro/intro_linaro.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../../_sources/arm/architecture/linaro/intro_linaro.rst.txt" rel="nofollow"> 查看页面源码</a>
       </li>
   </ul>
   <hr/>
@@ -154,9 +161,9 @@
            <div itemprop="articleBody">
              
   <section id="linaro-arm">
-<span id="intro-linaro"></span><h1>Linaro ARM生态简介<a class="headerlink" href="#linaro-arm" title="Link to this heading">¶</a></h1>
+<span id="intro-linaro"></span><h1>Linaro ARM生态简介<a class="headerlink" href="#linaro-arm" title="Link to this heading"></a></h1>
 <p><a class="reference external" href="https://www.linaro.org">Linaro Ecosystem</a> 是专注于ARM平台开源软件开发组织，由多家软件公司(RedHat、华为等)赞助和支持，并且在YouTube上提供了很多开发前沿信息，值得关注和参考。</p>
-<p>作为 <a class="reference internal" href="../../../openstack/index.html#openstack"><span class="std std-ref">OpenStack Atlas</span></a> 发展而来的 <a class="reference internal" href="../../../infrastructure/openinfra/index.html#openinfra"><span class="std std-ref">OpenInfra</span></a> ，在边缘计算( <a class="reference internal" href="../../../real/edge_cloud/index.html#edge-cloud"><span class="std std-ref">边缘云计算构建</span></a> ) 采用了基于 <a class="reference internal" href="../../index.html#arm"><span class="std std-ref">ARM Atlas</span></a> 硬件融合 <a class="reference internal" href="../../../openstack/index.html#openstack"><span class="std std-ref">OpenStack Atlas</span></a> 以及 <a class="reference internal" href="../../../kubernetes/index.html#kubernetes"><span class="std std-ref">Kubernetes Atlas</span></a> 的软硬件堆栈:</p>
+<p>作为 <a class="reference internal" href="../../../openstack/index.html#openstack"><span class="std std-ref">OpenStack</span></a> 发展而来的 <a class="reference internal" href="../../../infrastructure/openinfra/index.html#openinfra"><span class="std std-ref">OpenInfra</span></a> ，在边缘计算( <a class="reference internal" href="../../../real/edge_cloud/index.html#edge-cloud"><span class="std std-ref">边缘云计算构建</span></a> ) 采用了基于 <a class="reference internal" href="../../index.html#arm"><span class="std std-ref">ARM</span></a> 硬件融合 <a class="reference internal" href="../../../openstack/index.html#openstack"><span class="std std-ref">OpenStack</span></a> 以及 <a class="reference internal" href="../../../kubernetes/index.html#kubernetes"><span class="std std-ref">Kubernetes</span></a> 的软硬件堆栈:</p>
 <ul class="simple">
 <li><p>近些年随着ARM服务器技术的广泛应用(曾经超算登顶的 <a class="reference external" href="https://zh.wikipedia.org/wiki/%E5%AF%8C%E5%B2%B3_(%E8%B6%85%E7%BA%A7%E8%AE%A1%E7%AE%97%E6%9C%BA)">富岳(超级计算机)</a> 就是ARM架构的HPC)，在边缘计算领域，ARM架构天然的低能耗高性能(苹果公司推出的M系列ARM处理器验证了同功耗下远超x86架构的性能)使之成为优选方案。</p></li>
 <li><p>在各大云计算厂商中，各自推出了基于ARM架构的云计算产品，性价比不弱于Intel的X86架构</p></li>
@@ -166,12 +173,12 @@
 </figure>
 <p>开源软件堆栈十分复杂，从底层到上层，需要结合不同领域的软件技术来实现大规模、可扩展、分布式计算。然而，对于上层最终用户来说，并不关心底层是X86还是ARM，最好对用户无感知才是云计算基础架构(Cloud Infrastructure)的终极目标。</p>
 <section id="linaro">
-<h2>Linaro的领域<a class="headerlink" href="#linaro" title="Link to this heading">¶</a></h2>
+<h2>Linaro的领域<a class="headerlink" href="#linaro" title="Link to this heading"></a></h2>
 <p>ARM要进入长期被X86所统治的开发领域，需要能够实现完整的 development pipeline ，这样才能降低开发人员的心智负担:</p>
 <ul class="simple">
-<li><p>自动化的持续集成( <a class="reference internal" href="../../../devops/index.html#devops"><span class="std std-ref">DevOps Atlas</span></a> )可以实现开发者代码自动完成完整的不同架构执行程序部署到对应架构的生产系统</p></li>
-<li><p>持续的性能优化使得X86和ARM架构在性能上持平，并且现代的调度系统，例如 <a class="reference internal" href="../../../kubernetes/index.html#kubernetes"><span class="std std-ref">Kubernetes Atlas</span></a> 能够将架构差异抽象化对上层屏蔽，对最终用户透明，这样用户能够专注于业务系统开发和运行</p></li>
-<li><p>虚拟化技术 <a class="reference internal" href="../../../kvm/index.html#kvm"><span class="std std-ref">KVM Atlas</span></a> 和 <a class="reference internal" href="../../../kvm/libvirt/index.html#libvirt"><span class="std std-ref">Libvirt虚拟机管理器</span></a> 都对ARM架构提供了支持，在此基础上 <a class="reference internal" href="../../../openstack/index.html#openstack"><span class="std std-ref">OpenStack Atlas</span></a> 也实现了 X86 和 ARM 多架构的融合支持</p></li>
+<li><p>自动化的持续集成( <a class="reference internal" href="../../../devops/index.html#devops"><span class="std std-ref">DevOps</span></a> )可以实现开发者代码自动完成完整的不同架构执行程序部署到对应架构的生产系统</p></li>
+<li><p>持续的性能优化使得X86和ARM架构在性能上持平，并且现代的调度系统，例如 <a class="reference internal" href="../../../kubernetes/index.html#kubernetes"><span class="std std-ref">Kubernetes</span></a> 能够将架构差异抽象化对上层屏蔽，对最终用户透明，这样用户能够专注于业务系统开发和运行</p></li>
+<li><p>虚拟化技术 <a class="reference internal" href="../../../kvm/index.html#kvm"><span class="std std-ref">KVM</span></a> 和 <a class="reference internal" href="../../../kvm/libvirt/index.html#libvirt"><span class="std std-ref">Libvirt虚拟机管理器</span></a> 都对ARM架构提供了支持，在此基础上 <a class="reference internal" href="../../../openstack/index.html#openstack"><span class="std std-ref">OpenStack</span></a> 也实现了 X86 和 ARM 多架构的融合支持</p></li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">备注</p>
@@ -185,29 +192,29 @@
 </figure>
 </section>
 <section id="id3">
-<h2>硬件自动化<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h2>
+<h2>硬件自动化<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
 <p>近些年，硬件自动化成为另外一个热门领域:</p>
 <ul class="simple">
 <li><p>负载极高的应用需要完全运行在裸金属服务器上(例如在裸金属上运行云原生K8s，HPC)来获得最佳的网络和存储性能</p></li>
 <li><p>虚拟化限制:  <span class="sphinxnotes-strike" style="text-decoration: line-through;">ARM64不支持嵌套虚拟化(nested virtualization)</span> ARM从 Armv8.3-A开始支持嵌套虚拟化，并且在Arm8.4-A提高了性能( <a class="reference external" href="https://developer.arm.com/documentation/102142/0100/Nested-virtualization">Learn the architecture - AArch64 virtualization: Nested virtualization</a> )</p></li>
 </ul>
-<p>Linaro支持ARM64的无盘启动(diskless boot)解决方案，结合了OpenStack Ironic管理平台，并使用 <a class="reference internal" href="../../../ceph/index.html#ceph"><span class="std std-ref">Ceph Atlas</span></a> ISCSI来提供卷支持。通过Ceph卷作为磁盘可以提供大规模启动磁盘交付，提升性能并降低RootFS安全隐患:</p>
+<p>Linaro支持ARM64的无盘启动(diskless boot)解决方案，结合了OpenStack Ironic管理平台，并使用 <a class="reference internal" href="../../../ceph/index.html#ceph"><span class="std std-ref">Ceph</span></a> ISCSI来提供卷支持。通过Ceph卷作为磁盘可以提供大规模启动磁盘交付，提升性能并降低RootFS安全隐患:</p>
 <figure class="align-default">
 <img alt="../../../_images/linaro_bare_metal_infra.png" src="../../../_images/linaro_bare_metal_infra.png" />
 </figure>
 <p>在各大云计算厂商内部，也是有直接操作物理服务器进行自动化系统安装的平台，可以从物理服务器上架加电开始，完成一整套自动安装OS，性能测试并自动完成交付给业务使用的平台。</p>
 </section>
 <section id="id4">
-<h2>用户案例<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h2>
+<h2>用户案例<a class="headerlink" href="#id4" title="Link to this heading"></a></h2>
 <p>Linaro的ARM架构客户案例是 <a class="reference external" href="https://www.easystack.cn/">EasyStack</a> ，属于中小型云计算厂商。这是一家北京的云计算公司，采用了OpenStack实现私有云解决方案，大约有1000+行业用户。</p>
 <p>不过，从规模以及Linaro案例中提到的攻克难点案例，似乎还仅仅是整合开源技术，并未体现出性能和超大规模的优势。</p>
 <div class="admonition note">
 <p class="admonition-title">备注</p>
-<p>我觉得精心设计和部署，工程上依然是能够实现ARM分布式大规模集群，甚至可以构建类似”富岳”的HPC集群。</p>
+<p>我觉得精心设计和部署，工程上依然是能够实现ARM分布式大规模集群，甚至可以构建类似&quot;富岳&quot;的HPC集群。</p>
 </div>
 </section>
 <section id="id5">
-<h2>参考<a class="headerlink" href="#id5" title="Link to this heading">¶</a></h2>
+<h2>参考<a class="headerlink" href="#id5" title="Link to this heading"></a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="https://superuser.openstack.org/articles/the-progress-for-cloud-computing-on-arm-architecture/">The Progress for Cloud Computing on Arm Architecture</a></p></li>
 </ul>
@@ -217,25 +224,37 @@
 
            </div>
           </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="index.html" class="btn btn-neutral float-left" title="Linaro ARM生态" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="../mpam/index.html" class="btn btn-neutral float-right" title="ARM内存系统资源分区和监控(MPAM)" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="index.html" class="btn btn-neutral float-left" title="Linaro ARM生态" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="../mpam/index.html" class="btn btn-neutral float-right" title="ARM内存系统资源分区和监控(MPAM)" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../../copyright.html">Copyright</a> 2018 - now, Huatai Huang.</p>
+    <p>&#169; <a href="../../../copyright.html">版权所有</a> 2018 - now, Huatai Huang。</p>
   </div>
 
-  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
   
     <!-- your html code here -->
     <br>
-    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡</a></p>
-     
+    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡 👈</a></p>
+    <br>
+    <p>网站采用 <a href="https://utteranc.es/">utterances</a> 评论系统，所有评论存储在<a href="https://github.com/huataihuang/cloud-atlas/issues">GitHub issues</a> 中，如果你看不到下方的评论框，那么可能需要<a href="https://cloud-atlas.readthedocs.io/zh-cn/latest/linux/security/vpn/index.html">自备梯子</a> 👈</p>
+    <div class="articleComments">
+        <comments>
+  <script src="https://utteranc.es/client.js"
+    repo="huataihuang/cloud-atlas"
+    issue-term="pathname"
+    theme="github-light"
+    crossorigin="anonymous"
+    async>
+  </script>
+</comments>
+    </div>
 
 
 </footer>

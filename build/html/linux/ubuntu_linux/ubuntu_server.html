@@ -1,21 +1,25 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh" data-content_root="../../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ubuntu Server &mdash; Cloud Atlas 0.1 文档</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+  <title>Ubuntu Server &mdash; Cloud Atlas: Discovery beta 文档</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=fd3f3429" />
+
+  
+    <link rel="shortcut icon" href="../../_static/favicon.png"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="../../_static/documentation_options.js?v=7c91f8fd"></script>
-        <script src="../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=8534f863"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
         <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
-        <script src="../../_static/translations.js?v=beaddf03"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../../genindex.html" />
     <link rel="search" title="搜索" href="../../search.html" />
@@ -33,53 +37,60 @@
           
           
           <a href="../../index.html" class="icon icon-home">
-            Cloud Atlas
+            Cloud Atlas: Discovery
           </a>
+              <div class="version">
+                1.1
+              </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../studio/index.html">Studio Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../infrastructure/index.html">Infrastructure Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../devops/index.html">DevOps Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kvm/index.html">KVM Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../ceph/index.html">Ceph Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../gluster/index.html">Gluster Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../ovirt/index.html">oVirt Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../openstack/index.html">OpenStack Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../docker/index.html">Docker Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kubernetes/index.html">Kubernetes Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kubernetes_from_scratch/index.html">Kubernetes From Scratch (KFS) Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../rancher/index.html">Rancher Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../openshift/index.html">OpenShift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../sql/index.html">SQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../sqlite/index.html">SQLite Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../mysql/index.html">MySQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../pgsql/index.html">PostgreSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../clickhouse/index.html">ClickHouse Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../nosql/index.html">NoSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../redis/index.html">Redis Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../network/index.html">Network Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../infra_service/index.html">Infra-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../infra_search/index.html">Search Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../info_service/index.html">Info-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../web/index.html">Web Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../big_data/index.html">Big Data Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../machine_learning/index.html">Machine Learning Atlas</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Linux Atlas</a><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../studio/index.html">Studio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../infrastructure/index.html">Infrastructure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../devops/index.html">DevOps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kvm/index.html">KVM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ceph/index.html">Ceph</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../gluster/index.html">Gluster</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ovirt/index.html">oVirt</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../openstack/index.html">OpenStack</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../docker/index.html">Docker</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kubernetes/index.html">Kubernetes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../k8s_dev/index.html">Kubernetes Develop</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../rancher/index.html">Rancher</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../openshift/index.html">OpenShift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../sql/index.html">SQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../sqlite/index.html">SQLite</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../mysql/index.html">MySQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../pgsql/index.html">PostgreSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../nosql/index.html">NoSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../network/index.html">Network</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../infra_service/index.html">Infra-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../infra_search/index.html">Infra-Search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../web/index.html">Web</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../info_service/index.html">Info-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../big_data/index.html">Big Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../machine_learning/index.html">Machine Learning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../drone/index.html">Drone</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Linux</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../best_linux.html">最佳Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../admin/index.html">Linux系统管理</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../redhat_linux/index.html">RedHat Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../arch_linux/index.html">Arch Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../asahi_linux/index.html">Asahi Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../gentoo_linux/index.html">Gentoo Linux</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../lfs_linux/index.html">LFS(Linux from scratch)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lfs/index.html">LFS(Linux from scratch)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../blfs/index.html">BLFS(Beyond Linux from scratch)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../alfs/index.html">ALFS(Automated Linux from scratch)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pilfs/index.html">PiLFS(Automated Linux from scratch on the Raspberry Pi)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../yocto/index.html">Yocto</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../debian/index.html">Debian</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="index.html">Ubuntu Linux</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="ubuntu_on_mbp.html">MacBook Pro上运行Ubuntu</a></li>
 <li class="toctree-l3"><a class="reference internal" href="ubuntu_on_thinkpad_x220.html">ThinkPad X220上运行Ubuntu</a></li>
@@ -96,7 +107,7 @@
 <li class="toctree-l3"><a class="reference internal" href="ubuntu_desktop.html">Ubuntu Desktop</a></li>
 <li class="toctree-l3"><a class="reference internal" href="upgrade_ubuntu.html">升级Ubuntu</a></li>
 <li class="toctree-l3"><a class="reference internal" href="ubuntu_hibernate.html">Ubuntu Hibernate休眠</a></li>
-<li class="toctree-l3"><a class="reference internal" href="debian_init.html">Debian精简系统初始化</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ubuntu_hibernate_old.html">Ubuntu Hibernate休眠(旧实践归档)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="admin/index.html">Ubuntu系统管理</a></li>
 <li class="toctree-l3"><a class="reference internal" href="cgroup/index.html">Ubuntu Cgroup</a></li>
 <li class="toctree-l3"><a class="reference internal" href="network/index.html">Ubuntu网络</a></li>
@@ -106,10 +117,11 @@
 <li class="toctree-l2"><a class="reference internal" href="../suse_linux/index.html">SUSE Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../kali_linux/index.html">Kali Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../tails_linux/index.html">Tails Linux</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../qubes_os/index.html">Qubes OS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../postmarketos/index.html">postmarketOS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../container_os/index.html">容器化操作系统(Container OS)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../fedora_coreos/index.html">Fedora CoreOS容器操作系统</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../chromium_os/index.html">Chromium OS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chromeos/index.html">ChromeOS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../alpine_linux/index.html">Alpine Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../subgraph_os/index.html">Subgraph OS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../kaios/index.html">KaiOS - 世界第三手机操作系统</a></li>
@@ -122,28 +134,30 @@
 <li class="toctree-l2"><a class="reference internal" href="../linux_tablet/index.html">Linux平板</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../kernel/index.html">Kernel Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../performance/index.html">Performance Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../distributed_system/index.html">Distributed System Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../shell/index.html">Shell Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../python/index.html">Python Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../django/index.html">Django Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../flask/index.html">Flask Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../javascript/index.html">JavaScript Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../nodejs/index.html">Node.js Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../clang/index.html">C Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../golang/index.html">Go Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../swift/index.html">Swift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../rust/index.html">Rust Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../ruby/index.html">Ruby Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../arm/index.html">ARM Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../android/index.html">Android Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../bsd/index.html">BSD Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../apple/index.html">Apple Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../windows/index.html">Windows Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../real/index.html">Real Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../management/index.html">Management Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../life/index.html">Life Atlas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kernel/index.html">Kernel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../performance/index.html">Performance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../distributed_system/index.html">Distributed System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../shell/index.html">Shell</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../python/index.html">Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../django/index.html">Django</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../javascript/index.html">JavaScript</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../nodejs/index.html">Node.js</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../clang/index.html">C</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../golang/index.html">Go</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../swift/index.html">Swift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../rust/index.html">Rust</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ruby/index.html">Ruby</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lua/index.html">Lua</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../arm/index.html">ARM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../raspberry_pi/index.html">Raspberry Pi</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../android/index.html">Android</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../bsd/index.html">BSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../freebsd/index.html">FreeBSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../apple/index.html">Apple</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../windows/index.html">Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../real/index.html">Real</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../management/index.html">Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../life/index.html">Life</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../copyright.html">Copyright</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../aboutme.html">关于作者</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../donate.html">捐赠</a></li>
@@ -156,21 +170,21 @@
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../index.html">Cloud Atlas</a>
+          <a href="../../index.html">Cloud Atlas: Discovery</a>
       </nav>
 
       <div class="wy-nav-content">
         <div class="rst-content">
-          <div role="navigation" aria-label="Page navigation">
+          <div role="navigation" aria-label="页面导航">
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
-          <li class="breadcrumb-item"><a href="../index.html">Linux Atlas</a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Linux</a></li>
           <li class="breadcrumb-item"><a href="index.html">Ubuntu Linux</a></li>
       <li class="breadcrumb-item active">Ubuntu Server</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../../_sources/linux/ubuntu_linux/ubuntu_server.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../_sources/linux/ubuntu_linux/ubuntu_server.rst.txt" rel="nofollow"> 查看页面源码</a>
       </li>
   </ul>
   <hr/>
@@ -179,9 +193,9 @@
            <div itemprop="articleBody">
              
   <section id="ubuntu-server">
-<span id="id1"></span><h1>Ubuntu Server<a class="headerlink" href="#ubuntu-server" title="Link to this heading">¶</a></h1>
+<span id="id1"></span><h1>Ubuntu Server<a class="headerlink" href="#ubuntu-server" title="Link to this heading"></a></h1>
 <section id="id2">
-<h2>安装<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
+<h2>安装<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
 <div class="admonition warning">
 <p class="admonition-title">警告</p>
 <p>Ubuntu Server版本的安装是非常死板的，会抹掉整个磁盘，重新创建GPT磁盘分区表。所以，即使原先磁盘空闲空间，并且想保留&gt;数据磁盘的分区也是不可能的。</p>
@@ -191,7 +205,7 @@
 </ul>
 <p>最小化安装对于运行云计算平台OpenStack，以及兼顾一些日常工作已经足够。没有必要完整安装大量的应用软件。</p>
 <section id="shell">
-<h3>软件包和shell<a class="headerlink" href="#shell" title="Link to this heading">¶</a></h3>
+<h3>软件包和shell<a class="headerlink" href="#shell" title="Link to this heading"></a></h3>
 <ul>
 <li><p><code class="docutils literal notranslate"><span class="pre">/etc/hosts</span></code> 需要设置主机名反向解析(添加 <code class="docutils literal notranslate"><span class="pre">xcloud</span></code> )，否则会导致很多操作命令响应缓慢:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mf">127.0.0.1</span>    <span class="n">localhost</span><span class="o">.</span><span class="n">localdomain</span>    <span class="n">localhost</span> <span class="n">xcloud</span>
@@ -208,14 +222,14 @@
 <li><p>安装Server版本之后，有一些必要的软件包推荐安装:</p></li>
 </ul>
 <div class="literal-block-wrapper docutils container" id="id8">
-<div class="code-block-caption"><span class="caption-text">安装必要工具软件包</span><a class="headerlink" href="#id8" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">安装必要工具软件包</span><a class="headerlink" href="#id8" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>net-tools<span class="w"> </span>parted<span class="w"> </span>nmon<span class="w"> </span>network-manager<span class="w"> </span>zsh<span class="w"> </span>openconnect<span class="w"> </span>ipmitool<span class="w"> </span>lm-sensors
 </pre></div>
 </div>
 </div>
 <div class="admonition note">
 <p class="admonition-title">备注</p>
-<p>在安装 <a class="reference internal" href="../../arm/raspberry_pi/startup/ubuntu64bit_pi.html#ubuntu64bit-pi"><span class="std std-ref">树莓派4b运行64位Ubuntu</span></a> 我发现对于Ubuntu Server版本，不需要安装桌面版常用但 <code class="docutils literal notranslate"><span class="pre">NetworkManager</span></code> 网络配置工具，而只需要使用内建的 <a class="reference internal" href="network/netplan.html#netplan"><span class="std std-ref">netplan网络配置</span></a> 就可以完成网络配置。这样可以轻量级运行，降低使用资源。</p>
+<p>在安装 <a class="reference internal" href="../../raspberry_pi/startup/ubuntu64bit_pi.html#ubuntu64bit-pi"><span class="std std-ref">树莓派4b运行64位Ubuntu</span></a> 我发现对于Ubuntu Server版本，不需要安装桌面版常用但 <code class="docutils literal notranslate"><span class="pre">NetworkManager</span></code> 网络配置工具，而只需要使用内建的 <a class="reference internal" href="network/netplan.html#netplan"><span class="std std-ref">netplan网络配置</span></a> 就可以完成网络配置。这样可以轻量级运行，降低使用资源。</p>
 </div>
 <ul>
 <li><p>安装 <code class="docutils literal notranslate"><span class="pre">oh</span> <span class="pre">my</span> <span class="pre">zsh</span></code></p>
@@ -258,11 +272,11 @@
 </ul>
 </section>
 <section id="ip">
-<h3>配置静态IP<a class="headerlink" href="#ip" title="Link to this heading">¶</a></h3>
+<h3>配置静态IP<a class="headerlink" href="#ip" title="Link to this heading"></a></h3>
 <p>请参考 <a class="reference internal" href="network/netplan.html#netplan-static-ip"><span class="std std-ref">激活netplan</span></a> 配置服务器静态IP地址，如果采用多网卡bonding，则参考 <a class="reference internal" href="network/netplan.html#netplan-bonding"><span class="std std-ref">netplan配置bonding</span></a></p>
 </section>
 <section id="id3">
-<h3>串口通讯<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h3>
+<h3>串口通讯<a class="headerlink" href="#id3" title="Link to this heading"></a></h3>
 <p>物理服务器通常支持串口管理，可以通过 <a class="reference internal" href="../server/ipmi/index.html#ipmi"><span class="std std-ref">IPMI</span></a> 实现远程管理和维护，但是需要操作系统内核配置。编辑 <code class="docutils literal notranslate"><span class="pre">/etc/default/grub</span></code> 设置:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">GRUB_CMDLINE_LINUX</span><span class="o">=</span><span class="s2">&quot;ipv6.disable=1 crashkernel=auto console=tty0 console=ttyS0,115200n8&quot;</span>
 </pre></div>
@@ -273,7 +287,7 @@
 </div>
 </section>
 <section id="timezone">
-<h3>timezone<a class="headerlink" href="#timezone" title="Link to this heading">¶</a></h3>
+<h3>timezone<a class="headerlink" href="#timezone" title="Link to this heading"></a></h3>
 <p>安装完成Unbuntu Server会发现系统时钟不是本地时钟（东8区），这个解决方法是修改 <code class="docutils literal notranslate"><span class="pre">/etc/localtime</span></code> 这个软链接文件的指向:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">unlink</span> <span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">localtime</span>
 <span class="n">sudo</span> <span class="n">ln</span> <span class="o">-</span><span class="n">s</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">share</span><span class="o">/</span><span class="n">zoneinfo</span><span class="o">/</span><span class="n">Asia</span><span class="o">/</span><span class="n">Shanghai</span> <span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">localtime</span>
@@ -283,11 +297,11 @@
 </section>
 </section>
 <section id="ubuntu-lts-enablement-stacks">
-<span id="ubuntu-lts-hwe"></span><h2>Ubuntu LTS Enablement Stacks<a class="headerlink" href="#ubuntu-lts-enablement-stacks" title="Link to this heading">¶</a></h2>
+<span id="ubuntu-lts-hwe"></span><h2>Ubuntu LTS Enablement Stacks<a class="headerlink" href="#ubuntu-lts-enablement-stacks" title="Link to this heading"></a></h2>
 <p>Ubuntu LTS enablement（也称为 HWE 或 Hardware Enablement）stacks为Ubuntu LTS版本提供了较新的内核以及X支持。这些enablement stacks可以手工安装。</p>
 <p>Ubuntu 18.04.2 以及更新的版本在Desktop版本提供了一个保持更新的内核以及X堆栈。服务器架构则默认采用GA内核，并提供了可选的增强内核。</p>
 <section id="hwe">
-<h3>安装HWE软件栈<a class="headerlink" href="#hwe" title="Link to this heading">¶</a></h3>
+<h3>安装HWE软件栈<a class="headerlink" href="#hwe" title="Link to this heading"></a></h3>
 <p>安装HWE软件栈非常简单：</p>
 <ul>
 <li><p>Desktop版本安装HWE:</p>
@@ -314,7 +328,7 @@
 </section>
 </section>
 <section id="id4">
-<h2>无线网卡<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h2>
+<h2>无线网卡<a class="headerlink" href="#id4" title="Link to this heading"></a></h2>
 <p>我在安装Ubuntu Server时，采用了一块USB网卡连接有线网络，这样可以完整把整个安装过程进行结束。安装完成之后，通过以下方式安装驱动:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">update</span>
 <span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="o">--</span><span class="n">reinstall</span> <span class="n">install</span> <span class="n">bcmwl</span><span class="o">-</span><span class="n">kernel</span><span class="o">-</span><span class="n">source</span>
@@ -322,7 +336,7 @@
 </div>
 </section>
 <section id="id5">
-<h2>设置合上笔记本屏幕<a class="headerlink" href="#id5" title="Link to this heading">¶</a></h2>
+<h2>设置合上笔记本屏幕<a class="headerlink" href="#id5" title="Link to this heading"></a></h2>
 <p>在Server字符终端方式使用中，实际上都是通过远程登陆服务器方式维护，所以通常会合上笔记本屏幕。和桌面版 <a class="reference internal" href="ubuntu_hibernate.html#ubuntu-hibernate"><span class="std std-ref">Ubuntu Hibernate休眠</span></a> 不同，我期望合上笔记本时候不要休眠继续工作，所以配置 <code class="docutils literal notranslate"><span class="pre">/etc/systemd/logind.conf</span></code> 添加:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">HandleLidSwitch</span><span class="o">=</span><span class="n">ignore</span>
 <span class="n">HandleLidSwitchDocked</span><span class="o">=</span><span class="n">ignore</span>
@@ -344,9 +358,9 @@
 <p>这样关闭屏幕之后，只要按回车键能够恢复屏幕使用。</p>
 </section>
 <section id="fbvesa">
-<h2>字符终端关闭fbvesa<a class="headerlink" href="#fbvesa" title="Link to this heading">¶</a></h2>
+<h2>字符终端关闭fbvesa<a class="headerlink" href="#fbvesa" title="Link to this heading"></a></h2>
 <p>我感觉在服务器上启用fbvesa似乎价值不大，并且我反复遇到屏幕花屏问题，似乎是由于混合了设置hibernate休眠以及设置了kms相关。但是由于太多的配置修改，难以恢复到最初的纯净状态。后续再次安装模拟系统，我将完全采用最简单的字符终端模式，关闭fbvesa。</p>
-<p>请参考 <a class="reference external" href="https://support.digium.com/s/article/How-to-disable-the-Linux-frame-buffer-if-it-s-causing-problems">How to disable the Linux frame buffer if it’s causing problems</a> 关闭fbvesa驱动。</p>
+<p>请参考 <a class="reference external" href="https://support.digium.com/s/article/How-to-disable-the-Linux-frame-buffer-if-it-s-causing-problems">How to disable the Linux frame buffer if it's causing problems</a> 关闭fbvesa驱动。</p>
 <p>可能的方法（待验证）是修改 <code class="docutils literal notranslate"><span class="pre">/etc/grub.d/10_linux</span></code> ，将以下行:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>linux   ${rel_dirname}/${basename} root=${linux_root_device_thisversion} ro ${args}
 </pre></div>
@@ -355,10 +369,10 @@
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>linux   ${rel_dirname}/${basename} root=${linux_root_device_thisversion} ro ${args} nomodeset
 </pre></div>
 </div>
-<p>然后重启系统。不过，当前我测试始终没有成功，似乎是因为安装了nvidia专用驱动导致。我尝试 <a class="reference external" href="https://ubuntuforums.org/showthread.php?t=2357949">I do not know how to Add this thing video=vesafb:off vga=normal’</a> 也没有成功。</p>
+<p>然后重启系统。不过，当前我测试始终没有成功，似乎是因为安装了nvidia专用驱动导致。我尝试 <a class="reference external" href="https://ubuntuforums.org/showthread.php?t=2357949">I do not know how to Add this thing video=vesafb:off vga=normal'</a> 也没有成功。</p>
 </section>
 <section id="xfce4">
-<h2>安装Xfce4桌面(可选)<a class="headerlink" href="#xfce4" title="Link to this heading">¶</a></h2>
+<h2>安装Xfce4桌面(可选)<a class="headerlink" href="#xfce4" title="Link to this heading"></a></h2>
 <div class="admonition note">
 <p class="admonition-title">备注</p>
 <p>默认安装桌面时使用的显卡驱动是 nouveau ，但是这个驱动性能不如官方闭源驱动。如果需要安装官方驱动，请参考 <a class="reference internal" href="ubuntu_desktop.html#ubuntu-desktop-nvidia"><span class="std std-ref">显卡</span></a></p>
@@ -405,7 +419,7 @@
 </li>
 </ul>
 <section id="startx">
-<h3>默认字符终端+startx<a class="headerlink" href="#startx" title="Link to this heading">¶</a></h3>
+<h3>默认字符终端+startx<a class="headerlink" href="#startx" title="Link to this heading"></a></h3>
 <ul>
 <li><p>如果要尽可能节约系统资源，可以默认先进入字符终端，仅在需要时启动图形界面:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">systemctl</span> <span class="nb">set</span><span class="o">-</span><span class="n">default</span> <span class="n">multi</span><span class="o">-</span><span class="n">user</span><span class="o">.</span><span class="n">target</span>
@@ -445,7 +459,7 @@
 </div>
 </section>
 <section id="x">
-<h3>默认启动X<a class="headerlink" href="#x" title="Link to this heading">¶</a></h3>
+<h3>默认启动X<a class="headerlink" href="#x" title="Link to this heading"></a></h3>
 <ul>
 <li><p>如果要默认启动X，需要安装一个Display Manager，例如SLiM:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">apt</span> <span class="n">install</span> <span class="n">slim</span>
@@ -460,7 +474,7 @@
 </div>
 </section>
 <section id="id7">
-<h3>调整xfce4桌面<a class="headerlink" href="#id7" title="Link to this heading">¶</a></h3>
+<h3>调整xfce4桌面<a class="headerlink" href="#id7" title="Link to this heading"></a></h3>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">Settings</span> <span class="pre">=&gt;</span> <span class="pre">Appearance</span></code></p>
 <ul>
@@ -487,25 +501,37 @@
 
            </div>
           </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="ubuntu_on_thinkpad_x220.html" class="btn btn-neutral float-left" title="ThinkPad X220上运行Ubuntu" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="ubuntu_server_init.html" class="btn btn-neutral float-right" title="Ubuntu服务器初始化" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="ubuntu_on_thinkpad_x220.html" class="btn btn-neutral float-left" title="ThinkPad X220上运行Ubuntu" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="ubuntu_server_init.html" class="btn btn-neutral float-right" title="Ubuntu服务器初始化" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../copyright.html">Copyright</a> 2018 - now, Huatai Huang.</p>
+    <p>&#169; <a href="../../copyright.html">版权所有</a> 2018 - now, Huatai Huang。</p>
   </div>
 
-  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
   
     <!-- your html code here -->
     <br>
-    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡</a></p>
-     
+    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡 👈</a></p>
+    <br>
+    <p>网站采用 <a href="https://utteranc.es/">utterances</a> 评论系统，所有评论存储在<a href="https://github.com/huataihuang/cloud-atlas/issues">GitHub issues</a> 中，如果你看不到下方的评论框，那么可能需要<a href="https://cloud-atlas.readthedocs.io/zh-cn/latest/linux/security/vpn/index.html">自备梯子</a> 👈</p>
+    <div class="articleComments">
+        <comments>
+  <script src="https://utteranc.es/client.js"
+    repo="huataihuang/cloud-atlas"
+    issue-term="pathname"
+    theme="github-light"
+    crossorigin="anonymous"
+    async>
+  </script>
+</comments>
+    </div>
 
 
 </footer>

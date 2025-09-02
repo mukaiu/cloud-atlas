@@ -1,21 +1,25 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh" data-content_root="../../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sysbench性能测试 &mdash; Cloud Atlas 0.1 文档</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+  <title>Sysbench性能测试 &mdash; Cloud Atlas: Discovery beta 文档</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=fd3f3429" />
+
+  
+    <link rel="shortcut icon" href="../../_static/favicon.png"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="../../_static/documentation_options.js?v=7c91f8fd"></script>
-        <script src="../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=8534f863"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
         <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
-        <script src="../../_static/translations.js?v=beaddf03"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../../genindex.html" />
     <link rel="search" title="搜索" href="../../search.html" />
@@ -33,48 +37,50 @@
           
           
           <a href="../../index.html" class="icon icon-home">
-            Cloud Atlas
+            Cloud Atlas: Discovery
           </a>
+              <div class="version">
+                1.1
+              </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../studio/index.html">Studio Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../infrastructure/index.html">Infrastructure Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../devops/index.html">DevOps Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kvm/index.html">KVM Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../ceph/index.html">Ceph Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../gluster/index.html">Gluster Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../ovirt/index.html">oVirt Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../openstack/index.html">OpenStack Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../docker/index.html">Docker Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kubernetes/index.html">Kubernetes Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kubernetes_from_scratch/index.html">Kubernetes From Scratch (KFS) Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../rancher/index.html">Rancher Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../openshift/index.html">OpenShift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../sql/index.html">SQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../sqlite/index.html">SQLite Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../mysql/index.html">MySQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../pgsql/index.html">PostgreSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../clickhouse/index.html">ClickHouse Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../nosql/index.html">NoSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../redis/index.html">Redis Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../network/index.html">Network Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../infra_service/index.html">Infra-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../infra_search/index.html">Search Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../info_service/index.html">Info-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../web/index.html">Web Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../big_data/index.html">Big Data Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../machine_learning/index.html">Machine Learning Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../linux/index.html">Linux Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kernel/index.html">Kernel Atlas</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Performance Atlas</a><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../studio/index.html">Studio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../infrastructure/index.html">Infrastructure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../devops/index.html">DevOps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kvm/index.html">KVM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ceph/index.html">Ceph</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../gluster/index.html">Gluster</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ovirt/index.html">oVirt</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../openstack/index.html">OpenStack</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../docker/index.html">Docker</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kubernetes/index.html">Kubernetes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../k8s_dev/index.html">Kubernetes Develop</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../rancher/index.html">Rancher</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../openshift/index.html">OpenShift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../sql/index.html">SQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../sqlite/index.html">SQLite</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../mysql/index.html">MySQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../pgsql/index.html">PostgreSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../nosql/index.html">NoSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../network/index.html">Network</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../infra_service/index.html">Infra-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../infra_search/index.html">Infra-Search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../web/index.html">Web</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../info_service/index.html">Info-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../big_data/index.html">Big Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../machine_learning/index.html">Machine Learning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../drone/index.html">Drone</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../linux/index.html">Linux</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kernel/index.html">Kernel</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Performance</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../pcp/index.html">Performance Co-Pilot</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="index.html">性能工具集</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="simulate_load/index.html">压力模拟工具</a></li>
@@ -100,26 +106,28 @@
 <li class="toctree-l2"><a class="reference internal" href="../likwid/index.html">LIKWID Performance Tools</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../distributed_system/index.html">Distributed System Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../shell/index.html">Shell Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../python/index.html">Python Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../django/index.html">Django Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../flask/index.html">Flask Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../javascript/index.html">JavaScript Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../nodejs/index.html">Node.js Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../clang/index.html">C Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../golang/index.html">Go Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../swift/index.html">Swift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../rust/index.html">Rust Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../ruby/index.html">Ruby Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../arm/index.html">ARM Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../android/index.html">Android Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../bsd/index.html">BSD Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../apple/index.html">Apple Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../windows/index.html">Windows Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../real/index.html">Real Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../management/index.html">Management Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../life/index.html">Life Atlas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../distributed_system/index.html">Distributed System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../shell/index.html">Shell</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../python/index.html">Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../django/index.html">Django</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../javascript/index.html">JavaScript</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../nodejs/index.html">Node.js</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../clang/index.html">C</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../golang/index.html">Go</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../swift/index.html">Swift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../rust/index.html">Rust</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ruby/index.html">Ruby</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lua/index.html">Lua</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../arm/index.html">ARM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../raspberry_pi/index.html">Raspberry Pi</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../android/index.html">Android</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../bsd/index.html">BSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../freebsd/index.html">FreeBSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../apple/index.html">Apple</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../windows/index.html">Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../real/index.html">Real</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../management/index.html">Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../life/index.html">Life</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../copyright.html">Copyright</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../aboutme.html">关于作者</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../donate.html">捐赠</a></li>
@@ -132,21 +140,21 @@
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../index.html">Cloud Atlas</a>
+          <a href="../../index.html">Cloud Atlas: Discovery</a>
       </nav>
 
       <div class="wy-nav-content">
         <div class="rst-content">
-          <div role="navigation" aria-label="Page navigation">
+          <div role="navigation" aria-label="页面导航">
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
-          <li class="breadcrumb-item"><a href="../index.html">Performance Atlas</a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Performance</a></li>
           <li class="breadcrumb-item"><a href="index.html">性能工具集</a></li>
       <li class="breadcrumb-item active">Sysbench性能测试</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../../_sources/performance/performance_tools/sysbench.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../_sources/performance/performance_tools/sysbench.rst.txt" rel="nofollow"> 查看页面源码</a>
       </li>
   </ul>
   <hr/>
@@ -155,7 +163,7 @@
            <div itemprop="articleBody">
              
   <section id="sysbench">
-<span id="id1"></span><h1>Sysbench性能测试<a class="headerlink" href="#sysbench" title="Link to this heading">¶</a></h1>
+<span id="id1"></span><h1>Sysbench性能测试<a class="headerlink" href="#sysbench" title="Link to this heading"></a></h1>
 <p><a class="reference external" href="https://github.com/akopytov/sysbench">sysbench(github)</a> 是基于LuaJIT的一个脚本化多线程性能测试工具。通常用于测试数据库性能，但是也可以创建抽象的负载用于测试多种场景:</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">oltp_*.lua</span></code> 一系列OLTP类的数据库压测</p></li>
@@ -170,7 +178,7 @@
 <p>我在 <a class="reference internal" href="../../linux/server/hardware/hpe/dl360_bios_upgrade.html#dl360-bios-upgrade"><span class="std std-ref">HPE DL360 BIOS升级</span></a> 前后采用sysbench进行性能测试，以观察BIOS升级对性能的影戏</p>
 </div>
 <section id="id2">
-<h2>安装(旧方法归档)<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
+<h2>安装(旧方法归档)<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
 <ul>
 <li><p>在Ubuntu上可以直接安装:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">apt</span> <span class="n">install</span> <span class="n">sysbench</span>
@@ -180,7 +188,7 @@
 <li><p>在CentOS或者Fedora，需要使用EPEL仓库安装:</p></li>
 </ul>
 <div class="literal-block-wrapper docutils container" id="id10">
-<div class="code-block-caption"><span class="caption-text">yum命令安装EPEL仓库</span><a class="headerlink" href="#id10" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">yum命令安装EPEL仓库</span><a class="headerlink" href="#id10" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>yum<span class="w"> </span>install<span class="w"> </span>https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
 </pre></div>
 </div>
@@ -191,13 +199,13 @@
 </div>
 </section>
 <section id="id3">
-<h2>安装<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h2>
+<h2>安装<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
 <p>sysbench现在提供了二进制安装仓库方法，通过 packagecloud ，可以直接针对不同操作系统进行安装</p>
 <ul class="simple">
 <li><p>Debian/Ubuntu:</p></li>
 </ul>
 <div class="literal-block-wrapper docutils container" id="id11">
-<div class="code-block-caption"><span class="caption-text">在Debian/Ubuntu中安装sysbench</span><a class="headerlink" href="#id11" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">在Debian/Ubuntu中安装sysbench</span><a class="headerlink" href="#id11" title="Link to this code"></a></div>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">curl</span> <span class="o">-</span><span class="n">s</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">packagecloud</span><span class="o">.</span><span class="n">io</span><span class="o">/</span><span class="n">install</span><span class="o">/</span><span class="n">repositories</span><span class="o">/</span><span class="n">akopytov</span><span class="o">/</span><span class="n">sysbench</span><span class="o">/</span><span class="n">script</span><span class="o">.</span><span class="n">deb</span><span class="o">.</span><span class="n">sh</span> <span class="o">|</span> <span class="n">sudo</span> <span class="n">bash</span>
 <span class="n">sudo</span> <span class="n">apt</span> <span class="o">-</span><span class="n">y</span> <span class="n">install</span> <span class="n">sysbench</span>
 </pre></div>
@@ -207,7 +215,7 @@
 <li><p>RHEL/CentOS:</p></li>
 </ul>
 <div class="literal-block-wrapper docutils container" id="id12">
-<div class="code-block-caption"><span class="caption-text">在RHEL/CentOS中安装sysbench</span><a class="headerlink" href="#id12" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">在RHEL/CentOS中安装sysbench</span><a class="headerlink" href="#id12" title="Link to this code"></a></div>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">curl</span> <span class="o">-</span><span class="n">s</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">packagecloud</span><span class="o">.</span><span class="n">io</span><span class="o">/</span><span class="n">install</span><span class="o">/</span><span class="n">repositories</span><span class="o">/</span><span class="n">akopytov</span><span class="o">/</span><span class="n">sysbench</span><span class="o">/</span><span class="n">script</span><span class="o">.</span><span class="n">rpm</span><span class="o">.</span><span class="n">sh</span> <span class="o">|</span> <span class="n">sudo</span> <span class="n">bash</span>
 <span class="n">sudo</span> <span class="n">yum</span> <span class="o">-</span><span class="n">y</span> <span class="n">install</span> <span class="n">sysbench</span>
 </pre></div>
@@ -217,7 +225,7 @@
 <li><p>Fedora:</p></li>
 </ul>
 <div class="literal-block-wrapper docutils container" id="id13">
-<div class="code-block-caption"><span class="caption-text">在Fedora中安装sysbench</span><a class="headerlink" href="#id13" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">在Fedora中安装sysbench</span><a class="headerlink" href="#id13" title="Link to this code"></a></div>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">curl</span> <span class="o">-</span><span class="n">s</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">packagecloud</span><span class="o">.</span><span class="n">io</span><span class="o">/</span><span class="n">install</span><span class="o">/</span><span class="n">repositories</span><span class="o">/</span><span class="n">akopytov</span><span class="o">/</span><span class="n">sysbench</span><span class="o">/</span><span class="n">script</span><span class="o">.</span><span class="n">rpm</span><span class="o">.</span><span class="n">sh</span> <span class="o">|</span> <span class="n">sudo</span> <span class="n">bash</span>
 <span class="n">sudo</span> <span class="n">dnf</span> <span class="o">-</span><span class="n">y</span> <span class="n">install</span> <span class="n">sysbench</span>
 </pre></div>
@@ -227,7 +235,7 @@
 <li><p>Arch Linux:</p></li>
 </ul>
 <div class="literal-block-wrapper docutils container" id="id14">
-<div class="code-block-caption"><span class="caption-text">在Arch Linux中安装sysbench</span><a class="headerlink" href="#id14" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">在Arch Linux中安装sysbench</span><a class="headerlink" href="#id14" title="Link to this code"></a></div>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">pacman</span> <span class="o">-</span><span class="n">Suy</span> <span class="n">sysbench</span>
 </pre></div>
 </div>
@@ -236,7 +244,7 @@
 <li><p>macOS:</p></li>
 </ul>
 <div class="literal-block-wrapper docutils container" id="id15">
-<div class="code-block-caption"><span class="caption-text">在macOS中安装sysbench</span><a class="headerlink" href="#id15" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">在macOS中安装sysbench</span><a class="headerlink" href="#id15" title="Link to this code"></a></div>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Add --with-postgresql if you need PostgreSQL support</span>
 <span class="n">brew</span> <span class="n">install</span> <span class="n">sysbench</span>
 </pre></div>
@@ -246,7 +254,7 @@
 <li><p>对于没有在官方列表中列出的操作系统，但是实际上是兼容的，例如aliOS就是兼容CentOS，可以采用先检查 <a class="reference external" href="https://packagecloud.io/docs#os_distro_version">packagecloud os distro version</a> 然后通过环境变量指定系统:</p></li>
 </ul>
 <div class="literal-block-wrapper docutils container" id="id16">
-<div class="code-block-caption"><span class="caption-text">在aliOS (兼容CentOS 7.2) 中安装</span><a class="headerlink" href="#id16" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">在aliOS (兼容CentOS 7.2) 中安装</span><a class="headerlink" href="#id16" title="Link to this code"></a></div>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">wget</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">packagecloud</span><span class="o">.</span><span class="n">io</span><span class="o">/</span><span class="n">install</span><span class="o">/</span><span class="n">repositories</span><span class="o">/</span><span class="n">akopytov</span><span class="o">/</span><span class="n">sysbench</span><span class="o">/</span><span class="n">script</span><span class="o">.</span><span class="n">rpm</span><span class="o">.</span><span class="n">sh</span>
 <span class="n">os</span><span class="o">=</span><span class="n">el</span> <span class="n">dist</span><span class="o">=</span><span class="mi">7</span> <span class="o">./</span><span class="n">script</span><span class="o">.</span><span class="n">rpm</span><span class="o">.</span><span class="n">sh</span>
 <span class="n">sudo</span> <span class="n">yum</span> <span class="o">-</span><span class="n">y</span> <span class="n">install</span> <span class="n">sysbench</span>
@@ -255,9 +263,9 @@
 </div>
 </section>
 <section id="id4">
-<h2>使用<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h2>
+<h2>使用<a class="headerlink" href="#id4" title="Link to this heading"></a></h2>
 <section id="fileio">
-<h3>测试 <code class="docutils literal notranslate"><span class="pre">fileio</span></code><a class="headerlink" href="#fileio" title="Link to this heading">¶</a></h3>
+<h3>测试 <code class="docutils literal notranslate"><span class="pre">fileio</span></code><a class="headerlink" href="#fileio" title="Link to this heading"></a></h3>
 <p>当使用 <code class="docutils literal notranslate"><span class="pre">fileio</span></code> ，需要创建一个测试文件，建议文件大小大于可用内存，这样缓存不会过多影响测试负载:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sysbench</span> <span class="n">fileio</span> <span class="o">--</span><span class="n">file</span><span class="o">-</span><span class="n">total</span><span class="o">-</span><span class="n">size</span><span class="o">=</span><span class="mi">8</span><span class="n">G</span> <span class="n">prepare</span>
 <span class="n">sysbench</span> <span class="n">fileio</span> <span class="o">--</span><span class="n">file</span><span class="o">-</span><span class="n">total</span><span class="o">-</span><span class="n">size</span><span class="o">=</span><span class="mi">8</span><span class="n">G</span> <span class="o">--</span><span class="n">file</span><span class="o">-</span><span class="n">test</span><span class="o">-</span><span class="n">mode</span><span class="o">=</span><span class="n">rndrw</span> <span class="o">--</span><span class="n">time</span><span class="o">=</span><span class="mi">300</span> <span class="o">--</span><span class="nb">max</span><span class="o">-</span><span class="n">requests</span><span class="o">=</span><span class="mi">0</span> <span class="n">run</span>
@@ -267,7 +275,7 @@
 <p>这里可以指定不同的读写模式，例如上面采用了 <code class="docutils literal notranslate"><span class="pre">rndrw</span></code> 表示随机读写， <code class="docutils literal notranslate"><span class="pre">--max-time</span></code> 指定测试时间</p>
 <p>输出结果如下</p>
 <div class="literal-block-wrapper docutils container" id="id17">
-<div class="code-block-caption"><span class="caption-text">sysbench fileio</span><a class="headerlink" href="#id17" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">sysbench fileio</span><a class="headerlink" href="#id17" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sysbench<span class="w"> </span><span class="m">1</span>.0.18<span class="w"> </span><span class="o">(</span>using<span class="w"> </span>system<span class="w"> </span>LuaJIT<span class="w"> </span><span class="m">2</span>.1.0-beta3<span class="o">)</span>
 
 Running<span class="w"> </span>the<span class="w"> </span><span class="nb">test</span><span class="w"> </span>with<span class="w"> </span>following<span class="w"> </span>options:
@@ -316,7 +324,7 @@ Threads<span class="w"> </span>fairness:
 </div>
 </section>
 <section id="cpu">
-<h3>测试 <code class="docutils literal notranslate"><span class="pre">cpu</span></code><a class="headerlink" href="#cpu" title="Link to this heading">¶</a></h3>
+<h3>测试 <code class="docutils literal notranslate"><span class="pre">cpu</span></code><a class="headerlink" href="#cpu" title="Link to this heading"></a></h3>
 <p>在 CPU 工作负载下运行时，sysbench 将通过将数字标准除以 2 和数字平方根之间的所有数字来验证素数。 如果任何数字的余数为 0，则计算下一个数字。 可以想象，这会给 CPU 带来一些压力，但仅限于一组非常有限的 CPU 功能。</p>
 <p>测试命令:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sysbench</span> <span class="n">cpu</span> <span class="o">--</span><span class="n">cpu</span><span class="o">-</span><span class="nb">max</span><span class="o">-</span><span class="n">prime</span><span class="o">=</span><span class="mi">20000</span> <span class="o">--</span><span class="n">threads</span><span class="o">=</span><span class="mi">48</span> <span class="n">run</span>
@@ -324,7 +332,7 @@ Threads<span class="w"> </span>fairness:
 </div>
 <p>输出结果:</p>
 <div class="literal-block-wrapper docutils container" id="id18">
-<div class="code-block-caption"><span class="caption-text">sysbench cpu</span><a class="headerlink" href="#id18" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">sysbench cpu</span><a class="headerlink" href="#id18" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sysbench<span class="w"> </span><span class="m">1</span>.0.18<span class="w"> </span><span class="o">(</span>using<span class="w"> </span>system<span class="w"> </span>LuaJIT<span class="w"> </span><span class="m">2</span>.1.0-beta3<span class="o">)</span>
 
 Running<span class="w"> </span>the<span class="w"> </span><span class="nb">test</span><span class="w"> </span>with<span class="w"> </span>following<span class="w"> </span>options:
@@ -364,7 +372,7 @@ Threads<span class="w"> </span>fairness:
 </div>
 </section>
 <section id="id5">
-<h3>测试线程工作负载<a class="headerlink" href="#id5" title="Link to this heading">¶</a></h3>
+<h3>测试线程工作负载<a class="headerlink" href="#id5" title="Link to this heading"></a></h3>
 <p>对于线程工作负载，每个工作线程都将被分配一个互斥锁（一种锁），并且对于每次执行，将循环多次（记录为产量），其中获取锁，产量（意味着它 要求调度程序停止运行并将其放回运行队列的末尾），然后，当它再次被调度执行时，解锁。</p>
 <p>通过调整各种参数，可以模拟具有相同锁的高并发线程，或具有多个不同锁的高并发线程等情况。</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sysbench</span> <span class="n">threads</span> <span class="o">--</span><span class="n">thread</span><span class="o">-</span><span class="n">locks</span><span class="o">=</span><span class="mi">1</span> <span class="o">--</span><span class="n">time</span><span class="o">=</span><span class="mi">20</span> <span class="n">run</span>
@@ -372,7 +380,7 @@ Threads<span class="w"> </span>fairness:
 </div>
 <p>输出结果:</p>
 <div class="literal-block-wrapper docutils container" id="id19">
-<div class="code-block-caption"><span class="caption-text">sysbench threads</span><a class="headerlink" href="#id19" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">sysbench threads</span><a class="headerlink" href="#id19" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sysbench<span class="w"> </span><span class="m">1</span>.0.18<span class="w"> </span><span class="o">(</span>using<span class="w"> </span>system<span class="w"> </span>LuaJIT<span class="w"> </span><span class="m">2</span>.1.0-beta3<span class="o">)</span>
 
 Running<span class="w"> </span>the<span class="w"> </span><span class="nb">test</span><span class="w"> </span>with<span class="w"> </span>following<span class="w"> </span>options:
@@ -404,14 +412,14 @@ Threads<span class="w"> </span>fairness:
 </div>
 </section>
 <section id="mutex">
-<h3>测试mutex工作负载<a class="headerlink" href="#mutex" title="Link to this heading">¶</a></h3>
+<h3>测试mutex工作负载<a class="headerlink" href="#mutex" title="Link to this heading"></a></h3>
 <p>使用互斥量工作负载时，sysbench 应用程序将为每个线程运行一个请求。 这个请求首先会给 CPU 带来一些压力（使用一个简单的增量循环，通过 <code class="docutils literal notranslate"><span class="pre">--mutex-loops</span></code> 参数），然后它需要一个随机互斥锁（锁），增加一个全局变量并再次释放锁。 这个过程会重复几次，由锁的数量（ <code class="docutils literal notranslate"><span class="pre">--mutex-locks</span></code> ）标识。 随机互斥锁取自 <code class="docutils literal notranslate"><span class="pre">--mutex-num</span></code> 参数确定大小的池。</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sysbench</span> <span class="n">mutex</span> <span class="o">--</span><span class="n">threads</span><span class="o">=</span><span class="mi">1024</span> <span class="n">run</span>
 </pre></div>
 </div>
 <p>输出结果:</p>
 <div class="literal-block-wrapper docutils container" id="id20">
-<div class="code-block-caption"><span class="caption-text">sysbench mutex</span><a class="headerlink" href="#id20" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">sysbench mutex</span><a class="headerlink" href="#id20" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sysbench<span class="w"> </span><span class="m">1</span>.0.18<span class="w"> </span><span class="o">(</span>using<span class="w"> </span>system<span class="w"> </span>LuaJIT<span class="w"> </span><span class="m">2</span>.1.0-beta3<span class="o">)</span>
 
 Running<span class="w"> </span>the<span class="w"> </span><span class="nb">test</span><span class="w"> </span>with<span class="w"> </span>following<span class="w"> </span>options:
@@ -444,14 +452,14 @@ Threads<span class="w"> </span>fairness:
 <p>这里输出结果中，运行时间长度最为关键，尽管必须考虑到线程将从可用池中随机获取一个互斥锁。 这个随机因素可能会影响结果。</p>
 </section>
 <section id="id6">
-<h3>测试内存工作负载<a class="headerlink" href="#id6" title="Link to this heading">¶</a></h3>
+<h3>测试内存工作负载<a class="headerlink" href="#id6" title="Link to this heading"></a></h3>
 <p>在 sysbench 中使用内存测试时，基准应用程序会分配一个内存缓冲区，然后从中读取或写入，每次为一个指针的大小（即 32 位或 64 位），每次执行直到读取了总缓冲区大小 从或写到。 然后重复此操作，直到达到提供的容量 ( <code class="docutils literal notranslate"><span class="pre">--memory-total-size</span></code> )。 用户可以提供多线程（ <code class="docutils literal notranslate"><span class="pre">--threads</span></code> ）、不同大小的缓冲区（ <code class="docutils literal notranslate"><span class="pre">--memory-block-size</span></code> ）和请求类型（读或写，顺序或随机）。</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sysbench</span> <span class="n">memory</span> <span class="o">--</span><span class="n">threads</span><span class="o">=</span><span class="mi">1024</span> <span class="n">run</span>
 </pre></div>
 </div>
 <p>输出结果:</p>
 <div class="literal-block-wrapper docutils container" id="id21">
-<div class="code-block-caption"><span class="caption-text">sysbench memory</span><a class="headerlink" href="#id21" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">sysbench memory</span><a class="headerlink" href="#id21" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sysbench<span class="w"> </span><span class="m">1</span>.0.18<span class="w"> </span><span class="o">(</span>using<span class="w"> </span>system<span class="w"> </span>LuaJIT<span class="w"> </span><span class="m">2</span>.1.0-beta3<span class="o">)</span>
 
 Running<span class="w"> </span>the<span class="w"> </span><span class="nb">test</span><span class="w"> </span>with<span class="w"> </span>following<span class="w"> </span>options:
@@ -493,7 +501,7 @@ Threads<span class="w"> </span>fairness:
 </div>
 </section>
 <section id="mysql">
-<h3>MySQL数据库测试(待实践)<a class="headerlink" href="#mysql" title="Link to this heading">¶</a></h3>
+<h3>MySQL数据库测试(待实践)<a class="headerlink" href="#mysql" title="Link to this heading"></a></h3>
 <ul>
 <li><p>创建一个test表包含 1,000,000 行数据:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sysbench</span> <span class="o">--</span><span class="n">test</span><span class="o">=</span><span class="n">oltp</span> <span class="o">--</span><span class="n">oltp</span><span class="o">-</span><span class="n">table</span><span class="o">-</span><span class="n">size</span><span class="o">=</span><span class="mi">1000000</span> <span class="o">--</span><span class="n">db</span><span class="o">-</span><span class="n">driver</span><span class="o">=</span><span class="n">mysql</span> <span class="o">--</span><span class="n">mysql</span><span class="o">-</span><span class="n">db</span><span class="o">=</span><span class="n">test</span> <span class="o">--</span><span class="n">mysql</span><span class="o">-</span><span class="n">user</span><span class="o">=</span><span class="n">root</span> <span class="o">--</span><span class="n">mysql</span><span class="o">-</span><span class="n">password</span><span class="o">=</span><span class="n">yourrootsqlpassword</span> <span class="n">prepare</span>
@@ -509,7 +517,7 @@ Threads<span class="w"> </span>fairness:
 </section>
 </section>
 <section id="id7">
-<h2>参考<a class="headerlink" href="#id7" title="Link to this heading">¶</a></h2>
+<h2>参考<a class="headerlink" href="#id7" title="Link to this heading"></a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="https://linuxhint.com/use-sysbench-for-linux-performance-testing/">How to Use Sysbench for Linux Performance Testing?</a></p></li>
 <li><p><a class="reference external" href="https://wiki.gentoo.org/wiki/Sysbench">gentoo linux: Sysbench</a></p></li>
@@ -523,25 +531,37 @@ Threads<span class="w"> </span>fairness:
 
            </div>
           </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="simulate_load/stress.html" class="btn btn-neutral float-left" title="stress压力模拟工具" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="unixbench.html" class="btn btn-neutral float-right" title="UnixBench性能测试" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="simulate_load/stress.html" class="btn btn-neutral float-left" title="stress压力模拟工具" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="unixbench.html" class="btn btn-neutral float-right" title="UnixBench性能测试" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../copyright.html">Copyright</a> 2018 - now, Huatai Huang.</p>
+    <p>&#169; <a href="../../copyright.html">版权所有</a> 2018 - now, Huatai Huang。</p>
   </div>
 
-  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
   
     <!-- your html code here -->
     <br>
-    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡</a></p>
-     
+    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡 👈</a></p>
+    <br>
+    <p>网站采用 <a href="https://utteranc.es/">utterances</a> 评论系统，所有评论存储在<a href="https://github.com/huataihuang/cloud-atlas/issues">GitHub issues</a> 中，如果你看不到下方的评论框，那么可能需要<a href="https://cloud-atlas.readthedocs.io/zh-cn/latest/linux/security/vpn/index.html">自备梯子</a> 👈</p>
+    <div class="articleComments">
+        <comments>
+  <script src="https://utteranc.es/client.js"
+    repo="huataihuang/cloud-atlas"
+    issue-term="pathname"
+    theme="github-light"
+    crossorigin="anonymous"
+    async>
+  </script>
+</comments>
+    </div>
 
 
 </footer>

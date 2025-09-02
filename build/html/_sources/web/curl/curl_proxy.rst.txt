@@ -31,14 +31,25 @@ socks5代理
 http/https代理
 ---------------------
 
-- 环境变量设置::
+- 环境设置，注意配置去除本地回环地址过滤，避免一些特殊的访问失败( :ref:`homebrew` 安装openssl组件测试回环地址端口会失败)
 
-   export http_proxy=http://192.168.10.9:3128
-   export https_proxy=$http_proxy
+.. literalinclude:: curl_proxy/http_env
+   :caption: 配置curl的http/https代理环境变量
 
-- 或者采用 ``~/.curlrc`` ::
+比较通用的方法是设置操作系统全局环境变量，也就是设置 ``/etc/environment`` :
 
-   proxy=192.168.10.9:3128
+.. literalinclude:: curl_proxy/environment
+   :caption: 设置操作系统全局环境变量配置 ``/etc/environment``
+
+- 环境变量设置:
+
+.. literalinclude:: curl_proxy/socks5_http_env
+   :caption: 配置curl的http/https代理环境变量
+
+- 或者采用 ``~/.curlrc`` :
+
+.. literalinclude:: curl_proxy/curlrc
+   :caption: 配置 ``~/.curlrc`` 设置http/https代理
 
 socks5代理
 ------------
@@ -55,3 +66,4 @@ socks5代理
 - `performing HTTP requests with cURL (using PROXY) <https://stackoverflow.com/questions/9445489/performing-http-requests-with-curl-using-proxy>`_
 - `How to use curl command with proxy username/password on Linux/ Unix <https://www.cyberciti.biz/faq/linux-unix-curl-command-with-proxy-username-password-http-options/>`_
 - `How to Use Socks5 Proxy in Curl <https://blog.emacsos.com/use-socks5-proxy-in-curl.html>`_
+- `Proxy exceptions when using $http_proxy env var? [closed] <https://serverfault.com/questions/42426/proxy-exceptions-when-using-http-proxy-env-var>`_

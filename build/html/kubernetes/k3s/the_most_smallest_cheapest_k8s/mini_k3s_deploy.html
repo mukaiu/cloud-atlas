@@ -1,26 +1,30 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh" data-content_root="../../../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>微型k3s部署 &mdash; Cloud Atlas 0.1 文档</title>
-      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../../_static/graphviz.css" type="text/css" />
+  <title>微型k3s部署 &mdash; Cloud Atlas: Discovery beta 文档</title>
+      <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/graphviz.css?v=fd3f3429" />
+
+  
+    <link rel="shortcut icon" href="../../../_static/favicon.png"/>
   <!--[if lt IE 9]>
     <script src="../../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="../../../_static/documentation_options.js?v=7c91f8fd"></script>
-        <script src="../../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../../_static/documentation_options.js?v=8534f863"></script>
+        <script src="../../../_static/doctools.js?v=9a2dae69"></script>
         <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
-        <script src="../../../_static/translations.js?v=beaddf03"></script>
     <script src="../../../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../../../genindex.html" />
     <link rel="search" title="搜索" href="../../../search.html" />
     <link rel="copyright" title="版权所有" href="../../../copyright.html" />
-    <link rel="next" title="Kubernetes之上的平台" href="../../platform/index.html" />
+    <link rel="next" title="K0s - 轻量级Kubernetes" href="../../k0s/index.html" />
     <link rel="prev" title="源代码编译k3s" href="build_k3s.html" /> 
 </head>
 
@@ -33,28 +37,32 @@
           
           
           <a href="../../../index.html" class="icon icon-home">
-            Cloud Atlas
+            Cloud Atlas: Discovery
           </a>
+              <div class="version">
+                1.1
+              </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../../studio/index.html">Studio Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../infrastructure/index.html">Infrastructure Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../devops/index.html">DevOps Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../kvm/index.html">KVM Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../ceph/index.html">Ceph Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../gluster/index.html">Gluster Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../ovirt/index.html">oVirt Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../openstack/index.html">OpenStack Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../docker/index.html">Docker Atlas</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">Kubernetes Atlas</a><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../studio/index.html">Studio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../infrastructure/index.html">Infrastructure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../devops/index.html">DevOps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../kvm/index.html">KVM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../ceph/index.html">Ceph</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../gluster/index.html">Gluster</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../ovirt/index.html">oVirt</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../openstack/index.html">OpenStack</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../docker/index.html">Docker</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">Kubernetes</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../think_k8s.html">Kubernetes的思考</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../kubernetes_overview.html">Kubernetes概览</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../startup_prepare/index.html">Kubernetes起步准备</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../startup/index.html">Kubernetes快速起步</a></li>
@@ -88,6 +96,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../../gpu/index.html">GPU Kubernetes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../kubeflow/index.html">Kubeflow - Kubernetes机器学习工作流平台</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../argo/index.html">Argo - 基于Kubernetes的持续集成和工作流</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../kueue/index.html">Kueue - K8s原生批处理调度</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../k8s_android/index.html">Kubernetes运行Android</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="../index.html">K3s - 轻量级Kubernetes</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="../introduce_k3s.html">K3s简介</a></li>
@@ -96,6 +105,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../prepare_k3s_alpine.html">Alpine Linux的K3s准备</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../alpine_cfssl.html">编译安装cfssl(Alpine Linux)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../k3s_ha_etcd.html">K3s高可用etcd</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../kine/index.html">kine - etcd转换层</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../k3s_install.html">K3s安装</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../k3s_squid/index.html">k3s部署squid代理</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../longhorn/index.html">Longhorn k8s分布式存储</a></li>
@@ -108,51 +118,53 @@
 </li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../../k0s/index.html">K0s - 轻量级Kubernetes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../platform/index.html">Kubernetes之上的平台</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../cloud/index.html">Kubernetes云厂商</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../develop/index.html">Kubernetes开发</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../cncf/index.html">CNCF(Cloud Native Computing Foudation)</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../../kubernetes_from_scratch/index.html">Kubernetes From Scratch (KFS) Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../rancher/index.html">Rancher Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../openshift/index.html">OpenShift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../sql/index.html">SQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../sqlite/index.html">SQLite Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../mysql/index.html">MySQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../pgsql/index.html">PostgreSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../clickhouse/index.html">ClickHouse Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../nosql/index.html">NoSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../redis/index.html">Redis Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../network/index.html">Network Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../infra_service/index.html">Infra-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../infra_search/index.html">Search Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../info_service/index.html">Info-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../web/index.html">Web Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../big_data/index.html">Big Data Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../machine_learning/index.html">Machine Learning Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../linux/index.html">Linux Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../kernel/index.html">Kernel Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../performance/index.html">Performance Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../distributed_system/index.html">Distributed System Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../shell/index.html">Shell Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../python/index.html">Python Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../django/index.html">Django Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../flask/index.html">Flask Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../javascript/index.html">JavaScript Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../nodejs/index.html">Node.js Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../clang/index.html">C Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../golang/index.html">Go Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../swift/index.html">Swift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../rust/index.html">Rust Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../ruby/index.html">Ruby Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../arm/index.html">ARM Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../android/index.html">Android Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../bsd/index.html">BSD Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../apple/index.html">Apple Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../windows/index.html">Windows Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../real/index.html">Real Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../management/index.html">Management Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../life/index.html">Life Atlas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../k8s_dev/index.html">Kubernetes Develop</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../rancher/index.html">Rancher</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../openshift/index.html">OpenShift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../sql/index.html">SQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../sqlite/index.html">SQLite</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../mysql/index.html">MySQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../pgsql/index.html">PostgreSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../nosql/index.html">NoSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../network/index.html">Network</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../infra_service/index.html">Infra-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../infra_search/index.html">Infra-Search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../web/index.html">Web</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../info_service/index.html">Info-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../big_data/index.html">Big Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../machine_learning/index.html">Machine Learning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../drone/index.html">Drone</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../linux/index.html">Linux</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../kernel/index.html">Kernel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../performance/index.html">Performance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../distributed_system/index.html">Distributed System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../shell/index.html">Shell</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../python/index.html">Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../django/index.html">Django</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../javascript/index.html">JavaScript</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../nodejs/index.html">Node.js</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../clang/index.html">C</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../golang/index.html">Go</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../swift/index.html">Swift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../rust/index.html">Rust</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../ruby/index.html">Ruby</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../lua/index.html">Lua</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../arm/index.html">ARM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../raspberry_pi/index.html">Raspberry Pi</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../android/index.html">Android</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../bsd/index.html">BSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../freebsd/index.html">FreeBSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../apple/index.html">Apple</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../windows/index.html">Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../real/index.html">Real</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../management/index.html">Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../life/index.html">Life</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../copyright.html">Copyright</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../aboutme.html">关于作者</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../donate.html">捐赠</a></li>
@@ -165,22 +177,22 @@
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../../index.html">Cloud Atlas</a>
+          <a href="../../../index.html">Cloud Atlas: Discovery</a>
       </nav>
 
       <div class="wy-nav-content">
         <div class="rst-content">
-          <div role="navigation" aria-label="Page navigation">
+          <div role="navigation" aria-label="页面导航">
   <ul class="wy-breadcrumbs">
       <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
-          <li class="breadcrumb-item"><a href="../../index.html">Kubernetes Atlas</a></li>
+          <li class="breadcrumb-item"><a href="../../index.html">Kubernetes</a></li>
           <li class="breadcrumb-item"><a href="../index.html">K3s - 轻量级Kubernetes</a></li>
           <li class="breadcrumb-item"><a href="index.html">最小和最低成本Kubernetes</a></li>
       <li class="breadcrumb-item active">微型k3s部署</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../../../_sources/kubernetes/k3s/the_most_smallest_cheapest_k8s/mini_k3s_deploy.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../../_sources/kubernetes/k3s/the_most_smallest_cheapest_k8s/mini_k3s_deploy.rst.txt" rel="nofollow"> 查看页面源码</a>
       </li>
   </ul>
   <hr/>
@@ -189,14 +201,14 @@
            <div itemprop="articleBody">
              
   <section id="k3s">
-<span id="mini-k3s-deploy"></span><h1>微型k3s部署<a class="headerlink" href="#k3s" title="Link to this heading">¶</a></h1>
+<span id="mini-k3s-deploy"></span><h1>微型k3s部署<a class="headerlink" href="#k3s" title="Link to this heading"></a></h1>
 <div class="admonition note">
 <p class="admonition-title">备注</p>
-<p>我尚未完成 <a class="reference internal" href="../../../arm/raspberry_pi/hardware/pi_1.html#pi-1"><span class="std std-ref">树莓派一代</span></a> 上部署 <a class="reference internal" href="../index.html#k3s"><span class="std std-ref">K3s - 轻量级Kubernetes</span></a> ，目前先完成 <a class="reference internal" href="../../../arm/raspberry_pi/hardware/pi_4.html#pi-4"><span class="std std-ref">树莓派Raspberry Pi 4</span></a> 上 <a class="reference internal" href="../pi_k3s_deploy.html#pi-k3s-deploy"><span class="std std-ref">在树莓派上部署K3s</span></a> ，后续再继续完成本文实践</p>
+<p>我尚未完成 <a class="reference internal" href="../../../raspberry_pi/hardware/pi_1.html#pi-1"><span class="std std-ref">树莓派一代</span></a> 上部署 <a class="reference internal" href="../index.html#k3s"><span class="std std-ref">K3s - 轻量级Kubernetes</span></a> ，目前先完成 <a class="reference internal" href="../../../raspberry_pi/hardware/pi_4.html#pi-4"><span class="std std-ref">树莓派Raspberry Pi 4</span></a> 上 <a class="reference internal" href="../pi_k3s_deploy.html#pi-k3s-deploy"><span class="std std-ref">在树莓派上部署K3s</span></a> ，后续再继续完成本文实践</p>
 </div>
-<p>在 <a class="reference internal" href="../../../arm/raspberry_pi/hardware/pi_1.html#pi-1"><span class="std std-ref">树莓派一代</span></a> 上完成了 <a class="reference internal" href="mini_k3s_prepare.html#mini-k3s-prepare"><span class="std std-ref">微型K3s部署准备</span></a> 和 <a class="reference internal" href="build_k3s.html#build-k3s"><span class="std std-ref">源代码编译k3s</span></a> 之后开始部署</p>
+<p>在 <a class="reference internal" href="../../../raspberry_pi/hardware/pi_1.html#pi-1"><span class="std std-ref">树莓派一代</span></a> 上完成了 <a class="reference internal" href="mini_k3s_prepare.html#mini-k3s-prepare"><span class="std std-ref">微型K3s部署准备</span></a> 和 <a class="reference internal" href="build_k3s.html#build-k3s"><span class="std std-ref">源代码编译k3s</span></a> 之后开始部署</p>
 <section id="id1">
-<h2>准备<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h2>
+<h2>准备<a class="headerlink" href="#id1" title="Link to this heading"></a></h2>
 <ul>
 <li><p>安装 <code class="docutils literal notranslate"><span class="pre">cni-plugins</span></code> 和 <code class="docutils literal notranslate"><span class="pre">iptables</span></code></p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>apk add --no-cache cni-plugins iptables
@@ -222,7 +234,7 @@ export PATH=/usr/libexec/cni:$PATH
 </ul>
 </section>
 <section id="id2">
-<h2>k3s官方安装方法(失败)<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
+<h2>k3s官方安装方法(失败)<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
 <ul>
 <li><p><code class="docutils literal notranslate"><span class="pre">k3s</span></code> 将安装过程极简化，可以通过 <a class="reference external" href="https://github.com/rancher/k3s/releases/">k3s releases</a> 看到 <code class="docutils literal notranslate"><span class="pre">k3s</span></code> 提供了不同平台的二进制执行程序，对于ARM平台，有64位 (arm64) 和32位 (armhf)。可以手工下载，或者简单通过官方脚本进行安装:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">curl</span> <span class="o">-</span><span class="n">sfL</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">get</span><span class="o">.</span><span class="n">k3s</span><span class="o">.</span><span class="n">io</span> <span class="o">|</span> <span class="n">sh</span> <span class="o">-</span>
@@ -232,7 +244,7 @@ export PATH=/usr/libexec/cni:$PATH
 </ul>
 <p>提示信息:</p>
 <div class="literal-block-wrapper docutils container" id="id6">
-<div class="code-block-caption"><span class="caption-text">执行 curl -sfL <a class="reference external" href="https://get.k3s.io">https://get.k3s.io</a> | sh - 输出信息</span><a class="headerlink" href="#id6" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">执行 curl -sfL <a class="reference external" href="https://get.k3s.io">https://get.k3s.io</a> | sh - 输出信息</span><a class="headerlink" href="#id6" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">[</span>INFO<span class="o">]</span><span class="w">  </span>Finding<span class="w"> </span>release<span class="w"> </span><span class="k">for</span><span class="w"> </span>channel<span class="w"> </span>stable
 curl:<span class="w"> </span><span class="o">(</span><span class="m">92</span><span class="o">)</span><span class="w"> </span>HTTP/2<span class="w"> </span>stream<span class="w"> </span><span class="m">1</span><span class="w"> </span>was<span class="w"> </span>not<span class="w"> </span>closed<span class="w"> </span>cleanly<span class="w"> </span>before<span class="w"> </span>end<span class="w"> </span>of<span class="w"> </span>the<span class="w"> </span>underlying<span class="w"> </span>stream
 <span class="o">[</span>INFO<span class="o">]</span><span class="w">  </span>Using<span class="w"> </span>v1.22.7+k3s1<span class="w"> </span>as<span class="w"> </span>release
@@ -274,10 +286,10 @@ curl:<span class="w"> </span><span class="o">(</span><span class="m">92</span><s
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Illegal</span> <span class="n">instruction</span>
 </pre></div>
 </div>
-<p>非法指令 <a class="reference internal" href="../../../arm/architecture/arm_illegal_instruction.html#arm-illegal-instruction"><span class="std std-ref">ARM平台执行程序报错”Illegal instruction”解析</span></a></p>
+<p>非法指令 <a class="reference internal" href="../../../arm/architecture/arm_illegal_instruction.html#arm-illegal-instruction"><span class="std std-ref">ARM平台执行程序报错&quot;Illegal instruction&quot;解析</span></a></p>
 <div class="admonition note">
 <p class="admonition-title">备注</p>
-<p>后续我准备自己编译 <a class="reference internal" href="../index.html#k3s"><span class="std std-ref">K3s - 轻量级Kubernetes</span></a> 来实现 <a class="reference internal" href="../../../arm/raspberry_pi/hardware/pi_1.html#pi-1"><span class="std std-ref">树莓派一代</span></a> 部署，待继续实践</p>
+<p>后续我准备自己编译 <a class="reference internal" href="../index.html#k3s"><span class="std std-ref">K3s - 轻量级Kubernetes</span></a> 来实现 <a class="reference internal" href="../../../raspberry_pi/hardware/pi_1.html#pi-1"><span class="std std-ref">树莓派一代</span></a> 部署，待继续实践</p>
 </div>
 <ul>
 <li><p>卸载(后续重新实践):</p>
@@ -288,13 +300,13 @@ curl:<span class="w"> </span><span class="o">(</span><span class="m">92</span><s
 </ul>
 </section>
 <section id="build-k3s">
-<h2>使用 <a class="reference internal" href="build_k3s.html#build-k3s"><span class="std std-ref">源代码编译k3s</span></a> 进行部署<a class="headerlink" href="#build-k3s" title="Link to this heading">¶</a></h2>
-<p>对于我所使用的 <a class="reference internal" href="../../../arm/raspberry_pi/hardware/pi_1.html#pi-1"><span class="std std-ref">树莓派一代</span></a> 由于是 <a class="reference internal" href="../../../arm/architecture/arm_microarch.html#armv6"><span class="std std-ref">ARMv6</span></a> 微架构，无法直接使用官方提供的执行软件包 ( <code class="docutils literal notranslate"><span class="pre">armv7</span></code> )，所以，我采用自行 <a class="reference internal" href="build_k3s.html#build-k3s"><span class="std std-ref">源代码编译k3s</span></a> 来获得执行包。经过一番折腾，终于在 <code class="docutils literal notranslate"><span class="pre">树莓派1b+</span></code> (512MB内存) 上完成编译，编译一次耗时约12小时。</p>
+<h2>使用 <a class="reference internal" href="build_k3s.html#build-k3s"><span class="std std-ref">源代码编译k3s</span></a> 进行部署<a class="headerlink" href="#build-k3s" title="Link to this heading"></a></h2>
+<p>对于我所使用的 <a class="reference internal" href="../../../raspberry_pi/hardware/pi_1.html#pi-1"><span class="std std-ref">树莓派一代</span></a> 由于是 <a class="reference internal" href="../../../arm/architecture/arm_microarch.html#armv6"><span class="std std-ref">ARMv6</span></a> 微架构，无法直接使用官方提供的执行软件包 ( <code class="docutils literal notranslate"><span class="pre">armv7</span></code> )，所以，我采用自行 <a class="reference internal" href="build_k3s.html#build-k3s"><span class="std std-ref">源代码编译k3s</span></a> 来获得执行包。经过一番折腾，终于在 <code class="docutils literal notranslate"><span class="pre">树莓派1b+</span></code> (512MB内存) 上完成编译，编译一次耗时约12小时。</p>
 <section id="id3">
-<h3>执行程序<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h3>
-<p>我一共有3个 <a class="reference internal" href="../../../arm/raspberry_pi/hardware/pi_1.html#pi-1"><span class="std std-ref">树莓派一代</span></a> ，配分角色见 <a class="reference internal" href="../../../real/edge_cloud/edge_cloud_infra.html#edge-cloud-infra"><span class="std std-ref">边缘云计算架构</span></a></p>
+<h3>执行程序<a class="headerlink" href="#id3" title="Link to this heading"></a></h3>
+<p>我一共有3个 <a class="reference internal" href="../../../raspberry_pi/hardware/pi_1.html#pi-1"><span class="std std-ref">树莓派一代</span></a> ，配分角色见 <a class="reference internal" href="../../../real/edge_cloud/edge_cloud_infra.html#edge-cloud-infra"><span class="std std-ref">边缘云计算架构(旧版)</span></a></p>
 <ul>
-<li><p>将编译后的 <code class="docutils literal notranslate"><span class="pre">dist/artifacts/k3s-armhf</span></code> 复制到3台 <a class="reference internal" href="../../../arm/raspberry_pi/hardware/pi_1.html#pi-1"><span class="std std-ref">树莓派一代</span></a> <code class="docutils literal notranslate"><span class="pre">/usr/bin</span></code> 目录下 <code class="docutils literal notranslate"><span class="pre">k3s</span></code> (确保该文件是可执行模式):</p>
+<li><p>将编译后的 <code class="docutils literal notranslate"><span class="pre">dist/artifacts/k3s-armhf</span></code> 复制到3台 <a class="reference internal" href="../../../raspberry_pi/hardware/pi_1.html#pi-1"><span class="std std-ref">树莓派一代</span></a> <code class="docutils literal notranslate"><span class="pre">/usr/bin</span></code> 目录下 <code class="docutils literal notranslate"><span class="pre">k3s</span></code> (确保该文件是可执行模式):</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">scp</span> <span class="n">dist</span><span class="o">/</span><span class="n">artifacts</span><span class="o">/</span><span class="n">k3s</span><span class="o">-</span><span class="n">armhf</span> <span class="n">root</span><span class="o">@</span><span class="mf">192.168.10.10</span><span class="p">:</span><span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="nb">bin</span><span class="o">/</span><span class="n">k3s</span>
 </pre></div>
 </div>
@@ -312,7 +324,7 @@ curl:<span class="w"> </span><span class="o">(</span><span class="m">92</span><s
 </div>
 </section>
 <section id="master">
-<h3>第一个master节点<a class="headerlink" href="#master" title="Link to this heading">¶</a></h3>
+<h3>第一个master节点<a class="headerlink" href="#master" title="Link to this heading"></a></h3>
 <div class="admonition note">
 <p class="admonition-title">备注</p>
 <p><a class="reference external" href="https://nicks-playground.net/posts/2020-03-21-running-k8s-on-arm/">Running K8s on ARM</a> 使用了基于SSH进行快速部署的 <a class="reference external" href="https://github.com/alexellis/k3sup">alexellis / k3sup</a> 开源项目，原理是通过SSH在服务器上安装K3S，可以借鉴学习。</p>
@@ -356,11 +368,11 @@ curl:<span class="w"> </span><span class="o">(</span><span class="m">92</span><s
 Illegal instruction
 </pre></div>
 </div>
-<p>待排查…</p>
+<p>待排查...</p>
 </section>
 </section>
 <section id="id4">
-<h2>参考<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h2>
+<h2>参考<a class="headerlink" href="#id4" title="Link to this heading"></a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="https://d-heinrich.medium.com/k3s-bootstrap-on-alpine-linux-c207c85c3f3d">k3s bootstrap on Alpine Linux</a></p></li>
 <li><p><a class="reference external" href="https://gist.github.com/ruanbekker/fcc906bdcb2fed5937f7ce73a97e1001">Install k3s on Alpine Linux</a></p></li>
@@ -373,25 +385,37 @@ Illegal instruction
 
            </div>
           </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="build_k3s.html" class="btn btn-neutral float-left" title="源代码编译k3s" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="../../platform/index.html" class="btn btn-neutral float-right" title="Kubernetes之上的平台" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="build_k3s.html" class="btn btn-neutral float-left" title="源代码编译k3s" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="../../k0s/index.html" class="btn btn-neutral float-right" title="K0s - 轻量级Kubernetes" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../../copyright.html">Copyright</a> 2018 - now, Huatai Huang.</p>
+    <p>&#169; <a href="../../../copyright.html">版权所有</a> 2018 - now, Huatai Huang。</p>
   </div>
 
-  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
   
     <!-- your html code here -->
     <br>
-    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡</a></p>
-     
+    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡 👈</a></p>
+    <br>
+    <p>网站采用 <a href="https://utteranc.es/">utterances</a> 评论系统，所有评论存储在<a href="https://github.com/huataihuang/cloud-atlas/issues">GitHub issues</a> 中，如果你看不到下方的评论框，那么可能需要<a href="https://cloud-atlas.readthedocs.io/zh-cn/latest/linux/security/vpn/index.html">自备梯子</a> 👈</p>
+    <div class="articleComments">
+        <comments>
+  <script src="https://utteranc.es/client.js"
+    repo="huataihuang/cloud-atlas"
+    issue-term="pathname"
+    theme="github-light"
+    crossorigin="anonymous"
+    async>
+  </script>
+</comments>
+    </div>
 
 
 </footer>

@@ -1,27 +1,31 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh" data-content_root="../../../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>部署Jetson Nano Server &mdash; Cloud Atlas 0.1 文档</title>
-      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../../_static/graphviz.css" type="text/css" />
+  <title>部署Jetson Nano Server &mdash; Cloud Atlas: Discovery beta 文档</title>
+      <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/graphviz.css?v=fd3f3429" />
+
+  
+    <link rel="shortcut icon" href="../../../_static/favicon.png"/>
   <!--[if lt IE 9]>
     <script src="../../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="../../../_static/documentation_options.js?v=7c91f8fd"></script>
-        <script src="../../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../../_static/documentation_options.js?v=8534f863"></script>
+        <script src="../../../_static/doctools.js?v=9a2dae69"></script>
         <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
-        <script src="../../../_static/translations.js?v=beaddf03"></script>
     <script src="../../../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../../../genindex.html" />
     <link rel="search" title="搜索" href="../../../search.html" />
     <link rel="copyright" title="版权所有" href="../../../copyright.html" />
     <link rel="next" title="备份和恢复Jetson完整系统" href="backup_restore_jetson.html" />
-    <link rel="prev" title="Jetson Nano快速起步" href="jetson_nano_startup.html" /> 
+    <link rel="prev" title="从USB启动Jetson Nano" href="jetson_nano_boot_from_usb.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -33,53 +37,61 @@
           
           
           <a href="../../../index.html" class="icon icon-home">
-            Cloud Atlas
+            Cloud Atlas: Discovery
           </a>
+              <div class="version">
+                1.1
+              </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../../studio/index.html">Studio Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../infrastructure/index.html">Infrastructure Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../devops/index.html">DevOps Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../kvm/index.html">KVM Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../ceph/index.html">Ceph Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../gluster/index.html">Gluster Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../ovirt/index.html">oVirt Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../openstack/index.html">OpenStack Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../docker/index.html">Docker Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../kubernetes/index.html">Kubernetes Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../kubernetes_from_scratch/index.html">Kubernetes From Scratch (KFS) Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../rancher/index.html">Rancher Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../openshift/index.html">OpenShift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../sql/index.html">SQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../sqlite/index.html">SQLite Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../mysql/index.html">MySQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../pgsql/index.html">PostgreSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../clickhouse/index.html">ClickHouse Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../nosql/index.html">NoSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../redis/index.html">Redis Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../network/index.html">Network Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../infra_service/index.html">Infra-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../infra_search/index.html">Search Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../info_service/index.html">Info-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../web/index.html">Web Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../big_data/index.html">Big Data Atlas</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">Machine Learning Atlas</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="../../gpt/index.html">GPT</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../studio/index.html">Studio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../infrastructure/index.html">Infrastructure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../devops/index.html">DevOps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../kvm/index.html">KVM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../ceph/index.html">Ceph</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../gluster/index.html">Gluster</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../ovirt/index.html">oVirt</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../openstack/index.html">OpenStack</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../docker/index.html">Docker</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../kubernetes/index.html">Kubernetes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../k8s_dev/index.html">Kubernetes Develop</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../rancher/index.html">Rancher</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../openshift/index.html">OpenShift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../sql/index.html">SQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../sqlite/index.html">SQLite</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../mysql/index.html">MySQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../pgsql/index.html">PostgreSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../nosql/index.html">NoSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../network/index.html">Network</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../infra_service/index.html">Infra-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../infra_search/index.html">Infra-Search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../web/index.html">Web</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../info_service/index.html">Info-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../big_data/index.html">Big Data</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">Machine Learning</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../become_a_machine_learning_practitioner.html">成为一名机器学习实践者</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../basic/index.html">机器学习基础</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../startup/index.html">机器学习起步</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../concept/index.html">机器学习概念</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../deep_learning/index.html">深度学习</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../reinforcement_learning/index.html">强化学习</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../gpt/index.html">GPT</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../llm/index.html">LLM 大型语言模型</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../studio/index.html">机器学习工作室</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../hardware/index.html">机器学习硬件</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="../index.html">NVIDIA Jetson</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="../jetson_nano.html">Jetson Nano</a></li>
 <li class="toctree-l3 current"><a class="reference internal" href="index.html">NVIDIA Jetson工作室构建</a><ul class="current">
 <li class="toctree-l4"><a class="reference internal" href="jetson_nano_startup.html">Jetson Nano快速起步</a></li>
+<li class="toctree-l4"><a class="reference internal" href="jetson_nano_boot_from_usb.html">从USB启动Jetson Nano</a></li>
 <li class="toctree-l4 current"><a class="current reference internal" href="#">部署Jetson Nano Server</a></li>
 <li class="toctree-l4"><a class="reference internal" href="backup_restore_jetson.html">备份和恢复Jetson完整系统</a></li>
 <li class="toctree-l4"><a class="reference internal" href="clone_jetson_system.html">克隆Jetson系统</a></li>
@@ -100,35 +112,44 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../cuda/index.html">NVIDIA CUDA</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../openvino/index.html">Intel OpenVINO</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../pytorch/index.html">Pytorch</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../tensorflow/index.html">Tensorflow</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../stable_diffusion/index.html">Stable Diffusion模型方法</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../fauxpilot/index.html">FauxPilot</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../codellama/index.html">Code Llama</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../deepseek/index.html">DeepSeek</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../qwen/index.html">Qwen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../comfyui/index.html">ComfyUI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../freebsd/index.html">FreeBSD机器学习</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../../linux/index.html">Linux Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../kernel/index.html">Kernel Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../performance/index.html">Performance Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../distributed_system/index.html">Distributed System Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../shell/index.html">Shell Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../python/index.html">Python Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../django/index.html">Django Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../flask/index.html">Flask Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../javascript/index.html">JavaScript Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../nodejs/index.html">Node.js Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../clang/index.html">C Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../golang/index.html">Go Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../swift/index.html">Swift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../rust/index.html">Rust Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../ruby/index.html">Ruby Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../arm/index.html">ARM Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../android/index.html">Android Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../bsd/index.html">BSD Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../apple/index.html">Apple Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../windows/index.html">Windows Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../real/index.html">Real Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../management/index.html">Management Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../life/index.html">Life Atlas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../drone/index.html">Drone</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../linux/index.html">Linux</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../kernel/index.html">Kernel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../performance/index.html">Performance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../distributed_system/index.html">Distributed System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../shell/index.html">Shell</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../python/index.html">Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../django/index.html">Django</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../javascript/index.html">JavaScript</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../nodejs/index.html">Node.js</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../clang/index.html">C</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../golang/index.html">Go</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../swift/index.html">Swift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../rust/index.html">Rust</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../ruby/index.html">Ruby</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../lua/index.html">Lua</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../arm/index.html">ARM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../raspberry_pi/index.html">Raspberry Pi</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../android/index.html">Android</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../bsd/index.html">BSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../freebsd/index.html">FreeBSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../apple/index.html">Apple</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../windows/index.html">Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../real/index.html">Real</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../management/index.html">Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../life/index.html">Life</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../copyright.html">Copyright</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../aboutme.html">关于作者</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../donate.html">捐赠</a></li>
@@ -141,22 +162,22 @@
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../../index.html">Cloud Atlas</a>
+          <a href="../../../index.html">Cloud Atlas: Discovery</a>
       </nav>
 
       <div class="wy-nav-content">
         <div class="rst-content">
-          <div role="navigation" aria-label="Page navigation">
+          <div role="navigation" aria-label="页面导航">
   <ul class="wy-breadcrumbs">
       <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
-          <li class="breadcrumb-item"><a href="../../index.html">Machine Learning Atlas</a></li>
+          <li class="breadcrumb-item"><a href="../../index.html">Machine Learning</a></li>
           <li class="breadcrumb-item"><a href="../index.html">NVIDIA Jetson</a></li>
           <li class="breadcrumb-item"><a href="index.html">NVIDIA Jetson工作室构建</a></li>
       <li class="breadcrumb-item active">部署Jetson Nano Server</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../../../_sources/machine_learning/jetson/studio/deploy_jetson_server.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../../_sources/machine_learning/jetson/studio/deploy_jetson_server.rst.txt" rel="nofollow"> 查看页面源码</a>
       </li>
   </ul>
   <hr/>
@@ -165,11 +186,11 @@
            <div itemprop="articleBody">
              
   <section id="jetson-nano-server">
-<span id="deploy-jetson-server"></span><h1>部署Jetson Nano Server<a class="headerlink" href="#jetson-nano-server" title="Link to this heading">¶</a></h1>
+<span id="deploy-jetson-server"></span><h1>部署Jetson Nano Server<a class="headerlink" href="#jetson-nano-server" title="Link to this heading"></a></h1>
 <p>最初我 <a class="reference internal" href="jetson_nano_startup.html#jetson-nano-startup"><span class="std std-ref">Jetson Nano快速起步</span></a> 时，采用了卸载Jetson Nano NVIDIA深度定制操作系统中不需要的应用软件，并且将Gnome桌面切换到轻量级Xfce4桌面。不过，实际上我日常中桌面系统使用的是macOS，Jetson Nano是作为 <a class="reference internal" href="../../../kubernetes/arm/index.html#arm-k8s"><span class="std std-ref">ARM架构Kubernetes</span></a> 集群中的GPU工作节点来使用的。所以并没有使用图形桌面的需求。</p>
-<p>为了能够减少资源消耗，同时能够实现类似阿里云的GPU虚拟化，我在第二次部署时改为完全的字符模式运行，并清理掉不必要软件。后续使用将完全基于 <a class="reference internal" href="../../../kvm/index.html#kvm"><span class="std std-ref">KVM Atlas</span></a> 和 <a class="reference internal" href="../../../docker/index.html#docker"><span class="std std-ref">Docker Atlas</span></a> 模式来使用Jetson Nano。本文为部署实践整理。</p>
+<p>为了能够减少资源消耗，同时能够实现类似阿里云的GPU虚拟化，我在第二次部署时改为完全的字符模式运行，并清理掉不必要软件。后续使用将完全基于 <a class="reference internal" href="../../../kvm/index.html#kvm"><span class="std std-ref">KVM</span></a> 和 <a class="reference internal" href="../../../docker/index.html#docker"><span class="std std-ref">Docker</span></a> 模式来使用Jetson Nano。本文为部署实践整理。</p>
 <section id="id1">
-<h2>下载和安装<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h2>
+<h2>下载和安装<a class="headerlink" href="#id1" title="Link to this heading"></a></h2>
 <p><a class="reference external" href="https://developer.nvidia.com/embedded/downloads">Jetson Download Center</a> 下载 <code class="docutils literal notranslate"><span class="pre">Jetson</span> <span class="pre">Nano</span> <span class="pre">Developer</span> <span class="pre">Kit</span> <span class="pre">SD</span> <span class="pre">Card</span> <span class="pre">Image</span></code> ，当前(2021年2月)版本是4.5.1。我发现直接通过 <code class="docutils literal notranslate"><span class="pre">wget</span></code> 命令下载的安装镜像文件名是 <code class="docutils literal notranslate"><span class="pre">jetson-nano-sd-card-image</span></code> ，但实际上是一个 <code class="docutils literal notranslate"><span class="pre">.zip</span></code> 文件，需要执行重命名和解压缩以后才可以复制到TF卡。我刚开始时候没有注意到下载文件名问题，直接复制 <code class="docutils literal notranslate"><span class="pre">jetson-nano-sd-card-image</span></code> 导致无法启动。</p>
 <p>具体操作:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">mv</span> <span class="n">jetson</span><span class="o">-</span><span class="n">nano</span><span class="o">-</span><span class="n">sd</span><span class="o">-</span><span class="n">card</span><span class="o">-</span><span class="n">image</span> <span class="n">jetson</span><span class="o">-</span><span class="n">nano</span><span class="o">-</span><span class="n">sd</span><span class="o">-</span><span class="n">card</span><span class="o">-</span><span class="n">image</span><span class="o">.</span><span class="n">zip</span>
@@ -189,12 +210,12 @@
 </ul>
 </section>
 <section id="id2">
-<h2>初始化过程概述<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
+<h2>初始化过程概述<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
 <p>早期版本需要首次启动Jetson Nano要把设备连接到能够访问Internet的局域网，也即是确保主机能够通过DHCP获得IP地址并访问Internet，否则会导致启动初始化脚本死循环。最近(2021年7月)，发行版已经允许离线初始化，在初始化之后手工配置网络。</p>
 <p>初始化结束之后，重启一次登陆进行图形桌面，可以看到是Gnome桌面。默认已经安装了chromium浏览器以及libreoffice办公软件。我的目标是部署服务器话的GPU运行环境，所以会做清理和简化。</p>
 </section>
 <section id="sudo">
-<h2>sudo<a class="headerlink" href="#sudo" title="Link to this heading">¶</a></h2>
+<h2>sudo<a class="headerlink" href="#sudo" title="Link to this heading"></a></h2>
 <ul>
 <li><p>方便sudo切换，在 <code class="docutils literal notranslate"><span class="pre">/etc/sudoers</span></code> 中添加自己的账号:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">echo</span> <span class="s2">&quot;</span><span class="si">%s</span><span class="s2">udo   ALL=(ALL:ALL) NOPASSWD:ALL&quot;</span> <span class="o">&gt;&gt;</span> <span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">sudoers</span>
@@ -204,7 +225,7 @@
 </ul>
 </section>
 <section id="id3">
-<h2>时钟和时区<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h2>
+<h2>时钟和时区<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
 <p>我在安装过程中发现Jetson Nano在长时间断电后启动，主机时间会丢失设置，回到了出厂 2018年 01月 29日 ，所以需要确保主机和互联网联通，用 <a class="reference internal" href="../../../linux/redhat_linux/systemd/index.html#systemd"><span class="std std-ref">Systemd进程管理器</span></a> 的自带服务 <a class="reference internal" href="../../../linux/redhat_linux/systemd/systemd_timesyncd.html#systemd-timesyncd"><span class="std std-ref">Systemd Timesyncd服务</span></a> 完成时间同步。</p>
 <ul>
 <li><p>检查时间同步状态:</p>
@@ -238,7 +259,7 @@
 </ul>
 </section>
 <section id="id4">
-<h2>配置默认字符启动<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h2>
+<h2>配置默认字符启动<a class="headerlink" href="#id4" title="Link to this heading"></a></h2>
 <p>安装完成后，我首先将桌面环境切换到字符模式，以便节约资源，并为下一步瘦身做好准备:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">systemctl</span> <span class="n">disable</span> <span class="n">gdm3</span>
 <span class="n">systemctl</span> <span class="nb">set</span><span class="o">-</span><span class="n">default</span> <span class="n">multi</span><span class="o">-</span><span class="n">user</span><span class="o">.</span><span class="n">target</span>
@@ -246,7 +267,7 @@
 </div>
 </section>
 <section id="desktop">
-<h2>卸载Desktop<a class="headerlink" href="#desktop" title="Link to this heading">¶</a></h2>
+<h2>卸载Desktop<a class="headerlink" href="#desktop" title="Link to this heading"></a></h2>
 <ul>
 <li><p>清理桌面应用程序:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">apt</span> <span class="n">remove</span> <span class="o">--</span><span class="n">purge</span> <span class="n">libreoffice</span><span class="o">*</span> <span class="o">-</span><span class="n">y</span>
@@ -306,7 +327,7 @@
 </div>
 </section>
 <section id="id5">
-<h2>服务器配置<a class="headerlink" href="#id5" title="Link to this heading">¶</a></h2>
+<h2>服务器配置<a class="headerlink" href="#id5" title="Link to this heading"></a></h2>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">~/.screenrc</span></code> :</p></li>
 </ul>
@@ -338,13 +359,13 @@
 <p>然后执行命令 <code class="docutils literal notranslate"><span class="pre">screen</span> <span class="pre">-S</span> <span class="pre">works</span></code> 启动远程screen后再执行进一步配置，以免网络抖动影响操作。</p>
 </section>
 <section id="id6">
-<h2>网络<a class="headerlink" href="#id6" title="Link to this heading">¶</a></h2>
+<h2>网络<a class="headerlink" href="#id6" title="Link to this heading"></a></h2>
 <p>默认Ubuntu桌面版本(Jetson Nano使用定制版Ubuntu)使用 <a class="reference internal" href="../../../linux/ubuntu_linux/network/networkmanager.html#networkmanager"><span class="std std-ref">NetworkManager</span></a> 管理网络，但是对于服务器使用 <a class="reference internal" href="../../../linux/ubuntu_linux/network/netplan.html#netplan"><span class="std std-ref">netplan网络配置</span></a> 更为方便。不过，我在18.04系列Ubuntu使用netplan一直非常蹉跎，所以还是直接使用 <a class="reference internal" href="../../../linux/redhat_linux/systemd/systemd_networkd.html#systemd-networkd"><span class="std std-ref">Systemd Networkd服务</span></a> 配置静态IP地址。</p>
 <ul class="simple">
 <li><p>创建 <code class="docutils literal notranslate"><span class="pre">/etc/systemd/network/10-eth0.network</span></code> :</p></li>
 </ul>
 <div class="literal-block-wrapper docutils container" id="id8">
-<div class="code-block-caption"><span class="caption-text">../../../linux/redhat_linux/systemd/systemd_networkd/10-eth0.network</span><a class="headerlink" href="#id8" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">../../../linux/redhat_linux/systemd/systemd_networkd/10-eth0.network</span><a class="headerlink" href="#id8" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="o">[</span>Match<span class="o">]</span>
 <span class="linenos">2</span><span class="nv">MACAddress</span><span class="o">=</span><span class="m">00</span>:00:00:00:00:01
 <span class="linenos">3</span>
@@ -374,7 +395,7 @@
 </ul>
 </section>
 <section id="id7">
-<h2>参考<a class="headerlink" href="#id7" title="Link to this heading">¶</a></h2>
+<h2>参考<a class="headerlink" href="#id7" title="Link to this heading"></a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="https://lunar.computer/posts/nvidia-jetson-nano-headless/">Make NVIDIA Jetson Nano Developer Kit Headless</a></p></li>
 <li><p><a class="reference external" href="https://linuxhint.com/install_netplan_ubuntu/">How to Configure Network on Ubuntu 18.04 LTS with Netplan?</a></p></li>
@@ -385,25 +406,37 @@
 
            </div>
           </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="jetson_nano_startup.html" class="btn btn-neutral float-left" title="Jetson Nano快速起步" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="backup_restore_jetson.html" class="btn btn-neutral float-right" title="备份和恢复Jetson完整系统" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="jetson_nano_boot_from_usb.html" class="btn btn-neutral float-left" title="从USB启动Jetson Nano" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="backup_restore_jetson.html" class="btn btn-neutral float-right" title="备份和恢复Jetson完整系统" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../../copyright.html">Copyright</a> 2018 - now, Huatai Huang.</p>
+    <p>&#169; <a href="../../../copyright.html">版权所有</a> 2018 - now, Huatai Huang。</p>
   </div>
 
-  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
   
     <!-- your html code here -->
     <br>
-    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡</a></p>
-     
+    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡 👈</a></p>
+    <br>
+    <p>网站采用 <a href="https://utteranc.es/">utterances</a> 评论系统，所有评论存储在<a href="https://github.com/huataihuang/cloud-atlas/issues">GitHub issues</a> 中，如果你看不到下方的评论框，那么可能需要<a href="https://cloud-atlas.readthedocs.io/zh-cn/latest/linux/security/vpn/index.html">自备梯子</a> 👈</p>
+    <div class="articleComments">
+        <comments>
+  <script src="https://utteranc.es/client.js"
+    repo="huataihuang/cloud-atlas"
+    issue-term="pathname"
+    theme="github-light"
+    crossorigin="anonymous"
+    async>
+  </script>
+</comments>
+    </div>
 
 
 </footer>

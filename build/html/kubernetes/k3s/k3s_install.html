@@ -1,27 +1,31 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh" data-content_root="../../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>K3s安装 &mdash; Cloud Atlas 0.1 文档</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+  <title>K3s安装 &mdash; Cloud Atlas: Discovery beta 文档</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=fd3f3429" />
+
+  
+    <link rel="shortcut icon" href="../../_static/favicon.png"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="../../_static/documentation_options.js?v=7c91f8fd"></script>
-        <script src="../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=8534f863"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
         <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
-        <script src="../../_static/translations.js?v=beaddf03"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../../genindex.html" />
     <link rel="search" title="搜索" href="../../search.html" />
     <link rel="copyright" title="版权所有" href="../../copyright.html" />
     <link rel="next" title="k3s部署squid代理" href="k3s_squid/index.html" />
-    <link rel="prev" title="K3s高可用etcd" href="k3s_ha_etcd.html" /> 
+    <link rel="prev" title="Kine快速起步" href="kine/kine_startup.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -33,28 +37,32 @@
           
           
           <a href="../../index.html" class="icon icon-home">
-            Cloud Atlas
+            Cloud Atlas: Discovery
           </a>
+              <div class="version">
+                1.1
+              </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../studio/index.html">Studio Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../infrastructure/index.html">Infrastructure Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../devops/index.html">DevOps Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kvm/index.html">KVM Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../ceph/index.html">Ceph Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../gluster/index.html">Gluster Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../ovirt/index.html">oVirt Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../openstack/index.html">OpenStack Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../docker/index.html">Docker Atlas</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Kubernetes Atlas</a><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../studio/index.html">Studio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../infrastructure/index.html">Infrastructure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../devops/index.html">DevOps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kvm/index.html">KVM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ceph/index.html">Ceph</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../gluster/index.html">Gluster</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ovirt/index.html">oVirt</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../openstack/index.html">OpenStack</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../docker/index.html">Docker</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Kubernetes</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../think_k8s.html">Kubernetes的思考</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../kubernetes_overview.html">Kubernetes概览</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../startup_prepare/index.html">Kubernetes起步准备</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../startup/index.html">Kubernetes快速起步</a></li>
@@ -88,6 +96,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../gpu/index.html">GPU Kubernetes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../kubeflow/index.html">Kubeflow - Kubernetes机器学习工作流平台</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../argo/index.html">Argo - 基于Kubernetes的持续集成和工作流</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../kueue/index.html">Kueue - K8s原生批处理调度</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../k8s_android/index.html">Kubernetes运行Android</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="index.html">K3s - 轻量级Kubernetes</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="introduce_k3s.html">K3s简介</a></li>
@@ -96,6 +105,7 @@
 <li class="toctree-l3"><a class="reference internal" href="prepare_k3s_alpine.html">Alpine Linux的K3s准备</a></li>
 <li class="toctree-l3"><a class="reference internal" href="alpine_cfssl.html">编译安装cfssl(Alpine Linux)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="k3s_ha_etcd.html">K3s高可用etcd</a></li>
+<li class="toctree-l3"><a class="reference internal" href="kine/index.html">kine - etcd转换层</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">K3s安装</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#etcd">etcd客户端证书分发</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#id1">安装参数</a></li>
@@ -112,51 +122,53 @@
 <li class="toctree-l3"><a class="reference internal" href="the_most_smallest_cheapest_k8s/index.html">最小和最低成本Kubernetes</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../k0s/index.html">K0s - 轻量级Kubernetes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../platform/index.html">Kubernetes之上的平台</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../cloud/index.html">Kubernetes云厂商</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../develop/index.html">Kubernetes开发</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cncf/index.html">CNCF(Cloud Native Computing Foudation)</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../kubernetes_from_scratch/index.html">Kubernetes From Scratch (KFS) Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../rancher/index.html">Rancher Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../openshift/index.html">OpenShift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../sql/index.html">SQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../sqlite/index.html">SQLite Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../mysql/index.html">MySQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../pgsql/index.html">PostgreSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../clickhouse/index.html">ClickHouse Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../nosql/index.html">NoSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../redis/index.html">Redis Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../network/index.html">Network Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../infra_service/index.html">Infra-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../infra_search/index.html">Search Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../info_service/index.html">Info-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../web/index.html">Web Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../big_data/index.html">Big Data Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../machine_learning/index.html">Machine Learning Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../linux/index.html">Linux Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kernel/index.html">Kernel Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../performance/index.html">Performance Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../distributed_system/index.html">Distributed System Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../shell/index.html">Shell Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../python/index.html">Python Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../django/index.html">Django Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../flask/index.html">Flask Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../javascript/index.html">JavaScript Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../nodejs/index.html">Node.js Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../clang/index.html">C Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../golang/index.html">Go Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../swift/index.html">Swift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../rust/index.html">Rust Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../ruby/index.html">Ruby Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../arm/index.html">ARM Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../android/index.html">Android Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../bsd/index.html">BSD Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../apple/index.html">Apple Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../windows/index.html">Windows Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../real/index.html">Real Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../management/index.html">Management Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../life/index.html">Life Atlas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../k8s_dev/index.html">Kubernetes Develop</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../rancher/index.html">Rancher</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../openshift/index.html">OpenShift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../sql/index.html">SQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../sqlite/index.html">SQLite</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../mysql/index.html">MySQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../pgsql/index.html">PostgreSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../nosql/index.html">NoSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../network/index.html">Network</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../infra_service/index.html">Infra-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../infra_search/index.html">Infra-Search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../web/index.html">Web</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../info_service/index.html">Info-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../big_data/index.html">Big Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../machine_learning/index.html">Machine Learning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../drone/index.html">Drone</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../linux/index.html">Linux</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kernel/index.html">Kernel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../performance/index.html">Performance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../distributed_system/index.html">Distributed System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../shell/index.html">Shell</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../python/index.html">Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../django/index.html">Django</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../javascript/index.html">JavaScript</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../nodejs/index.html">Node.js</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../clang/index.html">C</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../golang/index.html">Go</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../swift/index.html">Swift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../rust/index.html">Rust</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ruby/index.html">Ruby</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lua/index.html">Lua</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../arm/index.html">ARM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../raspberry_pi/index.html">Raspberry Pi</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../android/index.html">Android</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../bsd/index.html">BSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../freebsd/index.html">FreeBSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../apple/index.html">Apple</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../windows/index.html">Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../real/index.html">Real</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../management/index.html">Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../life/index.html">Life</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../copyright.html">Copyright</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../aboutme.html">关于作者</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../donate.html">捐赠</a></li>
@@ -169,21 +181,21 @@
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../index.html">Cloud Atlas</a>
+          <a href="../../index.html">Cloud Atlas: Discovery</a>
       </nav>
 
       <div class="wy-nav-content">
         <div class="rst-content">
-          <div role="navigation" aria-label="Page navigation">
+          <div role="navigation" aria-label="页面导航">
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
-          <li class="breadcrumb-item"><a href="../index.html">Kubernetes Atlas</a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Kubernetes</a></li>
           <li class="breadcrumb-item"><a href="index.html">K3s - 轻量级Kubernetes</a></li>
       <li class="breadcrumb-item active">K3s安装</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../../_sources/kubernetes/k3s/k3s_install.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../_sources/kubernetes/k3s/k3s_install.rst.txt" rel="nofollow"> 查看页面源码</a>
       </li>
   </ul>
   <hr/>
@@ -192,7 +204,7 @@
            <div itemprop="articleBody">
              
   <section id="k3s">
-<span id="k3s-install"></span><h1>K3s安装<a class="headerlink" href="#k3s" title="Link to this heading">¶</a></h1>
+<span id="k3s-install"></span><h1>K3s安装<a class="headerlink" href="#k3s" title="Link to this heading"></a></h1>
 <p>在完成了 <a class="reference internal" href="k3s_ha_etcd.html#k3s-ha-etcd"><span class="std std-ref">K3s高可用etcd</span></a> 部署之后，就可以开始正式安装 <code class="docutils literal notranslate"><span class="pre">k3s</span></code> 。</p>
 <div class="admonition note">
 <p class="admonition-title">备注</p>
@@ -220,20 +232,20 @@
 </div>
 <p>由于我采用外部独立 <a class="reference internal" href="k3s_ha_etcd.html#k3s-ha-etcd"><span class="std std-ref">K3s高可用etcd</span></a> 所以需要传递给安装脚本外部数据库参数 <code class="docutils literal notranslate"><span class="pre">K3S_DATASTORE_ENDPOINT</span></code> (或者使用参数 <code class="docutils literal notranslate"><span class="pre">--datastore-endpoint</span></code> ) 以及对应的客户端证书</p>
 <section id="etcd">
-<h2>etcd客户端证书分发<a class="headerlink" href="#etcd" title="Link to this heading">¶</a></h2>
+<h2>etcd客户端证书分发<a class="headerlink" href="#etcd" title="Link to this heading"></a></h2>
 <p>在 <a class="reference internal" href="../deploy/etcd/etcd_tls.html#etcd-tls"><span class="std std-ref">etcd集群TLS设置</span></a> 生成了 <a class="reference internal" href="../administer/etcd/index.html#etcd"><span class="std std-ref">etcd - 分布式kv存储</span></a> 所需的证书，已经在 <a class="reference internal" href="k3s_ha_etcd.html#k3s-ha-etcd"><span class="std std-ref">K3s高可用etcd</span></a> 过程中完成了服务器端证书分发。对于 <code class="docutils literal notranslate"><span class="pre">k3s</span></code> 管控服务器，需要采用客户端证书进行链接。一共有3个管控服务器，则需要采用以下方法分发客户端证书，这样 <code class="docutils literal notranslate"><span class="pre">k3s</span></code> 组件才能启动。</p>
 </section>
 <section id="id1">
-<h2>安装参数<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h2>
+<h2>安装参数<a class="headerlink" href="#id1" title="Link to this heading"></a></h2>
 <ul class="simple">
 <li><p>k3s安装参数列表</p></li>
 </ul>
 <table class="docutils align-default" id="id12">
-<caption><span class="caption-text">k3s安装参数</span><a class="headerlink" href="#id12" title="Link to this table">¶</a></caption>
+<caption><span class="caption-text">k3s安装参数</span><a class="headerlink" href="#id12" title="Link to this table"></a></caption>
 <colgroup>
-<col style="width: 20%" />
-<col style="width: 30%" />
-<col style="width: 50%" />
+<col style="width: 20.0%" />
+<col style="width: 30.0%" />
+<col style="width: 50.0%" />
 </colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>参数</p></th>
@@ -242,7 +254,7 @@
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>–datastore-endpoint</p></td>
+<tr class="row-even"><td><p>--datastore-endpoint</p></td>
 <td><p>K3S_DATASTORE_ENDPOINT</p></td>
 <td><p>配置PostgreSQL/MySQL或etcd作为连接</p></td>
 </tr>
@@ -256,10 +268,10 @@
 <li><p>我的安装采用的参数</p></li>
 </ul>
 <table class="docutils align-default" id="id13">
-<caption><span class="caption-text">我的k3s安装参数</span><a class="headerlink" href="#id13" title="Link to this table">¶</a></caption>
+<caption><span class="caption-text">我的k3s安装参数</span><a class="headerlink" href="#id13" title="Link to this table"></a></caption>
 <colgroup>
-<col style="width: 20%" />
-<col style="width: 80%" />
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
 </colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>参数</p></th>
@@ -267,7 +279,7 @@
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>–datastore-endpoint</p></td>
+<tr class="row-even"><td><p>--datastore-endpoint</p></td>
 <td><p><a class="reference external" href="https://etcd.edge.huatai.me:2379">https://etcd.edge.huatai.me:2379</a></p></td>
 </tr>
 </tbody>
@@ -280,12 +292,12 @@
 <p>此外，环境变量和命令航参数也可以作为配置文件来管理，变量存储在 <code class="docutils literal notranslate"><span class="pre">/etc/rancher/k3s/config.yaml</span></code> 用于安装</p>
 </section>
 <section id="id2">
-<h2>安装执行(第一个管控节点)<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
+<h2>安装执行(第一个管控节点)<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
 <ul class="simple">
 <li><p>按照上述参数，采用以下命令执行安装:</p></li>
 </ul>
 <div class="literal-block-wrapper docutils container" id="id14">
-<div class="code-block-caption"><span class="caption-text">k3s安装命令(使用etcd服务)</span><a class="headerlink" href="#id14" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">k3s安装命令(使用etcd服务)</span><a class="headerlink" href="#id14" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>curl<span class="w"> </span>-sfL<span class="w"> </span>https://get.k3s.io<span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="nv">K3S_TOKEN</span><span class="o">=</span><span class="s2">&quot;some_random_password&quot;</span><span class="w"> </span><span class="se">\</span>
 <span class="w">                               </span><span class="nv">K3S_DATASTORE_ENDPOINT</span><span class="o">=</span><span class="s1">&#39;https://etcd.edge.huatai.me:2379&#39;</span><span class="w"> </span><span class="se">\</span>
 <span class="w">                               </span><span class="nv">K3S_DATASTORE_CAFILE</span><span class="o">=</span><span class="s1">&#39;/etc/etcd/ca.pem&#39;</span><span class="w"> </span><span class="se">\</span>
@@ -311,9 +323,9 @@
 </ul>
 </section>
 <section id="id3">
-<h2>异常排查<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h2>
+<h2>异常排查<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
 <section id="id4">
-<h3>参数错误<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h3>
+<h3>参数错误<a class="headerlink" href="#id4" title="Link to this heading"></a></h3>
 <p>服务启动以后，检查 <code class="docutils literal notranslate"><span class="pre">/var/log/k3s.log</span></code> 查看是否存在错误。</p>
 <p>我遇到一个问题是在配置时错误配置了etcd的 <code class="docutils literal notranslate"><span class="pre">K3S_DATASTORE_KEYFILE</span></code> 变量，导致集群初始化失败。</p>
 <ul>
@@ -325,7 +337,7 @@
 <li><p>然后重新初始化安装</p></li>
 </ul>
 <div class="literal-block-wrapper docutils container" id="id15">
-<div class="code-block-caption"><span class="caption-text">k3s安装命令(使用etcd服务)</span><a class="headerlink" href="#id15" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">k3s安装命令(使用etcd服务)</span><a class="headerlink" href="#id15" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>curl<span class="w"> </span>-sfL<span class="w"> </span>https://get.k3s.io<span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="nv">K3S_TOKEN</span><span class="o">=</span><span class="s2">&quot;some_random_password&quot;</span><span class="w"> </span><span class="se">\</span>
 <span class="w">                               </span><span class="nv">K3S_DATASTORE_ENDPOINT</span><span class="o">=</span><span class="s1">&#39;https://etcd.edge.huatai.me:2379&#39;</span><span class="w"> </span><span class="se">\</span>
 <span class="w">                               </span><span class="nv">K3S_DATASTORE_CAFILE</span><span class="o">=</span><span class="s1">&#39;/etc/etcd/ca.pem&#39;</span><span class="w"> </span><span class="se">\</span>
@@ -338,7 +350,7 @@
 </div>
 </section>
 <section id="starting-kubernetes-preparing-server-bootstrap-data-already-found-and-encrypted-with-different-token">
-<h3>启动报错``”starting kubernetes: preparing server: bootstrap data already found and encrypted with different token”``<a class="headerlink" href="#starting-kubernetes-preparing-server-bootstrap-data-already-found-and-encrypted-with-different-token" title="Link to this heading">¶</a></h3>
+<h3>启动报错``&quot;starting kubernetes: preparing server: bootstrap data already found and encrypted with different token&quot;``<a class="headerlink" href="#starting-kubernetes-preparing-server-bootstrap-data-already-found-and-encrypted-with-different-token" title="Link to this heading"></a></h3>
 <p>重新安装k3s之后，发现启动后 <code class="docutils literal notranslate"><span class="pre">/var/log/k3s.log</span></code> 日志不断滚动:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">time</span><span class="o">=</span><span class="s2">&quot;2022-04-20T21:24:56+08:00&quot;</span> <span class="n">level</span><span class="o">=</span><span class="n">info</span> <span class="n">msg</span><span class="o">=</span><span class="s2">&quot;Starting k3s v1.22.7+k3s1 (8432d7f2)&quot;</span>
 <span class="n">time</span><span class="o">=</span><span class="s2">&quot;2022-04-20T21:24:57+08:00&quot;</span> <span class="n">level</span><span class="o">=</span><span class="n">fatal</span> <span class="n">msg</span><span class="o">=</span><span class="s2">&quot;starting kubernetes: preparing server: bootstrap data already found and encrypted with different token&quot;</span>
@@ -373,7 +385,7 @@
 </div>
 <p>上述报错信息 <code class="docutils literal notranslate"><span class="pre">bootstrap</span> <span class="pre">data</span> <span class="pre">already</span> <span class="pre">found</span> <span class="pre">and</span> <span class="pre">encrypted</span> <span class="pre">with</span> <span class="pre">different</span> <span class="pre">token</span></code> 来自 <a class="reference external" href="https://github.com/k3s-io/k3s/blob/master/pkg/cluster/storage.go">k3s代码 pkg/cluster/storage.go</a> :</p>
 <div class="literal-block-wrapper docutils container" id="id16">
-<div class="code-block-caption"><span class="caption-text">pkg/cluster/storage.go getBootstrapKeyFromStorage</span><a class="headerlink" href="#id16" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">pkg/cluster/storage.go getBootstrapKeyFromStorage</span><a class="headerlink" href="#id16" title="Link to this code"></a></div>
 <div class="highlight-go notranslate"><div class="highlight"><pre><span></span><span class="c1">// getBootstrapKeyFromStorage will list all keys that has prefix /bootstrap and will check for key that is</span>
 <span class="c1">// hashed with empty string and will check for any key that is hashed by different token than the one</span>
 <span class="c1">// passed to it, it will return error if it finds a key that is hashed with different token and will return</span>
@@ -440,7 +452,7 @@
 </div>
 <p>然后重新执行创建:</p>
 <div class="literal-block-wrapper docutils container" id="id17">
-<div class="code-block-caption"><span class="caption-text">k3s安装命令(使用etcd服务)</span><a class="headerlink" href="#id17" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">k3s安装命令(使用etcd服务)</span><a class="headerlink" href="#id17" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>curl<span class="w"> </span>-sfL<span class="w"> </span>https://get.k3s.io<span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="nv">K3S_TOKEN</span><span class="o">=</span><span class="s2">&quot;some_random_password&quot;</span><span class="w"> </span><span class="se">\</span>
 <span class="w">                               </span><span class="nv">K3S_DATASTORE_ENDPOINT</span><span class="o">=</span><span class="s1">&#39;https://etcd.edge.huatai.me:2379&#39;</span><span class="w"> </span><span class="se">\</span>
 <span class="w">                               </span><span class="nv">K3S_DATASTORE_CAFILE</span><span class="o">=</span><span class="s1">&#39;/etc/etcd/ca.pem&#39;</span><span class="w"> </span><span class="se">\</span>
@@ -454,7 +466,7 @@
 </section>
 </section>
 <section id="id6">
-<h2>执行安装(第二和第三管控节点)<a class="headerlink" href="#id6" title="Link to this heading">¶</a></h2>
+<h2>执行安装(第二和第三管控节点)<a class="headerlink" href="#id6" title="Link to this heading"></a></h2>
 <ul>
 <li><p>在第二和第三节点上创建管控服务，执行创建命令和第一个节点的差异有:</p>
 <ul>
@@ -468,7 +480,7 @@
 </li>
 </ul>
 <div class="literal-block-wrapper docutils container" id="id18">
-<div class="code-block-caption"><span class="caption-text">将第二和第三个管控服务器加入集群</span><a class="headerlink" href="#id18" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">将第二和第三个管控服务器加入集群</span><a class="headerlink" href="#id18" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>curl<span class="w"> </span>-sfL<span class="w"> </span>https://get.k3s.io<span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="nv">K3S_TOKEN</span><span class="o">=</span><span class="s2">&quot;some_random_password&quot;</span><span class="w"> </span><span class="se">\</span>
 <span class="w">                               </span><span class="nv">K3S_DATASTORE_ENDPOINT</span><span class="o">=</span><span class="s1">&#39;https://etcd.edge.huatai.me:2379&#39;</span><span class="w"> </span><span class="se">\</span>
 <span class="w">                               </span><span class="nv">K3S_DATASTORE_CAFILE</span><span class="o">=</span><span class="s1">&#39;/etc/etcd/ca.pem&#39;</span><span class="w"> </span><span class="se">\</span>
@@ -492,12 +504,12 @@
 </div>
 </section>
 <section id="worker">
-<h2>执行安装(添加worker节点)<a class="headerlink" href="#worker" title="Link to this heading">¶</a></h2>
+<h2>执行安装(添加worker节点)<a class="headerlink" href="#worker" title="Link to this heading"></a></h2>
 <ul class="simple">
 <li><p>在每个worker节点上执行以下命令加入集群:</p></li>
 </ul>
 <div class="literal-block-wrapper docutils container" id="id19">
-<div class="code-block-caption"><span class="caption-text">将worker节点加入集群</span><a class="headerlink" href="#id19" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">将worker节点加入集群</span><a class="headerlink" href="#id19" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>curl<span class="w"> </span>-sfL<span class="w"> </span>https://get.k3s.io<span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="nv">K3S_TOKEN</span><span class="o">=</span><span class="s2">&quot;some_random_password&quot;</span><span class="w"> </span><span class="se">\</span>
 <span class="w">                               </span><span class="nv">K3S_URL</span><span class="o">=</span><span class="s2">&quot;https://apiserver.edge.huatai.me:6443&quot;</span><span class="w"> </span><span class="se">\</span>
 <span class="w">                               </span>sh<span class="w"> </span>-
@@ -541,13 +553,13 @@
 </div>
 </section>
 <section id="id7">
-<h2>参考<a class="headerlink" href="#id7" title="Link to this heading">¶</a></h2>
+<h2>参考<a class="headerlink" href="#id7" title="Link to this heading"></a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="https://rancher.com/docs/k3s/latest/en/installation/install-options/">K3s Installation Options</a></p></li>
 <li><p><a class="reference external" href="https://rancher.com/docs/k3s/latest/en/installation/datastore/">K3s Cluster Datastore Options</a></p></li>
 <li><p><a class="reference external" href="https://rancher.com/docs/k3s/latest/en/installation/ha/">K3s High Availability with an External DB</a></p></li>
 <li><p><a class="reference external" href="https://rancher.com/docs/k3s/latest/en/installation/ha-embedded/">K3s High Availability with Embedded DB</a></p></li>
-<li><p><a class="reference external" href="https://gabrieltanner.org/blog/ha-kubernetes-cluster-using-k3s">Setting up a HA Kubernetes cluster using K3S</a> 使用了 <a class="reference internal" href="../../docker/startup/docker_compose.html#docker-compose"><span class="std std-ref">Docker Compose</span></a> 来构建 <a class="reference internal" href="../../mysql/index.html#mysql"><span class="std std-ref">MySQL Atlas</span></a> 数据库作为 <a class="reference internal" href="index.html#k3s"><span class="std std-ref">K3s - 轻量级Kubernetes</span></a> 存储，使用 <a class="reference internal" href="../../web/nginx/index.html#nginx"><span class="std std-ref">Nginx</span></a> / <a class="reference internal" href="../../web/load_balancer/haproxy/index.html#haproxy"><span class="std std-ref">HAProxy</span></a> 构建负载均衡，以及结合 <a class="reference internal" href="../../devops/ansible/index.html#ansible"><span class="std std-ref">Ansible</span></a> 完成部署</p></li>
+<li><p><a class="reference external" href="https://gabrieltanner.org/blog/ha-kubernetes-cluster-using-k3s">Setting up a HA Kubernetes cluster using K3S</a> 使用了 <a class="reference internal" href="../../docker/startup/docker_compose.html#docker-compose"><span class="std std-ref">Docker Compose</span></a> 来构建 <a class="reference internal" href="../../mysql/index.html#mysql"><span class="std std-ref">MySQL</span></a> 数据库作为 <a class="reference internal" href="index.html#k3s"><span class="std std-ref">K3s - 轻量级Kubernetes</span></a> 存储，使用 <a class="reference internal" href="../../web/nginx/index.html#nginx"><span class="std std-ref">Nginx</span></a> / <a class="reference internal" href="../../web/load_balancer/haproxy/index.html#haproxy"><span class="std std-ref">HAProxy</span></a> 构建负载均衡，以及结合 <a class="reference internal" href="../../devops/ansible/index.html#ansible"><span class="std std-ref">Ansible</span></a> 完成部署</p></li>
 <li><p><a class="reference external" href="https://rpi4cluster.com/k3s/k3s-kube-setting/">rpi4cluster.com =&gt; K3s-Current =&gt; Kubernetes Install</a></p></li>
 </ul>
 </section>
@@ -556,25 +568,37 @@
 
            </div>
           </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="k3s_ha_etcd.html" class="btn btn-neutral float-left" title="K3s高可用etcd" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="k3s_squid/index.html" class="btn btn-neutral float-right" title="k3s部署squid代理" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="kine/kine_startup.html" class="btn btn-neutral float-left" title="Kine快速起步" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="k3s_squid/index.html" class="btn btn-neutral float-right" title="k3s部署squid代理" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../copyright.html">Copyright</a> 2018 - now, Huatai Huang.</p>
+    <p>&#169; <a href="../../copyright.html">版权所有</a> 2018 - now, Huatai Huang。</p>
   </div>
 
-  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
   
     <!-- your html code here -->
     <br>
-    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡</a></p>
-     
+    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡 👈</a></p>
+    <br>
+    <p>网站采用 <a href="https://utteranc.es/">utterances</a> 评论系统，所有评论存储在<a href="https://github.com/huataihuang/cloud-atlas/issues">GitHub issues</a> 中，如果你看不到下方的评论框，那么可能需要<a href="https://cloud-atlas.readthedocs.io/zh-cn/latest/linux/security/vpn/index.html">自备梯子</a> 👈</p>
+    <div class="articleComments">
+        <comments>
+  <script src="https://utteranc.es/client.js"
+    repo="huataihuang/cloud-atlas"
+    issue-term="pathname"
+    theme="github-light"
+    crossorigin="anonymous"
+    async>
+  </script>
+</comments>
+    </div>
 
 
 </footer>

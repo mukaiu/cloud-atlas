@@ -1,21 +1,25 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh" data-content_root="../../../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>部署LVM &mdash; Cloud Atlas 0.1 文档</title>
-      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../../_static/graphviz.css" type="text/css" />
+  <title>部署LVM &mdash; Cloud Atlas: Discovery beta 文档</title>
+      <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/graphviz.css?v=fd3f3429" />
+
+  
+    <link rel="shortcut icon" href="../../../_static/favicon.png"/>
   <!--[if lt IE 9]>
     <script src="../../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="../../../_static/documentation_options.js?v=7c91f8fd"></script>
-        <script src="../../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../../_static/documentation_options.js?v=8534f863"></script>
+        <script src="../../../_static/doctools.js?v=9a2dae69"></script>
         <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
-        <script src="../../../_static/translations.js?v=beaddf03"></script>
     <script src="../../../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../../../genindex.html" />
     <link rel="search" title="搜索" href="../../../search.html" />
@@ -33,61 +37,69 @@
           
           
           <a href="../../../index.html" class="icon icon-home">
-            Cloud Atlas
+            Cloud Atlas: Discovery
           </a>
+              <div class="version">
+                1.1
+              </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../../studio/index.html">Studio Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../infrastructure/index.html">Infrastructure Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../devops/index.html">DevOps Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../kvm/index.html">KVM Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../ceph/index.html">Ceph Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../gluster/index.html">Gluster Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../ovirt/index.html">oVirt Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../openstack/index.html">OpenStack Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../docker/index.html">Docker Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../kubernetes/index.html">Kubernetes Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../kubernetes_from_scratch/index.html">Kubernetes From Scratch (KFS) Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../rancher/index.html">Rancher Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../openshift/index.html">OpenShift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../sql/index.html">SQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../sqlite/index.html">SQLite Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../mysql/index.html">MySQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../pgsql/index.html">PostgreSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../clickhouse/index.html">ClickHouse Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../nosql/index.html">NoSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../redis/index.html">Redis Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../network/index.html">Network Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../infra_service/index.html">Infra-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../infra_search/index.html">Search Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../info_service/index.html">Info-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../web/index.html">Web Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../big_data/index.html">Big Data Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../machine_learning/index.html">Machine Learning Atlas</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">Linux Atlas</a><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../studio/index.html">Studio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../infrastructure/index.html">Infrastructure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../devops/index.html">DevOps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../kvm/index.html">KVM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../ceph/index.html">Ceph</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../gluster/index.html">Gluster</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../ovirt/index.html">oVirt</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../openstack/index.html">OpenStack</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../docker/index.html">Docker</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../kubernetes/index.html">Kubernetes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../k8s_dev/index.html">Kubernetes Develop</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../rancher/index.html">Rancher</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../openshift/index.html">OpenShift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../sql/index.html">SQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../sqlite/index.html">SQLite</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../mysql/index.html">MySQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../pgsql/index.html">PostgreSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../nosql/index.html">NoSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../network/index.html">Network</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../infra_service/index.html">Infra-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../infra_search/index.html">Infra-Search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../web/index.html">Web</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../info_service/index.html">Info-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../big_data/index.html">Big Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../machine_learning/index.html">Machine Learning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../drone/index.html">Drone</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">Linux</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../../best_linux.html">最佳Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../admin/index.html">Linux系统管理</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../redhat_linux/index.html">RedHat Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../arch_linux/index.html">Arch Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../asahi_linux/index.html">Asahi Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../gentoo_linux/index.html">Gentoo Linux</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../lfs_linux/index.html">LFS(Linux from scratch)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../lfs/index.html">LFS(Linux from scratch)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../blfs/index.html">BLFS(Beyond Linux from scratch)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../alfs/index.html">ALFS(Automated Linux from scratch)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pilfs/index.html">PiLFS(Automated Linux from scratch on the Raspberry Pi)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../yocto/index.html">Yocto</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../debian/index.html">Debian</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../ubuntu_linux/index.html">Ubuntu Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../suse_linux/index.html">SUSE Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../kali_linux/index.html">Kali Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../tails_linux/index.html">Tails Linux</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../qubes_os/index.html">Qubes OS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../postmarketos/index.html">postmarketOS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../container_os/index.html">容器化操作系统(Container OS)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../fedora_coreos/index.html">Fedora CoreOS容器操作系统</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../chromium_os/index.html">Chromium OS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../chromeos/index.html">ChromeOS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../alpine_linux/index.html">Alpine Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../subgraph_os/index.html">Subgraph OS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../kaios/index.html">KaiOS - 世界第三手机操作系统</a></li>
@@ -110,6 +122,7 @@
 <li class="toctree-l4"><a class="reference internal" href="lvmcache.html">LVM卷缓存</a></li>
 <li class="toctree-l4"><a class="reference internal" href="lvmthin.html">精简模式LVM</a></li>
 <li class="toctree-l4"><a class="reference internal" href="extend_ext4_on_lvm.html">扩展LVM上的EXT4文件系统</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhyve_ubuntu_extend_ext4_on_lvm.html">bhyve上Ubuntu虚拟机扩展LVM上的EXT4文件系统</a></li>
 <li class="toctree-l4"><a class="reference internal" href="lvm_device_excluded_by_filter.html">LVM执行 <code class="docutils literal notranslate"><span class="pre">pvcreate</span></code> 时报错 <code class="docutils literal notranslate"><span class="pre">Device</span> <span class="pre">/dev/XXX</span> <span class="pre">excluded</span> <span class="pre">by</span> <span class="pre">a</span> <span class="pre">filter.</span></code></a></li>
 </ul>
 </li>
@@ -119,6 +132,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../stratis/index.html">Stratis - Linux存储系统</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../openmediavault/index.html">openmediavault - Linux NAS存储</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../bcache/index.html">Linux Bcache(块缓存)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../nas/index.html">NAS</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../network/index.html">Linux网络</a></li>
@@ -128,28 +142,30 @@
 <li class="toctree-l2"><a class="reference internal" href="../../linux_tablet/index.html">Linux平板</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../../kernel/index.html">Kernel Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../performance/index.html">Performance Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../distributed_system/index.html">Distributed System Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../shell/index.html">Shell Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../python/index.html">Python Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../django/index.html">Django Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../flask/index.html">Flask Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../javascript/index.html">JavaScript Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../nodejs/index.html">Node.js Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../clang/index.html">C Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../golang/index.html">Go Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../swift/index.html">Swift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../rust/index.html">Rust Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../ruby/index.html">Ruby Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../arm/index.html">ARM Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../android/index.html">Android Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../bsd/index.html">BSD Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../apple/index.html">Apple Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../windows/index.html">Windows Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../real/index.html">Real Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../management/index.html">Management Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../life/index.html">Life Atlas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../kernel/index.html">Kernel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../performance/index.html">Performance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../distributed_system/index.html">Distributed System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../shell/index.html">Shell</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../python/index.html">Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../django/index.html">Django</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../javascript/index.html">JavaScript</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../nodejs/index.html">Node.js</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../clang/index.html">C</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../golang/index.html">Go</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../swift/index.html">Swift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../rust/index.html">Rust</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../ruby/index.html">Ruby</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../lua/index.html">Lua</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../arm/index.html">ARM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../raspberry_pi/index.html">Raspberry Pi</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../android/index.html">Android</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../bsd/index.html">BSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../freebsd/index.html">FreeBSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../apple/index.html">Apple</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../windows/index.html">Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../real/index.html">Real</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../management/index.html">Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../life/index.html">Life</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../copyright.html">Copyright</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../aboutme.html">关于作者</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../donate.html">捐赠</a></li>
@@ -162,22 +178,22 @@
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../../index.html">Cloud Atlas</a>
+          <a href="../../../index.html">Cloud Atlas: Discovery</a>
       </nav>
 
       <div class="wy-nav-content">
         <div class="rst-content">
-          <div role="navigation" aria-label="Page navigation">
+          <div role="navigation" aria-label="页面导航">
   <ul class="wy-breadcrumbs">
       <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
-          <li class="breadcrumb-item"><a href="../../index.html">Linux Atlas</a></li>
+          <li class="breadcrumb-item"><a href="../../index.html">Linux</a></li>
           <li class="breadcrumb-item"><a href="../index.html">Linux存储</a></li>
           <li class="breadcrumb-item"><a href="index.html">Linux LVM逻辑卷管理</a></li>
       <li class="breadcrumb-item active">部署LVM</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../../../_sources/linux/storage/lvm/deploy_lvm.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../../_sources/linux/storage/lvm/deploy_lvm.rst.txt" rel="nofollow"> 查看页面源码</a>
       </li>
   </ul>
   <hr/>
@@ -186,16 +202,16 @@
            <div itemprop="articleBody">
              
   <section id="lvm">
-<span id="deploy-lvm"></span><h1>部署LVM<a class="headerlink" href="#lvm" title="Link to this heading">¶</a></h1>
+<span id="deploy-lvm"></span><h1>部署LVM<a class="headerlink" href="#lvm" title="Link to this heading"></a></h1>
 <div class="admonition note">
 <p class="admonition-title">备注</p>
 <p><a class="reference internal" href="../../../real/priv_cloud/priv_lvm.html#priv-lvm"><span class="std std-ref">私有云数据层LVM卷管理</span></a> 作为 <a class="reference internal" href="../../../real/priv_cloud/priv_cloud_infra.html#priv-cloud-infra"><span class="std std-ref">私有云架构</span></a> 基础服务Stack的卷管理</p>
 </div>
 <section id="id1">
-<h2>硬件设备环境<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h2>
+<h2>硬件设备环境<a class="headerlink" href="#id1" title="Link to this heading"></a></h2>
 <p><a class="reference internal" href="../../../kvm/iommu/ovmf.html#ovmf"><span class="std std-ref">Open Virtual Machine Firmware(OMVF)</span></a> 虚拟机pass-through读写 <a class="reference internal" href="../nvme/samsung_pm9a1.html#samsung-pm9a1"><span class="std std-ref">三星PM9A1 NVMe存储</span></a> ，即在虚拟主机上可以通过 <code class="docutils literal notranslate"><span class="pre">fdisk</span> <span class="pre">-l</span></code> 看到当前磁盘 <code class="docutils literal notranslate"><span class="pre">GPT</span></code> 分区如下:</p>
 <div class="literal-block-wrapper docutils container" id="id6">
-<div class="code-block-caption"><span class="caption-text">划分LVM之前nvme0n1的GPT分区</span><a class="headerlink" href="#id6" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">划分LVM之前nvme0n1的GPT分区</span><a class="headerlink" href="#id6" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Disk<span class="w"> </span>/dev/nvme0n1:<span class="w"> </span><span class="m">953</span>.89<span class="w"> </span>GiB,<span class="w"> </span><span class="m">1024209543168</span><span class="w"> </span>bytes,<span class="w"> </span><span class="m">2000409264</span><span class="w"> </span>sectors
 Disk<span class="w"> </span>model:<span class="w"> </span>SAMSUNG<span class="w"> </span>MZVL21T0HCLR-00B00
 Units:<span class="w"> </span>sectors<span class="w"> </span>of<span class="w"> </span><span class="m">1</span><span class="w"> </span>*<span class="w"> </span><span class="nv">512</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">512</span><span class="w"> </span>bytes
@@ -219,7 +235,7 @@ Device<span class="w">         </span>Start<span class="w">       </span>End<spa
 <li><p>创建分区:</p></li>
 </ul>
 <div class="literal-block-wrapper docutils container" id="id7">
-<div class="code-block-caption"><span class="caption-text">parted创建nvme分区2作为LVM卷</span><a class="headerlink" href="#id7" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">parted创建nvme分区2作为LVM卷</span><a class="headerlink" href="#id7" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>parted<span class="w"> </span>-a<span class="w"> </span>optimal<span class="w"> </span>/dev/nvme0n1<span class="w"> </span>mkpart<span class="w"> </span>primary<span class="w"> </span>500GB<span class="w"> </span>800GB
 sudo<span class="w"> </span>parted<span class="w"> </span>/dev/nvme0n1<span class="w"> </span>name<span class="w"> </span><span class="m">2</span><span class="w"> </span>lvm-data
 sudo<span class="w"> </span>parted<span class="w"> </span>/dev/nvme0n1<span class="w"> </span><span class="nb">set</span><span class="w"> </span><span class="m">2</span><span class="w"> </span>lvm<span class="w"> </span>on
@@ -235,7 +251,7 @@ sudo<span class="w"> </span>parted<span class="w"> </span>/dev/nvme0n1<span clas
 </ul>
 <p>可以看到分区2已经是LVM标记的分区:</p>
 <div class="literal-block-wrapper docutils container" id="id8">
-<div class="code-block-caption"><span class="caption-text">nvme分区</span><a class="headerlink" href="#id8" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">nvme分区</span><a class="headerlink" href="#id8" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Model:<span class="w"> </span>SAMSUNG<span class="w"> </span>MZVL21T0HCLR-00B00<span class="w"> </span><span class="o">(</span>nvme<span class="o">)</span>
 Disk<span class="w"> </span>/dev/nvme0n1:<span class="w"> </span>1024GB
 Sector<span class="w"> </span>size<span class="w"> </span><span class="o">(</span>logical/physical<span class="o">)</span>:<span class="w"> </span>512B/512B
@@ -250,7 +266,7 @@ Number<span class="w">  </span>Start<span class="w">   </span>End<span class="w"
 </div>
 </section>
 <section id="id2">
-<h2>LVM物理卷<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
+<h2>LVM物理卷<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
 <p>使用 <code class="docutils literal notranslate"><span class="pre">pvcreate</span></code> 可以创建 LVM 物理卷(PV)，并且支持使用空格分隔的多个设备，例如:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pvcreate</span> <span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">vdb1</span> <span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">vdb2</span>
 </pre></div>
@@ -260,7 +276,7 @@ Number<span class="w">  </span>Start<span class="w">   </span>End<span class="w"
 <li><p>在分区2上创建LVM物理卷PV:</p></li>
 </ul>
 <div class="literal-block-wrapper docutils container" id="id9">
-<div class="code-block-caption"><span class="caption-text">pvcreate创建PV</span><a class="headerlink" href="#id9" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">pvcreate创建PV</span><a class="headerlink" href="#id9" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>pvcreate<span class="w"> </span>/dev/nvme0n1p2
 </pre></div>
 </div>
@@ -271,7 +287,7 @@ Number<span class="w">  </span>Start<span class="w">   </span>End<span class="w"
 </div>
 </section>
 <section id="id3">
-<h2>LVM卷组<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h2>
+<h2>LVM卷组<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
 <p>使用 <code class="docutils literal notranslate"><span class="pre">vgcreate</span></code> 可以创建 LVM 卷组(VG)，多个设备使用空格分隔，可以在一个卷组包含多个PV物理卷，例如:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">vgcreate</span> <span class="n">myvg</span> <span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">vdb1</span> <span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">vdb2</span>
 </pre></div>
@@ -281,7 +297,7 @@ Number<span class="w">  </span>Start<span class="w">   </span>End<span class="w"
 <li><p>在分区2上创建LVM的卷组VG:</p></li>
 </ul>
 <div class="literal-block-wrapper docutils container" id="id10">
-<div class="code-block-caption"><span class="caption-text">vgcreate创建VG</span><a class="headerlink" href="#id10" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">vgcreate创建VG</span><a class="headerlink" href="#id10" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>vgcreate<span class="w"> </span>vg-data<span class="w"> </span>/dev/nvme0n1p2
 </pre></div>
 </div>
@@ -299,7 +315,7 @@ Number<span class="w">  </span>Start<span class="w">   </span>End<span class="w"
 </ul>
 <p>输出:</p>
 <div class="literal-block-wrapper docutils container" id="id11">
-<div class="code-block-caption"><span class="caption-text">vgdisplay检查VG</span><a class="headerlink" href="#id11" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">vgdisplay检查VG</span><a class="headerlink" href="#id11" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="w">  </span>---<span class="w"> </span>Volume<span class="w"> </span>group<span class="w"> </span>---
 <span class="w">  </span>VG<span class="w"> </span>Name<span class="w">               </span>vg-data
 <span class="w">  </span>System<span class="w"> </span>ID
@@ -329,12 +345,12 @@ Number<span class="w">  </span>Start<span class="w">   </span>End<span class="w"
 </div>
 </section>
 <section id="id4">
-<h2>LVM逻辑卷<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h2>
+<h2>LVM逻辑卷<a class="headerlink" href="#id4" title="Link to this heading"></a></h2>
 <ul class="simple">
 <li><p>在 <code class="docutils literal notranslate"><span class="pre">vg-data</span></code> 卷组上创建名为 <code class="docutils literal notranslate"><span class="pre">lv-etcd</span></code> 的LVM卷，大小 8G ，用于 <a class="reference internal" href="../../../kubernetes/administer/etcd/index.html#etcd"><span class="std std-ref">etcd - 分布式kv存储</span></a> 部署:</p></li>
 </ul>
 <div class="literal-block-wrapper docutils container" id="id12">
-<div class="code-block-caption"><span class="caption-text">lvcreate创建LVM卷</span><a class="headerlink" href="#id12" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">lvcreate创建LVM卷</span><a class="headerlink" href="#id12" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>lvcreate<span class="w"> </span>-n<span class="w"> </span>lv-etcd<span class="w"> </span>-L<span class="w"> </span>8G<span class="w"> </span>vg-data
 </pre></div>
 </div>
@@ -348,7 +364,7 @@ Number<span class="w">  </span>Start<span class="w">   </span>End<span class="w"
 </ul>
 <p>显示输出:</p>
 <div class="literal-block-wrapper docutils container" id="id13">
-<div class="code-block-caption"><span class="caption-text">lvdisplay检查LVM</span><a class="headerlink" href="#id13" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">lvdisplay检查LVM</span><a class="headerlink" href="#id13" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="w">  </span>---<span class="w"> </span>Logical<span class="w"> </span>volume<span class="w"> </span>---
 <span class="w">  </span>LV<span class="w"> </span>Path<span class="w">                </span>/dev/vg-data/lv-etcd
 <span class="w">  </span>LV<span class="w"> </span>Name<span class="w">                </span>lv-etcd
@@ -370,12 +386,12 @@ Number<span class="w">  </span>Start<span class="w">   </span>End<span class="w"
 </div>
 </section>
 <section id="xfs">
-<h2>文件系统XFS<a class="headerlink" href="#xfs" title="Link to this heading">¶</a></h2>
+<h2>文件系统XFS<a class="headerlink" href="#xfs" title="Link to this heading"></a></h2>
 <ul class="simple">
 <li><p>在新构建的LVM卷上创建文件系统:</p></li>
 </ul>
 <div class="literal-block-wrapper docutils container" id="id14">
-<div class="code-block-caption"><span class="caption-text">LVM卷上创建文件系统</span><a class="headerlink" href="#id14" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">LVM卷上创建文件系统</span><a class="headerlink" href="#id14" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>mkfs.xfs<span class="w"> </span>/dev/vg-data/lv-etcd
 </pre></div>
 </div>
@@ -384,7 +400,7 @@ Number<span class="w">  </span>Start<span class="w">   </span>End<span class="w"
 <li><p>创建 <code class="docutils literal notranslate"><span class="pre">/etc/fstab</span></code> 挂载条目:</p></li>
 </ul>
 <div class="literal-block-wrapper docutils container" id="id15">
-<div class="code-block-caption"><span class="caption-text">在 /etc/fstab 中增加挂载LVM卷配置</span><a class="headerlink" href="#id15" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">在 /etc/fstab 中增加挂载LVM卷配置</span><a class="headerlink" href="#id15" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;/dev/vg-data/lv-etcd    /var/lib/etcd    xfs    defaults    0 0&quot;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>sudo<span class="w"> </span>tee<span class="w"> </span>-a<span class="w"> </span>/etc/fstab
 </pre></div>
 </div>
@@ -393,7 +409,7 @@ Number<span class="w">  </span>Start<span class="w">   </span>End<span class="w"
 <li><p>然后创建挂载目录并挂载:</p></li>
 </ul>
 <div class="literal-block-wrapper docutils container" id="id16">
-<div class="code-block-caption"><span class="caption-text">挂载LVM卷</span><a class="headerlink" href="#id16" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">挂载LVM卷</span><a class="headerlink" href="#id16" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mkdir<span class="w"> </span>/var/lib/etcd
 mount<span class="w"> </span>/var/lib/etcd
 </pre></div>
@@ -409,7 +425,7 @@ mount<span class="w"> </span>/var/lib/etcd
 <p>现在我们已经初步完成了适合 <a class="reference internal" href="../../../real/priv_cloud/priv_etcd.html#priv-etcd"><span class="std std-ref">私有云etcd服务</span></a> 的存储，下一步我们可以开始部署 <a class="reference internal" href="../../../kubernetes/administer/etcd/index.html#etcd"><span class="std std-ref">etcd - 分布式kv存储</span></a> 服务</p>
 </section>
 <section id="id5">
-<h2>参考<a class="headerlink" href="#id5" title="Link to this heading">¶</a></h2>
+<h2>参考<a class="headerlink" href="#id5" title="Link to this heading"></a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="https://access.redhat.com/documentation/zh-cn/red_hat_enterprise_linux/8/html/configuring_and_managing_logical_volumes/deploying-lvm_configuring-and-managing-logical-volumes">Red Hat Enterprise Linux 8.0 &gt; 配置和管理逻辑卷 &gt; 第3章 部署 LVM</a></p></li>
 </ul>
@@ -419,25 +435,37 @@ mount<span class="w"> </span>/var/lib/etcd
 
            </div>
           </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="lvm_partion_vs_disk.html" class="btn btn-neutral float-left" title="构建LVM卷管理应该使用分区还是直接使用磁盘?" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="deploy_lvm_mdadm_raid10.html" class="btn btn-neutral float-right" title="在 mdadm_raid10 上部署LVM" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="lvm_partion_vs_disk.html" class="btn btn-neutral float-left" title="构建LVM卷管理应该使用分区还是直接使用磁盘?" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="deploy_lvm_mdadm_raid10.html" class="btn btn-neutral float-right" title="在 mdadm_raid10 上部署LVM" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../../copyright.html">Copyright</a> 2018 - now, Huatai Huang.</p>
+    <p>&#169; <a href="../../../copyright.html">版权所有</a> 2018 - now, Huatai Huang。</p>
   </div>
 
-  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
   
     <!-- your html code here -->
     <br>
-    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡</a></p>
-     
+    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡 👈</a></p>
+    <br>
+    <p>网站采用 <a href="https://utteranc.es/">utterances</a> 评论系统，所有评论存储在<a href="https://github.com/huataihuang/cloud-atlas/issues">GitHub issues</a> 中，如果你看不到下方的评论框，那么可能需要<a href="https://cloud-atlas.readthedocs.io/zh-cn/latest/linux/security/vpn/index.html">自备梯子</a> 👈</p>
+    <div class="articleComments">
+        <comments>
+  <script src="https://utteranc.es/client.js"
+    repo="huataihuang/cloud-atlas"
+    issue-term="pathname"
+    theme="github-light"
+    crossorigin="anonymous"
+    async>
+  </script>
+</comments>
+    </div>
 
 
 </footer>

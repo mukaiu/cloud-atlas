@@ -1,26 +1,30 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh" data-content_root="../../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Magisk &mdash; Cloud Atlas 0.1 文档</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+  <title>Magisk &mdash; Cloud Atlas: Discovery beta 文档</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=fd3f3429" />
+
+  
+    <link rel="shortcut icon" href="../../_static/favicon.png"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="../../_static/documentation_options.js?v=7c91f8fd"></script>
-        <script src="../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=8534f863"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
         <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
-        <script src="../../_static/translations.js?v=beaddf03"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../../genindex.html" />
     <link rel="search" title="搜索" href="../../search.html" />
     <link rel="copyright" title="版权所有" href="../../copyright.html" />
-    <link rel="next" title="Magisk root Android设备并支持OTA更新" href="magisk_root_ota.html" />
+    <link rel="next" title="Magisk Zygisk" href="magisk_zygisk.html" />
     <link rel="prev" title="A/B无缝系统更新" href="ab_seamless_update.html" /> 
 </head>
 
@@ -33,62 +37,65 @@
           
           
           <a href="../../index.html" class="icon icon-home">
-            Cloud Atlas
+            Cloud Atlas: Discovery
           </a>
+              <div class="version">
+                1.1
+              </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../studio/index.html">Studio Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../infrastructure/index.html">Infrastructure Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../devops/index.html">DevOps Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kvm/index.html">KVM Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../ceph/index.html">Ceph Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../gluster/index.html">Gluster Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../ovirt/index.html">oVirt Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../openstack/index.html">OpenStack Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../docker/index.html">Docker Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kubernetes/index.html">Kubernetes Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kubernetes_from_scratch/index.html">Kubernetes From Scratch (KFS) Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../rancher/index.html">Rancher Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../openshift/index.html">OpenShift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../sql/index.html">SQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../sqlite/index.html">SQLite Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../mysql/index.html">MySQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../pgsql/index.html">PostgreSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../clickhouse/index.html">ClickHouse Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../nosql/index.html">NoSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../redis/index.html">Redis Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../network/index.html">Network Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../infra_service/index.html">Infra-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../infra_search/index.html">Search Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../info_service/index.html">Info-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../web/index.html">Web Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../big_data/index.html">Big Data Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../machine_learning/index.html">Machine Learning Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../linux/index.html">Linux Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kernel/index.html">Kernel Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../performance/index.html">Performance Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../distributed_system/index.html">Distributed System Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../shell/index.html">Shell Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../python/index.html">Python Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../django/index.html">Django Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../flask/index.html">Flask Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../javascript/index.html">JavaScript Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../nodejs/index.html">Node.js Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../clang/index.html">C Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../golang/index.html">Go Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../swift/index.html">Swift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../rust/index.html">Rust Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../ruby/index.html">Ruby Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../arm/index.html">ARM Atlas</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Android Atlas</a><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../studio/index.html">Studio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../infrastructure/index.html">Infrastructure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../devops/index.html">DevOps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kvm/index.html">KVM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ceph/index.html">Ceph</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../gluster/index.html">Gluster</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ovirt/index.html">oVirt</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../openstack/index.html">OpenStack</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../docker/index.html">Docker</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kubernetes/index.html">Kubernetes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../k8s_dev/index.html">Kubernetes Develop</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../rancher/index.html">Rancher</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../openshift/index.html">OpenShift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../sql/index.html">SQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../sqlite/index.html">SQLite</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../mysql/index.html">MySQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../pgsql/index.html">PostgreSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../nosql/index.html">NoSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../network/index.html">Network</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../infra_service/index.html">Infra-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../infra_search/index.html">Infra-Search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../web/index.html">Web</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../info_service/index.html">Info-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../big_data/index.html">Big Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../machine_learning/index.html">Machine Learning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../drone/index.html">Drone</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../linux/index.html">Linux</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kernel/index.html">Kernel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../performance/index.html">Performance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../distributed_system/index.html">Distributed System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../shell/index.html">Shell</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../python/index.html">Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../django/index.html">Django</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../javascript/index.html">JavaScript</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../nodejs/index.html">Node.js</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../clang/index.html">C</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../golang/index.html">Go</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../swift/index.html">Swift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../rust/index.html">Rust</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ruby/index.html">Ruby</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lua/index.html">Lua</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../arm/index.html">ARM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../raspberry_pi/index.html">Raspberry Pi</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Android</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../device/index.html">Android 设备</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../startup/index.html">Android 起步</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../install/index.html">Android 安装</a></li>
@@ -100,6 +107,7 @@
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Magisk</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#id3">什么是 Magisk</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#id4">安装Magisk</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#patching-images">Patching Images</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#id6">旧版Magisk安装(归档)</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#id7">Magisk安装选项</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#unable-to-detect-target-image">Unable to detect target image</a></li>
@@ -107,9 +115,15 @@
 <li class="toctree-l4"><a class="reference internal" href="#id10">参考</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="magisk_zygisk.html">Magisk Zygisk</a></li>
 <li class="toctree-l3"><a class="reference internal" href="magisk_root_ota.html">Magisk root Android设备并支持OTA更新</a></li>
+<li class="toctree-l3"><a class="reference internal" href="android_recovery_mode.html">Android Recovery Mode</a></li>
 <li class="toctree-l3"><a class="reference internal" href="pixel_3_chinese_volte.html">配置Pixel 3支持中国运营商VoLTE</a></li>
 <li class="toctree-l3"><a class="reference internal" href="pixel_4_volte.html">配置Pixel 4支持VoLTE</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cn_samsung_galaxy_watch_4_wich_android.html">原生Android适配使用国行三星Galaxy Watch 4</a></li>
+<li class="toctree-l3"><a class="reference internal" href="samsung_health_monitor.html">三星健康监测器(Samsung Health Monitor)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="samsung_pay_card.html">三星智能卡</a></li>
+<li class="toctree-l3"><a class="reference internal" href="samsung_music.html">Samsung Music</a></li>
 <li class="toctree-l3"><a class="reference internal" href="pixel_6_volte.html">配置Pixel 6支持VoLTE</a></li>
 <li class="toctree-l3"><a class="reference internal" href="change_build_prop.html">修改build.prop文件</a></li>
 <li class="toctree-l3"><a class="reference internal" href="android_busybox.html">Android系统Busybox</a></li>
@@ -125,6 +139,9 @@
 <li class="toctree-l3"><a class="reference internal" href="android_monitor.html">Android手机作为显示器</a></li>
 <li class="toctree-l3"><a class="reference internal" href="android_otg.html">Android OTG</a></li>
 <li class="toctree-l3"><a class="reference internal" href="project_soli.html">Project Soli</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pixel_usb_devices.html">Pixel可用的USB设备</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pixel_uart.html">Pixel UART(Serial Port, Console)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pixel_minicom.html">使用Pixel运行minicom(串口调试服务器)</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../virtual/index.html">Android 虚拟化</a></li>
@@ -136,12 +153,13 @@
 <li class="toctree-l2"><a class="reference internal" href="../mobile_work/index.html">Android 移动工作</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../bsd/index.html">BSD Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../apple/index.html">Apple Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../windows/index.html">Windows Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../real/index.html">Real Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../management/index.html">Management Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../life/index.html">Life Atlas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../bsd/index.html">BSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../freebsd/index.html">FreeBSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../apple/index.html">Apple</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../windows/index.html">Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../real/index.html">Real</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../management/index.html">Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../life/index.html">Life</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../copyright.html">Copyright</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../aboutme.html">关于作者</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../donate.html">捐赠</a></li>
@@ -154,21 +172,21 @@
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../index.html">Cloud Atlas</a>
+          <a href="../../index.html">Cloud Atlas: Discovery</a>
       </nav>
 
       <div class="wy-nav-content">
         <div class="rst-content">
-          <div role="navigation" aria-label="Page navigation">
+          <div role="navigation" aria-label="页面导航">
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
-          <li class="breadcrumb-item"><a href="../index.html">Android Atlas</a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Android</a></li>
           <li class="breadcrumb-item"><a href="index.html">Android Hack</a></li>
       <li class="breadcrumb-item active">Magisk</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../../_sources/android/hack/magisk.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../_sources/android/hack/magisk.rst.txt" rel="nofollow"> 查看页面源码</a>
       </li>
   </ul>
   <hr/>
@@ -177,7 +195,7 @@
            <div itemprop="articleBody">
              
   <section id="magisk">
-<span id="id1"></span><h1>Magisk<a class="headerlink" href="#magisk" title="Link to this heading">¶</a></h1>
+<span id="id1"></span><h1>Magisk<a class="headerlink" href="#magisk" title="Link to this heading"></a></h1>
 <div class="admonition warning">
 <p class="admonition-title">警告</p>
 <p>由于Andorid技术进展，在Pixel设备上，采用了动态分区以及双启动分区技术，特别是Android 10开始采用了内核安全加强，导致 <a class="reference internal" href="../startup/twrp.html#twrp"><span class="std std-ref">TWRP Recovery管理器</span></a> 已经无法在Pixel的Android 10上工作。所以，本文重新更新撰写，按照最新版本安装方法重新撰写。</p>
@@ -194,13 +212,13 @@
 <p>Android作为开源系统，基于Linux的内核以及开源软件，形成了远比iPhone iOS开放的手机生态系统。Andorid虽然不鼓励普通用户root系统，但是对于geeker和haker还是提供了及其强大的 <code class="docutils literal notranslate"><span class="pre">root</span></code> 功能，你可以完全掌控Android。</p>
 <p>不过，从Android 6.0(棉花糖)开始，Google阻断了之前流行的root方法，即直接将su守护程序放置到 <code class="docutils literal notranslate"><span class="pre">/system</span></code> 分区，并在启动时取得所需权限。也就是现代的Android系统已经不允许任何方式修改 <code class="docutils literal notranslate"><span class="pre">/system</span></code> 分区。</p>
 <section id="id3">
-<h2>什么是 Magisk<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h2>
+<h2>什么是 Magisk<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
 <p>出于增加安全性的考虑，Google 推出了 SafetyNet 这样的检测，以确保 Android Pay 等一些 App 的安全运行。</p>
 <p>Magisk 是出自一位台湾学生 &#64;topjohnwu 开发的 Android 框架，是一个通用的第三方 systemless 接口，通过这样的方式实现一些较强大的功能。</p>
 <p>Magisk通过启动时在 <code class="docutils literal notranslate"><span class="pre">boot</span></code> 中创建钩子，把 <code class="docutils literal notranslate"><span class="pre">/data/magisk.img</span></code> 挂载到 <code class="docutils literal notranslate"><span class="pre">/magisk</span></code> ，构建出一个在 <code class="docutils literal notranslate"><span class="pre">system</span></code> 基础上能够自定义替换，增加以及删除的文件系统，所有操作都在启动的时候完成，实际上并没有对 <code class="docutils literal notranslate"><span class="pre">/system</span></code> 分区进行修改（即 <code class="docutils literal notranslate"><span class="pre">systemless</span></code> 接口，以不触动 <code class="docutils literal notranslate"><span class="pre">/system</span></code> 的方式修改 <code class="docutils literal notranslate"><span class="pre">/system</span></code> ）。这样就实现了绕过SafetyNet使用root的方法。</p>
 <div class="admonition note">
 <p class="admonition-title">备注</p>
-<p>看到这里，你是不是觉得这种方式很熟悉，非常类似 <a class="reference internal" href="../../docker/index.html#docker"><span class="std std-ref">Docker Atlas</span></a> 中镜像和文件层的概念？</p>
+<p>看到这里，你是不是觉得这种方式很熟悉，非常类似 <a class="reference internal" href="../../docker/index.html#docker"><span class="std std-ref">Docker</span></a> 中镜像和文件层的概念？</p>
 </div>
 <p>Magisk可以实现的功能包括:</p>
 <ul class="simple">
@@ -219,7 +237,7 @@
 </ul>
 </section>
 <section id="id4">
-<h2>安装Magisk<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h2>
+<h2>安装Magisk<a class="headerlink" href="#id4" title="Link to this heading"></a></h2>
 <p>在 <a class="reference internal" href="../startup/root_pixel.html#root-pixel"><span class="std std-ref">Root Pixel设备</span></a> 中介绍了如何安装Magisk，但是方法只适合非Pixel设备。对于 <a class="reference internal" href="../device/pixel_3.html#pixel-3"><span class="std std-ref">Pixel 3</span></a> 这样的采用动态分区以及双启动分区技术的设备，需要参考 <a class="reference external" href="https://github.com/topjohnwu/Magisk">topjohnwu / Magisk</a> 官方最新方法操作。</p>
 <ul class="simple">
 <li><p>一定要从GitHub上 <a class="reference external" href="https://github.com/topjohnwu/Magisk">topjohnwu/Magisk</a> 官方下载release版本，其他不可靠来源的安装都会导致重大安全隐患。例如，安装最新release版本 <a class="reference external" href="https://github.com/topjohnwu/Magisk/releases/latest">Magisk app</a></p></li>
@@ -235,12 +253,15 @@
 <li><p>现在需要检查设备是否使用独立的 <code class="docutils literal notranslate"><span class="pre">vbmeta</span></code> 分区:</p>
 <ul>
 <li><p>如果官方firmware软件包中有一个 <code class="docutils literal notranslate"><span class="pre">vbmeta.img</span></code> ，就表明你的设备使用了 <code class="docutils literal notranslate"><span class="pre">vbmeta</span></code> 分区</p></li>
-<li><p>也可以使用如下命令检查设备</p></li>
+<li><p>也可以使用如下命令检查设备:</p></li>
 </ul>
 </li>
 </ul>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">adb</span> <span class="n">shell</span> <span class="n">ls</span> <span class="o">-</span><span class="n">l</span> <span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">block</span><span class="o">/</span><span class="n">by</span><span class="o">-</span><span class="n">name</span>
+<div class="literal-block-wrapper docutils container" id="id14">
+<div class="code-block-caption"><span class="caption-text">检查系统中是否有 <code class="docutils literal notranslate"><span class="pre">vbmeta</span></code> 分区</span><a class="headerlink" href="#id14" title="Link to this code"></a></div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">adb</span> <span class="n">shell</span> <span class="n">ls</span> <span class="o">-</span><span class="n">l</span> <span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">block</span><span class="o">/</span><span class="n">by</span><span class="o">-</span><span class="n">name</span> <span class="o">|</span> <span class="n">grep</span> <span class="n">vbmeta</span>
 </pre></div>
+</div>
 </div>
 <p>输出中有 <code class="docutils literal notranslate"><span class="pre">vbmeta</span></code> , <code class="docutils literal notranslate"><span class="pre">vbmeta_a</span></code> 或者 <code class="docutils literal notranslate"><span class="pre">vbmeta_b</span></code> ，则表示设备是使用独立的 <code class="docutils literal notranslate"><span class="pre">vbmeta</span></code> 分区的。例如，我的 <a class="reference internal" href="../device/pixel_3.html#pixel-3"><span class="std std-ref">Pixel 3</span></a> 输出就有:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">...</span>
@@ -249,7 +270,17 @@
 <span class="o">...</span>
 </pre></div>
 </div>
-<p>综上，对于我的 <a class="reference internal" href="../device/pixel_3.html#pixel-3"><span class="std std-ref">Pixel 3</span></a> :</p>
+<p>我的 <a class="reference internal" href="../device/pixel_4.html#pixel-4"><span class="std std-ref">Pixel 4</span></a> 输出显示:</p>
+<div class="literal-block-wrapper docutils container" id="id15">
+<div class="code-block-caption"><span class="caption-text">检查系统中是否有 <code class="docutils literal notranslate"><span class="pre">vbmeta</span></code> 分区, <a class="reference internal" href="../device/pixel_4.html#pixel-4"><span class="std std-ref">Pixel 4</span></a> 输出信息</span><a class="headerlink" href="#id15" title="Link to this code"></a></div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">lrwxrwxrwx</span> <span class="mi">1</span> <span class="n">root</span> <span class="n">root</span> <span class="mi">16</span> <span class="mi">1970</span><span class="o">-</span><span class="mi">07</span><span class="o">-</span><span class="mi">02</span> <span class="mi">10</span><span class="p">:</span><span class="mi">21</span> <span class="n">vbmeta_a</span> <span class="o">-&gt;</span> <span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">block</span><span class="o">/</span><span class="n">sde10</span>
+<span class="n">lrwxrwxrwx</span> <span class="mi">1</span> <span class="n">root</span> <span class="n">root</span> <span class="mi">16</span> <span class="mi">1970</span><span class="o">-</span><span class="mi">07</span><span class="o">-</span><span class="mi">02</span> <span class="mi">10</span><span class="p">:</span><span class="mi">21</span> <span class="n">vbmeta_b</span> <span class="o">-&gt;</span> <span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">block</span><span class="o">/</span><span class="n">sde26</span>
+<span class="n">lrwxrwxrwx</span> <span class="mi">1</span> <span class="n">root</span> <span class="n">root</span> <span class="mi">16</span> <span class="mi">1970</span><span class="o">-</span><span class="mi">07</span><span class="o">-</span><span class="mi">02</span> <span class="mi">10</span><span class="p">:</span><span class="mi">21</span> <span class="n">vbmeta_system_a</span> <span class="o">-&gt;</span> <span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">block</span><span class="o">/</span><span class="n">sda12</span>
+<span class="n">lrwxrwxrwx</span> <span class="mi">1</span> <span class="n">root</span> <span class="n">root</span> <span class="mi">16</span> <span class="mi">1970</span><span class="o">-</span><span class="mi">07</span><span class="o">-</span><span class="mi">02</span> <span class="mi">10</span><span class="p">:</span><span class="mi">21</span> <span class="n">vbmeta_system_b</span> <span class="o">-&gt;</span> <span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">block</span><span class="o">/</span><span class="n">sda13</span>
+</pre></div>
+</div>
+</div>
+<p>综上，对于我的 <a class="reference internal" href="../device/pixel_3.html#pixel-3"><span class="std std-ref">Pixel 3</span></a> / <a class="reference internal" href="../device/pixel_4.html#pixel-4"><span class="std std-ref">Pixel 4</span></a> :</p>
 <blockquote>
 <div><ul class="simple">
 <li><p>使用 boot ramdisk</p></li>
@@ -257,8 +288,11 @@
 <li><p>基于第一条，应该使用 <code class="docutils literal notranslate"><span class="pre">boot.img</span></code> 镜像</p></li>
 </ul>
 </div></blockquote>
+</section>
 <section id="patching-images">
-<h3>Patching Images<a class="headerlink" href="#patching-images" title="Link to this heading">¶</a></h3>
+<h2>Patching Images<a class="headerlink" href="#patching-images" title="Link to this heading"></a></h2>
+<section id="pixel-3-lineageos">
+<h3><a class="reference internal" href="../device/pixel_3.html#pixel-3"><span class="std std-ref">Pixel 3</span></a> 下载LineageOS镜像<a class="headerlink" href="#pixel-3-lineageos" title="Link to this heading"></a></h3>
 <ul class="simple">
 <li><p>我之前在 <a class="reference internal" href="magisk_root_ota.html#magisk-root-ota"><span class="std std-ref">Magisk root Android设备并支持OTA更新</span></a> 采用Google Android官方下载的 factory image 中的 <code class="docutils literal notranslate"><span class="pre">boot.img</span></code> ，但是目前我已经不再使用Google 官方 Android ，改为 <a class="reference internal" href="../install/lineageos_19.1_pixel_3.html#lineageos-19-1-pixel-3"><span class="std std-ref">Pixel 3上安装LineageOS 19.1</span></a> 。所以参考 <a class="reference external" href="https://www.droidwin.com/root-lineageos-magisk-boot-img/">How to Root LineageOS ROM via Magisk Boot.img</a></p></li>
 </ul>
@@ -279,12 +313,16 @@
 </li>
 </ul>
 <p>就能获得 <code class="docutils literal notranslate"><span class="pre">boot.img</span></code> 文件(以及其他)</p>
-<ul>
-<li><p>将 <code class="docutils literal notranslate"><span class="pre">boot.img</span></code> 推送到手机中:</p>
+<ul class="simple">
+<li><p>将 <code class="docutils literal notranslate"><span class="pre">boot.img</span></code> 推送到手机中:</p></li>
+</ul>
+<div class="literal-block-wrapper docutils container" id="id16">
+<div class="code-block-caption"><span class="caption-text">将安装启动镜像 <code class="docutils literal notranslate"><span class="pre">boot.img</span></code> 推送到手机中</span><a class="headerlink" href="#id16" title="Link to this code"></a></div>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">adb</span> <span class="n">push</span> <span class="n">boot</span><span class="o">.</span><span class="n">img</span> <span class="o">/</span><span class="n">sdcard</span><span class="o">/</span><span class="n">Download</span><span class="o">/</span><span class="n">boot</span><span class="o">.</span><span class="n">img</span>
 </pre></div>
 </div>
-</li>
+</div>
+<ul class="simple">
 <li><p>在手机上运行前面安装好的 <code class="docutils literal notranslate"><span class="pre">Magisk</span></code> 程序，然后点击 <code class="docutils literal notranslate"><span class="pre">Install</span></code> 按钮，此时 <code class="docutils literal notranslate"><span class="pre">Magisk</span></code> 会让你选择需要patch的文件，则选择刚才上传到手机中的 <code class="docutils literal notranslate"><span class="pre">boot.img</span></code> 文件，并继续</p></li>
 </ul>
 <p>此时手机终端会提示生成了文件: <code class="docutils literal notranslate"><span class="pre">/storage/emulated/0/Download/magisk_patched-24300_DHRRP.img</span></code> （其实就是位于 <code class="docutils literal notranslate"><span class="pre">/sdcard/Download/</span></code> 目录下)</p>
@@ -294,15 +332,20 @@
 </pre></div>
 </div>
 </li>
-<li><p>将Android设备重启到Bootlader/Fastboot模式:</p>
+<li><p>将Android设备重启到Bootlader/Fastboot模式:</p></li>
+</ul>
+<div class="literal-block-wrapper docutils container" id="id17">
+<div class="code-block-caption"><span class="caption-text">重启设备进入 <code class="docutils literal notranslate"><span class="pre">bootloader</span></code> 模式</span><a class="headerlink" href="#id17" title="Link to this code"></a></div>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">adb</span> <span class="n">reboot</span> <span class="n">bootloader</span>
 </pre></div>
 </div>
-</li>
-</ul>
-<p>并检查设备状态:</p>
+</div>
+<p>输入如下命令验证设备已经进入 <code class="docutils literal notranslate"><span class="pre">fastboot</span></code> 模式:</p>
+<div class="literal-block-wrapper docutils container" id="id18">
+<div class="code-block-caption"><span class="caption-text">验证设备是否进入 <code class="docutils literal notranslate"><span class="pre">fastboot</span></code> 模式</span><a class="headerlink" href="#id18" title="Link to this code"></a></div>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">fastboot</span> <span class="n">devices</span>
 </pre></div>
+</div>
 </div>
 <p>可以看到:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">912</span><span class="n">X1U972</span>  <span class="n">fastboot</span>
@@ -335,9 +378,103 @@
 <li><p>完成后检查 <code class="docutils literal notranslate"><span class="pre">Magisk</span></code> 应用，可以看到是 <code class="docutils literal notranslate"><span class="pre">Installed</span></code> 状态</p></li>
 </ul>
 </section>
+<section id="build-lineageos-20-pixel-4">
+<h3><a class="reference internal" href="../build/build_lineageos_20_pixel_4.html#build-lineageos-20-pixel-4"><span class="std std-ref">为Pixel 4编译LineageOS 20(Android 13)</span></a><a class="headerlink" href="#build-lineageos-20-pixel-4" title="Link to this heading"></a></h3>
+<p>现在我的最新实践是采用 <a class="reference internal" href="../build/build_lineageos_20_pixel_4.html#build-lineageos-20-pixel-4"><span class="std std-ref">为Pixel 4编译LineageOS 20(Android 13)</span></a> ，所以 <a class="reference internal" href="../install/lineageos_20_pixel_4.html#lineageos-20-pixel-4"><span class="std std-ref">Pixel 4上安装LineageOS 20</span></a> 可以直接使用自己编译过程生成的 <code class="docutils literal notranslate"><span class="pre">boot.img</span></code> 来进行补丁(也就是跳过上述从官方安装包解压 <code class="docutils literal notranslate"><span class="pre">boot.img</span></code> 的步骤)。方法和上述 <a class="reference internal" href="../device/pixel_3.html#pixel-3"><span class="std std-ref">Pixel 3</span></a> 实践类似:</p>
+<ul class="simple">
+<li><p>将 <code class="docutils literal notranslate"><span class="pre">boot.img</span></code> 推送到手机中:</p></li>
+</ul>
+<div class="literal-block-wrapper docutils container" id="id19">
+<div class="code-block-caption"><span class="caption-text">将安装启动镜像 <code class="docutils literal notranslate"><span class="pre">boot.img</span></code> 推送到手机中</span><a class="headerlink" href="#id19" title="Link to this code"></a></div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">adb</span> <span class="n">push</span> <span class="n">boot</span><span class="o">.</span><span class="n">img</span> <span class="o">/</span><span class="n">sdcard</span><span class="o">/</span><span class="n">Download</span><span class="o">/</span><span class="n">boot</span><span class="o">.</span><span class="n">img</span>
+</pre></div>
+</div>
+</div>
+<ul class="simple">
+<li><p>在手机上运行前面安装好的 <code class="docutils literal notranslate"><span class="pre">Magisk</span></code> 程序，然后点击 <code class="docutils literal notranslate"><span class="pre">Install</span></code> 按钮，此时 <code class="docutils literal notranslate"><span class="pre">Magisk</span></code> 会让你选择需要patch的文件，则选择刚才上传到手机中的 <code class="docutils literal notranslate"><span class="pre">boot.img</span></code> 文件，并继续</p></li>
+</ul>
+<p>此时生成patch过的文件可以通过 <code class="docutils literal notranslate"><span class="pre">adb</span> <span class="pre">ls</span> <span class="pre">/sdcard/Download/</span></code> 看到，名为 <code class="docutils literal notranslate"><span class="pre">magisk_patched-26300_NHXW1.img</span></code></p>
+<ul class="simple">
+<li><p>将patched过的镜像下载到电脑上:</p></li>
+</ul>
+<div class="literal-block-wrapper docutils container" id="id20">
+<div class="code-block-caption"><span class="caption-text">将patched的镜像下载</span><a class="headerlink" href="#id20" title="Link to this code"></a></div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">adb</span> <span class="n">pull</span> <span class="o">/</span><span class="n">sdcard</span><span class="o">/</span><span class="n">Download</span><span class="o">/</span><span class="n">magisk_patched</span><span class="o">-</span><span class="mi">26300</span><span class="n">_NHXW1</span><span class="o">.</span><span class="n">img</span>
+</pre></div>
+</div>
+</div>
+<ul class="simple">
+<li><p>然后将手机重启到 <code class="docutils literal notranslate"><span class="pre">fastboot</span></code> 模式:</p></li>
+</ul>
+<div class="literal-block-wrapper docutils container" id="id21">
+<div class="code-block-caption"><span class="caption-text">重启设备进入 <code class="docutils literal notranslate"><span class="pre">bootloader</span></code> 模式</span><a class="headerlink" href="#id21" title="Link to this code"></a></div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">adb</span> <span class="n">reboot</span> <span class="n">bootloader</span>
+</pre></div>
+</div>
+</div>
+<p>输入如下命令验证设备已经进入 <code class="docutils literal notranslate"><span class="pre">fastboot</span></code> 模式:</p>
+<div class="literal-block-wrapper docutils container" id="id22">
+<div class="code-block-caption"><span class="caption-text">验证设备是否进入 <code class="docutils literal notranslate"><span class="pre">fastboot</span></code> 模式</span><a class="headerlink" href="#id22" title="Link to this code"></a></div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">fastboot</span> <span class="n">devices</span>
+</pre></div>
+</div>
+</div>
+<p>可以看到:</p>
+<div class="literal-block-wrapper docutils container" id="id23">
+<div class="code-block-caption"><span class="caption-text">验证正确的 <code class="docutils literal notranslate"><span class="pre">fastboot</span></code> 模式输出信息</span><a class="headerlink" href="#id23" title="Link to this code"></a></div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">9</span><span class="n">B1AFS000009SC</span>	 <span class="n">fastboot</span>
+</pre></div>
+</div>
+</div>
+<ul class="simple">
+<li><p>将补丁过的 <code class="docutils literal notranslate"><span class="pre">boot.img</span></code> 刷入当前激活的slot:</p></li>
+</ul>
+<div class="literal-block-wrapper docutils container" id="id24">
+<div class="code-block-caption"><span class="caption-text">将patched的镜像刷入手机</span><a class="headerlink" href="#id24" title="Link to this code"></a></div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">fastboot</span> <span class="n">flash</span> <span class="n">boot</span> <span class="n">magisk_patched</span><span class="o">-</span><span class="mi">26300</span><span class="n">_NHXW1</span><span class="o">.</span><span class="n">img</span>
+</pre></div>
+</div>
+</div>
+<p>此时显示补丁过的boot镜像是刷入到手机当前激活的slot:</p>
+<div class="literal-block-wrapper docutils container" id="id25">
+<div class="code-block-caption"><span class="caption-text">将patched的镜像刷入手机，可以看到刷入的是当前激活的slot <code class="docutils literal notranslate"><span class="pre">boot_b</span></code></span><a class="headerlink" href="#id25" title="Link to this code"></a></div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Sending</span> <span class="s1">&#39;boot_b&#39;</span> <span class="p">(</span><span class="mi">65536</span> <span class="n">KB</span><span class="p">)</span>                        <span class="n">OKAY</span> <span class="p">[</span>  <span class="mf">1.790</span><span class="n">s</span><span class="p">]</span>
+<span class="n">Writing</span> <span class="s1">&#39;boot_b&#39;</span>                                   <span class="n">OKAY</span> <span class="p">[</span>  <span class="mf">0.485</span><span class="n">s</span><span class="p">]</span>
+<span class="n">Finished</span><span class="o">.</span> <span class="n">Total</span> <span class="n">time</span><span class="p">:</span> <span class="mf">2.705</span><span class="n">s</span>
+</pre></div>
+</div>
+</div>
+<ul class="simple">
+<li><p>这里只flash了当前激活的 <code class="docutils literal notranslate"><span class="pre">boot_b</span></code> ，那么还有一个 <code class="docutils literal notranslate"><span class="pre">boot_a</span></code> 需要flash，则使用命令(需要明确指定分区 <code class="docutils literal notranslate"><span class="pre">boot_a</span></code> ，前面没有明确指定 <code class="docutils literal notranslate"><span class="pre">boot_b</span></code> 则是因为 <code class="docutils literal notranslate"><span class="pre">boot_b</span></code> 是当前激活分区，所以用 <code class="docutils literal notranslate"><span class="pre">boot</span></code> 指代就行 ):</p></li>
+</ul>
+<div class="literal-block-wrapper docutils container" id="id26">
+<div class="code-block-caption"><span class="caption-text">另一个非当前激活分区需要明确指定刷入分区 <code class="docutils literal notranslate"><span class="pre">boot_a</span></code> 才能刷入</span><a class="headerlink" href="#id26" title="Link to this code"></a></div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">fastboot</span> <span class="n">flash</span> <span class="n">boot_a</span> <span class="n">magisk_patched</span><span class="o">-</span><span class="mi">26300</span><span class="n">_NHXW1</span><span class="o">.</span><span class="n">img</span>
+</pre></div>
+</div>
+</div>
+<p>完成显示:</p>
+<div class="literal-block-wrapper docutils container" id="id27">
+<div class="code-block-caption"><span class="caption-text">另一个非当前激活分区需要明确指定刷入分区 <code class="docutils literal notranslate"><span class="pre">boot_a</span></code> 才能刷入</span><a class="headerlink" href="#id27" title="Link to this code"></a></div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Sending</span> <span class="s1">&#39;boot_a&#39;</span> <span class="p">(</span><span class="mi">65536</span> <span class="n">KB</span><span class="p">)</span>                        <span class="n">OKAY</span> <span class="p">[</span>  <span class="mf">1.830</span><span class="n">s</span><span class="p">]</span>
+<span class="n">Writing</span> <span class="s1">&#39;boot_a&#39;</span>                                   <span class="n">OKAY</span> <span class="p">[</span>  <span class="mf">0.496</span><span class="n">s</span><span class="p">]</span>
+<span class="n">Finished</span><span class="o">.</span> <span class="n">Total</span> <span class="n">time</span><span class="p">:</span> <span class="mf">2.686</span><span class="n">s</span>
+</pre></div>
+</div>
+</div>
+<ul class="simple">
+<li><p>重启设备:</p></li>
+</ul>
+<div class="literal-block-wrapper docutils container" id="id28">
+<div class="code-block-caption"><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">fastboot</span></code> 重启手机</span><a class="headerlink" href="#id28" title="Link to this code"></a></div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">fastboot</span> <span class="n">reboot</span>
+</pre></div>
+</div>
+</div>
+</section>
 </section>
 <section id="id6">
-<h2>旧版Magisk安装(归档)<a class="headerlink" href="#id6" title="Link to this heading">¶</a></h2>
+<h2>旧版Magisk安装(归档)<a class="headerlink" href="#id6" title="Link to this heading"></a></h2>
 <div class="admonition warning">
 <p class="admonition-title">警告</p>
 <p>以下旧版安装方法是非Pixel设备的操作方法，仅归档参考。我在 <a class="reference internal" href="../device/pixel_3.html#pixel-3"><span class="std std-ref">Pixel 3</span></a> 设备实践见前文。</p>
@@ -357,7 +494,7 @@
 <p>也可以把Magisk的zip文件push到手机的 <code class="docutils literal notranslate"><span class="pre">/sdcard</span></code> 目录下，然后通过 TWRP 的 <code class="docutils literal notranslate"><span class="pre">Install</span></code> 功能进行安装。</p>
 </div>
 <section id="magisk-manager">
-<h3>旧版Magisk Manager<a class="headerlink" href="#magisk-manager" title="Link to this heading">¶</a></h3>
+<h3>旧版Magisk Manager<a class="headerlink" href="#magisk-manager" title="Link to this heading"></a></h3>
 <ul>
 <li><p>将 MagiskManager-v7.5.0.apk 推送到手机的 <code class="docutils literal notranslate"><span class="pre">/sdcard</span></code> 目录:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">adb</span> <span class="n">push</span> <span class="n">MagiskManager</span><span class="o">-</span><span class="n">v7</span><span class="mf">.5.0</span><span class="o">.</span><span class="n">apk</span> <span class="o">/</span><span class="n">sdcard</span>
@@ -369,7 +506,7 @@
 </section>
 </section>
 <section id="id7">
-<h2>Magisk安装选项<a class="headerlink" href="#id7" title="Link to this heading">¶</a></h2>
+<h2>Magisk安装选项<a class="headerlink" href="#id7" title="Link to this heading"></a></h2>
 <div class="admonition note">
 <p class="admonition-title">备注</p>
 <p>Magisk安装选项有3个，需要注意，不是所有手机环境都适合这3个选项，错误选择可能导致问题。</p>
@@ -391,7 +528,7 @@
 <p>注意这个选项和设备相关。在 <a class="reference internal" href="../device/pixel.html#pixel"><span class="std std-ref">Pixel和Pixel XL</span></a> 设备上不要启用这个选项，否则安装以后会导致下次重新安装出现报错 <code class="docutils literal notranslate"><span class="pre">Unable</span> <span class="pre">to</span> <span class="pre">detect</span> <span class="pre">target</span> <span class="pre">image</span></code> ，见下文。</p>
 </section>
 <section id="unable-to-detect-target-image">
-<h2>Unable to detect target image<a class="headerlink" href="#unable-to-detect-target-image" title="Link to this heading">¶</a></h2>
+<h2>Unable to detect target image<a class="headerlink" href="#unable-to-detect-target-image" title="Link to this heading"></a></h2>
 <p>在Magisk Manager中重新安装Magisk时遇到报错:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>! Unable to detect target image
 ! Installation failed
@@ -400,29 +537,33 @@
 <p>解决方法时获取设备的stock boot image的副本。你可以从安装选项中选择 <code class="docutils literal notranslate"><span class="pre">Select</span> <span class="pre">and</span> <span class="pre">Patch</span> <span class="pre">a</span> <span class="pre">file</span></code> 然后浏览并找到boot image文件来打补丁。</p>
 </section>
 <section id="id8">
-<h2>Magisk使用<a class="headerlink" href="#id8" title="Link to this heading">¶</a></h2>
+<h2>Magisk使用<a class="headerlink" href="#id8" title="Link to this heading"></a></h2>
 <section id="root">
-<h3>隐藏root<a class="headerlink" href="#root" title="Link to this heading">¶</a></h3>
+<h3>隐藏root<a class="headerlink" href="#root" title="Link to this heading"></a></h3>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>新版 Magisk 去除了 <code class="docutils literal notranslate"><span class="pre">MagiskHide</span></code> ，取代以 <a class="reference internal" href="magisk_zygisk.html#magisk-zygisk"><span class="std std-ref">Magisk Zygisk</span></a> 实现root隐藏</p>
+</div>
 <p>由于Google服务等很多Android上应用、游戏和服务都十分重视保护自己的版权信息，所以这些软件检测到手机遭到root就会拒绝认证设备。</p>
 <p>Magisk Hide可以绕过这些检测。</p>
 <ul class="simple">
-<li><p>首先进入 Magisk Manager 检测是否通过了谷歌服务中的 SafetyNet 安全性测试。</p></li>
+<li><p>首先进入 Magisk Manager 检测是否通过了谷歌服务中的 SafetyNet 安全性测试</p></li>
 </ul>
-<p>想要通过 SafetyNet 测试，最好使用原厂系统，或者是值得信赖的第三方 ROM 正式版（也就是 Official Builds），以减少不必要的麻烦。</p>
+<p><strong>想要通过 SafetyNet 测试，最好使用原厂系统，或者是值得信赖的第三方 ROM 正式版（也就是 Official Builds），以减少不必要的麻烦。</strong></p>
 <p>如果是 <code class="docutils literal notranslate"><span class="pre">basic</span> <span class="pre">integrity</span></code> 这一项没有通过认证，那说明你遇到了大麻烦：试着开启「Magisk 核心功能模式」或者卸载所有模块，如果还是没有通过，那么你可能需要换一个系统或者第三方 ROM 了。</p>
 <p>如果是 <code class="docutils literal notranslate"><span class="pre">ctsProfile</span></code> 这一项没有通过，那说明你的 ROM 没有通过其兼容性测试，一些 beta 版本或者国内厂商的 ROM 可能出现这种问题。这时我们下载使用 <a class="reference external" href="https://forum.xda-developers.com/apps/magisk/module-magiskhide-props-config-t3789228">MagiskHide Props Config</a> 模块往往能够解决问题。</p>
 <ul class="simple">
 <li><p>在 Magisk Manager 的侧边菜单中找到 Magisk Hide 项，选中我们想要隐藏的目标 App 即可。最近更新的 Magisk 19.0 版本还加入了「应用组件」层面进行 Magisk Hide 的功能。</p></li>
 </ul>
-<p>至于对哪些应用进行 Magisk Hide，这个就要看每个读者的具体需要了。一般来说，Google Play 服务和商店是必须的，但也请注意这条来自开发者的注意事项：如无必要，不要随意在 Magisk Hide 列表添加 App 而造成滥用（Do not abuse MagiskHide!）。</p>
+<p>至于对哪些应用进行 Magisk Hide，这个就要看具体需要: 一般来说，Google Play 服务和商店是必须的，但也请注意这条来自开发者的注意事项：如无必要，不要随意在 Magisk Hide 列表添加 App 而造成滥用（Do not abuse MagiskHide!）。</p>
 <p>如果你还不放心，还可以去 Magisk Manager 的设置中打开「隐藏 Magisk Manager」。此时 Magisk Manager 将会进行一次重新安装，以便打乱软件包名来躲过对 Magisk Manager 的检测。</p>
 </section>
 <section id="supersu-root">
-<h3>替代 SuperSU 进行 root 权限管理<a class="headerlink" href="#supersu-root" title="Link to this heading">¶</a></h3>
+<h3>替代 SuperSU 进行 root 权限管理<a class="headerlink" href="#supersu-root" title="Link to this heading"></a></h3>
 <p>身兼 root 工具的 Magisk，直接使用 Magisk Manager 中的默认设置就能用得舒心。App 向你提请超级用户权限的时候，用户可以选择永久同意、一定时间内同意或者是拒绝，超时之后没有进行选择，那么便会选择拒绝。</p>
 </section>
 <section id="id9">
-<h3>获取、管理 Magisk 模块<a class="headerlink" href="#id9" title="Link to this heading">¶</a></h3>
+<h3>获取、管理 Magisk 模块<a class="headerlink" href="#id9" title="Link to this heading"></a></h3>
 <p>模块的本质，是将原本需要玩家繁复操作的玩机过程与 Magisk「不改动系统」（Systemless-ly） 的特性结合在一起，并进行打包和分发。模块极大地简易了玩机操作，一个小小的 .zip
 包文件可能包含了另一套全字重字体，可能囊括了一整套内核参数调教方案，可能附加了一些额外的小功能或是界面美化……模块只是简易了玩机操作的实践，但并没有将它无害化，该翻车的操作还是会翻车，这个时候模块的管理就变得尤其重要。</p>
 <p>任何有能力制作模块的开发者都能分发自己制作的模块，也可以选择是否提交到官方的模块仓库。</p>
@@ -432,8 +573,9 @@
 </section>
 </section>
 <section id="id10">
-<h2>参考<a class="headerlink" href="#id10" title="Link to this heading">¶</a></h2>
+<h2>参考<a class="headerlink" href="#id10" title="Link to this heading"></a></h2>
 <ul class="simple">
+<li><p><a class="reference external" href="https://topjohnwu.github.io/Magisk/install.html">Magisk Installation</a> 官方文档，基本参考</p></li>
 <li><p><a class="reference external" href="https://www.droidwin.com/root-lineageos-magisk-boot-img/">How to Root LineageOS ROM via Magisk Boot.img</a></p></li>
 <li><p><a class="reference external" href="https://www.jianshu.com/p/393f5e51716e">神奇的 Magisk</a></p></li>
 <li><p><a class="reference external" href="https://zhuanlan.zhihu.com/p/61302392">Android 玩家不可错过的神器：Magisk Manager</a></p></li>
@@ -448,25 +590,37 @@
 
            </div>
           </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="ab_seamless_update.html" class="btn btn-neutral float-left" title="A/B无缝系统更新" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="magisk_root_ota.html" class="btn btn-neutral float-right" title="Magisk root Android设备并支持OTA更新" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="ab_seamless_update.html" class="btn btn-neutral float-left" title="A/B无缝系统更新" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="magisk_zygisk.html" class="btn btn-neutral float-right" title="Magisk Zygisk" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../copyright.html">Copyright</a> 2018 - now, Huatai Huang.</p>
+    <p>&#169; <a href="../../copyright.html">版权所有</a> 2018 - now, Huatai Huang。</p>
   </div>
 
-  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
   
     <!-- your html code here -->
     <br>
-    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡</a></p>
-     
+    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡 👈</a></p>
+    <br>
+    <p>网站采用 <a href="https://utteranc.es/">utterances</a> 评论系统，所有评论存储在<a href="https://github.com/huataihuang/cloud-atlas/issues">GitHub issues</a> 中，如果你看不到下方的评论框，那么可能需要<a href="https://cloud-atlas.readthedocs.io/zh-cn/latest/linux/security/vpn/index.html">自备梯子</a> 👈</p>
+    <div class="articleComments">
+        <comments>
+  <script src="https://utteranc.es/client.js"
+    repo="huataihuang/cloud-atlas"
+    issue-term="pathname"
+    theme="github-light"
+    crossorigin="anonymous"
+    async>
+  </script>
+</comments>
+    </div>
 
 
 </footer>

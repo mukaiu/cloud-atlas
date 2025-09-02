@@ -1,26 +1,30 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh" data-content_root="../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>探索Anbox运行Andorid程序 &mdash; Cloud Atlas 0.1 文档</title>
-      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/graphviz.css" type="text/css" />
+  <title>探索Anbox运行Andorid程序 &mdash; Cloud Atlas: Discovery beta 文档</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../_static/graphviz.css?v=fd3f3429" />
+
+  
+    <link rel="shortcut icon" href="../_static/favicon.png"/>
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="../_static/documentation_options.js?v=7c91f8fd"></script>
-        <script src="../_static/doctools.js?v=888ff710"></script>
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=8534f863"></script>
+        <script src="../_static/doctools.js?v=9a2dae69"></script>
         <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
-        <script src="../_static/translations.js?v=beaddf03"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="搜索" href="../search.html" />
     <link rel="copyright" title="版权所有" href="../copyright.html" />
-    <link rel="prev" title="结合SSH Tunnel和AutoProxy插件翻墙" href="ssh_tunnel_gfw_autoproxy.html" /> 
+    <link rel="prev" title="Windows 10 SSH服务" href="win10_ssh_server.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -32,68 +36,72 @@
           
           
           <a href="../index.html" class="icon icon-home">
-            Cloud Atlas
+            Cloud Atlas: Discovery
           </a>
+              <div class="version">
+                1.1
+              </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../studio/index.html">Studio Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../infrastructure/index.html">Infrastructure Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../devops/index.html">DevOps Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../kvm/index.html">KVM Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../ceph/index.html">Ceph Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../gluster/index.html">Gluster Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../ovirt/index.html">oVirt Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../openstack/index.html">OpenStack Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../docker/index.html">Docker Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../kubernetes/index.html">Kubernetes Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../kubernetes_from_scratch/index.html">Kubernetes From Scratch (KFS) Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../rancher/index.html">Rancher Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../openshift/index.html">OpenShift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../sql/index.html">SQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../sqlite/index.html">SQLite Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../mysql/index.html">MySQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../pgsql/index.html">PostgreSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../clickhouse/index.html">ClickHouse Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../nosql/index.html">NoSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../redis/index.html">Redis Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../network/index.html">Network Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../infra_service/index.html">Infra-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../infra_search/index.html">Search Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../info_service/index.html">Info-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../web/index.html">Web Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../big_data/index.html">Big Data Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../machine_learning/index.html">Machine Learning Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../linux/index.html">Linux Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../kernel/index.html">Kernel Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../performance/index.html">Performance Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../distributed_system/index.html">Distributed System Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../shell/index.html">Shell Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../python/index.html">Python Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../django/index.html">Django Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../flask/index.html">Flask Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../javascript/index.html">JavaScript Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../nodejs/index.html">Node.js Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../clang/index.html">C Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../golang/index.html">Go Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../swift/index.html">Swift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../rust/index.html">Rust Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../ruby/index.html">Ruby Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../arm/index.html">ARM Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../android/index.html">Android Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../bsd/index.html">BSD Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../apple/index.html">Apple Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../windows/index.html">Windows Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../real/index.html">Real Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../management/index.html">Management Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../life/index.html">Life Atlas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../studio/index.html">Studio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../infrastructure/index.html">Infrastructure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../devops/index.html">DevOps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../kvm/index.html">KVM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ceph/index.html">Ceph</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../gluster/index.html">Gluster</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ovirt/index.html">oVirt</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../openstack/index.html">OpenStack</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../docker/index.html">Docker</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../kubernetes/index.html">Kubernetes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../k8s_dev/index.html">Kubernetes Develop</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../rancher/index.html">Rancher</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../openshift/index.html">OpenShift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../sql/index.html">SQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../sqlite/index.html">SQLite</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../mysql/index.html">MySQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pgsql/index.html">PostgreSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../nosql/index.html">NoSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../network/index.html">Network</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../infra_service/index.html">Infra-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../infra_search/index.html">Infra-Search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../web/index.html">Web</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../info_service/index.html">Info-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../big_data/index.html">Big Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../machine_learning/index.html">Machine Learning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../drone/index.html">Drone</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../linux/index.html">Linux</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../kernel/index.html">Kernel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../performance/index.html">Performance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../distributed_system/index.html">Distributed System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../shell/index.html">Shell</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../python/index.html">Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../django/index.html">Django</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../javascript/index.html">JavaScript</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../nodejs/index.html">Node.js</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../clang/index.html">C</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../golang/index.html">Go</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../swift/index.html">Swift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../rust/index.html">Rust</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ruby/index.html">Ruby</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lua/index.html">Lua</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../arm/index.html">ARM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../raspberry_pi/index.html">Raspberry Pi</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../android/index.html">Android</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../bsd/index.html">BSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../freebsd/index.html">FreeBSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../apple/index.html">Apple</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../windows/index.html">Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../real/index.html">Real</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../management/index.html">Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../life/index.html">Life</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../copyright.html">Copyright</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../aboutme.html">关于作者</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../donate.html">捐赠</a></li>
@@ -105,7 +113,6 @@
 <li class="toctree-l2"><a class="reference internal" href="using_btrfs_in_studio.html">在Studio中使用btrfs文件系统</a></li>
 <li class="toctree-l2"><a class="reference internal" href="reduce_laptop_overheat.html">降低笔记本温度过热</a></li>
 <li class="toctree-l2"><a class="reference internal" href="win10_ssh_server.html">Windows 10 SSH服务</a></li>
-<li class="toctree-l2"><a class="reference internal" href="ssh_tunnel_gfw_autoproxy.html">结合SSH Tunnel和AutoProxy插件翻墙</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">探索Anbox运行Andorid程序</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#id1">说明</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#anbox">Anbox</a></li>
@@ -139,20 +146,20 @@
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../index.html">Cloud Atlas</a>
+          <a href="../index.html">Cloud Atlas: Discovery</a>
       </nav>
 
       <div class="wy-nav-content">
         <div class="rst-content">
-          <div role="navigation" aria-label="Page navigation">
+          <div role="navigation" aria-label="页面导航">
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="index.html">附录</a></li>
       <li class="breadcrumb-item active">探索Anbox运行Andorid程序</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../_sources/appendix/anbox_scratch.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/appendix/anbox_scratch.rst.txt" rel="nofollow"> 查看页面源码</a>
       </li>
   </ul>
   <hr/>
@@ -161,18 +168,18 @@
            <div itemprop="articleBody">
              
   <section id="anboxandorid">
-<span id="anbox-scratch"></span><h1>探索Anbox运行Andorid程序<a class="headerlink" href="#anboxandorid" title="Link to this heading">¶</a></h1>
+<span id="anbox-scratch"></span><h1>探索Anbox运行Andorid程序<a class="headerlink" href="#anboxandorid" title="Link to this heading"></a></h1>
 <section id="id1">
-<h2>说明<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h2>
+<h2>说明<a class="headerlink" href="#id1" title="Link to this heading"></a></h2>
 <p>本文记录的是我折腾数天，在Arch Linux中通过Anbox运行Android程序的经历。这个过程非常曲折，所以我把最终经验总结重新整理成 <a class="reference internal" href="../android/virtual/anbox/index.html#anbox"><span class="std std-ref">Anbox - 在Linux上运行Android程序</span></a> ，本文则依然有探索过程排查异常的经验，可以帮助我们了解Android和Anbox运行的原理以及问题排查的思路。</p>
 <p>记录比较散乱，也许对你排查会有启发，所以汇总如下。</p>
 <section id="anbox">
-<h3>Anbox<a class="headerlink" href="#anbox" title="Link to this heading">¶</a></h3>
+<h3>Anbox<a class="headerlink" href="#anbox" title="Link to this heading"></a></h3>
 <p>Anbox是开源兼容层，通过LXC容器构建Android运行环境，使得移动应用程序能偶运行在Linux环境。由于使用容器，采用原生Linux内核执行应用程序，所以非常轻量级并且保障了运行速度。</p>
 </section>
 </section>
 <section id="id2">
-<h2>安装Anbox<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
+<h2>安装Anbox<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
 <ul>
 <li><p>首先确保系统安装了Linux内核头文件:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">pacman</span> <span class="o">-</span><span class="n">S</span> <span class="n">linux</span><span class="o">-</span><span class="n">headers</span>
@@ -219,7 +226,7 @@
 </div>
 </section>
 <section id="id3">
-<h2>使用Anbox准备<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h2>
+<h2>使用Anbox准备<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
 <ul>
 <li><p>在执行 <code class="docutils literal notranslate"><span class="pre">anbox</span></code> 之前，需要先执行 <code class="docutils literal notranslate"><span class="pre">anbox-bridge</span></code> 来激活网络，此时使用 <code class="docutils literal notranslate"><span class="pre">brctl</span> <span class="pre">show</span></code> 可以看到:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">bridge</span> <span class="n">name</span>  <span class="n">bridge</span> <span class="nb">id</span>               <span class="n">STP</span> <span class="n">enabled</span>     <span class="n">interfaces</span>
@@ -235,7 +242,7 @@
 </ul>
 </section>
 <section id="id4">
-<h2>编译报错处理<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h2>
+<h2>编译报错处理<a class="headerlink" href="#id4" title="Link to this heading"></a></h2>
 <ul>
 <li><p>编译报错:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="n">huatai</span><span class="o">/.</span><span class="n">cache</span><span class="o">/</span><span class="n">yay</span><span class="o">/</span><span class="n">anbox</span><span class="o">-</span><span class="n">git</span><span class="o">/</span><span class="n">src</span><span class="o">/</span><span class="n">anbox</span><span class="o">/</span><span class="n">src</span><span class="o">/</span><span class="n">anbox</span><span class="o">/</span><span class="n">logger</span><span class="o">.</span><span class="n">cpp</span><span class="p">:</span><span class="mi">20</span><span class="p">:</span> <span class="n">error</span><span class="p">:</span> <span class="s2">&quot;BOOST_LOG_DYN_LINK&quot;</span> <span class="n">redefined</span> <span class="p">[</span><span class="o">-</span><span class="n">Werror</span><span class="p">]</span>
@@ -249,7 +256,7 @@
 </div></blockquote>
 </section>
 <section id="id5">
-<h2>运行报错处理<a class="headerlink" href="#id5" title="Link to this heading">¶</a></h2>
+<h2>运行报错处理<a class="headerlink" href="#id5" title="Link to this heading"></a></h2>
 <ul class="simple">
 <li><p>先在菜单点击 <code class="docutils literal notranslate"><span class="pre">anbox-bridge</span></code> 启动网桥</p></li>
 <li><p>然后在菜单启动 <code class="docutils literal notranslate"><span class="pre">anbox</span></code></p></li>
@@ -298,7 +305,7 @@
 </div>
 <p>检查启动以后建立的 <code class="docutils literal notranslate"><span class="pre">/sys/fs/cgroup/cpuset/lxc.monitor/</span></code> 和子目录 <code class="docutils literal notranslate"><span class="pre">lxc.monitor</span></code> 的所有proc文件内容都是空的，例如 <code class="docutils literal notranslate"><span class="pre">/sys/fs/cgroup/cpuset/lxc.monitor/cpuset.cpus</span></code> 和 <code class="docutils literal notranslate"><span class="pre">/sys/fs/cgroup/cpuset/lxc.monitor/default/cpuset.cpus</span></code> ，发现目录下所有的设置值都是空的。参考 <a class="reference external" href="https://serverfault.com/questions/579555/cgroup-no-space-left-on-device">Cgroup - no space left on device</a> ，实际上这些proc文件需要有初始值，否则就会出现 <code class="docutils literal notranslate"><span class="pre">no</span> <span class="pre">space</span> <span class="pre">left</span> <span class="pre">on</span> <span class="pre">device</span></code> 。</p>
 <p>为何创建的cgroup配置没有默认继承上一级cgroup配置？</p>
-<p>参考 <a class="reference external" href="https://github.com/lxc/lxd/issues/6257">cgfsng - cgroups/cgfsng.c:__do_cgroup_enter:1500 - No space left on device - Failed to enter cgroup “/sys/fs/cgroup/cpuset//lxc.monitor/test/cgroup.procs” #6257</a> ，child cgroup继承parent的开关参数在 <code class="docutils literal notranslate"><span class="pre">/sys/fs/cgroup/cpuset/cgroup.clone_children</span></code> ，检查arch linux的默认配置，这个参数值是 <code class="docutils literal notranslate"><span class="pre">0</span></code> ，也就是没有继承:</p>
+<p>参考 <a class="reference external" href="https://github.com/lxc/lxd/issues/6257">cgfsng - cgroups/cgfsng.c:__do_cgroup_enter:1500 - No space left on device - Failed to enter cgroup &quot;/sys/fs/cgroup/cpuset//lxc.monitor/test/cgroup.procs&quot; #6257</a> ，child cgroup继承parent的开关参数在 <code class="docutils literal notranslate"><span class="pre">/sys/fs/cgroup/cpuset/cgroup.clone_children</span></code> ，检查arch linux的默认配置，这个参数值是 <code class="docutils literal notranslate"><span class="pre">0</span></code> ，也就是没有继承:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ cat /sys/fs/cgroup/cpuset/cgroup.clone_children
 0
 </pre></div>
@@ -374,7 +381,7 @@
 </div>
 </section>
 <section id="id7">
-<h2>完整设置<a class="headerlink" href="#id7" title="Link to this heading">¶</a></h2>
+<h2>完整设置<a class="headerlink" href="#id7" title="Link to this heading"></a></h2>
 <p>为了能够今后自动就绪环境，设置系统服务自动启动:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">systemctl</span> <span class="n">enable</span> <span class="n">systemd</span><span class="o">-</span><span class="n">resolved</span><span class="o">.</span><span class="n">service</span>
 <span class="n">sudo</span> <span class="n">systemctl</span> <span class="n">enable</span> <span class="n">systemd</span><span class="o">-</span><span class="n">networkd</span><span class="o">.</span><span class="n">service</span>
@@ -394,7 +401,7 @@
 <p>或者从菜单选择运行anbox</p>
 </section>
 <section id="snapanbox">
-<h2>改为snap来安装Anbox<a class="headerlink" href="#snapanbox" title="Link to this heading">¶</a></h2>
+<h2>改为snap来安装Anbox<a class="headerlink" href="#snapanbox" title="Link to this heading"></a></h2>
 <p>如上所述，在Arch中确实很难解决运行Anbox问题，所以回退到采用snap来保障运行环境。</p>
 <ul>
 <li><p>停止服务:</p>
@@ -484,7 +491,7 @@
 </div>
 </section>
 <section id="snap">
-<h2>使用snap案例<a class="headerlink" href="#snap" title="Link to this heading">¶</a></h2>
+<h2>使用snap案例<a class="headerlink" href="#snap" title="Link to this heading"></a></h2>
 <ul>
 <li><p>查询Ubuntu Store:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">snap</span> <span class="n">find</span> <span class="o">&lt;</span><span class="n">searchterm</span><span class="o">&gt;</span>
@@ -535,7 +542,7 @@ hello-world  6.4        29    stable    canonical✓  -
 </li>
 </ul>
 <section id="net-err-name-not-resolved">
-<h3>net::ERR_NAME_NOT_RESOLVED<a class="headerlink" href="#net-err-name-not-resolved" title="Link to this heading">¶</a></h3>
+<h3>net::ERR_NAME_NOT_RESOLVED<a class="headerlink" href="#net-err-name-not-resolved" title="Link to this heading"></a></h3>
 <p>使用snap来运行anbox，确实非常容易解决之前直接部署在arch linux主机模式无法刷新和相应键盘鼠标的问题。但是，使用webview浏览器就发现，实际上地址解析存在问题：</p>
 <figure class="align-default">
 <a class="reference internal image-reference" href="../_images/anbox_dns_error.png"><img alt="../_images/anbox_dns_error.png" src="../_images/anbox_dns_error.png" style="width: 330.0px; height: 171.75px;" /></a>
@@ -575,7 +582,7 @@ hello-world  6.4        29    stable    canonical✓  -
 </ul>
 <p>但是我发现问题并没有解决。</p>
 <section id="id9">
-<h4>进一步排查<a class="headerlink" href="#id9" title="Link to this heading">¶</a></h4>
+<h4>进一步排查<a class="headerlink" href="#id9" title="Link to this heading"></a></h4>
 <ul class="simple">
 <li><p>执行 <code class="docutils literal notranslate"><span class="pre">adb</span> <span class="pre">shell</span></code> 命令可以登陆到Android虚拟机内部</p></li>
 </ul>
@@ -719,7 +726,7 @@ hello-world  6.4        29    stable    canonical✓  -
 </div>
 </li>
 </ul>
-<p>That’s It…!!! We are done…!!!</p>
+<p>That's It...!!! We are done...!!!</p>
 <p>现在可以访问外网了。</p>
 <ul>
 <li><p>将配制保存成永久:</p>
@@ -732,7 +739,7 @@ hello-world  6.4        29    stable    canonical✓  -
 </section>
 </section>
 <section id="google-play">
-<h3>安装Google Play<a class="headerlink" href="#google-play" title="Link to this heading">¶</a></h3>
+<h3>安装Google Play<a class="headerlink" href="#google-play" title="Link to this heading"></a></h3>
 <ul>
 <li><p>安装Google Play:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">wget</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">raw</span><span class="o">.</span><span class="n">githubusercontent</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">geeks</span><span class="o">-</span><span class="n">r</span><span class="o">-</span><span class="n">us</span><span class="o">/</span><span class="n">anbox</span><span class="o">-</span><span class="n">playstore</span><span class="o">-</span><span class="n">installer</span><span class="o">/</span><span class="n">master</span><span class="o">/</span><span class="n">install</span><span class="o">-</span><span class="n">playstore</span><span class="o">.</span><span class="n">sh</span>
@@ -746,15 +753,15 @@ hello-world  6.4        29    stable    canonical✓  -
 </section>
 </section>
 <section id="id11">
-<h2>安装应用程序<a class="headerlink" href="#id11" title="Link to this heading">¶</a></h2>
+<h2>安装应用程序<a class="headerlink" href="#id11" title="Link to this heading"></a></h2>
 <p>最好是从Google Play应用商店安装，不过有很多国内应用提供apk包，可以通过adb命令安装到虚拟机中:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">adb</span> <span class="n">install</span> <span class="n">app</span><span class="o">.</span><span class="n">apk</span>
 </pre></div>
 </div>
 <p>安装完成后，在 Anbox Application Manager可以看到安装的应用程序。</p>
 <section id="id12">
-<h3>微信<a class="headerlink" href="#id12" title="Link to this heading">¶</a></h3>
-<p>微信虽然能够安装，但是无法启动。参考 <a class="reference external" href="https://github.com/anbox/anbox/issues/976">Although I installed wechat,but it can’t run #976</a> ，有建议改成 <a class="reference external" href="https://docs.anbox.io/userguide/advanced/software_rendering.html">Anbox Software Rendering</a> 来解决这个问题:</p>
+<h3>微信<a class="headerlink" href="#id12" title="Link to this heading"></a></h3>
+<p>微信虽然能够安装，但是无法启动。参考 <a class="reference external" href="https://github.com/anbox/anbox/issues/976">Although I installed wechat,but it can't run #976</a> ，有建议改成 <a class="reference external" href="https://docs.anbox.io/userguide/advanced/software_rendering.html">Anbox Software Rendering</a> 来解决这个问题:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">snap</span> <span class="nb">set</span> <span class="n">anbox</span> <span class="n">software</span><span class="o">-</span><span class="n">rendering</span><span class="o">.</span><span class="n">enable</span><span class="o">=</span><span class="n">true</span>
 <span class="n">snap</span> <span class="n">restart</span> <span class="n">anbox</span><span class="o">.</span><span class="n">container</span><span class="o">-</span><span class="n">manager</span>
 </pre></div>
@@ -772,7 +779,7 @@ hello-world  6.4        29    stable    canonical✓  -
 </section>
 </section>
 <section id="linux">
-<h2>微信Linux版本<a class="headerlink" href="#linux" title="Link to this heading">¶</a></h2>
+<h2>微信Linux版本<a class="headerlink" href="#linux" title="Link to this heading"></a></h2>
 <p>微信有一个Linux版本，基于Qt开发，可以方便在linux下实现基本的沟通。通过snap可以安装:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">yay</span> <span class="o">-</span><span class="n">S</span> <span class="n">snapd</span> <span class="n">snapd</span><span class="o">-</span><span class="n">xdg</span><span class="o">-</span><span class="nb">open</span>
 </pre></div>
@@ -792,7 +799,7 @@ hello-world  6.4        29    stable    canonical✓  -
 </div>
 </section>
 <section id="ramboxfranz">
-<h2>Rambox和Franz<a class="headerlink" href="#ramboxfranz" title="Link to this heading">¶</a></h2>
+<h2>Rambox和Franz<a class="headerlink" href="#ramboxfranz" title="Link to this heading"></a></h2>
 <p>Rambox和 <a class="reference external" href="https://github.com/meetfranz/franz">Franz</a> 提供了将消息应用(WhatsApp, Facebook Messenger, Slack, WeChat, Telegram等)包装成单一应用，可以跨平台运行在Windows，Mac, Linux等平台。类似的还有 <code class="docutils literal notranslate"><span class="pre">Fedi</span></code> (基于Frank)， <code class="docutils literal notranslate"><span class="pre">Station</span></code>, <code class="docutils literal notranslate"><span class="pre">Utopia</span></code> , <code class="docutils literal notranslate"><span class="pre">Hamsket</span></code> 。这些应用大多都是基于 electronic 的web应用包装，所以运行起来非常消耗内存。优点是只要消息应用的服务方提供WEB方式，都能够包装到应用中。详细的应用对比可以参考
 <a class="reference external" href="https://alternativeto.net/software/rambox/">Rambox Alternatives</a></p>
 <div class="admonition note">
@@ -801,7 +808,7 @@ hello-world  6.4        29    stable    canonical✓  -
 </div>
 </section>
 <section id="id13">
-<h2>参考<a class="headerlink" href="#id13" title="Link to this heading">¶</a></h2>
+<h2>参考<a class="headerlink" href="#id13" title="Link to this heading"></a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="https://wiki.archlinux.org/index.php/Anbox">Arch Linux社区文档 - Anbox</a></p></li>
 <li><p><a class="reference external" href="https://forum.manjaro.org/t/running-android-applications-on-arch-using-anbox/53332">Running Android applications on Arch using anbox</a></p></li>
@@ -813,24 +820,36 @@ hello-world  6.4        29    stable    canonical✓  -
 
            </div>
           </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="ssh_tunnel_gfw_autoproxy.html" class="btn btn-neutral float-left" title="结合SSH Tunnel和AutoProxy插件翻墙" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="win10_ssh_server.html" class="btn btn-neutral float-left" title="Windows 10 SSH服务" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../copyright.html">Copyright</a> 2018 - now, Huatai Huang.</p>
+    <p>&#169; <a href="../copyright.html">版权所有</a> 2018 - now, Huatai Huang。</p>
   </div>
 
-  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
   
     <!-- your html code here -->
     <br>
-    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡</a></p>
-     
+    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡 👈</a></p>
+    <br>
+    <p>网站采用 <a href="https://utteranc.es/">utterances</a> 评论系统，所有评论存储在<a href="https://github.com/huataihuang/cloud-atlas/issues">GitHub issues</a> 中，如果你看不到下方的评论框，那么可能需要<a href="https://cloud-atlas.readthedocs.io/zh-cn/latest/linux/security/vpn/index.html">自备梯子</a> 👈</p>
+    <div class="articleComments">
+        <comments>
+  <script src="https://utteranc.es/client.js"
+    repo="huataihuang/cloud-atlas"
+    issue-term="pathname"
+    theme="github-light"
+    crossorigin="anonymous"
+    async>
+  </script>
+</comments>
+    </div>
 
 
 </footer>

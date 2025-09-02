@@ -1,7 +1,7 @@
 .. _network:
 
 =================================
-Network Atlas
+Network
 =================================
 
 .. toctree::
@@ -15,6 +15,7 @@ Network Atlas
    packet_analysis/index
    p2p/index
    kcp/index
+   wifi/index
 
 .. only::  subproject and html
 

@@ -1,21 +1,25 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh" data-content_root="../../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>容器运行环境快速起步 &mdash; Cloud Atlas 0.1 文档</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+  <title>容器运行环境快速起步 &mdash; Cloud Atlas: Discovery beta 文档</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=fd3f3429" />
+
+  
+    <link rel="shortcut icon" href="../../_static/favicon.png"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="../../_static/documentation_options.js?v=7c91f8fd"></script>
-        <script src="../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=8534f863"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
         <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
-        <script src="../../_static/translations.js?v=beaddf03"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../../genindex.html" />
     <link rel="search" title="搜索" href="../../search.html" />
@@ -33,28 +37,32 @@
           
           
           <a href="../../index.html" class="icon icon-home">
-            Cloud Atlas
+            Cloud Atlas: Discovery
           </a>
+              <div class="version">
+                1.1
+              </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../studio/index.html">Studio Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../infrastructure/index.html">Infrastructure Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../devops/index.html">DevOps Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kvm/index.html">KVM Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../ceph/index.html">Ceph Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../gluster/index.html">Gluster Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../ovirt/index.html">oVirt Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../openstack/index.html">OpenStack Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../docker/index.html">Docker Atlas</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Kubernetes Atlas</a><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../studio/index.html">Studio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../infrastructure/index.html">Infrastructure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../devops/index.html">DevOps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kvm/index.html">KVM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ceph/index.html">Ceph</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../gluster/index.html">Gluster</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ovirt/index.html">oVirt</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../openstack/index.html">OpenStack</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../docker/index.html">Docker</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Kubernetes</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../think_k8s.html">Kubernetes的思考</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../kubernetes_overview.html">Kubernetes概览</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../startup_prepare/index.html">Kubernetes起步准备</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../startup/index.html">Kubernetes快速起步</a></li>
@@ -100,53 +108,56 @@
 <li class="toctree-l2"><a class="reference internal" href="../gpu/index.html">GPU Kubernetes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../kubeflow/index.html">Kubeflow - Kubernetes机器学习工作流平台</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../argo/index.html">Argo - 基于Kubernetes的持续集成和工作流</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../kueue/index.html">Kueue - K8s原生批处理调度</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../k8s_android/index.html">Kubernetes运行Android</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../k3s/index.html">K3s - 轻量级Kubernetes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../k0s/index.html">K0s - 轻量级Kubernetes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../platform/index.html">Kubernetes之上的平台</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../cloud/index.html">Kubernetes云厂商</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../develop/index.html">Kubernetes开发</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cncf/index.html">CNCF(Cloud Native Computing Foudation)</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../kubernetes_from_scratch/index.html">Kubernetes From Scratch (KFS) Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../rancher/index.html">Rancher Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../openshift/index.html">OpenShift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../sql/index.html">SQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../sqlite/index.html">SQLite Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../mysql/index.html">MySQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../pgsql/index.html">PostgreSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../clickhouse/index.html">ClickHouse Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../nosql/index.html">NoSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../redis/index.html">Redis Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../network/index.html">Network Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../infra_service/index.html">Infra-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../infra_search/index.html">Search Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../info_service/index.html">Info-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../web/index.html">Web Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../big_data/index.html">Big Data Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../machine_learning/index.html">Machine Learning Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../linux/index.html">Linux Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kernel/index.html">Kernel Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../performance/index.html">Performance Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../distributed_system/index.html">Distributed System Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../shell/index.html">Shell Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../python/index.html">Python Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../django/index.html">Django Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../flask/index.html">Flask Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../javascript/index.html">JavaScript Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../nodejs/index.html">Node.js Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../clang/index.html">C Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../golang/index.html">Go Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../swift/index.html">Swift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../rust/index.html">Rust Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../ruby/index.html">Ruby Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../arm/index.html">ARM Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../android/index.html">Android Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../bsd/index.html">BSD Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../apple/index.html">Apple Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../windows/index.html">Windows Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../real/index.html">Real Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../management/index.html">Management Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../life/index.html">Life Atlas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../k8s_dev/index.html">Kubernetes Develop</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../rancher/index.html">Rancher</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../openshift/index.html">OpenShift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../sql/index.html">SQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../sqlite/index.html">SQLite</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../mysql/index.html">MySQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../pgsql/index.html">PostgreSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../nosql/index.html">NoSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../network/index.html">Network</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../infra_service/index.html">Infra-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../infra_search/index.html">Infra-Search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../web/index.html">Web</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../info_service/index.html">Info-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../big_data/index.html">Big Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../machine_learning/index.html">Machine Learning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../drone/index.html">Drone</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../linux/index.html">Linux</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kernel/index.html">Kernel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../performance/index.html">Performance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../distributed_system/index.html">Distributed System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../shell/index.html">Shell</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../python/index.html">Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../django/index.html">Django</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../javascript/index.html">JavaScript</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../nodejs/index.html">Node.js</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../clang/index.html">C</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../golang/index.html">Go</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../swift/index.html">Swift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../rust/index.html">Rust</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ruby/index.html">Ruby</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lua/index.html">Lua</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../arm/index.html">ARM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../raspberry_pi/index.html">Raspberry Pi</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../android/index.html">Android</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../bsd/index.html">BSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../freebsd/index.html">FreeBSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../apple/index.html">Apple</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../windows/index.html">Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../real/index.html">Real</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../management/index.html">Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../life/index.html">Life</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../copyright.html">Copyright</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../aboutme.html">关于作者</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../donate.html">捐赠</a></li>
@@ -159,21 +170,21 @@
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../index.html">Cloud Atlas</a>
+          <a href="../../index.html">Cloud Atlas: Discovery</a>
       </nav>
 
       <div class="wy-nav-content">
         <div class="rst-content">
-          <div role="navigation" aria-label="Page navigation">
+          <div role="navigation" aria-label="页面导航">
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
-          <li class="breadcrumb-item"><a href="../index.html">Kubernetes Atlas</a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Kubernetes</a></li>
           <li class="breadcrumb-item"><a href="index.html">容器运行时(Container Runtimes)</a></li>
       <li class="breadcrumb-item active">容器运行环境快速起步</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../../_sources/kubernetes/container_runtimes/container_runtimes_startup.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../_sources/kubernetes/container_runtimes/container_runtimes_startup.rst.txt" rel="nofollow"> 查看页面源码</a>
       </li>
   </ul>
   <hr/>
@@ -182,7 +193,7 @@
            <div itemprop="articleBody">
              
   <section id="container-runtimes-startup">
-<span id="id1"></span><h1>容器运行环境快速起步<a class="headerlink" href="#container-runtimes-startup" title="Link to this heading">¶</a></h1>
+<span id="id1"></span><h1>容器运行环境快速起步<a class="headerlink" href="#container-runtimes-startup" title="Link to this heading"></a></h1>
 <p>在Kubernetes的Pod中运行容器，系统需要具备一个container runtime。并且Kubernetes支持多种contrainer runtime:</p>
 <ul class="simple">
 <li><p>Docker</p></li>
@@ -193,14 +204,14 @@
 <p>默认情况下，Kubernetes使用 <code class="docutils literal notranslate"><span class="pre">Container</span> <span class="pre">Runtime</span> <span class="pre">Interface(CRI)</span></code> 来和选择的容器运行时交互。如果没有指定运行时，则 <a class="reference internal" href="../deploy/bootstrap_kubernetes_single/kubeadm.html#kubeadm"><span class="std std-ref">kubeadm</span></a> 自动尝试检测安装的容器运行</p>
 <div class="admonition note">
 <p class="admonition-title">备注</p>
-<p>Docker Engine没有直接实现CRI，所以在Kubernetes中使用 <a class="reference internal" href="../../docker/index.html#docker"><span class="std std-ref">Docker Atlas</span></a> 需要一个附加的服务 <code class="docutils literal notranslate"><span class="pre">cri-dockerd</span></code> 来使用传统的Docker Engine。</p>
+<p>Docker Engine没有直接实现CRI，所以在Kubernetes中使用 <a class="reference internal" href="../../docker/index.html#docker"><span class="std std-ref">Docker</span></a> 需要一个附加的服务 <code class="docutils literal notranslate"><span class="pre">cri-dockerd</span></code> 来使用传统的Docker Engine。</p>
 </div>
 <p>Kubernetes通过以下约定来检测支持的endpoints:</p>
 <table class="docutils align-default" id="id3">
-<caption><span class="caption-text">kubernetes检测runtime运行时endpoints</span><a class="headerlink" href="#id3" title="Link to this table">¶</a></caption>
+<caption><span class="caption-text">kubernetes检测runtime运行时endpoints</span><a class="headerlink" href="#id3" title="Link to this table"></a></caption>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col style="width: 50.0%" />
+<col style="width: 50.0%" />
 </colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Runtime运行时</p></th>
@@ -220,7 +231,7 @@
 </tbody>
 </table>
 <section id="cgroup">
-<h2>Cgroup驱动<a class="headerlink" href="#cgroup" title="Link to this heading">¶</a></h2>
+<h2>Cgroup驱动<a class="headerlink" href="#cgroup" title="Link to this heading"></a></h2>
 <p>在使用systemd作为init的Linux发行版中，init进程生成和控制了一个根控制组(root control group)并且systemd作为一个cgroup manager。systemd已经紧密结合了cgroups并且为每个进程分配cgroup。systemd可以配置container runtime 和 kubelet 来使用 <code class="docutils literal notranslate"><span class="pre">cgroupfs</span></code> 。注意，如果独立于systemd来使用 <code class="docutils literal notranslate"><span class="pre">cgroupfs</span></code> 意味着系统有两套不同的cgruop manager。</p>
 <p>控制组(control groups)用于进程使用的资源。一个单一的cgroup manager可以简化资源分配的视图并且天然就具备可用及使用资源的一致性视图。所以如果我们使用两个cgroup manager就不得不面对这些资源的两种视图：需要检查通过 <code class="docutils literal notranslate"><span class="pre">cgroupfs</span></code> 配置的kubelet和Docker的配置的字段，同时又要检查节点上剩下的由 <code class="docutils literal notranslate"><span class="pre">systemd</span></code> 配置的进程。这种情况会导致系统不稳定。</p>
 <p>要修改容器运行时环境和kubelet使用 <code class="docutils literal notranslate"><span class="pre">systemd</span></code> 作为cgroup驱动以便系统更佳稳定。请注意下文中设置Docker的配置 <code class="docutils literal notranslate"><span class="pre">native.cgroupdriver=systemd</span></code> 选项。</p>
@@ -229,7 +240,7 @@
 <p>请不要修改已经加入集群节点的cgroup驱动：如果kubelet已经使用了一种cgroup driver创建了Pod，修改容器运行时环境使用另一种cgroup driver会导致对已经存在Pods重新创建PodSandbox时出错，甚至重新启动kubelet也不能解决这个错误。如果要修改节点cgroup driver，建议先从集群移除节点，然后修改cgroup driver再重新加入集群。</p>
 </div>
 <section id="cgroup-v2">
-<h3>Cgroup v2<a class="headerlink" href="#cgroup-v2" title="Link to this heading">¶</a></h3>
+<h3>Cgroup v2<a class="headerlink" href="#cgroup-v2" title="Link to this heading"></a></h3>
 <ul class="simple">
 <li><p>与 <a class="reference internal" href="../../kernel/cgroup/cgroup_v1.html#cgroup-v1"><span class="std std-ref">Control Group v1</span></a> 不同的是， <a class="reference internal" href="../../kernel/cgroup/cgroup_v2.html#cgroup-v2"><span class="std std-ref">Control Group v2</span></a> 只有一个层次结构，而不是每个控制器有一个不同的层次结构。</p></li>
 <li><p>尽管内核支持混合配置，即其中一些控制器由 cgroup v1 管理，另一些由 cgroup v2 管理， Kubernetes 仅支持使用同一 cgroup 版本来管理所有控制器。</p></li>
@@ -253,15 +264,15 @@
 </section>
 </section>
 <section id="container-runtimes">
-<h2>容器运行时(container runtimes)<a class="headerlink" href="#container-runtimes" title="Link to this heading">¶</a></h2>
+<h2>容器运行时(container runtimes)<a class="headerlink" href="#container-runtimes" title="Link to this heading"></a></h2>
 <p>Kubernetes不需要(现在甚至不太支持)完整的Docker，只需要提供 Container Runtime Interface(CRI)的容器运行时(runtime)</p>
 <section id="containerd">
-<h3><a class="reference internal" href="containerd/index.html#containerd"><span class="std std-ref">containerd运行时(runtime)</span></a><a class="headerlink" href="#containerd" title="Link to this heading">¶</a></h3>
+<h3><a class="reference internal" href="containerd/index.html#containerd"><span class="std std-ref">containerd运行时(runtime)</span></a><a class="headerlink" href="#containerd" title="Link to this heading"></a></h3>
 <p>完整步骤待整理，见 <a class="reference internal" href="containerd/install_containerd_official_binaries.html#install-containerd-official-binaries"><span class="std std-ref">安装containerd官方执行程序</span></a></p>
 </section>
 </section>
 <section id="docker-k8s-1-24">
-<h2>Docker(适用于K8s 1.24版本之前)<a class="headerlink" href="#docker-k8s-1-24" title="Link to this heading">¶</a></h2>
+<h2>Docker(适用于K8s 1.24版本之前)<a class="headerlink" href="#docker-k8s-1-24" title="Link to this heading"></a></h2>
 <div class="admonition warning">
 <p class="admonition-title">警告</p>
 <p>从 Kubernetes 1.24 开始 <span class="sphinxnotes-strike" style="text-decoration: line-through;">已经移除了Docker支持，默认不再需要使用Docker</span> (依然可以使用 <code class="docutils literal notranslate"><span class="pre">Docker</span> <span class="pre">Engine</span></code> ，但是需要安装Mirantis公司(这家公司收购了企业版Docker Engine)提供的 <code class="docutils literal notranslate"><span class="pre">cri-dockerd</span></code> ，建议直接采取原生CRI的 <a class="reference internal" href="index.html#container-runtimes"><span class="std std-ref">容器运行时(Container Runtimes)</span></a> ，如 <a class="reference internal" href="containerd/index.html#containerd"><span class="std std-ref">containerd运行时(runtime)</span></a> 。</p>
@@ -271,7 +282,7 @@
 <p><span class="sphinxnotes-strike" style="text-decoration: line-through;">我的个人实践目前仅限于Docker作为Kubernetes的runtime，其他容器运行环境可能会在某些需要的时候尝试实践。</span> 我之前实践是采用Docker Engine作为runtime，但是从 Kubernetes 1.24 开始，我改为直接使用 <a class="reference internal" href="containerd/index.html#containerd"><span class="std std-ref">containerd运行时(runtime)</span></a> 部署。</p>
 </div>
 <section id="ubuntu-16-04">
-<h3>Ubuntu 16.04<a class="headerlink" href="#ubuntu-16-04" title="Link to this heading">¶</a></h3>
+<h3>Ubuntu 16.04<a class="headerlink" href="#ubuntu-16-04" title="Link to this heading"></a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Install Docker CE</span>
 <span class="c1">## Set up the repository:</span>
 <span class="c1">### Install packages to allow apt to use a repository over HTTPS</span>
@@ -310,7 +321,7 @@
 </div>
 </section>
 <section id="ubuntu-20-04">
-<h3>Ubuntu 20.04<a class="headerlink" href="#ubuntu-20-04" title="Link to this heading">¶</a></h3>
+<h3>Ubuntu 20.04<a class="headerlink" href="#ubuntu-20-04" title="Link to this heading"></a></h3>
 <p>在 <a class="reference internal" href="../../real/priv_cloud/priv_cloud_infra.html#priv-cloud-infra"><span class="std std-ref">私有云架构</span></a> 部署中采用 <a class="reference internal" href="../../linux/ubuntu_linux/index.html#ubuntu-linux"><span class="std std-ref">Ubuntu Linux</span></a> 20.04 LTS版本，采用了发行版提供的 <code class="docutils literal notranslate"><span class="pre">docker.io</span></code> 软件包部署:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">apt</span> <span class="n">update</span> <span class="o">&amp;&amp;</span> <span class="n">sudo</span> <span class="n">apt</span> <span class="n">upgrade</span>
 <span class="n">sudo</span> <span class="n">apt</span> <span class="n">install</span> <span class="n">docker</span><span class="o">.</span><span class="n">io</span> <span class="o">-</span><span class="n">y</span>
@@ -342,7 +353,7 @@
 </div>
 </section>
 <section id="centos-rhel-7-4">
-<h3>CentOS/RHEL 7.4+<a class="headerlink" href="#centos-rhel-7-4" title="Link to this heading">¶</a></h3>
+<h3>CentOS/RHEL 7.4+<a class="headerlink" href="#centos-rhel-7-4" title="Link to this heading"></a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Install Docker CE</span>
 <span class="c1">## Set up the repository</span>
 <span class="c1">### Install required packages.</span>
@@ -421,7 +432,7 @@
 </section>
 </section>
 <section id="centos-8-2">
-<h2>CentOS 8.2<a class="headerlink" href="#centos-8-2" title="Link to this heading">¶</a></h2>
+<h2>CentOS 8.2<a class="headerlink" href="#centos-8-2" title="Link to this heading"></a></h2>
 <p>近期 <a class="reference internal" href="../../linux/redhat_linux/centos/upgrade_centos_7_to_8.html#upgrade-centos-7-to-8"><span class="std std-ref">升级CentOS 7到CentOS 8</span></a> 再 <a class="reference internal" href="../../docker/startup/install_docker_centos8.html#install-docker-centos8"><span class="std std-ref">在CentOS 8上安装Docker CE</span></a> ，过程会比较折腾，但是可以在最新的内核和发行版上部署完整的Kubernetes环境。</p>
 <p>我将补充CentSO 8平台部署Kubernetes和之前在CentOS 7上部署 <a class="reference internal" href="../deploy/bootstrap_kubernetes_ha/ha_k8s.html#ha-k8s"><span class="std std-ref">高可用(HA)Kubernetes集群</span></a> 的不同。</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># 添加docker-ce仓库</span>
@@ -441,7 +452,7 @@
 </div>
 </section>
 <section id="id2">
-<h2>参考<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
+<h2>参考<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="https://kubernetes.io/zh/docs/setup/production-environment/tools/kubeadm/install-kubeadm/">安装 kubeadm</a></p></li>
 </ul>
@@ -451,25 +462,37 @@
 
            </div>
           </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="index.html" class="btn btn-neutral float-left" title="容器运行时(Container Runtimes)" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="cri-o.html" class="btn btn-neutral float-right" title="cri-o容器运行时" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="index.html" class="btn btn-neutral float-left" title="容器运行时(Container Runtimes)" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="cri-o.html" class="btn btn-neutral float-right" title="cri-o容器运行时" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../copyright.html">Copyright</a> 2018 - now, Huatai Huang.</p>
+    <p>&#169; <a href="../../copyright.html">版权所有</a> 2018 - now, Huatai Huang。</p>
   </div>
 
-  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
   
     <!-- your html code here -->
     <br>
-    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡</a></p>
-     
+    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡 👈</a></p>
+    <br>
+    <p>网站采用 <a href="https://utteranc.es/">utterances</a> 评论系统，所有评论存储在<a href="https://github.com/huataihuang/cloud-atlas/issues">GitHub issues</a> 中，如果你看不到下方的评论框，那么可能需要<a href="https://cloud-atlas.readthedocs.io/zh-cn/latest/linux/security/vpn/index.html">自备梯子</a> 👈</p>
+    <div class="articleComments">
+        <comments>
+  <script src="https://utteranc.es/client.js"
+    repo="huataihuang/cloud-atlas"
+    issue-term="pathname"
+    theme="github-light"
+    crossorigin="anonymous"
+    async>
+  </script>
+</comments>
+    </div>
 
 
 </footer>

@@ -1,21 +1,25 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh" data-content_root="../../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>安装和运行minikube &mdash; Cloud Atlas 0.1 文档</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+  <title>minikube &mdash; Cloud Atlas: Discovery beta 文档</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=fd3f3429" />
+
+  
+    <link rel="shortcut icon" href="../../_static/favicon.png"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="../../_static/documentation_options.js?v=7c91f8fd"></script>
-        <script src="../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=8534f863"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
         <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
-        <script src="../../_static/translations.js?v=beaddf03"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../../genindex.html" />
     <link rel="search" title="搜索" href="../../search.html" />
@@ -33,31 +37,35 @@
           
           
           <a href="../../index.html" class="icon icon-home">
-            Cloud Atlas
+            Cloud Atlas: Discovery
           </a>
+              <div class="version">
+                1.1
+              </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../studio/index.html">Studio Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../infrastructure/index.html">Infrastructure Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../devops/index.html">DevOps Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kvm/index.html">KVM Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../ceph/index.html">Ceph Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../gluster/index.html">Gluster Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../ovirt/index.html">oVirt Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../openstack/index.html">OpenStack Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../docker/index.html">Docker Atlas</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Kubernetes Atlas</a><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../studio/index.html">Studio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../infrastructure/index.html">Infrastructure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../devops/index.html">DevOps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kvm/index.html">KVM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ceph/index.html">Ceph</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../gluster/index.html">Gluster</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ovirt/index.html">oVirt</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../openstack/index.html">OpenStack</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../docker/index.html">Docker</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Kubernetes</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../think_k8s.html">Kubernetes的思考</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../kubernetes_overview.html">Kubernetes概览</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="index.html">Kubernetes起步准备</a><ul class="current">
-<li class="toctree-l3 current"><a class="current reference internal" href="#">安装和运行minikube</a><ul>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">minikube</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#id1">minikube</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#id3">安装Minikube</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#id5">启动minikube</a></li>
@@ -107,53 +115,56 @@
 <li class="toctree-l2"><a class="reference internal" href="../gpu/index.html">GPU Kubernetes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../kubeflow/index.html">Kubeflow - Kubernetes机器学习工作流平台</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../argo/index.html">Argo - 基于Kubernetes的持续集成和工作流</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../kueue/index.html">Kueue - K8s原生批处理调度</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../k8s_android/index.html">Kubernetes运行Android</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../k3s/index.html">K3s - 轻量级Kubernetes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../k0s/index.html">K0s - 轻量级Kubernetes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../platform/index.html">Kubernetes之上的平台</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../cloud/index.html">Kubernetes云厂商</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../develop/index.html">Kubernetes开发</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cncf/index.html">CNCF(Cloud Native Computing Foudation)</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../kubernetes_from_scratch/index.html">Kubernetes From Scratch (KFS) Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../rancher/index.html">Rancher Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../openshift/index.html">OpenShift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../sql/index.html">SQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../sqlite/index.html">SQLite Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../mysql/index.html">MySQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../pgsql/index.html">PostgreSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../clickhouse/index.html">ClickHouse Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../nosql/index.html">NoSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../redis/index.html">Redis Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../network/index.html">Network Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../infra_service/index.html">Infra-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../infra_search/index.html">Search Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../info_service/index.html">Info-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../web/index.html">Web Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../big_data/index.html">Big Data Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../machine_learning/index.html">Machine Learning Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../linux/index.html">Linux Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kernel/index.html">Kernel Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../performance/index.html">Performance Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../distributed_system/index.html">Distributed System Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../shell/index.html">Shell Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../python/index.html">Python Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../django/index.html">Django Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../flask/index.html">Flask Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../javascript/index.html">JavaScript Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../nodejs/index.html">Node.js Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../clang/index.html">C Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../golang/index.html">Go Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../swift/index.html">Swift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../rust/index.html">Rust Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../ruby/index.html">Ruby Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../arm/index.html">ARM Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../android/index.html">Android Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../bsd/index.html">BSD Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../apple/index.html">Apple Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../windows/index.html">Windows Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../real/index.html">Real Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../management/index.html">Management Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../life/index.html">Life Atlas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../k8s_dev/index.html">Kubernetes Develop</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../rancher/index.html">Rancher</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../openshift/index.html">OpenShift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../sql/index.html">SQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../sqlite/index.html">SQLite</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../mysql/index.html">MySQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../pgsql/index.html">PostgreSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../nosql/index.html">NoSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../network/index.html">Network</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../infra_service/index.html">Infra-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../infra_search/index.html">Infra-Search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../web/index.html">Web</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../info_service/index.html">Info-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../big_data/index.html">Big Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../machine_learning/index.html">Machine Learning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../drone/index.html">Drone</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../linux/index.html">Linux</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kernel/index.html">Kernel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../performance/index.html">Performance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../distributed_system/index.html">Distributed System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../shell/index.html">Shell</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../python/index.html">Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../django/index.html">Django</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../javascript/index.html">JavaScript</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../nodejs/index.html">Node.js</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../clang/index.html">C</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../golang/index.html">Go</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../swift/index.html">Swift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../rust/index.html">Rust</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ruby/index.html">Ruby</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lua/index.html">Lua</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../arm/index.html">ARM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../raspberry_pi/index.html">Raspberry Pi</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../android/index.html">Android</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../bsd/index.html">BSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../freebsd/index.html">FreeBSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../apple/index.html">Apple</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../windows/index.html">Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../real/index.html">Real</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../management/index.html">Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../life/index.html">Life</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../copyright.html">Copyright</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../aboutme.html">关于作者</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../donate.html">捐赠</a></li>
@@ -166,21 +177,21 @@
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../index.html">Cloud Atlas</a>
+          <a href="../../index.html">Cloud Atlas: Discovery</a>
       </nav>
 
       <div class="wy-nav-content">
         <div class="rst-content">
-          <div role="navigation" aria-label="Page navigation">
+          <div role="navigation" aria-label="页面导航">
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
-          <li class="breadcrumb-item"><a href="../index.html">Kubernetes Atlas</a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Kubernetes</a></li>
           <li class="breadcrumb-item"><a href="index.html">Kubernetes起步准备</a></li>
-      <li class="breadcrumb-item active">安装和运行minikube</li>
+      <li class="breadcrumb-item active">minikube</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../../_sources/kubernetes/startup_prepare/install_run_minikube.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../_sources/kubernetes/startup_prepare/install_run_minikube.rst.txt" rel="nofollow"> 查看页面源码</a>
       </li>
   </ul>
   <hr/>
@@ -189,13 +200,13 @@
            <div itemprop="articleBody">
              
   <section id="minikube">
-<span id="install-run-minikube"></span><h1>安装和运行minikube<a class="headerlink" href="#minikube" title="Link to this heading">¶</a></h1>
+<span id="install-run-minikube"></span><h1>minikube<a class="headerlink" href="#minikube" title="Link to this heading"></a></h1>
 <div class="admonition note">
 <p class="admonition-title">备注</p>
 <p>本章节因为是综合了我在多个平台部署minikube的实践，所以比较繁杂。实际上在Linux平台上部署minikube默认配置（使用虚拟机）非常简单。但是，如果使用了一些非标准配置，例如，btrfs作为存储驱动，裸物理机运行minikube则略微复杂。</p>
 </div>
 <section id="id1">
-<span id="id2"></span><h2>minikube<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h2>
+<span id="id2"></span><h2>minikube<a class="headerlink" href="#id1" title="Link to this heading"></a></h2>
 <p>最简单体验完整的Kubernetes集群功能是使用 <a class="reference external" href="https://github.com/kubernetes/minikube">minikube GitHub官网</a> ，这是一个在单个节点上运行Kubernetes的方式，可以用于测试Kubernetes以及本地开发应用。</p>
 <p>minikube是通常通过虚拟机来运行的，也就是说必须在主机上运行Hypervisor，可以是Virtualbox (跨平台) 也可以是 KVM (Linux) 或者 Hyper-V (Windows)，甚至可以使用非常小众的 HyperKit (macOS)。</p>
 <div class="admonition note">
@@ -205,9 +216,9 @@
 </div>
 </section>
 <section id="id3">
-<h2>安装Minikube<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h2>
+<h2>安装Minikube<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
 <section id="ubuntuminikube">
-<h3>Ubuntu平台安装MiniKube<a class="headerlink" href="#ubuntuminikube" title="Link to this heading">¶</a></h3>
+<h3>Ubuntu平台安装MiniKube<a class="headerlink" href="#ubuntuminikube" title="Link to this heading"></a></h3>
 <ul>
 <li><p>安装命令:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">curl</span> <span class="o">-</span><span class="n">LO</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">storage</span><span class="o">.</span><span class="n">googleapis</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">minikube</span><span class="o">/</span><span class="n">releases</span><span class="o">/</span><span class="n">latest</span><span class="o">/</span><span class="n">minikube</span><span class="o">-</span><span class="n">linux</span><span class="o">-</span><span class="n">amd64</span> <span class="o">&amp;&amp;</span> <span class="n">sudo</span> <span class="n">install</span> <span class="n">minikube</span><span class="o">-</span><span class="n">linux</span><span class="o">-</span><span class="n">amd64</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="nb">bin</span><span class="o">/</span><span class="n">minikube</span>
@@ -217,7 +228,7 @@
 </ul>
 </section>
 <section id="linuxminikube">
-<h3>Linux裸机直接部署minikube(快速起步)<a class="headerlink" href="#linuxminikube" title="Link to this heading">¶</a></h3>
+<h3>Linux裸机直接部署minikube(快速起步)<a class="headerlink" href="#linuxminikube" title="Link to this heading"></a></h3>
 <p>为了追求性能，在我的测试环境(Linux)采用了裸物理主机直接运行minikube，并且采用了btrfs作为存储驱动，所以配置略有复杂。详情请见下文。</p>
 <div class="admonition note">
 <p class="admonition-title">备注</p>
@@ -246,21 +257,21 @@
 </div>
 </section>
 <section id="macosminikube">
-<h3>macOS平台安装MiniKube<a class="headerlink" href="#macosminikube" title="Link to this heading">¶</a></h3>
+<h3>macOS平台安装MiniKube<a class="headerlink" href="#macosminikube" title="Link to this heading"></a></h3>
 <div class="admonition note">
 <p class="admonition-title">备注</p>
 <p>macOS的minikube可以选择virtualbox作为后端，也可以选择 <a class="reference external" href="https://github.com/moby/hyperkit">xhyve</a> 作为后端，另外也可以使用VMware Fusion。我分别尝试过使用 xhyve 和 vmware 作为Hypervisor。</p>
 </div>
 <section id="macoshyperkit">
-<h4>macOS安装hyperkit<a class="headerlink" href="#macoshyperkit" title="Link to this heading">¶</a></h4>
+<h4>macOS安装hyperkit<a class="headerlink" href="#macoshyperkit" title="Link to this heading"></a></h4>
 <p>请参考 <a class="reference external" href="https://github.com/moby/hyperkit">GitHub上hyperkit项目</a> 以及我的实践记录： <a class="reference internal" href="../../docker/moby/hyperkit/run_hyperkit.html#build-hyperkit"><span class="std std-ref">编译HyperKit</span></a> 。</p>
 </section>
 <section id="macosvmware-fusion">
-<h4>macOS安装VMware Fusion<a class="headerlink" href="#macosvmware-fusion" title="Link to this heading">¶</a></h4>
+<h4>macOS安装VMware Fusion<a class="headerlink" href="#macosvmware-fusion" title="Link to this heading"></a></h4>
 <p>请参考 <a class="reference internal" href="../../apple/vmware/vmware_fusion.html#vmware-fusion"><span class="std std-ref">Studio环境中的VMware Fusion</span></a> ，我安装了VMware Fusion。使用 <code class="docutils literal notranslate"><span class="pre">vmrun</span> <span class="pre">list</span></code> 可以检查当前运行的VMware虚拟机。</p>
 </section>
 <section id="id4">
-<h4>macOS安装minikube<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h4>
+<h4>macOS安装minikube<a class="headerlink" href="#id4" title="Link to this heading"></a></h4>
 <ul>
 <li><p>通过brew安装minikube(我没有使用这个方法):</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">brew</span> <span class="n">cask</span> <span class="n">install</span> <span class="n">minikube</span>
@@ -281,7 +292,7 @@
 </section>
 </section>
 <section id="id5">
-<h2>启动minikube<a class="headerlink" href="#id5" title="Link to this heading">¶</a></h2>
+<h2>启动minikube<a class="headerlink" href="#id5" title="Link to this heading"></a></h2>
 <ul>
 <li><p>（不推荐直接）启动minikube集群:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">minikube</span> <span class="n">start</span>
@@ -290,7 +301,7 @@
 </li>
 </ul>
 <section id="linuxkvm">
-<h3>Linux平台使用kvm后端<a class="headerlink" href="#linuxkvm" title="Link to this heading">¶</a></h3>
+<h3>Linux平台使用kvm后端<a class="headerlink" href="#linuxkvm" title="Link to this heading"></a></h3>
 <div class="admonition note">
 <p class="admonition-title">备注</p>
 <p>minikube默认使用Virtualbox作为驱动，所以如果简单使用上述命令，会首先下载virtulbox镜像来运行。这可能和你的安装环境不同。所以需要参考 <a class="reference external" href="https://github.com/kubernetes/minikube/blob/master/docs/drivers.md#kvm2-driver">Driver plugin installation</a> 来安装驱动产检，并指定驱动来启动minikube。</p>
@@ -342,11 +353,11 @@
 </div>
 </section>
 <section id="id6">
-<h3>直接物理主机运行minikube<a class="headerlink" href="#id6" title="Link to this heading">¶</a></h3>
-<p>前面我们在 <code class="docutils literal notranslate"><span class="pre">xcloud</span></code> <a class="reference internal" href="../../studio/index.html#studio"><span class="std std-ref">Studio Atlas</span></a> 环境中通过KVM虚拟化运行了minikube主机，现在，我们实现一个通过物理主机直接运行minikube，以节约运行损耗。</p>
+<h3>直接物理主机运行minikube<a class="headerlink" href="#id6" title="Link to this heading"></a></h3>
+<p>前面我们在 <code class="docutils literal notranslate"><span class="pre">xcloud</span></code> <a class="reference internal" href="../../studio/index.html#studio"><span class="std std-ref">Studio</span></a> 环境中通过KVM虚拟化运行了minikube主机，现在，我们实现一个通过物理主机直接运行minikube，以节约运行损耗。</p>
 <div class="admonition note">
 <p class="admonition-title">备注</p>
-<p>对于已经采用了kvm作为后端的主机，如果使用 <code class="docutils literal notranslate"><span class="pre">minikube</span> <span class="pre">config</span> <span class="pre">set</span> <span class="pre">vm-driver</span> <span class="pre">none</span></code> 切换后端，会注意到再次运行 <code class="docutils literal notranslate"><span class="pre">minikube</span> <span class="pre">start</span></code> 会提示由于已经存在一个 “minikube” 虚拟机，所以会忽略参数 <code class="docutils literal notranslate"><span class="pre">--vm-driver=none</span></code> 而依然使用KVM来运行minikube。</p>
+<p>对于已经采用了kvm作为后端的主机，如果使用 <code class="docutils literal notranslate"><span class="pre">minikube</span> <span class="pre">config</span> <span class="pre">set</span> <span class="pre">vm-driver</span> <span class="pre">none</span></code> 切换后端，会注意到再次运行 <code class="docutils literal notranslate"><span class="pre">minikube</span> <span class="pre">start</span></code> 会提示由于已经存在一个 &quot;minikube&quot; 虚拟机，所以会忽略参数 <code class="docutils literal notranslate"><span class="pre">--vm-driver=none</span></code> 而依然使用KVM来运行minikube。</p>
 <p>要创建第二个minikube并且使用裸机来运行，则第二个minikube需要使用明确的命令来启动另一个命名的minikube:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">minikube</span> <span class="n">start</span> <span class="o">-</span><span class="n">p</span> <span class="o">&lt;</span><span class="n">name</span><span class="o">&gt;</span> <span class="o">--</span><span class="n">vm</span><span class="o">-</span><span class="n">driver</span><span class="o">=</span><span class="n">none</span>
 </pre></div>
@@ -378,7 +389,7 @@
 </div>
 </section>
 <section id="arch-linuxminikube">
-<h3>Arch Linux平台实践物理机运行minikube<a class="headerlink" href="#arch-linuxminikube" title="Link to this heading">¶</a></h3>
+<h3>Arch Linux平台实践物理机运行minikube<a class="headerlink" href="#arch-linuxminikube" title="Link to this heading"></a></h3>
 <ul>
 <li><p>由于minikube的物理主机运行模式必须以root身份运行，所以先配置驱动:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">minikube</span> <span class="n">config</span> <span class="nb">set</span> <span class="n">vm</span><span class="o">-</span><span class="n">driver</span> <span class="n">none</span>
@@ -393,7 +404,7 @@
 </div>
 </section>
 <section id="id7">
-<h3>macOS平台使用hyperkit后端<a class="headerlink" href="#id7" title="Link to this heading">¶</a></h3>
+<h3>macOS平台使用hyperkit后端<a class="headerlink" href="#id7" title="Link to this heading"></a></h3>
 <ul>
 <li><p>安装Hyperkit驱动:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">brew</span> <span class="n">install</span> <span class="n">docker</span><span class="o">-</span><span class="n">machine</span><span class="o">-</span><span class="n">driver</span><span class="o">-</span><span class="n">hyperkit</span>
@@ -422,7 +433,7 @@
 </ul>
 </section>
 <section id="macosvmware">
-<h3>macOS平台使用vmware后端<a class="headerlink" href="#macosvmware" title="Link to this heading">¶</a></h3>
+<h3>macOS平台使用vmware后端<a class="headerlink" href="#macosvmware" title="Link to this heading"></a></h3>
 <ul class="simple">
 <li><p>安装VMware统一驱动：首先从 <a class="reference external" href="https://github.com/machine-drivers/docker-machine-driver-vmware/releases">https://github.com/machine-drivers/docker-machine-driver-vmware/releases</a> 下载驱动文件 <code class="docutils literal notranslate"><span class="pre">docker-machine-driver-vmware_darwin_amd64</span></code> ，并将其保存到 <code class="docutils literal notranslate"><span class="pre">$PATH</span></code> 目录，例如，我保存到 <code class="docutils literal notranslate"><span class="pre">~/bin</span></code> （这个目录位于环境变量设置文件 <code class="docutils literal notranslate"><span class="pre">~/.bash_profile</span></code> ，并且命名为 <code class="docutils literal notranslate"><span class="pre">docker-machine-driver-vmware</span></code> 。</p></li>
 </ul>
@@ -459,7 +470,7 @@
 </section>
 </section>
 <section id="id8">
-<h2>使用minikube<a class="headerlink" href="#id8" title="Link to this heading">¶</a></h2>
+<h2>使用minikube<a class="headerlink" href="#id8" title="Link to this heading"></a></h2>
 <ul>
 <li><p>ssh登陆minikub方法:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">minikube</span> <span class="n">ssh</span>
@@ -470,7 +481,7 @@
 <p>minikube虚拟机默认root没有密码，从虚拟机终端可以登陆。</p>
 </section>
 <section id="id9">
-<h2>停止和再次启动minikube<a class="headerlink" href="#id9" title="Link to this heading">¶</a></h2>
+<h2>停止和再次启动minikube<a class="headerlink" href="#id9" title="Link to this heading"></a></h2>
 <p>安装了minikube之后，通过 <code class="docutils literal notranslate"><span class="pre">minikube</span> <span class="pre">stop</span></code> 可以停止，然后通过 <code class="docutils literal notranslate"><span class="pre">minikube</span> <span class="pre">start</span></code> 可以再次启动。</p>
 <div class="admonition note">
 <p class="admonition-title">备注</p>
@@ -478,9 +489,9 @@
 </div>
 </section>
 <section id="id10">
-<h2>minikube异常排查<a class="headerlink" href="#id10" title="Link to this heading">¶</a></h2>
+<h2>minikube异常排查<a class="headerlink" href="#id10" title="Link to this heading"></a></h2>
 <section id="minikube-cri">
-<span id="minikube-debug-cri-install"></span><h3>minikube CRI安装排查<a class="headerlink" href="#minikube-cri" title="Link to this heading">¶</a></h3>
+<span id="minikube-debug-cri-install"></span><h3>minikube CRI安装排查<a class="headerlink" href="#minikube-cri" title="Link to this heading"></a></h3>
 <p>重新在 <a class="reference internal" href="../../linux/ubuntu_linux/ubuntu_on_mbp.html#ubuntu-on-mbp"><span class="std std-ref">MacBook Pro上运行Ubuntu</span></a> (重装了Ubuntu 18.04 LTS Server版本) 之后，我重新部署了 <a class="reference internal" href="../../linux/storage/btrfs/btrfs_in_studio.html#btrfs-in-studio"><span class="std std-ref">Studio环境的Btrfs存储</span></a> 并设置 <a class="reference internal" href="../../docker/storage/docker_btrfs_driver.html#docker-btrfs-driver"><span class="std std-ref">Docker btrfs 存储驱动</span></a> 。首次在裸主机上部署minikube，启动遇到报错:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">*</span> <span class="n">Launching</span> <span class="n">Kubernetes</span> <span class="o">...</span>
 
@@ -547,7 +558,7 @@
 </ul>
 </section>
 <section id="minikube-btrfs">
-<span id="minikube-debug-btrfs"></span><h3>minikube btrfs安装排查<a class="headerlink" href="#minikube-btrfs" title="Link to this heading">¶</a></h3>
+<span id="minikube-debug-btrfs"></span><h3>minikube btrfs安装排查<a class="headerlink" href="#minikube-btrfs" title="Link to this heading"></a></h3>
 <p>再次启动minikube出现报错:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>[WARNING Hostname]: hostname &quot;minikube&quot; could not be reached
 [WARNING Hostname]: hostname &quot;minikube&quot;: lookup minikube on 8.8.8.8:53: no such host
@@ -589,7 +600,7 @@ error execution phase preflight: [preflight] Some fatal errors occurred:
 </div>
 </section>
 <section id="kubelet">
-<h3>启动kubelet失败<a class="headerlink" href="#kubelet" title="Link to this heading">¶</a></h3>
+<h3>启动kubelet失败<a class="headerlink" href="#kubelet" title="Link to this heading"></a></h3>
 <ul>
 <li><p>在忽略了 SystemVerification 之后，启动发现 kubelet 失败:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">wait</span><span class="o">-</span><span class="n">control</span><span class="o">-</span><span class="n">plane</span><span class="p">]</span> <span class="n">Waiting</span> <span class="k">for</span> <span class="n">the</span> <span class="n">kubelet</span> <span class="n">to</span> <span class="n">boot</span> <span class="n">up</span> <span class="n">the</span> <span class="n">control</span> <span class="n">plane</span> <span class="k">as</span> <span class="n">static</span> <span class="n">Pods</span> <span class="kn">from</span> <span class="nn">directory</span> <span class="s2">&quot;/etc/kubernetes/manifests&quot;</span><span class="o">.</span> <span class="n">This</span> <span class="n">can</span> <span class="n">take</span> <span class="n">up</span> <span class="n">to</span> <span class="mi">4</span><span class="n">m0s</span>
@@ -630,7 +641,7 @@ error execution phase preflight: [preflight] Some fatal errors occurred:
 </div>
 </section>
 <section id="systemd-resolv">
-<h3>使用 <code class="docutils literal notranslate"><span class="pre">systemd-resolv</span></code> 配置传递<a class="headerlink" href="#systemd-resolv" title="Link to this heading">¶</a></h3>
+<h3>使用 <code class="docutils literal notranslate"><span class="pre">systemd-resolv</span></code> 配置传递<a class="headerlink" href="#systemd-resolv" title="Link to this heading"></a></h3>
 <p>根据 minikube文档 <a class="reference external" href="https://github.com/kubernetes/minikube/blob/master/docs/vmdriver-none.md">vm-driver=none</a> 说明，运行在 Ubuntu 18.04 或其他默认配置了 <code class="docutils literal notranslate"><span class="pre">systemd-resolve</span></code> 的系统，需要绕过默认的 <code class="docutils literal notranslate"><span class="pre">resolv.conf</span></code> ，所以启动参数需要增加 <code class="docutils literal notranslate"><span class="pre">--extra-config=kubelet.resolv-conf=/run/systemd/resolve/resolv.conf</span></code> 。</p>
 <p>完整启动命令修订成:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">minikube</span> <span class="n">start</span> <span class="o">--</span><span class="n">extra</span><span class="o">-</span><span class="n">config</span> <span class="n">kubeadm</span><span class="o">.</span><span class="n">ignore</span><span class="o">-</span><span class="n">preflight</span><span class="o">-</span><span class="n">errors</span><span class="o">=</span><span class="n">SystemVerification</span> <span class="o">--</span><span class="n">extra</span><span class="o">-</span><span class="n">config</span> <span class="n">kubelet</span><span class="o">.</span><span class="n">cgroup</span><span class="o">-</span><span class="n">driver</span><span class="o">=</span><span class="n">systemd</span> <span class="o">--</span><span class="n">extra</span><span class="o">-</span><span class="n">config</span><span class="o">=</span><span class="n">kubelet</span><span class="o">.</span><span class="n">resolv</span><span class="o">-</span><span class="n">conf</span><span class="o">=/</span><span class="n">run</span><span class="o">/</span><span class="n">systemd</span><span class="o">/</span><span class="n">resolve</span><span class="o">/</span><span class="n">resolv</span><span class="o">.</span><span class="n">conf</span>
@@ -639,7 +650,7 @@ error execution phase preflight: [preflight] Some fatal errors occurred:
 </section>
 </section>
 <section id="id13">
-<h2>操作系统启动时启动minikube<a class="headerlink" href="#id13" title="Link to this heading">¶</a></h2>
+<h2>操作系统启动时启动minikube<a class="headerlink" href="#id13" title="Link to this heading"></a></h2>
 <p>安装了minikube的系统，默认会激活 <code class="docutils literal notranslate"><span class="pre">kubelet.service</span></code> ，即在启动操作系统时会自动启动服务器上所有kubernetes的容器，也就是自动启动minikube。但是，由于我们上述配置的裸物理机运行minikube，并且使用btrfs文件系统，所以需要定制一些参数传递给kubelet，否则启动后会发现自动启动的minikube无法工作。</p>
 <p>参考 <a class="reference external" href="https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/kubelet-integration/#configure-kubelets-using-kubeadm">Cconfigure kubelets using kubeadm</a> 修订kubelet配置文件 <code class="docutils literal notranslate"><span class="pre">/var/lib/kubelet/kubeadm-flags.env</span></code> ，将默认的配置内容:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">KUBELET_KUBEADM_ARGS</span><span class="o">=--</span><span class="n">cgroup</span><span class="o">-</span><span class="n">driver</span><span class="o">=</span><span class="n">systemd</span> <span class="o">--</span><span class="n">hostname</span><span class="o">-</span><span class="n">override</span><span class="o">=</span><span class="n">minikube</span> <span class="o">--</span><span class="n">network</span><span class="o">-</span><span class="n">plugin</span><span class="o">=</span><span class="n">cni</span> <span class="o">--</span><span class="n">pod</span><span class="o">-</span><span class="n">infra</span><span class="o">-</span><span class="n">container</span><span class="o">-</span><span class="n">image</span><span class="o">=</span><span class="n">k8s</span><span class="o">.</span><span class="n">gcr</span><span class="o">.</span><span class="n">io</span><span class="o">/</span><span class="n">pause</span><span class="p">:</span><span class="mf">3.1</span> <span class="o">--</span><span class="n">resolv</span><span class="o">-</span><span class="n">conf</span><span class="o">=/</span><span class="n">run</span><span class="o">/</span><span class="n">systemd</span><span class="o">/</span><span class="n">resolve</span><span class="o">/</span><span class="n">resolv</span><span class="o">.</span><span class="n">conf</span>
@@ -652,7 +663,7 @@ error execution phase preflight: [preflight] Some fatal errors occurred:
 <p>然后重启系统就可以看到随着操作系统启动，systemd可以正确启动minikube。</p>
 </section>
 <section id="dashboard">
-<span id="minikube-dashboard"></span><h2>启动dashboard<a class="headerlink" href="#dashboard" title="Link to this heading">¶</a></h2>
+<span id="minikube-dashboard"></span><h2>启动dashboard<a class="headerlink" href="#dashboard" title="Link to this heading"></a></h2>
 <p><a class="reference internal" href="../administer/k8s_dashboard.html#k8s-dashboard"><span class="std std-ref">Kubernetes仪表盘</span></a> 可以帮助我们管理集群，在minikube上也可以启用方便管理。</p>
 <ul>
 <li><p>执行以下命令启用dashboard:</p>
@@ -675,7 +686,7 @@ error execution phase preflight: [preflight] Some fatal errors occurred:
 </div>
 </section>
 <section id="id14">
-<h2>离线安装minikube<a class="headerlink" href="#id14" title="Link to this heading">¶</a></h2>
+<h2>离线安装minikube<a class="headerlink" href="#id14" title="Link to this heading"></a></h2>
 <p>通常我们安装minikube都是需要连接internet并且从google的仓库安装。但是有时候无法连接网络，需要离线在内网安装，则参考 <a class="reference external" href="https://blog.zhoulouzi.com/2017/10/minikube/">minikube install offline step by step</a> 实施安装：</p>
 <ul>
 <li><p>kubectl 的二进制文件 官网下载 放到 <code class="docutils literal notranslate"><span class="pre">/usr/local/bin/</span></code></p></li>
@@ -705,15 +716,15 @@ docker image save 导出tar包，方便随时在离线环境使用
 </div>
 </section>
 <section id="docker-in-docker">
-<h2>Docker in Docker<a class="headerlink" href="#docker-in-docker" title="Link to this heading">¶</a></h2>
+<h2>Docker in Docker<a class="headerlink" href="#docker-in-docker" title="Link to this heading"></a></h2>
 <p>在运行单节点的minikube确实能够体验和测试Kubernetes基本功能，但是你也可能不满足这种简单而单调的单节点部署。如果你想要实现一个完整Kubernetes集群，一种方式是采用多个KVM虚拟机实现 <a class="reference internal" href="../deploy/k8s_hosts_in_mbp/k8s_hosts.html#k8s-hosts"><span class="std std-ref">Kubernetes部署服务器</span></a> ，另一种方式是采用 <a class="reference internal" href="../kind/index.html#kind"><span class="std std-ref">kind(本地docker模拟k8s集群)</span></a> 实现单一物理服务器部署Kubernetes集群。</p>
 <div class="admonition note">
 <p class="admonition-title">备注</p>
-<p>除了minikube，Docker公司也推出了一个集成standalone Kubernetes，包含了服务器和客户端，也是一个不能配置，并且单节点的Kubernetes集群。如果你和我一样使用 <a class="reference internal" href="../../docker/admin/docker_studio.html#docker-studio"><span class="std std-ref">Docker运行Studio容器</span></a> ，并且只做开发不关心部署，并且不想由于VirtualBox虚拟化白白消耗系统资源，则可以尝试Docker Desktop集成的Kubernetes。（这个系统采用了macOS集成的 <a class="reference internal" href="../../kvm/macos_xhyve/xhyve.html#xhyve"><span class="std std-ref">xhyve - macOS平台的KVM</span></a> 所以性能损耗较少)</p>
+<p>除了minikube，Docker公司也推出了一个集成standalone Kubernetes，包含了服务器和客户端，也是一个不能配置，并且单节点的Kubernetes集群。如果你和我一样使用 <a class="reference internal" href="../../docker/admin/docker_studio.html#docker-studio"><span class="std std-ref">Docker运行Studio容器</span></a> ，并且只做开发不关心部署，并且不想由于VirtualBox虚拟化白白消耗系统资源，则可以尝试Docker Desktop集成的Kubernetes。（这个系统采用了macOS集成的 <a class="reference internal" href="../../apple/virtualization/xhyve.html#xhyve"><span class="std std-ref">xhyve - macOS平台的KVM</span></a> 所以性能损耗较少)</p>
 </div>
 </section>
 <section id="id15">
-<h2>参考<a class="headerlink" href="#id15" title="Link to this heading">¶</a></h2>
+<h2>参考<a class="headerlink" href="#id15" title="Link to this heading"></a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="https://minikube.sigs.k8s.io/docs/start/">minikube官方文档startup</a></p></li>
 </ul>
@@ -723,25 +734,37 @@ docker image save 导出tar包，方便随时在离线环境使用
 
            </div>
           </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="index.html" class="btn btn-neutral float-left" title="Kubernetes起步准备" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="install_setup_kubectl.html" class="btn btn-neutral float-right" title="安装和设置kubectl" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="index.html" class="btn btn-neutral float-left" title="Kubernetes起步准备" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="install_setup_kubectl.html" class="btn btn-neutral float-right" title="安装和设置kubectl" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../copyright.html">Copyright</a> 2018 - now, Huatai Huang.</p>
+    <p>&#169; <a href="../../copyright.html">版权所有</a> 2018 - now, Huatai Huang。</p>
   </div>
 
-  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
   
     <!-- your html code here -->
     <br>
-    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡</a></p>
-     
+    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡 👈</a></p>
+    <br>
+    <p>网站采用 <a href="https://utteranc.es/">utterances</a> 评论系统，所有评论存储在<a href="https://github.com/huataihuang/cloud-atlas/issues">GitHub issues</a> 中，如果你看不到下方的评论框，那么可能需要<a href="https://cloud-atlas.readthedocs.io/zh-cn/latest/linux/security/vpn/index.html">自备梯子</a> 👈</p>
+    <div class="articleComments">
+        <comments>
+  <script src="https://utteranc.es/client.js"
+    repo="huataihuang/cloud-atlas"
+    issue-term="pathname"
+    theme="github-light"
+    crossorigin="anonymous"
+    async>
+  </script>
+</comments>
+    </div>
 
 
 </footer>

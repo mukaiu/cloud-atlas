@@ -8,6 +8,7 @@ xfce
    :maxdepth: 1
 
    xfce_startup.rst
+   thunar.rst
 
 .. only::  subproject and html
 

@@ -1,21 +1,25 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh" data-content_root="../../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>移动云架构 &mdash; Cloud Atlas 0.1 文档</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+  <title>移动云架构 &mdash; Cloud Atlas: Discovery beta 文档</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=fd3f3429" />
+
+  
+    <link rel="shortcut icon" href="../../_static/favicon.png"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="../../_static/documentation_options.js?v=7c91f8fd"></script>
-        <script src="../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=8534f863"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
         <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
-        <script src="../../_static/translations.js?v=beaddf03"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../../genindex.html" />
     <link rel="search" title="搜索" href="../../search.html" />
@@ -33,66 +37,70 @@
           
           
           <a href="../../index.html" class="icon icon-home">
-            Cloud Atlas
+            Cloud Atlas: Discovery
           </a>
+              <div class="version">
+                1.1
+              </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../studio/index.html">Studio Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../infrastructure/index.html">Infrastructure Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../devops/index.html">DevOps Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kvm/index.html">KVM Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../ceph/index.html">Ceph Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../gluster/index.html">Gluster Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../ovirt/index.html">oVirt Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../openstack/index.html">OpenStack Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../docker/index.html">Docker Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kubernetes/index.html">Kubernetes Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kubernetes_from_scratch/index.html">Kubernetes From Scratch (KFS) Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../rancher/index.html">Rancher Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../openshift/index.html">OpenShift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../sql/index.html">SQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../sqlite/index.html">SQLite Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../mysql/index.html">MySQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../pgsql/index.html">PostgreSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../clickhouse/index.html">ClickHouse Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../nosql/index.html">NoSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../redis/index.html">Redis Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../network/index.html">Network Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../infra_service/index.html">Infra-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../infra_search/index.html">Search Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../info_service/index.html">Info-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../web/index.html">Web Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../big_data/index.html">Big Data Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../machine_learning/index.html">Machine Learning Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../linux/index.html">Linux Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kernel/index.html">Kernel Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../performance/index.html">Performance Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../distributed_system/index.html">Distributed System Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../shell/index.html">Shell Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../python/index.html">Python Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../django/index.html">Django Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../flask/index.html">Flask Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../javascript/index.html">JavaScript Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../nodejs/index.html">Node.js Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../clang/index.html">C Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../golang/index.html">Go Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../swift/index.html">Swift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../rust/index.html">Rust Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../ruby/index.html">Ruby Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../arm/index.html">ARM Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../android/index.html">Android Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../bsd/index.html">BSD Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../apple/index.html">Apple Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../windows/index.html">Windows Atlas</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Real Atlas</a><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../studio/index.html">Studio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../infrastructure/index.html">Infrastructure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../devops/index.html">DevOps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kvm/index.html">KVM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ceph/index.html">Ceph</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../gluster/index.html">Gluster</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ovirt/index.html">oVirt</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../openstack/index.html">OpenStack</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../docker/index.html">Docker</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kubernetes/index.html">Kubernetes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../k8s_dev/index.html">Kubernetes Develop</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../rancher/index.html">Rancher</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../openshift/index.html">OpenShift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../sql/index.html">SQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../sqlite/index.html">SQLite</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../mysql/index.html">MySQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../pgsql/index.html">PostgreSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../nosql/index.html">NoSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../network/index.html">Network</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../infra_service/index.html">Infra-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../infra_search/index.html">Infra-Search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../web/index.html">Web</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../info_service/index.html">Info-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../big_data/index.html">Big Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../machine_learning/index.html">Machine Learning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../drone/index.html">Drone</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../linux/index.html">Linux</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kernel/index.html">Kernel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../performance/index.html">Performance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../distributed_system/index.html">Distributed System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../shell/index.html">Shell</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../python/index.html">Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../django/index.html">Django</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../javascript/index.html">JavaScript</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../nodejs/index.html">Node.js</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../clang/index.html">C</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../golang/index.html">Go</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../swift/index.html">Swift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../rust/index.html">Rust</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ruby/index.html">Ruby</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lua/index.html">Lua</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../arm/index.html">ARM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../raspberry_pi/index.html">Raspberry Pi</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../android/index.html">Android</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../bsd/index.html">BSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../freebsd/index.html">FreeBSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../apple/index.html">Apple</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../windows/index.html">Windows</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Real</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../real_think/index.html">真实世界的技术思考</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../prepare/index.html">真实云计算的构建准备</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../priv_cloud/index.html">私有云计算构建</a></li>
@@ -112,10 +120,11 @@
 <li class="toctree-l3"><a class="reference internal" href="mobile_dev.html">移动开发</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../bsd_cloud/index.html">FreeBSD云计算构建</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../management/index.html">Management Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../life/index.html">Life Atlas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../management/index.html">Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../life/index.html">Life</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../copyright.html">Copyright</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../aboutme.html">关于作者</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../donate.html">捐赠</a></li>
@@ -128,21 +137,21 @@
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../index.html">Cloud Atlas</a>
+          <a href="../../index.html">Cloud Atlas: Discovery</a>
       </nav>
 
       <div class="wy-nav-content">
         <div class="rst-content">
-          <div role="navigation" aria-label="Page navigation">
+          <div role="navigation" aria-label="页面导航">
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
-          <li class="breadcrumb-item"><a href="../index.html">Real Atlas</a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Real</a></li>
           <li class="breadcrumb-item"><a href="index.html">移动云计算构建</a></li>
       <li class="breadcrumb-item active">移动云架构</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../../_sources/real/mobile_cloud/mobile_cloud_infra.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../_sources/real/mobile_cloud/mobile_cloud_infra.rst.txt" rel="nofollow"> 查看页面源码</a>
       </li>
   </ul>
   <hr/>
@@ -151,38 +160,38 @@
            <div itemprop="articleBody">
              
   <section id="mobile-cloud-infra">
-<span id="id1"></span><h1>移动云架构<a class="headerlink" href="#mobile-cloud-infra" title="Link to this heading">¶</a></h1>
+<span id="id1"></span><h1>移动云架构<a class="headerlink" href="#mobile-cloud-infra" title="Link to this heading"></a></h1>
 <section id="os">
-<h2>硬件和OS<a class="headerlink" href="#os" title="Link to this heading">¶</a></h2>
+<h2>硬件和OS<a class="headerlink" href="#os" title="Link to this heading"></a></h2>
 <p>我在 <strong>移动云计算</strong> 中采用笔记本电脑来构建云:</p>
 <ul class="simple">
-<li><p>采用 <a class="reference internal" href="../../apple/macos/apple_silicon_m1_pro.html#apple-silicon-m1-pro"><span class="std std-ref">Apple ARM架构芯片M1 Pro</span></a> MacBook Pro 16” ，运行 <a class="reference internal" href="../../linux/asahi_linux/index.html#asahi-linux"><span class="std std-ref">Asahi Linux</span></a> 系统:</p>
+<li><p>采用 <a class="reference internal" href="../../apple/macos/apple_silicon_m1_pro.html#apple-silicon-m1-pro"><span class="std std-ref">Apple ARM架构芯片M1 Pro</span></a> MacBook Pro 16&quot; ，运行 <a class="reference internal" href="../../linux/asahi_linux/index.html#asahi-linux"><span class="std std-ref">Asahi Linux</span></a> 系统:</p>
 <ul>
-<li><p>通过 <a class="reference internal" href="../../kvm/index.html#kvm"><span class="std std-ref">KVM Atlas</span></a> 来运行虚拟机，借鉴 <a class="reference internal" href="../priv_cloud/priv_cloud_infra.html#priv-cloud-infra"><span class="std std-ref">私有云架构</span></a> 部署一个full <a class="reference internal" href="../../kubernetes/index.html#kubernetes"><span class="std std-ref">Kubernetes Atlas</span></a></p></li>
-<li><p>实践发现对于内存有限的笔记本电脑(32GB)运行5个KVM虚拟机依然内存捉襟见肘，所以后来在 <a class="reference internal" href="../../apple/macos/mbp15_late_2013.html#mbp15-late-2013"><span class="std std-ref">MacBook Pro 15” Late 2013</span></a> 笔记本我追求轻量级运行，不再强求KVM虚拟化模拟，而是采用纯容器的 <a class="reference internal" href="../../kubernetes/kind/index.html#kind"><span class="std std-ref">kind(本地docker模拟k8s集群)</span></a></p></li>
+<li><p>通过 <a class="reference internal" href="../../kvm/index.html#kvm"><span class="std std-ref">KVM</span></a> 来运行虚拟机，借鉴 <a class="reference internal" href="../priv_cloud/priv_cloud_infra.html#priv-cloud-infra"><span class="std std-ref">私有云架构</span></a> 部署一个full <a class="reference internal" href="../../kubernetes/index.html#kubernetes"><span class="std std-ref">Kubernetes</span></a></p></li>
+<li><p>实践发现对于内存有限的笔记本电脑(32GB)运行5个KVM虚拟机依然内存捉襟见肘，所以后来在 <a class="reference internal" href="../../apple/macos/mbp15_late_2013.html#mbp15-late-2013"><span class="std std-ref">MacBook Pro 15&quot; Late 2013</span></a> 笔记本我追求轻量级运行，不再强求KVM虚拟化模拟，而是采用纯容器的 <a class="reference internal" href="../../kubernetes/kind/index.html#kind"><span class="std std-ref">kind(本地docker模拟k8s集群)</span></a></p></li>
 <li><p>启用域名 <code class="docutils literal notranslate"><span class="pre">cloud-atlas.io</span></code> 模拟构建 <code class="docutils literal notranslate"><span class="pre">dev.cloud-atlas.io</span></code> 开发和持续集成环境</p></li>
 </ul>
 </li>
-<li><p>一台非常古老的 <a class="reference internal" href="../../studio/hardware/intel_core_i7_4850hq.html#intel-core-i7-4850hq"><span class="std std-ref">Intel Core i7-4850HQ处理器</span></a> <a class="reference internal" href="../../apple/macos/mbp15_late_2013.html#mbp15-late-2013"><span class="std std-ref">MacBook Pro 15” Late 2013</span></a> 笔记本，已经快10年历史了，不过我 <a class="reference internal" href="../../apple/macos/macbook_nvme.html#macbook-nvme"><span class="std std-ref">NvMe硬盘升级MacBook Pro SSD</span></a> 还能再打:</p>
+<li><p>一台非常古老的 <a class="reference internal" href="../../studio/hardware/intel_core_i7_4850hq.html#intel-core-i7-4850hq"><span class="std std-ref">Intel Core i7-4850HQ处理器</span></a> <a class="reference internal" href="../../apple/macos/mbp15_late_2013.html#mbp15-late-2013"><span class="std std-ref">MacBook Pro 15&quot; Late 2013</span></a> 笔记本，已经快10年历史了，不过我 <a class="reference internal" href="../../apple/macos/mbp15_late_2013_update_nvme.html#mbp15-late-2013-update-nvme"><span class="std std-ref">升级MacBook(2013~2017) SSD成NVMe存储</span></a> 还能再打:</p>
 <ul>
 <li><p>采用纯容器运行 <a class="reference internal" href="../../kubernetes/kind/index.html#kind"><span class="std std-ref">kind(本地docker模拟k8s集群)</span></a></p></li>
-<li><p>专注模拟 <a class="reference internal" href="../../kubernetes/index.html#kubernetes"><span class="std std-ref">Kubernetes Atlas</span></a> 并进行相关开发</p></li>
+<li><p>专注模拟 <a class="reference internal" href="../../kubernetes/index.html#kubernetes"><span class="std std-ref">Kubernetes</span></a> 并进行相关开发</p></li>
 <li><p>更为复杂的云计算(考虑到性能消耗，特别是海量内存需求)，还是采用数据中心服务器(二手) <a class="reference internal" href="../../linux/server/hardware/hpe/hpe_dl360_gen9.html#hpe-dl360-gen9"><span class="std std-ref">HPE ProLiant DL360 Gen9服务器</span></a> 来实现(最高支持 768GB RDIMM内存)</p></li>
 </ul>
 </li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">备注</p>
-<p>使用Linux来构建移动云计算，其实是非常hard的工作，你必须解决很多底层的技术难题，包括但不限于 <a class="reference internal" href="../../kernel/index.html#kernel"><span class="std std-ref">Kernel Atlas</span></a> / <a class="reference internal" href="../../linux/storage/index.html#linux-storage"><span class="std std-ref">Linux存储</span></a> / <a class="reference internal" href="../../kubernetes/index.html#kubernetes"><span class="std std-ref">Kubernetes Atlas</span></a> ( <a class="reference internal" href="../../kubernetes/kind/index.html#kind"><span class="std std-ref">kind(本地docker模拟k8s集群)</span></a> )等等组合的技术堆栈。这是一个充满挑战和乐趣的过程。</p>
-<p>不过，如果你更侧重于软件开发，或者想一步跨国底层各种 <a class="reference internal" href="../../kvm/index.html#kvm"><span class="std std-ref">KVM Atlas</span></a> / <a class="reference internal" href="../../docker/index.html#docker"><span class="std std-ref">Docker Atlas</span></a> 虚拟化和容器技术的障碍，那么采用 <a class="reference internal" href="../../apple/macos/macos_studio.html#macos-studio"><span class="std std-ref">macOS工作室</span></a> 或许是一个更方便的选择: 快速构建Kubernetes平台，学习和实践上层的容器调度技术以及 <a class="reference internal" href="../../devops/index.html#devops"><span class="std std-ref">DevOps Atlas</span></a> (持续集成)，将自己开发的软件推送到生产环境。(这样也不错哦)</p>
+<p>使用Linux来构建移动云计算，其实是非常hard的工作，你必须解决很多底层的技术难题，包括但不限于 <a class="reference internal" href="../../kernel/index.html#kernel"><span class="std std-ref">Kernel</span></a> / <a class="reference internal" href="../../linux/storage/index.html#linux-storage"><span class="std std-ref">Linux存储</span></a> / <a class="reference internal" href="../../kubernetes/index.html#kubernetes"><span class="std std-ref">Kubernetes</span></a> ( <a class="reference internal" href="../../kubernetes/kind/index.html#kind"><span class="std std-ref">kind(本地docker模拟k8s集群)</span></a> )等等组合的技术堆栈。这是一个充满挑战和乐趣的过程。</p>
+<p>不过，如果你更侧重于软件开发，或者想一步跨国底层各种 <a class="reference internal" href="../../kvm/index.html#kvm"><span class="std std-ref">KVM</span></a> / <a class="reference internal" href="../../docker/index.html#docker"><span class="std std-ref">Docker</span></a> 虚拟化和容器技术的障碍，那么采用 <a class="reference internal" href="../../apple/macos/macos_studio.html#macos-studio"><span class="std std-ref">macOS工作室</span></a> 或许是一个更方便的选择: 快速构建Kubernetes平台，学习和实践上层的容器调度技术以及 <a class="reference internal" href="../../devops/index.html#devops"><span class="std std-ref">DevOps</span></a> (持续集成)，将自己开发的软件推送到生产环境。(这样也不错哦)</p>
 <p>Anyway，成为全栈工程师!!!</p>
 </div>
 </section>
 <section id="id2">
-<h2>模拟集群<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
+<h2>模拟集群<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
 <ul class="simple">
-<li><p>X86架构 <a class="reference internal" href="../../apple/macos/mbp15_late_2013.html#mbp15-late-2013"><span class="std std-ref">MacBook Pro 15” Late 2013</span></a> 笔记本: 采用 <a class="reference internal" href="../../kubernetes/kind/index.html#kind"><span class="std std-ref">kind(本地docker模拟k8s集群)</span></a> 构建本地容器化 <a class="reference internal" href="../../kubernetes/index.html#kubernetes"><span class="std std-ref">Kubernetes Atlas</span></a> 集群，作为个人开发环境 <code class="docutils literal notranslate"><span class="pre">dev.cloud-atlas.io</span></code></p></li>
-<li><p>ARM架构 <a class="reference internal" href="../../apple/macos/apple_silicon_m1_pro.html#apple-silicon-m1-pro"><span class="std std-ref">Apple ARM架构芯片M1 Pro</span></a> MacBook Pro 16”: 采用 <a class="reference internal" href="../../kvm/arm_kvm/index.html#arm-kvm"><span class="std std-ref">ARM硬件环境KVM虚拟化</span></a> 构建本地运行的虚拟化服务器集群，进一步部署 <a class="reference internal" href="../../kubernetes/index.html#kubernetes"><span class="std std-ref">Kubernetes Atlas</span></a> 和 <span class="sphinxnotes-strike" style="text-decoration: line-through;">openshift</span></p>
+<li><p>X86架构 <a class="reference internal" href="../../apple/macos/mbp15_late_2013.html#mbp15-late-2013"><span class="std std-ref">MacBook Pro 15&quot; Late 2013</span></a> 笔记本: 采用 <a class="reference internal" href="../../kubernetes/kind/index.html#kind"><span class="std std-ref">kind(本地docker模拟k8s集群)</span></a> 构建本地容器化 <a class="reference internal" href="../../kubernetes/index.html#kubernetes"><span class="std std-ref">Kubernetes</span></a> 集群，作为个人开发环境 <code class="docutils literal notranslate"><span class="pre">dev.cloud-atlas.io</span></code></p></li>
+<li><p>ARM架构 <a class="reference internal" href="../../apple/macos/apple_silicon_m1_pro.html#apple-silicon-m1-pro"><span class="std std-ref">Apple ARM架构芯片M1 Pro</span></a> MacBook Pro 16&quot;: 采用 <a class="reference internal" href="../../kvm/arm_kvm/index.html#arm-kvm"><span class="std std-ref">ARM硬件环境KVM虚拟化</span></a> 构建本地运行的虚拟化服务器集群，进一步部署 <a class="reference internal" href="../../kubernetes/index.html#kubernetes"><span class="std std-ref">Kubernetes</span></a> 和 <span class="sphinxnotes-strike" style="text-decoration: line-through;">openshift</span></p>
 <ul>
 <li><p>探索 <a class="reference internal" href="../../kvm/kvm_nested_virtual/arm_neve.html#arm-neve"><span class="std std-ref">ARM嵌套虚拟化扩展(NEVE: Nested Virtualization Extensions for ARM)</span></a></p></li>
 </ul>
@@ -190,17 +199,17 @@
 </ul>
 </section>
 <section id="id3">
-<h2>虚拟服务器分布<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h2>
+<h2>虚拟服务器分布<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
 <table class="docutils align-default" id="id5">
-<caption><span class="caption-text">acloud服务器部署多层虚拟化虚拟机分配</span><a class="headerlink" href="#id5" title="Link to this table">¶</a></caption>
+<caption><span class="caption-text">acloud服务器部署多层虚拟化虚拟机分配</span><a class="headerlink" href="#id5" title="Link to this table"></a></caption>
 <colgroup>
-<col style="width: 11%" />
-<col style="width: 11%" />
-<col style="width: 11%" />
-<col style="width: 11%" />
-<col style="width: 11%" />
-<col style="width: 11%" />
-<col style="width: 33%" />
+<col style="width: 11.1%" />
+<col style="width: 11.1%" />
+<col style="width: 11.1%" />
+<col style="width: 11.1%" />
+<col style="width: 11.1%" />
+<col style="width: 11.1%" />
+<col style="width: 33.3%" />
 </colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>虚拟化层</p></th>
@@ -497,7 +506,7 @@
 </table>
 </section>
 <section id="id4">
-<h2>实践<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h2>
+<h2>实践<a class="headerlink" href="#id4" title="Link to this heading"></a></h2>
 <p>我将按照不同的硬件环境(X86和ARM)分为两部分分别整理:</p>
 <ul class="simple">
 <li><p><a class="reference internal" href="mobile_cloud_arm/index.html#mobile-cloud-arm"><span class="std std-ref">ARM移动云计算构建</span></a></p></li>
@@ -509,25 +518,37 @@
 
            </div>
           </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="index.html" class="btn btn-neutral float-left" title="移动云计算构建" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="mobile_cloud_arm/index.html" class="btn btn-neutral float-right" title="ARM移动云计算构建" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="index.html" class="btn btn-neutral float-left" title="移动云计算构建" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="mobile_cloud_arm/index.html" class="btn btn-neutral float-right" title="ARM移动云计算构建" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../copyright.html">Copyright</a> 2018 - now, Huatai Huang.</p>
+    <p>&#169; <a href="../../copyright.html">版权所有</a> 2018 - now, Huatai Huang。</p>
   </div>
 
-  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
   
     <!-- your html code here -->
     <br>
-    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡</a></p>
-     
+    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡 👈</a></p>
+    <br>
+    <p>网站采用 <a href="https://utteranc.es/">utterances</a> 评论系统，所有评论存储在<a href="https://github.com/huataihuang/cloud-atlas/issues">GitHub issues</a> 中，如果你看不到下方的评论框，那么可能需要<a href="https://cloud-atlas.readthedocs.io/zh-cn/latest/linux/security/vpn/index.html">自备梯子</a> 👈</p>
+    <div class="articleComments">
+        <comments>
+  <script src="https://utteranc.es/client.js"
+    repo="huataihuang/cloud-atlas"
+    issue-term="pathname"
+    theme="github-light"
+    crossorigin="anonymous"
+    async>
+  </script>
+</comments>
+    </div>
 
 
 </footer>

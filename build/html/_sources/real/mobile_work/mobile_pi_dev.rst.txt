@@ -43,7 +43,7 @@ Raspberry Pi OS
 
 - 更新系统:
 
-.. literalinclude:: ../../linux/ubuntu_linux/debian_init/apt_upgrade.sh
+.. literalinclude:: ../../linux/debian/debian_init/apt_upgrade.sh
    :language: bash
    :caption: APT更新整个系统
 
@@ -97,7 +97,7 @@ Raspberry Pi OS
 
 - 安装应用软件:
 
-.. literalinclude:: ../../linux/ubuntu_linux/debian_init/debian_init_app
+.. literalinclude:: ../../linux/debian/debian_init/debian_init_app
    :language: bash
    :caption: debian系安装应用
 
@@ -132,7 +132,7 @@ Raspberry Pi OS
 
 .. literalinclude:: ../../rust/rust_startup/install_rust.sh
    :language: bash
-   :caption: Liinux平台安装Rust 
+   :caption: Liinux平台安装Rust
 
 - 安装 :ref:`golang` / :ref:`nodejs` :
 
@@ -148,9 +148,9 @@ Raspberry Pi OS
 
 - 配置 :ref:`npm_proxy` :
 
-.. literalinclude:: ../../nodejs/startup/npm_proxy/alias_npm_proxy.sh
+.. literalinclude:: ../../nodejs/startup/npm_proxy/npm_proxy
    :language: bash
-   :caption: alias设置npm代理
+   :caption: 设置npm代理
 
 - 按需编译YouCompleteMe：
 

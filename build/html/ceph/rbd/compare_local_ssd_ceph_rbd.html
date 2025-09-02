@@ -1,21 +1,25 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh" data-content_root="../../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>比较KVM虚拟机本地SSD和Ceph RBD存储性能 &mdash; Cloud Atlas 0.1 文档</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+  <title>比较KVM虚拟机本地SSD和Ceph RBD存储性能 &mdash; Cloud Atlas: Discovery beta 文档</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=fd3f3429" />
+
+  
+    <link rel="shortcut icon" href="../../_static/favicon.png"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="../../_static/documentation_options.js?v=7c91f8fd"></script>
-        <script src="../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=8534f863"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
         <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
-        <script src="../../_static/translations.js?v=beaddf03"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../../genindex.html" />
     <link rel="search" title="搜索" href="../../search.html" />
@@ -33,23 +37,26 @@
           
           
           <a href="../../index.html" class="icon icon-home">
-            Cloud Atlas
+            Cloud Atlas: Discovery
           </a>
+              <div class="version">
+                1.1
+              </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../studio/index.html">Studio Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../infrastructure/index.html">Infrastructure Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../devops/index.html">DevOps Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kvm/index.html">KVM Atlas</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Ceph Atlas</a><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../studio/index.html">Studio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../infrastructure/index.html">Infrastructure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../devops/index.html">DevOps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kvm/index.html">KVM</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Ceph</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../intro_ceph.html">Ceph存储介绍</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../gluster/gluster_vs_ceph.html">Gluster和Ceph对比</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ceph_recommend.html">Ceph部署软硬件推荐</a></li>
@@ -84,55 +91,56 @@
 <li class="toctree-l2"><a class="reference internal" href="../debug/index.html">Ceph 故障排查</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../arm/index.html">ARM架构Ceph</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../arch/index.html">Ceph 架构</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pgsql_on_ceph/index.html">Ceph 上运行PostgreSQL</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../tunning/index.html">Ceph 优化</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../kubernetes/storage/rook/index.html">Rook - 云原生存储调度器</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../gluster/index.html">Gluster Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../ovirt/index.html">oVirt Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../openstack/index.html">OpenStack Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../docker/index.html">Docker Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kubernetes/index.html">Kubernetes Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kubernetes_from_scratch/index.html">Kubernetes From Scratch (KFS) Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../rancher/index.html">Rancher Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../openshift/index.html">OpenShift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../sql/index.html">SQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../sqlite/index.html">SQLite Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../mysql/index.html">MySQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../pgsql/index.html">PostgreSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../clickhouse/index.html">ClickHouse Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../nosql/index.html">NoSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../redis/index.html">Redis Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../network/index.html">Network Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../infra_service/index.html">Infra-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../infra_search/index.html">Search Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../info_service/index.html">Info-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../web/index.html">Web Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../big_data/index.html">Big Data Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../machine_learning/index.html">Machine Learning Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../linux/index.html">Linux Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kernel/index.html">Kernel Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../performance/index.html">Performance Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../distributed_system/index.html">Distributed System Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../shell/index.html">Shell Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../python/index.html">Python Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../django/index.html">Django Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../flask/index.html">Flask Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../javascript/index.html">JavaScript Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../nodejs/index.html">Node.js Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../clang/index.html">C Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../golang/index.html">Go Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../swift/index.html">Swift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../rust/index.html">Rust Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../ruby/index.html">Ruby Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../arm/index.html">ARM Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../android/index.html">Android Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../bsd/index.html">BSD Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../apple/index.html">Apple Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../windows/index.html">Windows Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../real/index.html">Real Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../management/index.html">Management Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../life/index.html">Life Atlas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../gluster/index.html">Gluster</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ovirt/index.html">oVirt</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../openstack/index.html">OpenStack</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../docker/index.html">Docker</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kubernetes/index.html">Kubernetes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../k8s_dev/index.html">Kubernetes Develop</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../rancher/index.html">Rancher</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../openshift/index.html">OpenShift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../sql/index.html">SQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../sqlite/index.html">SQLite</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../mysql/index.html">MySQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../pgsql/index.html">PostgreSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../nosql/index.html">NoSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../network/index.html">Network</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../infra_service/index.html">Infra-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../infra_search/index.html">Infra-Search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../web/index.html">Web</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../info_service/index.html">Info-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../big_data/index.html">Big Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../machine_learning/index.html">Machine Learning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../drone/index.html">Drone</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../linux/index.html">Linux</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kernel/index.html">Kernel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../performance/index.html">Performance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../distributed_system/index.html">Distributed System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../shell/index.html">Shell</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../python/index.html">Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../django/index.html">Django</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../javascript/index.html">JavaScript</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../nodejs/index.html">Node.js</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../clang/index.html">C</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../golang/index.html">Go</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../swift/index.html">Swift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../rust/index.html">Rust</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ruby/index.html">Ruby</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lua/index.html">Lua</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../arm/index.html">ARM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../raspberry_pi/index.html">Raspberry Pi</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../android/index.html">Android</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../bsd/index.html">BSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../freebsd/index.html">FreeBSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../apple/index.html">Apple</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../windows/index.html">Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../real/index.html">Real</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../management/index.html">Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../life/index.html">Life</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../copyright.html">Copyright</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../aboutme.html">关于作者</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../donate.html">捐赠</a></li>
@@ -145,21 +153,21 @@
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../index.html">Cloud Atlas</a>
+          <a href="../../index.html">Cloud Atlas: Discovery</a>
       </nav>
 
       <div class="wy-nav-content">
         <div class="rst-content">
-          <div role="navigation" aria-label="Page navigation">
+          <div role="navigation" aria-label="页面导航">
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
-          <li class="breadcrumb-item"><a href="../index.html">Ceph Atlas</a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Ceph</a></li>
           <li class="breadcrumb-item"><a href="index.html">Ceph Block Device(RBD)</a></li>
       <li class="breadcrumb-item active">比较KVM虚拟机本地SSD和Ceph RBD存储性能</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../../_sources/ceph/rbd/compare_local_ssd_ceph_rbd.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../_sources/ceph/rbd/compare_local_ssd_ceph_rbd.rst.txt" rel="nofollow"> 查看页面源码</a>
       </li>
   </ul>
   <hr/>
@@ -168,22 +176,22 @@
            <div itemprop="articleBody">
              
   <section id="kvmssdceph-rbd">
-<span id="compare-local-ssd-ceph-rbd"></span><h1>比较KVM虚拟机本地SSD和Ceph RBD存储性能<a class="headerlink" href="#kvmssdceph-rbd" title="Link to this heading">¶</a></h1>
-<p>我在 <a class="reference internal" href="../../kvm/iommu/compare_iommu_native_nvme.html#compare-iommu-native-nvme"><span class="std std-ref">比较IOMMU NVMe和原生NVMe存储性能</span></a> 中，对比了在 <a class="reference internal" href="../../kvm/iommu/ovmf.html#ovmf"><span class="std std-ref">Open Virtual Machine Firmware(OMVF)</span></a> 虚拟机内部采用IOMMU技术读写NVMe存储和裸物理机读写NVMe的性能差异。现在，按照 <a class="reference internal" href="../../real/priv_cloud/priv_cloud_infra.html#priv-cloud-infra"><span class="std std-ref">私有云架构</span></a> 部署了 <a class="reference internal" href="../index.html#ceph"><span class="std std-ref">Ceph Atlas</span></a> 存储来提供虚拟机存储，也需要考虑分布式存储Ceph对性能的损耗。所以本文将采用相同的 <a class="reference internal" href="../../performance/performance_tools/fio/index.html#fio"><span class="std std-ref">fio 存储性能测试</span></a> 测试方法，对比性能差异。</p>
+<span id="compare-local-ssd-ceph-rbd"></span><h1>比较KVM虚拟机本地SSD和Ceph RBD存储性能<a class="headerlink" href="#kvmssdceph-rbd" title="Link to this heading"></a></h1>
+<p>我在 <a class="reference internal" href="../../kvm/iommu/compare_iommu_native_nvme.html#compare-iommu-native-nvme"><span class="std std-ref">比较IOMMU NVMe和原生NVMe存储性能</span></a> 中，对比了在 <a class="reference internal" href="../../kvm/iommu/ovmf.html#ovmf"><span class="std std-ref">Open Virtual Machine Firmware(OMVF)</span></a> 虚拟机内部采用IOMMU技术读写NVMe存储和裸物理机读写NVMe的性能差异。现在，按照 <a class="reference internal" href="../../real/priv_cloud/priv_cloud_infra.html#priv-cloud-infra"><span class="std std-ref">私有云架构</span></a> 部署了 <a class="reference internal" href="../index.html#ceph"><span class="std std-ref">Ceph</span></a> 存储来提供虚拟机存储，也需要考虑分布式存储Ceph对性能的损耗。所以本文将采用相同的 <a class="reference internal" href="../../performance/performance_tools/fio/index.html#fio"><span class="std std-ref">fio 存储性能测试</span></a> 测试方法，对比性能差异。</p>
 <div class="admonition note">
 <p class="admonition-title">备注</p>
 <p>我希望测试能够获得在分布式Ceph上运行的KVM虚拟机磁盘性能达到使用本地SSD的性能，毕竟底层硬件是性能更佳的NVMe，即使分布式消耗，也希望能够达到本地SSD磁盘性能。</p>
 </div>
 <section id="id1">
-<h2>测试环境<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h2>
+<h2>测试环境<a class="headerlink" href="#id1" title="Link to this heading"></a></h2>
 <ul class="simple">
 <li><p>虚拟机采用 <a class="reference internal" href="ceph_rbd_libvirt.html#ceph-rbd-libvirt"><span class="std std-ref">Libvirt集成Ceph RBD</span></a> 部署完全相同的 <a class="reference internal" href="../../linux/ubuntu_linux/index.html#ubuntu-linux"><span class="std std-ref">Ubuntu Linux</span></a> 20.04 ，虚拟机配置采用 <code class="docutils literal notranslate"><span class="pre">4c8g</span></code> 配置( <code class="docutils literal notranslate"><span class="pre">vcpu=4</span></code> 匹配 <code class="docutils literal notranslate"><span class="pre">fio</span></code> 测试命令 <code class="docutils literal notranslate"><span class="pre">-numjobs=4</span></code> 并发数量 )</p></li>
 </ul>
 </section>
 <section id="id2">
-<h2>磁盘性能测试<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
+<h2>磁盘性能测试<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
 <section id="id3">
-<h3>测试说明<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h3>
+<h3>测试说明<a class="headerlink" href="#id3" title="Link to this heading"></a></h3>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">/dev/vda</span></code> 磁盘已经安装了虚拟机操作系统，所以 <code class="docutils literal notranslate"><span class="pre">fio</span></code> 采用文件进行测试，和直接读写块设备文件有差异(存在操作系统缓存影响)，不过对于测试两个一致操作系统还是可以有一定对比性。</p></li>
 <li><p>提供Ceph服务的3个虚拟机已经做了 cpu pinning ，分配到socket 0上的CPU核心; 但是由于我的 <a class="reference internal" href="../../linux/server/hardware/hpe/hpe_dl360_gen9.html#hpe-dl360-gen9"><span class="std std-ref">HPE ProLiant DL360 Gen9服务器</span></a> 配置的XEON处理器是 <a class="reference internal" href="../../kernel/cpu/intel/xeon_e5/xeon_e5-2670_v3.html#xeon-e5-2670-v3"><span class="std std-ref">Intel Xeon E5-2670 v3处理器</span></a> ，物理核心数量有限，不考虑超线程已经全部一一分配给这3个Ceph虚拟机；所以我不确定Ceph客户端虚拟机绑定在同一个Socket的处理器上超线程cpu core上性能更好还是绑定到Socket 1的CPU核心更好(需要实测，并且我估计和负载、软件版本有关)</p></li>
@@ -193,7 +201,7 @@
 </section>
 </section>
 <section id="iops">
-<h2>随机写IOPS(文件)<a class="headerlink" href="#iops" title="Link to this heading">¶</a></h2>
+<h2>随机写IOPS(文件)<a class="headerlink" href="#iops" title="Link to this heading"></a></h2>
 <ul>
 <li><p>测试命令:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>fio -direct=1 -iodepth=32 -rw=randwrite -ioengine=libaio -bs=4k -numjobs=4 -time_based=1 -runtime=60 -group_reporting -filename=${HOME}/fio -size=2g -name=test
@@ -203,7 +211,7 @@
 <li><p><code class="docutils literal notranslate"><span class="pre">z-ubuntu20</span></code> 本地SSD测试结果:</p></li>
 </ul>
 <div class="literal-block-wrapper docutils container" id="id5">
-<div class="code-block-caption"><span class="caption-text">本地SSD虚拟机 随机写IOPS</span><a class="headerlink" href="#id5" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">本地SSD虚拟机 随机写IOPS</span><a class="headerlink" href="#id5" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span>fio-3.16
 <span class="linenos"> 2</span>Starting<span class="w"> </span><span class="m">4</span><span class="w"> </span>processes
 <span class="linenos"> 3</span>test:<span class="w"> </span>Laying<span class="w"> </span>out<span class="w"> </span>IO<span class="w"> </span>file<span class="w"> </span><span class="o">(</span><span class="m">1</span><span class="w"> </span>file<span class="w"> </span>/<span class="w"> </span>2048MiB<span class="o">)</span>
@@ -241,7 +249,7 @@
 <li><p><code class="docutils literal notranslate"><span class="pre">z-ubuntu20-rbd</span></code> Ceph RBD测试结果:</p></li>
 </ul>
 <div class="literal-block-wrapper docutils container" id="id6">
-<div class="code-block-caption"><span class="caption-text">Ceph RBD虚拟机 随机写IOPS</span><a class="headerlink" href="#id6" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">Ceph RBD虚拟机 随机写IOPS</span><a class="headerlink" href="#id6" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span>fio-3.16
 <span class="linenos"> 2</span>Starting<span class="w"> </span><span class="m">4</span><span class="w"> </span>processes
 <span class="linenos"> 3</span>test:<span class="w"> </span>Laying<span class="w"> </span>out<span class="w"> </span>IO<span class="w"> </span>file<span class="w"> </span><span class="o">(</span><span class="m">1</span><span class="w"> </span>file<span class="w"> </span>/<span class="w"> </span>2048MiB<span class="o">)</span>
@@ -316,7 +324,7 @@
 </li>
 </ul>
 <div class="literal-block-wrapper docutils container" id="id7">
-<div class="code-block-caption"><span class="caption-text">IOMMU虚拟机文件系统2GB文件 随机写IOPS</span><a class="headerlink" href="#id7" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">IOMMU虚拟机文件系统2GB文件 随机写IOPS</span><a class="headerlink" href="#id7" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span>fio-3.16
 <span class="linenos"> 2</span>Starting<span class="w"> </span><span class="m">4</span><span class="w"> </span>processes
 <span class="linenos"> 3</span>test:<span class="w"> </span>Laying<span class="w"> </span>out<span class="w"> </span>IO<span class="w"> </span>file<span class="w"> </span><span class="o">(</span><span class="m">1</span><span class="w"> </span>file<span class="w"> </span>/<span class="w"> </span>2048MiB<span class="o">)</span>
@@ -355,11 +363,11 @@
 </div>
 </section>
 <section id="id4">
-<h2>云盘性能分析<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h2>
+<h2>云盘性能分析<a class="headerlink" href="#id4" title="Link to this heading"></a></h2>
 <ul class="simple">
-<li><p>对 <code class="docutils literal notranslate"><span class="pre">1TB</span></code> NVMe 磁盘设备文件进行 <code class="docutils literal notranslate"><span class="pre">fio</span></code> 随机读写压测，IO是随机分散到整个固态硬盘，所以整体性能卓越；而对单个文件(特别是只有 <code class="docutils literal notranslate"><span class="pre">2GB</span></code> 的小文件)测试随机读写压测，则IO只能局限于2GB的NVMe局部进行读写测试，所以性能 “下降” 到 <code class="docutils literal notranslate"><span class="pre">2G/1024G</span> <span class="pre">=</span> <span class="pre">1/512</span></code> ，也就是只有整体设备读写性能的 <code class="docutils literal notranslate"><span class="pre">1/512</span></code></p></li>
+<li><p>对 <code class="docutils literal notranslate"><span class="pre">1TB</span></code> NVMe 磁盘设备文件进行 <code class="docutils literal notranslate"><span class="pre">fio</span></code> 随机读写压测，IO是随机分散到整个固态硬盘，所以整体性能卓越；而对单个文件(特别是只有 <code class="docutils literal notranslate"><span class="pre">2GB</span></code> 的小文件)测试随机读写压测，则IO只能局限于2GB的NVMe局部进行读写测试，所以性能 &quot;下降&quot; 到 <code class="docutils literal notranslate"><span class="pre">2G/1024G</span> <span class="pre">=</span> <span class="pre">1/512</span></code> ，也就是只有整体设备读写性能的 <code class="docutils literal notranslate"><span class="pre">1/512</span></code></p></li>
 <li><p>固态设备规格越小，同样型号的SSD性能越差；要 <code class="docutils literal notranslate"><span class="pre">公平</span></code> 测试性能，只能对比相同规格固态磁盘</p></li>
-<li><p>对于云盘，也有类似的分散读写效应，也即是云盘越大，云盘分散读写到更多的底层固态设备块上，就能获得更高性能；此外，类似 <a class="reference internal" href="../index.html#ceph"><span class="std std-ref">Ceph Atlas</span></a> 的分布式存储，底层越多的 <code class="docutils literal notranslate"><span class="pre">OSD</span></code> 支撑，就能够获得更好的读写性能；这个性能是由 Ceph 的 <code class="docutils literal notranslate"><span class="pre">PG</span></code> 来决定的(分散度)，但同时分布式复制、网络性能、CPU繁忙、缓存冲突等等都会影响分布式存储性能，无法像直接访问NVMe设备那样获得稳定的一致性的性能</p></li>
+<li><p>对于云盘，也有类似的分散读写效应，也即是云盘越大，云盘分散读写到更多的底层固态设备块上，就能获得更高性能；此外，类似 <a class="reference internal" href="../index.html#ceph"><span class="std std-ref">Ceph</span></a> 的分布式存储，底层越多的 <code class="docutils literal notranslate"><span class="pre">OSD</span></code> 支撑，就能够获得更好的读写性能；这个性能是由 Ceph 的 <code class="docutils literal notranslate"><span class="pre">PG</span></code> 来决定的(分散度)，但同时分布式复制、网络性能、CPU繁忙、缓存冲突等等都会影响分布式存储性能，无法像直接访问NVMe设备那样获得稳定的一致性的性能</p></li>
 </ul>
 <p>对磁盘文件系统上的文件进行 <code class="docutils literal notranslate"><span class="pre">fio</span></code> 测试得到的随机写IOPS非常低，之前在 <a class="reference internal" href="../../kvm/iommu/compare_iommu_native_nvme.html#compare-iommu-native-nvme"><span class="std std-ref">比较IOMMU NVMe和原生NVMe存储性能</span></a> 随机写IOPS高达 <code class="docutils literal notranslate"><span class="pre">629k</span></code> ，但同样的iommu虚拟机环境，对该设备上6GB分区中的2GB大小文件进行随机写测试，也只能获得 <code class="docutils literal notranslate"><span class="pre">8180</span></code> IOPS。仅比我构建的 Ceph RBD 随机写性能 <code class="docutils literal notranslate"><span class="pre">4801</span></code> 高70%，并不是数量级的差异。这也说明，对小规格文件进行测试只能做横向相同环境比较，没有绝对的测试意义。粗略估计，采用分布式Ceph存储，性能下降约40%。不过，这个性能完全可以通过扩大Ceph规模，构建更大规格云盘来调整到接近甚至超越的性能。</p>
 <p>所以，我感觉测试绝对数值没有太大意义，通过配置完全可以改变测试结果数值。只有相对同样规格横向对比才能有一定参考意义，然而也是受到底层参数调整影响，所以我就不再做进一步的性能压测了(太磨损固态硬盘寿命了)。后续只有对 <a class="reference internal" href="../tunning/index.html#ceph-tunning"><span class="std std-ref">Ceph 优化</span></a> 时，做参数对比才有测试意义。</p>
@@ -374,25 +382,37 @@
 
            </div>
           </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="ceph_rbd_libvirt.html" class="btn btn-neutral float-left" title="Libvirt集成Ceph RBD" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="down_1_of_3_ceph_vm_rbd.html" class="btn btn-neutral float-right" title="1/3 Ceph节点宕机演练: VM RBD测试" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="ceph_rbd_libvirt.html" class="btn btn-neutral float-left" title="Libvirt集成Ceph RBD" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="down_1_of_3_ceph_vm_rbd.html" class="btn btn-neutral float-right" title="1/3 Ceph节点宕机演练: VM RBD测试" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../copyright.html">Copyright</a> 2018 - now, Huatai Huang.</p>
+    <p>&#169; <a href="../../copyright.html">版权所有</a> 2018 - now, Huatai Huang。</p>
   </div>
 
-  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
   
     <!-- your html code here -->
     <br>
-    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡</a></p>
-     
+    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡 👈</a></p>
+    <br>
+    <p>网站采用 <a href="https://utteranc.es/">utterances</a> 评论系统，所有评论存储在<a href="https://github.com/huataihuang/cloud-atlas/issues">GitHub issues</a> 中，如果你看不到下方的评论框，那么可能需要<a href="https://cloud-atlas.readthedocs.io/zh-cn/latest/linux/security/vpn/index.html">自备梯子</a> 👈</p>
+    <div class="articleComments">
+        <comments>
+  <script src="https://utteranc.es/client.js"
+    repo="huataihuang/cloud-atlas"
+    issue-term="pathname"
+    theme="github-light"
+    crossorigin="anonymous"
+    async>
+  </script>
+</comments>
+    </div>
 
 
 </footer>

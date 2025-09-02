@@ -1,26 +1,30 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh" data-content_root="../../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>配置Docker使用代理 &mdash; Cloud Atlas 0.1 文档</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+  <title>配置Docker使用代理 &mdash; Cloud Atlas: Discovery beta 文档</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=fd3f3429" />
+
+  
+    <link rel="shortcut icon" href="../../_static/favicon.png"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="../../_static/documentation_options.js?v=7c91f8fd"></script>
-        <script src="../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=8534f863"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
         <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
-        <script src="../../_static/translations.js?v=beaddf03"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../../genindex.html" />
     <link rel="search" title="搜索" href="../../search.html" />
     <link rel="copyright" title="版权所有" href="../../copyright.html" />
-    <link rel="next" title="Docker的expose和publish端口差异和关系" href="docker_expose_publish_port.html" />
+    <link rel="next" title="Docker 代理快速起步" href="docker_proxy_quickstart.html" />
     <link rel="prev" title="Docker网络" href="index.html" /> 
 </head>
 
@@ -33,32 +37,36 @@
           
           
           <a href="../../index.html" class="icon icon-home">
-            Cloud Atlas
+            Cloud Atlas: Discovery
           </a>
+              <div class="version">
+                1.1
+              </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../studio/index.html">Studio Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../infrastructure/index.html">Infrastructure Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../devops/index.html">DevOps Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kvm/index.html">KVM Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../ceph/index.html">Ceph Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../gluster/index.html">Gluster Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../ovirt/index.html">oVirt Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../openstack/index.html">OpenStack Atlas</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Docker Atlas</a><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../studio/index.html">Studio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../infrastructure/index.html">Infrastructure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../devops/index.html">DevOps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kvm/index.html">KVM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ceph/index.html">Ceph</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../gluster/index.html">Gluster</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ovirt/index.html">oVirt</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../openstack/index.html">OpenStack</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Docker</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../startup/index.html">Docker 起步</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../desktop/index.html">Docker Desktop</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../colima/index.html">Colima</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../images/index.html">Docker 镜像</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../rootless/index.html">Docker Rootless模式</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../moby/index.html">Docker Moby</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../moby/index.html">Moby</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../podman/index.html">podman</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../config/index.html">Docker配置</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../linuxserver/index.html">Docker LinuxServer.io</a></li>
@@ -70,9 +78,10 @@
 <li class="toctree-l3 current"><a class="current reference internal" href="#">配置Docker使用代理</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#dockerproxy">Docker客户端的Proxy</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#docker-server-proxy">Docker服务器Proxy</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id5">参考</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id6">参考</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="docker_proxy_quickstart.html">Docker 代理快速起步</a></li>
 <li class="toctree-l3"><a class="reference internal" href="docker_expose_publish_port.html">Docker的expose和publish端口差异和关系</a></li>
 </ul>
 </li>
@@ -83,47 +92,48 @@
 <li class="toctree-l2"><a class="reference internal" href="../debug/index.html">Docker异常排查</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../kubernetes/index.html">Kubernetes Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kubernetes_from_scratch/index.html">Kubernetes From Scratch (KFS) Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../rancher/index.html">Rancher Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../openshift/index.html">OpenShift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../sql/index.html">SQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../sqlite/index.html">SQLite Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../mysql/index.html">MySQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../pgsql/index.html">PostgreSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../clickhouse/index.html">ClickHouse Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../nosql/index.html">NoSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../redis/index.html">Redis Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../network/index.html">Network Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../infra_service/index.html">Infra-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../infra_search/index.html">Search Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../info_service/index.html">Info-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../web/index.html">Web Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../big_data/index.html">Big Data Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../machine_learning/index.html">Machine Learning Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../linux/index.html">Linux Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kernel/index.html">Kernel Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../performance/index.html">Performance Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../distributed_system/index.html">Distributed System Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../shell/index.html">Shell Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../python/index.html">Python Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../django/index.html">Django Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../flask/index.html">Flask Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../javascript/index.html">JavaScript Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../nodejs/index.html">Node.js Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../clang/index.html">C Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../golang/index.html">Go Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../swift/index.html">Swift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../rust/index.html">Rust Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../ruby/index.html">Ruby Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../arm/index.html">ARM Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../android/index.html">Android Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../bsd/index.html">BSD Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../apple/index.html">Apple Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../windows/index.html">Windows Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../real/index.html">Real Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../management/index.html">Management Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../life/index.html">Life Atlas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kubernetes/index.html">Kubernetes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../k8s_dev/index.html">Kubernetes Develop</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../rancher/index.html">Rancher</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../openshift/index.html">OpenShift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../sql/index.html">SQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../sqlite/index.html">SQLite</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../mysql/index.html">MySQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../pgsql/index.html">PostgreSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../nosql/index.html">NoSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../network/index.html">Network</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../infra_service/index.html">Infra-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../infra_search/index.html">Infra-Search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../web/index.html">Web</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../info_service/index.html">Info-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../big_data/index.html">Big Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../machine_learning/index.html">Machine Learning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../drone/index.html">Drone</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../linux/index.html">Linux</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kernel/index.html">Kernel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../performance/index.html">Performance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../distributed_system/index.html">Distributed System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../shell/index.html">Shell</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../python/index.html">Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../django/index.html">Django</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../javascript/index.html">JavaScript</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../nodejs/index.html">Node.js</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../clang/index.html">C</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../golang/index.html">Go</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../swift/index.html">Swift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../rust/index.html">Rust</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ruby/index.html">Ruby</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lua/index.html">Lua</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../arm/index.html">ARM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../raspberry_pi/index.html">Raspberry Pi</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../android/index.html">Android</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../bsd/index.html">BSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../freebsd/index.html">FreeBSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../apple/index.html">Apple</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../windows/index.html">Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../real/index.html">Real</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../management/index.html">Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../life/index.html">Life</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../copyright.html">Copyright</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../aboutme.html">关于作者</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../donate.html">捐赠</a></li>
@@ -136,21 +146,21 @@
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../index.html">Cloud Atlas</a>
+          <a href="../../index.html">Cloud Atlas: Discovery</a>
       </nav>
 
       <div class="wy-nav-content">
         <div class="rst-content">
-          <div role="navigation" aria-label="Page navigation">
+          <div role="navigation" aria-label="页面导航">
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
-          <li class="breadcrumb-item"><a href="../index.html">Docker Atlas</a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Docker</a></li>
           <li class="breadcrumb-item"><a href="index.html">Docker网络</a></li>
       <li class="breadcrumb-item active">配置Docker使用代理</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../../_sources/docker/network/docker_proxy.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../_sources/docker/network/docker_proxy.rst.txt" rel="nofollow"> 查看页面源码</a>
       </li>
   </ul>
   <hr/>
@@ -159,11 +169,11 @@
            <div itemprop="articleBody">
              
   <section id="docker">
-<span id="docker-proxy"></span><h1>配置Docker使用代理<a class="headerlink" href="#docker" title="Link to this heading">¶</a></h1>
+<span id="docker-proxy"></span><h1>配置Docker使用代理<a class="headerlink" href="#docker" title="Link to this heading"></a></h1>
 <p>如果你也苦于GFW的阻塞，无法正常更新软件，并且在docker需要pull images时候发现无法下载Docker镜像，则可以部署 <a class="reference internal" href="../../web/proxy/squid/index.html#squid"><span class="std std-ref">Squid代理服务</span></a> 的 <a class="reference internal" href="../../web/proxy/squid/squid_socks_peer.html#squid-socks-peer"><span class="std std-ref">Squid父级socks代理</span></a> 来实现代理翻墙，或者采用非常简便的 <a class="reference internal" href="../../infra_service/ssh/ssh_tunneling_dynamic_port_forwarding.html#ssh-tunneling-dynamic-port-forwarding"><span class="std std-ref">SSH Tunneling: 动态端口转发</span></a> 实现socks5代理 。这里介绍如何配置docker客户端，以便能够通过代理(HTTP或者socks)加速镜像下载。</p>
 <p>这个方法也使得容器内部能够不需要单独配置代理，直接通过代理服务器上网。</p>
 <section id="dockerproxy">
-<span id="docker-client-proxy"></span><h2>Docker客户端的Proxy<a class="headerlink" href="#dockerproxy" title="Link to this heading">¶</a></h2>
+<span id="docker-client-proxy"></span><h2>Docker客户端的Proxy<a class="headerlink" href="#dockerproxy" title="Link to this heading"></a></h2>
 <div class="admonition note">
 <p class="admonition-title">备注</p>
 <p>注意，Docker客户端配置是对创建的容器生效，也就是把代理环境变量配置注入到容器内部。</p>
@@ -175,12 +185,12 @@
 <li><p>Docker 17.06或低版本，则需要在容器中设置相应的环境变量</p></li>
 </ul>
 <section id="id1">
-<h3>配置Docker客户端<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h3>
+<h3>配置Docker客户端<a class="headerlink" href="#id1" title="Link to this heading"></a></h3>
 <ul class="simple">
 <li><p>在Docker客户端，创建或配置 <code class="docutils literal notranslate"><span class="pre">~/.docker/config.json</span></code> 设置以下json格式配置:</p></li>
 </ul>
-<div class="literal-block-wrapper docutils container" id="id8">
-<div class="code-block-caption"><span class="caption-text">配置Docker客户端 ~/.docker/config.json 可以为容器内部注入代理配置</span><a class="headerlink" href="#id8" title="Link to this code">¶</a></div>
+<div class="literal-block-wrapper docutils container" id="id9">
+<div class="code-block-caption"><span class="caption-text">配置Docker客户端 ~/.docker/config.json 可以为容器内部注入代理配置</span><a class="headerlink" href="#id9" title="Link to this code"></a></div>
 <div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
 <span class="w"> </span><span class="nt">&quot;proxies&quot;</span><span class="p">:</span>
 <span class="w"> </span><span class="p">{</span>
@@ -204,7 +214,7 @@
 </div>
 </section>
 <section id="id2">
-<h3>Docker客户端环境变量<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h3>
+<h3>Docker客户端环境变量<a class="headerlink" href="#id2" title="Link to this heading"></a></h3>
 <p>可以在 dockerfile 中配置:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ENV</span> <span class="n">HTTP_PROXY</span> <span class="s2">&quot;http://127.0.0.1:3001&quot;</span>
 <span class="n">ENV</span> <span class="n">HTTP_PROXY</span> <span class="s2">&quot;http://127.0.0.1:3001&quot;</span>
@@ -226,9 +236,9 @@
 </section>
 </section>
 <section id="docker-server-proxy">
-<span id="id3"></span><h2>Docker服务器Proxy<a class="headerlink" href="#docker-server-proxy" title="Link to this heading">¶</a></h2>
+<span id="id3"></span><h2>Docker服务器Proxy<a class="headerlink" href="#docker-server-proxy" title="Link to this heading"></a></h2>
 <section id="systemddockerproxy">
-<h3>systemd配置Docker服务器Proxy<a class="headerlink" href="#systemddockerproxy" title="Link to this heading">¶</a></h3>
+<h3>systemd配置Docker服务器Proxy<a class="headerlink" href="#systemddockerproxy" title="Link to this heading"></a></h3>
 <div class="admonition warning">
 <p class="admonition-title">警告</p>
 <p>配置Docker服务器使用Proxy是成功的，但是访问Docker Hub证书存在问题，提示报错类似:</p>
@@ -245,8 +255,8 @@
 <ul class="simple">
 <li><p>创建 <code class="docutils literal notranslate"><span class="pre">/etc/systemd/system/docker.service.d/http-proxy.conf</span></code> 配置文件:</p></li>
 </ul>
-<div class="literal-block-wrapper docutils container" id="id9">
-<div class="code-block-caption"><span class="caption-text">配置 /etc/systemd/system/docker.service.d/http-proxy.conf 代理</span><a class="headerlink" href="#id9" title="Link to this code">¶</a></div>
+<div class="literal-block-wrapper docutils container" id="id10">
+<div class="code-block-caption"><span class="caption-text">配置 /etc/systemd/system/docker.service.d/http-proxy.conf 代理</span><a class="headerlink" href="#id10" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">[</span>Service<span class="o">]</span>
 <span class="nv">Environment</span><span class="o">=</span><span class="s2">&quot;HTTP_PROXY=http://192.168.6.200:3128/&quot;</span>
 <span class="nv">Environment</span><span class="o">=</span><span class="s2">&quot;HTTPS_PROXY=http://192.168.6.200:3128/&quot;</span>
@@ -271,8 +281,44 @@
 </pre></div>
 </div>
 </section>
+<section id="id4">
+<h3>结合环境变量和脚本配置<a class="headerlink" href="#id4" title="Link to this heading"></a></h3>
+<p>上述手工修订配置文件还有一个改进方法是使用脚本生成，方法参考 <a class="reference internal" href="../../kubernetes/container_runtimes/containerd/containerd_proxy.html#containerd-server-proxy"><span class="std std-ref">containerd服务端代理</span></a> :</p>
+<ul class="simple">
+<li><p>在 <code class="docutils literal notranslate"><span class="pre">/etc/environemt</span></code> 设置:</p></li>
+</ul>
+<div class="literal-block-wrapper docutils container" id="id11">
+<div class="code-block-caption"><span class="caption-text">在 /etc/environment 中添加代理配置</span><a class="headerlink" href="#id11" title="Link to this code"></a></div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nv">HTTP_PROXY</span><span class="o">=</span><span class="s2">&quot;http://192.168.6.200:3128&quot;</span>
+<span class="nv">HTTPS_PROXY</span><span class="o">=</span><span class="s2">&quot;http://192.168.6.200:3128&quot;</span>
+<span class="nv">NO_PROXY</span><span class="o">=</span><span class="s2">&quot;*.baidu.com,192.168.0.0/16,10.0.0.0/8&quot;</span>
+</pre></div>
+</div>
+</div>
+<ul class="simple">
+<li><p>然后通过脚本添加一个独立的配置 <code class="docutils literal notranslate"><span class="pre">/etc/systemd/system/docker.service.d/http-proxy.conf</span></code> :</p></li>
+</ul>
+<div class="literal-block-wrapper docutils container" id="id12">
+<div class="code-block-caption"><span class="caption-text">生成 /etc/systemd/system/docker.service.d/http-proxy.conf 为containerd添加代理配置</span><a class="headerlink" href="#id12" title="Link to this code"></a></div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="k">if</span><span class="w"> </span><span class="o">[</span><span class="w"> </span>!<span class="w"> </span>-d<span class="w"> </span>/etc/systemd/system/docker.service.d<span class="w"> </span><span class="o">]</span><span class="p">;</span><span class="k">then</span>
+<span class="w">    </span>mkdir<span class="w"> </span>-p<span class="w"> </span>/etc/systemd/system/docker.service.d
+<span class="k">fi</span>
+
+cat<span class="w"> </span><span class="s">&lt;&lt;EOF &gt;/etc/systemd/system/docker.service.d/http-proxy.conf    </span>
+<span class="s">[Service]    </span>
+<span class="hll"><span class="s">Environment=&quot;HTTP_PROXY=${HTTP_PROXY:-}&quot;    </span>
+</span><span class="hll"><span class="s">Environment=&quot;HTTPS_PROXY=${HTTPS_PROXY:-}&quot;    </span>
+</span><span class="hll"><span class="s">Environment=&quot;NO_PROXY=${NO_PROXY:-localhost},${LOCAL_NETWORK}&quot;    </span>
+</span><span class="s">EOF</span>
+
+systemctl<span class="w"> </span>daemon-reload
+systemctl<span class="w"> </span>restart<span class="w"> </span>docker
+</pre></div>
+</div>
+</div>
+</section>
 <section id="dockersocks">
-<span id="docker-server-socks-proxy"></span><h3>配置docker使用socks代理<a class="headerlink" href="#dockersocks" title="Link to this heading">¶</a></h3>
+<span id="docker-server-socks-proxy"></span><h3>配置docker使用socks代理<a class="headerlink" href="#dockersocks" title="Link to this heading"></a></h3>
 <div class="admonition note">
 <p class="admonition-title">备注</p>
 <p>这步socks代理我实践没有成功，待后续排查</p>
@@ -290,7 +336,7 @@
 <p>这样就能够够快速实现翻越GFW完成镜像下载，避免安装过程异常</p>
 </section>
 <section id="ubuntudockerproxy">
-<h3>Ubuntu配置Docker服务器Proxy<a class="headerlink" href="#ubuntudockerproxy" title="Link to this heading">¶</a></h3>
+<h3>Ubuntu配置Docker服务器Proxy<a class="headerlink" href="#ubuntudockerproxy" title="Link to this heading"></a></h3>
 <p>在Ubuntu上配置Docker服务器Proxy非常简单，只需要编辑 <code class="docutils literal notranslate"><span class="pre">/etc/default/docker</span></code></p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># If you need Docker to use an HTTP proxy, it can also be specified here.</span>
 <span class="n">export</span> <span class="n">http_proxy</span><span class="o">=</span><span class="s2">&quot;http://127.0.0.1:3128/&quot;</span>
@@ -301,8 +347,8 @@
 </pre></div>
 </div>
 </section>
-<section id="id4">
-<h3>Docker官方解决方案<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h3>
+<section id="id5">
+<h3>Docker官方解决方案<a class="headerlink" href="#id5" title="Link to this heading"></a></h3>
 <div class="admonition note">
 <p class="admonition-title">备注</p>
 <p>如果没有配置 <a class="reference internal" href="../../web/proxy/squid/squid_ssl_bumping.html#squid-ssl-bumping"><span class="std std-ref">Squid SSL拦截</span></a> ，那么虽然 <a class="reference internal" href="#docker-client-proxy"><span class="std std-ref">Docker客户端的Proxy</span></a> 正常，但是 <a class="reference internal" href="#docker-server-proxy"><span class="std std-ref">Docker服务器Proxy</span></a> 会遇到异常: HTTP下载正常，HTTPS则出现握手错误</p>
@@ -325,8 +371,8 @@
 </div>
 </section>
 </section>
-<section id="id5">
-<h2>参考<a class="headerlink" href="#id5" title="Link to this heading">¶</a></h2>
+<section id="id6">
+<h2>参考<a class="headerlink" href="#id6" title="Link to this heading"></a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="https://docs.docker.com/network/proxy/">Configure Docker to use a proxy server</a></p></li>
 <li><p><a class="reference external" href="https://www.thegeekdiary.com/how-to-configure-docker-to-use-proxy/">How to configure docker to use proxy</a></p></li>
@@ -339,25 +385,37 @@
 
            </div>
           </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="index.html" class="btn btn-neutral float-left" title="Docker网络" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="docker_expose_publish_port.html" class="btn btn-neutral float-right" title="Docker的expose和publish端口差异和关系" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="index.html" class="btn btn-neutral float-left" title="Docker网络" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="docker_proxy_quickstart.html" class="btn btn-neutral float-right" title="Docker 代理快速起步" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../copyright.html">Copyright</a> 2018 - now, Huatai Huang.</p>
+    <p>&#169; <a href="../../copyright.html">版权所有</a> 2018 - now, Huatai Huang。</p>
   </div>
 
-  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
   
     <!-- your html code here -->
     <br>
-    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡</a></p>
-     
+    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡 👈</a></p>
+    <br>
+    <p>网站采用 <a href="https://utteranc.es/">utterances</a> 评论系统，所有评论存储在<a href="https://github.com/huataihuang/cloud-atlas/issues">GitHub issues</a> 中，如果你看不到下方的评论框，那么可能需要<a href="https://cloud-atlas.readthedocs.io/zh-cn/latest/linux/security/vpn/index.html">自备梯子</a> 👈</p>
+    <div class="articleComments">
+        <comments>
+  <script src="https://utteranc.es/client.js"
+    repo="huataihuang/cloud-atlas"
+    issue-term="pathname"
+    theme="github-light"
+    crossorigin="anonymous"
+    async>
+  </script>
+</comments>
+    </div>
 
 
 </footer>

@@ -1,7 +1,7 @@
 .. _python:
 
 =================================
-Python Atlas
+Python
 =================================
 
 「人生苦短，我用Pyton」
@@ -13,8 +13,11 @@ Python Atlas
 
    intro_python.rst
    startup/index
+   os/index
+   dictionary/index
    network/index
    database/index
+   web/index
    gui/index
    deploy/index
    regular_exresssions.rst

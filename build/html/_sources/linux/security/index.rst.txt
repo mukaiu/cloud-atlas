@@ -8,9 +8,12 @@ Linux安全
    :maxdepth: 1
 
    chroot.rst
+   wpa.rst
    vpn/index
    audit/index
    tpm/index
+   openvas/index
+   bridgecrew/index
    hunting_for_persistence_in_linux/index
    mitre_attack/index
 

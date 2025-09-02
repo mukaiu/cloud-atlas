@@ -1,27 +1,31 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh" data-content_root="../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Node.js 简介 &mdash; Cloud Atlas 0.1 文档</title>
-      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/graphviz.css" type="text/css" />
+  <title>Node.js 简介 &mdash; Cloud Atlas: Discovery beta 文档</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../_static/graphviz.css?v=fd3f3429" />
+
+  
+    <link rel="shortcut icon" href="../_static/favicon.png"/>
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="../_static/documentation_options.js?v=7c91f8fd"></script>
-        <script src="../_static/doctools.js?v=888ff710"></script>
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=8534f863"></script>
+        <script src="../_static/doctools.js?v=9a2dae69"></script>
         <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
-        <script src="../_static/translations.js?v=beaddf03"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="搜索" href="../search.html" />
     <link rel="copyright" title="版权所有" href="../copyright.html" />
     <link rel="next" title="Node.js起步" href="startup/index.html" />
-    <link rel="prev" title="Node.js Atlas" href="index.html" /> 
+    <link rel="prev" title="Node.js" href="index.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -33,55 +37,56 @@
           
           
           <a href="../index.html" class="icon icon-home">
-            Cloud Atlas
+            Cloud Atlas: Discovery
           </a>
+              <div class="version">
+                1.1
+              </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../studio/index.html">Studio Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../infrastructure/index.html">Infrastructure Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../devops/index.html">DevOps Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../kvm/index.html">KVM Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../ceph/index.html">Ceph Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../gluster/index.html">Gluster Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../ovirt/index.html">oVirt Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../openstack/index.html">OpenStack Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../docker/index.html">Docker Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../kubernetes/index.html">Kubernetes Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../kubernetes_from_scratch/index.html">Kubernetes From Scratch (KFS) Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../rancher/index.html">Rancher Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../openshift/index.html">OpenShift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../sql/index.html">SQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../sqlite/index.html">SQLite Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../mysql/index.html">MySQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../pgsql/index.html">PostgreSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../clickhouse/index.html">ClickHouse Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../nosql/index.html">NoSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../redis/index.html">Redis Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../network/index.html">Network Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../infra_service/index.html">Infra-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../infra_search/index.html">Search Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../info_service/index.html">Info-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../web/index.html">Web Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../big_data/index.html">Big Data Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../machine_learning/index.html">Machine Learning Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../linux/index.html">Linux Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../kernel/index.html">Kernel Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../performance/index.html">Performance Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../distributed_system/index.html">Distributed System Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../shell/index.html">Shell Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../python/index.html">Python Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../django/index.html">Django Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../flask/index.html">Flask Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../javascript/index.html">JavaScript Atlas</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="index.html">Node.js Atlas</a><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../studio/index.html">Studio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../infrastructure/index.html">Infrastructure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../devops/index.html">DevOps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../kvm/index.html">KVM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ceph/index.html">Ceph</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../gluster/index.html">Gluster</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ovirt/index.html">oVirt</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../openstack/index.html">OpenStack</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../docker/index.html">Docker</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../kubernetes/index.html">Kubernetes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../k8s_dev/index.html">Kubernetes Develop</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../rancher/index.html">Rancher</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../openshift/index.html">OpenShift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../sql/index.html">SQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../sqlite/index.html">SQLite</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../mysql/index.html">MySQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pgsql/index.html">PostgreSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../nosql/index.html">NoSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../network/index.html">Network</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../infra_service/index.html">Infra-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../infra_search/index.html">Infra-Search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../web/index.html">Web</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../info_service/index.html">Info-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../big_data/index.html">Big Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../machine_learning/index.html">Machine Learning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../drone/index.html">Drone</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../linux/index.html">Linux</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../kernel/index.html">Kernel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../performance/index.html">Performance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../distributed_system/index.html">Distributed System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../shell/index.html">Shell</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../python/index.html">Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../django/index.html">Django</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../javascript/index.html">JavaScript</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Node.js</a><ul class="current">
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Node.js 简介</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#koa-js-egg-js-express-js-typescript">koa.js, egg.js, express.js, TypeScript</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#node-web">Node Web应用解析</a><ul>
@@ -105,19 +110,22 @@
 <li class="toctree-l2"><a class="reference internal" href="deploy/index.html">Node.js部署</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../clang/index.html">C Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../golang/index.html">Go Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../swift/index.html">Swift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../rust/index.html">Rust Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../ruby/index.html">Ruby Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../arm/index.html">ARM Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../android/index.html">Android Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../bsd/index.html">BSD Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../apple/index.html">Apple Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../windows/index.html">Windows Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../real/index.html">Real Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../management/index.html">Management Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../life/index.html">Life Atlas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../clang/index.html">C</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../golang/index.html">Go</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../swift/index.html">Swift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../rust/index.html">Rust</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ruby/index.html">Ruby</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lua/index.html">Lua</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../arm/index.html">ARM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../raspberry_pi/index.html">Raspberry Pi</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../android/index.html">Android</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../bsd/index.html">BSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../freebsd/index.html">FreeBSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../apple/index.html">Apple</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../windows/index.html">Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../real/index.html">Real</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../management/index.html">Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../life/index.html">Life</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../copyright.html">Copyright</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../aboutme.html">关于作者</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../donate.html">捐赠</a></li>
@@ -130,20 +138,20 @@
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../index.html">Cloud Atlas</a>
+          <a href="../index.html">Cloud Atlas: Discovery</a>
       </nav>
 
       <div class="wy-nav-content">
         <div class="rst-content">
-          <div role="navigation" aria-label="Page navigation">
+          <div role="navigation" aria-label="页面导航">
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
-          <li class="breadcrumb-item"><a href="index.html">Node.js Atlas</a></li>
+          <li class="breadcrumb-item"><a href="index.html">Node.js</a></li>
       <li class="breadcrumb-item active">Node.js 简介</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../_sources/nodejs/introduce_nodejs.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/nodejs/introduce_nodejs.rst.txt" rel="nofollow"> 查看页面源码</a>
       </li>
   </ul>
   <hr/>
@@ -152,7 +160,7 @@
            <div itemprop="articleBody">
              
   <section id="node-js">
-<span id="intrudoce-nodejs"></span><h1>Node.js 简介<a class="headerlink" href="#node-js" title="Link to this heading">¶</a></h1>
+<span id="intrudoce-nodejs"></span><h1>Node.js 简介<a class="headerlink" href="#node-js" title="Link to this heading"></a></h1>
 <p>Node.js是JavaScript的运行平台，其显著特征是：</p>
 <ul class="simple">
 <li><p>异步机制</p></li>
@@ -175,7 +183,7 @@
 </li>
 </ul>
 <section id="koa-js-egg-js-express-js-typescript">
-<h2>koa.js, egg.js, express.js, TypeScript<a class="headerlink" href="#koa-js-egg-js-express-js-typescript" title="Link to this heading">¶</a></h2>
+<h2>koa.js, egg.js, express.js, TypeScript<a class="headerlink" href="#koa-js-egg-js-express-js-typescript" title="Link to this heading"></a></h2>
 <p>Express.js是Node.js开发的传统Web框架，提供了 web 开发所需的路由、模版引擎、MVC、Cookie、Session等功能，支持通过中间件扩展，上手简单，功能强大，是目前最流行的Node.js Web框架。</p>
 <ul class="simple">
 <li><p>Express是ECMAScript 5 向 ECMAScript 6(2015)过渡时期的产物，处理异步比较繁琐</p></li>
@@ -183,11 +191,11 @@
 </ul>
 <div class="admonition note">
 <p class="admonition-title">备注</p>
-<p><code class="docutils literal notranslate"><span class="pre">洋葱圈模型</span></code> : 指Koa的每个中间件都采用一个类似”洋葱圈”的调用方式，每个请求进入时，每个中间件都会被执行两次:</p>
+<p><code class="docutils literal notranslate"><span class="pre">洋葱圈模型</span></code> : 指Koa的每个中间件都采用一个类似&quot;洋葱圈&quot;的调用方式，每个请求进入时，每个中间件都会被执行两次:</p>
 <figure class="align-default" id="id6">
 <a class="reference internal image-reference" href="../_images/koa_onion1.png"><img alt="../_images/koa_onion1.png" src="../_images/koa_onion1.png" style="width: 439.2px; height: 382.8px;" /></a>
 <figcaption>
-<p><span class="caption-text">洋葱圈模型: 每个中间件调用都会执行两次</span><a class="headerlink" href="#id6" title="Link to this image">¶</a></p>
+<p><span class="caption-text">洋葱圈模型: 每个中间件调用都会执行两次</span><a class="headerlink" href="#id6" title="Link to this image"></a></p>
 </figcaption>
 </figure>
 </div>
@@ -219,7 +227,7 @@
 </div>
 </section>
 <section id="node-web">
-<h2>Node Web应用解析<a class="headerlink" href="#node-web" title="Link to this heading">¶</a></h2>
+<h2>Node Web应用解析<a class="headerlink" href="#node-web" title="Link to this heading"></a></h2>
 <p>Node和JavaScript的优势之一是它们的单线程编程模型(在浏览器中执行时)：指令序列一次执行一条，代码不是并行执行的，这种机制规避了线程编程中经常出现的问题，如资源死锁和竞态条件。</p>
 <ul class="simple">
 <li><p>事件：当浏览器触发一个事件时(例如点击按钮)就会有一个之前定义的函数运行</p></li>
@@ -227,7 +235,7 @@
 <li><p>异步API(事件轮询, event loop)</p></li>
 </ul>
 <section id="i-o-async-i-o">
-<h3>非阻塞I/O(Async I/O)<a class="headerlink" href="#i-o-async-i-o" title="Link to this heading">¶</a></h3>
+<h3>非阻塞I/O(Async I/O)<a class="headerlink" href="#i-o-async-i-o" title="Link to this heading"></a></h3>
 <p>服务器端编程特性: 在读写文件或网络收发数据(统称为I/O)，底层平台不应该阻塞业务逻辑的执行。</p>
 <p>这就类似上文所说的Node Web编程特性，Node也采用上述3种技术来解决服务器端编程:</p>
 <ul class="simple">
@@ -238,13 +246,13 @@
 <figure class="align-default" id="id7">
 <img alt="../_images/nodejs_async_io.webp" src="../_images/nodejs_async_io.webp" />
 <figcaption>
-<p><span class="caption-text">Node应用异步非阻塞</span><a class="headerlink" href="#id7" title="Link to this image">¶</a></p>
+<p><span class="caption-text">Node应用异步非阻塞</span><a class="headerlink" href="#id7" title="Link to this image"></a></p>
 </figcaption>
 </figure>
 </section>
 <section id="event-loop">
-<h3>事件轮询(event loop)<a class="headerlink" href="#event-loop" title="Link to this heading">¶</a></h3>
-<p><a class="reference internal" href="../javascript/index.html#javascript"><span class="std std-ref">JavaScript Atlas</span></a> 计时器 <code class="docutils literal notranslate"><span class="pre">setTimeout</span></code> 和 <code class="docutils literal notranslate"><span class="pre">setInterval</span></code> ，运行 I/O 回调。轮询阶段会获取新的 I/O 事件，最后使用 <code class="docutils literal notranslate"><span class="pre">setImmediate</span></code> 回调。</p>
+<h3>事件轮询(event loop)<a class="headerlink" href="#event-loop" title="Link to this heading"></a></h3>
+<p><a class="reference internal" href="../javascript/index.html#javascript"><span class="std std-ref">JavaScript</span></a> 计时器 <code class="docutils literal notranslate"><span class="pre">setTimeout</span></code> 和 <code class="docutils literal notranslate"><span class="pre">setInterval</span></code> ，运行 I/O 回调。轮询阶段会获取新的 I/O 事件，最后使用 <code class="docutils literal notranslate"><span class="pre">setImmediate</span></code> 回调。</p>
 <div class="admonition note">
 <p class="admonition-title">备注</p>
 <p>这个底层原理后续再学习完善</p>
@@ -252,7 +260,7 @@
 </section>
 </section>
 <section id="nodev8">
-<h2>Node和V8<a class="headerlink" href="#nodev8" title="Link to this heading">¶</a></h2>
+<h2>Node和V8<a class="headerlink" href="#nodev8" title="Link to this heading"></a></h2>
 <p>Node的动力源自V8 JavaScript引擎，最初由Google Chrome的Chromium项目组开发。V8的特性是会被JavaScript直接编译为机器吗，此外还有一些代码优化特性，所以Node的性能卓越。</p>
 <p>Node使用本地组件 <code class="docutils literal notranslate"><span class="pre">libuv</span></code> 来处理I/O，V8负责JavaScript代码的解释和执行。使用C++绑定层将libuv和V8结合起来。</p>
 <figure class="align-default">
@@ -266,7 +274,7 @@
 </ul>
 </section>
 <section id="node">
-<h2>Node版本<a class="headerlink" href="#node" title="Link to this heading">¶</a></h2>
+<h2>Node版本<a class="headerlink" href="#node" title="Link to this heading"></a></h2>
 <ul class="simple">
 <li><p>长期支持版(LTS): 18个月支持服务，之后有12个月维护性支持服务</p></li>
 <li><p>当前版(current)</p></li>
@@ -275,13 +283,13 @@
 <p>当Node主版本号变化，则意味着有些API可能不兼容，则项目需要重新测试。</p>
 </section>
 <section id="id1">
-<h2>下一步<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h2>
+<h2>下一步<a class="headerlink" href="#id1" title="Link to this heading"></a></h2>
 <ul class="simple">
 <li><p><a class="reference internal" href="startup/nodejs_dev_env.html#nodejs-dev-env"><span class="std std-ref">Node.js开发环境</span></a></p></li>
 </ul>
 </section>
 <section id="id2">
-<h2>参考<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
+<h2>参考<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="https://guide.daocloud.io/dcs/node-js-9153945.html">Node.js 的发展历程</a> - 历史简述可做参考</p></li>
 <li><p><a class="reference external" href="http://www.ayqy.net/blog/node-js发展史/">Node.js发展史</a> 这是Node.js编年史，非常详尽且有很多互联网文档索引链接，对于Node.js历史详情和发展趋势感兴趣可以阅读</p></li>
@@ -295,25 +303,37 @@
 
            </div>
           </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="index.html" class="btn btn-neutral float-left" title="Node.js Atlas" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="startup/index.html" class="btn btn-neutral float-right" title="Node.js起步" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="index.html" class="btn btn-neutral float-left" title="Node.js" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="startup/index.html" class="btn btn-neutral float-right" title="Node.js起步" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../copyright.html">Copyright</a> 2018 - now, Huatai Huang.</p>
+    <p>&#169; <a href="../copyright.html">版权所有</a> 2018 - now, Huatai Huang。</p>
   </div>
 
-  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
   
     <!-- your html code here -->
     <br>
-    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡</a></p>
-     
+    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡 👈</a></p>
+    <br>
+    <p>网站采用 <a href="https://utteranc.es/">utterances</a> 评论系统，所有评论存储在<a href="https://github.com/huataihuang/cloud-atlas/issues">GitHub issues</a> 中，如果你看不到下方的评论框，那么可能需要<a href="https://cloud-atlas.readthedocs.io/zh-cn/latest/linux/security/vpn/index.html">自备梯子</a> 👈</p>
+    <div class="articleComments">
+        <comments>
+  <script src="https://utteranc.es/client.js"
+    repo="huataihuang/cloud-atlas"
+    issue-term="pathname"
+    theme="github-light"
+    crossorigin="anonymous"
+    async>
+  </script>
+</comments>
+    </div>
 
 
 </footer>

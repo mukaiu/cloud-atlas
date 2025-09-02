@@ -1,26 +1,30 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh" data-content_root="../../../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>使用IPMI(智能平台管理接口) &mdash; Cloud Atlas 0.1 文档</title>
-      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../../_static/graphviz.css" type="text/css" />
+  <title>使用IPMI(智能平台管理接口) &mdash; Cloud Atlas: Discovery beta 文档</title>
+      <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/graphviz.css?v=fd3f3429" />
+
+  
+    <link rel="shortcut icon" href="../../../_static/favicon.png"/>
   <!--[if lt IE 9]>
     <script src="../../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="../../../_static/documentation_options.js?v=7c91f8fd"></script>
-        <script src="../../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../../_static/documentation_options.js?v=8534f863"></script>
+        <script src="../../../_static/doctools.js?v=9a2dae69"></script>
         <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
-        <script src="../../../_static/translations.js?v=beaddf03"></script>
     <script src="../../../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../../../genindex.html" />
     <link rel="search" title="搜索" href="../../../search.html" />
     <link rel="copyright" title="版权所有" href="../../../copyright.html" />
-    <link rel="next" title="IPMI工具ipmitool" href="ipmitool.html" />
+    <link rel="next" title="ipmitool控制台连接" href="ipmitool_sol_activate.html" />
     <link rel="prev" title="IPMI" href="index.html" /> 
 </head>
 
@@ -33,61 +37,69 @@
           
           
           <a href="../../../index.html" class="icon icon-home">
-            Cloud Atlas
+            Cloud Atlas: Discovery
           </a>
+              <div class="version">
+                1.1
+              </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../../studio/index.html">Studio Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../infrastructure/index.html">Infrastructure Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../devops/index.html">DevOps Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../kvm/index.html">KVM Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../ceph/index.html">Ceph Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../gluster/index.html">Gluster Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../ovirt/index.html">oVirt Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../openstack/index.html">OpenStack Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../docker/index.html">Docker Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../kubernetes/index.html">Kubernetes Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../kubernetes_from_scratch/index.html">Kubernetes From Scratch (KFS) Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../rancher/index.html">Rancher Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../openshift/index.html">OpenShift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../sql/index.html">SQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../sqlite/index.html">SQLite Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../mysql/index.html">MySQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../pgsql/index.html">PostgreSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../clickhouse/index.html">ClickHouse Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../nosql/index.html">NoSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../redis/index.html">Redis Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../network/index.html">Network Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../infra_service/index.html">Infra-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../infra_search/index.html">Search Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../info_service/index.html">Info-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../web/index.html">Web Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../big_data/index.html">Big Data Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../machine_learning/index.html">Machine Learning Atlas</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">Linux Atlas</a><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../studio/index.html">Studio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../infrastructure/index.html">Infrastructure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../devops/index.html">DevOps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../kvm/index.html">KVM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../ceph/index.html">Ceph</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../gluster/index.html">Gluster</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../ovirt/index.html">oVirt</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../openstack/index.html">OpenStack</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../docker/index.html">Docker</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../kubernetes/index.html">Kubernetes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../k8s_dev/index.html">Kubernetes Develop</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../rancher/index.html">Rancher</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../openshift/index.html">OpenShift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../sql/index.html">SQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../sqlite/index.html">SQLite</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../mysql/index.html">MySQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../pgsql/index.html">PostgreSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../nosql/index.html">NoSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../network/index.html">Network</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../infra_service/index.html">Infra-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../infra_search/index.html">Infra-Search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../web/index.html">Web</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../info_service/index.html">Info-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../big_data/index.html">Big Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../machine_learning/index.html">Machine Learning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../drone/index.html">Drone</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">Linux</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../../best_linux.html">最佳Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../admin/index.html">Linux系统管理</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../redhat_linux/index.html">RedHat Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../arch_linux/index.html">Arch Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../asahi_linux/index.html">Asahi Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../gentoo_linux/index.html">Gentoo Linux</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../lfs_linux/index.html">LFS(Linux from scratch)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../lfs/index.html">LFS(Linux from scratch)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../blfs/index.html">BLFS(Beyond Linux from scratch)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../alfs/index.html">ALFS(Automated Linux from scratch)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pilfs/index.html">PiLFS(Automated Linux from scratch on the Raspberry Pi)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../yocto/index.html">Yocto</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../debian/index.html">Debian</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../ubuntu_linux/index.html">Ubuntu Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../suse_linux/index.html">SUSE Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../kali_linux/index.html">Kali Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../tails_linux/index.html">Tails Linux</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../qubes_os/index.html">Qubes OS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../postmarketos/index.html">postmarketOS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../container_os/index.html">容器化操作系统(Container OS)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../fedora_coreos/index.html">Fedora CoreOS容器操作系统</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../chromium_os/index.html">Chromium OS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../chromeos/index.html">ChromeOS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../alpine_linux/index.html">Alpine Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../subgraph_os/index.html">Subgraph OS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../kaios/index.html">KaiOS - 世界第三手机操作系统</a></li>
@@ -99,6 +111,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../uefi/index.html">Linux UEFI</a></li>
 <li class="toctree-l3 current"><a class="reference internal" href="index.html">IPMI</a><ul class="current">
 <li class="toctree-l4 current"><a class="current reference internal" href="#">使用IPMI(智能平台管理接口)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ipmitool_sol_activate.html">ipmitool控制台连接</a></li>
 <li class="toctree-l4"><a class="reference internal" href="ipmitool.html">IPMI工具ipmitool</a></li>
 <li class="toctree-l4"><a class="reference internal" href="quick_config_ipmi.html">快速配置IPMI</a></li>
 <li class="toctree-l4"><a class="reference internal" href="ipmi_sensor_fan_speed.html">IPMI sensor和风扇转速</a></li>
@@ -115,28 +128,30 @@
 <li class="toctree-l2"><a class="reference internal" href="../../linux_tablet/index.html">Linux平板</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../../kernel/index.html">Kernel Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../performance/index.html">Performance Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../distributed_system/index.html">Distributed System Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../shell/index.html">Shell Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../python/index.html">Python Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../django/index.html">Django Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../flask/index.html">Flask Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../javascript/index.html">JavaScript Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../nodejs/index.html">Node.js Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../clang/index.html">C Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../golang/index.html">Go Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../swift/index.html">Swift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../rust/index.html">Rust Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../ruby/index.html">Ruby Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../arm/index.html">ARM Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../android/index.html">Android Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../bsd/index.html">BSD Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../apple/index.html">Apple Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../windows/index.html">Windows Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../real/index.html">Real Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../management/index.html">Management Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../life/index.html">Life Atlas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../kernel/index.html">Kernel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../performance/index.html">Performance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../distributed_system/index.html">Distributed System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../shell/index.html">Shell</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../python/index.html">Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../django/index.html">Django</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../javascript/index.html">JavaScript</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../nodejs/index.html">Node.js</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../clang/index.html">C</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../golang/index.html">Go</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../swift/index.html">Swift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../rust/index.html">Rust</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../ruby/index.html">Ruby</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../lua/index.html">Lua</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../arm/index.html">ARM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../raspberry_pi/index.html">Raspberry Pi</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../android/index.html">Android</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../bsd/index.html">BSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../freebsd/index.html">FreeBSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../apple/index.html">Apple</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../windows/index.html">Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../real/index.html">Real</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../management/index.html">Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../life/index.html">Life</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../copyright.html">Copyright</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../aboutme.html">关于作者</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../donate.html">捐赠</a></li>
@@ -149,22 +164,22 @@
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../../index.html">Cloud Atlas</a>
+          <a href="../../../index.html">Cloud Atlas: Discovery</a>
       </nav>
 
       <div class="wy-nav-content">
         <div class="rst-content">
-          <div role="navigation" aria-label="Page navigation">
+          <div role="navigation" aria-label="页面导航">
   <ul class="wy-breadcrumbs">
       <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
-          <li class="breadcrumb-item"><a href="../../index.html">Linux Atlas</a></li>
+          <li class="breadcrumb-item"><a href="../../index.html">Linux</a></li>
           <li class="breadcrumb-item"><a href="../index.html">Linux服务器</a></li>
           <li class="breadcrumb-item"><a href="index.html">IPMI</a></li>
       <li class="breadcrumb-item active">使用IPMI(智能平台管理接口)</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../../../_sources/linux/server/ipmi/use_ipmi.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../../_sources/linux/server/ipmi/use_ipmi.rst.txt" rel="nofollow"> 查看页面源码</a>
       </li>
   </ul>
   <hr/>
@@ -173,9 +188,9 @@
            <div itemprop="articleBody">
              
   <section id="ipmi">
-<span id="use-ipmi"></span><h1>使用IPMI(智能平台管理接口)<a class="headerlink" href="#ipmi" title="Link to this heading">¶</a></h1>
+<span id="use-ipmi"></span><h1>使用IPMI(智能平台管理接口)<a class="headerlink" href="#ipmi" title="Link to this heading"></a></h1>
 <section id="id1">
-<h2>概念<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h2>
+<h2>概念<a class="headerlink" href="#id1" title="Link to this heading"></a></h2>
 <p>IPMI(Intelligent Platform Management Interface, 智能平台管理接口)是提供完整监控和管理功能的标注话消息硬件管理接口，提供了本地和远程的安全方式。</p>
 <ul class="simple">
 <li><p>IPMI(Intelligent Platform Management Interface, 智能平台管理接口)</p></li>
@@ -188,12 +203,12 @@
 <p>详细的有关 IPMI 规范，参考 <a class="reference external" href="http://www.intel.com/design/servers/ipmi/spec.htm?cm_mc_uid=70380859151914472193504&amp;cm_mc_sid_50200000=1459416301">Intelligent Platform Management Interface Specifications</a></p>
 </section>
 <section id="id2">
-<h2>IPMI硬件和软件要求<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
+<h2>IPMI硬件和软件要求<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
 <p>在Linux平台上要配置IPMI需要有 <code class="docutils literal notranslate"><span class="pre">/dev/ipmi0</span></code> 设备存在，如果缺少该设备， <code class="docutils literal notranslate"><span class="pre">ipmitool</span></code> 工具就无法工作。此时需要使用如下方法创建设备：</p>
 <ul>
 <li><p>如果是SuSE，RedHat或CentOS执行(需要安装 <code class="docutils literal notranslate"><span class="pre">OpenIPMI</span></code> 工具包)，在 <a class="reference internal" href="../../redhat_linux/systemd/index.html#systemd"><span class="std std-ref">Systemd进程管理器</span></a> 体系中，是 <code class="docutils literal notranslate"><span class="pre">openipmi.service</span></code></p>
 <blockquote>
-<div><p>systemctl enable –now openipmi.service</p>
+<div><p>systemctl enable --now openipmi.service</p>
 </div></blockquote>
 </li>
 <li><p>在Debian平台执行:</p>
@@ -205,10 +220,10 @@
 </ul>
 </section>
 <section id="id3">
-<h2>配置IPMI网络<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h2>
+<h2>配置IPMI网络<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
 <p>为了充分发挥IPMI的功能，例如可以通过带外管理IP地址远程管理服务器，需要为服务器配置IPMI网络(通常是服务器的第一块网卡集成了BMC，配置IP后可以远程带外管理):</p>
-<div class="literal-block-wrapper docutils container" id="id11">
-<div class="code-block-caption"><span class="caption-text">配置IPMI网络</span><a class="headerlink" href="#id11" title="Link to this code">¶</a></div>
+<div class="literal-block-wrapper docutils container" id="id12">
+<div class="code-block-caption"><span class="caption-text">配置IPMI网络</span><a class="headerlink" href="#id12" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ipmitool<span class="w"> </span>lan<span class="w"> </span><span class="nb">set</span><span class="w"> </span><span class="m">2</span><span class="w"> </span>ipsrc<span class="w"> </span>static
 ipmitool<span class="w"> </span>lan<span class="w"> </span><span class="nb">set</span><span class="w"> </span><span class="m">2</span><span class="w"> </span>ipaddr<span class="w"> </span><span class="m">192</span>.168.6.254
 ipmitool<span class="w"> </span>lan<span class="w"> </span><span class="nb">set</span><span class="w"> </span><span class="m">2</span><span class="w"> </span>netmask<span class="w"> </span><span class="m">255</span>.255.255.0
@@ -224,12 +239,47 @@ ipmitool<span class="w"> </span>lan<span class="w"> </span><span class="nb">set<
 <p class="admonition-title">备注</p>
 <p>在这里使用 <code class="docutils literal notranslate"><span class="pre">set</span> <span class="pre">2</span></code> 对 channel 2 进行配置，实践发现，实际上ipmi可能使用不同的channel(尚未理解，我在实践中发现有使用channel 1也有channel 2，这里是在 我的 <a class="reference internal" href="../hardware/hpe/hpe_dl360_gen9.html#hpe-dl360-gen9"><span class="std std-ref">HPE ProLiant DL360 Gen9服务器</span></a> 服务器上配置，使用的是 <code class="docutils literal notranslate"><span class="pre">channel</span> <span class="pre">2</span></code> ；在通常情况下，这个channel是1)。例如有可能  <code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">ipmitool</span> <span class="pre">lan</span> <span class="pre">print</span> <span class="pre">1</span></code> 显示 <code class="docutils literal notranslate"><span class="pre">Invalid</span> <span class="pre">channel:</span> <span class="pre">1</span></code> 。而此时尝试 <code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">ipmitool</span> <span class="pre">lan</span> <span class="pre">print</span> <span class="pre">2</span></code> 才有输出，则证明服务器采用的是 <code class="docutils literal notranslate"><span class="pre">channel</span> <span class="pre">2</span></code> 。你可以尝试一下 <code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">ipmitool</span> <span class="pre">lan</span> <span class="pre">print</span></code></p>
 </div>
-<ul>
-<li><p>检查配置:</p>
+<ul class="simple">
+<li><p>检查配置:</p></li>
+</ul>
+<div class="literal-block-wrapper docutils container" id="id13">
+<div class="code-block-caption"><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">ipmitool</span> <span class="pre">lan</span> <span class="pre">print</span></code> 输出 <code class="docutils literal notranslate"><span class="pre">channel</span> <span class="pre">2</span></code></span><a class="headerlink" href="#id13" title="Link to this code"></a></div>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ipmitool</span> <span class="n">lan</span> <span class="nb">print</span> <span class="mi">2</span>
 </pre></div>
 </div>
-</li>
+</div>
+<p>输出显示:</p>
+<div class="literal-block-wrapper docutils container" id="id14">
+<div class="code-block-caption"><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">ipmitool</span> <span class="pre">lan</span> <span class="pre">print</span></code> 输出 <code class="docutils literal notranslate"><span class="pre">channel</span> <span class="pre">2</span></code> 内容</span><a class="headerlink" href="#id14" title="Link to this code"></a></div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Set</span> <span class="ow">in</span> <span class="n">Progress</span>         <span class="p">:</span> <span class="n">Set</span> <span class="n">Complete</span>
+<span class="n">Auth</span> <span class="n">Type</span> <span class="n">Support</span>       <span class="p">:</span>
+<span class="n">Auth</span> <span class="n">Type</span> <span class="n">Enable</span>        <span class="p">:</span> <span class="n">Callback</span> <span class="p">:</span>
+                        <span class="p">:</span> <span class="n">User</span>     <span class="p">:</span>
+                        <span class="p">:</span> <span class="n">Operator</span> <span class="p">:</span>
+                        <span class="p">:</span> <span class="n">Admin</span>    <span class="p">:</span>
+                        <span class="p">:</span> <span class="n">OEM</span>      <span class="p">:</span>
+<span class="n">IP</span> <span class="n">Address</span> <span class="n">Source</span>       <span class="p">:</span> <span class="n">Static</span> <span class="n">Address</span>
+<span class="n">IP</span> <span class="n">Address</span>              <span class="p">:</span> <span class="mf">192.168.7.254</span>
+<span class="n">Subnet</span> <span class="n">Mask</span>             <span class="p">:</span> <span class="mf">255.255.255.0</span>
+<span class="n">MAC</span> <span class="n">Address</span>             <span class="p">:</span> <span class="mi">94</span><span class="p">:</span><span class="mi">57</span><span class="p">:</span><span class="n">a5</span><span class="p">:</span><span class="mi">5</span><span class="n">e</span><span class="p">:</span><span class="mi">7</span><span class="n">f</span><span class="p">:</span><span class="mi">16</span>
+<span class="n">SNMP</span> <span class="n">Community</span> <span class="n">String</span>   <span class="p">:</span>
+<span class="n">BMC</span> <span class="n">ARP</span> <span class="n">Control</span>         <span class="p">:</span> <span class="n">ARP</span> <span class="n">Responses</span> <span class="n">Enabled</span><span class="p">,</span> <span class="n">Gratuitous</span> <span class="n">ARP</span> <span class="n">Disabled</span>
+<span class="n">Default</span> <span class="n">Gateway</span> <span class="n">IP</span>      <span class="p">:</span> <span class="mf">192.168.6.11</span>
+<span class="mf">802.1</span><span class="n">q</span> <span class="n">VLAN</span> <span class="n">ID</span>          <span class="p">:</span> <span class="n">Disabled</span>
+<span class="mf">802.1</span><span class="n">q</span> <span class="n">VLAN</span> <span class="n">Priority</span>    <span class="p">:</span> <span class="mi">0</span>
+<span class="n">RMCP</span><span class="o">+</span> <span class="n">Cipher</span> <span class="n">Suites</span>     <span class="p">:</span> <span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span>
+<span class="n">Cipher</span> <span class="n">Suite</span> <span class="n">Priv</span> <span class="n">Max</span>   <span class="p">:</span> <span class="n">XuuaXXXXXXXXXXX</span>
+                        <span class="p">:</span>     <span class="n">X</span><span class="o">=</span><span class="n">Cipher</span> <span class="n">Suite</span> <span class="n">Unused</span>
+                        <span class="p">:</span>     <span class="n">c</span><span class="o">=</span><span class="n">CALLBACK</span>
+                        <span class="p">:</span>     <span class="n">u</span><span class="o">=</span><span class="n">USER</span>
+                        <span class="p">:</span>     <span class="n">o</span><span class="o">=</span><span class="n">OPERATOR</span>
+                        <span class="p">:</span>     <span class="n">a</span><span class="o">=</span><span class="n">ADMIN</span>
+                        <span class="p">:</span>     <span class="n">O</span><span class="o">=</span><span class="n">OEM</span>
+<span class="n">Bad</span> <span class="n">Password</span> <span class="n">Threshold</span>  <span class="p">:</span> <span class="n">Not</span> <span class="n">Available</span>
+</pre></div>
+</div>
+</div>
+<ul>
 <li><p>配置admin权限用户账号:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ipmitool</span> <span class="n">user</span> <span class="nb">set</span> <span class="n">name</span> <span class="mi">2</span> <span class="n">admin</span>
 </pre></div>
@@ -292,8 +342,8 @@ ipmitool<span class="w"> </span>lan<span class="w"> </span><span class="nb">set<
 </li>
 </ul>
 <p>综合上述配置账号的步骤，可以合并成如下操作:</p>
-<div class="literal-block-wrapper docutils container" id="id12">
-<div class="code-block-caption"><span class="caption-text">配置IPMI的admin账号</span><a class="headerlink" href="#id12" title="Link to this code">¶</a></div>
+<div class="literal-block-wrapper docutils container" id="id15">
+<div class="code-block-caption"><span class="caption-text">配置IPMI的admin账号</span><a class="headerlink" href="#id15" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ipmitool<span class="w"> </span>user<span class="w"> </span><span class="nb">set</span><span class="w"> </span>name<span class="w"> </span><span class="m">1</span><span class="w"> </span>admin
 ipmitool<span class="w"> </span>user<span class="w"> </span><span class="nb">set</span><span class="w"> </span>password<span class="w"> </span><span class="m">1</span><span class="w"> </span>ADMIN_PASSWORD
 ipmitool<span class="w"> </span>channel<span class="w"> </span>setaccess<span class="w"> </span><span class="m">2</span><span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="nv">link</span><span class="o">=</span>on<span class="w"> </span><span class="nv">ipmi</span><span class="o">=</span>on<span class="w"> </span><span class="nv">callin</span><span class="o">=</span>on<span class="w"> </span><span class="nv">privilege</span><span class="o">=</span><span class="m">4</span>
@@ -320,7 +370,7 @@ ipmitool<span class="w"> </span>channel<span class="w"> </span>setaccess<span cl
 </div>
 </section>
 <section id="id4">
-<h2>用户配置权限级别<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h2>
+<h2>用户配置权限级别<a class="headerlink" href="#id4" title="Link to this heading"></a></h2>
 <p>如果用户只允许查询传感器数据，需要设置特定权限。这样的用户没有权限操作服务器，例如，创建一个名为 <code class="docutils literal notranslate"><span class="pre">monitor</span></code> 的用户:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ipmitool</span> <span class="n">user</span> <span class="nb">set</span> <span class="n">name</span> <span class="mi">6</span> <span class="n">monitor</span>
 <span class="n">ipmitool</span> <span class="n">user</span> <span class="nb">set</span> <span class="n">password</span> <span class="mi">6</span>
@@ -409,9 +459,9 @@ ipmitool<span class="w"> </span>channel<span class="w"> </span>setaccess<span cl
 <p>完成了基本配置以后，就可以进行下一步对服务器进行带外管理和IPMI操作了</p>
 </section>
 <section id="id5">
-<h2>IPMI使用<a class="headerlink" href="#id5" title="Link to this heading">¶</a></h2>
+<h2>IPMI使用<a class="headerlink" href="#id5" title="Link to this heading"></a></h2>
 <section id="id6">
-<h3>远程访问<a class="headerlink" href="#id6" title="Link to this heading">¶</a></h3>
+<h3>远程访问<a class="headerlink" href="#id6" title="Link to this heading"></a></h3>
 <p>IPMI不仅可以本机执行，也可以通过网络访问方式执行 ( <code class="docutils literal notranslate"><span class="pre">-I</span> <span class="pre">lanplus</span></code> ) ，这样即使服务器操作死机或crash，也可以通过带外管理(网络接口)访问主机，就好像在机房中直接访问物理服务器的键盘和显示器。</p>
 <ul>
 <li><p>案例：远程访问终端:</p>
@@ -434,8 +484,57 @@ ipmitool<span class="w"> </span>channel<span class="w"> </span>setaccess<span cl
 </div>
 <p>以下如果是登陆到服务器上并具有root权限，也都不需要 <code class="docutils literal notranslate"><span class="pre">-I</span> <span class="pre">lanplus</span> <span class="pre">-H</span> <span class="pre">IP</span> <span class="pre">-U</span> <span class="pre">username</span> <span class="pre">-P</span> <span class="pre">password</span></code> 。</p>
 </section>
+<section id="id7">
+<h3>电源管理<a class="headerlink" href="#id7" title="Link to this heading"></a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">ipmitool</span></code> 可以远程通过网络管理服务器电源，也就是开机关机:</p>
+<ul class="simple">
+<li><p>电源开机:</p></li>
+</ul>
+<div class="literal-block-wrapper docutils container" id="id16">
+<div class="code-block-caption"><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">chassis</span> <span class="pre">power</span> <span class="pre">on</span></code> 电源开机</span><a class="headerlink" href="#id16" title="Link to this code"></a></div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ipmitool</span> <span class="o">-</span><span class="n">C</span> <span class="mi">3</span> <span class="o">-</span><span class="n">H</span> <span class="mf">192.168.7.254</span> <span class="o">-</span><span class="n">v</span> <span class="o">-</span><span class="n">I</span> <span class="n">lanplus</span> <span class="o">-</span><span class="n">U</span> <span class="o">&lt;</span><span class="n">username</span><span class="o">&gt;</span> <span class="o">-</span><span class="n">P</span> <span class="o">&lt;</span><span class="n">userpassword</span><span class="o">&gt;</span> <span class="n">chassis</span> <span class="n">power</span> <span class="n">on</span>
+</pre></div>
+</div>
+</div>
+<ul class="simple">
+<li><p>软方式关机:</p></li>
+</ul>
+<div class="literal-block-wrapper docutils container" id="id17">
+<div class="code-block-caption"><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">chassis</span> <span class="pre">power</span> <span class="pre">soft</span></code> 电源软关机</span><a class="headerlink" href="#id17" title="Link to this code"></a></div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ipmitool</span> <span class="o">-</span><span class="n">H</span> <span class="mf">192.168.7.254</span> <span class="o">-</span><span class="n">v</span> <span class="o">-</span><span class="n">I</span> <span class="n">lanplus</span> <span class="o">-</span><span class="n">U</span> <span class="o">&lt;</span><span class="n">username</span><span class="o">&gt;</span> <span class="o">-</span><span class="n">P</span> <span class="o">&lt;</span><span class="n">userpassword</span><span class="o">&gt;</span> <span class="n">chassis</span> <span class="n">power</span> <span class="n">soft</span>
+</pre></div>
+</div>
+</div>
+<ul class="simple">
+<li><p>强制硬关机:</p></li>
+</ul>
+<div class="literal-block-wrapper docutils container" id="id18">
+<div class="code-block-caption"><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">chassis</span> <span class="pre">power</span> <span class="pre">off</span></code> 电源强制硬关机</span><a class="headerlink" href="#id18" title="Link to this code"></a></div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ipmitool</span> <span class="o">-</span><span class="n">H</span> <span class="mf">192.168.7.254</span> <span class="o">-</span><span class="n">v</span> <span class="o">-</span><span class="n">I</span> <span class="n">lanplus</span> <span class="o">-</span><span class="n">U</span> <span class="o">&lt;</span><span class="n">username</span><span class="o">&gt;</span> <span class="o">-</span><span class="n">P</span> <span class="o">&lt;</span><span class="n">userpassword</span><span class="o">&gt;</span> <span class="n">chassis</span> <span class="n">power</span> <span class="n">off</span>
+</pre></div>
+</div>
+</div>
+<ul class="simple">
+<li><p>硬重启(reset)服务器:</p></li>
+</ul>
+<div class="literal-block-wrapper docutils container" id="id19">
+<div class="code-block-caption"><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">chassis</span> <span class="pre">power</span> <span class="pre">cycle</span></code> 电源硬重启(reset)</span><a class="headerlink" href="#id19" title="Link to this code"></a></div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ipmitool</span> <span class="o">-</span><span class="n">H</span> <span class="mf">192.168.7.254</span> <span class="o">-</span><span class="n">v</span> <span class="o">-</span><span class="n">I</span> <span class="n">lanplus</span> <span class="o">-</span><span class="n">U</span> <span class="o">&lt;</span><span class="n">username</span><span class="o">&gt;</span> <span class="o">-</span><span class="n">P</span> <span class="o">&lt;</span><span class="n">userpassword</span><span class="o">&gt;</span> <span class="n">chassis</span> <span class="n">power</span> <span class="n">cycle</span>
+</pre></div>
+</div>
+</div>
+<ul class="simple">
+<li><p>检查服务器电源状态:</p></li>
+</ul>
+<div class="literal-block-wrapper docutils container" id="id20">
+<div class="code-block-caption"><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">chassis</span> <span class="pre">status</span></code> 检查服务器状态</span><a class="headerlink" href="#id20" title="Link to this code"></a></div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ipmitool</span> <span class="o">-</span><span class="n">C</span> <span class="mi">3</span> <span class="o">-</span><span class="n">H</span> <span class="mf">192.168.7.254</span> <span class="o">-</span><span class="n">v</span> <span class="o">-</span><span class="n">I</span> <span class="n">lanplus</span> <span class="o">-</span><span class="n">U</span> <span class="o">&lt;</span><span class="n">username</span><span class="o">&gt;</span> <span class="o">-</span><span class="n">P</span> <span class="o">&lt;</span><span class="n">userpassword</span><span class="o">&gt;</span> <span class="n">chassis</span> <span class="n">status</span>
+</pre></div>
+</div>
+</div>
+</section>
 <section id="impi">
-<h3>常用IMPI功能<a class="headerlink" href="#impi" title="Link to this heading">¶</a></h3>
+<h3>常用IMPI功能<a class="headerlink" href="#impi" title="Link to this heading"></a></h3>
 <ul class="simple">
 <li><p>重启MC控制器</p></li>
 </ul>
@@ -450,8 +549,8 @@ ipmitool<span class="w"> </span>channel<span class="w"> </span>setaccess<span cl
 <li><p>重启服务器</p></li>
 </ul>
 <p>这是最常用都ipmi命令，通常服务器死机时候可通过 <code class="docutils literal notranslate"><span class="pre">power</span> <span class="pre">reset</span></code> 硬关机并重启:</p>
-<div class="literal-block-wrapper docutils container" id="id13">
-<div class="code-block-caption"><span class="caption-text">重启服务器</span><a class="headerlink" href="#id13" title="Link to this code">¶</a></div>
+<div class="literal-block-wrapper docutils container" id="id21">
+<div class="code-block-caption"><span class="caption-text">重启服务器</span><a class="headerlink" href="#id21" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ipmitool<span class="w"> </span>-I<span class="w"> </span>lanplus<span class="w"> </span>-H<span class="w"> </span>IP<span class="w"> </span>-U<span class="w"> </span>username<span class="w"> </span>-P<span class="w"> </span>password<span class="w"> </span>power<span class="w"> </span>reset
 </pre></div>
 </div>
@@ -460,8 +559,8 @@ ipmitool<span class="w"> </span>channel<span class="w"> </span>setaccess<span cl
 <li><p>远程访问终端</p></li>
 </ul>
 <p>在服务器操作系统启动之前，物理服务器有一个硬件初始化过程，这部分信息通过IPMI访问可以完整观察到。此外，如果服务器出现内核crash，也会在串口终端输出信息。执行以下命令远程访问串口终端:</p>
-<div class="literal-block-wrapper docutils container" id="id14">
-<div class="code-block-caption"><span class="caption-text">通过IPMI访问控制台</span><a class="headerlink" href="#id14" title="Link to this code">¶</a></div>
+<div class="literal-block-wrapper docutils container" id="id22">
+<div class="code-block-caption"><span class="caption-text">通过IPMI访问控制台</span><a class="headerlink" href="#id22" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ipmitool<span class="w"> </span>-I<span class="w"> </span>lanplus<span class="w"> </span>-H<span class="w"> </span>IP<span class="w">  </span>-U<span class="w"> </span>username<span class="w"> </span>-P<span class="w"> </span>password<span class="w"> </span>sol<span class="w"> </span>activate
 </pre></div>
 </div>
@@ -470,8 +569,8 @@ ipmitool<span class="w"> </span>channel<span class="w"> </span>setaccess<span cl
 <li><p>检查服务器sol日志（故障原因）</p></li>
 </ul>
 <p>当物理服务器出现硬件故障，例如cpu，内存，板卡，风扇等。这些硬件日志都会记录在服务的SOL日志中，就可以通过以下命令检查:</p>
-<div class="literal-block-wrapper docutils container" id="id15">
-<div class="code-block-caption"><span class="caption-text">通过IPMI获取系统日志</span><a class="headerlink" href="#id15" title="Link to this code">¶</a></div>
+<div class="literal-block-wrapper docutils container" id="id23">
+<div class="code-block-caption"><span class="caption-text">通过IPMI获取系统日志</span><a class="headerlink" href="#id23" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ipmitool<span class="w"> </span>-I<span class="w"> </span>lanplus<span class="w"> </span>-H<span class="w"> </span>IP<span class="w"> </span>-U<span class="w"> </span>username<span class="w"> </span>-P<span class="w"> </span>password<span class="w"> </span>sel<span class="w"> </span>list
 </pre></div>
 </div>
@@ -482,12 +581,12 @@ ipmitool<span class="w"> </span>channel<span class="w"> </span>setaccess<span cl
 </div>
 </section>
 </section>
-<section id="id7">
-<h2>IPMI配置服务器启动模式<a class="headerlink" href="#id7" title="Link to this heading">¶</a></h2>
+<section id="id8">
+<h2>IPMI配置服务器启动模式<a class="headerlink" href="#id8" title="Link to this heading"></a></h2>
 <p>我们知道主机BIOS可以设置从CD-ROM, 硬盘 或者网络(PXE)启动，对于服务器而言，通过IPMI就可以实现远程设置启动顺序，这对服务器重装系统或者排查故障非常有用。</p>
 <p>例如，在大规模数据中心，服务器都是通过PXE启动自动安装系统的。我们需要通过IPMI配置服务器从PXE启动进行操作系统安装。</p>
 <section id="pxe">
-<h3>设置服务器从PXE重启<a class="headerlink" href="#pxe" title="Link to this heading">¶</a></h3>
+<h3>设置服务器从PXE重启<a class="headerlink" href="#pxe" title="Link to this heading"></a></h3>
 <p>IPMI配置启动可以通过raw代码方式设置，也可以通过易于理解的命令方式。</p>
 <ul>
 <li><p>raw方式设置PXE启动:</p>
@@ -503,8 +602,8 @@ ipmitool<span class="w"> </span>channel<span class="w"> </span>setaccess<span cl
 </li>
 </ul>
 </section>
-<section id="id8">
-<h3>设置从默认的硬盘启动<a class="headerlink" href="#id8" title="Link to this heading">¶</a></h3>
+<section id="id9">
+<h3>设置从默认的硬盘启动<a class="headerlink" href="#id9" title="Link to this heading"></a></h3>
 <ul>
 <li><p>raw方式设置硬盘启动:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ipmitool</span> <span class="n">raw</span> <span class="mh">0x00</span> <span class="mh">0x08</span> <span class="mh">0x05</span> <span class="mh">0x80</span> <span class="mh">0x08</span> <span class="mh">0x00</span> <span class="mh">0x00</span> <span class="mh">0x00</span>
@@ -520,7 +619,7 @@ ipmitool<span class="w"> </span>channel<span class="w"> </span>setaccess<span cl
 </ul>
 </section>
 <section id="cd-dvd">
-<h3>设置从CD/DVD启动<a class="headerlink" href="#cd-dvd" title="Link to this heading">¶</a></h3>
+<h3>设置从CD/DVD启动<a class="headerlink" href="#cd-dvd" title="Link to this heading"></a></h3>
 <ul>
 <li><p>raw方式设置CD/DVD启动:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ipmitool</span> <span class="n">raw</span> <span class="mh">0x00</span> <span class="mh">0x08</span> <span class="mh">0x05</span> <span class="mh">0x80</span> <span class="mh">0x08</span> <span class="mh">0x00</span> <span class="mh">0x00</span> <span class="mh">0x00</span>
@@ -536,7 +635,7 @@ ipmitool<span class="w"> </span>channel<span class="w"> </span>setaccess<span cl
 </ul>
 </section>
 <section id="bios">
-<h3>设置强制启动进入BIOS设置<a class="headerlink" href="#bios" title="Link to this heading">¶</a></h3>
+<h3>设置强制启动进入BIOS设置<a class="headerlink" href="#bios" title="Link to this heading"></a></h3>
 <p>有时候我们需要强制系统重启进入BIOS，例如需要通过BIOS配置配置RAID卡、开启NUMA等等，以及做一些特殊的BIOS设置。</p>
 <ul>
 <li><p>通过raw方式设置强制启动进入BIOS:</p>
@@ -553,8 +652,8 @@ ipmitool<span class="w"> </span>channel<span class="w"> </span>setaccess<span cl
 </ul>
 </section>
 </section>
-<section id="id9">
-<h2>获取系统启动选项<a class="headerlink" href="#id9" title="Link to this heading">¶</a></h2>
+<section id="id10">
+<h2>获取系统启动选项<a class="headerlink" href="#id10" title="Link to this heading"></a></h2>
 <ul>
 <li><p>可以通过IPMI获取到系统启动选项:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ipmitool</span> <span class="n">raw</span> <span class="mh">0x00</span> <span class="mh">0x09</span> <span class="n">Data</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">3</span><span class="p">]</span>
@@ -585,12 +684,13 @@ ipmitool<span class="w"> </span>channel<span class="w"> </span>setaccess<span cl
 </pre></div>
 </div>
 </section>
-<section id="id10">
-<h2>参考<a class="headerlink" href="#id10" title="Link to this heading">¶</a></h2>
+<section id="id11">
+<h2>参考<a class="headerlink" href="#id11" title="Link to this heading"></a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="https://www.ibm.com/support/knowledgecenter/#!/linuxonibm/liaai/ipmi/ipmikick.htm">Using Intelligent Platform Management Interface (IPMI)</a></p></li>
 <li><p><a class="reference external" href="https://github.com/erik-smit/oohhh-what-does-this-ipmi-doooo-no-deedee-nooooo/blob/master/1-discovering/snippets/Computercheese/IPMI-Chassis%20Device%20Commands.txt">IPMI-Chassis Device</a></p></li>
 <li><p><a class="reference external" href="https://docs.oracle.com/en/database/oracle/oracle-database/12.2/cwaix/example-of-bmc-configuration-using-ipmitool.html#GUID-11E563E0-3688-4FE9-8440-81402A7AC23A">Example of BMC Configuration Using IPMItool</a></p></li>
+<li><p><a class="reference external" href="https://docs.oracle.com/cd/E19273-01/html/821-0243/gixvt.html">How to Use IPMItool to Control Power</a></p></li>
 </ul>
 </section>
 </section>
@@ -598,25 +698,37 @@ ipmitool<span class="w"> </span>channel<span class="w"> </span>setaccess<span cl
 
            </div>
           </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="index.html" class="btn btn-neutral float-left" title="IPMI" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="ipmitool.html" class="btn btn-neutral float-right" title="IPMI工具ipmitool" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="index.html" class="btn btn-neutral float-left" title="IPMI" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="ipmitool_sol_activate.html" class="btn btn-neutral float-right" title="ipmitool控制台连接" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../../copyright.html">Copyright</a> 2018 - now, Huatai Huang.</p>
+    <p>&#169; <a href="../../../copyright.html">版权所有</a> 2018 - now, Huatai Huang。</p>
   </div>
 
-  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
   
     <!-- your html code here -->
     <br>
-    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡</a></p>
-     
+    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡 👈</a></p>
+    <br>
+    <p>网站采用 <a href="https://utteranc.es/">utterances</a> 评论系统，所有评论存储在<a href="https://github.com/huataihuang/cloud-atlas/issues">GitHub issues</a> 中，如果你看不到下方的评论框，那么可能需要<a href="https://cloud-atlas.readthedocs.io/zh-cn/latest/linux/security/vpn/index.html">自备梯子</a> 👈</p>
+    <div class="articleComments">
+        <comments>
+  <script src="https://utteranc.es/client.js"
+    repo="huataihuang/cloud-atlas"
+    issue-term="pathname"
+    theme="github-light"
+    crossorigin="anonymous"
+    async>
+  </script>
+</comments>
+    </div>
 
 
 </footer>

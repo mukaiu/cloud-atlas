@@ -9,6 +9,7 @@ DNS服务
 
    compare_dns_software.rst
    wpad_protocol.rst
+   dns_hijacking_godaddy_login.rst
    bind/index
    dnsmasq/index
 

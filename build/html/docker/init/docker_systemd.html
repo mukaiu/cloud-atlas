@@ -1,21 +1,25 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh" data-content_root="../../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Docker systemd进程管理器 &mdash; Cloud Atlas 0.1 文档</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+  <title>Docker systemd进程管理器 &mdash; Cloud Atlas: Discovery beta 文档</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=fd3f3429" />
+
+  
+    <link rel="shortcut icon" href="../../_static/favicon.png"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="../../_static/documentation_options.js?v=7c91f8fd"></script>
-        <script src="../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=8534f863"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
         <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
-        <script src="../../_static/translations.js?v=beaddf03"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../../genindex.html" />
     <link rel="search" title="搜索" href="../../search.html" />
@@ -33,32 +37,36 @@
           
           
           <a href="../../index.html" class="icon icon-home">
-            Cloud Atlas
+            Cloud Atlas: Discovery
           </a>
+              <div class="version">
+                1.1
+              </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../studio/index.html">Studio Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../infrastructure/index.html">Infrastructure Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../devops/index.html">DevOps Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kvm/index.html">KVM Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../ceph/index.html">Ceph Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../gluster/index.html">Gluster Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../ovirt/index.html">oVirt Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../openstack/index.html">OpenStack Atlas</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Docker Atlas</a><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../studio/index.html">Studio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../infrastructure/index.html">Infrastructure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../devops/index.html">DevOps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kvm/index.html">KVM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ceph/index.html">Ceph</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../gluster/index.html">Gluster</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ovirt/index.html">oVirt</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../openstack/index.html">OpenStack</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Docker</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../startup/index.html">Docker 起步</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../desktop/index.html">Docker Desktop</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../colima/index.html">Colima</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../images/index.html">Docker 镜像</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../rootless/index.html">Docker Rootless模式</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../moby/index.html">Docker Moby</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../moby/index.html">Moby</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../podman/index.html">podman</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../config/index.html">Docker配置</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../linuxserver/index.html">Docker LinuxServer.io</a></li>
@@ -88,47 +96,48 @@
 <li class="toctree-l2"><a class="reference internal" href="../debug/index.html">Docker异常排查</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../kubernetes/index.html">Kubernetes Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kubernetes_from_scratch/index.html">Kubernetes From Scratch (KFS) Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../rancher/index.html">Rancher Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../openshift/index.html">OpenShift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../sql/index.html">SQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../sqlite/index.html">SQLite Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../mysql/index.html">MySQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../pgsql/index.html">PostgreSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../clickhouse/index.html">ClickHouse Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../nosql/index.html">NoSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../redis/index.html">Redis Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../network/index.html">Network Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../infra_service/index.html">Infra-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../infra_search/index.html">Search Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../info_service/index.html">Info-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../web/index.html">Web Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../big_data/index.html">Big Data Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../machine_learning/index.html">Machine Learning Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../linux/index.html">Linux Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kernel/index.html">Kernel Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../performance/index.html">Performance Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../distributed_system/index.html">Distributed System Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../shell/index.html">Shell Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../python/index.html">Python Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../django/index.html">Django Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../flask/index.html">Flask Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../javascript/index.html">JavaScript Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../nodejs/index.html">Node.js Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../clang/index.html">C Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../golang/index.html">Go Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../swift/index.html">Swift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../rust/index.html">Rust Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../ruby/index.html">Ruby Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../arm/index.html">ARM Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../android/index.html">Android Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../bsd/index.html">BSD Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../apple/index.html">Apple Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../windows/index.html">Windows Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../real/index.html">Real Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../management/index.html">Management Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../life/index.html">Life Atlas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kubernetes/index.html">Kubernetes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../k8s_dev/index.html">Kubernetes Develop</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../rancher/index.html">Rancher</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../openshift/index.html">OpenShift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../sql/index.html">SQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../sqlite/index.html">SQLite</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../mysql/index.html">MySQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../pgsql/index.html">PostgreSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../nosql/index.html">NoSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../network/index.html">Network</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../infra_service/index.html">Infra-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../infra_search/index.html">Infra-Search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../web/index.html">Web</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../info_service/index.html">Info-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../big_data/index.html">Big Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../machine_learning/index.html">Machine Learning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../drone/index.html">Drone</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../linux/index.html">Linux</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kernel/index.html">Kernel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../performance/index.html">Performance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../distributed_system/index.html">Distributed System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../shell/index.html">Shell</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../python/index.html">Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../django/index.html">Django</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../javascript/index.html">JavaScript</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../nodejs/index.html">Node.js</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../clang/index.html">C</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../golang/index.html">Go</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../swift/index.html">Swift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../rust/index.html">Rust</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ruby/index.html">Ruby</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lua/index.html">Lua</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../arm/index.html">ARM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../raspberry_pi/index.html">Raspberry Pi</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../android/index.html">Android</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../bsd/index.html">BSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../freebsd/index.html">FreeBSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../apple/index.html">Apple</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../windows/index.html">Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../real/index.html">Real</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../management/index.html">Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../life/index.html">Life</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../copyright.html">Copyright</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../aboutme.html">关于作者</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../donate.html">捐赠</a></li>
@@ -141,21 +150,21 @@
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../index.html">Cloud Atlas</a>
+          <a href="../../index.html">Cloud Atlas: Discovery</a>
       </nav>
 
       <div class="wy-nav-content">
         <div class="rst-content">
-          <div role="navigation" aria-label="Page navigation">
+          <div role="navigation" aria-label="页面导航">
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
-          <li class="breadcrumb-item"><a href="../index.html">Docker Atlas</a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Docker</a></li>
           <li class="breadcrumb-item"><a href="index.html">Docker init进程管理器</a></li>
       <li class="breadcrumb-item active">Docker systemd进程管理器</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../../_sources/docker/init/docker_systemd.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../_sources/docker/init/docker_systemd.rst.txt" rel="nofollow"> 查看页面源码</a>
       </li>
   </ul>
   <hr/>
@@ -164,7 +173,7 @@
            <div itemprop="articleBody">
              
   <section id="docker-systemd">
-<span id="id1"></span><h1>Docker systemd进程管理器<a class="headerlink" href="#docker-systemd" title="Link to this heading">¶</a></h1>
+<span id="id1"></span><h1>Docker systemd进程管理器<a class="headerlink" href="#docker-systemd" title="Link to this heading"></a></h1>
 <p>在容器环境中，最佳的实践方式是采用完全轻量级的只运行应用进程的每个容器一个应用进程的模式。但是，很多情况下，我们依然会需要采用 <a class="reference internal" href="../../linux/redhat_linux/systemd/index.html#systemd"><span class="std std-ref">Systemd进程管理器</span></a> 来实现以下功能:</p>
 <ul class="simple">
 <li><p>多服务容器</p></li>
@@ -178,9 +187,9 @@
 <li><p>Systemd作为进程管理器优势</p></li>
 </ul>
 <p>systemd提供了处理服务器进程的重启和起停等管理功能，比任何其他进程管理器更为稳定和经过实践验证</p>
-<p>不过，systemd也因为其设计架构原因，会沿用其 systemd/journald 来控制容器的输出，而这个容器的输出对于 <a class="reference internal" href="../../kubernetes/index.html#kubernetes"><span class="std std-ref">Kubernetes Atlas</span></a> 和 <a class="reference internal" href="../../openshift/index.html#openshift"><span class="std std-ref">OpenShift Atlas</span></a> 设计架构是需要直接将日志输出到标准输出stdout和stderr。所以，如果你希望通过Kubernetes和OpenShift这样的调度系统来管理容器，在需要谨慎使用基于systemd的容器。并且，Docker和 <a class="reference internal" href="../moby/index.html#docker-moby"><span class="std std-ref">Docker Moby</span></a> 社区都不建议在容器中运行systemd。</p>
+<p>不过，systemd也因为其设计架构原因，会沿用其 systemd/journald 来控制容器的输出，而这个容器的输出对于 <a class="reference internal" href="../../kubernetes/index.html#kubernetes"><span class="std std-ref">Kubernetes</span></a> 和 <a class="reference internal" href="../../openshift/index.html#openshift"><span class="std std-ref">OpenShift</span></a> 设计架构是需要直接将日志输出到标准输出stdout和stderr。所以，如果你希望通过Kubernetes和OpenShift这样的调度系统来管理容器，在需要谨慎使用基于systemd的容器。并且，Docker和 <a class="reference internal" href="../moby/index.html#moby"><span class="std std-ref">Moby</span></a> 社区都不建议在容器中运行systemd。</p>
 <section id="dockersystemd">
-<h2>Docker容器中的systemd<a class="headerlink" href="#dockersystemd" title="Link to this heading">¶</a></h2>
+<h2>Docker容器中的systemd<a class="headerlink" href="#dockersystemd" title="Link to this heading"></a></h2>
 <p>由于docker容器通常只运行一个进程，当需要多个服务进程时，可以使用 <a class="reference internal" href="../startup/docker_compose.html#docker-compose"><span class="std std-ref">Docker Compose</span></a> 来配置启动多个容器服务器来实现。所以，默认情况下docker并不需要 <a class="reference internal" href="../../linux/redhat_linux/systemd/index.html#systemd"><span class="std std-ref">Systemd进程管理器</span></a> 来监视多个服务，这样默认关闭 systemd 不仅简化了部署也增强了安全性(不同容器可以隔离服务)。</p>
 <p>配置要点:</p>
 <ul class="simple">
@@ -211,7 +220,7 @@
 <li><p>如果要在容器内运行基于 <code class="docutils literal notranslate"><span class="pre">fuse</span></code> 到软件，需要bind mount <code class="docutils literal notranslate"><span class="pre">/sys/fs/cgroup</span></code></p></li>
 </ul>
 <section id="fedora-34-systemd-in-docker-container">
-<span id="fedora-systemd-in-docker"></span><h3>Fedora 34 systemd in Docker Container<a class="headerlink" href="#fedora-34-systemd-in-docker-container" title="Link to this heading">¶</a></h3>
+<span id="fedora-systemd-in-docker"></span><h3>Fedora 34 systemd in Docker Container<a class="headerlink" href="#fedora-34-systemd-in-docker-container" title="Link to this heading"></a></h3>
 <div class="admonition note">
 <p class="admonition-title">备注</p>
 <p>在2021年10月时候，我发现Fedora 34官方已经去除了镜像中的systemd软件包( 只安装了 <code class="docutils literal notranslate"><span class="pre">systemd-libs</span></code> )，如果Dockerfile中没有加上 <code class="docutils literal notranslate"><span class="pre">dnf</span> <span class="pre">-y</span> <span class="pre">install</span> <span class="pre">systemd</span></code> 则运行容器出现报错:</p>
@@ -238,7 +247,7 @@ lrwxrwxrwx 1 root root 20 Sep  7 18:37 /usr/sbin/init -&gt; /lib/systemd/systemd
 </div>
 <p>Fedora 34官方镜像没有包含 <a class="reference internal" href="../../linux/redhat_linux/systemd/index.html#systemd"><span class="std std-ref">Systemd进程管理器</span></a> ，所以需要Dockerfile增加安装步骤</p>
 <div class="literal-block-wrapper docutils container" id="id6">
-<div class="code-block-caption"><span class="caption-text">fedora官方镜像增加systemd，但是此时启动失败</span><a class="headerlink" href="#id6" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">fedora官方镜像增加systemd，但是此时启动失败</span><a class="headerlink" href="#id6" title="Link to this code"></a></div>
 <div class="highlight-dockerfile notranslate"><div class="highlight"><pre><span></span><span class="k">FROM</span><span class="w"> </span><span class="s">fedora:34</span>
 <span class="k">MAINTAINER</span><span class="w"> </span><span class="s">huatai</span>
 
@@ -308,7 +317,7 @@ Exiting PID 1...
 <p>为了能够更轻松运行systemd，我还是需要探索如何把 <code class="docutils literal notranslate"><span class="pre">bind</span> <span class="pre">mount</span></code> 明确在Dockerfile中配置的方法。见下文 <code class="docutils literal notranslate"><span class="pre">buildkit的Dockerfile</span></code></p>
 </div>
 <section id="buildkitdockerfile">
-<h4>buildkit的Dockerfile<a class="headerlink" href="#buildkitdockerfile" title="Link to this heading">¶</a></h4>
+<h4>buildkit的Dockerfile<a class="headerlink" href="#buildkitdockerfile" title="Link to this heading"></a></h4>
 <p>上述通过显式传递 <code class="docutils literal notranslate"><span class="pre">--mount</span> <span class="pre">type=bind,source=/sys/fs/cgroup,target=/sys/fs/cgroup</span></code> 参数运行 <code class="docutils literal notranslate"><span class="pre">docker</span> <span class="pre">run</span></code> 命令虽然能够解决systemd运行问题，但是命令参数过于复杂，使用不便。所以，需要转换成 Dockerfile 配置才能方便运行。不过，对于挂载不同类型的卷，需要使用 <a class="reference internal" href="../moby/buildkit/index.html#buildkit"><span class="std std-ref">Buildkit</span></a> 来实现，参考 <a class="reference external" href="https://github.com/moby/buildkit/blob/master/frontend/dockerfile/docs/syntax.md">Dockerfile frontend syntaxes</a> 改造Dockerfile</p>
 <ul>
 <li><p>首先，对于Docker v18.09或更高版本，在环境变量设置:</p>
@@ -322,7 +331,7 @@ Exiting PID 1...
 <li><p>然后修订Dockerfile:</p></li>
 </ul>
 <div class="literal-block-wrapper docutils container" id="id7">
-<div class="code-block-caption"><span class="caption-text">fedora-systemd_buildkit.dockerfile</span><a class="headerlink" href="#id7" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">fedora-systemd_buildkit.dockerfile</span><a class="headerlink" href="#id7" title="Link to this code"></a></div>
 <div class="highlight-dockerfile notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="c"># syntax = docker/dockerfile:1.3</span>
 <span class="linenos"> 2</span><span class="k">FROM</span><span class="w"> </span><span class="s">fedora:34</span>
 <span class="linenos"> 3</span><span class="k">MAINTAINER</span><span class="w"> </span><span class="s">huatai</span>
@@ -439,7 +448,7 @@ Exiting PID 1...
 </section>
 </section>
 <section id="systemd">
-<h3>systemd运行总结<a class="headerlink" href="#systemd" title="Link to this heading">¶</a></h3>
+<h3>systemd运行总结<a class="headerlink" href="#systemd" title="Link to this heading"></a></h3>
 <ul class="simple">
 <li><p>Docker需要传递环境变量 <code class="docutils literal notranslate"><span class="pre">container=docker</span></code> 给容器内部才能使得 <code class="docutils literal notranslate"><span class="pre">systemd</span></code> 知道自己运行在容器中</p></li>
 <li><p>必须明确挂载 <code class="docutils literal notranslate"><span class="pre">/sys/fs/cgroup</span></code> (从物理主机 bind mount <code class="docutils literal notranslate"><span class="pre">/sys/fs/cgroup</span></code> 文件系统) 才能使得 <code class="docutils literal notranslate"><span class="pre">systemd</span></code> 运行</p>
@@ -454,7 +463,7 @@ Exiting PID 1...
 </ul>
 <p>我的最终修订版本Dockerfile for fedora with systemd:</p>
 <div class="literal-block-wrapper docutils container" id="id8">
-<div class="code-block-caption"><span class="caption-text">fedora官方镜像增加systemd，注释中包含启动方法</span><a class="headerlink" href="#id8" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">fedora官方镜像增加systemd，注释中包含启动方法</span><a class="headerlink" href="#id8" title="Link to this code"></a></div>
 <div class="highlight-dockerfile notranslate"><div class="highlight"><pre><span></span><span class="c"># USE DOCKER BUILD</span>
 <span class="c"># docker build --rm -t fedora-ssh .</span>
 <span class="c"># USE DOCKER RUN</span>
@@ -518,13 +527,13 @@ Exiting PID 1...
 </section>
 </section>
 <section id="id2">
-<h2>Docker容器运行systemd实践<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
+<h2>Docker容器运行systemd实践<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
 <div class="admonition note">
 <p class="admonition-title">备注</p>
 <p>以下部分是去年(2020)的探索，当时的解决方法就是通过 <code class="docutils literal notranslate"><span class="pre">docker</span> <span class="pre">run</span></code> 时明确传递 <code class="docutils literal notranslate"><span class="pre">--mount</span> <span class="pre">type=bind,source=/sys/fs/cgroup,target=/sys/fs/cgroup</span></code> 才正确运行起 systemd 。不过，当时并没有探索 Buildkit ，现在(2021)补全了上面的Dockerfile方法。</p>
 </div>
 <section id="cap-sys-admin-cgroupfs">
-<h3>CAP_SYS_ADMIN 和 cgroupfs<a class="headerlink" href="#cap-sys-admin-cgroupfs" title="Link to this heading">¶</a></h3>
+<h3>CAP_SYS_ADMIN 和 cgroupfs<a class="headerlink" href="#cap-sys-admin-cgroupfs" title="Link to this heading"></a></h3>
 <p>我们在 <a class="reference internal" href="../admin/dockerfile.html#dockerfile"><span class="std std-ref">从Dockerfile构建Docker镜像</span></a> 中介绍了如何 <code class="docutils literal notranslate"><span class="pre">docker</span> <span class="pre">build</span></code> 一个CentOS或Ubuntu系统，当时我的实践是在容器中运行 <code class="docutils literal notranslate"><span class="pre">sshd</span></code> ，现在我们则构建一个运行systemd的容器。</p>
 <ul class="simple">
 <li><p>首先我们用以下 <code class="docutils literal notranslate"><span class="pre">Dockerfile</span></code> 构建一个CentOS 8系统</p></li>
@@ -584,7 +593,7 @@ Exiting PID 1...
 <p>然后检查发现 <code class="docutils literal notranslate"><span class="pre">systemd</span></code> 并没有启动，这是为何呢？</p>
 </section>
 <section id="systemd-container-interface">
-<span id="id3"></span><h3>systemd container interface<a class="headerlink" href="#systemd-container-interface" title="Link to this heading">¶</a></h3>
+<span id="id3"></span><h3>systemd container interface<a class="headerlink" href="#systemd-container-interface" title="Link to this heading"></a></h3>
 <p>要允许systemd(以及系列程序)能够感知到自己运行在一个容器中，需要在容器运行的PID 1进程上设置 <code class="docutils literal notranslate"><span class="pre">$container</span></code> 环境变量，这样systemd unit配置文件中的 <code class="docutils literal notranslate"><span class="pre">ConditionVirtualization=</span></code> 设置才能工作。例如设置环境 <code class="docutils literal notranslate"><span class="pre">container=lxc-libvirt</span></code> 。</p>
 <p>所以我们需要删除掉上述错误的容器 <code class="docutils literal notranslate"><span class="pre">centos8-systemd</span></code> ，然后重建一次，这次我们带上环境变量 <code class="docutils literal notranslate"><span class="pre">container=docker</span></code></p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">docker</span> <span class="n">stop</span> <span class="n">centos8</span><span class="o">-</span><span class="n">systemd</span>
@@ -597,7 +606,7 @@ Exiting PID 1...
 <p>不过上述方式依然不能正确启动 <code class="docutils literal notranslate"><span class="pre">systemd</span></code> ，我们再进行下一步优化</p>
 </section>
 <section id="tmpfs-fuse-sysinit-target">
-<h3>tmpfs / fuse / sysinit.target<a class="headerlink" href="#tmpfs-fuse-sysinit-target" title="Link to this heading">¶</a></h3>
+<h3>tmpfs / fuse / sysinit.target<a class="headerlink" href="#tmpfs-fuse-sysinit-target" title="Link to this heading"></a></h3>
 <ul>
 <li><p>综合各个要点，我们按照以下方式重新启动:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">docker</span> <span class="n">stop</span> <span class="n">centos8</span><span class="o">-</span><span class="n">systemd</span>
@@ -661,7 +670,7 @@ root          25  1.6  0.3  27136  6528 ?        Ss   11:36   0:00 /usr/lib/syst
 </section>
 </section>
 <section id="ssh">
-<h2>安装ssh服务和制作镜像<a class="headerlink" href="#ssh" title="Link to this heading">¶</a></h2>
+<h2>安装ssh服务和制作镜像<a class="headerlink" href="#ssh" title="Link to this heading"></a></h2>
 <ul>
 <li><p>既然我们已经实现了将systemd作为进程管理器，显然我们可以像传统的VM一样，在容器中部署多个服务，例如，之前我实践过 <a class="reference internal" href="../admin/docker_ssh.html#docker-ssh"><span class="std std-ref">Docker容器中运行ssh服务</span></a> 是借助了Docker执行 <code class="docutils literal notranslate"><span class="pre">/</span>&#160;&#160;&#160; <span class="pre">bin/bash</span> <span class="pre">-c</span> <span class="pre">&quot;/usr/sbin/sshd</span> <span class="pre">&amp;&amp;</span> <span class="pre">/bin/bash&quot;</span></code> 方法，显然原先的方法不优雅。现在我们有了完整的systemd进程管理器，就可以部署sshd服务了。</p>
 <ul>
@@ -705,9 +714,9 @@ root          25  1.6  0.3  27136  6528 ?        Ss   11:36   0:00 /usr/lib/syst
 </div>
 </section>
 <section id="dockerfilesystemd-sshd">
-<h2>Dockerfile构建systemd+sshd<a class="headerlink" href="#dockerfilesystemd-sshd" title="Link to this heading">¶</a></h2>
+<h2>Dockerfile构建systemd+sshd<a class="headerlink" href="#dockerfilesystemd-sshd" title="Link to this heading"></a></h2>
 <section id="dockerfile">
-<h3>dockerfile构建<a class="headerlink" href="#dockerfile" title="Link to this heading">¶</a></h3>
+<h3>dockerfile构建<a class="headerlink" href="#dockerfile" title="Link to this heading"></a></h3>
 <ul class="simple">
 <li><p>在工作目录下创建以下 <code class="docutils literal notranslate"><span class="pre">centos8-systemd-sshd</span></code> 作为Dockerfile ，并在目录下存放一个用于 admin 用户的公钥文件 <code class="docutils literal notranslate"><span class="pre">authorized_keys</span></code></p></li>
 </ul>
@@ -787,7 +796,7 @@ root          25  1.6  0.3  27136  6528 ?        Ss   11:36   0:00 /usr/lib/syst
 </div>
 </section>
 <section id="buildkit">
-<h3>buildkit构建<a class="headerlink" href="#buildkit" title="Link to this heading">¶</a></h3>
+<h3>buildkit构建<a class="headerlink" href="#buildkit" title="Link to this heading"></a></h3>
 <ul class="simple">
 <li><p>如果你安装使用 <a class="reference internal" href="../moby/buildkit/index.html#buildkit"><span class="std std-ref">Buildkit</span></a> ，则可以使用以下 Dockerfile</p></li>
 </ul>
@@ -871,12 +880,12 @@ root          25  1.6  0.3  27136  6528 ?        Ss   11:36   0:00 /usr/lib/syst
 </section>
 </section>
 <section id="podman">
-<h2>podman<a class="headerlink" href="#podman" title="Link to this heading">¶</a></h2>
+<h2>podman<a class="headerlink" href="#podman" title="Link to this heading"></a></h2>
 <p>Red Hat公司开发了另外一个符合OCI规范的容器和pods管理工具 <a class="reference internal" href="../podman/index.html#podman"><span class="std std-ref">podman</span></a> ( <a class="reference external" href="https://github.com/containers/podman">GitHub podman</a> )。这个工具也直接支持在容器中运行systemd ( <a class="reference external" href="https://developers.redhat.com/blog/2019/04/24/how-to-run-systemd-in-a-container/">How to run systemd in a container</a> )</p>
 <p>我在 <a class="reference internal" href="../../kubernetes/kind/kind_deploy_fedora-dev.html#kind-deploy-fedora-dev"><span class="std std-ref">kind部署 fedora-dev</span></a> 尝试Kubernetes的pod容器中使用 <a class="reference internal" href="../../linux/redhat_linux/systemd/index.html#systemd"><span class="std std-ref">Systemd进程管理器</span></a> ，但是发现似乎非常困难(即使 <a class="reference internal" href="../images/fedora_image.html#fedora-image"><span class="std std-ref">Fedora镜像</span></a> 已经验证了Docker容器中运行 <a class="reference internal" href="../../linux/redhat_linux/systemd/index.html#systemd"><span class="std std-ref">Systemd进程管理器</span></a> )。似乎采用 <a class="reference internal" href="docker_tini.html#docker-tini"><span class="std std-ref">Docker tini进程管理器</span></a> 才是解决之道。</p>
 </section>
 <section id="id4">
-<h2>参考<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h2>
+<h2>参考<a class="headerlink" href="#id4" title="Link to this heading"></a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="https://serverfault.com/questions/607769/running-systemd-inside-a-docker-container-arch-linux">Running systemd inside a docker container (arch linux)</a> - 当前2020年，这篇解决方案最准确，并且2021年更新还介绍 <a class="reference external" href="https://developers.redhat.com/blog/author/rhatdan/">David Walsh &#64; REDHAT blog</a> 提供了很多有用的信息，特别是挂载 cgroup 的方法</p></li>
 <li><p><a class="reference external" href="https://medium.com/swlh/docker-and-systemd-381dfd7e4628">Docker and systemd</a></p></li>
@@ -891,25 +900,37 @@ root          25  1.6  0.3  27136  6528 ?        Ss   11:36   0:00 /usr/lib/syst
 
            </div>
           </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="docker_tini.html" class="btn btn-neutral float-left" title="Docker tini进程管理器" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="docker_s6.html" class="btn btn-neutral float-right" title="Docker s6进程管理器" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="docker_tini.html" class="btn btn-neutral float-left" title="Docker tini进程管理器" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="docker_s6.html" class="btn btn-neutral float-right" title="Docker s6进程管理器" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../copyright.html">Copyright</a> 2018 - now, Huatai Huang.</p>
+    <p>&#169; <a href="../../copyright.html">版权所有</a> 2018 - now, Huatai Huang。</p>
   </div>
 
-  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
   
     <!-- your html code here -->
     <br>
-    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡</a></p>
-     
+    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡 👈</a></p>
+    <br>
+    <p>网站采用 <a href="https://utteranc.es/">utterances</a> 评论系统，所有评论存储在<a href="https://github.com/huataihuang/cloud-atlas/issues">GitHub issues</a> 中，如果你看不到下方的评论框，那么可能需要<a href="https://cloud-atlas.readthedocs.io/zh-cn/latest/linux/security/vpn/index.html">自备梯子</a> 👈</p>
+    <div class="articleComments">
+        <comments>
+  <script src="https://utteranc.es/client.js"
+    repo="huataihuang/cloud-atlas"
+    issue-term="pathname"
+    theme="github-light"
+    crossorigin="anonymous"
+    async>
+  </script>
+</comments>
+    </div>
 
 
 </footer>

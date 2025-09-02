@@ -1,21 +1,25 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh" data-content_root="../../../../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PCIe bifurcation &mdash; Cloud Atlas 0.1 文档</title>
-      <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../../../_static/graphviz.css" type="text/css" />
+  <title>PCIe bifurcation &mdash; Cloud Atlas: Discovery beta 文档</title>
+      <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../../../_static/graphviz.css?v=fd3f3429" />
+
+  
+    <link rel="shortcut icon" href="../../../../_static/favicon.png"/>
   <!--[if lt IE 9]>
     <script src="../../../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="../../../../_static/documentation_options.js?v=7c91f8fd"></script>
-        <script src="../../../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../../../_static/documentation_options.js?v=8534f863"></script>
+        <script src="../../../../_static/doctools.js?v=9a2dae69"></script>
         <script src="../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
-        <script src="../../../../_static/translations.js?v=beaddf03"></script>
     <script src="../../../../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../../../../genindex.html" />
     <link rel="search" title="搜索" href="../../../../search.html" />
@@ -33,61 +37,69 @@
           
           
           <a href="../../../../index.html" class="icon icon-home">
-            Cloud Atlas
+            Cloud Atlas: Discovery
           </a>
+              <div class="version">
+                1.1
+              </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../../../studio/index.html">Studio Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../infrastructure/index.html">Infrastructure Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../devops/index.html">DevOps Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../kvm/index.html">KVM Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../ceph/index.html">Ceph Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../gluster/index.html">Gluster Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../ovirt/index.html">oVirt Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../openstack/index.html">OpenStack Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../docker/index.html">Docker Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../kubernetes/index.html">Kubernetes Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../kubernetes_from_scratch/index.html">Kubernetes From Scratch (KFS) Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../rancher/index.html">Rancher Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../openshift/index.html">OpenShift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../sql/index.html">SQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../sqlite/index.html">SQLite Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../mysql/index.html">MySQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../pgsql/index.html">PostgreSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../clickhouse/index.html">ClickHouse Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../nosql/index.html">NoSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../redis/index.html">Redis Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../network/index.html">Network Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../infra_service/index.html">Infra-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../infra_search/index.html">Search Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../info_service/index.html">Info-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../web/index.html">Web Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../big_data/index.html">Big Data Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../machine_learning/index.html">Machine Learning Atlas</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../../../index.html">Linux Atlas</a><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../../studio/index.html">Studio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../infrastructure/index.html">Infrastructure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../devops/index.html">DevOps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../kvm/index.html">KVM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../ceph/index.html">Ceph</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../gluster/index.html">Gluster</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../ovirt/index.html">oVirt</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../openstack/index.html">OpenStack</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../docker/index.html">Docker</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../kubernetes/index.html">Kubernetes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../k8s_dev/index.html">Kubernetes Develop</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../rancher/index.html">Rancher</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../openshift/index.html">OpenShift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../sql/index.html">SQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../sqlite/index.html">SQLite</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../mysql/index.html">MySQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../pgsql/index.html">PostgreSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../nosql/index.html">NoSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../network/index.html">Network</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../infra_service/index.html">Infra-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../infra_search/index.html">Infra-Search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../web/index.html">Web</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../info_service/index.html">Info-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../big_data/index.html">Big Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../machine_learning/index.html">Machine Learning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../drone/index.html">Drone</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../../index.html">Linux</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../../../best_linux.html">最佳Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../admin/index.html">Linux系统管理</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../redhat_linux/index.html">RedHat Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../arch_linux/index.html">Arch Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../asahi_linux/index.html">Asahi Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../gentoo_linux/index.html">Gentoo Linux</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../lfs_linux/index.html">LFS(Linux from scratch)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../lfs/index.html">LFS(Linux from scratch)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../blfs/index.html">BLFS(Beyond Linux from scratch)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../alfs/index.html">ALFS(Automated Linux from scratch)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../pilfs/index.html">PiLFS(Automated Linux from scratch on the Raspberry Pi)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../yocto/index.html">Yocto</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../debian/index.html">Debian</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../ubuntu_linux/index.html">Ubuntu Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../suse_linux/index.html">SUSE Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../kali_linux/index.html">Kali Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../tails_linux/index.html">Tails Linux</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../qubes_os/index.html">Qubes OS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../postmarketos/index.html">postmarketOS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../container_os/index.html">容器化操作系统(Container OS)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../fedora_coreos/index.html">Fedora CoreOS容器操作系统</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../chromium_os/index.html">Chromium OS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../chromeos/index.html">ChromeOS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../alpine_linux/index.html">Alpine Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../subgraph_os/index.html">Subgraph OS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../kaios/index.html">KaiOS - 世界第三手机操作系统</a></li>
@@ -121,28 +133,30 @@
 <li class="toctree-l2"><a class="reference internal" href="../../../linux_tablet/index.html">Linux平板</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../kernel/index.html">Kernel Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../performance/index.html">Performance Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../distributed_system/index.html">Distributed System Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../shell/index.html">Shell Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../python/index.html">Python Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../django/index.html">Django Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../flask/index.html">Flask Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../javascript/index.html">JavaScript Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../nodejs/index.html">Node.js Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../clang/index.html">C Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../golang/index.html">Go Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../swift/index.html">Swift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../rust/index.html">Rust Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../ruby/index.html">Ruby Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../arm/index.html">ARM Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../android/index.html">Android Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../bsd/index.html">BSD Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../apple/index.html">Apple Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../windows/index.html">Windows Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../real/index.html">Real Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../management/index.html">Management Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../life/index.html">Life Atlas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../kernel/index.html">Kernel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../performance/index.html">Performance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../distributed_system/index.html">Distributed System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../shell/index.html">Shell</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../python/index.html">Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../django/index.html">Django</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../javascript/index.html">JavaScript</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../nodejs/index.html">Node.js</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../clang/index.html">C</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../golang/index.html">Go</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../swift/index.html">Swift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../rust/index.html">Rust</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../ruby/index.html">Ruby</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../lua/index.html">Lua</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../arm/index.html">ARM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../raspberry_pi/index.html">Raspberry Pi</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../android/index.html">Android</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../bsd/index.html">BSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../freebsd/index.html">FreeBSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../apple/index.html">Apple</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../windows/index.html">Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../real/index.html">Real</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../management/index.html">Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../life/index.html">Life</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../copyright.html">Copyright</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../aboutme.html">关于作者</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../donate.html">捐赠</a></li>
@@ -155,23 +169,23 @@
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../../../index.html">Cloud Atlas</a>
+          <a href="../../../../index.html">Cloud Atlas: Discovery</a>
       </nav>
 
       <div class="wy-nav-content">
         <div class="rst-content">
-          <div role="navigation" aria-label="Page navigation">
+          <div role="navigation" aria-label="页面导航">
   <ul class="wy-breadcrumbs">
       <li><a href="../../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
-          <li class="breadcrumb-item"><a href="../../../index.html">Linux Atlas</a></li>
+          <li class="breadcrumb-item"><a href="../../../index.html">Linux</a></li>
           <li class="breadcrumb-item"><a href="../../index.html">Linux服务器</a></li>
           <li class="breadcrumb-item"><a href="../index.html">服务器硬件</a></li>
           <li class="breadcrumb-item"><a href="index.html">HPE服务器</a></li>
       <li class="breadcrumb-item active">PCIe bifurcation</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../../../../_sources/linux/server/hardware/hpe/pcie_bifurcation.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../../../_sources/linux/server/hardware/hpe/pcie_bifurcation.rst.txt" rel="nofollow"> 查看页面源码</a>
       </li>
   </ul>
   <hr/>
@@ -180,15 +194,17 @@
            <div itemprop="articleBody">
              
   <section id="pcie-bifurcation">
-<span id="id1"></span><h1>PCIe bifurcation<a class="headerlink" href="#pcie-bifurcation" title="Link to this heading">¶</a></h1>
+<span id="id1"></span><h1>PCIe bifurcation<a class="headerlink" href="#pcie-bifurcation" title="Link to this heading"></a></h1>
 <p><a class="reference internal" href="hpe_dl360_gen9.html#hpe-dl360-gen9"><span class="std std-ref">HPE ProLiant DL360 Gen9服务器</span></a> 支持PCIe直接使用NVMe存储，这样可以在服务器上实现高性能存储集群。(原厂的 U.2 接口NVMe SSD存储升级套件实在成本太高)</p>
-<section id="id2">
-<h2>最初构想方案(验证存在限制)<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
+<section id="pcie">
+<h2>PCIe拆分卡<a class="headerlink" href="#pcie" title="Link to this heading"></a></h2>
 <div class="admonition warning">
 <p class="admonition-title">警告</p>
 <p>请注意， <a class="reference internal" href="hpe_dl360_gen9.html#hpe-dl360-gen9"><span class="std std-ref">HPE ProLiant DL360 Gen9服务器</span></a> 只支持第一个PCIe 3.0 x16的bifurcation功能，并且只支持 <code class="docutils literal notranslate"><span class="pre">Dual</span> <span class="pre">PCIe</span> <span class="pre">x8</span> <span class="pre">slot</span></code> ，也就是只能切分成2个 <code class="docutils literal notranslate"><span class="pre">x8</span></code> 。所以最多只能在Slot 1上支持2块NVMe SSD。</p>
-<p>请购买 <code class="docutils literal notranslate"><span class="pre">双盘NVMe扩展卡</span></code> ，我购买4盘位NVMe扩展卡实际上上浪费了资源，并不是很好的选择。</p>
+<p>对于 <a class="reference internal" href="hpe_dl360_gen9.html#hpe-dl360-gen9"><span class="std std-ref">HPE ProLiant DL360 Gen9服务器</span></a> 最好使用 <code class="docutils literal notranslate"><span class="pre">双盘NVMe扩展卡</span></code> ，我购买4盘位NVMe扩展卡实际上上浪费了资源，并不是很好的选择。</p>
 </div>
+<section id="pcie-x16-nvme">
+<h3>PCIe X16 四盘NVMe扩展卡<a class="headerlink" href="#pcie-x16-nvme" title="Link to this heading"></a></h3>
 <p>在淘宝上可以购买到 PCIe X16 四盘NVMe扩展卡:</p>
 <figure class="align-default">
 <a class="reference internal image-reference" href="../../../../_images/pcie_nvme_extendcard.png"><img alt="../../../../_images/pcie_nvme_extendcard.png" src="../../../../_images/pcie_nvme_extendcard.png" style="width: 333.6px; height: 333.6px;" /></a>
@@ -200,8 +216,21 @@
 <a class="reference internal image-reference" href="../../../../_images/pcie_nvme_extendcard-2.png"><img alt="../../../../_images/pcie_nvme_extendcard-2.png" src="../../../../_images/pcie_nvme_extendcard-2.png" style="width: 623.2px; height: 646.4000000000001px;" /></a>
 </figure>
 </section>
-<section id="id3">
-<h2>PCIe bifurcation<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h2>
+<section id="pcie-x16x8-x4-x4">
+<span id="pcie-bifurcation-x4x4x8-card"></span><h3>PCIe X16转x8+x4+x4拆分卡<a class="headerlink" href="#pcie-x16x8-x4-x4" title="Link to this heading"></a></h3>
+<p>我在2025年购置组装的主机使用了 <a class="reference internal" href="../chipset/nasse_c246.html#nasse-c246"><span class="std std-ref">纳斯NASSE C246 ITX主板</span></a> ，这种台式机主板(通常)支持将PCIe X16拆分成 <code class="docutils literal notranslate"><span class="pre">X8X8</span></code> 或者 <code class="docutils literal notranslate"><span class="pre">X4X4X8</span></code> ，也就是最多可以转接3个设备。为了能够充分利用硬件，我购买了一块 <code class="docutils literal notranslate"><span class="pre">PCIe</span> <span class="pre">X16转x8+x4+x4拆分卡</span></code> :</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">PCIe</span> <span class="pre">X16转x8+x4+x4拆分卡</span></code> 正反两面各提供一个 M.2 <a class="reference internal" href="../../../storage/nvme/nvme.html#nvme"><span class="std std-ref">NVMe存储</span></a> ，这样可以安装2块存储</p></li>
+<li><p>拆分后还有一个 <code class="docutils literal notranslate"><span class="pre">X8</span></code> 信号PCIe插槽(X16接口形式)，用来安装我的 <a class="reference internal" href="../../../../machine_learning/hardware/nvidia_gpu/tesla_p10.html#tesla-p10"><span class="std std-ref">Nvidia Tesla P10 GPU运算卡</span></a></p></li>
+</ul>
+<p>这样我的台式主机不仅可以继续使用 <a class="reference internal" href="../../../../machine_learning/hardware/nvidia_gpu/tesla_p10.html#tesla-p10"><span class="std std-ref">Nvidia Tesla P10 GPU运算卡</span></a> ，又增加了2个存储，加上主板自带的2个存储，总共有4个 M.2 <a class="reference internal" href="../../../storage/nvme/nvme.html#nvme"><span class="std std-ref">NVMe存储</span></a> 存储，大大方便我组件 <a class="reference internal" href="../../../storage/zfs/index.html#zfs"><span class="std std-ref">ZFS</span></a> RAIDZ来模拟演练和学习实践</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../../../../_images/pcie_nvme_extendcard.jpg"><img alt="../../../../_images/pcie_nvme_extendcard.jpg" src="../../../../_images/pcie_nvme_extendcard.jpg" style="width: 320.0px; height: 739.2px;" /></a>
+</figure>
+</section>
+</section>
+<section id="id2">
+<h2>PCIe bifurcation<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
 <p>需要注意，扩展卡是 PCIe x16 规格的，为了能够支持4个NVMe m.2 存储，需要将这个 X16 分成4个 X4 才能支持4个NVMe盘。需要主板支持一种称为 <code class="docutils literal notranslate"><span class="pre">PCIe</span> <span class="pre">bifurcation</span></code> 技术，这样在主板BIOS中可以将 PCIe X16 改成 <code class="docutils literal notranslate"><span class="pre">x4x4x4x4</span></code></p>
 <figure class="align-default">
 <a class="reference internal image-reference" href="../../../../_images/pcie_bifurcation-1.png"><img alt="../../../../_images/pcie_bifurcation-1.png" src="../../../../_images/pcie_bifurcation-1.png" style="width: 612.8000000000001px; height: 648.0px;" /></a>
@@ -215,7 +244,7 @@
 </div>
 </section>
 <section id="pciebifuration">
-<h2>PCIe设备和bifuration<a class="headerlink" href="#pciebifuration" title="Link to this heading">¶</a></h2>
+<h2>PCIe设备和bifuration<a class="headerlink" href="#pciebifuration" title="Link to this heading"></a></h2>
 <p>参考 <a class="reference external" href="https://community.hpe.com/t5/Servers-General/HPE-Proliant-dl160-gen9-bifurcation/td-p/7133232#.YXdM-y8RppQ">HPE Proliant dl160 gen9 bifurcation</a> 提到:</p>
 <ul>
 <li><p>有人提出 DL360和DL380更新到最新的Bios 2.90也没有出现 <code class="docutils literal notranslate"><span class="pre">pcie</span> <span class="pre">options</span></code> 选项，不过， <code class="docutils literal notranslate"><span class="pre">dual</span> <span class="pre">bifuration</span></code> 支持是从 2016 年开始的，在 <a class="reference external" href="https://support.hpe.com/hpesc/public/docDisplay?docLocale=en_US&amp;docId=c05060771">HPE UEFI System Utilities and Shell Release Notes for HPE ProLiant Gen9 Servers</a> 文档第5页(2016年文档)有说明:</p>
@@ -242,10 +271,10 @@
 </pre></div>
 </div>
 </section>
-<section id="id4">
-<h2>我的选择<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h2>
+<section id="id3">
+<h2>我的选择<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
 <section id="bifurcation">
-<h3>直通扩展卡(部分实现bifurcation)<a class="headerlink" href="#bifurcation" title="Link to this heading">¶</a></h3>
+<h3>直通扩展卡(部分实现bifurcation)<a class="headerlink" href="#bifurcation" title="Link to this heading"></a></h3>
 <p>我购买了 3个 <a class="reference internal" href="../../../storage/nvme/samsung_pm9a1.html#samsung-pm9a1"><span class="std std-ref">三星PM9A1 NVMe存储</span></a> 以及 佳翼M2X16四盘NVMe扩展卡( 宣传称 <code class="docutils literal notranslate"><span class="pre">支持PCIE</span> <span class="pre">4.0</span> <span class="pre">GEN4，</span> <span class="pre">向下兼容PCIE3.0</span> <span class="pre">GEN3</span></code> )。我比较担心能否配合DL 360 Gen9实现 <code class="docutils literal notranslate"><span class="pre">PCIe</span> <span class="pre">bifurcation</span></code></p>
 <ul class="simple">
 <li><p>我最初尝试将 NVMe扩展卡 安装在 Slot 3上(因为我想能在 Slot 1上安装显卡，然后可以还留出空间在Slot 2上安装第二个NVMe扩展卡)，但是确实启动以后没有找到PCIe配置选项</p></li>
@@ -257,11 +286,11 @@
 <p><a class="reference external" href="https://community.hpe.com/t5/Servers-General/HPE-Proliant-dl160-gen9-bifurcation/td-p/7133232#.YXdM-y8RppQ">HPE Proliant dl160 gen9 bifurcation</a> 中答复中也提到了，这个功能需要扩展卡厂商支持firmware，有人换了6个扩展卡都没有看到BIOS能够显示出 <code class="docutils literal notranslate"><span class="pre">PCIe</span> <span class="pre">Device</span> <span class="pre">Configuration</span></code> 配置项。</p>
 <p>看起来我购买的 <code class="docutils literal notranslate"><span class="pre">佳翼M2X16四盘NVMe扩展卡</span></code> 也同样没有适配成功???</p>
 <p>真是让人非常沮丧，折腾这么久，查询很多资料都没有明确的 HPE Gen9 解决 PCIe bifurction 的解释和适配方法，虽然2016年 <a class="reference external" href="https://support.hpe.com/hpesc/public/docDisplay?docLocale=en_US&amp;docId=c05060771">HPE UEFI System Utilities and Shell Release Notes for HPE ProLiant Gen9 Servers</a> 提到了支持，但是该文档最新2021年版本已经找不到这项说明了。</p>
-<p>柳暗花明又一村…</p>
-<p>我在DL360 Gen9服务器上安装 <a class="reference internal" href="../../../../machine_learning/hardware/nvidia_gpu/tesla_p10.html#tesla-p10"><span class="std std-ref">Nvidia Tesla P10 GPU运算卡</span></a> 启动时遇到需要 <a class="reference internal" href="dl360_gen9_large_bar_memory.html#dl360-gen9-large-bar-memory"><span class="std std-ref">HP DL360 Gen9 Large Bar Memory(Tesla P10)</span></a> 问题，HPE DL360 Gen9的 <code class="docutils literal notranslate"><span class="pre">PCI</span> <span class="pre">Express</span> <span class="pre">64-Bit</span> <span class="pre">BAR</span> <span class="pre">Support</span></code> BIOS配置选项隐藏在没有任何提示的 <code class="docutils literal notranslate"><span class="pre">Service</span> <span class="pre">Options</span></code> 菜单中(需要在 <code class="docutils literal notranslate"><span class="pre">ROM-Based</span> <span class="pre">Setup</span> <span class="pre">Utility</span> <span class="pre">(RBSU)</span></code> 界面通过 <code class="docutils literal notranslate"><span class="pre">Ctrl-A</span></code> 激活)，但是没有任何菜单引导。我是通过Google文档才找到方法…</p>
+<p>柳暗花明又一村...</p>
+<p>我在DL360 Gen9服务器上安装 <a class="reference internal" href="../../../../machine_learning/hardware/nvidia_gpu/tesla_p10.html#tesla-p10"><span class="std std-ref">Nvidia Tesla P10 GPU运算卡</span></a> 启动时遇到需要 <a class="reference internal" href="dl360_gen9_large_bar_memory.html#dl360-gen9-large-bar-memory"><span class="std std-ref">HP DL360 Gen9 Large Bar Memory(Tesla P10)</span></a> 问题，HPE DL360 Gen9的 <code class="docutils literal notranslate"><span class="pre">PCI</span> <span class="pre">Express</span> <span class="pre">64-Bit</span> <span class="pre">BAR</span> <span class="pre">Support</span></code> BIOS配置选项隐藏在没有任何提示的 <code class="docutils literal notranslate"><span class="pre">Service</span> <span class="pre">Options</span></code> 菜单中(需要在 <code class="docutils literal notranslate"><span class="pre">ROM-Based</span> <span class="pre">Setup</span> <span class="pre">Utility</span> <span class="pre">(RBSU)</span></code> 界面通过 <code class="docutils literal notranslate"><span class="pre">Ctrl-A</span></code> 激活)，但是没有任何菜单引导。我是通过Google文档才找到方法...</p>
 <p>原来在这个隐藏的 <code class="docutils literal notranslate"><span class="pre">Service</span> <span class="pre">Options</span></code> 中提供了很多高级功能，其中就包括了 <code class="docutils literal notranslate"><span class="pre">Primary</span> <span class="pre">Riser</span> <span class="pre">PCIe</span> <span class="pre">x16</span> <span class="pre">Bifurcation</span></code></p>
 <section id="hpe-dl360-gen9-biosbifurcatio">
-<h4>HPE DL360 Gen9 BIOS设置Bifurcatio<a class="headerlink" href="#hpe-dl360-gen9-biosbifurcatio" title="Link to this heading">¶</a></h4>
+<h4>HPE DL360 Gen9 BIOS设置Bifurcatio<a class="headerlink" href="#hpe-dl360-gen9-biosbifurcatio" title="Link to this heading"></a></h4>
 <ul class="simple">
 <li><p>启动服务器，在BIOS提示时，按下 <code class="docutils literal notranslate"><span class="pre">F9</span></code> 进入 <code class="docutils literal notranslate"><span class="pre">ROM-Based</span> <span class="pre">Setup</span> <span class="pre">Utility</span> <span class="pre">(RBSU)</span></code></p></li>
 <li><p>在RBSU中，按下 <code class="docutils literal notranslate"><span class="pre">Ctrl</span> <span class="pre">+</span> <span class="pre">A</span></code> ，进入 <code class="docutils literal notranslate"><span class="pre">Service</span> <span class="pre">Options</span></code></p></li>
@@ -289,8 +318,8 @@
 <li><p>主机总共安装3个NVMe SSD:</p>
 <ul>
 <li><p>由于 Slot 1 和 Slot 2 都是直连在 CPU 1上，所以可以获得极佳的互访性能</p></li>
-<li><p>采用 <a class="reference internal" href="../../../../kvm/iommu/index.html#iommu"><span class="std std-ref">IOMMU</span></a> 由第一层 <a class="reference internal" href="../../../../kvm/index.html#kvm"><span class="std std-ref">KVM Atlas</span></a> 虚拟机读写，力求能够实现 native 性能</p></li>
-<li><p>运行3个 <a class="reference internal" href="../../../../ceph/index.html#ceph"><span class="std std-ref">Ceph Atlas</span></a> 虚拟机分别处理 pass-through 的NVMe存储，虚拟机采用cpuset方式绑定到CPU 1上，结合 <a class="reference internal" href="../../../../kernel/memory/numa/index.html#numa"><span class="std std-ref">NUMA架构</span></a> 实现性能最大化</p></li>
+<li><p>采用 <a class="reference internal" href="../../../../kvm/iommu/index.html#iommu"><span class="std std-ref">IOMMU</span></a> 由第一层 <a class="reference internal" href="../../../../kvm/index.html#kvm"><span class="std std-ref">KVM</span></a> 虚拟机读写，力求能够实现 native 性能</p></li>
+<li><p>运行3个 <a class="reference internal" href="../../../../ceph/index.html#ceph"><span class="std std-ref">Ceph</span></a> 虚拟机分别处理 pass-through 的NVMe存储，虚拟机采用cpuset方式绑定到CPU 1上，结合 <a class="reference internal" href="../../../../kernel/memory/numa/index.html#numa"><span class="std std-ref">NUMA架构</span></a> 实现性能最大化</p></li>
 </ul>
 </li>
 </ul>
@@ -307,7 +336,7 @@
 </section>
 </section>
 <section id="plx">
-<h3>PLX主控扩展卡<a class="headerlink" href="#plx" title="Link to this heading">¶</a></h3>
+<h3>PLX主控扩展卡<a class="headerlink" href="#plx" title="Link to this heading"></a></h3>
 <p>根据网上搜索到到信息了解到，HP gent9 的服务器可以使用PLX主控芯片扩展卡( PLX 是PCIe交换和桥接芯片供应商 )，从淘宝上搜索无需主板支持 <code class="docutils literal notranslate"><span class="pre">bifurcation</span></code> 的扩展卡有两种芯片:</p>
 <ul class="simple">
 <li><p>ASM2824</p></li>
@@ -340,8 +369,8 @@
 <li><p><code class="docutils literal notranslate"><span class="pre">Slot</span> <span class="pre">3</span></code> 是 <code class="docutils literal notranslate"><span class="pre">x16</span></code> 接口，可以安装 四盘位 扩展卡</p></li>
 <li><p>总共可以扩展安装 <code class="docutils literal notranslate"><span class="pre">6个</span></code> NVMe SSD存储: 需要注意 <code class="docutils literal notranslate"><span class="pre">Slot</span> <span class="pre">2</span></code> 和 <code class="docutils literal notranslate"><span class="pre">Slot</span> <span class="pre">3</span></code> 分别属于 CPU1 和 CPU2，所以应该分配给不同的虚拟化存储集群:</p>
 <ul>
-<li><p><code class="docutils literal notranslate"><span class="pre">Slot</span> <span class="pre">2</span></code> 上2个 NVMe SSD 可以组合成 <code class="docutils literal notranslate"><span class="pre">RAID</span> <span class="pre">0</span></code> (性能最强) 或者 <code class="docutils literal notranslate"><span class="pre">RAID</span> <span class="pre">1</span></code> (数据安全性高)；或者分配给2个 <a class="reference internal" href="../../../../gluster/index.html#gluster"><span class="std std-ref">Gluster Atlas</span></a> 虚拟机组件镜像模式的GlusterFS集群提供大容量近线数据归档</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Slot</span> <span class="pre">3</span></code> 上4个 NVMe SSD 可以选择3个分配给3个 <a class="reference internal" href="../../../../ceph/index.html#ceph"><span class="std std-ref">Ceph Atlas</span></a> 虚拟机组建成 Ceph 高可用高性能虚拟化存储集群；另外1个则分配给物理主机，作为 <a class="reference internal" href="../../../../docker/index.html#docker"><span class="std std-ref">Docker Atlas</span></a> 和 <a class="reference internal" href="../../../../kvm/index.html#kvm"><span class="std std-ref">KVM Atlas</span></a> 的镜像存储，以及容器和虚拟机本地挂载存储，以获得性能最大化</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Slot</span> <span class="pre">2</span></code> 上2个 NVMe SSD 可以组合成 <code class="docutils literal notranslate"><span class="pre">RAID</span> <span class="pre">0</span></code> (性能最强) 或者 <code class="docutils literal notranslate"><span class="pre">RAID</span> <span class="pre">1</span></code> (数据安全性高)；或者分配给2个 <a class="reference internal" href="../../../../gluster/index.html#gluster"><span class="std std-ref">Gluster</span></a> 虚拟机组件镜像模式的GlusterFS集群提供大容量近线数据归档</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Slot</span> <span class="pre">3</span></code> 上4个 NVMe SSD 可以选择3个分配给3个 <a class="reference internal" href="../../../../ceph/index.html#ceph"><span class="std std-ref">Ceph</span></a> 虚拟机组建成 Ceph 高可用高性能虚拟化存储集群；另外1个则分配给物理主机，作为 <a class="reference internal" href="../../../../docker/index.html#docker"><span class="std std-ref">Docker</span></a> 和 <a class="reference internal" href="../../../../kvm/index.html#kvm"><span class="std std-ref">KVM</span></a> 的镜像存储，以及容器和虚拟机本地挂载存储，以获得性能最大化</p></li>
 </ul>
 </li>
 </ul>
@@ -352,7 +381,7 @@
 </section>
 </section>
 <section id="pcie-switches">
-<h2>PCIe switches性能<a class="headerlink" href="#pcie-switches" title="Link to this heading">¶</a></h2>
+<h2>PCIe switches性能<a class="headerlink" href="#pcie-switches" title="Link to this heading"></a></h2>
 <p>Intel的北桥集成在CPU里面，所以原生PCIe通道的数量由CPU决定，主板可以根据需要对这些通道进行重新组合(比方x16 = 1x16 或 1x8+1x8 或 1x8+1x4+1x4)以满足多个pci的需要。</p>
 <div class="admonition note">
 <p class="admonition-title">备注</p>
@@ -372,7 +401,7 @@
 </ul>
 </section>
 <section id="pcienvme">
-<h2>神奇PCIe拆分NVMe存储<a class="headerlink" href="#pcienvme" title="Link to this heading">¶</a></h2>
+<h2>神奇PCIe拆分NVMe存储<a class="headerlink" href="#pcienvme" title="Link to this heading"></a></h2>
 <p>在服务器领域，例如 <a class="reference internal" href="hpe_dl360_gen9.html#hpe-dl360-gen9"><span class="std std-ref">HPE ProLiant DL360 Gen9服务器</span></a> 提供了SFF安装模式 <code class="docutils literal notranslate"><span class="pre">4</span> <span class="pre">SAS/SATA</span> <span class="pre">(Drive</span> <span class="pre">1-4)+6</span> <span class="pre">NVMe</span> <span class="pre">(Drive</span> <span class="pre">5-10)</span></code> ，可以将主机最后6个盘位替换成U.2接口的NVMe SSD磁盘。在 <a class="reference external" href="https://mp.weixin.qq.com/s?__biz=MzAwODExNjI3NA==&amp;mid=2649776369&amp;idx=1&amp;sn=6d90101ad858822ee1ce42db2560edea&amp;chksm=837701acb40088ba205a9d1f29c19ae62dea57bccd1c60e5b36ba67b02181e953827bb290ed8&amp;token=511876318&amp;lang=zh_CN&amp;scene=21#wechat_redirect">Dell PowerEdge R640：NVMe直连、NDC网卡、PERC10一览</a> 可以看到Dell服务器也是通过将 Xeon 处理器内置的 PCIe lanes 分出一部分专用于连接 NVMe SSD。这种模式节约了宝贵的PCIe插槽，同时又提供了满足大量NVMe存储分别连接不同的PCIe lanes的需求，可以实现直通连接，在 <a class="reference internal" href="../../../../kvm/iommu/iommu_infra.html#iommu-infra"><span class="std std-ref">IOMMU架构</span></a> 实现pass-through给虚拟机，实现高性能虚拟化存储。</p>
 <p><a class="reference internal" href="../chipset/pcie.html#pcie"><span class="std std-ref">PCIe</span></a> :</p>
 <ul class="simple">
@@ -385,8 +414,8 @@
 </figure>
 <p>在不集联下一级PCIe Switch情况下，Broadcom P411W-32最多可拆分为32个PCIex1来连接SSD(牺牲了单盘带宽)，可以想象一下使用32个NVMe组建的阵列。</p>
 </section>
-<section id="id9">
-<h2>参考<a class="headerlink" href="#id9" title="Link to this heading">¶</a></h2>
+<section id="id8">
+<h2>参考<a class="headerlink" href="#id8" title="Link to this heading"></a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="https://zhuanlan.zhihu.com/p/219831641">PCIe Switch Adapter：不只是NVMe HBA？</a></p></li>
 <li><p><a class="reference external" href="https://zhuanlan.zhihu.com/p/103929939">硬件杂谈：关于pcie拆分与plx芯片</a></p></li>
@@ -399,25 +428,37 @@
 
            </div>
           </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="dl360_config_mem.html" class="btn btn-neutral float-left" title="HPE DL360 Gen9服务器内存配置" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="plx_8747_pcie_bifurcation.html" class="btn btn-neutral float-right" title="PLX 8747硬件PCIe bifurcation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="dl360_config_mem.html" class="btn btn-neutral float-left" title="HPE DL360 Gen9服务器内存配置" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="plx_8747_pcie_bifurcation.html" class="btn btn-neutral float-right" title="PLX 8747硬件PCIe bifurcation" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../../../copyright.html">Copyright</a> 2018 - now, Huatai Huang.</p>
+    <p>&#169; <a href="../../../../copyright.html">版权所有</a> 2018 - now, Huatai Huang。</p>
   </div>
 
-  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
   
     <!-- your html code here -->
     <br>
-    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡</a></p>
-     
+    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡 👈</a></p>
+    <br>
+    <p>网站采用 <a href="https://utteranc.es/">utterances</a> 评论系统，所有评论存储在<a href="https://github.com/huataihuang/cloud-atlas/issues">GitHub issues</a> 中，如果你看不到下方的评论框，那么可能需要<a href="https://cloud-atlas.readthedocs.io/zh-cn/latest/linux/security/vpn/index.html">自备梯子</a> 👈</p>
+    <div class="articleComments">
+        <comments>
+  <script src="https://utteranc.es/client.js"
+    repo="huataihuang/cloud-atlas"
+    issue-term="pathname"
+    theme="github-light"
+    crossorigin="anonymous"
+    async>
+  </script>
+</comments>
+    </div>
 
 
 </footer>

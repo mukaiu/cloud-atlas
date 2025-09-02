@@ -1,21 +1,25 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh" data-content_root="../../../../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cilium完全取代kube-proxy运行Kubernetes &mdash; Cloud Atlas 0.1 文档</title>
-      <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../../../_static/graphviz.css" type="text/css" />
+  <title>Cilium完全取代kube-proxy运行Kubernetes &mdash; Cloud Atlas: Discovery beta 文档</title>
+      <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../../../_static/graphviz.css?v=fd3f3429" />
+
+  
+    <link rel="shortcut icon" href="../../../../_static/favicon.png"/>
   <!--[if lt IE 9]>
     <script src="../../../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="../../../../_static/documentation_options.js?v=7c91f8fd"></script>
-        <script src="../../../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../../../_static/documentation_options.js?v=8534f863"></script>
+        <script src="../../../../_static/doctools.js?v=9a2dae69"></script>
         <script src="../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
-        <script src="../../../../_static/translations.js?v=beaddf03"></script>
     <script src="../../../../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../../../../genindex.html" />
     <link rel="search" title="搜索" href="../../../../search.html" />
@@ -33,28 +37,32 @@
           
           
           <a href="../../../../index.html" class="icon icon-home">
-            Cloud Atlas
+            Cloud Atlas: Discovery
           </a>
+              <div class="version">
+                1.1
+              </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../../../studio/index.html">Studio Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../infrastructure/index.html">Infrastructure Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../devops/index.html">DevOps Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../kvm/index.html">KVM Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../ceph/index.html">Ceph Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../gluster/index.html">Gluster Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../ovirt/index.html">oVirt Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../openstack/index.html">OpenStack Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../docker/index.html">Docker Atlas</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../../../index.html">Kubernetes Atlas</a><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../../studio/index.html">Studio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../infrastructure/index.html">Infrastructure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../devops/index.html">DevOps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../kvm/index.html">KVM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../ceph/index.html">Ceph</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../gluster/index.html">Gluster</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../ovirt/index.html">oVirt</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../openstack/index.html">OpenStack</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../docker/index.html">Docker</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../../index.html">Kubernetes</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../../think_k8s.html">Kubernetes的思考</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../kubernetes_overview.html">Kubernetes概览</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../startup_prepare/index.html">Kubernetes起步准备</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../startup/index.html">Kubernetes快速起步</a></li>
@@ -76,6 +84,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../../dynamic_dns_loadbalancing_without_cloud_provider.html">没有云计算服务环境下动态DNS和负载均衡</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../k8s_hosts_file_for_pods.html">Kubernetes配置Pods中的hosts文件</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../ingress/index.html">Kubernetes Ingress控制器</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../egress/index.html">Kubernetes Egress控制器</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../flannel/index.html">Flannel网络</a></li>
 <li class="toctree-l3 current"><a class="reference internal" href="../index.html">Cilium网络</a><ul class="current">
 <li class="toctree-l4"><a class="reference internal" href="../intro_cilium.html">cilium技术简介</a></li>
@@ -116,53 +125,56 @@
 <li class="toctree-l2"><a class="reference internal" href="../../../gpu/index.html">GPU Kubernetes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../kubeflow/index.html">Kubeflow - Kubernetes机器学习工作流平台</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../argo/index.html">Argo - 基于Kubernetes的持续集成和工作流</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../kueue/index.html">Kueue - K8s原生批处理调度</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../k8s_android/index.html">Kubernetes运行Android</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../k3s/index.html">K3s - 轻量级Kubernetes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../k0s/index.html">K0s - 轻量级Kubernetes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../platform/index.html">Kubernetes之上的平台</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../cloud/index.html">Kubernetes云厂商</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../develop/index.html">Kubernetes开发</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../cncf/index.html">CNCF(Cloud Native Computing Foudation)</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../kubernetes_from_scratch/index.html">Kubernetes From Scratch (KFS) Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../rancher/index.html">Rancher Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../openshift/index.html">OpenShift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../sql/index.html">SQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../sqlite/index.html">SQLite Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../mysql/index.html">MySQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../pgsql/index.html">PostgreSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../clickhouse/index.html">ClickHouse Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../nosql/index.html">NoSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../redis/index.html">Redis Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../network/index.html">Network Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../infra_service/index.html">Infra-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../infra_search/index.html">Search Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../info_service/index.html">Info-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../web/index.html">Web Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../big_data/index.html">Big Data Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../machine_learning/index.html">Machine Learning Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../linux/index.html">Linux Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../kernel/index.html">Kernel Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../performance/index.html">Performance Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../distributed_system/index.html">Distributed System Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../shell/index.html">Shell Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../python/index.html">Python Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../django/index.html">Django Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../flask/index.html">Flask Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../javascript/index.html">JavaScript Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../nodejs/index.html">Node.js Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../clang/index.html">C Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../golang/index.html">Go Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../swift/index.html">Swift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../rust/index.html">Rust Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../ruby/index.html">Ruby Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../arm/index.html">ARM Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../android/index.html">Android Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../bsd/index.html">BSD Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../apple/index.html">Apple Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../windows/index.html">Windows Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../real/index.html">Real Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../management/index.html">Management Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../life/index.html">Life Atlas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../k8s_dev/index.html">Kubernetes Develop</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../rancher/index.html">Rancher</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../openshift/index.html">OpenShift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../sql/index.html">SQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../sqlite/index.html">SQLite</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../mysql/index.html">MySQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../pgsql/index.html">PostgreSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../nosql/index.html">NoSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../network/index.html">Network</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../infra_service/index.html">Infra-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../infra_search/index.html">Infra-Search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../web/index.html">Web</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../info_service/index.html">Info-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../big_data/index.html">Big Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../machine_learning/index.html">Machine Learning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../drone/index.html">Drone</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../linux/index.html">Linux</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../kernel/index.html">Kernel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../performance/index.html">Performance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../distributed_system/index.html">Distributed System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../shell/index.html">Shell</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../python/index.html">Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../django/index.html">Django</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../javascript/index.html">JavaScript</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../nodejs/index.html">Node.js</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../clang/index.html">C</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../golang/index.html">Go</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../swift/index.html">Swift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../rust/index.html">Rust</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../ruby/index.html">Ruby</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../lua/index.html">Lua</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../arm/index.html">ARM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../raspberry_pi/index.html">Raspberry Pi</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../android/index.html">Android</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../bsd/index.html">BSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../freebsd/index.html">FreeBSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../apple/index.html">Apple</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../windows/index.html">Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../real/index.html">Real</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../management/index.html">Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../life/index.html">Life</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../copyright.html">Copyright</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../aboutme.html">关于作者</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../donate.html">捐赠</a></li>
@@ -175,23 +187,23 @@
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../../../index.html">Cloud Atlas</a>
+          <a href="../../../../index.html">Cloud Atlas: Discovery</a>
       </nav>
 
       <div class="wy-nav-content">
         <div class="rst-content">
-          <div role="navigation" aria-label="Page navigation">
+          <div role="navigation" aria-label="页面导航">
   <ul class="wy-breadcrumbs">
       <li><a href="../../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
-          <li class="breadcrumb-item"><a href="../../../index.html">Kubernetes Atlas</a></li>
+          <li class="breadcrumb-item"><a href="../../../index.html">Kubernetes</a></li>
           <li class="breadcrumb-item"><a href="../../index.html">Kubernetes网络</a></li>
           <li class="breadcrumb-item"><a href="../index.html">Cilium网络</a></li>
           <li class="breadcrumb-item"><a href="index.html">Cilium网络配置</a></li>
       <li class="breadcrumb-item active">Cilium完全取代kube-proxy运行Kubernetes</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../../../../_sources/kubernetes/network/cilium/networking/cilium_kubeproxy_free.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../../../_sources/kubernetes/network/cilium/networking/cilium_kubeproxy_free.rst.txt" rel="nofollow"> 查看页面源码</a>
       </li>
   </ul>
   <hr/>
@@ -200,29 +212,29 @@
            <div itemprop="articleBody">
              
   <section id="ciliumkube-proxykubernetes">
-<span id="cilium-kubeproxy-free"></span><h1>Cilium完全取代kube-proxy运行Kubernetes<a class="headerlink" href="#ciliumkube-proxykubernetes" title="Link to this heading">¶</a></h1>
+<span id="cilium-kubeproxy-free"></span><h1>Cilium完全取代kube-proxy运行Kubernetes<a class="headerlink" href="#ciliumkube-proxykubernetes" title="Link to this heading"></a></h1>
 <p>Cilium提供了完全取代 <code class="docutils literal notranslate"><span class="pre">kube-proxy</span></code> 的运行模式。比较简单的方式是在 <code class="docutils literal notranslate"><span class="pre">kubeadm</span></code> bootstrap 集群的时候就不安装 <code class="docutils literal notranslate"><span class="pre">kube-proxy</span></code> 。</p>
 <div class="admonition note">
 <p class="admonition-title">备注</p>
 <p>Cilium代替 <code class="docutils literal notranslate"><span class="pre">kube-proxy</span></code> 需要依赖 <code class="docutils literal notranslate"><span class="pre">socket-LB</span></code> 功能，这要求内核 <code class="docutils literal notranslate"><span class="pre">v4.19.57</span></code> , <code class="docutils literal notranslate"><span class="pre">v5.1.16</span></code> , <code class="docutils literal notranslate"><span class="pre">v5.2.0</span></code> 或者更新的 Linux 内核。 Linux 内核 v5.3 和 v5.8 添加了更多功能，可以让Cilium更加优化替代 <code class="docutils literal notranslate"><span class="pre">kube-proxy</span></code> 的实现。</p>
 </div>
 <section id="id1">
-<h2>快速起步<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h2>
+<h2>快速起步<a class="headerlink" href="#id1" title="Link to this heading"></a></h2>
 <ul class="simple">
 <li><p>在 <code class="docutils literal notranslate"><span class="pre">kubeadm</span></code> 初始化集群时候就可以跳过安装 <code class="docutils literal notranslate"><span class="pre">kube-proxy</span></code> :</p></li>
 </ul>
 <div class="literal-block-wrapper docutils container" id="id4">
-<div class="code-block-caption"><span class="caption-text">kubeadm初始化集群时跳过安装kube-proxy</span><a class="headerlink" href="#id4" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">kubeadm初始化集群时跳过安装kube-proxy</span><a class="headerlink" href="#id4" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>kubeadm<span class="w"> </span>init<span class="w"> </span>--skip-phases<span class="o">=</span>addon/kube-proxy
 </pre></div>
 </div>
 </div>
 </section>
 <section id="kube-proxy">
-<h2>已经安装 <code class="docutils literal notranslate"><span class="pre">kube-proxy</span></code> 的替换方法<a class="headerlink" href="#kube-proxy" title="Link to this heading">¶</a></h2>
+<h2>已经安装 <code class="docutils literal notranslate"><span class="pre">kube-proxy</span></code> 的替换方法<a class="headerlink" href="#kube-proxy" title="Link to this heading"></a></h2>
 <p>对于已经安装了 <code class="docutils literal notranslate"><span class="pre">kube-proxy</span></code> 作为 DaemonSet 的Kubernetes集群，则通过以下命令移除 <code class="docutils literal notranslate"><span class="pre">kube-proxy</span></code> 。 <code class="docutils literal notranslate"><span class="pre">注意:</span> <span class="pre">删除kube-proxy会导致现有服务中断链接，并且停止流量，直到Cilium替换完全安装好才能恢复</span></code></p>
 <div class="literal-block-wrapper docutils container" id="id5">
-<div class="code-block-caption"><span class="caption-text">移除Kubernetes集群Kube-proxy DaemonSet</span><a class="headerlink" href="#id5" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">移除Kubernetes集群Kube-proxy DaemonSet</span><a class="headerlink" href="#id5" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>kubectl<span class="w"> </span>-n<span class="w"> </span>kube-system<span class="w"> </span>delete<span class="w"> </span>ds<span class="w"> </span>kube-proxy
 <span class="c1"># Delete the configmap as well to avoid kube-proxy being reinstalled during a Kubeadm upgrade (works only for K8s 1.19 and newer)</span>
 kubectl<span class="w"> </span>-n<span class="w"> </span>kube-system<span class="w"> </span>delete<span class="w"> </span>cm<span class="w"> </span>kube-proxy
@@ -235,7 +247,7 @@ iptables-save<span class="w"> </span><span class="p">|</span><span class="w"> </
 <li><p>设置Helm仓库:</p></li>
 </ul>
 <div class="literal-block-wrapper docutils container" id="id6">
-<div class="code-block-caption"><span class="caption-text">设置cilium Helm仓库</span><a class="headerlink" href="#id6" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">设置cilium Helm仓库</span><a class="headerlink" href="#id6" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>helm<span class="w"> </span>repo<span class="w"> </span>add<span class="w"> </span>cilium<span class="w"> </span>https://helm.cilium.io/
 </pre></div>
 </div>
@@ -244,7 +256,7 @@ iptables-save<span class="w"> </span><span class="p">|</span><span class="w"> </
 <li><p>执行以下命令进行安装:</p></li>
 </ul>
 <div class="literal-block-wrapper docutils container" id="id7">
-<div class="code-block-caption"><span class="caption-text">Cilium替换kube-proxy</span><a class="headerlink" href="#id7" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">Cilium替换kube-proxy</span><a class="headerlink" href="#id7" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1">#API_SERVER_IP=192.168.6.101</span>
 <span class="nv">API_SERVER_IP</span><span class="o">=</span>z-k8s-api.staging.huatai.me
 <span class="c1"># Kubeadm default is 6443</span>
@@ -264,7 +276,7 @@ helm<span class="w"> </span>install<span class="w"> </span>cilium<span class="w"
 <p>原因官方文档是以第一次初始安装cilium为准，也就是直接删除掉kube-proxy之后，立即进行cilium安装。而我的操作步骤是，安装了cilium之后，再删除掉kube-proxy并重新安装cilium，所以就会出现冲突报错。这个问题参考 <a class="reference external" href="https://stackoverflow.com/questions/70464815/cannot-install-kubernetes-helm-chart-error-cannot-re-use-a-name-that-is-still-i">Cannot install kubernetes helm chart Error: cannot re-use a name that is still in use</a> ，也就是采用 <a class="reference internal" href="../../../deploy/helm/index.html#helm"><span class="std std-ref">helm</span></a> 提供的
 <code class="docutils literal notranslate"><span class="pre">upgrade</span></code> 命令代替 <code class="docutils literal notranslate"><span class="pre">install</span></code> 命令，就可以重新安装:</p>
 <div class="literal-block-wrapper docutils container" id="id8">
-<div class="code-block-caption"><span class="caption-text">Cilium替换kube-proxy</span><a class="headerlink" href="#id8" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">Cilium替换kube-proxy</span><a class="headerlink" href="#id8" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1">#API_SERVER_IP=192.168.6.101</span>
 <span class="nv">API_SERVER_IP</span><span class="o">=</span>z-k8s-api.staging.huatai.me
 <span class="c1"># Kubeadm default is 6443</span>
@@ -299,7 +311,7 @@ For any further help, visit https://docs.cilium.io/en/v1.11/gettinghelp
 <li><p>现在我们可以检查cilium是否在每个节点正常工作:</p></li>
 </ul>
 <div class="literal-block-wrapper docutils container" id="id9">
-<div class="code-block-caption"><span class="caption-text">kubectl检查cilium的pods是否在各个节点正常运行</span><a class="headerlink" href="#id9" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">kubectl检查cilium的pods是否在各个节点正常运行</span><a class="headerlink" href="#id9" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>kubectl<span class="w"> </span>-n<span class="w"> </span>kube-system<span class="w"> </span>get<span class="w"> </span>pods<span class="w"> </span>-l<span class="w"> </span>k8s-app<span class="o">=</span>cilium<span class="w"> </span>-o<span class="w"> </span>wide
 </pre></div>
 </div>
@@ -318,7 +330,7 @@ For any further help, visit https://docs.cilium.io/en/v1.11/gettinghelp
 </div>
 </section>
 <section id="id2">
-<h2>验证设置<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
+<h2>验证设置<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
 <p>在完成了kube-proxy替代之后，首先验证是否在节点上运行了Cilium agent正确模式:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">kubectl</span> <span class="o">-</span><span class="n">n</span> <span class="n">kube</span><span class="o">-</span><span class="n">system</span> <span class="n">exec</span> <span class="n">ds</span><span class="o">/</span><span class="n">cilium</span> <span class="o">--</span> <span class="n">cilium</span> <span class="n">status</span> <span class="o">|</span> <span class="n">grep</span> <span class="n">KubeProxyReplacement</span>
 </pre></div>
@@ -337,12 +349,12 @@ For any further help, visit https://docs.cilium.io/en/v1.11/gettinghelp
 </ul>
 </section>
 <section id="nginx">
-<h2>可选步骤:通过Nginx部署验证<a class="headerlink" href="#nginx" title="Link to this heading">¶</a></h2>
+<h2>可选步骤:通过Nginx部署验证<a class="headerlink" href="#nginx" title="Link to this heading"></a></h2>
 <ul class="simple">
 <li><p>准备 <code class="docutils literal notranslate"><span class="pre">my-nginx.yaml</span></code> :</p></li>
 </ul>
 <div class="literal-block-wrapper docutils container" id="id10">
-<div class="code-block-caption"><span class="caption-text">部署Nginx my-nginx.yaml</span><a class="headerlink" href="#id10" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">部署Nginx my-nginx.yaml</span><a class="headerlink" href="#id10" title="Link to this code"></a></div>
 <div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">apps/v1</span>
 <span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Deployment</span>
 <span class="nt">metadata</span><span class="p">:</span>
@@ -439,14 +451,14 @@ For any further help, visit https://docs.cilium.io/en/v1.11/gettinghelp
 <li><p>现在我们可以通过 <code class="docutils literal notranslate"><span class="pre">cilium</span> <span class="pre">service</span> <span class="pre">list</span></code> 命令来验证 Cilium eBPF kube-proxy 替换所创建的新的 NodePort 服务:</p></li>
 </ul>
 <div class="literal-block-wrapper docutils container" id="id11">
-<div class="code-block-caption"><span class="caption-text">检查cilium DaemonSet的服务列表</span><a class="headerlink" href="#id11" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">检查cilium DaemonSet的服务列表</span><a class="headerlink" href="#id11" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>kubectl<span class="w"> </span>-n<span class="w"> </span>kube-system<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>ds/cilium<span class="w"> </span>--<span class="w"> </span>cilium<span class="w"> </span>service<span class="w"> </span>list
 </pre></div>
 </div>
 </div>
 <p>输出显示:</p>
 <div class="literal-block-wrapper docutils container" id="id12">
-<div class="code-block-caption"><span class="caption-text">检查cilium DaemonSet的服务列表输出信息</span><a class="headerlink" href="#id12" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">检查cilium DaemonSet的服务列表输出信息</span><a class="headerlink" href="#id12" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ID<span class="w">   </span>Frontend<span class="w">              </span>Service<span class="w"> </span>Type<span class="w">   </span>Backend
 <span class="m">1</span><span class="w">    </span><span class="m">10</span>.104.129.196:443<span class="w">    </span>ClusterIP<span class="w">      </span><span class="nv">1</span><span class="w"> </span><span class="o">=</span>&gt;<span class="w"> </span><span class="m">192</span>.168.6.114:4244
 <span class="w">                                          </span><span class="nv">2</span><span class="w"> </span><span class="o">=</span>&gt;<span class="w"> </span><span class="m">192</span>.168.6.102:4244
@@ -533,7 +545,7 @@ Commercial support is available at
 </div>
 </section>
 <section id="socket-loadbalancer-bypass-in-pod-namespace">
-<span id="cilium-hubproxy-free-socketlb-bypass"></span><h2>Socket LoadBalancer Bypass in Pod Namespace<a class="headerlink" href="#socket-loadbalancer-bypass-in-pod-namespace" title="Link to this heading">¶</a></h2>
+<span id="cilium-hubproxy-free-socketlb-bypass"></span><h2>Socket LoadBalancer Bypass in Pod Namespace<a class="headerlink" href="#socket-loadbalancer-bypass-in-pod-namespace" title="Link to this heading"></a></h2>
 <p>在 <a class="reference internal" href="../istio/cilium_istio_startup.html#cilium-istio-startup"><span class="std std-ref">Cilium Istio集成起步</span></a> 配置Cilium时，如果部署的Cilium采用本文 kube-proxy replacement 模式( <code class="docutils literal notranslate"><span class="pre">kube-proxy_free</span></code> )，就需要调整 Cilium 的socket load balancing，配置 <code class="docutils literal notranslate"><span class="pre">socketLB.hostNamespaceOnly=true</span></code> ，否则会导致Istio的加密和遥测功能失效。</p>
 <p>由于我已经在上文中启用了 <code class="docutils literal notranslate"><span class="pre">hub-proxy_free</span></code> ，所以，在部署 <a class="reference internal" href="../istio/cilium_istio_startup.html#cilium-istio-startup"><span class="std std-ref">Cilium Istio集成起步</span></a> 的第一个步骤就是本段落配置更新，激活 <code class="docutils literal notranslate"><span class="pre">socketLB.hostNamespaceOnly=true</span></code> :</p>
 <div class="admonition warning">
@@ -541,7 +553,7 @@ Commercial support is available at
 <p>我这里配置错误了，折腾了一下才解决，请参考下文的排查和纠正。最后我给出一个正确的简化配置(不修订默认值)。Cilium有很多强大的网络功能配置需要联动，并且和底层云计算underlay网络(vxlan等)有关，所以调整要非常小心。</p>
 </div>
 <div class="literal-block-wrapper docutils container" id="id13">
-<div class="code-block-caption"><span class="caption-text">更新Cilium kube-proxy free配置，激活 socketLB.hostNamespaceOnly 以集成Istio(存在错误，无法启动cilium)</span><a class="headerlink" href="#id13" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">更新Cilium kube-proxy free配置，激活 socketLB.hostNamespaceOnly 以集成Istio(存在错误，无法启动cilium)</span><a class="headerlink" href="#id13" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nv">API_SERVER_IP</span><span class="o">=</span>z-k8s-api.staging.huatai.me
 <span class="nv">API_SERVER_PORT</span><span class="o">=</span><span class="m">6443</span>
 helm<span class="w"> </span>upgrade<span class="w"> </span>cilium<span class="w"> </span>cilium/cilium<span class="w"> </span>--version<span class="w"> </span><span class="m">1</span>.12.1<span class="w"> </span><span class="se">\</span>
@@ -577,7 +589,7 @@ cilium-vk624                        0/1     CrashLoopBackOff   4 (74s ago)   3m4
 </div>
 <p>显示容器健康检查失败:</p>
 <div class="literal-block-wrapper docutils container" id="id14">
-<div class="code-block-caption"><span class="caption-text">激活 socketLB.hostNamespaceOnly 出现pods不断crash</span><a class="headerlink" href="#id14" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">激活 socketLB.hostNamespaceOnly 出现pods不断crash</span><a class="headerlink" href="#id14" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Events:
 <span class="w">  </span>Type<span class="w">     </span>Reason<span class="w">     </span>Age<span class="w">                    </span>From<span class="w">               </span>Message
 <span class="w">  </span>----<span class="w">     </span>------<span class="w">     </span>----<span class="w">                   </span>----<span class="w">               </span>-------
@@ -627,7 +639,7 @@ cilium-vk624                        0/1     CrashLoopBackOff   4 (74s ago)   3m4
 </div>
 <p>发现错误是参数错误:</p>
 <div class="literal-block-wrapper docutils container" id="id15">
-<div class="code-block-caption"><span class="caption-text">激活 socketLB.hostNamespaceOnly 后crash pod日志</span><a class="headerlink" href="#id15" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">激活 socketLB.hostNamespaceOnly 后crash pod日志</span><a class="headerlink" href="#id15" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Defaulted<span class="w"> </span>container<span class="w"> </span><span class="s2">&quot;cilium-agent&quot;</span><span class="w"> </span>out<span class="w"> </span>of:<span class="w"> </span>cilium-agent,<span class="w"> </span>mount-cgroup<span class="w"> </span><span class="o">(</span>init<span class="o">)</span>,<span class="w"> </span>apply-sysctl-overwrites<span class="w"> </span><span class="o">(</span>init<span class="o">)</span>,<span class="w"> </span>mount-bpf-fs<span class="w"> </span><span class="o">(</span>init<span class="o">)</span>,<span class="w"> </span>clean-cilium-state<span class="w"> </span><span class="o">(</span>init<span class="o">)</span>
 <span class="nv">level</span><span class="o">=</span>info<span class="w"> </span><span class="nv">msg</span><span class="o">=</span><span class="s2">&quot;Started gops server&quot;</span><span class="w"> </span><span class="nv">address</span><span class="o">=</span><span class="s2">&quot;127.0.0.1:9890&quot;</span><span class="w"> </span><span class="nv">subsys</span><span class="o">=</span>daemon
 <span class="hll"><span class="nv">level</span><span class="o">=</span>warning<span class="w"> </span><span class="nv">msg</span><span class="o">=</span><span class="s2">&quot;If auto-direct-node-routes is enabled, then you are recommended to also configure ipv4-native-routing-cidr. If ipv4-native-routing-cidr is not configured, this may lead to pod to pod traffic being masqueraded, which can cause problems with performance, observability and policy&quot;</span><span class="w"> </span><span class="nv">subsys</span><span class="o">=</span>config
@@ -970,7 +982,7 @@ cilium-vk624                        0/1     CrashLoopBackOff   4 (74s ago)   3m4
 <p>cilium 默认就启用了 <code class="docutils literal notranslate"><span class="pre">Encapsulation</span></code> (封包)，不需要配置，这样就可以和 underlying 网络架构配合无需更多配置。此时所有集群节点之间采用 <code class="docutils literal notranslate"><span class="pre">mesh</span> <span class="pre">of</span> <span class="pre">tunnels</span></code> 的UDP封包协议，如VXLAN或Geneve。所有Cilium node的流量都是封包的。</p>
 <p>所以，我现在修订为:</p>
 <div class="literal-block-wrapper docutils container" id="id16">
-<div class="code-block-caption"><span class="caption-text">重新更新Cilium kube-proxy free配置，激活 socketLB.hostNamespaceOnly 以集成Istio，部分配置恢复默认</span><a class="headerlink" href="#id16" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">重新更新Cilium kube-proxy free配置，激活 socketLB.hostNamespaceOnly 以集成Istio，部分配置恢复默认</span><a class="headerlink" href="#id16" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nv">API_SERVER_IP</span><span class="o">=</span>z-k8s-api.staging.huatai.me
 <span class="nv">API_SERVER_PORT</span><span class="o">=</span><span class="m">6443</span>
 helm<span class="w"> </span>upgrade<span class="w"> </span>cilium<span class="w"> </span>cilium/cilium<span class="w"> </span>--version<span class="w"> </span><span class="m">1</span>.12.1<span class="w"> </span><span class="se">\</span>
@@ -989,7 +1001,7 @@ helm<span class="w"> </span>upgrade<span class="w"> </span>cilium<span class="w"
 </div>
 <p>综上所述，实际上我走了弯路，应该保持默认配置情况下有限修订，简化配置如下(以此为准):</p>
 <div class="literal-block-wrapper docutils container" id="id17">
-<div class="code-block-caption"><span class="caption-text">简化且正确配置方法: 更新Cilium kube-proxy free配置，激活 socketLB.hostNamespaceOnly 以集成Istio(不修改默认配置)</span><a class="headerlink" href="#id17" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">简化且正确配置方法: 更新Cilium kube-proxy free配置，激活 socketLB.hostNamespaceOnly 以集成Istio(不修改默认配置)</span><a class="headerlink" href="#id17" title="Link to this code"></a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nv">API_SERVER_IP</span><span class="o">=</span>z-k8s-api.staging.huatai.me
 <span class="nv">API_SERVER_PORT</span><span class="o">=</span><span class="m">6443</span>
 helm<span class="w"> </span>upgrade<span class="w"> </span>cilium<span class="w"> </span>cilium/cilium<span class="w"> </span>--version<span class="w"> </span><span class="m">1</span>.12.1<span class="w"> </span><span class="se">\</span>
@@ -1012,7 +1024,7 @@ helm<span class="w"> </span>upgrade<span class="w"> </span>cilium<span class="w"
 </div>
 </section>
 <section id="id3">
-<h2>参考<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h2>
+<h2>参考<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="https://docs.cilium.io/en/stable/gettingstarted/kubeproxy-free">Cilium docs: Kubernetes Without kube-proxy</a></p></li>
 </ul>
@@ -1022,25 +1034,37 @@ helm<span class="w"> </span>upgrade<span class="w"> </span>cilium<span class="w"
 
            </div>
           </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="index.html" class="btn btn-neutral float-left" title="Cilium网络配置" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="ipam/index.html" class="btn btn-neutral float-right" title="Cilium IP 地址管理(IPAM)" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="index.html" class="btn btn-neutral float-left" title="Cilium网络配置" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="ipam/index.html" class="btn btn-neutral float-right" title="Cilium IP 地址管理(IPAM)" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../../../copyright.html">Copyright</a> 2018 - now, Huatai Huang.</p>
+    <p>&#169; <a href="../../../../copyright.html">版权所有</a> 2018 - now, Huatai Huang。</p>
   </div>
 
-  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
   
     <!-- your html code here -->
     <br>
-    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡</a></p>
-     
+    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡 👈</a></p>
+    <br>
+    <p>网站采用 <a href="https://utteranc.es/">utterances</a> 评论系统，所有评论存储在<a href="https://github.com/huataihuang/cloud-atlas/issues">GitHub issues</a> 中，如果你看不到下方的评论框，那么可能需要<a href="https://cloud-atlas.readthedocs.io/zh-cn/latest/linux/security/vpn/index.html">自备梯子</a> 👈</p>
+    <div class="articleComments">
+        <comments>
+  <script src="https://utteranc.es/client.js"
+    repo="huataihuang/cloud-atlas"
+    issue-term="pathname"
+    theme="github-light"
+    crossorigin="anonymous"
+    async>
+  </script>
+</comments>
+    </div>
 
 
 </footer>

@@ -1,21 +1,25 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh" data-content_root="../../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>scrcpy控制Android &mdash; Cloud Atlas 0.1 文档</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+  <title>scrcpy控制Android &mdash; Cloud Atlas: Discovery beta 文档</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=fd3f3429" />
+
+  
+    <link rel="shortcut icon" href="../../_static/favicon.png"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="../../_static/documentation_options.js?v=7c91f8fd"></script>
-        <script src="../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=8534f863"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
         <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
-        <script src="../../_static/translations.js?v=beaddf03"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../../genindex.html" />
     <link rel="search" title="搜索" href="../../search.html" />
@@ -33,62 +37,65 @@
           
           
           <a href="../../index.html" class="icon icon-home">
-            Cloud Atlas
+            Cloud Atlas: Discovery
           </a>
+              <div class="version">
+                1.1
+              </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../studio/index.html">Studio Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../infrastructure/index.html">Infrastructure Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../devops/index.html">DevOps Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kvm/index.html">KVM Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../ceph/index.html">Ceph Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../gluster/index.html">Gluster Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../ovirt/index.html">oVirt Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../openstack/index.html">OpenStack Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../docker/index.html">Docker Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kubernetes/index.html">Kubernetes Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kubernetes_from_scratch/index.html">Kubernetes From Scratch (KFS) Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../rancher/index.html">Rancher Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../openshift/index.html">OpenShift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../sql/index.html">SQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../sqlite/index.html">SQLite Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../mysql/index.html">MySQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../pgsql/index.html">PostgreSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../clickhouse/index.html">ClickHouse Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../nosql/index.html">NoSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../redis/index.html">Redis Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../network/index.html">Network Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../infra_service/index.html">Infra-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../infra_search/index.html">Search Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../info_service/index.html">Info-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../web/index.html">Web Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../big_data/index.html">Big Data Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../machine_learning/index.html">Machine Learning Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../linux/index.html">Linux Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kernel/index.html">Kernel Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../performance/index.html">Performance Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../distributed_system/index.html">Distributed System Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../shell/index.html">Shell Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../python/index.html">Python Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../django/index.html">Django Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../flask/index.html">Flask Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../javascript/index.html">JavaScript Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../nodejs/index.html">Node.js Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../clang/index.html">C Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../golang/index.html">Go Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../swift/index.html">Swift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../rust/index.html">Rust Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../ruby/index.html">Ruby Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../arm/index.html">ARM Atlas</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Android Atlas</a><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../studio/index.html">Studio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../infrastructure/index.html">Infrastructure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../devops/index.html">DevOps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kvm/index.html">KVM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ceph/index.html">Ceph</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../gluster/index.html">Gluster</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ovirt/index.html">oVirt</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../openstack/index.html">OpenStack</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../docker/index.html">Docker</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kubernetes/index.html">Kubernetes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../k8s_dev/index.html">Kubernetes Develop</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../rancher/index.html">Rancher</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../openshift/index.html">OpenShift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../sql/index.html">SQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../sqlite/index.html">SQLite</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../mysql/index.html">MySQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../pgsql/index.html">PostgreSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../nosql/index.html">NoSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../network/index.html">Network</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../infra_service/index.html">Infra-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../infra_search/index.html">Infra-Search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../web/index.html">Web</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../info_service/index.html">Info-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../big_data/index.html">Big Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../machine_learning/index.html">Machine Learning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../drone/index.html">Drone</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../linux/index.html">Linux</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kernel/index.html">Kernel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../performance/index.html">Performance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../distributed_system/index.html">Distributed System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../shell/index.html">Shell</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../python/index.html">Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../django/index.html">Django</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../javascript/index.html">JavaScript</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../nodejs/index.html">Node.js</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../clang/index.html">C</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../golang/index.html">Go</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../swift/index.html">Swift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../rust/index.html">Rust</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ruby/index.html">Ruby</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lua/index.html">Lua</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../arm/index.html">ARM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../raspberry_pi/index.html">Raspberry Pi</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Android</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../device/index.html">Android 设备</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../startup/index.html">Android 起步</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../install/index.html">Android 安装</a></li>
@@ -98,9 +105,15 @@
 <li class="toctree-l3"><a class="reference internal" href="check_secondhand_phone.html">二手手机验机</a></li>
 <li class="toctree-l3"><a class="reference internal" href="ab_seamless_update.html">A/B无缝系统更新</a></li>
 <li class="toctree-l3"><a class="reference internal" href="magisk.html">Magisk</a></li>
+<li class="toctree-l3"><a class="reference internal" href="magisk_zygisk.html">Magisk Zygisk</a></li>
 <li class="toctree-l3"><a class="reference internal" href="magisk_root_ota.html">Magisk root Android设备并支持OTA更新</a></li>
+<li class="toctree-l3"><a class="reference internal" href="android_recovery_mode.html">Android Recovery Mode</a></li>
 <li class="toctree-l3"><a class="reference internal" href="pixel_3_chinese_volte.html">配置Pixel 3支持中国运营商VoLTE</a></li>
 <li class="toctree-l3"><a class="reference internal" href="pixel_4_volte.html">配置Pixel 4支持VoLTE</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cn_samsung_galaxy_watch_4_wich_android.html">原生Android适配使用国行三星Galaxy Watch 4</a></li>
+<li class="toctree-l3"><a class="reference internal" href="samsung_health_monitor.html">三星健康监测器(Samsung Health Monitor)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="samsung_pay_card.html">三星智能卡</a></li>
+<li class="toctree-l3"><a class="reference internal" href="samsung_music.html">Samsung Music</a></li>
 <li class="toctree-l3"><a class="reference internal" href="pixel_6_volte.html">配置Pixel 6支持VoLTE</a></li>
 <li class="toctree-l3"><a class="reference internal" href="change_build_prop.html">修改build.prop文件</a></li>
 <li class="toctree-l3"><a class="reference internal" href="android_busybox.html">Android系统Busybox</a></li>
@@ -124,6 +137,9 @@
 <li class="toctree-l3"><a class="reference internal" href="android_monitor.html">Android手机作为显示器</a></li>
 <li class="toctree-l3"><a class="reference internal" href="android_otg.html">Android OTG</a></li>
 <li class="toctree-l3"><a class="reference internal" href="project_soli.html">Project Soli</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pixel_usb_devices.html">Pixel可用的USB设备</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pixel_uart.html">Pixel UART(Serial Port, Console)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pixel_minicom.html">使用Pixel运行minicom(串口调试服务器)</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../virtual/index.html">Android 虚拟化</a></li>
@@ -135,12 +151,13 @@
 <li class="toctree-l2"><a class="reference internal" href="../mobile_work/index.html">Android 移动工作</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../bsd/index.html">BSD Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../apple/index.html">Apple Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../windows/index.html">Windows Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../real/index.html">Real Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../management/index.html">Management Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../life/index.html">Life Atlas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../bsd/index.html">BSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../freebsd/index.html">FreeBSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../apple/index.html">Apple</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../windows/index.html">Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../real/index.html">Real</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../management/index.html">Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../life/index.html">Life</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../copyright.html">Copyright</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../aboutme.html">关于作者</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../donate.html">捐赠</a></li>
@@ -153,21 +170,21 @@
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../index.html">Cloud Atlas</a>
+          <a href="../../index.html">Cloud Atlas: Discovery</a>
       </nav>
 
       <div class="wy-nav-content">
         <div class="rst-content">
-          <div role="navigation" aria-label="Page navigation">
+          <div role="navigation" aria-label="页面导航">
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
-          <li class="breadcrumb-item"><a href="../index.html">Android Atlas</a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Android</a></li>
           <li class="breadcrumb-item"><a href="index.html">Android Hack</a></li>
       <li class="breadcrumb-item active">scrcpy控制Android</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../../_sources/android/hack/scrcpy.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../_sources/android/hack/scrcpy.rst.txt" rel="nofollow"> 查看页面源码</a>
       </li>
   </ul>
   <hr/>
@@ -176,7 +193,7 @@
            <div itemprop="articleBody">
              
   <section id="scrcpyandroid">
-<span id="scrcpy"></span><h1>scrcpy控制Android<a class="headerlink" href="#scrcpyandroid" title="Link to this heading">¶</a></h1>
+<span id="scrcpy"></span><h1>scrcpy控制Android<a class="headerlink" href="#scrcpyandroid" title="Link to this heading"></a></h1>
 <p>scrcpy是提供了通过USB或者TCP/IP连接Android设备的应用程序，可以工作在Linux, Windows, macOS上:</p>
 <ul class="simple">
 <li><p>请谅解(原生，只显示设备屏幕)</p></li>
@@ -191,9 +208,9 @@
 <a class="reference internal image-reference" href="../../_images/scrcpy.jpg"><img alt="../../_images/scrcpy.jpg" src="../../_images/scrcpy.jpg" style="width: 256.2px; height: 360.0px;" /></a>
 </figure>
 <section id="id1">
-<h2>安装scrcpy<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h2>
+<h2>安装scrcpy<a class="headerlink" href="#id1" title="Link to this heading"></a></h2>
 <section id="linux">
-<h3>Linux<a class="headerlink" href="#linux" title="Link to this heading">¶</a></h3>
+<h3>Linux<a class="headerlink" href="#linux" title="Link to this heading"></a></h3>
 <p>在Debian(testing和sid)和Ubuntu(20.04):</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">apt</span> <span class="n">install</span> <span class="n">scrcpy</span>
 </pre></div>
@@ -203,7 +220,7 @@
 <p>甚至可以通过 <a class="reference external" href="https://github.com/Genymobile/scrcpy/blob/master/BUILD.md">源代码编译安装scrcpy</a></p>
 </section>
 <section id="windows">
-<h3>Windows<a class="headerlink" href="#windows" title="Link to this heading">¶</a></h3>
+<h3>Windows<a class="headerlink" href="#windows" title="Link to this heading"></a></h3>
 <ul>
 <li><p>可以直接下载 <a class="reference external" href="https://github.com/Genymobile/scrcpy/releases/download/v1.14/scrcpy-win64-v1.14.zip">scrcpy-win64-v1.14.zip</a> - 请在官网下载最新版本</p></li>
 <li><p>或者通过 <a class="reference external" href="https://chocolatey.org/">Chocolatey</a> 安装:</p>
@@ -221,7 +238,7 @@
 </ul>
 </section>
 <section id="macos">
-<h3>macOS<a class="headerlink" href="#macos" title="Link to this heading">¶</a></h3>
+<h3>macOS<a class="headerlink" href="#macos" title="Link to this heading"></a></h3>
 <ul>
 <li><p>建议通过 <a class="reference internal" href="../../apple/macos/homebrew.html#homebrew"><span class="std std-ref">Homebrew</span></a> 安装:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">brew</span> <span class="n">install</span> <span class="n">scrcpy</span>
@@ -237,7 +254,7 @@
 </section>
 </section>
 <section id="id3">
-<h2>运行<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h2>
+<h2>运行<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
 <ul>
 <li><p>连接Android设备，然后执行:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">scrcpy</span>
@@ -269,7 +286,7 @@
 <ul>
 <li><p>截屏</p>
 <blockquote>
-<div><p>scrcpy –crop 1224:1440:0:0   # 1224x1440 at offset (0,0)</p>
+<div><p>scrcpy --crop 1224:1440:0:0   # 1224x1440 at offset (0,0)</p>
 </div></blockquote>
 </li>
 <li><p>锁定视频方向:</p>
@@ -295,7 +312,7 @@
 </div>
 </section>
 <section id="id4">
-<h2>连接<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h2>
+<h2>连接<a class="headerlink" href="#id4" title="Link to this heading"></a></h2>
 <p>scrcpy使用adb和设备通讯，而adb可以通过TCP/IP和设备连接</p>
 <ul>
 <li><p>将设备和电脑连接到相同Wi-Fi</p></li>
@@ -319,7 +336,7 @@
 </li>
 </ul>
 <section id="id5">
-<h3>多设备连接<a class="headerlink" href="#id5" title="Link to this heading">¶</a></h3>
+<h3>多设备连接<a class="headerlink" href="#id5" title="Link to this heading"></a></h3>
 <ul>
 <li><p>如果adb显示多个是被，需要指定serial:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">scrcpy</span> <span class="o">--</span><span class="n">serial</span> <span class="mi">0123456789</span><span class="n">abcdef</span>
@@ -341,7 +358,7 @@
 </ul>
 </section>
 <section id="ssh-tunnel">
-<h3>SSH tunnel<a class="headerlink" href="#ssh-tunnel" title="Link to this heading">¶</a></h3>
+<h3>SSH tunnel<a class="headerlink" href="#ssh-tunnel" title="Link to this heading"></a></h3>
 <p>要连接远程设备，可以通过本地 <code class="docutils literal notranslate"><span class="pre">adb</span></code> 客户端连接远程 <code class="docutils literal notranslate"><span class="pre">adb</span></code> 服务器（需要使用相同的adb协议）:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">adb</span> <span class="n">kill</span><span class="o">-</span><span class="n">server</span>    <span class="c1"># kill the local adb server on 5037</span>
 <span class="n">ssh</span> <span class="o">-</span><span class="n">CN</span> <span class="o">-</span><span class="n">L5037</span><span class="p">:</span><span class="n">localhost</span><span class="p">:</span><span class="mi">5037</span> <span class="o">-</span><span class="n">R27183</span><span class="p">:</span><span class="n">localhost</span><span class="p">:</span><span class="mi">27183</span> <span class="n">your_remote_computer</span>
@@ -369,37 +386,37 @@
 </section>
 </section>
 <section id="id6">
-<h2>窗口配置<a class="headerlink" href="#id6" title="Link to this heading">¶</a></h2>
+<h2>窗口配置<a class="headerlink" href="#id6" title="Link to this heading"></a></h2>
 <section id="id7">
-<h3>标题<a class="headerlink" href="#id7" title="Link to this heading">¶</a></h3>
+<h3>标题<a class="headerlink" href="#id7" title="Link to this heading"></a></h3>
 <p>默认窗口标题是设备型号，可以修改:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">scrcpy</span> <span class="o">--</span><span class="n">window</span><span class="o">-</span><span class="n">title</span> <span class="s1">&#39;My device&#39;</span>
 </pre></div>
 </div>
 </section>
 <section id="id8">
-<h3>位置和大小<a class="headerlink" href="#id8" title="Link to this heading">¶</a></h3>
+<h3>位置和大小<a class="headerlink" href="#id8" title="Link to this heading"></a></h3>
 <p>初始窗口位置和大小可以指定:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">scrcpy</span> <span class="o">--</span><span class="n">window</span><span class="o">-</span><span class="n">x</span> <span class="mi">100</span> <span class="o">--</span><span class="n">window</span><span class="o">-</span><span class="n">y</span> <span class="mi">100</span> <span class="o">--</span><span class="n">window</span><span class="o">-</span><span class="n">width</span> <span class="mi">800</span> <span class="o">--</span><span class="n">window</span><span class="o">-</span><span class="n">height</span> <span class="mi">600</span>
 </pre></div>
 </div>
 </section>
 <section id="id9">
-<h3>边框<a class="headerlink" href="#id9" title="Link to this heading">¶</a></h3>
+<h3>边框<a class="headerlink" href="#id9" title="Link to this heading"></a></h3>
 <p>可以关闭窗口边框:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">scrcpy</span> <span class="o">--</span><span class="n">window</span><span class="o">-</span><span class="n">borderless</span>
 </pre></div>
 </div>
 </section>
 <section id="id10">
-<h3>始终在最上面<a class="headerlink" href="#id10" title="Link to this heading">¶</a></h3>
+<h3>始终在最上面<a class="headerlink" href="#id10" title="Link to this heading"></a></h3>
 <p>可以将scrcpy窗口始终保持在最上面:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">scrcpy</span> <span class="o">--</span><span class="n">window</span><span class="o">-</span><span class="n">borderless</span>
 </pre></div>
 </div>
 </section>
 <section id="id11">
-<h3>全屏<a class="headerlink" href="#id11" title="Link to this heading">¶</a></h3>
+<h3>全屏<a class="headerlink" href="#id11" title="Link to this heading"></a></h3>
 <p>可以在启动时就全屏:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">scrcpy</span> <span class="o">--</span><span class="n">fullscreen</span>
 <span class="n">scrcpy</span> <span class="o">-</span><span class="n">f</span>  <span class="c1"># short version</span>
@@ -408,7 +425,7 @@
 <p>或者通过快捷键切换全屏: <code class="docutils literal notranslate"><span class="pre">Ctrl+f</span></code></p>
 </section>
 <section id="id12">
-<h3>旋转<a class="headerlink" href="#id12" title="Link to this heading">¶</a></h3>
+<h3>旋转<a class="headerlink" href="#id12" title="Link to this heading"></a></h3>
 <p>窗口可以选装:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">scrcpy</span> <span class="o">--</span><span class="n">rotation</span> <span class="mi">1</span>
 </pre></div>
@@ -423,7 +440,7 @@
 <p>可以通过 <code class="docutils literal notranslate"><span class="pre">Ctrl</span> <span class="pre">+</span> <span class="pre">←</span></code> (左方向键) 和 <code class="docutils literal notranslate"><span class="pre">Ctrl</span> <span class="pre">+</span> <span class="pre">→</span></code> (右方向键)</p>
 </section>
 <section id="id13">
-<h3>只读<a class="headerlink" href="#id13" title="Link to this heading">¶</a></h3>
+<h3>只读<a class="headerlink" href="#id13" title="Link to this heading"></a></h3>
 <p>可以禁止控制，即不通过键盘鼠标操作:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">scrcpy</span> <span class="o">--</span><span class="n">no</span><span class="o">-</span><span class="n">control</span>
 <span class="n">scrcpy</span> <span class="o">-</span><span class="n">n</span>
@@ -431,7 +448,7 @@
 </div>
 </section>
 <section id="id14">
-<h3>显示<a class="headerlink" href="#id14" title="Link to this heading">¶</a></h3>
+<h3>显示<a class="headerlink" href="#id14" title="Link to this heading"></a></h3>
 <p>如果有多个显示器，可以指定显示屏幕:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">scrcpy</span> <span class="o">--</span><span class="n">display</span> <span class="mi">1</span>
 </pre></div>
@@ -442,7 +459,7 @@
 </div>
 </section>
 <section id="id15">
-<h3>保持唤醒<a class="headerlink" href="#id15" title="Link to this heading">¶</a></h3>
+<h3>保持唤醒<a class="headerlink" href="#id15" title="Link to this heading"></a></h3>
 <p>防止设备进入睡眠:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">scrcpy</span> <span class="o">--</span><span class="n">stay</span><span class="o">-</span><span class="n">awake</span>
 <span class="n">scrcpy</span> <span class="o">-</span><span class="n">w</span>
@@ -450,7 +467,7 @@
 </div>
 </section>
 <section id="id16">
-<h3>关闭屏幕<a class="headerlink" href="#id16" title="Link to this heading">¶</a></h3>
+<h3>关闭屏幕<a class="headerlink" href="#id16" title="Link to this heading"></a></h3>
 <p>可以在镜像屏幕时关闭设备屏幕:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">scrcpy</span> <span class="o">--</span><span class="n">turn</span><span class="o">-</span><span class="n">screen</span><span class="o">-</span><span class="n">off</span>
 <span class="n">scrcpy</span> <span class="o">-</span><span class="n">S</span>
@@ -465,14 +482,14 @@
 </div>
 </section>
 <section id="id17">
-<h3>绘制过期帧<a class="headerlink" href="#id17" title="Link to this heading">¶</a></h3>
+<h3>绘制过期帧<a class="headerlink" href="#id17" title="Link to this heading"></a></h3>
 <p>默认情况，为了降低延迟，scrcpy总是只绘制最后解码的帧，并丢弃之前的帧。为了强制绘制所有帧（会导致明显的延迟），则使用:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">scrcpy</span> <span class="o">--</span><span class="n">render</span><span class="o">-</span><span class="n">expired</span><span class="o">-</span><span class="n">frames</span>
 </pre></div>
 </div>
 </section>
 <section id="id18">
-<h3>显示触摸<a class="headerlink" href="#id18" title="Link to this heading">¶</a></h3>
+<h3>显示触摸<a class="headerlink" href="#id18" title="Link to this heading"></a></h3>
 <p>为了演示，通常显示物理触摸（在物理设备上操作）非常有用，这是Android提供的开发者选项:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">scrcpy</span> <span class="o">--</span><span class="n">show</span><span class="o">-</span><span class="n">touches</span>
 <span class="n">scrcpy</span> <span class="o">-</span><span class="n">t</span>
@@ -481,7 +498,7 @@
 <p>注意，这个只显示物理接触（即手指在设备上操作）。</p>
 </section>
 <section id="id19">
-<h3>输入控制<a class="headerlink" href="#id19" title="Link to this heading">¶</a></h3>
+<h3>输入控制<a class="headerlink" href="#id19" title="Link to this heading"></a></h3>
 <ul>
 <li><p>旋转设备屏幕： 按下 <code class="docutils literal notranslate"><span class="pre">Ctrl</span> <span class="pre">+</span> <span class="pre">r</span></code> 旋转</p></li>
 <li><p>复制粘贴:</p>
@@ -494,7 +511,7 @@
 </ul>
 </section>
 <section id="id20">
-<h3>文字输入<a class="headerlink" href="#id20" title="Link to this heading">¶</a></h3>
+<h3>文字输入<a class="headerlink" href="#id20" title="Link to this heading"></a></h3>
 <p>有两种输入文字的事件：</p>
 <ul class="simple">
 <li><p>key events, signaling that a key is pressed or released;</p></li>
@@ -503,22 +520,22 @@
 </section>
 </section>
 <section id="id21">
-<h2>文件投递<a class="headerlink" href="#id21" title="Link to this heading">¶</a></h2>
+<h2>文件投递<a class="headerlink" href="#id21" title="Link to this heading"></a></h2>
 <section id="apk">
-<h3>安装APK<a class="headerlink" href="#apk" title="Link to this heading">¶</a></h3>
+<h3>安装APK<a class="headerlink" href="#apk" title="Link to this heading"></a></h3>
 <p>要安装APK，只需要将APK文件拖放到scrcpy窗口就可以。没有视觉反馈，只是在控制台打印日志。</p>
 </section>
 <section id="id22">
-<h3>推送文件到设备<a class="headerlink" href="#id22" title="Link to this heading">¶</a></h3>
+<h3>推送文件到设备<a class="headerlink" href="#id22" title="Link to this heading"></a></h3>
 <p>要将文件传输到 <code class="docutils literal notranslate"><span class="pre">/sdcard/</span></code> 目录，只需要将非APK文件拖放到scrcpy窗口。</p>
 </section>
 <section id="id23">
-<h3>音频转发<a class="headerlink" href="#id23" title="Link to this heading">¶</a></h3>
+<h3>音频转发<a class="headerlink" href="#id23" title="Link to this heading"></a></h3>
 <p>scrcpy不支持音频转发，需要使用 <a class="reference external" href="https://github.com/rom1v/usbaudio">USBaudio</a> （只支持Linux）。</p>
 </section>
 </section>
 <section id="id24">
-<h2>参考<a class="headerlink" href="#id24" title="Link to this heading">¶</a></h2>
+<h2>参考<a class="headerlink" href="#id24" title="Link to this heading"></a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="https://github.com/Genymobile/scrcpy">scrcpy官方github</a></p></li>
 </ul>
@@ -528,25 +545,37 @@
 
            </div>
           </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="android_displayport.html" class="btn btn-neutral float-left" title="Android(Pixel 3)直连外接显示器(扩展屏幕)" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="android_usb_tethering.html" class="btn btn-neutral float-right" title="通过USB Tethering方式共享Android的Internet连接" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="android_displayport.html" class="btn btn-neutral float-left" title="Android(Pixel 3)直连外接显示器(扩展屏幕)" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="android_usb_tethering.html" class="btn btn-neutral float-right" title="通过USB Tethering方式共享Android的Internet连接" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../copyright.html">Copyright</a> 2018 - now, Huatai Huang.</p>
+    <p>&#169; <a href="../../copyright.html">版权所有</a> 2018 - now, Huatai Huang。</p>
   </div>
 
-  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
   
     <!-- your html code here -->
     <br>
-    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡</a></p>
-     
+    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡 👈</a></p>
+    <br>
+    <p>网站采用 <a href="https://utteranc.es/">utterances</a> 评论系统，所有评论存储在<a href="https://github.com/huataihuang/cloud-atlas/issues">GitHub issues</a> 中，如果你看不到下方的评论框，那么可能需要<a href="https://cloud-atlas.readthedocs.io/zh-cn/latest/linux/security/vpn/index.html">自备梯子</a> 👈</p>
+    <div class="articleComments">
+        <comments>
+  <script src="https://utteranc.es/client.js"
+    repo="huataihuang/cloud-atlas"
+    issue-term="pathname"
+    theme="github-light"
+    crossorigin="anonymous"
+    async>
+  </script>
+</comments>
+    </div>
 
 
 </footer>

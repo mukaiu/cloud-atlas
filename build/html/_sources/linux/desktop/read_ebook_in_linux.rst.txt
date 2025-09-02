@@ -76,7 +76,7 @@ foliate
    sudo apt-get update
    sudo apt install foliate
 
-不过，我在Raspberry Pi OS上安装实践未成功(安装并没有找到对应软件包)
+foliate使用了webkitgtk作为页面渲染引擎支持 ``.epub`` ，同时内置了 `PDF.js <https://github.com/mozilla/pdf.js>`_ (由Mozilla支持的开源软件，为浏览器内置PDF功能)支持PDF阅读。该软件设计美观，使用方便，强烈推荐。
 
 calibre
 ==================
@@ -106,7 +106,7 @@ calibre 是全功能的电子书库管理软件，提供阅读、转换和分类
 
 .. note::
 
-   如果后续采用 :ref:`gentoo_linux` 或者 :ref:`lfs_linux` 则从源代码编译，我比较倾向于：
+   如果后续采用 :ref:`gentoo_linux` 或者 :ref:`lfs` 则从源代码编译，我比较倾向于：
 
    - ``foliate`` 独立支持不同格式电子书
    - ``zathura`` 使用 ``mupdf`` 后端同时支持 pdf 和 epub

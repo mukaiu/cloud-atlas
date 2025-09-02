@@ -1,7 +1,7 @@
 .. _machine_learning:
 
 =================================
-Machine Learning Atlas
+Machine Learning
 =================================
 
 `Q-engineering <https://qengineering.eu/>`_ 提供了大量的学习案例，自1997年创建后，积累了很多视觉计算项目
@@ -13,16 +13,28 @@ Machine Learning Atlas
 .. toctree::
    :maxdepth: 1
 
-   gpt/index
+   become_a_machine_learning_practitioner.rst
+   basic/index
    startup/index
+   concept/index
+   deep_learning/index
+   reinforcement_learning/index
+   gpt/index
+   llm/index
    studio/index
    hardware/index
    jetson/index
    cuda/index
+   openvino/index
    pytorch/index
    tensorflow/index
    stable_diffusion/index
    fauxpilot/index
+   codellama/index
+   deepseek/index
+   qwen/index
+   comfyui/index
+   freebsd/index
 
 .. only::  subproject and html
 

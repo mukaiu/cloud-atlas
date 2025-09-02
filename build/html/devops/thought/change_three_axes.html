@@ -1,21 +1,25 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh" data-content_root="../../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>“变更三板斧” &mdash; Cloud Atlas 0.1 文档</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+  <title>&#34;变更三板斧&#34; &mdash; Cloud Atlas: Discovery beta 文档</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=fd3f3429" />
+
+  
+    <link rel="shortcut icon" href="../../_static/favicon.png"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="../../_static/documentation_options.js?v=7c91f8fd"></script>
-        <script src="../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=8534f863"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
         <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
-        <script src="../../_static/translations.js?v=beaddf03"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../../genindex.html" />
     <link rel="search" title="搜索" href="../../search.html" />
@@ -33,31 +37,34 @@
           
           
           <a href="../../index.html" class="icon icon-home">
-            Cloud Atlas
+            Cloud Atlas: Discovery
           </a>
+              <div class="version">
+                1.1
+              </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../studio/index.html">Studio Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../infrastructure/index.html">Infrastructure Atlas</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../index.html">DevOps Atlas</a><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../studio/index.html">Studio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../infrastructure/index.html">Infrastructure</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">DevOps</a><ul class="current">
 <li class="toctree-l2 current"><a class="reference internal" href="index.html">DevOps 思考集锦</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="think_devops.html">思考DevOps</a></li>
 <li class="toctree-l3"><a class="reference internal" href="think_devopser.html">思考DevOps从业者的出路(roadmap)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="csdiy.html">CS自学指南(借鉴)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="roast_cloud_native.html">“云原生”吐槽</a></li>
+<li class="toctree-l3"><a class="reference internal" href="roast_cloud_native.html">&quot;云原生&quot;吐槽</a></li>
 <li class="toctree-l3"><a class="reference internal" href="continuous_integration.html">持续集成</a></li>
 <li class="toctree-l3"><a class="reference internal" href="gitops.html">GitOps</a></li>
 <li class="toctree-l3"><a class="reference internal" href="delpoy_monitor_autotest.html">应用部署、监控和自动测试</a></li>
 <li class="toctree-l3"><a class="reference internal" href="site_fail_recover.html">全站性故障的抢修思考</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">“变更三板斧”</a><ul>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">&quot;变更三板斧&quot;</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#id3">可监控</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#id4">可能的方向</a></li>
 </ul>
@@ -70,60 +77,63 @@
 <li class="toctree-l2"><a class="reference internal" href="../jenkins/index.html">Jenkins</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../gitea/index.html">Gitea</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../terraform/index.html">Terraform基础架构管理平台</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../heroku/index.html">Heroku</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ansible/index.html">Ansible</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../jsonnet/index.html">Jsonnet数据模版语言</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../airflow/index.html">Airflow</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../checkov/index.html">checkov静态代码分析工具</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../utils/index.html">DevOps 工具集</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../docs/index.html">DevOps 文档</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../kvm/index.html">KVM Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../ceph/index.html">Ceph Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../gluster/index.html">Gluster Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../ovirt/index.html">oVirt Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../openstack/index.html">OpenStack Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../docker/index.html">Docker Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kubernetes/index.html">Kubernetes Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kubernetes_from_scratch/index.html">Kubernetes From Scratch (KFS) Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../rancher/index.html">Rancher Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../openshift/index.html">OpenShift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../sql/index.html">SQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../sqlite/index.html">SQLite Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../mysql/index.html">MySQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../pgsql/index.html">PostgreSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../clickhouse/index.html">ClickHouse Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../nosql/index.html">NoSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../redis/index.html">Redis Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../network/index.html">Network Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../infra_service/index.html">Infra-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../infra_search/index.html">Search Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../info_service/index.html">Info-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../web/index.html">Web Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../big_data/index.html">Big Data Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../machine_learning/index.html">Machine Learning Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../linux/index.html">Linux Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kernel/index.html">Kernel Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../performance/index.html">Performance Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../distributed_system/index.html">Distributed System Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../shell/index.html">Shell Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../python/index.html">Python Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../django/index.html">Django Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../flask/index.html">Flask Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../javascript/index.html">JavaScript Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../nodejs/index.html">Node.js Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../clang/index.html">C Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../golang/index.html">Go Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../swift/index.html">Swift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../rust/index.html">Rust Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../ruby/index.html">Ruby Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../arm/index.html">ARM Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../android/index.html">Android Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../bsd/index.html">BSD Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../apple/index.html">Apple Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../windows/index.html">Windows Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../real/index.html">Real Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../management/index.html">Management Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../life/index.html">Life Atlas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kvm/index.html">KVM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ceph/index.html">Ceph</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../gluster/index.html">Gluster</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ovirt/index.html">oVirt</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../openstack/index.html">OpenStack</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../docker/index.html">Docker</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kubernetes/index.html">Kubernetes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../k8s_dev/index.html">Kubernetes Develop</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../rancher/index.html">Rancher</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../openshift/index.html">OpenShift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../sql/index.html">SQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../sqlite/index.html">SQLite</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../mysql/index.html">MySQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../pgsql/index.html">PostgreSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../nosql/index.html">NoSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../network/index.html">Network</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../infra_service/index.html">Infra-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../infra_search/index.html">Infra-Search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../web/index.html">Web</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../info_service/index.html">Info-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../big_data/index.html">Big Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../machine_learning/index.html">Machine Learning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../drone/index.html">Drone</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../linux/index.html">Linux</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kernel/index.html">Kernel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../performance/index.html">Performance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../distributed_system/index.html">Distributed System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../shell/index.html">Shell</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../python/index.html">Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../django/index.html">Django</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../javascript/index.html">JavaScript</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../nodejs/index.html">Node.js</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../clang/index.html">C</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../golang/index.html">Go</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../swift/index.html">Swift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../rust/index.html">Rust</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ruby/index.html">Ruby</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lua/index.html">Lua</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../arm/index.html">ARM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../raspberry_pi/index.html">Raspberry Pi</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../android/index.html">Android</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../bsd/index.html">BSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../freebsd/index.html">FreeBSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../apple/index.html">Apple</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../windows/index.html">Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../real/index.html">Real</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../management/index.html">Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../life/index.html">Life</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../copyright.html">Copyright</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../aboutme.html">关于作者</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../donate.html">捐赠</a></li>
@@ -136,21 +146,21 @@
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../index.html">Cloud Atlas</a>
+          <a href="../../index.html">Cloud Atlas: Discovery</a>
       </nav>
 
       <div class="wy-nav-content">
         <div class="rst-content">
-          <div role="navigation" aria-label="Page navigation">
+          <div role="navigation" aria-label="页面导航">
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
-          <li class="breadcrumb-item"><a href="../index.html">DevOps Atlas</a></li>
+          <li class="breadcrumb-item"><a href="../index.html">DevOps</a></li>
           <li class="breadcrumb-item"><a href="index.html">DevOps 思考集锦</a></li>
-      <li class="breadcrumb-item active">“变更三板斧”</li>
+      <li class="breadcrumb-item active">&quot;变更三板斧&quot;</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../../_sources/devops/thought/change_three_axes.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../_sources/devops/thought/change_three_axes.rst.txt" rel="nofollow"> 查看页面源码</a>
       </li>
   </ul>
   <hr/>
@@ -159,47 +169,47 @@
            <div itemprop="articleBody">
              
   <section id="change-three-axes">
-<span id="id1"></span><h1>“变更三板斧”<a class="headerlink" href="#change-three-axes" title="Link to this heading">¶</a></h1>
-<p>在阿里体系内，很喜欢”三板斧”这类简短容易传递意图的概念。在内部运维体系中，有一个常提的概念是”变更三板斧”:</p>
+<span id="id1"></span><h1>&quot;变更三板斧&quot;<a class="headerlink" href="#change-three-axes" title="Link to this heading"></a></h1>
+<p>在阿里体系内，很喜欢&quot;三板斧&quot;这类简短容易传递意图的概念。在内部运维体系中，有一个常提的概念是&quot;变更三板斧&quot;:</p>
 <ul class="simple">
 <li><p>可灰度</p></li>
 <li><p>可监控</p></li>
 <li><p>可回滚</p></li>
 </ul>
-<p>你若是问阿里的SRE能否做一个生产变更，对方首先就会用上述”三板斧”来评估你的变更方案。</p>
+<p>你若是问阿里的SRE能否做一个生产变更，对方首先就会用上述&quot;三板斧&quot;来评估你的变更方案。</p>
 <p>道理虽然没有大错，不过，我觉得仔细思考起来，上述三点并不是一件容易的事情。甚至，很多时候，大家过于依赖简单化的概念，进而有些自我催眠，而没有真正从技术上去做到全面的评估、演练、优化、试错。</p>
 <div class="admonition note">
 <p class="admonition-title">备注</p>
 <p><a class="reference external" href="https://www.jianshu.com/p/f823db255d74">解读《“三板斧”-阿里巴巴管理之道》|  余歌</a> 概括了所谓阿里管理之道的概要。</p>
 </div>
 <section id="id3">
-<h2>可监控<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h2>
+<h2>可监控<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
 <p>监控的深度和广度完全是天差地别。从表面上来看，很多系统号称有监控，但其实这是简单而基础的主机负载、网络流量、磁盘IO这样粗放型的监控。不能说没有监控，但是远不是能够通过监控自动发现问题和依赖监控能够快速定位故障的程度。</p>
-<p>现代化的监控平台，确实能够绘灵活组合，通过简单定制就能够用通用组件搭建出一个非常美观并且形象生动的”监控大盘”。但是，这些展示的数据真的能够帮助SRE找出故障源头而不需要苦苦翻阅日志，ssh登陆系统使用复杂的命令组合来判断么？</p>
+<p>现代化的监控平台，确实能够绘灵活组合，通过简单定制就能够用通用组件搭建出一个非常美观并且形象生动的&quot;监控大盘&quot;。但是，这些展示的数据真的能够帮助SRE找出故障源头而不需要苦苦翻阅日志，ssh登陆系统使用复杂的命令组合来判断么？</p>
 <p>越是底层的基础平台，越是难以分析和定性:</p>
 <ul class="simple">
 <li><p>网络流量 - 你一眼看不出在网络设备、链路中流动的电子数据到底是什么数据，即使通过复杂的SDN技术获取的监控数据也只是表达底层的丢包、拥塞以及非常基础的电气信号波动</p></li>
 <li><p>磁盘IO - 最近的一次故障让我明白我们现有的监控手段如何简陋：你无法精确分析读写存储的来源、数据的损坏的原因。监控只反映出数据被异常删除，但是数据中心复杂的网络拓扑(负载均衡提供了强大的扩展能力但同时却屏蔽了客户端请求的真实情况)，数以百万计的存储读写增删改查，没有自动化分析的能力，仅仅依靠运维人员的经验去检查可能的入口日志定位故障，几乎是一种赌博。</p></li>
 <li><p>计算异常 - 云计算面向的是完全不会依据合理方案来使用基础设施的客户，千差万别的应用和使用方法，会触发操作系统、硬件以及基础设施难以排查的抖动。这在定位故障、止血和彻底修复上，带来极大的挑战。因为云计算的基础设施难以监控和分析上层应用的部署和变化，很多基础监控是无法透彻反映实际的系统故障原因。</p></li>
 </ul>
-<p>我在想，到底有什么方法能够改变基础设施的运维，而不是仅仅维持设备”正常”工作，不出现宕机就算维护结束。</p>
+<p>我在想，到底有什么方法能够改变基础设施的运维，而不是仅仅维持设备&quot;正常&quot;工作，不出现宕机就算维护结束。</p>
 </section>
 <section id="id4">
-<h2>可能的方向<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h2>
+<h2>可能的方向<a class="headerlink" href="#id4" title="Link to this heading"></a></h2>
 <section id="id5">
-<h3>元数据分析<a class="headerlink" href="#id5" title="Link to this heading">¶</a></h3>
+<h3>元数据分析<a class="headerlink" href="#id5" title="Link to this heading"></a></h3>
 <ul class="simple">
 <li><p>流动的数据
 - 你是谁？
 - 你从哪里来？
 - 你要去哪里？</p></li>
 </ul>
-<p>网络设备是通道，数据存储是起始和终点，所以在网络设备和存储设备上，需要部署业务性的监控，要通过 “元数据” 分析出业务动向，并且通过自动分析来完成 “业务跟踪” ( <a class="reference internal" href="../../machine_learning/index.html#machine-learning"><span class="std std-ref">Machine Learning Atlas</span></a> )。</p>
+<p>网络设备是通道，数据存储是起始和终点，所以在网络设备和存储设备上，需要部署业务性的监控，要通过 &quot;元数据&quot; 分析出业务动向，并且通过自动分析来完成 &quot;业务跟踪&quot; ( <a class="reference internal" href="../../machine_learning/index.html#machine-learning"><span class="std std-ref">Machine Learning</span></a> )。</p>
 <div class="admonition note">
 <p class="admonition-title">备注</p>
-<p>说到监控，我想到的是 <a class="reference external" href="https://movie.douban.com/subject/26059437/">第四公民</a> 中提到美国政府强大的监控：并非对每个数据进行完整扫描，而是通过对 “元数据” 的分析来掌握公民的活动。</p>
+<p>说到监控，我想到的是 <a class="reference external" href="https://movie.douban.com/subject/26059437/">第四公民</a> 中提到美国政府强大的监控：并非对每个数据进行完整扫描，而是通过对 &quot;元数据&quot; 的分析来掌握公民的活动。</p>
 </div>
-<p>说来容易做来难，我现在对监控和数据分析掌握较少，后续学习和实践过程再来总结…</p>
+<p>说来容易做来难，我现在对监控和数据分析掌握较少，后续学习和实践过程再来总结...</p>
 </section>
 </section>
 </section>
@@ -207,25 +217,37 @@
 
            </div>
           </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="site_fail_recover.html" class="btn btn-neutral float-left" title="全站性故障的抢修思考" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="../sre/index.html" class="btn btn-neutral float-right" title="SRE - 站点可靠性工程师" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="site_fail_recover.html" class="btn btn-neutral float-left" title="全站性故障的抢修思考" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="../sre/index.html" class="btn btn-neutral float-right" title="SRE - 站点可靠性工程师" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../copyright.html">Copyright</a> 2018 - now, Huatai Huang.</p>
+    <p>&#169; <a href="../../copyright.html">版权所有</a> 2018 - now, Huatai Huang。</p>
   </div>
 
-  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
   
     <!-- your html code here -->
     <br>
-    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡</a></p>
-     
+    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡 👈</a></p>
+    <br>
+    <p>网站采用 <a href="https://utteranc.es/">utterances</a> 评论系统，所有评论存储在<a href="https://github.com/huataihuang/cloud-atlas/issues">GitHub issues</a> 中，如果你看不到下方的评论框，那么可能需要<a href="https://cloud-atlas.readthedocs.io/zh-cn/latest/linux/security/vpn/index.html">自备梯子</a> 👈</p>
+    <div class="articleComments">
+        <comments>
+  <script src="https://utteranc.es/client.js"
+    repo="huataihuang/cloud-atlas"
+    issue-term="pathname"
+    theme="github-light"
+    crossorigin="anonymous"
+    async>
+  </script>
+</comments>
+    </div>
 
 
 </footer>

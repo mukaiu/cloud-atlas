@@ -1,7 +1,7 @@
 .. _nosql:
 
 =================================
-NoSQL Atlas
+NoSQL
 =================================
 
 .. toctree::
@@ -9,6 +9,8 @@ NoSQL Atlas
 
    intro_nosql.rst
    cassandra/index
+   redis/index
+   clickhouse/index
 
 .. only::  subproject and html
 

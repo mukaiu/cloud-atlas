@@ -1,26 +1,30 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh" data-content_root="../../../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Seamless RDP使用Windows应用 &mdash; Cloud Atlas 0.1 文档</title>
-      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../../_static/graphviz.css" type="text/css" />
+  <title>Seamless RDP使用Windows应用 &mdash; Cloud Atlas: Discovery beta 文档</title>
+      <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/graphviz.css?v=fd3f3429" />
+
+  
+    <link rel="shortcut icon" href="../../../_static/favicon.png"/>
   <!--[if lt IE 9]>
     <script src="../../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="../../../_static/documentation_options.js?v=7c91f8fd"></script>
-        <script src="../../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../../_static/documentation_options.js?v=8534f863"></script>
+        <script src="../../../_static/doctools.js?v=9a2dae69"></script>
         <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
-        <script src="../../../_static/translations.js?v=beaddf03"></script>
     <script src="../../../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../../../genindex.html" />
     <link rel="search" title="搜索" href="../../../search.html" />
     <link rel="copyright" title="版权所有" href="../../../copyright.html" />
-    <link rel="next" title="wayland显示服务器协议" href="../wayland/index.html" />
+    <link rel="next" title="X持久化远程应用Xpra" href="../xpra/index.html" />
     <link rel="prev" title="rdesktop远程桌面鼠标图标显示" href="xrdp_mouse.html" /> 
 </head>
 
@@ -33,61 +37,69 @@
           
           
           <a href="../../../index.html" class="icon icon-home">
-            Cloud Atlas
+            Cloud Atlas: Discovery
           </a>
+              <div class="version">
+                1.1
+              </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../../studio/index.html">Studio Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../infrastructure/index.html">Infrastructure Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../devops/index.html">DevOps Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../kvm/index.html">KVM Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../ceph/index.html">Ceph Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../gluster/index.html">Gluster Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../ovirt/index.html">oVirt Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../openstack/index.html">OpenStack Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../docker/index.html">Docker Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../kubernetes/index.html">Kubernetes Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../kubernetes_from_scratch/index.html">Kubernetes From Scratch (KFS) Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../rancher/index.html">Rancher Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../openshift/index.html">OpenShift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../sql/index.html">SQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../sqlite/index.html">SQLite Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../mysql/index.html">MySQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../pgsql/index.html">PostgreSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../clickhouse/index.html">ClickHouse Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../nosql/index.html">NoSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../redis/index.html">Redis Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../network/index.html">Network Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../infra_service/index.html">Infra-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../infra_search/index.html">Search Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../info_service/index.html">Info-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../web/index.html">Web Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../big_data/index.html">Big Data Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../machine_learning/index.html">Machine Learning Atlas</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">Linux Atlas</a><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../studio/index.html">Studio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../infrastructure/index.html">Infrastructure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../devops/index.html">DevOps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../kvm/index.html">KVM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../ceph/index.html">Ceph</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../gluster/index.html">Gluster</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../ovirt/index.html">oVirt</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../openstack/index.html">OpenStack</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../docker/index.html">Docker</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../kubernetes/index.html">Kubernetes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../k8s_dev/index.html">Kubernetes Develop</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../rancher/index.html">Rancher</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../openshift/index.html">OpenShift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../sql/index.html">SQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../sqlite/index.html">SQLite</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../mysql/index.html">MySQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../pgsql/index.html">PostgreSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../nosql/index.html">NoSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../network/index.html">Network</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../infra_service/index.html">Infra-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../infra_search/index.html">Infra-Search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../web/index.html">Web</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../info_service/index.html">Info-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../big_data/index.html">Big Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../machine_learning/index.html">Machine Learning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../drone/index.html">Drone</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">Linux</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../../best_linux.html">最佳Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../admin/index.html">Linux系统管理</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../redhat_linux/index.html">RedHat Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../arch_linux/index.html">Arch Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../asahi_linux/index.html">Asahi Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../gentoo_linux/index.html">Gentoo Linux</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../lfs_linux/index.html">LFS(Linux from scratch)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../lfs/index.html">LFS(Linux from scratch)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../blfs/index.html">BLFS(Beyond Linux from scratch)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../alfs/index.html">ALFS(Automated Linux from scratch)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pilfs/index.html">PiLFS(Automated Linux from scratch on the Raspberry Pi)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../yocto/index.html">Yocto</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../debian/index.html">Debian</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../ubuntu_linux/index.html">Ubuntu Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../suse_linux/index.html">SUSE Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../kali_linux/index.html">Kali Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../tails_linux/index.html">Tails Linux</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../qubes_os/index.html">Qubes OS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../postmarketos/index.html">postmarketOS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../container_os/index.html">容器化操作系统(Container OS)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../fedora_coreos/index.html">Fedora CoreOS容器操作系统</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../chromium_os/index.html">Chromium OS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../chromeos/index.html">ChromeOS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../alpine_linux/index.html">Alpine Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../subgraph_os/index.html">Subgraph OS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../kaios/index.html">KaiOS - 世界第三手机操作系统</a></li>
@@ -99,27 +111,32 @@
 <li class="toctree-l2 current"><a class="reference internal" href="../index.html">Linux桌面</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="../x_window/index.html">X Window显示服务器协议</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../chinese/index.html">Linux中文环境</a></li>
-<li class="toctree-l3 current"><a class="reference internal" href="index.html">Linux桌面</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="index.html">Linux远程桌面</a><ul class="current">
 <li class="toctree-l4"><a class="reference internal" href="xrdp.html">xrdp远程桌面</a></li>
 <li class="toctree-l4"><a class="reference internal" href="xrdp_mouse.html">rdesktop远程桌面鼠标图标显示</a></li>
 <li class="toctree-l4 current"><a class="current reference internal" href="#">Seamless RDP使用Windows应用</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="../xpra/index.html">X持久化远程应用Xpra</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../vnc/index.html">VNC</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../wayland/index.html">wayland显示服务器协议</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../sway/index.html">sway - i3兼容Wayland compositor</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../suckless/index.html">Suckless极简桌面</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../xfce/index.html">xfce</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../lxqt/index.html">LXQt</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../enlightment/index.html">Enlightenment</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../kde/index.html">KDE桌面</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../xpra/index.html">X持久化远程应用Xpra</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../vim/index.html">Vim</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../nvim/index.html">neovim</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../vscode/index.html">VS Code</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../audio/index.html">Linux音频</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../video/index.html">Linux视频</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../xorg_dpi_fix.html">修正xorg显示dpi</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../i3.html">i3窗口管理器</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../oh_my_zsh.html">Oh My Zsh</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../tmux.html">tmux多会话终端管理</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../alacritty.html">GPU加速终端模拟器alacritty</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../sakura.html">sakura</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../read_ebook_in_linux.html">在Linux环境阅读电子书</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../mupdf.html">MuPDF</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../remote_linux_desktop.html">远程访问Linux桌面</a></li>
@@ -135,28 +152,30 @@
 <li class="toctree-l2"><a class="reference internal" href="../../linux_tablet/index.html">Linux平板</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../../kernel/index.html">Kernel Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../performance/index.html">Performance Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../distributed_system/index.html">Distributed System Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../shell/index.html">Shell Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../python/index.html">Python Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../django/index.html">Django Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../flask/index.html">Flask Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../javascript/index.html">JavaScript Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../nodejs/index.html">Node.js Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../clang/index.html">C Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../golang/index.html">Go Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../swift/index.html">Swift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../rust/index.html">Rust Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../ruby/index.html">Ruby Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../arm/index.html">ARM Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../android/index.html">Android Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../bsd/index.html">BSD Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../apple/index.html">Apple Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../windows/index.html">Windows Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../real/index.html">Real Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../management/index.html">Management Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../life/index.html">Life Atlas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../kernel/index.html">Kernel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../performance/index.html">Performance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../distributed_system/index.html">Distributed System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../shell/index.html">Shell</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../python/index.html">Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../django/index.html">Django</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../javascript/index.html">JavaScript</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../nodejs/index.html">Node.js</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../clang/index.html">C</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../golang/index.html">Go</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../swift/index.html">Swift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../rust/index.html">Rust</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../ruby/index.html">Ruby</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../lua/index.html">Lua</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../arm/index.html">ARM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../raspberry_pi/index.html">Raspberry Pi</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../android/index.html">Android</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../bsd/index.html">BSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../freebsd/index.html">FreeBSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../apple/index.html">Apple</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../windows/index.html">Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../real/index.html">Real</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../management/index.html">Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../life/index.html">Life</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../copyright.html">Copyright</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../aboutme.html">关于作者</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../donate.html">捐赠</a></li>
@@ -169,22 +188,22 @@
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../../index.html">Cloud Atlas</a>
+          <a href="../../../index.html">Cloud Atlas: Discovery</a>
       </nav>
 
       <div class="wy-nav-content">
         <div class="rst-content">
-          <div role="navigation" aria-label="Page navigation">
+          <div role="navigation" aria-label="页面导航">
   <ul class="wy-breadcrumbs">
       <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
-          <li class="breadcrumb-item"><a href="../../index.html">Linux Atlas</a></li>
+          <li class="breadcrumb-item"><a href="../../index.html">Linux</a></li>
           <li class="breadcrumb-item"><a href="../index.html">Linux桌面</a></li>
-          <li class="breadcrumb-item"><a href="index.html">Linux桌面</a></li>
+          <li class="breadcrumb-item"><a href="index.html">Linux远程桌面</a></li>
       <li class="breadcrumb-item active">Seamless RDP使用Windows应用</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../../../_sources/linux/desktop/rdp/seamless_rdp.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../../_sources/linux/desktop/rdp/seamless_rdp.rst.txt" rel="nofollow"> 查看页面源码</a>
       </li>
   </ul>
   <hr/>
@@ -193,16 +212,16 @@
            <div itemprop="articleBody">
              
   <section id="seamless-rdpwindows">
-<span id="seamless-rdp"></span><h1>Seamless RDP使用Windows应用<a class="headerlink" href="#seamless-rdpwindows" title="Link to this heading">¶</a></h1>
+<span id="seamless-rdp"></span><h1>Seamless RDP使用Windows应用<a class="headerlink" href="#seamless-rdpwindows" title="Link to this heading"></a></h1>
 <div class="admonition note">
 <p class="admonition-title">备注</p>
 <p>虽然目前我还没有解决Windows 10 Pro的RemoteApp设置，即Seamless RDP，不过， <a class="reference external" href="https://social.technet.microsoft.com/Forums/de-DE/84393b01-295e-4c4f-9477-b8b45a8e297b/how-to-setup-remoteapp-mode-for-some-application-in-windows-10-professional?forum=win10itprosetup">How to setup RemoteApp mode for some application in Windows 10 Professional</a> 还是提供了方向，有待我在合适的时候继续探索。</p>
 </div>
 <section id="rdp">
-<h2>安装rdp客户端<a class="headerlink" href="#rdp" title="Link to this heading">¶</a></h2>
+<h2>安装rdp客户端<a class="headerlink" href="#rdp" title="Link to this heading"></a></h2>
 <p>Linux平台远程RDP客户端是rdesktop或者freerdp。为了方便使用，可以结合Remmina(图形配置客户端)一起使用。</p>
 <section id="remminardesktop">
-<h3>remmina结合rdesktop<a class="headerlink" href="#remminardesktop" title="Link to this heading">¶</a></h3>
+<h3>remmina结合rdesktop<a class="headerlink" href="#remminardesktop" title="Link to this heading"></a></h3>
 <p>需要单独通过AUR安装 <code class="docutils literal notranslate"><span class="pre">remmina-plugin-rdesktop</span></code></p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pacman</span> <span class="o">-</span><span class="n">S</span> <span class="n">rdesktop</span> <span class="n">remmina</span>
 <span class="n">yay</span> <span class="o">-</span><span class="n">S</span> <span class="n">remmina</span><span class="o">-</span><span class="n">plugin</span><span class="o">-</span><span class="n">rdesktop</span>
@@ -232,7 +251,7 @@
 </section>
 </section>
 <section id="windowsremote-desktop">
-<h2>Windows系统Remote Desktop<a class="headerlink" href="#windowsremote-desktop" title="Link to this heading">¶</a></h2>
+<h2>Windows系统Remote Desktop<a class="headerlink" href="#windowsremote-desktop" title="Link to this heading"></a></h2>
 <p>Windows 10操作系统需要开启远程桌面访问，设置方法：</p>
 <ul class="simple">
 <li><p>鼠标右击启动按钮，选择 <code class="docutils literal notranslate"><span class="pre">System</span></code> ，然后点击 <code class="docutils literal notranslate"><span class="pre">Remote</span> <span class="pre">Setting</span></code></p></li>
@@ -242,7 +261,7 @@
 <a class="reference internal image-reference" href="../../../_images/win10_rdp_setting.png"><img alt="../../../_images/win10_rdp_setting.png" src="../../../_images/win10_rdp_setting.png" style="width: 614.4px; height: 460.79999999999995px;" /></a>
 </figure>
 <section id="macbook-pro">
-<h3>MacBook Pro高分辨率显示<a class="headerlink" href="#macbook-pro" title="Link to this heading">¶</a></h3>
+<h3>MacBook Pro高分辨率显示<a class="headerlink" href="#macbook-pro" title="Link to this heading"></a></h3>
 <p>在MacBook Pro Retina高分辨率屏幕下使用Windows系统会发现自体非常小，这种现象不仅在Windows虚拟机的VNC终端如此，远程桌面如果是Retina屏幕下显示也几乎无法看清字体。解决的方法是调整Windows屏幕缩放比例：</p>
 <ul class="simple">
 <li><p>启动菜单 <code class="docutils literal notranslate"><span class="pre">Settings</span> <span class="pre">=&gt;</span> <span class="pre">System</span> <span class="pre">=&gt;</span> <span class="pre">Display</span> <span class="pre">=&gt;</span> <span class="pre">Advanced</span> <span class="pre">scaling</span> <span class="pre">settings</span></code> ，在这个设置界面中，可以设置 <code class="docutils literal notranslate"><span class="pre">Custom</span> <span class="pre">scaling</span></code> ，设置范围可以从 <code class="docutils literal notranslate"><span class="pre">100%</span> <span class="pre">-</span> <span class="pre">500%</span></code> 。对于MacBook Pro Retina屏幕，这个设置值修改成 <code class="docutils literal notranslate"><span class="pre">150</span></code> 较为合适。</p></li>
@@ -255,7 +274,7 @@
 </section>
 </section>
 <section id="seamlessrdp">
-<h2>SeamlessRDP<a class="headerlink" href="#seamlessrdp" title="Link to this heading">¶</a></h2>
+<h2>SeamlessRDP<a class="headerlink" href="#seamlessrdp" title="Link to this heading"></a></h2>
 <p>SeamlessRDP是一个RDP服务器扩展，允许将RDP服务器上运行的Windows应用程序推送到本地桌面，类似RAIL/RemoteApp。SeamlessRDP要求Windows Server 2008r2或更高版本。</p>
 <div class="admonition note">
 <p class="admonition-title">备注</p>
@@ -312,9 +331,9 @@
 <p>我按照上述方法针对64位Windows环境编译的 <a class="reference download internal" download="" href="../../../_downloads/2d2ce8f7a460aeb64d22beb59a29796f/seamlessrdp.zip"><code class="xref download docutils literal notranslate"><span class="pre">seamlessrdp.zip</span></code></a> ，你可以下载使用。</p>
 </div>
 <section id="windows-10">
-<h3>Windows 10设置<a class="headerlink" href="#windows-10" title="Link to this heading">¶</a></h3>
+<h3>Windows 10设置<a class="headerlink" href="#windows-10" title="Link to this heading"></a></h3>
 <section id="id1">
-<h4>注册表<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h4>
+<h4>注册表<a class="headerlink" href="#id1" title="Link to this heading"></a></h4>
 <ul class="simple">
 <li><p>对于Windows 10 这样的现代操作系统，默认做了安全限制，不允许没有列出的应用程序远程运行，所以需要添加策略 - <a class="reference external" href="https://social.technet.microsoft.com/Forums/de-DE/84393b01-295e-4c4f-9477-b8b45a8e297b/how-to-setup-remoteapp-mode-for-some-application-in-windows-10-professional?forum=win10itprosetup">How to setup RemoteApp mode for some application in Windows 10 Professional</a></p></li>
 </ul>
@@ -328,14 +347,14 @@
 <p>然后在文件管理器中双击该 <code class="docutils literal notranslate"><span class="pre">seamlesssrdp.reg</span></code> 文件导入注册表。参考 <a class="reference external" href="https://social.technet.microsoft.com/Forums/de-DE/84393b01-295e-4c4f-9477-b8b45a8e297b/how-to-setup-remoteapp-mode-for-some-application-in-windows-10-professional?forum=win10itprosetup">How to setup RemoteApp mode for some application in Windows 10 Professional</a></p>
 </section>
 <section id="terminal-server">
-<h4>Terminal Server<a class="headerlink" href="#terminal-server" title="Link to this heading">¶</a></h4>
+<h4>Terminal Server<a class="headerlink" href="#terminal-server" title="Link to this heading"></a></h4>
 <p>从目前探索来看，需要实现类似Windows Server一样的Terminal Server才有可能实现RemoteApp，也就是SeamlessRDP。</p>
 <p>请参考 <a class="reference internal" href="../../../windows/service/win10_multi_rdp_sessions.html#win10-multi-rdp-sessions"><span class="std std-ref">Windows 10远程桌面多会话</span></a> 实践。不过，我还没有最终解决这个SeamlessRDP，虽然我感觉已经离目标很近了。只是现在时间精力有限，目前单个窗口RDP基本能够满足我使用Windows桌面的钉钉，所以暂时没有进一步探索的动力。</p>
 </section>
 </section>
 </section>
 <section id="id4">
-<h2>参考<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h2>
+<h2>参考<a class="headerlink" href="#id4" title="Link to this heading"></a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="https://wiki.archlinux.org/index.php/Remmina">arch linux社区文档 - Remmina</a></p></li>
 <li><p><a class="reference external" href="https://wiki.archlinux.org/index.php/Rdesktop">arch linux社区文档 - Redsktop</a></p></li>
@@ -349,25 +368,37 @@
 
            </div>
           </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="xrdp_mouse.html" class="btn btn-neutral float-left" title="rdesktop远程桌面鼠标图标显示" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="../wayland/index.html" class="btn btn-neutral float-right" title="wayland显示服务器协议" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="xrdp_mouse.html" class="btn btn-neutral float-left" title="rdesktop远程桌面鼠标图标显示" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="../xpra/index.html" class="btn btn-neutral float-right" title="X持久化远程应用Xpra" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../../copyright.html">Copyright</a> 2018 - now, Huatai Huang.</p>
+    <p>&#169; <a href="../../../copyright.html">版权所有</a> 2018 - now, Huatai Huang。</p>
   </div>
 
-  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
   
     <!-- your html code here -->
     <br>
-    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡</a></p>
-     
+    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡 👈</a></p>
+    <br>
+    <p>网站采用 <a href="https://utteranc.es/">utterances</a> 评论系统，所有评论存储在<a href="https://github.com/huataihuang/cloud-atlas/issues">GitHub issues</a> 中，如果你看不到下方的评论框，那么可能需要<a href="https://cloud-atlas.readthedocs.io/zh-cn/latest/linux/security/vpn/index.html">自备梯子</a> 👈</p>
+    <div class="articleComments">
+        <comments>
+  <script src="https://utteranc.es/client.js"
+    repo="huataihuang/cloud-atlas"
+    issue-term="pathname"
+    theme="github-light"
+    crossorigin="anonymous"
+    async>
+  </script>
+</comments>
+    </div>
 
 
 </footer>

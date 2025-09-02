@@ -1,21 +1,25 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh" data-content_root="../../../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>netplan网络配置 &mdash; Cloud Atlas 0.1 文档</title>
-      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../../_static/graphviz.css" type="text/css" />
+  <title>netplan网络配置 &mdash; Cloud Atlas: Discovery beta 文档</title>
+      <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/graphviz.css?v=fd3f3429" />
+
+  
+    <link rel="shortcut icon" href="../../../_static/favicon.png"/>
   <!--[if lt IE 9]>
     <script src="../../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="../../../_static/documentation_options.js?v=7c91f8fd"></script>
-        <script src="../../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../../_static/documentation_options.js?v=8534f863"></script>
+        <script src="../../../_static/doctools.js?v=9a2dae69"></script>
         <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
-        <script src="../../../_static/translations.js?v=beaddf03"></script>
     <script src="../../../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../../../genindex.html" />
     <link rel="search" title="搜索" href="../../../search.html" />
@@ -33,53 +37,60 @@
           
           
           <a href="../../../index.html" class="icon icon-home">
-            Cloud Atlas
+            Cloud Atlas: Discovery
           </a>
+              <div class="version">
+                1.1
+              </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../../studio/index.html">Studio Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../infrastructure/index.html">Infrastructure Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../devops/index.html">DevOps Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../kvm/index.html">KVM Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../ceph/index.html">Ceph Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../gluster/index.html">Gluster Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../ovirt/index.html">oVirt Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../openstack/index.html">OpenStack Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../docker/index.html">Docker Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../kubernetes/index.html">Kubernetes Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../kubernetes_from_scratch/index.html">Kubernetes From Scratch (KFS) Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../rancher/index.html">Rancher Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../openshift/index.html">OpenShift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../sql/index.html">SQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../sqlite/index.html">SQLite Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../mysql/index.html">MySQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../pgsql/index.html">PostgreSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../clickhouse/index.html">ClickHouse Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../nosql/index.html">NoSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../redis/index.html">Redis Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../network/index.html">Network Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../infra_service/index.html">Infra-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../infra_search/index.html">Search Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../info_service/index.html">Info-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../web/index.html">Web Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../big_data/index.html">Big Data Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../machine_learning/index.html">Machine Learning Atlas</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">Linux Atlas</a><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../studio/index.html">Studio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../infrastructure/index.html">Infrastructure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../devops/index.html">DevOps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../kvm/index.html">KVM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../ceph/index.html">Ceph</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../gluster/index.html">Gluster</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../ovirt/index.html">oVirt</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../openstack/index.html">OpenStack</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../docker/index.html">Docker</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../kubernetes/index.html">Kubernetes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../k8s_dev/index.html">Kubernetes Develop</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../rancher/index.html">Rancher</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../openshift/index.html">OpenShift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../sql/index.html">SQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../sqlite/index.html">SQLite</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../mysql/index.html">MySQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../pgsql/index.html">PostgreSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../nosql/index.html">NoSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../network/index.html">Network</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../infra_service/index.html">Infra-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../infra_search/index.html">Infra-Search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../web/index.html">Web</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../info_service/index.html">Info-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../big_data/index.html">Big Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../machine_learning/index.html">Machine Learning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../drone/index.html">Drone</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">Linux</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../../best_linux.html">最佳Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../admin/index.html">Linux系统管理</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../redhat_linux/index.html">RedHat Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../arch_linux/index.html">Arch Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../asahi_linux/index.html">Asahi Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../gentoo_linux/index.html">Gentoo Linux</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../lfs_linux/index.html">LFS(Linux from scratch)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../lfs/index.html">LFS(Linux from scratch)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../blfs/index.html">BLFS(Beyond Linux from scratch)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../alfs/index.html">ALFS(Automated Linux from scratch)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pilfs/index.html">PiLFS(Automated Linux from scratch on the Raspberry Pi)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../yocto/index.html">Yocto</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../debian/index.html">Debian</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="../index.html">Ubuntu Linux</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="../ubuntu_on_mbp.html">MacBook Pro上运行Ubuntu</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../ubuntu_on_thinkpad_x220.html">ThinkPad X220上运行Ubuntu</a></li>
@@ -88,7 +99,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../ubuntu_desktop.html">Ubuntu Desktop</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../upgrade_ubuntu.html">升级Ubuntu</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../ubuntu_hibernate.html">Ubuntu Hibernate休眠</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../debian_init.html">Debian精简系统初始化</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ubuntu_hibernate_old.html">Ubuntu Hibernate休眠(旧实践归档)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../admin/index.html">Ubuntu系统管理</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../cgroup/index.html">Ubuntu Cgroup</a></li>
 <li class="toctree-l3 current"><a class="reference internal" href="index.html">Ubuntu网络</a><ul class="current">
@@ -98,6 +109,7 @@
 <li class="toctree-l4"><a class="reference internal" href="wpa_supplicant.html">使用wpa_supplicant连接无线网络</a></li>
 <li class="toctree-l4"><a class="reference internal" href="switch_wifi_connect.html">切换WIFI连接</a></li>
 <li class="toctree-l4"><a class="reference internal" href="set_linux_system_proxy.html">配置linux系统级代理</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ubuntu_aic8800.html">Ubuntu AIC8800驱动(Tenda无线网卡AX300)</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../storage/index.html">Ubuntu存储管理</a></li>
@@ -106,10 +118,11 @@
 <li class="toctree-l2"><a class="reference internal" href="../../suse_linux/index.html">SUSE Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../kali_linux/index.html">Kali Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../tails_linux/index.html">Tails Linux</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../qubes_os/index.html">Qubes OS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../postmarketos/index.html">postmarketOS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../container_os/index.html">容器化操作系统(Container OS)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../fedora_coreos/index.html">Fedora CoreOS容器操作系统</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../chromium_os/index.html">Chromium OS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../chromeos/index.html">ChromeOS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../alpine_linux/index.html">Alpine Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../subgraph_os/index.html">Subgraph OS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../kaios/index.html">KaiOS - 世界第三手机操作系统</a></li>
@@ -122,28 +135,30 @@
 <li class="toctree-l2"><a class="reference internal" href="../../linux_tablet/index.html">Linux平板</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../../kernel/index.html">Kernel Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../performance/index.html">Performance Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../distributed_system/index.html">Distributed System Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../shell/index.html">Shell Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../python/index.html">Python Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../django/index.html">Django Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../flask/index.html">Flask Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../javascript/index.html">JavaScript Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../nodejs/index.html">Node.js Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../clang/index.html">C Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../golang/index.html">Go Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../swift/index.html">Swift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../rust/index.html">Rust Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../ruby/index.html">Ruby Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../arm/index.html">ARM Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../android/index.html">Android Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../bsd/index.html">BSD Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../apple/index.html">Apple Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../windows/index.html">Windows Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../real/index.html">Real Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../management/index.html">Management Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../life/index.html">Life Atlas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../kernel/index.html">Kernel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../performance/index.html">Performance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../distributed_system/index.html">Distributed System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../shell/index.html">Shell</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../python/index.html">Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../django/index.html">Django</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../javascript/index.html">JavaScript</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../nodejs/index.html">Node.js</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../clang/index.html">C</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../golang/index.html">Go</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../swift/index.html">Swift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../rust/index.html">Rust</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../ruby/index.html">Ruby</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../lua/index.html">Lua</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../arm/index.html">ARM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../raspberry_pi/index.html">Raspberry Pi</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../android/index.html">Android</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../bsd/index.html">BSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../freebsd/index.html">FreeBSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../apple/index.html">Apple</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../windows/index.html">Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../real/index.html">Real</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../management/index.html">Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../life/index.html">Life</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../copyright.html">Copyright</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../aboutme.html">关于作者</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../donate.html">捐赠</a></li>
@@ -156,22 +171,22 @@
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../../index.html">Cloud Atlas</a>
+          <a href="../../../index.html">Cloud Atlas: Discovery</a>
       </nav>
 
       <div class="wy-nav-content">
         <div class="rst-content">
-          <div role="navigation" aria-label="Page navigation">
+          <div role="navigation" aria-label="页面导航">
   <ul class="wy-breadcrumbs">
       <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
-          <li class="breadcrumb-item"><a href="../../index.html">Linux Atlas</a></li>
+          <li class="breadcrumb-item"><a href="../../index.html">Linux</a></li>
           <li class="breadcrumb-item"><a href="../index.html">Ubuntu Linux</a></li>
           <li class="breadcrumb-item"><a href="index.html">Ubuntu网络</a></li>
       <li class="breadcrumb-item active">netplan网络配置</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../../../_sources/linux/ubuntu_linux/network/netplan.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../../_sources/linux/ubuntu_linux/network/netplan.rst.txt" rel="nofollow"> 查看页面源码</a>
       </li>
   </ul>
   <hr/>
@@ -180,15 +195,16 @@
            <div itemprop="articleBody">
              
   <section id="netplan">
-<span id="id1"></span><h1>netplan网络配置<a class="headerlink" href="#netplan" title="Link to this heading">¶</a></h1>
-<p>Ubuntu发行版默认使用 <a class="reference external" href="https://netplan.io">netplan.io</a> 配置网络接口，例如我在在 <a class="reference internal" href="../../../arm/raspberry_pi/network/pi_ubuntu_network.html#pi-ubuntu-network"><span class="std std-ref">树莓派Ubuntu网络设置</span></a> 中就使用了netplan。netplan支持后端使用 <code class="docutils literal notranslate"><span class="pre">networkd</span></code> 或者 <code class="docutils literal notranslate"><span class="pre">network-manager</span></code> 进行管理配置。</p>
+<span id="id1"></span><h1>netplan网络配置<a class="headerlink" href="#netplan" title="Link to this heading"></a></h1>
+<p>Ubuntu发行版默认使用 <a class="reference external" href="https://netplan.io">netplan.io</a> 配置网络接口，例如我在在 <a class="reference internal" href="../../../raspberry_pi/network/pi_ubuntu_network.html#pi-ubuntu-network"><span class="std std-ref">树莓派Ubuntu网络设置</span></a> 中就使用了netplan。netplan支持后端使用 <code class="docutils literal notranslate"><span class="pre">networkd</span></code> 或者 <code class="docutils literal notranslate"><span class="pre">network-manager</span></code> 进行管理配置。</p>
 <section id="id2">
-<h2>netplan简介<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
+<h2>netplan简介<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
 <figure class="align-default">
-<img alt="../../../_images/netplan_design_overview.svg" src="../../../_images/netplan_design_overview.svg" /></figure>
+<img alt="../../../_images/netplan_design_overview.svg" src="../../../_images/netplan_design_overview.svg" />
+</figure>
 </section>
 <section id="netplan-static-ip">
-<span id="id3"></span><h2>激活netplan<a class="headerlink" href="#netplan-static-ip" title="Link to this heading">¶</a></h2>
+<span id="id3"></span><h2>激活netplan<a class="headerlink" href="#netplan-static-ip" title="Link to this heading"></a></h2>
 <p>Ubuntu在服务器版本默认激活了netplan来配置管理网络，但是在桌面版本，则默认使用NetworkManager管理网络。例如 <a class="reference internal" href="../../../machine_learning/jetson/studio/jetson_nano_startup.html#jetson-nano-startup"><span class="std std-ref">Jetson Nano快速起步</span></a> 可以看到Jetson使用Ubuntu的18.04桌面版本，所以我们需要安装并激活netplan。</p>
 <ul>
 <li><p>安装netplan:</p>
@@ -209,7 +225,7 @@
 </div>
 </section>
 <section id="netplanip">
-<h2>使用netplan配置静态IP<a class="headerlink" href="#netplanip" title="Link to this heading">¶</a></h2>
+<h2>使用netplan配置静态IP<a class="headerlink" href="#netplanip" title="Link to this heading"></a></h2>
 <p>对于Kubernetes master等服务器，我期望IP地址是固定的IP地址，所以准备配置static IP。不过，Ubuntu 18系列的静态IP地址配置方法和以前传统配置方法不同，采用了 <code class="docutils literal notranslate"><span class="pre">.yaml</span></code> 配置文件，通过 <code class="docutils literal notranslate"><span class="pre">netplan</span></code> 网络配置工具来修改。</p>
 <div class="admonition note">
 <p class="admonition-title">备注</p>
@@ -218,7 +234,7 @@
 <p>Netplan允许通过YAML抽象来配置网络接口，在 <code class="docutils literal notranslate"><span class="pre">NetworkManager</span></code> 和 <code class="docutils literal notranslate"><span class="pre">systemd-networkd</span></code> 网络服务（引用为 <code class="docutils literal notranslate"><span class="pre">renderers</span></code> )结合共同工作。</p>
 <p>Netplan会读取 <code class="docutils literal notranslate"><span class="pre">/etc/netplan/*.yaml</span></code> 配置文件来设置所有的网络接口。</p>
 <section id="id5">
-<h3>列出所有激活的网络接口<a class="headerlink" href="#id5" title="Link to this heading">¶</a></h3>
+<h3>列出所有激活的网络接口<a class="headerlink" href="#id5" title="Link to this heading"></a></h3>
 <ul>
 <li><p>使用 <code class="docutils literal notranslate"><span class="pre">ifconfig</span></code> 命令列出所有网络接口:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ifconfig</span> <span class="o">-</span><span class="n">a</span>
@@ -241,7 +257,7 @@
 <li><p>默认在 <code class="docutils literal notranslate"><span class="pre">/etc/netplan</span></code> 目录下有一个 <code class="docutils literal notranslate"><span class="pre">01-netcfg.yaml</span></code> 内容如下:</p></li>
 </ul>
 <div class="literal-block-wrapper docutils container" id="id12">
-<div class="code-block-caption"><span class="caption-text">netplan初始DHCP配置</span><a class="headerlink" href="#id12" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">netplan初始DHCP配置</span><a class="headerlink" href="#id12" title="Link to this code"></a></div>
 <div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="c1"># This file describes the network interfaces available on your system</span>
 <span class="linenos">2</span><span class="c1"># For more information, see netplan(5).</span>
 <span class="linenos">3</span><span class="nt">network</span><span class="p">:</span>
@@ -255,7 +271,7 @@
 </div>
 <div class="admonition note">
 <p class="admonition-title">备注</p>
-<p>如果安装操作系统的时耦没有自动创建一个 <code class="docutils literal notranslate"><span class="pre">YAML</span></code> 配置文件，可以通过以下命令先生成一个:</p>
+<p>如果安装操作系统的时候没有自动创建一个 <code class="docutils literal notranslate"><span class="pre">YAML</span></code> 配置文件，可以通过以下命令先生成一个:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">netplan</span> <span class="n">generate</span>
 </pre></div>
 </div>
@@ -265,7 +281,7 @@
 <li><p>编辑 <code class="docutils literal notranslate"><span class="pre">/etc/netplan/01-netcfg.yaml</span></code> :</p></li>
 </ul>
 <div class="literal-block-wrapper docutils container" id="id13">
-<div class="code-block-caption"><span class="caption-text">netplan 静态IPP配置</span><a class="headerlink" href="#id13" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">netplan 静态IPP配置</span><a class="headerlink" href="#id13" title="Link to this code"></a></div>
 <div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="nt">network</span><span class="p">:</span>
 <span class="linenos"> 2</span><span class="w">  </span><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2</span>
 <span class="linenos"> 3</span><span class="w">  </span><span class="nt">renderer</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">networkd</span>
@@ -291,7 +307,7 @@
 </section>
 </section>
 <section id="id6">
-<h2>netplan配置一个网卡多个IP<a class="headerlink" href="#id6" title="Link to this heading">¶</a></h2>
+<h2>netplan配置一个网卡多个IP<a class="headerlink" href="#id6" title="Link to this heading"></a></h2>
 <p>有时候需要在一个网卡上配置多个IP地址，实现单臂网桥路由，netplan也支持 interface alias 。配置方法很简单:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">network</span><span class="p">:</span>
   <span class="n">version</span><span class="p">:</span> <span class="mi">2</span>
@@ -318,10 +334,10 @@
 <p>分配了IP地址 <code class="docutils literal notranslate"><span class="pre">10.100.1.38</span></code> 和 <code class="docutils literal notranslate"><span class="pre">10.100.1.39</span></code></p>
 </section>
 <section id="netplan802-1x">
-<h2>netplan配置有线802.1x认证<a class="headerlink" href="#netplan802-1x" title="Link to this heading">¶</a></h2>
+<h2>netplan配置有线802.1x认证<a class="headerlink" href="#netplan802-1x" title="Link to this heading"></a></h2>
 <p>企业网络常常会使用802.1x网络实现认证，不仅无线可以通过这种方式加强安全，有线网络也可以实现。netplan也支持在有线网络上加上认证功能，配置案例有些类似后文 <code class="docutils literal notranslate"><span class="pre">WPA</span> <span class="pre">Enterprise无线网络</span></code> ，案例 <code class="docutils literal notranslate"><span class="pre">01-eno4-config.yaml</span></code> 如下:</p>
 <div class="literal-block-wrapper docutils container" id="id14">
-<div class="code-block-caption"><span class="caption-text">netplan 802.1x配置</span><a class="headerlink" href="#id14" title="Link to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">netplan 802.1x配置</span><a class="headerlink" href="#id14" title="Link to this code"></a></div>
 <div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="nt">network</span><span class="p">:</span>
 <span class="linenos"> 2</span><span class="w">  </span><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2</span>
 <span class="linenos"> 3</span><span class="w">  </span><span class="nt">renderer</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">networkd</span>
@@ -341,9 +357,9 @@
 <p>然后执行 <code class="docutils literal notranslate"><span class="pre">netplan</span> <span class="pre">apply</span></code> 即完成网络激活</p>
 </section>
 <section id="id7">
-<h2>netplan配置无线<a class="headerlink" href="#id7" title="Link to this heading">¶</a></h2>
+<h2>netplan配置无线<a class="headerlink" href="#id7" title="Link to this heading"></a></h2>
 <section id="id8">
-<h3>连接开放无线网络<a class="headerlink" href="#id8" title="Link to this heading">¶</a></h3>
+<h3>连接开放无线网络<a class="headerlink" href="#id8" title="Link to this heading"></a></h3>
 <p>对于没有密码要求的无线网络，只需要定义access point:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">network</span><span class="p">:</span>
   <span class="n">version</span><span class="p">:</span> <span class="mi">2</span>
@@ -356,7 +372,7 @@
 </div>
 </section>
 <section id="wpa-personal">
-<h3>连接WPA Personal无线<a class="headerlink" href="#wpa-personal" title="Link to this heading">¶</a></h3>
+<h3>连接WPA Personal无线<a class="headerlink" href="#wpa-personal" title="Link to this heading"></a></h3>
 <p>对于采用WPA密码保护的无线网络，配置access-point和对应的password就可以。</p>
 <blockquote>
 <div><ul>
@@ -382,7 +398,7 @@
 </div></blockquote>
 </section>
 <section id="wpa-enterprise">
-<h3>WPA Enterprise无线网络<a class="headerlink" href="#wpa-enterprise" title="Link to this heading">¶</a></h3>
+<h3>WPA Enterprise无线网络<a class="headerlink" href="#wpa-enterprise" title="Link to this heading"></a></h3>
 <p>在企业网络中，常见的是使用 WPA 或 WPA2 Enterprise加密方式的无线网络，则需要添加认证信息。</p>
 <ul>
 <li><p>以下案例是 WPA-EAP 和 TTLS 加密无线网络连接配置:</p>
@@ -426,7 +442,7 @@
 </section>
 </section>
 <section id="netplan-mac-spoof">
-<span id="id9"></span><h2>netplan mac spoof<a class="headerlink" href="#netplan-mac-spoof" title="Link to this heading">¶</a></h2>
+<span id="id9"></span><h2>netplan mac spoof<a class="headerlink" href="#netplan-mac-spoof" title="Link to this heading"></a></h2>
 <p>如果使用 <code class="docutils literal notranslate"><span class="pre">networkd</span></code> 后端，则不支持wifi匹配，只能使用接口名字。以下为举例:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">network</span><span class="p">:</span>
   <span class="n">version</span><span class="p">:</span> <span class="mi">2</span>
@@ -455,9 +471,9 @@
 </div>
 </section>
 <section id="netplanbonding">
-<span id="netplan-bonding"></span><h2>netplan配置bonding<a class="headerlink" href="#netplanbonding" title="Link to this heading">¶</a></h2>
+<span id="netplan-bonding"></span><h2>netplan配置bonding<a class="headerlink" href="#netplanbonding" title="Link to this heading"></a></h2>
 <section id="active-backup-bonding">
-<h3>简单active-backup bonding<a class="headerlink" href="#active-backup-bonding" title="Link to this heading">¶</a></h3>
+<h3>简单active-backup bonding<a class="headerlink" href="#active-backup-bonding" title="Link to this heading"></a></h3>
 <ul>
 <li><p>参考原先安装虚拟机自动生成的 <code class="docutils literal notranslate"><span class="pre">/etc/netplan/50-cloud-init.yaml</span></code> 注释内容，禁用cloud-init网络配置，即创建 <code class="docutils literal notranslate"><span class="pre">/etc/cloud/cloud.cfg.d/99-disable-network-config.cfg</span></code> 内容如下:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">network</span><span class="p">:</span> <span class="p">{</span><span class="n">config</span><span class="p">:</span> <span class="n">disabled</span><span class="p">}</span>
@@ -500,7 +516,7 @@
 </ul>
 </section>
 <section id="bondingvlan">
-<h3>bonding上增加VLAN<a class="headerlink" href="#bondingvlan" title="Link to this heading">¶</a></h3>
+<h3>bonding上增加VLAN<a class="headerlink" href="#bondingvlan" title="Link to this heading"></a></h3>
 <ul>
 <li><p>编辑 <code class="docutils literal notranslate"><span class="pre">/etc/netplan/01-netcfg.yaml</span></code></p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">network</span><span class="p">:</span>
@@ -541,7 +557,7 @@
 </section>
 </section>
 <section id="netplansystemd-networkd">
-<h2>没有netplan配置systemd-networkd<a class="headerlink" href="#netplansystemd-networkd" title="Link to this heading">¶</a></h2>
+<h2>没有netplan配置systemd-networkd<a class="headerlink" href="#netplansystemd-networkd" title="Link to this heading"></a></h2>
 <p>实际上你可以不使用netplan也不使用NetworkManager就可以配置网络，因为 <a class="reference internal" href="../../redhat_linux/systemd/index.html#systemd"><span class="std std-ref">Systemd进程管理器</span></a> 实际上提供了完整的系统配置功能。默认启动的 <code class="docutils literal notranslate"><span class="pre">systemd-networkd</span></code> 接管了所有网络配置，所以手工添加配置也可以实现配置。</p>
 <p>所有的 <code class="docutils literal notranslate"><span class="pre">systemd-networkd</span></code> 配置位于 <code class="docutils literal notranslate"><span class="pre">/etc/systemd/network/</span></code> 目录下，例如， <code class="docutils literal notranslate"><span class="pre">enp0s25.network</span></code> 配置内容:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">Match</span><span class="p">]</span>
@@ -559,7 +575,7 @@
 </div>
 </section>
 <section id="id10">
-<h2>netplan问题排查<a class="headerlink" href="#id10" title="Link to this heading">¶</a></h2>
+<h2>netplan问题排查<a class="headerlink" href="#id10" title="Link to this heading"></a></h2>
 <div class="admonition warning">
 <p class="admonition-title">警告</p>
 <p>netplan似乎不需要作为服务启动，而仅仅是作为一个前端工具，实际调用的是 networkd 和 NetworkManager来完成配置。我在Jetson Nano的Ubuntu 18.04使用netplan失败，似乎这个版本比较老，和现有netplan文档不能对齐，并且使用也很怪异，所以我还是使用 <a class="reference internal" href="switch_nm.html#switch-nm"><span class="std std-ref">切换NetworkManager</span></a> 重新切回NetworkManager进行管理。</p>
@@ -602,7 +618,7 @@
 </pre></div>
 </div>
 <section id="networkctl">
-<h3>networkctl<a class="headerlink" href="#networkctl" title="Link to this heading">¶</a></h3>
+<h3>networkctl<a class="headerlink" href="#networkctl" title="Link to this heading"></a></h3>
 <p>参考 <a class="reference external" href="https://www.freedesktop.org/software/systemd/man/networkctl.html">networkctl — Query the status of network links</a> <code class="docutils literal notranslate"><span class="pre">networkctl</span></code> 可以用于检查网络连线的状态是否被 <code class="docutils literal notranslate"><span class="pre">systemd-networkd</span></code> 看到。参考 <a class="reference external" href="https://www.freedesktop.org/software/systemd/man/systemd-networkd.service.html#">systemd-networkd.service, systemd-networkd — Network manager</a> :</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">systemd-networkd</span></code> 会管理在 <code class="docutils literal notranslate"><span class="pre">[Match]</span></code> 段落找到的 <code class="docutils literal notranslate"><span class="pre">.network</span></code> 文件中的任何连接来管理网络地址和路由。</p></li>
@@ -755,7 +771,7 @@
 </section>
 </section>
 <section id="g-hz">
-<h2>5G Hz无线网络连接<a class="headerlink" href="#g-hz" title="Link to this heading">¶</a></h2>
+<h2>5G Hz无线网络连接<a class="headerlink" href="#g-hz" title="Link to this heading"></a></h2>
 <p>在树莓派上配置了netplan的无线配置，配置文件 <code class="docutils literal notranslate"><span class="pre">/etc/netplan/02-wifi.yaml</span></code>:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">network</span><span class="p">:</span>
   <span class="n">version</span><span class="p">:</span> <span class="mi">2</span>
@@ -841,7 +857,7 @@ Nov 05 16:10:30 pi-worker2 wpa_supplicant[1849]: wlan0: CTRL-EVENT-SSID-TEMP-DIS
 <p>然后重启就能够正常连接5G Hz无线网络。</p>
 </section>
 <section id="id11">
-<h2>参考<a class="headerlink" href="#id11" title="Link to this heading">¶</a></h2>
+<h2>参考<a class="headerlink" href="#id11" title="Link to this heading"></a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="https://www.tecmint.com/configure-network-static-ip-address-in-ubuntu/">How to Configure Network Static IP Address in Ubuntu 18.04</a></p></li>
 <li><p><a class="reference external" href="https://netplan.io/examples">Netplan configuration examples</a></p></li>
@@ -855,25 +871,37 @@ Nov 05 16:10:30 pi-worker2 wpa_supplicant[1849]: wlan0: CTRL-EVENT-SSID-TEMP-DIS
 
            </div>
           </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="networkmanager.html" class="btn btn-neutral float-left" title="NetworkManager" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="wpa_supplicant.html" class="btn btn-neutral float-right" title="使用wpa_supplicant连接无线网络" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="networkmanager.html" class="btn btn-neutral float-left" title="NetworkManager" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="wpa_supplicant.html" class="btn btn-neutral float-right" title="使用wpa_supplicant连接无线网络" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../../copyright.html">Copyright</a> 2018 - now, Huatai Huang.</p>
+    <p>&#169; <a href="../../../copyright.html">版权所有</a> 2018 - now, Huatai Huang。</p>
   </div>
 
-  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
   
     <!-- your html code here -->
     <br>
-    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡</a></p>
-     
+    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡 👈</a></p>
+    <br>
+    <p>网站采用 <a href="https://utteranc.es/">utterances</a> 评论系统，所有评论存储在<a href="https://github.com/huataihuang/cloud-atlas/issues">GitHub issues</a> 中，如果你看不到下方的评论框，那么可能需要<a href="https://cloud-atlas.readthedocs.io/zh-cn/latest/linux/security/vpn/index.html">自备梯子</a> 👈</p>
+    <div class="articleComments">
+        <comments>
+  <script src="https://utteranc.es/client.js"
+    repo="huataihuang/cloud-atlas"
+    issue-term="pathname"
+    theme="github-light"
+    crossorigin="anonymous"
+    async>
+  </script>
+</comments>
+    </div>
 
 
 </footer>

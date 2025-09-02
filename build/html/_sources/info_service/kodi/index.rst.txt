@@ -8,6 +8,7 @@ Kodi - 媒体播放
    :maxdepth: 1
 
    intro_kodi.rst
+   install/index
    kodi_remote_control.rst
    kodi_soft_remote_control.rst
 

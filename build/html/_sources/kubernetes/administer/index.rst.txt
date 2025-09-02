@@ -1,4 +1,4 @@
-.. _kubernetes_administer:
+.. _k8s_administer:
 
 ======================
 Kubernetes管理
@@ -12,6 +12,7 @@ Kubernetes管理
    :maxdepth: 1
 
    k8s_dashboard.rst
+   lens/index
    configure_pods_and_containers.rst
    delete_cluster.rst
    cordon_node.rst
@@ -24,6 +25,8 @@ Kubernetes管理
    k8s_cpu_management_policies.rst
    change_k8s_image_registry.rst
    kubeadm_administer/index
+   extend/index
    etcd/index
    coredns/index
    federation/index
+   policy/index

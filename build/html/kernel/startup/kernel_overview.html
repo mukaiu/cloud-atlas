@@ -1,21 +1,25 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh" data-content_root="../../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>内核概览 &mdash; Cloud Atlas 0.1 文档</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+  <title>内核概览 &mdash; Cloud Atlas: Discovery beta 文档</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=fd3f3429" />
+
+  
+    <link rel="shortcut icon" href="../../_static/favicon.png"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="../../_static/documentation_options.js?v=7c91f8fd"></script>
-        <script src="../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=8534f863"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
         <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
-        <script src="../../_static/translations.js?v=beaddf03"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../../genindex.html" />
     <link rel="search" title="搜索" href="../../search.html" />
@@ -33,47 +37,49 @@
           
           
           <a href="../../index.html" class="icon icon-home">
-            Cloud Atlas
+            Cloud Atlas: Discovery
           </a>
+              <div class="version">
+                1.1
+              </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../studio/index.html">Studio Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../infrastructure/index.html">Infrastructure Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../devops/index.html">DevOps Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kvm/index.html">KVM Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../ceph/index.html">Ceph Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../gluster/index.html">Gluster Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../ovirt/index.html">oVirt Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../openstack/index.html">OpenStack Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../docker/index.html">Docker Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kubernetes/index.html">Kubernetes Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../kubernetes_from_scratch/index.html">Kubernetes From Scratch (KFS) Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../rancher/index.html">Rancher Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../openshift/index.html">OpenShift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../sql/index.html">SQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../sqlite/index.html">SQLite Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../mysql/index.html">MySQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../pgsql/index.html">PostgreSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../clickhouse/index.html">ClickHouse Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../nosql/index.html">NoSQL Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../redis/index.html">Redis Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../network/index.html">Network Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../infra_service/index.html">Infra-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../infra_search/index.html">Search Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../info_service/index.html">Info-Service Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../web/index.html">Web Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../big_data/index.html">Big Data Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../machine_learning/index.html">Machine Learning Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../linux/index.html">Linux Atlas</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Kernel Atlas</a><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../studio/index.html">Studio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../infrastructure/index.html">Infrastructure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../devops/index.html">DevOps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kvm/index.html">KVM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ceph/index.html">Ceph</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../gluster/index.html">Gluster</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ovirt/index.html">oVirt</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../openstack/index.html">OpenStack</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../docker/index.html">Docker</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kubernetes/index.html">Kubernetes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../k8s_dev/index.html">Kubernetes Develop</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../rancher/index.html">Rancher</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../openshift/index.html">OpenShift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../sql/index.html">SQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../sqlite/index.html">SQLite</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../mysql/index.html">MySQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../pgsql/index.html">PostgreSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../nosql/index.html">NoSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../network/index.html">Network</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../infra_service/index.html">Infra-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../infra_search/index.html">Infra-Search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../web/index.html">Web</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../info_service/index.html">Info-Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../big_data/index.html">Big Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../machine_learning/index.html">Machine Learning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../drone/index.html">Drone</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../linux/index.html">Linux</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Kernel</a><ul class="current">
 <li class="toctree-l2 current"><a class="reference internal" href="index.html">Kernel起步</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="howto_learn_kernel.html">如何学习Linux内核</a></li>
 <li class="toctree-l3"><a class="reference internal" href="prepare_kernel_dev.html">内核开发学习准备工作</a></li>
@@ -95,6 +101,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../scheduler/index.html">Linux调度器</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../cgroup/index.html">Kernel Cgroup</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../process/index.html">内核进程管理</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../core_api/index.html">kernel核心API</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../flame_graph.html">火焰图</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../kms.html">KMS (Kernel mode setting)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../accounting/index.html">内核记账</a></li>
@@ -109,27 +116,29 @@
 <li class="toctree-l2"><a class="reference internal" href="../tracing/index.html">Linux内核追踪</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../performance/index.html">Performance Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../distributed_system/index.html">Distributed System Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../shell/index.html">Shell Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../python/index.html">Python Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../django/index.html">Django Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../flask/index.html">Flask Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../javascript/index.html">JavaScript Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../nodejs/index.html">Node.js Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../clang/index.html">C Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../golang/index.html">Go Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../swift/index.html">Swift Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../rust/index.html">Rust Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../ruby/index.html">Ruby Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../arm/index.html">ARM Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../android/index.html">Android Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../bsd/index.html">BSD Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../apple/index.html">Apple Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../windows/index.html">Windows Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../real/index.html">Real Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../management/index.html">Management Atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../life/index.html">Life Atlas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../performance/index.html">Performance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../distributed_system/index.html">Distributed System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../shell/index.html">Shell</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../python/index.html">Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../django/index.html">Django</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../javascript/index.html">JavaScript</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../nodejs/index.html">Node.js</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../clang/index.html">C</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../golang/index.html">Go</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../swift/index.html">Swift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../rust/index.html">Rust</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ruby/index.html">Ruby</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lua/index.html">Lua</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../arm/index.html">ARM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../raspberry_pi/index.html">Raspberry Pi</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../android/index.html">Android</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../bsd/index.html">BSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../freebsd/index.html">FreeBSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../apple/index.html">Apple</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../windows/index.html">Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../real/index.html">Real</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../management/index.html">Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../life/index.html">Life</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../copyright.html">Copyright</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../aboutme.html">关于作者</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../donate.html">捐赠</a></li>
@@ -142,21 +151,21 @@
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../index.html">Cloud Atlas</a>
+          <a href="../../index.html">Cloud Atlas: Discovery</a>
       </nav>
 
       <div class="wy-nav-content">
         <div class="rst-content">
-          <div role="navigation" aria-label="Page navigation">
+          <div role="navigation" aria-label="页面导航">
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
-          <li class="breadcrumb-item"><a href="../index.html">Kernel Atlas</a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Kernel</a></li>
           <li class="breadcrumb-item"><a href="index.html">Kernel起步</a></li>
       <li class="breadcrumb-item active">内核概览</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../../_sources/kernel/startup/kernel_overview.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../_sources/kernel/startup/kernel_overview.rst.txt" rel="nofollow"> 查看页面源码</a>
       </li>
   </ul>
   <hr/>
@@ -165,14 +174,14 @@
            <div itemprop="articleBody">
              
   <section id="kernel-overview">
-<span id="id1"></span><h1>内核概览<a class="headerlink" href="#kernel-overview" title="Link to this heading">¶</a></h1>
+<span id="id1"></span><h1>内核概览<a class="headerlink" href="#kernel-overview" title="Link to this heading"></a></h1>
 <div class="admonition note">
 <p class="admonition-title">备注</p>
 <p>有关Linux内核的历史和传奇，在很多书籍和网络资料中都有，已经耳熟能详了。所以，我这里仅提纲挈领整理
 一些我感兴趣的特性，以便后续学习内核开发时索引。</p>
 </div>
 <section id="id2">
-<h2>内核定义<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
+<h2>内核定义<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
 <ul class="simple">
 <li><p>内核是硬件和软件之间的 <code class="docutils literal notranslate"><span class="pre">中间层</span></code></p></li>
 <li><p>内核将应用程序的请求传递给硬件，并充当 <code class="docutils literal notranslate"><span class="pre">底层驱动程序</span></code> ，对系统的设备进行寻址</p></li>
@@ -187,7 +196,7 @@
 </ul>
 </section>
 <section id="linux">
-<h2>Linux内核特性<a class="headerlink" href="#linux" title="Link to this heading">¶</a></h2>
+<h2>Linux内核特性<a class="headerlink" href="#linux" title="Link to this heading"></a></h2>
 <ul class="simple">
 <li><p>支持动态加载内核模块</p></li>
 <li><p>支持对称多处理器(symmetrical multiprocessor, SMP)</p></li>
@@ -197,7 +206,7 @@
 </ul>
 </section>
 <section id="vs">
-<h2>微内核 vs. 宏内核<a class="headerlink" href="#vs" title="Link to this heading">¶</a></h2>
+<h2>微内核 vs. 宏内核<a class="headerlink" href="#vs" title="Link to this heading"></a></h2>
 <ul class="simple">
 <li><p>微内核： 只有最基本功能直接由中央内核(微内核)实现，所有其他功能都委托给独立进程，这些进程通过明确定义的通信接口与中心内核通信</p></li>
 </ul>
@@ -214,7 +223,7 @@
 </div>
 </section>
 <section id="id3">
-<h2>进程、进程切换、调度<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h2>
+<h2>进程、进程切换、调度<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
 <p>传统上，Unix操作系统的每个进程都在CPU的 <code class="docutils literal notranslate"><span class="pre">虚拟内存</span></code> 中分配地址空间，每个进程的地址空间完全独立，因此进程不会意识到彼此的存在。 <code class="docutils literal notranslate"><span class="pre">从进程的角度来看，它认为自己是系统中唯一的进程</span></code> 。</p>
 <p>Linux是多任务系统，系统中 <code class="docutils literal notranslate"><span class="pre">真正同时在运行的进程数量最多不会超过CPU数量</span></code> ，所以内核会在很短的时间间隔在不同进程之间切换:</p>
 <ul class="simple">
@@ -227,7 +236,7 @@
 <li><p>内核负责确定如何在进程间共享CPU时间：重要的进程获得的CPU时间多于次要进程。这种确定哪个进程运行多长时间的过程称为 <code class="docutils literal notranslate"><span class="pre">调度</span></code> 。</p></li>
 </ul>
 <section id="process">
-<h3>进程(process)<a class="headerlink" href="#process" title="Link to this heading">¶</a></h3>
+<h3>进程(process)<a class="headerlink" href="#process" title="Link to this heading"></a></h3>
 <p>Linux进程是一种层次系统 <code class="docutils literal notranslate"><span class="pre">pstree</span></code> 输入如下:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>init─┬─auditd───{auditd}
      ├─crond
@@ -261,7 +270,7 @@
 </ul>
 </section>
 <section id="thread">
-<h3>线程(thread)<a class="headerlink" href="#thread" title="Link to this heading">¶</a></h3>
+<h3>线程(thread)<a class="headerlink" href="#thread" title="Link to this heading"></a></h3>
 <p>线程也称为轻量级进程：</p>
 <ul class="simple">
 <li><p>一个进程由若干个线程组成</p></li>
@@ -275,7 +284,7 @@
 </section>
 </section>
 <section id="namesapce">
-<h2>命名空间(namesapce)<a class="headerlink" href="#namesapce" title="Link to this heading">¶</a></h2>
+<h2>命名空间(namesapce)<a class="headerlink" href="#namesapce" title="Link to this heading"></a></h2>
 <p>命名空间(namespace)使得不同的进程可以看到不同的系统视图：</p>
 <ul class="simple">
 <li><p>启用namespace以后，全局资源就具有不同的分组</p></li>
@@ -290,7 +299,7 @@
 </ul>
 </section>
 <section id="id4">
-<h2>地址空间<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h2>
+<h2>地址空间<a class="headerlink" href="#id4" title="Link to this heading"></a></h2>
 <p>地址空间的最大长度与实际可用的物理内存数量无关，因此被称为 <code class="docutils literal notranslate"><span class="pre">虚拟地址空间</span></code> :</p>
 <ul class="simple">
 <li><p>对系统的每个进程，地址空间内只有自身一个进程，无法感知到其他进程存在</p></li>
@@ -314,7 +323,7 @@
 </li>
 </ul>
 <section id="id5">
-<h3>特权级别<a class="headerlink" href="#id5" title="Link to this heading">¶</a></h3>
+<h3>特权级别<a class="headerlink" href="#id5" title="Link to this heading"></a></h3>
 <p>内核把虚拟地址空间划分为两部分，因此能够保护系统进程，使之彼此隔离。</p>
 <p>英特尔处理器有4中特权级别，但Linux只使用两种不同但状态：</p>
 <ul class="simple">
@@ -392,7 +401,7 @@
 </section>
 </section>
 <section id="id6">
-<h2>虚拟和物理地址空间<a class="headerlink" href="#id6" title="Link to this heading">¶</a></h2>
+<h2>虚拟和物理地址空间<a class="headerlink" href="#id6" title="Link to this heading"></a></h2>
 <p>用页表来为物理地址分配虚拟地址：</p>
 <ul class="simple">
 <li><p>虚拟地址关系到进程的用户空间和内核空间</p></li>
@@ -400,14 +409,14 @@
 </ul>
 <p>物理内存页通常称为 <code class="docutils literal notranslate"><span class="pre">页帧</span></code> ，而 <code class="docutils literal notranslate"><span class="pre">页</span></code> 则专指虚拟地址空间中的页。</p>
 <section id="id7">
-<h3>页表<a class="headerlink" href="#id7" title="Link to this heading">¶</a></h3>
+<h3>页表<a class="headerlink" href="#id7" title="Link to this heading"></a></h3>
 <p>用来将虚拟地址空间映射到物理地址空间的数据结构称为 <code class="docutils literal notranslate"><span class="pre">页表</span></code></p>
 <p>由于需要关联虚拟地址和物理地址，如果使用简单的数组项来指向关联的页帧，特别是每个进程都需要自己的页表，则会导致数组极为庞大。不过，由于虚拟地址空间大部分区域都没有使用，也就不需要关联到页帧，所以实际使用的是功能相同但内存使用量少很多但模型： <code class="docutils literal notranslate"><span class="pre">多级分页</span></code> 。</p>
 <p>这里的简化模型是 三级 页表(在Linux中采用了四级页表)：</p>
 </section>
 </section>
 <section id="id8">
-<h2>参考<a class="headerlink" href="#id8" title="Link to this heading">¶</a></h2>
+<h2>参考<a class="headerlink" href="#id8" title="Link to this heading"></a></h2>
 <ul class="simple">
 <li><p>「深入Linux内核架构」</p></li>
 </ul>
@@ -417,25 +426,37 @@
 
            </div>
           </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="prepare_kernel_dev.html" class="btn btn-neutral float-left" title="内核开发学习准备工作" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="sysctl.html" class="btn btn-neutral float-right" title="sysctl" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="prepare_kernel_dev.html" class="btn btn-neutral float-left" title="内核开发学习准备工作" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="sysctl.html" class="btn btn-neutral float-right" title="sysctl" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../copyright.html">Copyright</a> 2018 - now, Huatai Huang.</p>
+    <p>&#169; <a href="../../copyright.html">版权所有</a> 2018 - now, Huatai Huang。</p>
   </div>
 
-  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
   
     <!-- your html code here -->
     <br>
-    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡</a></p>
-     
+    <p><a href="https://github.com/huataihuang/cloud-atlas/issues">留言和讨论</a>|<a href="https://github.com/huataihuang/cloud-atlas/blob/master/source/donate.rst">请我喝一杯咖啡 👈</a></p>
+    <br>
+    <p>网站采用 <a href="https://utteranc.es/">utterances</a> 评论系统，所有评论存储在<a href="https://github.com/huataihuang/cloud-atlas/issues">GitHub issues</a> 中，如果你看不到下方的评论框，那么可能需要<a href="https://cloud-atlas.readthedocs.io/zh-cn/latest/linux/security/vpn/index.html">自备梯子</a> 👈</p>
+    <div class="articleComments">
+        <comments>
+  <script src="https://utteranc.es/client.js"
+    repo="huataihuang/cloud-atlas"
+    issue-term="pathname"
+    theme="github-light"
+    crossorigin="anonymous"
+    async>
+  </script>
+</comments>
+    </div>
 
 
 </footer>

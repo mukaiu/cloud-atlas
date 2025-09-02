@@ -12,6 +12,7 @@ ZFS
    infra/index
    admin/index
    tunning/index
+   zrep/index
 
 .. only::  subproject and html
 
